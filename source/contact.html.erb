@@ -1,0 +1,50 @@
+---
+title: Kontakt
+keywords: lunge, lars lunge, ulf lunge, kontakt, telefon, email, adresse, mail
+description: Haben Sie Fragen? Nehmen Sie Kontakt mit uns auf.
+---
+
+<div class="title__container">
+  <div class="title__inner">
+    <h1>Kontakt</h1>
+    <p>Haben Sie Fragen, Anregungen, Feedback oder Kritik? Sprechen Sie mit uns.</p>
+  </div>
+</div>
+
+<div class="panel panel--odd">
+  <div class="content">
+    <div class="row between-xs reverse-xs">
+      <div class="col-xs-12 col-sm-6">
+        <form id="contact-form" name="contact" netlify>
+          <div class="input-group">
+            <label>Ihre E-Mail</label>
+            <input type="email">
+          </div>
+
+          <div class="input-group">
+            <label>Name</label>
+            <input type="text" name="name">
+          </div>
+
+          <div class="input-group">
+            <label>Betreff</label>
+            <input type="text" name="subject">
+          </div>
+
+          <div class="input-group">
+            <label>Nachricht</label>
+            <textarea rows=16 name="message"></textarea>
+          </div>
+
+          <button id="submit-button" type="submit" class="button">Absenden</button>
+        </form>
+      </div>
+
+      <div class="col-xs-12 col-sm-5">
+        <h4>Haben Sie sich schon im Support Bereich umgesehen?</h4>
+        <p>Häufig erreichen uns Anfragen, die bereits im Support-Bereich beantwortet wurden. Egal ob Zweifel bei der Auswahl der richtigen Schuhgröße, Pflegetipps oder Fragen zu Versand und Bestellablauf.</p>
+        <%= link_to "Diese und andere Antworten finden Sie hier...", "/support", class: "link" %>
+      </div>
+    </div>
+  </div>
+</div>

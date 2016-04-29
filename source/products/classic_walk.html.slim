@@ -1,0 +1,133 @@
+---
+title: Classic Walk
+keywords: classic walk, adagio, bequemschuhe, walking, walking schuhe, beschwerden, hallux, knieschmerzen, schuhe
+description: Der Classic Walk von Lunge ist ein einzigartiger Bequem- und Walkingschuh für alle Lebenslagen – egal ob Alltag, Beruf oder Freizeit.
+section: products
+---
+
+.title__container
+  .title__inner
+    h1 Classic Walk
+    p Sie müssen kein Läufer sein um in den Genuss von Lunge Schuhen zu kommen: Der Classic Walk ist ein einzigartiger Bequemschuh für alle Lebenslagen – egal ob Alltag, Beruf oder Freizeit.
+    ul.inline-list.inline-list--center
+      li = link_to "Jetzt bestellen", "#add-to-cart", class: "button anchor-link", data: { "anchor-link": true }
+
+.panel.panel--odd
+  .content
+    .panel__inner.panel__inner--reverse
+      .panel__image
+        = image_tag "/images/products/classic_walk/hero/GLS200ROG__01.png"
+      aside.panel__text
+        .panel__text__inner
+          h2 Sportliches Fundament und einzigartiger Komfort.
+          p Das Herzstück des Schuhs, die Mittelsohle, basiert auf der selben Geometrie, die sich bereits bei unseren Laufschuh-Klassikern C-Dur & a-Moll bewährt hat. Mit dem Adagio haben wir die Qualitäten dieser Schuhe nun auch alltagstauglich gemacht, so dass sich hier ein Bequemschuh ergibt, der sowohl durch seine korrekte Fußführung als auch ungekannten Tragekomfort überzeugt. 
+          p Feinste Materialien und sorgfältige Verarbeitung kombiniert mit technischem Know-How und durchdachter Sohlenkonstruktion machen den Adagio zum perfekten Schuh für alle, die gerne länger auf den Beinen sind.
+
+.panel
+  .content
+    .panel__inner
+      .panel__image
+        = image_tag "images/products/classic_walk/misc/material_02.jpg"
+      aside.panel__text
+        .panel__text__inner
+          .content
+            h2 Feinste Materialien - frei von Schadstoffen
+            p Wie von unseren Schuhen gewohnt, wird auch der Adagio ausschließlich unter Verwendung schadstofffreier, zertifizierter und veganer Materialien gefertigt.Außen- und Mittelsohle werden aus einem einzigen soliden Block gefräst. Letztere weist wobei einen einzigartig hohen EVA-Anteil von ca. 80% auf, welcher für ein dynamisches, federndes Auftritts- und Abrollverhalten sorgt – und das über einen sehr langen Zeitraum.
+            p Beim Obermaterial handelt es sich um äußerst hochwertige PU-Mikrofaser, die ausgiebig auf Scheuer-, Reibe-, Falt- und Farbbeständigkeit getestet wurde und Ihrem Fuß bequemen, rutschfreien Halt bietet.
+
+.panel.panel--odd
+  .content
+    .panel__inner.panel__inner--reverse
+      .panel__image
+        = image_tag "/images/products/classic_walk/GLS200CCG/default.png", id: "color-preview"
+        ul.inline-list.inline-list--center
+          - data.products.classic_walk.colors.each do |color|
+            li
+              .color-icon.color-icon--button class=(color.sku == "GLS200CCG" ? "color-icon--active" : "") style="background: linear-gradient(180deg, #{color.first_color}, #{color.first_color} 65%, #{color.second_color} 66%, #{color.second_color} 100%); border: 0px solid #{color.first_color}" title=(color.name) href="#" data-sku=(color.sku)
+        label.text-small.text-center#color-preview__label Caramel/Hellgrau
+      aside.panel__text
+        .panel__text__inner
+          h2 Dezent bis abenteuerlich: Farben für jeden Geschmack.
+          p Um den Adagio auch optisch an jeden erdenklichen Einsatzzweck anzupassen, ist dieses Modell in einem breiten Spektrum an Farbvarianten erhältlich – von klassisch unauffäligen Grau- und Schwarztönen bis hinzu erfrischenden Versionen in Caramel oder Royal Blau.
+
+
+.panel
+  .content
+    .panel__inner.panel__inner--reverse
+      .panel__image.panel__image--center
+        .testimonial
+          h3.testimonial__quote "Meine komplizierten Füße haben nach 61 Jahren endlich mal nichts zu meckern."
+          h5.testimonial__author Hartmut / Oberlausitz
+        .testimonial
+          h3.testimonial__quote "...ich habe mich bisher noch nie in einem Schuh von Anfang an so wohl gefühlt. Und dies mit einem Senk- und Spreizfuß sowie einem Hallux Valgus..."
+          h5.testimonial__author Angelika / Baden-Baden
+        .testimonial
+          h3.testimonial__quote "...meine Beschwerden waren nach wenigen Tagen so gut wie weg, und ich laufe während meiner 12-Stunden-Tage plötzlich ohne Schmerzen oder Ermüdungserscheinungen."
+          h5.testimonial__author Thomas / Papenburg
+      aside.panel__text
+        .panel__text__inner
+          h2 Rücken-, Knie- oder Fußbeschwerden vermeiden
+          p Immer wieder Berichten uns Kunden, dass der Classic Walk dabei half, ihre Fuß-, Knie- oder Rückenbeschwerden zunehmend und nachhaltig zu lindern oder ganz verschwinden lassen konnte. Da es sich beim Adagio um einen Schuh handelt, der durch seine Geometrie und Sohlenform korrekte und gesunde Bewegungen fördern soll, haben wir sehr viel Wert auf die Verträglichkeit mit verschiedensten Beschwerden gelegt. So sorgt die moderate Pronationsstütze an der Innenseite sowie die perfektionierte Auflagefläche der Mittelsohle für eine gesunde Fußstellung und kontrollierte Führung Ihrer Schritte und ist für viele zufriedene Besitzer gar der einzige Schuh ist, der beschwerdefreies Gehen auch über längere Zeiträume erlaubt. Darüber hinaus ist der Adagio bestens für Diabetiker, Allergiker oder Arthrosebeschwerden geeignet. Beschwerden wie Fersensporn, Archillessehnenüberlastung und vielen anderen mehr kann der Adagio durch seine besondere Biomechanik vorbeugen.
+          p Komplettiert wird diese durchdachte Konstruktion durch unsere bewährte Gomax-Einlegesohle, die unseren Schuhen stets von Haus aus kostenlos beiliegt und sich durch äußerst lange Formbeständigkeit und elastischer Passform auszeichnet. Selbstverständlich können Sie aber natürlich auch Ihre eigenen Einlagen verwenden.
+
+= partial "products/gallery", locals: { product: data.products.classic_walk }
+
+.panel.panel--emphasis
+  .content
+    h1.text-center#add-to-cart Jetzt bestellen
+    ul.tab-titles data-tab="true"
+      li.tab-title.tab-title--active = link_to "Herren", "men"
+      li.tab-title = link_to "Damen", "women"
+    .tabs
+      .tab.tab--active data-tab="men"
+        div data-background_color="f7f7f9" data-button_background_color="b6be00" data-button_text_color="ffffff" data-buy_button_out_of_stock_text="Derzeit ausverkauft. Bald wieder verfügbar." data-buy_button_product_unavailable_text="Nicht verfügbar." data-buy_button_text="In den Warenkorb legen" data-collection_handle="classic-walk" data-display_size="compact" data-embed_type="collection" data-has_image="true" data-next_page_button_text="Next page" data-product_handle="" data-product_modal="true" data-product_name="" data-product_title_color="000000" data-redirect_to="modal" data-shop="lunge-manufaktur.myshopify.com"
+      .tab data-tab="women"
+        div data-background_color="f7f7f9" data-button_background_color="b6be00" data-button_text_color="ffffff" data-buy_button_out_of_stock_text="Derzeit ausverkauft. Bald wieder verfügbar." data-buy_button_product_unavailable_text="Nicht verfügbar." data-buy_button_text="In den Warenkorb legen" data-collection_handle="classic-walk-w" data-display_size="compact" data-embed_type="collection" data-has_image="true" data-next_page_button_text="Next page" data-product_handle="" data-product_modal="true" data-product_name="" data-product_title_color="000000" data-redirect_to="modal" data-shop="lunge-manufaktur.myshopify.com"
+    hr
+
+
+
+    .row
+      .col-xs-12.col-md-5
+        h4 Technische Daten
+        ul.spec-list
+          li.spec-list__item
+            label Innenfutter
+            span Omnipel Dynergy 0.7 Microfaser, perforiert
+            br
+            span Stockmayer + Sohn Velour Gewirk Teflon
+          li.spec-list__item
+            label Obermaterial
+            span E.Cima Fashmo DS14
+          li.spec-list__item
+            label Garn
+            span Amann & Söhne Isacord ET150
+            br
+            span Amann & Söhne Isacord ET40
+            br
+            span Amann & Söhne Serafil ET60
+            br
+            span Amann & Söhne Serafil ET40
+          li.spec-list__item
+            label Mittelsohle
+            span nora Lunatec CAD35
+            br
+            span nora Lunatec CAD55 (Pronationsstütze)
+          li.spec-list__item
+            label Außensohle
+            span OK Gummiwerk Eurostar Soft 236
+          li.spec-list__item
+            label Sprengung
+            span 9,5 mm (US Men 10)
+          li.spec-list__item
+            label Gewicht
+            span 354 g (Classic Walk) (US Men 10)
+            br
+            span 336 g (Classic Walk Glatt) (US Men 10)
+          li.spec-list__item
+            label Verfügbare Größen
+            span Damen: US 6 - US 13 (EUR 35 - EUR 43⅔)
+            br
+            span Herren: US 8 - US 15 (EUR 39⅓ - EUR 48⅓)
+      .col-xs-12.col-md-6
+        = partial "products/add_to_cart_help"

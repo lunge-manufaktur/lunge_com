@@ -1,0 +1,13 @@
+.offcanvas-top
+  = image_tag "logo.svg", class: "offcanvas__logo__image"
+  ul.mobile-nav
+    li.mobile-nav__item
+      = nav_link_to "Produkte & Shop", "/products", class: "mobile-nav__link", section: "products"
+    li.mobile-nav__item
+      = nav_link_to "Manufaktur", "/about", class: "mobile-nav__link", section: "manufacture"
+    li.mobile-nav__item
+      = nav_link_to "Händler", "/retailers", class: "mobile-nav__link", section: "retailers"
+    li.mobile-nav__item
+      = nav_link_to "Support", "/support", class: "mobile-nav__link", section: "support"
+
+  = image_tag "ui/close.svg", class: "offcanvas-top-close", id: "offcanvas-top-close"

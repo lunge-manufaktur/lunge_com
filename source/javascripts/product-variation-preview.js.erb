@@ -1,0 +1,8 @@
+<% data.products.classic_walk.colors.each do |color| %>
+  $('[data-sku="<%= color.sku %>"]').on("click", function() {
+    $(".color-icon").removeClass("color-icon--active");
+    $(this).addClass("color-icon--active");
+    $('#color-preview').attr("src", "<%= color.default_image %>");
+    $('#color-preview__label').html("<%= color.name %>")
+  });
+<% end %>

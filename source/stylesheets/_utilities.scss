@@ -1,0 +1,30 @@
+$height-options: (
+  h100: 100vh,
+  h75: 75vh,
+  h66: 66vh,
+  h50: 50vh
+);
+
+@each $height-class, $height in $height-options {
+  .#{$height-class} {
+    min-height: $height;
+  }
+}
+
+.scroll--horizontal {
+  -webkit-overflow-scrolling: touch;
+  overflow-x: scroll;
+}
+
+.scroll--vertical {
+  -webkit-overflow-scrolling: touch;
+  overflow-y: scroll;
+}
+
+.align--middle {
+  align-items: center;
+}
+
+.align--stretch {
+  align-items: stretch;
+}

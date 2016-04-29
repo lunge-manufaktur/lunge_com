@@ -1,0 +1,86 @@
+//====================================================
+//  Grid Componets
+//====================================================
+
+.column {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 auto;
+  height: auto;
+  flex-wrap: nowrap;
+  width: 100%;
+  @include tablet-portrait {
+    width: auto;
+  }
+}
+
+.row {
+  display: flex;
+  flex: 1 1 auto;
+  height: auto;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.row > .column {
+}
+
+//====================================================
+//  Gutters
+//====================================================
+
+// Add .gutters to .row/.column elements
+.gutters {
+  padding: $gutter;
+}
+
+// All direct descendants of .gutters get margin
+.gutters > .column,
+.gutters > .row {
+  margin: $gutter;
+}
+
+// offset padding/margin to maintain width
+.gutters > {
+  .w5    { width:  calc(5%   -  $gutter); }
+  .w10   { width:  calc(10%  -  $gutter); }
+  .w15   { width:  calc(15%  -  $gutter); }
+  .w20   { width:  calc(20%  -  $gutter); }
+  .w25   { width:  calc(25%  -  $gutter); }
+  .w30   { width:  calc(30%  -  $gutter); }
+  .w35   { width:  calc(35%  -  $gutter); }
+  .w40   { width:  calc(40%  -  $gutter); }
+  .w45   { width:  calc(45%  -  $gutter); }
+  .w50   { width:  calc(50%  -  $gutter); }
+  .w55   { width:  calc(55%  -  $gutter); }
+  .w60   { width:  calc(60%  -  $gutter); }
+  .w65   { width:  calc(65%  -  $gutter); }
+  .w70   { width:  calc(70%  -  $gutter); }
+  .w75   { width:  calc(75%  -  $gutter); }
+  .w80   { width:  calc(80%  -  $gutter); }
+  .w85   { width:  calc(85%  -  $gutter); }
+  .w90   { width:  calc(90%  -  $gutter); }
+  .w95   { width:  calc(95%  -  $gutter); }
+  .w100  { width:  calc(100% -  $gutter); }
+}
+
+.w5    { width:  5%; }
+.w10   { width:  10%; }
+.w15   { width:  15%; }
+.w20   { width:  20%; }
+.w25   { width:  25%; }
+.w30   { width:  30%; }
+.w35   { width:  35%; }
+.w40   { width:  40%; }
+.w45   { width:  45%; }
+.w50   { width:  50%; }
+.w55   { width:  55%; }
+.w60   { width:  60%; }
+.w65   { width:  65%; }
+.w70   { width:  70%; }
+.w75   { width:  75%; }
+.w80   { width:  80%; }
+.w85   { width:  85%; }
+.w90   { width:  90%; }
+.w95   { width:  95%; }
+.w100  { width:  100%; }

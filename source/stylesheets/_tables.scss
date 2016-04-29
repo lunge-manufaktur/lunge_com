@@ -1,0 +1,33 @@
+table {
+  width: 100%
+}
+
+tr {}
+
+td,
+th {
+  padding: 0.5rem 1rem;
+}
+
+td.disabled {
+  opacity: 0.5;
+}
+
+td:first-child,
+th:first-child {
+  padding-left: 0;
+}
+
+td:last-child,
+th:last-child {
+  padding-right: 0;
+}
+
+th {
+  font-weight: 700;
+  border-bottom: 2px solid $table-major-border-color;
+}
+
+td {
+  border-bottom: 1px solid $table-minor-border-color;
+}

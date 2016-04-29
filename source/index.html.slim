@@ -1,0 +1,61 @@
+---
+layout: frontpage
+title: Lunge Manufaktur
+keywords: lunge, laufschuhe, bequemschuhe, schuhe, made in germany, classic run, classic walk, shop, bestellen
+description: Hochwertige Lauf- und Bequemschuhe von Lunge aus deutscher Fertigung.
+---
+
+- content_for :hero
+  .hero
+    .hero__image
+    aside.hero__text
+      .hero__text__inner
+        = link_to "/about", class: "made-in-germany__link" do
+          = image_tag "/images/misc/made_in_germany.svg", class: "made-in-germany__logo"
+        h1 Classic Run
+        p Der Klassiker unter den Laufschuhen - der Classic Run hat sich über Jahre als Laufschuh der Extraklasse bewährt und wurde dennoch stetig verbessert.
+        = link_to "Mehr erfahren...", "/products/classic_run", class: "button button--large"
+
+.panel
+  .content
+    .panel__inner.panel__inner--reverse
+      .panel__image
+        iframe src="https://player.vimeo.com/video/80362822" class="responsive--16x9" height="488" width="868" allowfullscreen="" frameborder="0"
+      aside.panel__text
+        .panel__text__inner
+          h2 Über uns
+          p Wer sich seit über 30 Jahren mit Laufsport beschäftigt und selbst aktiver und erfolgreicher Langstreckenläufer ist, der weiß genau, wo der Schuh drückt.
+          = link_to "Mehr erfahren", "/about", class: "button"
+
+.panel
+  .content
+    .panel__inner.panel__inner
+      .panel__image
+        = image_tag "misc/manufaktur_hero.jpg"
+      aside.panel__text
+        .panel__inner__text
+          h2 Besonderheiten von Lunge Schuhen
+          p Lunge Schuhe sind anders als herkömmliche Schuhe. Erfahren Sie weshalb es Sinn macht, sich für Qualität zu entscheiden.
+          = link_to "Warum Lunge?", "/products/features", class: "button"
+
+.panel.panel--emphasis
+  .content
+    .panel__inner
+      .row.between-xs
+        .col-xs-12.col-sm-4
+          = image_tag "/images/misc/shopping_cart.svg", class: "hero-icon"
+          h2 Im Shop bestellen
+          p Bestellen Sie unsere Schuhe und Einlegesohlen bequem von zu Hause. Selbstverständlich inklusive Umtausch- und Rückgaberecht, schnellem DHL-Versand und zahlreichen Zahlungsmethoden.
+          = link_to "Produkte ansehen", "/products", class: "button"
+          hr
+          ul.inline-list
+            li = image_tag "/images/payment/Paypal-dark.svg"
+            li = image_tag "/images/payment/Visa-dark.svg"
+            li = image_tag "/images/payment/MasterCard-dark.svg"
+            li = image_tag "/images/payment/AmericanExpress-dark.svg"
+            li = image_tag "/images/payment/Sepa-dark.svg"
+        .col-xs-12.col-sm-4
+          = image_tag "/images/misc/map_pin.svg", class: "hero-icon"
+          h2 Fachhändler vor Ort
+          p Ganz gleich ob Lauf- oder Bequemschuhe - Finden Sie einen Lunge-Fachhändler in Ihrer Nähe und nehmen Sie die kompetente Beratung vor Ort in Anspruch.
+          = link_to "Händler suchen", "/retailers", class: "button"

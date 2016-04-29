@@ -1,0 +1,78 @@
+/* COLOR */
+$green: #B6BE00;
+$red: #DA284B;
+$white: #fff;
+$light-gray: #f1f1f3;
+$lighter-gray: #f7f7f9;
+$mint-gray: #EBEBF0;
+$gray: #D8D8D8;
+$almost-black: #333;
+
+$accent-color: $green;
+$alternative-accent-color: $red;
+$background-color: $lighter-gray;
+$background-border: $white;
+$title-background: $mint-gray;
+$header-background: $mint-gray;
+$footer-color: #fff;
+$secondary-color: #FFF;
+$offcanvas-background: $white;
+$tabs-accent-color: $almost-black;
+
+$panel-color: #f1f1f3;
+$alternate-panel-color: #f7f7f9;
+
+$image-link-border-color: $white;
+$image-link-border-color-hover: $light-gray;
+
+$body-border-color: $white;
+
+$body-font-color: $almost-black;
+$body-font-color-inverted: $white;
+
+$table-major-border-color: $almost-black;
+$table-minor-border-color: $gray;
+
+
+$header-font: "Merriweather", "Helvetica Neue", "Segoe UI", "Sans-Serif";
+$body-font: "Inconsolata", "sans-serif";
+
+$gutter: 2rem;
+$gutter-small: 1rem;
+$gutter-large: 3rem;
+
+/* BREAKPOINTS */
+$end-mobile: 767px;
+$start-tablet-portrait: 768px;
+$end-tablet-portrait: 1023px;
+$start-tablet-landscape: 1024px;
+$end-tablet-landscape: 1279px;
+$start-desktop: 1280px;
+
+@mixin tablet-portrait() {
+  @media screen and (min-width: $start-tablet-portrait) {
+    @content;
+  }
+}
+
+@mixin tablet-landscape() {
+  @media screen and (min-width: $start-tablet-landscape) {
+    @content;
+  }
+}
+
+@mixin desktop() {
+  @media screen and (min-width: $start-desktop) {
+    @content;
+  }
+}
+
+
+/* ANIMATION */
+$transition: ease-in-out 140ms;
+$transition-fast: ease-in-out 80ms;
+$transition-slow: ease-in-out 220ms;
+
+@mixin transition() {
+  transition: $transition;
+}

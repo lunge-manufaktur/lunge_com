@@ -1,0 +1,148 @@
+name: "Classic Walk"
+category: "Bequemschuhe"
+slug: "classic_walk"
+short_description: "Sie müssen kein Läufer sein um in den Genuss von Lunge Schuhen zu kommen: Der Adagio ist ein einzigartiger Bequemschuh für alle Lebenslagen – egal ob Alltag, Beruf oder Freizeit."
+default_image: "/images/products/classic_walk/hero/gruppe__01.jpg"
+colors:
+  -
+    sku: "GLS200SSS"
+    name: "Schwarz/Schwarz"
+    first_color: "#000"
+    second_color: "#000"
+    default_image: "/images/products/classic_walk/GLS200SSS/default.png"
+  -
+    sku: "GLS200AAS"
+    name: "Anthrazit/Schwarz"
+    first_color: "#656670"
+    second_color: "#000"
+    default_image: "/images/products/classic_walk/GLS200AAS/default.png"
+  -
+    sku: "GLS200MMS"
+    name: "Marine/Schwarz"
+    first_color: "#31335A"
+    second_color: "#000"
+    default_image: "/images/products/classic_walk/GLS200MMS/default.png"
+  -
+    sku: "GLS200BRS"
+    name: "Braun/Schwarz"
+    first_color: "#79463C"
+    second_color: "#000"
+    default_image: "/images/products/classic_walk/GLS200BRS/default.png"
+  -
+    sku: "GLS200BBS"
+    name: "Brombeer/Schwarz"
+    first_color: "#93243E"
+    second_color: "#000"
+    default_image: "/images/products/classic_walk/GLS200BBS/default.png"
+  -
+    sku: "GLS200SIL"
+    name: "Silber/Hellgrau"
+    first_color: "#B1C0C7"
+    second_color: "#DFDFDF"
+    default_image: "/images/products/classic_walk/GLS200SIL/default.png"
+  -
+    sku: "GLS200CCG"
+    name: "Caramel/Hellgrau"
+    first_color: "#CEA17F"
+    second_color: "#DFDFDF"
+    default_image: "/images/products/classic_walk/GLS200CCG/default.png"
+  -
+    sku: "GLS200RRG"
+    name: "Royal/Hellgrau"
+    first_color: "#3763BC"
+    second_color: "#DFDFDF"
+    default_image: "/images/products/classic_walk/GLS200RRG/default.png"
+  -
+    sku: "GLS200SSG"
+    name: "Schwarz/Hellgrau"
+    first_color: "#000"
+    second_color: "#DFDFDF"
+    default_image: "/images/products/classic_walk/GLS200SSG/default.png"
+  -
+    sku: "GLS200AAG"
+    name: "Anthrazit/Hellgrau"
+    first_color: "#656670"
+    second_color: "#DFDFDF"
+    default_image: "/images/products/classic_walk/GLS200AAG/default.png"
+  -
+    sku: "GLS200MMG"
+    name: "Marine/Hellgrau"
+    first_color: "#31335A"
+    second_color: "#DFDFDF"
+    default_image: "/images/products/classic_walk/GLS200MMG/default.png"
+  -
+    sku: "GLS200BRG"
+    name: "Braun/Hellgrau"
+    first_color: "#79463C"
+    second_color: "#DFDFDF"
+    default_image: "/images/products/classic_walk/GLS200BRG/default.png"
+  -
+    sku: "GLS200BBG"
+    name: "Brombeer/Hellgrau"
+    first_color: "#93243E"
+    second_color: "#DFDFDF"
+    default_image: "/images/products/classic_walk/GLS200BBG/default.png"
+  -
+    sku: "GLS200ROG"
+    name: "Rot/Hellgrau"
+    first_color: "#DF3F41"
+    second_color: "#DFDFDF"
+    default_image: "/images/products/classic_walk/GLS200ROG/default.png"
+  -
+    sku: "GLS200SAN"
+    name: "Sand/Hellgrau"
+    first_color: "#F4E4C0"
+    second_color: "#DFDFDF"
+    default_image: "/images/products/classic_walk/GLS200SAN/default.png"
+  -
+    sku: "GLS202SGS"
+    name: "Glatt/Schwarz"
+    first_color: "#000"
+    second_color: "#000"
+    default_image: "/images/products/classic_walk/GLS202SGS/default.png"
+  -
+    sku: "GLS202WGW"
+    name: "Glatt/Weiß"
+    first_color: "#FFF"
+    second_color: "#FFF"
+    default_image: "/images/products/classic_walk/GLS202WGW/default.png"
+images:
+  -
+    path: "/images/products/classic_walk/GLS200BRG/01.jpg"
+    title: Classic Walk (Braun/Hellgrau)
+  -
+    path: "/images/products/classic_walk/GLS200MMS/01.jpg"
+    title: Classic Walk (Marine/Schwarz)
+  -
+    path: "/images/products/classic_walk/GLS200CCG/01.jpg"
+    title: Classic Walk (Caramel/Hellgrau)
+  -
+    path: "/images/products/classic_walk/GLS200AAS/01.jpg"
+    title: Classic Walk (Anthrazit/Schwarz)
+  -
+    path: "/images/products/classic_walk/GLS200SIL/01.jpg"
+    title: Classic Walk (Silber/Hellgrau)
+  -
+    path: "/images/products/classic_walk/GLS200RRG/01.jpg"
+    title: Classic Walk (Royal/Hellgrau)
+  -
+    path: "/images/products/classic_walk/GLS200SSS/01.jpg"
+    title: Classic Walk (Schwarz/Schwarz)
+  -
+    path: "/images/products/classic_walk/GLS200BRS/01.jpg"
+    title: Classic Walk (Braun/Schwarz)
+  -
+    path: "/images/products/classic_walk/GLS200ROG/01.jpg"
+    title: Classic Walk (Rot/Hellgrau)
+  -
+    path: "/images/products/classic_walk/GLS200MMG/01.jpg"
+    title: Classic Walk (Marine/Hellgrau)
+  -
+    path: "/images/products/classic_walk/GLS200AAG/01.jpg"
+    title: Classic Walk (Anthrazit/Hellgrau)
+  -
+    path: "/images/products/classic_walk/GLS202SGS/01.jpg"
+    title: Classic Walk (Glatt/Schwarz)
+  -
+    path: "/images/products/classic_walk/GLS202WGW/01.jpg"
+    title: Classic Walk (Glatt/Weiß)

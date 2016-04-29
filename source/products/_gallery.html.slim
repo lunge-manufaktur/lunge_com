@@ -1,0 +1,6 @@
+- if product.images
+  .gallery
+    - product.images.each do |image|
+      .gallery__item
+        = image_tag image.path
+        .gallery__item__title = image.title

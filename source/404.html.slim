@@ -1,0 +1,20 @@
+---
+title: 404 - Seite nicht gefunden
+---
+
+.title__container
+  .title__inner
+    h1 Fehler 404
+    h4 Seite nicht gefunden.
+
+.panel
+  .content
+    .content-narrow.text-center
+      p
+        span
+          | Entschuldigen Sie. Scheinbar wollten Sie eine Seite oder Inhalte öffnen, die nicht existiert. Möglicherweise handelt es sich dabei um einen Fehler unsererseits - falls Sie glauben, dass dem so ist, 
+        = link_to "schreiben Sie uns", "/contact", class: "link"
+        span
+          |  und versuchen Sie bitte, das Problem zu beschreiben.
+      p Alternativ versuchen Sie es doch bitte später noch einmal.
+      = link_to "Zurück zur Startseite", "/", class: "button"

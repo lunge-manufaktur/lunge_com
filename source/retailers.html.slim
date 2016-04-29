@@ -1,0 +1,109 @@
+---
+title: Fachhändler vor Ort / Lunge Manufaktur
+keywords: händler, kaufen, fachhändler, fachhandel, bezugsquellen, geschäfte, wo kaufen
+description: Finden Sie einen Fachhändler, der Lunge Schuhe führt, in Ihrer Nähe.
+section: retailers
+---
+
+.title__container
+  .title__inner
+    h1 Fachhändler vor Ort
+    p Finden Sie einen Lunge-Fachhändler in Ihrer Nähe und nehmen Sie die kompetente Beratung vor Ort in Anspruch.
+
+.map#map
+#listings
+  .map__list
+
+.panel.panel--odd
+  .content
+    .content-narrow.text-center
+      h4 Kein Händler in Ihrer Nähe?
+      p Bestellen Sie bequem bei uns im Shop. Versandkostenfrei und ohne Risiko.
+      = link_to "zum Shop", "/products", class: "button"
+
+- content_for :custom_assets
+  = javascript_include_tag "https://maps.googleapis.com/maps/api/js?key=AIzaSyAGLRt1xAtAgjvg9qJURzumMJw_JpfwHVg&callback=initMap", async: true, defer: true
+
+javascript:
+  var map;
+  function initMap() {
+    map = new google.maps.Map(document.getElementById('map'), {
+      center: {lat: 50.974, lng: 11.0326},
+      zoom: 6,
+      scrollwheel: false
+    });
+
+    var infowindow = null;
+
+    $.getJSON( 'retailers.geojson', function( data ) {
+      var locations = data.features;
+      console.log(locations);
+
+      $.each( locations, function( index, location ) {
+        var latlng = {lat: location.geometry.coordinates[1], lng: location.geometry.coordinates[0]};
+        var id = location.properties.id;
+
+        var marker = new google.maps.Marker({
+          position: latlng,
+          animation: google.maps.Animation.DROP,
+          map: map,
+          title: 'Hello World!'
+        });
+
+        var popupContent =
+        '<div class="popup__content">' +
+          '<h4>' + location.properties.name + '</h3>' +
+          '<p>' +
+          '<label>Adresse</label>' +
+          location.properties.address + '<br>' +
+          location.properties.zip + ' ' + location.properties.city + '<br>' +
+          location.properties.country +
+          '</p>' +
+          '<p>' +
+          '<label>Telefon</label>' +
+          location.properties.phone +
+          '</p>' +
+          '<p>'+
+          '<a class="link" href="' + encodeURI('http://' + location.properties.website) + '" target="_blank">Website</a>' +
+          '</p>' +
+        '</div>'
+
+        var infowindow = new google.maps.InfoWindow({
+          content: popupContent,
+          maxWidth: 300
+        })
+
+        marker.addListener('click', function() {
+          infowindow.open(map, marker);
+        });
+
+
+
+        $('.map__list').append(
+          '<div class="map__list__item">' +
+            '<h4 class="map__list__item__title">' + location.properties.name + '</h3>' +
+            '<p>' +
+              location.properties.address + '<br>' +
+              location.properties.zip + ' ' + location.properties.city + '<br>' +
+              location.properties.country +
+            '</p>' +
+            '<p>' +
+              'Tel.: ' + location.properties.phone +
+            '</p>' +
+            '<p>'+
+              '<a class="map__list__item__action link" href="' + encodeURI('http://' + location.properties.website) + '" target="_blank">Website</a>' +
+            '</p>' +
+          '</div>'
+        );
+
+        // google.maps.event.addDomListener(document.getElementById("map__list__item__link__" + id), "click", function(ev) {
+        //  map.setCenter(marker.getPosition());
+        //  infowindow.close();
+        //  infowindow.open(map, marker);
+        // });
+        
+        console.log( location.properties.name + ' with ID ' + id + ' loaded at ' + latlng.lat + ', ' + latlng.lng );
+      }); 
+    });
+  }
+  

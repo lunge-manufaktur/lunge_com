@@ -1,0 +1,42 @@
+name: "Classic Run"
+category: "Laufschuhe"
+slug: "classic_run"
+short_description: "Der Klassiker unter den Laufschuhen und Geheimtipp anspruchsvoller Läufer."
+default_image: "/images/products/classic_run/hero/gruppe__02.jpg"
+colors:
+  -
+    sku: "STS203SWR"
+    name: "Silber/Rot/Weiß"
+    first_color: "#BD3C42"
+    second_color: "#DDD"
+  -
+    sku: "STS203RRW"
+    name: "Royal/Weiß"
+    first_color: "#385BC1"
+    second_color: "#FFF"
+  -
+    sku: "STS203GGG"
+    name: "Grün/Weiß"
+    first_color: "#A4B93A"
+    second_color: "#FFF"
+  -
+    sku: "STS203SSS"
+    name: "Schwarz/Silber"
+    first_color: "#000000"
+    second_color: "#FFF"
+images:
+  -
+    path: "/images/products/classic_run/misc/01.jpg"
+    title: "Classic Run"
+  -
+    path: "/images/products/classic_run/STS203SWR/STS203SWR__01.jpg"
+    title: Classic Run (Silber/Weiß/Rot)
+  -
+    path: "/images/products/classic_run/STS203SSS/STS203SSS__02.jpg"
+    title: Classic Walk (Schwarz/Silber)
+  -
+    path: "/images/products/classic_run/STS203RRW/STS203RRW__01.jpg"
+    title: "Classic Run (Royal/Weiß)"
+  -
+    path: "/images/products/classic_run/STS203GGG/STS203GGG__03.jpg"
+    title: "Classic Run (Grün/Weiß)"

@@ -1,0 +1,23 @@
+.flex__column {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex__item {
+}
+
+.flex__item--grow {
+  flex-grow: 1;
+}
+
+.flex__item--shrink {
+  flex-shrink: 1;
+}
+
+.flex__item--fixed {
+  flex: 0 0 auto;
+}
+
+.flex__item--expand {
+  flex: 1 1;
+}

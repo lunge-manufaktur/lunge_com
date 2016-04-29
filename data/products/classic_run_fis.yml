@@ -1,0 +1,22 @@
+name: "Classic Run Fis"
+category: "Laufschuhe"
+slug: "classic_run_fis"
+short_description: "Nicht jeder Lauf ist ein Spaziergang - doch der Fis fühlt sich auch auf schwierigstem Terrain und unbefestigten Wegen zu Hause"
+default_image: "/images/products/classic_run_fis/STW200ABB/02.jpg"
+colors:
+  -
+    sku: "STW200ABB"
+    name: "Anthrazit/Blau"
+    first_color: "#303A49"
+    second_color: "#2E57C3"
+
+images:
+  -
+    path: "images/products/classic_run_fis/STW200ABB/01.jpg"
+    title: "Classic Run Fis (Anthrazit/Blau)"
+  -
+    path: "images/products/classic_run_fis/STW200ABB/02.jpg"
+    title: "Classic Run Fis (Anthrazit/Blau)"
+  -
+    path: "images/products/classic_run_fis/STW200ABB/03.jpg"
+    title: "Classic Run Fis (Anthrazit/Blau)"
