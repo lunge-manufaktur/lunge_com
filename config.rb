@@ -61,37 +61,37 @@ require "slim"
 
 activate :directory_indexes
 
-activate :imageoptim do |options|
-  # lossy mode allowed?
-  options.allow_lossy = true
+# activate :imageoptim do |options|
+#   # lossy mode allowed?
+#   options.allow_lossy = true
 
-  # Use a build manifest to prevent re-compressing images between builds
-  options.manifest = true
+#   # Use a build manifest to prevent re-compressing images between builds
+#   options.manifest = true
 
-  # Silence problematic image_optim workers
-  options.skip_missing_workers = true
+#   # Silence problematic image_optim workers
+#   options.skip_missing_workers = true
 
-  # Cause image_optim to be in shouty-mode
-  options.verbose = false
+#   # Cause image_optim to be in shouty-mode
+#   options.verbose = false
 
-  # Setting these to true or nil will let options determine them (recommended)
-  options.nice = true
-  options.threads = true
+#   # Setting these to true or nil will let options determine them (recommended)
+#   options.nice = true
+#   options.threads = true
 
-  # Image extensions to attempt to compress
-  options.image_extensions = %w(.png .jpg .gif .svg)
+#   # Image extensions to attempt to compress
+#   options.image_extensions = %w(.png .jpg .gif .svg)
 
-  # Compressor worker options, individual optimisers can be disabled by passing
-  # false instead of a hash
-  options.advpng    = { :level => 4 }
-  options.gifsicle  = { :interlace => false }
-  options.jpegoptim = { :strip => ['all'], :max_quality => 80 }
-  options.jpegtran  = { :copy_chunks => false, :progressive => true, :jpegrescan => true }
-  options.optipng   = { :level => 7, :interlace => false }
-  options.pngcrush  = { :chunks => ['alla'], :fix => false, :brute => false }
-  options.pngout    = false
-  options.svgo      = false
-end
+#   # Compressor worker options, individual optimisers can be disabled by passing
+#   # false instead of a hash
+#   options.advpng    = { :level => 4 }
+#   options.gifsicle  = { :interlace => false }
+#   options.jpegoptim = { :strip => ['all'], :max_quality => 80 }
+#   options.jpegtran  = { :copy_chunks => false, :progressive => true, :jpegrescan => true }
+#   options.optipng   = { :level => 7, :interlace => false }
+#   options.pngcrush  = { :chunks => ['alla'], :fix => false, :brute => false }
+#   options.pngout    = false
+#   options.svgo      = false
+# end
 
 set :css_dir, 'stylesheets'
 
