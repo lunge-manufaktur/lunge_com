@@ -294,18 +294,22 @@ ul.inline-list li {
 }
 
 .supplier__figure {
-  display: flex;
-  padding: 2rem 2rem 0 0;
-  border-top: 1px solid #ddd;
-  border-right: 1px solid #ddd;
-  flex: 0 0 33%;
+  @include tablet-portrait {
+    display: flex;
+    padding: 2rem 2rem 0 0;
+    border-top: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+    flex: 0 0 33%;
+  }
 }
 
 .feature__figure {
-  padding: 2rem 2rem 0 0;
-  border-top: 1px solid #ddd;
-  border-right: 1px solid #ddd;
-  flex: 0 0 33%;
+  @include tablet-portrait {
+    padding: 2rem 2rem 0 0;
+    border-top: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+    flex: 0 0 33%;
+  }
 }
 
 .supplier__logo {
@@ -317,12 +321,24 @@ ul.inline-list li {
   }
 }
 
-.supplier__description,
-.feature__description {
-  padding: 2rem 0 0 2rem;
-  border-top: 1px solid #ddd;
-  flex: 1 1 auto;
+.supplier__description {
   width: 100%;
+
+  @include tablet-portrait {
+    padding: 2rem 0 0 2rem;
+    border-top: 1px solid #ddd;
+    flex: 1 1 auto;
+  }
+}
+
+.feature__description {
+  width: 100%;
+
+  @include tablet-portrait {
+    padding: 2rem 0 0 2rem;
+    border-top: 1px solid #ddd;
+    flex: 1 1 auto;
+  }
 }
 
 .panel {
