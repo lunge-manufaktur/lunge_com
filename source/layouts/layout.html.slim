@@ -21,16 +21,16 @@ html
     = stylesheet_link_tag "https://fonts.googleapis.com/css?family=Merriweather:400,700,400italic,700italic|Inconsolata:400,700"
   
   body class=page_classes
-    = partial "offcanvas"
+    = partial "/partials/offcanvas"
     .oncanvas
-        = partial "header"
+        = partial "/partials/header"
         = yield_content :hero
         .main
             = yield
-        = partial "footer"
+        = partial "/partials/footer"
 
     = javascript_include_tag "all"
     = javascript_include_tag "https://widgets.shopifyapps.com/assets/widgets/embed/client.js", id: "ShopifyEmbedScript"
     = yield_content :custom_assets
     
-    = partial "cart"
+    = partial "/partials/cart"
