@@ -2,27 +2,28 @@
   <div class="content">
     <div class="row between-xs reverse-xs">
       <div class="col-xs-12 col-sm-6">
-        <form id="contact-form" name="contact" netlify netlify-honeypot="bot-trap">
+        <form action="https://getsimpleform.com/messages?form_api_token=8dd3a2f925d838c6c128f0210200a754" method="post">
+          <!-- the redirect_to is optional, the form will redirect to the referrer on submission -->
+          <input type='hidden' name='redirect_to' value='http://professor-dorothy-70463.netlify.com/done' />
+          <!-- all your input fields here.... -->
           <div class="input-group">
             <label>Ihre E-Mail</label>
-            <input type="email" name="E-Mail">
-            <label class="hidden">Bot trap</label>
-            <input class="hidden" name="bot-trap"></label>
+            <input type="email" name="email">
           </div>
 
           <div class="input-group">
             <label>Name</label>
-            <input type="text" name="Name">
+            <input type="text" name="name">
           </div>
 
           <div class="input-group">
             <label>Betreff</label>
-            <input type="text" name="Betreff">
+            <input type="text" name="subject">
           </div>
 
           <div class="input-group">
             <label>Nachricht</label>
-            <textarea rows=16 name="Nachricht"></textarea>
+            <textarea rows=16 name="message"></textarea>
           </div>
 
           <button id="submit-button" type="submit" class="button">Absenden</button>
