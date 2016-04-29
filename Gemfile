@@ -2,8 +2,6 @@
 # the following line to use "http://" instead
 source 'https://rubygems.org'
 
-ruby "2.3.0"
-
 gem "middleman", "~> 3.4.1"
 
 # Live-reloading plugin
@@ -16,6 +14,5 @@ gem "wdm", "~> 0.1.0", :platforms => [:mswin, :mingw]
 gem "tzinfo-data", platforms: [:mswin, :mingw, :jruby]
 
 gem "slim"
-gem "sass-rails"
 gem "middleman-autoprefixer"
 gem "middleman-imageoptim"
