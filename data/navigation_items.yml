@@ -1,0 +1,16 @@
+-
+  name: Produkte
+  url: "/products"
+  section: products
+-
+  name: Manufaktur
+  url: "/about"
+  section: manufacture
+-
+  name: Händler
+  url: "/retailers"
+  section: retailers
+-
+  name: Support
+  url: "/support"
+  section: support

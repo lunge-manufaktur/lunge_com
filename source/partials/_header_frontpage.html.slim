@@ -2,14 +2,9 @@ header.header--frontpage
   = link_to (image_tag "logo_alternative.svg", class: "logo__image"), "/", class: "logo"
   nav.main-nav
     ul
-      li
-        = nav_link_to "Produkte & Shop", "/products", class: "main-nav__link", section: "products"
-      li
-        = nav_link_to "Manufaktur", "/about", class: "main-nav__link", section: "manufacture"
-      li
-        = nav_link_to "Händler", "/retailers", class: "main-nav__link", section: "retailers"
-      li
-        = nav_link_to "Support", "/support", class: "main-nav__link", section: "support"
+      - data.navigation_items.each do |item|
+        li
+          = nav_link_to item.name, item.url, class: "main-nav__link", section: item.section
       li
         = link_to "Warenkorb", "#", class: "main-nav__link main-nav__link--highlight", data: { action: "toggle-cart-content" }
 
