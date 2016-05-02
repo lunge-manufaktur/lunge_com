@@ -41,3 +41,25 @@ section: products
         p Beispiel gefällig? Unsere Schnürsenkel sind gestrickt mit innenliegender Verknotung. Die Elastizität beträgt bei uns 17% statt der üblichen 2-3 %. Bei Beschädigung reissen unsere Senkel nicht gleich durch.
         p Fersenkappen werden bei uns einzeln und individuell für jede halbe Größe geformt. Durch den guten Halt in jeder Größe kann die Ferse den Fuß sicher zur Abwicklung führen. Wir verwenden dabei umweltfreundliches Recyclingmaterial aus geschredderten CDs.
         p Dies sind nur zwei Beispiele unserer Detailverliebtheit, die dazu führt, dass wir jeden Fertigungsschritt und jede Schuhkomponente mit größter Sorgfalt und Präzision durchführen und bearbeiten.
+
+.panel.panel--emphasis
+  .content
+    .panel__inner
+      .row.between-xs
+        .col-xs-12.col-sm-4
+          = image_tag "/images/misc/shopping_cart.svg", class: "hero-icon"
+          h2 Im Shop bestellen
+          p Bestellen Sie unsere Schuhe und Einlegesohlen bequem von zu Hause. Selbstverständlich inklusive Umtausch- und Rückgaberecht, kostenlosem DHL-Versand und zahlreichen Zahlungsmethoden.
+          = link_to "Produkte ansehen", "/products", class: "button"
+          hr
+          ul.inline-list
+            li = image_tag "/images/payment/Paypal-dark.svg"
+            li = image_tag "/images/payment/Visa-dark.svg"
+            li = image_tag "/images/payment/MasterCard-dark.svg"
+            li = image_tag "/images/payment/AmericanExpress-dark.svg"
+            li = image_tag "/images/payment/Sepa-dark.svg"
+        .col-xs-12.col-sm-4
+          = image_tag "/images/misc/map_pin.svg", class: "hero-icon"
+          h2 Fachhändler vor Ort
+          p Ganz gleich ob Lauf- oder Bequemschuhe - Finden Sie einen Lunge-Fachhändler in Ihrer Nähe und nehmen Sie die kompetente Beratung vor Ort in Anspruch.
+          = link_to "Händler suchen", "/retailers", class: "button"
