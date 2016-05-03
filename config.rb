@@ -116,3 +116,10 @@ configure :build do
   # Or use a different image path
   # set :http_prefix, "/Content/images/"
 end
+
+after_build do |builder|
+  src = File.join(config[:source],"_redirects")
+  dst = File.join(config[:build_dir],"_redirects")
+  builder.source_paths << File.dirname(__FILE__)
+  builder.copy_file(src,dst)
+end
