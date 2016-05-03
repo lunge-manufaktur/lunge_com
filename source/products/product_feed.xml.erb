@@ -10,7 +10,7 @@ layout: false
   <description>Beschreibung Ihres Contents</description>
   <% data.products.classic_run.colors.each do |variation| %>
     <item>
-      <title><%= data.products.classic_run.name %></title>
+      <title><%= "#{data.products.classic_run.name} (#{variation.name})" %></title>
       <link><%= "http://www.lunge.com/products/#{data.products.classic_run.slug}" %></link>
       <description><%= data.products.classic_run.short_description %></description>
       <g:image_link><%= "http://www.lunge.com#{variation.default_image}" %></g:image_link>
@@ -18,6 +18,7 @@ layout: false
       <g:condition>neu</g:condition>
       <g:id><%= variation.sku %></g:id>
       <g:mpn><%= variation.sku %></g:mpn>
+      <g:color><%= variation.name %></g:color>
       <g:google_product_category>187</g:google_product_category>
       <g:availability>in stock</g:availability>
       <g:brand>Lunge</g:brand>
@@ -30,7 +31,7 @@ layout: false
   <% end %>
   <% data.products.classic_walk.colors.each do |variation| %>
     <item>
-      <title><%= data.products.classic_walk.name %></title>
+      <title><%= "#{data.products.classic_walk.name} (#{variation.name})" %></title>
       <link><%= "http://www.lunge.com/products/#{data.products.classic_walk.slug}" %></link>
       <description><%= data.products.classic_walk.short_description %></description>
       <g:image_link><%= "http://www.lunge.com#{variation.default_image}" %></g:image_link>
@@ -38,6 +39,7 @@ layout: false
       <g:condition>neu</g:condition>
       <g:id><%= variation.sku %></g:id>
       <g:mpn><%= variation.sku %></g:mpn>
+      <g:color><%= variation.name %></g:color>
       <g:google_product_category>187</g:google_product_category>
       <g:availability>in stock</g:availability>
       <g:brand>Lunge</g:brand>
@@ -50,7 +52,7 @@ layout: false
   <% end %>
   <% data.products.evo_run.colors.each do |variation| %>
     <item>
-      <title><%= data.products.evo_run.name %></title>
+      <title><%= "#{data.products.evo_run.name} (#{variation.name})" %></title>
       <link><%= "http://www.lunge.com/products/#{data.products.evo_run.slug}" %></link>
       <description><%= data.products.evo_run.short_description %></description>
       <g:image_link><%= "http://www.lunge.com#{variation.default_image}" %></g:image_link>
@@ -58,6 +60,7 @@ layout: false
       <g:condition>neu</g:condition>
       <g:id><%= variation.sku %></g:id>
       <g:mpn><%= variation.sku %></g:mpn>
+      <g:color><%= variation.name %></g:color>
       <g:google_product_category>187</g:google_product_category>
       <g:availability>in stock</g:availability>
       <g:brand>Lunge</g:brand>
@@ -70,7 +73,7 @@ layout: false
   <% end %>
   <% data.products.classic_run_fis.colors.each do |variation| %>
     <item>
-      <title><%= data.products.classic_run_fis.name %></title>
+      <title><%= "#{data.products.classic_run_fis.name} (#{variation.name})" %></title>
       <link><%= "http://www.lunge.com/products/#{data.products.classic_run_fis.slug}" %></link>
       <description><%= data.products.classic_run_fis.short_description %></description>
       <g:image_link><%= "http://www.lunge.com#{variation.default_image}" %></g:image_link>
@@ -78,6 +81,7 @@ layout: false
       <g:condition>neu</g:condition>
       <g:id><%= variation.sku %></g:id>
       <g:mpn><%= variation.sku %></g:mpn>
+      <g:color><%= variation.name %></g:color>
       <g:google_product_category>187</g:google_product_category>
       <g:availability>in stock</g:availability>
       <g:brand>Lunge</g:brand>
