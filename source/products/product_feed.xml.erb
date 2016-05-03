@@ -1,0 +1,68 @@
+---
+layout: false
+---
+
+<?xml version="1.0"?>
+<rss version="2.0" xmlns:g="http://base.google.com/ns/1.0">
+<channel>
+  <title>Name Ihres Datenfeeds</title>
+  <link>http://www.ihrebeispielurl.de</link>
+  <description>Beschreibung Ihres Contents</description>
+  <% data.products.classic_run.colors.each do |variation| %>
+    <item>
+      <title><%= data.products.classic_run.name %></title>
+      <link><%= "http://www.lunge.com/products/#{data.products.classic_run.slug}" %></link>
+      <description><%= data.products.classic_run.short_description %></description>
+      <g:image_link><%= "http://www.lunge.com#{variation.default_image}" %></g:image_link>
+      <g:price><%= variation.price %></g:price>
+      <g:condition>neu</g:condition>
+      <g:id><%= variation.sku %></g:id>
+      <g:google_product_category>187</g:google_product_category>
+      <g:availability>in stock</g:availability>
+      <g:brand>Lunge</g:brand>
+    </item>
+  <% end %>
+  <% data.products.classic_walk.colors.each do |variation| %>
+    <item>
+      <title><%= data.products.classic_walk.name %></title>
+      <link><%= "http://www.lunge.com/products/#{data.products.classic_walk.slug}" %></link>
+      <description><%= data.products.classic_walk.short_description %></description>
+      <g:image_link><%= "http://www.lunge.com#{variation.default_image}" %></g:image_link>
+      <g:price><%= variation.price %></g:price>
+      <g:condition>neu</g:condition>
+      <g:id><%= variation.sku %></g:id>
+      <g:google_product_category>187</g:google_product_category>
+      <g:availability>in stock</g:availability>
+      <g:brand>Lunge</g:brand>
+    </item>
+  <% end %>
+  <% data.products.evo_run.colors.each do |variation| %>
+    <item>
+      <title><%= data.products.evo_run.name %></title>
+      <link><%= "http://www.lunge.com/products/#{data.products.evo_run.slug}" %></link>
+      <description><%= data.products.evo_run.short_description %></description>
+      <g:image_link><%= "http://www.lunge.com#{variation.default_image}" %></g:image_link>
+      <g:price><%= variation.price %></g:price>
+      <g:condition>neu</g:condition>
+      <g:id><%= variation.sku %></g:id>
+      <g:google_product_category>187</g:google_product_category>
+      <g:availability>in stock</g:availability>
+      <g:brand>Lunge</g:brand>
+    </item>
+  <% end %>
+  <% data.products.classic_run_fis.colors.each do |variation| %>
+    <item>
+      <title><%= data.products.classic_run_fis.name %></title>
+      <link><%= "http://www.lunge.com/products/#{data.products.classic_run_fis.slug}" %></link>
+      <description><%= data.products.classic_run_fis.short_description %></description>
+      <g:image_link><%= "http://www.lunge.com#{variation.default_image}" %></g:image_link>
+      <g:price><%= variation.price %></g:price>
+      <g:condition>neu</g:condition>
+      <g:id><%= variation.sku %></g:id>
+      <g:google_product_category>187</g:google_product_category>
+      <g:availability>in stock</g:availability>
+      <g:brand>Lunge</g:brand>
+    </item>
+  <% end %>
+</channel>
+</rss>

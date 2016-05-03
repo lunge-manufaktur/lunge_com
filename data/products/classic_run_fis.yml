@@ -9,6 +9,8 @@ colors:
     name: "Anthrazit/Blau"
     first_color: "#303A49"
     second_color: "#2E57C3"
+    default_image: "/images/products/evo_run/LTS202GWH/default.png"
+    price: 220
 
 images:
   -

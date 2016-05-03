@@ -10,102 +10,120 @@ colors:
     first_color: "#000"
     second_color: "#000"
     default_image: "/images/products/classic_walk/GLS200SSS/default.png"
+    price: 200
+    price: 200
   -
     sku: "GLS200AAS"
     name: "Anthrazit/Schwarz"
     first_color: "#656670"
     second_color: "#000"
     default_image: "/images/products/classic_walk/GLS200AAS/default.png"
+    price: 200
   -
     sku: "GLS200MMS"
     name: "Marine/Schwarz"
     first_color: "#31335A"
     second_color: "#000"
     default_image: "/images/products/classic_walk/GLS200MMS/default.png"
+    price: 200
   -
     sku: "GLS200BRS"
     name: "Braun/Schwarz"
     first_color: "#79463C"
     second_color: "#000"
     default_image: "/images/products/classic_walk/GLS200BRS/default.png"
+    price: 200
   -
     sku: "GLS200BBS"
     name: "Brombeer/Schwarz"
     first_color: "#93243E"
     second_color: "#000"
     default_image: "/images/products/classic_walk/GLS200BBS/default.png"
+    price: 200
   -
     sku: "GLS200SIL"
     name: "Silber/Hellgrau"
     first_color: "#B1C0C7"
     second_color: "#DFDFDF"
     default_image: "/images/products/classic_walk/GLS200SIL/default.png"
+    price: 200
   -
     sku: "GLS200CCG"
     name: "Caramel/Hellgrau"
     first_color: "#CEA17F"
     second_color: "#DFDFDF"
     default_image: "/images/products/classic_walk/GLS200CCG/default.png"
+    price: 200
   -
     sku: "GLS200RRG"
     name: "Royal/Hellgrau"
     first_color: "#3763BC"
     second_color: "#DFDFDF"
     default_image: "/images/products/classic_walk/GLS200RRG/default.png"
+    price: 200
   -
     sku: "GLS200SSG"
     name: "Schwarz/Hellgrau"
     first_color: "#000"
     second_color: "#DFDFDF"
     default_image: "/images/products/classic_walk/GLS200SSG/default.png"
+    price: 200
   -
     sku: "GLS200AAG"
     name: "Anthrazit/Hellgrau"
     first_color: "#656670"
     second_color: "#DFDFDF"
     default_image: "/images/products/classic_walk/GLS200AAG/default.png"
+    price: 200
   -
     sku: "GLS200MMG"
     name: "Marine/Hellgrau"
     first_color: "#31335A"
     second_color: "#DFDFDF"
     default_image: "/images/products/classic_walk/GLS200MMG/default.png"
+    price: 200
   -
     sku: "GLS200BRG"
     name: "Braun/Hellgrau"
     first_color: "#79463C"
     second_color: "#DFDFDF"
     default_image: "/images/products/classic_walk/GLS200BRG/default.png"
+    price: 200
   -
     sku: "GLS200BBG"
     name: "Brombeer/Hellgrau"
     first_color: "#93243E"
     second_color: "#DFDFDF"
     default_image: "/images/products/classic_walk/GLS200BBG/default.png"
+    price: 200
   -
     sku: "GLS200ROG"
     name: "Rot/Hellgrau"
     first_color: "#DF3F41"
     second_color: "#DFDFDF"
     default_image: "/images/products/classic_walk/GLS200ROG/default.png"
+    price: 200
   -
     sku: "GLS200SAN"
     name: "Sand/Hellgrau"
     first_color: "#F4E4C0"
     second_color: "#DFDFDF"
     default_image: "/images/products/classic_walk/GLS200SAN/default.png"
+    price: 200
   -
     sku: "GLS202SGS"
     name: "Glatt/Schwarz"
     first_color: "#000"
     second_color: "#000"
     default_image: "/images/products/classic_walk/GLS202SGS/default.png"
+    price: 230
   -
     sku: "GLS202WGW"
     name: "Glatt/Weiß"
     first_color: "#FFF"
     second_color: "#FFF"
     default_image: "/images/products/classic_walk/GLS202WGW/default.png"
+    price: 230
 images:
   -
     path: "/images/products/classic_walk/GLS200BRG/01.jpg"
