@@ -148,15 +148,18 @@ ul.footer-list li a {
 a.made-in-germany__link {
   @include transition;
   display: block;
+}
+
+a.made-in-germany__link:hover {
+  transform: rotate(7deg);
+}
+
+img.made-in-germany__logo {
   width: 100px;
 
   @include tablet-portrait {
     width: 180px;
   }
-}
-
-a.made-in-germany__link:hover {
-  transform: rotate(7deg);
 }
 
 /* HERO */
