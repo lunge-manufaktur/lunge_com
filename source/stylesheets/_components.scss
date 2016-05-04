@@ -19,11 +19,13 @@ hr {
 
 /* LOGO */
 .logo {
+  display: block;
   flex: 0 0 auto;
   height: 1.7rem;
+  width: auto;
 
   @include tablet-landscape {
-    height: 2.5rem;
+    height: 1.7rem;
   }
 }
 
@@ -172,7 +174,7 @@ img.made-in-germany__logo {
   flex-direction: column;
   align-items: center;
   background-color: #DCEAF3;
-  min-height: calc(100vh - 2rem);
+  min-height: calc(100vh - 5rem);
 
   @include tablet-landscape {
     flex-direction: row-reverse;
@@ -206,6 +208,10 @@ aside.hero__text {
   background-position: center;
   background-size: cover;
   min-height: 66vh;
+
+  @include tablet-landscape {
+    min-height: calc(100vh - 5rem);
+  }
 }
 
 
@@ -839,6 +845,9 @@ iframe.responsive--4x3 {
   background-color: $title-background;
   padding: $gutter-large*2 0;
   text-align: center;
+  min-height: 50vh;
+  display: flex;
+  align-items: center;
 
   @include desktop {
     padding: $gutter-large*3 0;

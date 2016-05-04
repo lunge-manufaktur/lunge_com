@@ -103,7 +103,7 @@ section: products
           - data.products.gomax.colors.each do |color|
             li
               .color-icon style="background: linear-gradient(180deg, #{color.first_color}, #{color.first_color} 65%, #{color.second_color} 66%, #{color.second_color} 100%); border: 0px solid #{color.first_color}" title=(color.name)
-        = link_to "Ansehen und bestellen", "/products/#{data.products.classic_run_fis.slug}", class: "button"
+        = link_to "Ansehen und bestellen", "/products/#{data.products.gomax.slug}", class: "button"
 
 .panel.panel--emphasis
   .content

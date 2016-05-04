@@ -13,8 +13,8 @@ html
     = partial "/partials/offcanvas"
     .oncanvas
         = partial "/partials/header_frontpage"
-        = yield_content :hero
-        .main
+        main
+            = yield_content :hero
             = yield
         = partial "/partials/footer"
 
