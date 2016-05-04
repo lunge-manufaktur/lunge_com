@@ -20,11 +20,15 @@ hr {
 /* LOGO */
 .logo {
   flex: 0 0 auto;
-  height: 2.5rem;
+  height: 1.7rem;
+
+  @include tablet-landscape {
+    height: 2.5rem;
+  }
 }
 
 .logo__image {
-  height: 2.5rem;
+  height: inherit;
 }
 
 
