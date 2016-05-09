@@ -16,3 +16,7 @@ title = title || "Lunge Manufaktur"
 
 / favicon
 link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico"
+
+/ canonical link
+- if current_page.data.canonical_link
+  link rel="canonical" href=current_page.data.canonical_link
