@@ -20,7 +20,7 @@ section: products
       aside.panel__text
         .panel__text__inner
           h2 80 Prozent EVA-Anteil für eine dauerhafte Federung
-          p Die echte Besonderheit des C-Durs (Männer) und a-Molls (Frauen) ist das hochwertige Mittelsohlenmaterial EVA, das bei uns in der höchsten Güte verarbeitet wird. Was viele Läufer nicht wissen: Der Anteil und die Qualität von EVA bestimmen die wesentlichen Eigenschaften eines Laufschuhs.
+          p Die echte Besonderheit des Classic Runs ist das hochwertige Mittelsohlenmaterial EVA, das bei uns in der höchsten Güte verarbeitet wird. Was viele Läufer nicht wissen: Der Anteil und die Qualität von EVA bestimmen die wesentlichen Eigenschaften eines Laufschuhs.
           p Herkömmliche Laufschuhe werden oft nur mit einem 20-prozentigen EVA-Anteil hergestellt. Bei unseren Laufschuhen dagegen besteht die Mittelsohle aus einem Anteil von 80 Prozent. Diese hohe Materialqualität macht unseren Laufschuh besonders elastisch und sorgt für seine dauerhafte Federung. Die Mittelsohle hat eine sogenannte „progressive Federkennlinie“, was bedeutet, dass die Federwirkung mit zunehmenden Federweg stärker ausgeprägt ist und besser zur Geltung kommt.
 
 .panel
@@ -31,7 +31,7 @@ section: products
       aside.panel__text
         .panel__text__inner
           h2 Ein himmlisches Gefühl
-          p Wie bei allen Lunge-Schuhen, kommen auch beim C-Dur / a-Moll nur die feinsten Materialien zum Einsatz – selbstverständlich frei von Schadstoffen und Ökotex 100-zertifiziert. So werden Sie die sanfte Innenauskleidung dieses Modells kaum spüren, während sie Ihrem Fuß sicheren, rutsch- und scheuerfreien Halt bietet.
+          p Wie bei allen Lunge-Schuhen, kommen auch beim Classic Run nur die feinsten Materialien zum Einsatz – selbstverständlich frei von Schadstoffen und Ökotex 100-zertifiziert. So werden Sie die sanfte Innenauskleidung dieses Modells kaum spüren, während sie Ihrem Fuß sicheren, rutsch- und scheuerfreien Halt bietet.
 
 .panel
   .content
@@ -41,7 +41,7 @@ section: products
       aside.panel__text
         .panel__text__inner
           h2 Vielseitigkeit als Spezialität
-          p Der C-Dur bzw. a-Moll ist ein überaus universeller und vielseitiger Laufschuh, der die meisten Fußformen und individuellen Anforderungen verschiedener Laufstile abdeckt. So zeichnet sich die dezente Pronationsstütze an der Innenseite durch einen flexiblen Wirkungsgrad aus, der den Fuß sanft und kontrolliert führt, wodurch sich dieser Schuh sowohl für Neutralläufer als auch moderate Pronierer eignet. Im Zweifel hilft Ihnen einer unserer Händler in ganz Deutschland gerne mit einer fachkundigen Beratung und Videoanalyse weiter.
+          p Der Classic Run ist ein überaus universeller und vielseitiger Laufschuh, der die meisten Fußformen und individuellen Anforderungen verschiedener Laufstile abdeckt. So zeichnet sich die dezente Pronationsstütze an der Innenseite durch einen flexiblen Wirkungsgrad aus, der den Fuß sanft und kontrolliert führt, wodurch sich dieser Schuh sowohl für Neutralläufer als auch moderate Pronierer eignet. Im Zweifel hilft Ihnen einer unserer Händler in ganz Deutschland gerne mit einer fachkundigen Beratung und Videoanalyse weiter.
 
 .panel
   .content
@@ -51,7 +51,7 @@ section: products
       aside.panel__text
         .panel__text__inner
           h2 Stetige Verbesserungen
-          p Ab sofort sind die Modelle C-Dur & a-Moll in der verbesserten Variante in Silber/Weiß/Rot verfügbar, welche mit einer neuen Laufsohle, sanfterem Innenfutter und verbessertem Schutz bei Feuchtigkeit daher kommt. Zunächst bietet die neue Laufsohle noch mehr Griffigkeit und Elastizität – und das bei gleichbleibend geringer Profiltiefe, wodurch sich weniger Schmutz ansammeln wird. Das neue Innenfutter überzeugt durch einen feinen Velourbezug, welcher den Maßstab für Komfort noch etwas höher setzt und Sie regelrecht in den Schuh hinein gleiten lässt während die Scheuerbeständigkeit weiter optimiert wurde. Weiterhin zeichnen sich die neuen Materialien durch eine erhöhte Resistenz gegen Feuchtigkeit aus, wodurch Nässe zukünftig deutlich schwerer in den C-Dur / a-Moll eindringen kann.
+          p Lassen Sie sich nicht von der Tatsache irritieren, dass der Classic Run bereits seit 2008 verkauft wird - es handelt sich hierbei um einen Laufschuh mit bewährten Stärken, der dennoch stetig angepasst und verbessert wurde. So haben wir im Laufe der Jahre verschiedenste Komponenten und Details des Schuhs verbessert - von der Laufsohle, über die Schnürsenkel bis hin zum Innenfutter. Bei uns stehen Material und Fertigungsweise immer auf dem Prüfstand.
 
 .gallery.scroll--horizontal
   - data.products.classic_run.images.each do |image|
@@ -116,3 +116,17 @@ section: products
             span Herren: US 8 - US 15
       .col-xs-12.col-md-6
         = partial "products/add_to_cart_help"
+
+
+script type="application/ld+json"
+  | {
+  |   "@context" : "http://schema.org",
+  |   "@type" : "Product",
+  |   "name" : "Classic Run",
+  |   "image" : "https://www.lunge.com/images/products/classic_run/misc/01.jpg",
+  |   "description" : "Der Klassiker in unserem Sortiment und Geheimtipp anspruchsvoller Läufer. Der Classic Run hat sich über Jahre als Laufschuh der Extraklasse bewährt und wurde dennoch stetig verbessert.",
+  |   "offers" : {
+  |     "@type" : "Offer",
+  |     "price" : "€220.00"
+  |   }
+  | }
