@@ -79,3 +79,21 @@ section: products
             span Herren: US 8 - US 15 (EUR 39⅓ - EUR 48⅓)
       .col-xs-12.col-sm-6
           = partial "products/add_to_cart_help"
+
+script type="application/ld+json"
+  | {
+  |   "@context": "http://schema.org",
+  |   "@type": "Product",
+  |   "name": "Evo Run",
+  |   "description": "Unser Laufschuh für Neutralläufer, die keine Stützwirkung benötigen und Wert auf besonders komfortable Dämpfung legen.",
+  |   "brand": {
+  |     "@type": "Brand",
+  |     "name": "Lunge"
+  |   },
+  |   "offers": {
+  |     "@type": "Offer",
+  |     "price": "180.00",
+  |     "priceCurrency": "EUR",
+  |     "availability": "InStock"
+  |   }
+  | }

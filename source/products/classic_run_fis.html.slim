@@ -85,3 +85,21 @@ section: products
             span Herren: US 8 - US 15 (EUR 39⅓ - EUR 48⅓)
       .col-xs-12.col-sm-6
           = partial "products/add_to_cart_help"
+
+script type="application/ld+json"
+  | {
+  |   "@context": "http://schema.org",
+  |   "@type": "Product",
+  |   "name": "Classic Run Fis",
+  |   "description": "Nicht jeder Lauf ist ein Spaziergang - doch der Fis fühlt sich auch auf schwierigstem Terrain und unbefestigten Wegen zu Hause.",
+  |   "brand": {
+  |     "@type": "Brand",
+  |     "name": "Lunge"
+  |   },
+  |   "offers": {
+  |     "@type": "Offer",
+  |     "price": "220.00",
+  |     "priceCurrency": "EUR",
+  |     "availability": "InStock"
+  |   }
+  | }
