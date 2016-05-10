@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="60px" height="52px" viewBox="0 0 60 52" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 3.7.2 (28276) - http://www.bohemiancoding.com/sketch -->
+    <title>Slice 1</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="cart-3" transform="translate(0.000000, -8.000000)" fill="#B6BE00">
+            <g id="Layer_3" transform="translate(0.000000, 8.000000)">
+                <g id="Group">
+                    <path d="M59,0 L50.174,0 C49.713,0 49.311,0.316 49.202,0.765 L45.996,14 L1,14 C0.682,14 0.382,14.151 0.193,14.408 C0.005,14.666 -0.05,14.997 0.046,15.301 L7.611,39.301 C7.743,39.717 8.129,40 8.565,40 L39.697,40 L39.213,42 L12,42 C9.243,42 7,44.243 7,47 C7,49.757 9.243,52 12,52 C14.757,52 17,49.757 17,47 C17,45.87 16.609,44.838 15.974,44 L35.025,44 C34.391,44.838 34,45.87 34,47 C34,49.757 36.243,52 39,52 C41.757,52 44,49.757 44,47 C44,45.015 42.829,43.312 41.149,42.505 L41.901,39.402 C41.926,39.346 41.958,39.295 41.973,39.235 L47.721,15.377 L50.96,2 L59,2 C59.552,2 60,1.553 60,1 C60,0.447 59.552,0 59,0 L59,0 Z" id="Shape"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
