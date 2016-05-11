@@ -10,11 +10,13 @@ sitemap_changefreq: daily
 
 .title__container
   .title__inner
-    h1 Produkte
+    h1 Produkte & Shop
     p Ganz gleich ob Laufschuhe, Bequemschuhe oder Einlegesohlen - Lunge bietet Schuhe und Zubehör sowohl für den Laufsport als auch für den ganz alltäglichen Einsatz in Beruf und Freizeit.
     ul
       li
         = link_to "Warum Lunge?", "/products/features", class: "link"
+  .content
+    = partial "partials/shop_features"
 
 .panel
   .content

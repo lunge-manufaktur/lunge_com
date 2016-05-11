@@ -42,22 +42,25 @@ sitemap_priority: 0.9
 
 .panel.panel--emphasis
   .content
-    .panel__inner
-      .row.between-xs
-        .col-xs-12.col-sm-5.col-md-4
-          = image_tag "/images/misc/shopping_cart.svg", class: "hero-icon"
-          h2 Im Shop bestellen
+    .wheretobuy
+      .wheretobuy__item
+        .wheretobuy__item__figure
+          = image_tag "/images/misc/shopping_bags.svg", class: "wheretobuy__item__image"
+        .wheretobuy__item__description
+          h2.text-center Im Shop bestellen
           p Bestellen Sie unsere Schuhe und Einlegesohlen bequem von zu Hause. Selbstverständlich inklusive Umtausch- und Rückgaberecht, kostenlosem DHL-Versand und zahlreichen Zahlungsmethoden.
           = link_to "Produkte ansehen", "/products", class: "button"
           hr
-          ul.inline-list
-            li = image_tag "/images/payment/Paypal-dark.svg"
-            li = image_tag "/images/payment/Visa-dark.svg"
-            li = image_tag "/images/payment/MasterCard-dark.svg"
-            li = image_tag "/images/payment/AmericanExpress-dark.svg"
-            li = image_tag "/images/payment/Sepa-dark.svg"
-        .col-xs-12.col-sm-5.col-md-4
-          = image_tag "/images/misc/map_pin.svg", class: "hero-icon"
-          h2 Fachhändler vor Ort
+          ul.inline-list.inline-list--center
+            li = image_tag "/images/payment/Paypal-dark.svg", class: "payment-icon"
+            li = image_tag "/images/payment/Visa-dark.svg", class: "payment-icon"
+            li = image_tag "/images/payment/MasterCard-dark.svg", class: "payment-icon"
+            li = image_tag "/images/payment/AmericanExpress-dark.svg", class: "payment-icon"
+            li = image_tag "/images/payment/Sepa-dark.svg", class: "payment-icon"
+      .wheretobuy__item
+        .wheretobuy__item__figure
+          = image_tag "/images/misc/map_pin--black.svg", class: "wheretobuy__item__image"
+        .wheretobuy__item__description
+          h2.text-center Fachhändler vor Ort
           p Ganz gleich ob Lauf- oder Bequemschuhe - Finden Sie einen Lunge-Fachhändler in Ihrer Nähe und nehmen Sie die kompetente Beratung vor Ort in Anspruch.
           = link_to "Händler suchen", "/retailers", class: "button"
