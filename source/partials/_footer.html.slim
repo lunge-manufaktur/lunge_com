@@ -30,7 +30,10 @@ footer
           li = link_to "Kontakt", "/contact"
           li = link_to "Impressum", "/impressum"
 
+
     .footer__info
       .footer__info-item
         = link_to "/about", class: "made-in-germany__link" do
           = image_tag "/images/misc/made_in_germany.svg", class: "made-in-germany__logo"
+
+  = partial "partials/newsletter_signup_form"

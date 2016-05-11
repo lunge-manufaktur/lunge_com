@@ -20,3 +20,29 @@ input:focus,
 textarea:focus {
   border-color: $accent-color;
 }
+
+form.newsletter-signup {
+  border-top: 1px solid #ddd;
+  text-align: center;
+}
+
+.newsletter-signup__input-group {
+  margin: 2rem auto;
+  width: 100%;
+  max-width: 500px;
+  display: flex;
+}
+
+.newsletter-signup__email-field {
+  flex: 1 1 auto;
+}
+
+input.newsletter-signup__submit {
+  flex: 0 0 auto;
+  width: auto;
+  font-size: 0.8125rem;
+
+  @include tablet-portrait {
+    font-size: 1rem;
+  }
+}
