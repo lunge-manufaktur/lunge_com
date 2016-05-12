@@ -14,12 +14,14 @@ section: retailers
 #listings
   .map__list
 
-.panel.panel--odd
+.panel
   .content
     .content-narrow.text-center
-      h4 Kein Händler in Ihrer Nähe?
+      h3 Kein Händler in Ihrer Nähe?
       p Bestellen Sie bequem bei uns im Shop. Versandkostenfrei und ohne Risiko.
       = link_to "zum Shop", "/products", class: "button"
+  .content
+    = partial "partials/shop_features"
 
 - content_for :custom_assets
   = javascript_include_tag "https://maps.googleapis.com/maps/api/js?key=AIzaSyAGLRt1xAtAgjvg9qJURzumMJw_JpfwHVg&callback=initMap", async: true, defer: true
@@ -37,7 +39,6 @@ javascript:
 
     $.getJSON( 'retailers.geojson', function( data ) {
       var locations = data.features;
-      console.log(locations);
 
       $.each( locations, function( index, location ) {
         var latlng = {lat: location.geometry.coordinates[1], lng: location.geometry.coordinates[0]};
