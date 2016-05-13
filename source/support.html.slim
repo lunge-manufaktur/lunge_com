@@ -12,20 +12,20 @@ section: support
 
 .panel.panel--odd
   .content
-    .row.around-xs
-      .col-xs-12.col-sm-6
-        = image_tag "/images/misc/ruler.svg", class: "hero-icon"
-      .col-xs-12.col-sm-6
+    .support-item
+      .support-item__figure
+        = image_tag "/images/misc/size_table.svg", class: "support-item__image"
+      .support-item__description
         h2 Größentabelle
         p Es ist nicht leicht, die richtige Größe für Ihren Schuh zu finden, doch unsere Größentabelle hilft Ihnen, die Auswahl einzsuchränken.
         = link_to "Größentabelle ansehen", "/support/sizes", class: "button"
 
 .panel.panel--odd
   .content
-    .row.around-xs
-      .col-xs-12.col-sm-6
-        = image_tag "/images/misc/shopping_cart.svg", class: "hero-icon"
-      .col-xs-12.col-sm-6
+    .support-item
+      .support-item__figure
+        = image_tag "/images/misc/shopping_bags.svg", class: "support-item__image"
+      .support-item__description
         h2 Bestellablauf, Versand und Rückgaben
         p Hier erfahren Sie alles zum Bestellablauf, Versand, Zahlung sowie Umtausch und Rückgabe.
         ul
@@ -35,10 +35,10 @@ section: support
 
 .panel.panel--odd
   .content
-    .row.around-xs
-      .col-xs-12.col-sm-6
-        = image_tag "/images/misc/faq.svg", class: "hero-icon"
-      .col-xs-12.col-sm-6
+    .support-item
+      .support-item__figure
+        = image_tag "/images/misc/faq.svg", class: "support-item__image"
+      .support-item__description
         h2 Häufig gestellte Fragen
         p Haben Sie Fragen zu unseren Schuhen, deren Fertigung oder zum Bestellvorgang? Vermutlich haben wir bereits eine Antwort parat.
         = link_to "Häufig gestellte Fragen", "/support/faq", class: "button"

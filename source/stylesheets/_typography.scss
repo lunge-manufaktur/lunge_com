@@ -5,6 +5,11 @@ body {
   line-height: 1.6;
 }
 
+::selection {
+  background: $accent-color;
+  color: $white;
+}
+
 p {
   margin-bottom: $gutter;
 }

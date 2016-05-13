@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="80px" height="80px" viewBox="0 0 80 80" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 3.7.2 (28276) - http://www.bohemiancoding.com/sketch -->
+    <title>Slice 1</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="file-table.3.3.1" transform="translate(2.000000, 2.000000)">
+            <g id="Outline_Icons" transform="translate(8.181621, 1.000000)" stroke="#333333">
+                <g id="Group">
+                    <polygon id="Shape" points="40.8927876 54.2941176 0.196936789 54.2941176 0.196936789 0.176470588 26.5295461 0.176470588 40.8927876 14.2941176"></polygon>
+                    <polyline id="Shape" points="26.5295461 0.176470588 26.5295461 14.2941176 40.8927876 14.2941176"></polyline>
+                    <rect id="Rectangle-path" x="7.37855752" y="19" width="26.3326094" height="28.2352941"></rect>
+                    <path d="M7.37855752,26.0588235 L33.7111669,26.0588235" id="Shape"></path>
+                    <path d="M7.37855752,33.1176471 L33.7111669,33.1176471" id="Shape"></path>
+                    <path d="M7.37855752,40.1764706 L33.7111669,40.1764706" id="Shape"></path>
+                    <path d="M16.9540518,19 L16.9540518,47.2352941" id="Shape"></path>
+                </g>
+            </g>
+            <g id="Invisible_Shape">
+                <rect id="Rectangle-path" x="0" y="0" width="57.4529659" height="56.4705882"></rect>
+            </g>
+        </g>
+        <g id="ruler-1.3.3.1" transform="translate(21.000000, 25.000000)">
+            <g id="Outline_Icons" transform="translate(1.000000, 1.000000)" stroke="#333333">
+                <g id="Group">
+                    <polyline id="Rectangle-path" fill="#FFFFFF" points="0.346071597 41.8843544 42.2389021 0.707841647 53.0289283 11.3133712 11.1360978 52.4898839 0.346071597 41.8843544"></polyline>
+                    <path d="M8.76239104,33.6141176 L14.747075,39.4964706" id="Shape"></path>
+                    <path d="M13.5501382,28.9082353 L18.3737935,33.5788235" id="Shape"></path>
+                    <path d="M18.9172028,23.6305882 L24.9018867,29.5129412" id="Shape"></path>
+                    <path d="M23.7241009,18.9082353 L27.9133797,23.0258824" id="Shape"></path>
+                    <path d="M29.0744083,13.6470588 L35.0590923,19.5294118" id="Shape"></path>
+                    <path d="M33.8621555,8.94117647 L38.6858108,13.6141176" id="Shape"></path>
+                </g>
+            </g>
+            <g id="Invisible_Shape" transform="translate(0.150989, 0.529412)">
+                <rect id="Rectangle-path" x="0" y="0" width="57.4529659" height="56.4705882"></rect>
+            </g>
+        </g>
+    </g>
+</svg>
