@@ -80,7 +80,6 @@ footer {
 }
 
 .content {
-  flex: 0 0 auto;
   max-width: 85rem;
   width: 100%;
   margin-left: auto;
@@ -98,11 +97,9 @@ footer {
   clear: both;
 }
 
-.content-narrow {
+.content--narrow {
   max-width: 50rem;
   width:100%;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 section {

@@ -7,19 +7,19 @@ section: retailers
 
 .title__container
   .title__inner
-    h1 Fachhändler vor Ort
-    p Finden Sie einen Lunge-Fachhändler in Ihrer Nähe und nehmen Sie die kompetente Beratung vor Ort in Anspruch.
+    .content.content--narrow
+      h1 Fachhändler vor Ort
+      p Finden Sie einen Lunge-Fachhändler in Ihrer Nähe und nehmen Sie die kompetente Beratung vor Ort in Anspruch.
 
 .map#map
 #listings
   .map__list
 
 .panel
-  .content
-    .content-narrow.text-center
-      h3 Kein Händler in Ihrer Nähe?
-      p Bestellen Sie bequem bei uns im Shop. Versandkostenfrei und ohne Risiko.
-      = link_to "zum Shop", "/products", class: "button"
+  .content.content--narrow.text-center
+    h3 Kein Händler in Ihrer Nähe?
+    p Bestellen Sie bequem bei uns im Shop. Versandkostenfrei und ohne Risiko.
+    = link_to "zum Shop", "/products", class: "button"
   .content
     = partial "partials/shop_features"
 

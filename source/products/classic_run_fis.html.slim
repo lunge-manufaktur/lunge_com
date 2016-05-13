@@ -10,10 +10,11 @@ sitemap_changefreq: daily
 
 .title__container
   .title__inner
-    h1 = data.products.classic_run_fis.name
-    p = data.products.classic_run_fis.short_description
-    ul.inline-list.inline-list--center
-      li = link_to "Jetzt bestellen", "#add-to-cart", class: "button button-large"
+    .content.content--narrow
+      h1 = data.products.classic_run_fis.name
+      p = data.products.classic_run_fis.short_description
+      ul.inline-list.inline-list--center
+        li = link_to "Jetzt bestellen", "#add-to-cart", class: "button button-large"
 
 .panel.panel--odd.panel--reverse
   .panel__inner.content

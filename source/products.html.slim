@@ -10,13 +10,14 @@ sitemap_changefreq: daily
 
 .title__container
   .title__inner
-    h1 Produkte & Shop
-    p Ganz gleich ob Laufschuhe, Bequemschuhe oder Einlegesohlen - Lunge bietet Schuhe und Zubehör sowohl für den Laufsport als auch für den ganz alltäglichen Einsatz in Beruf und Freizeit.
-    ul
-      li
-        = link_to "Warum Lunge?", "/products/features", class: "link"
-  .content
-    = partial "partials/shop_features"
+    .content.content--narrow
+      h1 Produkte & Shop
+      p Ganz gleich ob Laufschuhe, Bequemschuhe oder Einlegesohlen - Lunge bietet Schuhe und Zubehör sowohl für den Laufsport als auch für den ganz alltäglichen Einsatz in Beruf und Freizeit.
+      ul
+        li
+          = link_to "Warum Lunge?", "/products/features", class: "link"
+    .content
+      = partial "partials/shop_features"
 
 .panel
   .content
@@ -38,7 +39,8 @@ sitemap_changefreq: daily
         = link_to "Ansehen und Bestellen", "/products/#{data.products.classic_run.slug}", class: "button"
 
 
-
+.panel
+  .content
     .item
       .item__image
         = link_to "/products/#{data.products.classic_walk.slug}" do
@@ -56,8 +58,8 @@ sitemap_changefreq: daily
               .color-icon style="background: linear-gradient(180deg, #{color.first_color}, #{color.first_color} 65%, #{color.second_color} 66%, #{color.second_color} 100%); border: 0px solid #{color.first_color}" title=(color.name)
         = link_to "Ansehen und bestellen", "/products/#{data.products.classic_walk.slug}", class: "button"
 
-
-
+.panel
+  .content
     .item
       .item__image
         = link_to "/products/#{data.products.evo_run.slug}" do
@@ -75,7 +77,8 @@ sitemap_changefreq: daily
               .color-icon style="background: linear-gradient(180deg, #{color.first_color}, #{color.first_color} 65%, #{color.second_color} 66%, #{color.second_color} 100%); border: 0px solid #{color.first_color}" title=(color.name)
         = link_to "Ansehen und bestellen", "/products/#{data.products.evo_run.slug}", class: "button"
 
-
+.panel
+  .content
     .item
       .item__image
         = link_to "/products/#{data.products.classic_run_fis.slug}" do
@@ -93,6 +96,8 @@ sitemap_changefreq: daily
               .color-icon style="background: linear-gradient(180deg, #{color.first_color}, #{color.first_color} 65%, #{color.second_color} 66%, #{color.second_color} 100%); border: 0px solid #{color.first_color}" title=(color.name)
         = link_to "Ansehen und bestellen", "/products/#{data.products.classic_run_fis.slug}", class: "button"
 
+.panel
+  .content
     .item
       .item__image
         = link_to "/products/#{data.products.gomax.slug}" do
@@ -111,12 +116,11 @@ sitemap_changefreq: daily
         = link_to "Ansehen und bestellen", "/products/#{data.products.gomax.slug}", class: "button"
 
 .panel.panel--emphasis
-  .content
-    .content-narrow
-      .feature
-        .feature__figure
-          h2 = link_to "Warum Lunge?", "/products/features"
-        .feature__description
-          p Wodurch unterscheiden sich unsere Schuhe von denen anderer Hersteller? Die hochwertige Materialien, durchdachte Sohlenkonstruktion und Schadstofffreiheit sind nur einige der Vorteile unserer Schuhe.
-          p Erfahren Sie weshalb es Sinn macht, sich für Qualität zu entscheiden.
-          = link_to "Mehr erfahren...", "/products/features", class: "link"
+  .content.content--narrow
+    .feature
+      .feature__figure
+        h2 = link_to "Warum Lunge?", "/products/features"
+      .feature__description
+        p Wodurch unterscheiden sich unsere Schuhe von denen anderer Hersteller? Die hochwertige Materialien, durchdachte Sohlenkonstruktion und Schadstofffreiheit sind nur einige der Vorteile unserer Schuhe.
+        p Erfahren Sie weshalb es Sinn macht, sich für Qualität zu entscheiden.
+        = link_to "Mehr erfahren...", "/products/features", class: "link"

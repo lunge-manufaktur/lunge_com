@@ -359,7 +359,8 @@ ul.inline-list li {
   flex-direction: column;
   justify-content: center;
   position: relative;
-
+  padding: 2rem 0;
+  
   @include tablet-portrait {
     padding: 4rem 0;
   }
@@ -846,7 +847,10 @@ iframe.responsive--4x3 {
   padding: $gutter-large*2 0;
   text-align: center;
   min-height: 50vh;
+  display: flex;
+  flex-direction: column;
   align-items: center;
+  justify-content: center;
 
   @include desktop {
     padding: $gutter-large*3 0;
@@ -854,18 +858,13 @@ iframe.responsive--4x3 {
 }
 
 .title__inner {
-  max-width: 50rem;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 0 $gutter-small;
+  width: 100%;
 }
 
 .item {
   width: 100%;
   max-width: 85rem;
   margin: auto;
-  padding-top: 8rem;
-  padding-bottom: 8rem;
 
   @include tablet-landscape {
     display: flex;
