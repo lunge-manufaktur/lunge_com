@@ -115,6 +115,17 @@ sitemap_changefreq: daily
               .color-icon style="background: linear-gradient(180deg, #{color.first_color}, #{color.first_color} 65%, #{color.second_color} 66%, #{color.second_color} 100%); border: 0px solid #{color.first_color}" title=(color.name)
         = link_to "Ansehen und bestellen", "/products/#{data.products.gomax.slug}", class: "button"
 
+.panel
+  .content
+    hr
+    .item
+      .item__image
+        = image_tag "/images/products/shoe_laces/02.jpg"
+      .item__description
+        h2 = link_to "Schnürsenkel", "/products/accessories/shoe_laces"
+        p Sorgen Sie für Abwechslung und verleihen Sie Ihren Lunge Schuhen ein neues Gesicht - mit Schnürsenkeln in zahlreichen Farben.
+        = link_to "Ansehen und bestellen", "/products/accessories/shoe_laces", class: "button"
+
 .panel.panel--emphasis
   .content.content--narrow
     .feature
