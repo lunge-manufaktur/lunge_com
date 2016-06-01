@@ -19,3 +19,6 @@
 
 # sublime files
 /lunge_com.sublime-project
+
+# Ignore downloads
+/source/files
