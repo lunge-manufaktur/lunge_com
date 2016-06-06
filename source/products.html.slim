@@ -24,7 +24,7 @@ sitemap_changefreq: daily
     .item
       .item__image
         = link_to "/products/#{data.products.classic_run.slug}" do
-          = image_tag data.products.classic_run.default_image
+          = image_tag data.products.classic_run.default_image, alt: "Classic Run"
       .item__description
         h2 = link_to data.products.classic_run.name, "/products/#{data.products.classic_run.slug}"
         p = data.products.classic_run.short_description
@@ -44,7 +44,7 @@ sitemap_changefreq: daily
     .item
       .item__image
         = link_to "/products/#{data.products.classic_walk.slug}" do
-          = image_tag data.products.classic_walk.default_image 
+          = image_tag data.products.classic_walk.default_image, alt: "Classic Walk"
       .item__description
         h2 = link_to data.products.classic_walk.name, "/products/#{data.products.classic_walk.slug}"
         p = data.products.classic_walk.short_description
@@ -63,7 +63,7 @@ sitemap_changefreq: daily
     .item
       .item__image
         = link_to "/products/#{data.products.evo_run.slug}" do
-          = image_tag data.products.evo_run.default_image
+          = image_tag data.products.evo_run.default_image, alt: "Evo Run"
       .item__description
         h2 = link_to data.products.evo_run.name, "/products/#{data.products.evo_run.slug}"
         p = data.products.evo_run.short_description
@@ -82,7 +82,7 @@ sitemap_changefreq: daily
     .item
       .item__image
         = link_to "/products/#{data.products.classic_run_fis.slug}" do
-          = image_tag data.products.classic_run_fis.default_image
+          = image_tag data.products.classic_run_fis.default_image, alt: "Classic Run Fis"
       .item__description
         h2 = link_to data.products.classic_run_fis.name, "/products/#{data.products.classic_run_fis.slug}"
         p = data.products.classic_run_fis.short_description
@@ -101,7 +101,7 @@ sitemap_changefreq: daily
     .item
       .item__image
         = link_to "/products/#{data.products.gomax.slug}" do
-          = image_tag data.products.gomax.default_image
+          = image_tag data.products.gomax.default_image, alt: "Gomax Einlegesohlen"
       .item__description
         h2 = link_to data.products.gomax.name, "/products/#{data.products.gomax.slug}"
         p = data.products.gomax.short_description
@@ -120,7 +120,8 @@ sitemap_changefreq: daily
     hr
     .item
       .item__image
-        = image_tag "/images/products/shoe_laces/02.jpg"
+        = link_to "/products/accessories/shoe_laces" do
+          = image_tag "/images/products/shoe_laces/02.jpg", alt: "Schnürsenkel"
       .item__description
         h2 = link_to "Schnürsenkel", "/products/accessories/shoe_laces"
         p Sorgen Sie für Abwechslung und verleihen Sie Ihren Lunge Schuhen ein neues Gesicht - mit Schnürsenkeln in zahlreichen Farben.

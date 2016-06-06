@@ -2,5 +2,5 @@
   .gallery
     - product.images.each do |image|
       .gallery__item
-        = image_tag image.path
+        = image_tag image.path, alt: image.title
         .gallery__item__title = image.title

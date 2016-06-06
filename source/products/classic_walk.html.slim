@@ -20,7 +20,7 @@ sitemap_changefreq: daily
   .content
     .panel__inner.panel__inner--reverse
       .panel__image
-        = image_tag "/images/products/classic_walk/hero/GLS200ROG__01.png"
+        = image_tag "/images/products/classic_walk/hero/GLS200ROG__01.png", alt: "Classic Walk in Rot / Hellgrau"
       aside.panel__text
         .panel__text__inner
           h2 Sportliches Fundament und einzigartiger Komfort.
@@ -34,7 +34,7 @@ sitemap_changefreq: daily
   .content
     .panel__inner
       .panel__image
-        = image_tag "images/products/classic_walk/misc/material_02.jpg"
+        = image_tag "images/products/classic_walk/misc/material_02.jpg", alt: "Materialien nach dem Zuschnitt"
       aside.panel__text
         .panel__text__inner
           .content
@@ -46,7 +46,7 @@ sitemap_changefreq: daily
   .content
     .panel__inner.panel__inner--reverse
       .panel__image
-        = image_tag "/images/products/classic_walk/GLS200CCG/default.png", id: "color-preview"
+        = image_tag "/images/products/classic_walk/GLS200CCG/default.png", id: "color-preview", alt: "Classic Walk in Caramel / Hellgrau"
         ul.inline-list.inline-list--center
           - data.products.classic_walk.colors.each do |color|
             li
