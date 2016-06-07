@@ -861,36 +861,42 @@ iframe.responsive--4x3 {
   width: 100%;
 }
 
-.item {
+.card {
   width: 100%;
   max-width: 85rem;
   margin: auto;
-
-  @include tablet-landscape {
-    display: flex;
-    flex-direction: row-reverse;
-  }
 }
 
-.item__description {
-  flex: 0 0 33%;
-  padding-right: 0;
-
-  @include tablet-landscape {
-    border-top: 1px solid #ddd;
-    border-right: 1px solid #ddd;
-    padding: 2rem 2rem 0 0;
-  }
+.card__link {
+  display: block;
 }
 
-.item__image {
-  flex: 1 1;
+.card__link:hover .card__image {
+  transform: scale(1.1) rotate(-3deg);
+}
+
+.card__description {
+  @include transition;
+  background-color: $card-description-background;
+  padding: 2rem;
+  border-bottom: 1px solid $header-background;
+}
+
+.card__link:hover .card__description {
+  border-color: $accent-color;
+}
+
+.card__figure {
+  overflow: hidden;
+}
+
+.card__image {
   min-width: 1px;
+  @include transition;
+}
 
-  @include tablet-landscape {
-    border-top: 1px solid #ddd;
-    padding: 2rem 0 0 2rem;
-  }
+.card__image:hover img {
+
 }
 
 .image-link {

@@ -20,112 +20,106 @@ sitemap_changefreq: daily
       = partial "partials/shop_features"
 
 .panel
-  .content
-    .item
-      .item__image
-        = link_to "/products/#{data.products.classic_run.slug}" do
-          = image_tag data.products.classic_run.default_image, alt: "Classic Run"
-      .item__description
-        h2 = link_to data.products.classic_run.name, "/products/#{data.products.classic_run.slug}"
-        p = data.products.classic_run.short_description
-        p
-          label Kategorie
-          span = data.products.classic_run.category
-        label Farbvarianten
-        ul.inline-list
-          - data.products.classic_run.colors.each do |color|
-            li
-              .color-icon style="background: linear-gradient(180deg, #{color.first_color}, #{color.first_color} 65%, #{color.second_color} 66%, #{color.second_color} 100%); border: 0px solid #{color.first_color}" title=(color.name)
-        = link_to "Ansehen und Bestellen", "/products/#{data.products.classic_run.slug}", class: "button"
+  .content.content--narrow
+    .card
+      = link_to "/products/#{data.products.classic_run.slug}", class: "card__link" do
+        .card__figure
+          = image_tag data.products.classic_run.default_image, class: "card__image", alt: "Classic Run"
+        .card__description
+          h2 = data.products.classic_run.name
+          p = data.products.classic_run.short_description
+          p
+            label Kategorie
+            span = data.products.classic_run.category
+          label Farbvarianten
+          ul.inline-list
+            - data.products.classic_run.colors.each do |color|
+              li
+                .color-icon style="background: linear-gradient(180deg, #{color.first_color}, #{color.first_color} 65%, #{color.second_color} 66%, #{color.second_color} 100%); border: 0px solid #{color.first_color}" title=(color.name)
 
 
 .panel
-  .content
-    .item
-      .item__image
-        = link_to "/products/#{data.products.classic_walk.slug}" do
-          = image_tag data.products.classic_walk.default_image, alt: "Classic Walk"
-      .item__description
-        h2 = link_to data.products.classic_walk.name, "/products/#{data.products.classic_walk.slug}"
-        p = data.products.classic_walk.short_description
-        p
-          label Kategorie
-          span = data.products.classic_walk.category
-        label Farbvarianten
-        ul.inline-list
-          - data.products.classic_walk.colors.each do |color|
-            li
-              .color-icon style="background: linear-gradient(180deg, #{color.first_color}, #{color.first_color} 65%, #{color.second_color} 66%, #{color.second_color} 100%); border: 0px solid #{color.first_color}" title=(color.name)
-        = link_to "Ansehen und bestellen", "/products/#{data.products.classic_walk.slug}", class: "button"
+  .content.content--narrow
+    .card
+      = link_to "/products/#{data.products.classic_walk.slug}", class: "card__link" do
+        .card__figure
+          = image_tag data.products.classic_walk.default_image, class: "card__image", alt: "Classic Walk"
+        .card__description
+          h2 = data.products.classic_walk.name
+          p = data.products.classic_walk.short_description
+          p
+            label Kategorie
+            span = data.products.classic_walk.category
+          label Farbvarianten
+          ul.inline-list
+            - data.products.classic_walk.colors.each do |color|
+              li
+                .color-icon style="background: linear-gradient(180deg, #{color.first_color}, #{color.first_color} 65%, #{color.second_color} 66%, #{color.second_color} 100%); border: 0px solid #{color.first_color}" title=(color.name)
 
 .panel
-  .content
-    .item
-      .item__image
-        = link_to "/products/#{data.products.evo_run.slug}" do
-          = image_tag data.products.evo_run.default_image, alt: "Evo Run"
-      .item__description
-        h2 = link_to data.products.evo_run.name, "/products/#{data.products.evo_run.slug}"
-        p = data.products.evo_run.short_description
-        p
-          label Kategorie
-          span = data.products.evo_run.category
-        label Farbvarianten
-        ul.inline-list
-          - data.products.evo_run.colors.each do |color|
-            li
-              .color-icon style="background: linear-gradient(180deg, #{color.first_color}, #{color.first_color} 65%, #{color.second_color} 66%, #{color.second_color} 100%); border: 0px solid #{color.first_color}" title=(color.name)
-        = link_to "Ansehen und bestellen", "/products/#{data.products.evo_run.slug}", class: "button"
+  .content.content--narrow
+    .card
+      = link_to "/products/#{data.products.classic_run_fis.slug}", class: "card__link" do
+        .card__figure
+          = image_tag data.products.classic_run_fis.default_image, class: "card__image", alt: "Classic Run Fis"
+        .card__description
+          h2 = data.products.classic_run_fis.name
+          p = data.products.classic_run_fis.short_description
+          p
+            label Kategorie
+            span = data.products.classic_run_fis.category
+          label Farbvarianten
+          ul.inline-list
+            - data.products.classic_run_fis.colors.each do |color|
+              li
+                .color-icon style="background: linear-gradient(180deg, #{color.first_color}, #{color.first_color} 65%, #{color.second_color} 66%, #{color.second_color} 100%); border: 0px solid #{color.first_color}" title=(color.name)
 
 .panel
-  .content
-    .item
-      .item__image
-        = link_to "/products/#{data.products.classic_run_fis.slug}" do
-          = image_tag data.products.classic_run_fis.default_image, alt: "Classic Run Fis"
-      .item__description
-        h2 = link_to data.products.classic_run_fis.name, "/products/#{data.products.classic_run_fis.slug}"
-        p = data.products.classic_run_fis.short_description
-        p
-          label Kategorie
-          span = data.products.classic_run_fis.category
-        label Farbvarianten
-        ul.inline-list
-          - data.products.classic_run_fis.colors.each do |color|
-            li
-              .color-icon style="background: linear-gradient(180deg, #{color.first_color}, #{color.first_color} 65%, #{color.second_color} 66%, #{color.second_color} 100%); border: 0px solid #{color.first_color}" title=(color.name)
-        = link_to "Ansehen und bestellen", "/products/#{data.products.classic_run_fis.slug}", class: "button"
+  .content.content--narrow
+    .card
+      = link_to "/products/#{data.products.evo_run.slug}", class: "card__link" do
+        .card__figure
+          = image_tag data.products.evo_run.default_image, class: "card__image", alt: "Evo Run"
+        .card__description
+          h2 = data.products.evo_run.name
+          p = data.products.evo_run.short_description
+          p
+            label Kategorie
+            span = data.products.evo_run.category
+          label Farbvarianten
+          ul.inline-list
+            - data.products.evo_run.colors.each do |color|
+              li
+                .color-icon style="background: linear-gradient(180deg, #{color.first_color}, #{color.first_color} 65%, #{color.second_color} 66%, #{color.second_color} 100%); border: 0px solid #{color.first_color}" title=(color.name)
 
 .panel
-  .content
-    .item
-      .item__image
-        = link_to "/products/#{data.products.gomax.slug}" do
-          = image_tag data.products.gomax.default_image, alt: "Gomax Einlegesohlen"
-      .item__description
-        h2 = link_to data.products.gomax.name, "/products/#{data.products.gomax.slug}"
-        p = data.products.gomax.short_description
-        p
-          label Kategorie
-          span = data.products.gomax.category
-        label Farbvarianten
-        ul.inline-list
-          - data.products.gomax.colors.each do |color|
-            li
-              .color-icon style="background: linear-gradient(180deg, #{color.first_color}, #{color.first_color} 65%, #{color.second_color} 66%, #{color.second_color} 100%); border: 0px solid #{color.first_color}" title=(color.name)
-        = link_to "Ansehen und bestellen", "/products/#{data.products.gomax.slug}", class: "button"
+  .content.content--narrow
+    .card
+      = link_to "/products/#{data.products.gomax.slug}", class: "card__link" do
+        .card__figure
+          = image_tag data.products.gomax.default_image, class: "card__image", alt: "Gomax Einlegesohlen"
+        .card__description
+          h2 = data.products.gomax.name
+          p = data.products.gomax.short_description
+          p
+            label Kategorie
+            span = data.products.gomax.category
+          label Farbvarianten
+          ul.inline-list
+            - data.products.gomax.colors.each do |color|
+              li
+                .color-icon style="background: linear-gradient(180deg, #{color.first_color}, #{color.first_color} 65%, #{color.second_color} 66%, #{color.second_color} 100%); border: 0px solid #{color.first_color}" title=(color.name)
 
 .panel
-  .content
+  .content.content--narrow
     hr
-    .item
-      .item__image
-        = link_to "/products/accessories/shoe_laces" do
-          = image_tag "/images/products/shoe_laces/02.jpg", alt: "Schnürsenkel"
-      .item__description
-        h2 = link_to "Schnürsenkel", "/products/accessories/shoe_laces"
-        p Sorgen Sie für Abwechslung und verleihen Sie Ihren Lunge Schuhen ein neues Gesicht - mit Schnürsenkeln in zahlreichen Farben.
-        = link_to "Ansehen und bestellen", "/products/accessories/shoe_laces", class: "button"
+    .card
+      = link_to "/products/accessories/shoe_laces", class: "card__link" do
+        .card__figure
+          = image_tag "/images/products/shoe_laces/02.jpg", class: "card__image", alt: "Schnürsenkel"
+        .card__description
+          h2 = "Schnürsenkel"
+          p Sorgen Sie für Abwechslung und verleihen Sie Ihren Lunge Schuhen ein neues Gesicht - mit Schnürsenkeln in zahlreichen Farben.
 
 .panel.panel--emphasis
   .content.content--narrow

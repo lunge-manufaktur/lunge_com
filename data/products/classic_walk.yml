@@ -2,7 +2,7 @@ name: "Classic Walk"
 category: "Bequemschuhe"
 slug: "classic_walk"
 short_description: "Sie müssen kein Läufer sein um in den Genuss von Lunge Schuhen zu kommen: Der Adagio ist ein einzigartiger Bequemschuh für alle Lebenslagen – egal ob Alltag, Beruf oder Freizeit."
-default_image: "/images/products/classic_walk/hero/gruppe__01.jpg"
+default_image: "/images/products/classic_walk/misc/classic_walk_top--1200px.jpg"
 colors:
   -
     sku: "GLS200SSS"
