@@ -18,9 +18,10 @@ section: manufacture
       
       .supplier__description
         h4 Stockmayer & Sohn GmbH
-        p Die Firma Stockmayer aus Pirmasens liefert unser Schaftmaterial. Das Produkt Fashmo erfüllt die Anforderungen für Sport, Mode und Orthopädie. Das Funktionsmaterial ist lederähnlich und dauerelastisch. Fashmo gibt es bei Stockmayer in einer großen Farbvielfalt.
+        p Die Firma Stockmayer aus Pirmasens liefert unser Schaftmaterial, welches die Anforderungen für Sport, Mode und Orthopädie abdeckt. Das lederähnliche Funktionsmaterial zeichnet sich besonders durch seine dauerelastischen Eigenschaften aus.
         
-        = link_to "Website", "http://www.stockmayer.com", target: "_blank", class: "link"
+        p
+          = link_to "Website", "http://www.stockmayer.com", target: "_blank", class: "link"
         
     .supplier
       .supplier__figure
@@ -29,8 +30,12 @@ section: manufacture
       .supplier__description
         h4 Amann Group
         p Als einer der international führenden Hersteller beliefert AMANN die nähende Industrie mit hochwertigen Nähfäden und Stickgarnen. Der Hauptsitz befindet sich in Bönnigheim (Deutschland). Ein verantwortungsvoller und nachhaltiger Umgang mit der Umwelt und ihren Ressourcen ist wichtiger Aspekt des unternehmerischen Handelns der AMANN Group.
-        
-        = link_to "Website", "http://www.amann.com/", target: "_blank", class: "link"
+        p
+          = link_to "Website", "http://www.amann.com/", target: "_blank", class: "link"
+        p
+          = link_to "Ökotext Zertifizierung", "http://cdn.lunge.de/files/zertifikate/amann/oekotex_zertifizierung.pdf", class: "link", target: "_blank"
+          br
+          = link_to "Reach Zertifizierung", "http://cdn.lunge.de/files/zertifikate/amann/reach_zertifizierung.pdf", class: "link", target: "_blank"
         
     .supplier
       .supplier__figure
@@ -40,4 +45,27 @@ section: manufacture
         h4 nora Systems GmbH
         p Die Firma nora systems GmbH in Weinheim (Deutschland) entwickelt und produziert hochwertige, dauerelastische und zertifizierte Schuhkomponenten. Die Produkte sind frei von toxischen Schwermetallen und Krebserzeugenden aromatischen Aminen aus Farbmitteln. Dass Rohstoffe wie Endprodukte nach strengen Qualitätsanforderungen geprüft und freigegeben werden, ist für nora selbstverständlich.
         
-        = link_to "Website", "http://www.nora-schuh.de/", target: "_blank" , class: "link"
+        p
+          = link_to "Website", "http://www.nora-schuh.de/", target: "_blank" , class: "link"
+        p
+          = link_to "SG Plus Zertifizierung", "http://cdn.lunge.de/files/zertifikate/nora/sg_plus_zertifizierung.pdf", class: "link", target: "_blank"
+          br
+          = link_to "Konformitätserklärung", "http://cdn.lunge.de/files/zertifikate/nora/konformitätserklärung_15-16.pdf", class: "link", target: "_blank"
+          br
+          = link_to "Qualitätsmanagement nach ISO9001", "http://cdn.lunge.de/files/zertifikate/nora/zertifikat_qualitätsmanagement_iso9001.pdf", class: "link", target: "_blank"
+          br
+          = link_to "Umweltmanagement nach ISO14001", "http://cdn.lunge.de/files/zertifikate/nora/zertifikat_umweltmanagement_iso14001.pdf", class: "link", target: "_blank"
+
+    .supplier
+      .supplier__figure
+        = image_tag "/images/suppliers/sisa.svg", class: "supplier__logo"
+      .supplier__description
+        h4 SISA
+        p 
+          | Lai Porelina vom italienischen Hersteller SISA ist Dank seiner Schweißdurchlässigkeit, Wärmeleitfähigkeit und Verschleißresistenz die ideale Wahl als Oberbezugsstoff unserer 
+          = link_to "Gomax Einlegesohlen", "/products/gomax", class: "link"
+          | . Unsere Anforderungen and Schadstofffreiheit und vegane Herkunft gelten zudem natürlich auch hier.
+        p
+          = link_to "Website", "http://www.sisaspa.it/en/", class: "link", target: "_blank"
+        p
+          = link_to "Datenblatt", "http://cdn.lunge.de/files/zertifikate/sisa/spezifikationen.pdf", class: "link", target: "_blank"
