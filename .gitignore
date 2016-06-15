@@ -22,3 +22,6 @@
 
 # Ignore downloads
 /source/files
+
+# Ignore experimental stuff
+/source/beta
