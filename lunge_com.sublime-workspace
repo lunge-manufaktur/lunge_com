@@ -567,14 +567,20 @@
 	[
 		"/Users/ulflunge/projects/lunge_com",
 		"/Users/ulflunge/projects/lunge_com/source",
-		"/Users/ulflunge/projects/lunge_com/source/about"
+		"/Users/ulflunge/projects/lunge_com/source/beta",
+		"/Users/ulflunge/projects/lunge_com/source/partials"
 	],
 	"file_history":
 	[
+		"/Users/ulflunge/projects/lunge_com/.gitignore",
+		"/Users/ulflunge/projects/lunge_com/source/beta/buy_sdk.html.slim",
+		"/Users/ulflunge/projects/lunge_com/source/done.html.slim",
+		"/Users/ulflunge/projects/lunge_com/source/layouts/layout.html.slim",
+		"/Users/ulflunge/projects/lunge_com/source/partials/_cart.html.slim",
+		"/Users/ulflunge/projects/lunge_com/source/products/classic_walk_buysdk.html.slim",
 		"/Users/ulflunge/projects/lunge_com/source/about/suppliers.html.slim",
 		"/Users/ulflunge/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
 		"/Users/ulflunge/projects/lunge_com/source/about.html.slim",
-		"/Users/ulflunge/projects/lunge_com/source/done.html.slim",
 		"/Users/ulflunge/projects/lunge_com/source/products/features.html.slim",
 		"/Users/ulflunge/projects/lunge_com/source/stylesheets/_variables.scss",
 		"/Users/ulflunge/projects/lunge_com/source/stylesheets/_components.scss",
@@ -587,10 +593,8 @@
 		"/Users/ulflunge/projects/lunge_com/data/products/classic_run_fis.yml",
 		"/Users/ulflunge/projects/lunge_com/source/products.html.slim",
 		"/Users/ulflunge/projects/lunge_com/source/products/_gallery.html.slim",
-		"/Users/ulflunge/projects/lunge_com/source/layouts/layout.html.slim",
 		"/Users/ulflunge/projects/lunge_com/source/partials/_where_to_buy.html.slim",
 		"/Users/ulflunge/projects/lunge_com/source/partials/_footer.html.slim",
-		"/Users/ulflunge/projects/lunge_com/.gitignore",
 		"/Users/ulflunge/projects/lunge_com/source/products/classic_run_fis.html.slim",
 		"/Users/ulflunge/projects/lunge_com/source/about/press.html.slim",
 		"/Users/ulflunge/projects/lunge_com/source/impressum.html.slim",
@@ -620,7 +624,6 @@
 		"/Users/ulflunge/projects/lunge_com/source/partials/_header.html.slim",
 		"/Users/ulflunge/projects/lunge_com/source/partials/_header_frontpage.html.slim",
 		"/Users/ulflunge/projects/lunge_com/source/partials/_contact_form.html.erb",
-		"/Users/ulflunge/projects/lunge_com/source/partials/_cart.html.slim",
 		"/Users/ulflunge/projects/lunge_com/source/news/stellungnahme_stiftung_warentest_heft_08-2015.html.slim",
 		"/Users/ulflunge/projects/lunge_com/source/sitemap.xml.slim",
 		"/Users/ulflunge/projects/lunge_com/source/stylesheets/_layout.scss",
@@ -696,9 +699,7 @@
 		"/Users/ulflunge/projects/manufaktur/app/helpers/application_helper.rb",
 		"/Users/ulflunge/projects/manufaktur/app/views/products/index.html.slim",
 		"/Users/ulflunge/projects/manufaktur/app/views/products/index/_sidebar.html.slim",
-		"/Users/ulflunge/projects/manufaktur/db/seeds.rb",
-		"/Users/ulflunge/projects/manufaktur/app/controllers/api/shipments_controller.rb",
-		"/Users/ulflunge/projects/manufaktur/app/controllers/application_controller.rb"
+		"/Users/ulflunge/projects/manufaktur/db/seeds.rb"
 	],
 	"find":
 	{
@@ -928,6 +929,18 @@
 		"selected_items":
 		[
 			[
+				"layou",
+				"source/layouts/layout.html.slim"
+			],
+			[
+				"gitign",
+				".gitignore"
+			],
+			[
+				"layout",
+				"source/layouts/layout.html.slim"
+			],
+			[
 				"supplie",
 				"source/about/suppliers.html.slim"
 			],
@@ -1018,10 +1031,6 @@
 			[
 				"pro",
 				"source/products.html.slim"
-			],
-			[
-				"layout",
-				"source/stylesheets/_layout.scss"
 			],
 			[
 				"typo",
@@ -1174,10 +1183,6 @@
 			[
 				"all",
 				"source/javascripts/all.js"
-			],
-			[
-				"layou",
-				"source/layouts/layout.html.slim"
 			],
 			[
 				"produ",
@@ -1434,10 +1439,6 @@
 			[
 				".env",
 				".env"
-			],
-			[
-				"applica",
-				"app/controllers/application_controller.rb"
 			]
 		],
 		"width": 0.0
