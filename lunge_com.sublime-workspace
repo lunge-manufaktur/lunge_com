@@ -568,10 +568,11 @@
 		"/Users/ulflunge/projects/lunge_com",
 		"/Users/ulflunge/projects/lunge_com/source",
 		"/Users/ulflunge/projects/lunge_com/source/beta",
-		"/Users/ulflunge/projects/lunge_com/source/partials"
+		"/Users/ulflunge/projects/lunge_com/source/stylesheets"
 	],
 	"file_history":
 	[
+		"/Users/ulflunge/projects/lunge_com/source/stylesheets/_variables.scss",
 		"/Users/ulflunge/projects/lunge_com/.gitignore",
 		"/Users/ulflunge/projects/lunge_com/source/beta/buy_sdk.html.slim",
 		"/Users/ulflunge/projects/lunge_com/source/done.html.slim",
@@ -582,7 +583,6 @@
 		"/Users/ulflunge/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
 		"/Users/ulflunge/projects/lunge_com/source/about.html.slim",
 		"/Users/ulflunge/projects/lunge_com/source/products/features.html.slim",
-		"/Users/ulflunge/projects/lunge_com/source/stylesheets/_variables.scss",
 		"/Users/ulflunge/projects/lunge_com/source/stylesheets/_components.scss",
 		"/Users/ulflunge/projects/lunge_com/source/index.html.slim",
 		"/Users/ulflunge/projects/lunge_com/source/products/classic_run.html.slim",
