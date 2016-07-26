@@ -3,3 +3,4 @@
 //= require tabs
 //= require product-variation-preview
 //= require cart
+//= require wallop

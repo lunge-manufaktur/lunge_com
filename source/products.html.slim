@@ -59,6 +59,24 @@ sitemap_changefreq: daily
 .panel
   .content.content--narrow
     .card
+      = link_to "/products/#{data.products.neo_run.slug}", class: "card__link" do
+        .card__figure
+          = image_tag data.products.neo_run.default_image, class: "card__image", alt: "Classic Walk"
+        .card__description
+          h2 = data.products.neo_run.name
+          p = data.products.neo_run.short_description
+          p
+            label Kategorie
+            span = data.products.neo_run.category
+          label Farbvarianten
+          ul.inline-list
+            - data.products.neo_run.colors.each do |color|
+              li
+                .color-icon style="background: linear-gradient(180deg, #{color.first_color}, #{color.first_color} 65%, #{color.second_color} 66%, #{color.second_color} 100%); border: 0px solid #{color.first_color}" title=(color.name)
+
+.panel
+  .content.content--narrow
+    .card
       = link_to "/products/#{data.products.classic_run_fis.slug}", class: "card__link" do
         .card__figure
           = image_tag data.products.classic_run_fis.default_image, class: "card__image", alt: "Classic Run Fis"

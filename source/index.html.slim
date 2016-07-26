@@ -9,14 +9,18 @@ sitemap_priority: 0.9
 
 - content_for :hero
   .hero
-    .hero__image
-    aside.hero__text
-      .hero__text__inner
-        = link_to "/about", class: "made-in-germany__link" do
-          = image_tag "/images/misc/made_in_germany.svg", class: "made-in-germany__logo", alt: "Made In Germany Logo"
-        h1 = link_to "Farbenfroh durch den Sommer", "/products/classic_walk"
-        p Wir können nicht nur dezent - der Classic Walk, unser Bequemschuh für alle Lebenslagen, ist farblich bestens für den Sommer gerüstet und macht auch abseits aller Graustufen eine gute Figur.
-        = link_to "Classic Walk ansehen", "/products/classic_walk", class: "button button--large"
+    .hero__image.Wallop.Wallop--fade
+      .Wallop-list
+        = image_tag "/images/products/neo_run/misc/neo_run_hero02.jpg", class: "Wallop-item"
+        = image_tag "/images/products/neo_run/misc/neo_run_hero03.jpg", class: "Wallop-item"
+        = image_tag "/images/products/neo_run/misc/neo_run_hero04.jpg", class: "Wallop-item"
+    .hero__text
+      .content.content--narrow
+        / = link_to "/about", class: "made-in-germany__link" do
+        /   = image_tag "/images/misc/made_in_germany.svg", class: "made-in-germany__logo", alt: "Made In Germany Logo"
+        h1.text-center = link_to "Neo Run", "/products/neo_run"
+        p Neues Material, optimierte Form und effizienteres Dämpfungsverhalten - die Mittelsohle des Neo Runs ist eine kleine Revolution.
+        = link_to "Neo Run ansehen", "/products/neo_run", class: "button button--large"
 
 .panel
   .content

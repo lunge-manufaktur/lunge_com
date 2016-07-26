@@ -173,12 +173,14 @@ img.made-in-germany__logo {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #DCEAF3;
+  background-color: #dde1ed;
   min-height: calc(100vh - 5rem);
+}
 
-  @include tablet-landscape {
-    flex-direction: row-reverse;
-  }
+.hero__title {
+  max-width: 50rem;
+  width: 100%;
+  text-align: center;
 }
 
 aside.hero__text {
@@ -200,18 +202,20 @@ aside.hero__text {
   color: $body-font-color;
 }
 
+.hero__text {
+  text-align: center;
+  margin-bottom: 4rem;
+  flex: 0 0 30%;
+}
 
 .hero__image {
   align-self: stretch;
-  flex: 1 0 auto;
-  background: url(image_path("products/misc/classic_walk_summer_2016.jpg"));
+  flex: 0 0 60%;
   background-position: center;
   background-size: cover;
-  min-height: 66vh;
-
-  @include tablet-landscape {
-    min-height: calc(100vh - 5rem);
-  }
+  max-width: 60vh;
+  margin: auto;
+  z-index: 0;
 }
 
 
@@ -872,7 +876,7 @@ iframe.responsive--4x3 {
 }
 
 .card__link:hover .card__image {
-  transform: scale(1.1) rotate(-3deg);
+  transform: scale(1.1);
 }
 
 .card__description {

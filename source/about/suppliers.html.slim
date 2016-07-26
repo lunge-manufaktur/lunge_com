@@ -58,6 +58,26 @@ section: manufacture
 
     .supplier
       .supplier__figure
+        = image_tag "/images/suppliers/ok_gummiwerk.svg", class: "supplier__logo"
+        
+      .supplier__description
+        h4 OK Gummiwerk Otto Körting GmbH
+        p Das OK Gummiwerk aus Hameln kann auf eine lange Tradition zurückblicken und präsentiert sich bereits seit 1928 als Experte der Kautschukverarbeitung. 
+        p Heute gilt das Unternehmen als zuverlässiger Partner der Schuh- und Orthopädieindustrie und liefert das Außensohlenmaterial unserer Schuhe.
+        
+        p
+          = link_to "Website", "http://www.ok-gummiwerk.de/", target: "_blank" , class: "link"
+        p
+          = link_to "SG Plus Zertifizierung", "http://cdn.lunge.de/files/zertifikate/nora/sg_plus_zertifizierung.pdf", class: "link", target: "_blank"
+          br
+          = link_to "Konformitätserklärung", "http://cdn.lunge.de/files/zertifikate/nora/konformitätserklärung_15-16.pdf", class: "link", target: "_blank"
+          br
+          = link_to "Qualitätsmanagement nach ISO9001", "http://cdn.lunge.de/files/zertifikate/nora/zertifikat_qualitätsmanagement_iso9001.pdf", class: "link", target: "_blank"
+          br
+          = link_to "Umweltmanagement nach ISO14001", "http://cdn.lunge.de/files/zertifikate/nora/zertifikat_umweltmanagement_iso14001.pdf", class: "link", target: "_blank"
+
+    .supplier
+      .supplier__figure
         = image_tag "/images/suppliers/sisa.svg", class: "supplier__logo"
       .supplier__description
         h4 SISA
