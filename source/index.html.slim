@@ -10,10 +10,11 @@ sitemap_priority: 0.9
 - content_for :hero
   .hero
     .hero__image.Wallop.Wallop--fade
-      .Wallop-list
-        = image_tag "/images/products/neo_run/misc/neo_run_hero02.jpg", class: "Wallop-item"
-        = image_tag "/images/products/neo_run/misc/neo_run_hero03.jpg", class: "Wallop-item"
-        = image_tag "/images/products/neo_run/misc/neo_run_hero04.jpg", class: "Wallop-item"
+      = link_to "/products/neo_run" do
+        .Wallop-list
+          = image_tag "/images/products/neo_run/misc/neo_run_hero02.jpg", class: "Wallop-item"
+          = image_tag "/images/products/neo_run/misc/neo_run_hero03.jpg", class: "Wallop-item"
+          = image_tag "/images/products/neo_run/misc/neo_run_hero04.jpg", class: "Wallop-item"
     .hero__text
       .content.content--narrow
         / = link_to "/about", class: "made-in-germany__link" do
