@@ -18,7 +18,8 @@
 .DS_Store
 
 # sublime files
-/lunge_com.sublime-project
+lunge_com.sublime-project
+lunge_com.sublime-workspace
 
 # Ignore downloads
 /source/files

@@ -480,6 +480,17 @@
 			}
 		},
 		{
+			"contents": "Package Control Messages\n========================\n\nMaterial Theme\n--------------\n\n  #### Material Theme for Sublime Text 3\n  \n  ## Version 3.1.4\n  \n  📣 BUGFIXES:\n  \n    - Fix spinner indicator when folder is loading ([359fdb9](https://github.com/equinusocio/material-theme/commit/359fdb9)), closes [#933](https://github.com/equinusocio/material-theme/issues/933)\n  \n    - Remove GitHub Repo command (duplicate of Issues) ([d1dfe74](https://github.com/equinusocio/material-theme/commit/d1dfe74))\n  \n    - Theme dependencies and add a new Info command ([dadd824](https://github.com/equinusocio/material-theme/commit/dadd824))\n  \n  ********************************************************************************\n  ** Check the official changelog ( https://github.com/equinusocio/material-theme/blob/master/CHANGELOG.md  ) **\n",
+			"settings":
+			{
+				"buffer_size": 823,
+				"line_ending": "Unix",
+				"name": "Package Control Messages",
+				"read_only": true,
+				"scratch": true
+			}
+		},
+		{
 			"file": "source/products/classic_run.html.slim",
 			"settings":
 			{
@@ -581,7 +592,9 @@
 	},
 	"expanded_folders":
 	[
-		"/Users/ulflunge/projects/lunge_com"
+		"/Users/ulflunge/projects/lunge_com",
+		"/Users/ulflunge/projects/lunge_com/source",
+		"/Users/ulflunge/projects/lunge_com/source/news"
 	],
 	"file_history":
 	[
@@ -884,7 +897,7 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 1,
 			"sheets":
 			[
 				{
@@ -906,9 +919,40 @@
 						],
 						"settings":
 						{
+							"color_scheme": "Packages/Material Theme/schemes/Material-Theme.tmTheme",
 							"syntax": "Packages/Ruby Slim/Syntaxes/Ruby Slim.tmLanguage",
 							"tab_size": 2,
 							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 823,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								823,
+								823
+							]
+						],
+						"settings":
+						{
+							"auto_indent": false,
+							"syntax": "Packages/Text/Plain text.tmLanguage",
+							"tab_width": 2,
+							"word_wrap": true
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -918,7 +962,7 @@
 					"type": "text"
 				},
 				{
-					"buffer": 1,
+					"buffer": 2,
 					"file": "source/products/classic_run.html.slim",
 					"semi_transient": false,
 					"settings":
@@ -936,6 +980,7 @@
 						],
 						"settings":
 						{
+							"color_scheme": "Packages/Material Theme/schemes/Material-Theme.tmTheme",
 							"syntax": "Packages/Ruby Slim/Syntaxes/Ruby Slim.tmLanguage",
 							"tab_size": 2,
 							"translate_tabs_to_spaces": true
@@ -944,7 +989,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
+					"stack_index": 2,
 					"type": "text"
 				}
 			]
