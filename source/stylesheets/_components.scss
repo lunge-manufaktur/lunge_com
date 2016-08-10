@@ -170,15 +170,38 @@ img.made-in-germany__logo {
 
 /* HERO */
 .hero {
-  align-items: center;
-  background-color: #dde1ed;
-  min-height: calc(100vh - 5rem);
+  background-color: #ddecf3;
+}
+
+.hero__inner {
+  max-width: 85rem;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+
+  @include tablet-landscape {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
 }
 
 .hero__title {
-  max-width: 50rem;
-  width: 100%;
   text-align: center;
+
+  @include tablet-landscape {
+    text-align: left;
+  }
+}
+
+.hero__title::after {
+  margin-left: auto;
+  margin-right: auto;
+
+  @include tablet-landscape {
+    margin-left: 0;
+    margin-right: 0;
+  }
 }
 
 aside.hero__text {
@@ -201,17 +224,32 @@ aside.hero__text {
 }
 
 .hero__text {
+  flex: 0 0 350px;
   text-align: center;
-  margin-bottom: 4rem;
+
+  @include tablet-landscape {
+    text-align: left;
+  }
+
+  @include desktop {
+  }
 }
 
 .hero__image {
-  align-self: stretch;
+  flex: 1 1 auto;
   background-position: center;
   background-size: cover;
-  max-width: 60vh;
-  margin: auto;
   z-index: 0;
+
+  @include tablet-landscape {
+    order: 2;
+    width: 1px;
+  }
+}
+
+.hero__image img {
+  max-height: calc(100vh - 5rem);
+  margin: auto;
 }
 
 

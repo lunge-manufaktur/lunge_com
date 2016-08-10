@@ -9,19 +9,17 @@ sitemap_priority: 0.9
 
 - content_for :hero
   .hero
-    .hero__image.Wallop.Wallop--fade
-      = link_to "/products/neo_run" do
-        .Wallop-list
-          = image_tag "/images/products/neo_run/misc/neo_run_hero02.jpg", class: "Wallop-item"
-          = image_tag "/images/products/neo_run/misc/neo_run_hero03.jpg", class: "Wallop-item"
-          = image_tag "/images/products/neo_run/misc/neo_run_hero04.jpg", class: "Wallop-item"
-    .hero__text
-      .content.content--narrow
-        / = link_to "/about", class: "made-in-germany__link" do
-        /   = image_tag "/images/misc/made_in_germany.svg", class: "made-in-germany__logo", alt: "Made In Germany Logo"
-        h1.text-center = link_to "Neo Run", "/products/neo_run"
-        p Neues Material, optimierte Form und effizienteres Dämpfungsverhalten - die Mittelsohle des Neo Runs ist eine kleine Revolution.
-        = link_to "Neo Run ansehen", "/products/neo_run", class: "button button--large"
+    .hero__inner
+      .hero__image
+        = link_to "/products/classic_run" do
+          = image_tag "/images/products/classic_run/STS203SWR/STS203SWR__03--square.jpg"
+      .hero__text
+        .content.content--narrow
+          / = link_to "/about", class: "made-in-germany__link" do
+          /   = image_tag "/images/misc/made_in_germany.svg", class: "made-in-germany__logo", alt: "Made In Germany Logo"
+          h1.hero__title = link_to "Classic Run", "/products/classic_run"
+          p Der Klassiker in unserem Sortiment und Geheimtipp anspruchsvoller Läufer. Der Classic Run hat sich über Jahre als Laufschuh der Extraklasse bewährt und wurde dennoch stetig verbessert.
+          = link_to "Classic Run ansehen", "/products/classic_run", class: "button button--large"
 
 .panel
   .content
