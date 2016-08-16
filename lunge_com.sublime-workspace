@@ -4,6 +4,10 @@
 		"selected_items":
 		[
 			[
+				"kon",
+				"Konformitätserklärung"
+			],
+			[
 				"tablet-",
 				"tablet-landscape"
 			],
@@ -492,6 +496,14 @@
 			}
 		},
 		{
+			"file": "source/about/suppliers.html.slim",
+			"settings":
+			{
+				"buffer_size": 5004,
+				"line_ending": "Unix"
+			}
+		},
+		{
 			"file": "source/stylesheets/_typography.scss",
 			"settings":
 			{
@@ -899,7 +911,7 @@
 	"groups":
 	[
 		{
-			"selected": 1,
+			"selected": 2,
 			"sheets":
 			[
 				{
@@ -929,7 +941,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 2,
+					"stack_index": 3,
 					"type": "text"
 				},
 				{
@@ -945,8 +957,8 @@
 						"selection":
 						[
 							[
-								3378,
-								3378
+								2951,
+								2951
 							]
 						],
 						"settings":
@@ -959,11 +971,41 @@
 						"translation.y": 5054.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
+					"stack_index": 1,
 					"type": "text"
 				},
 				{
 					"buffer": 2,
+					"file": "source/about/suppliers.html.slim",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 5004,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								4358,
+								4358
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Ruby Slim/Syntaxes/Ruby Slim.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1085.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
 					"file": "source/stylesheets/_typography.scss",
 					"semi_transient": false,
 					"settings":
@@ -989,7 +1031,7 @@
 						"translation.y": 1142.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
+					"stack_index": 2,
 					"type": "text"
 				}
 			]
@@ -1047,6 +1089,10 @@
 		"last_filter": "",
 		"selected_items":
 		[
+			[
+				"suppl",
+				"source/about/suppliers.html.slim"
+			],
 			[
 				"typograp",
 				"source/stylesheets/_typography.scss"
@@ -1554,10 +1600,6 @@
 			[
 				"seeds",
 				"db/seeds.rb"
-			],
-			[
-				"apiproducts",
-				"app/controllers/api/products_controller.rb"
 			]
 		],
 		"width": 0.0
