@@ -4,16 +4,20 @@
 		"selected_items":
 		[
 			[
+				"tablet-",
+				"tablet-landscape"
+			],
+			[
+				"tablet",
+				"tablet-landscape"
+			],
+			[
 				"support-",
 				"support-item__image"
 			],
 			[
 				"blockgrid",
 				"blockgrid__item__figure"
-			],
-			[
-				"tablet-",
-				"tablet-portrait"
 			],
 			[
 				"classic",
@@ -472,34 +476,26 @@
 	"buffers":
 	[
 		{
-			"file": "source/products/neo_run.html.slim",
+			"file": "source/index.html.slim",
 			"settings":
 			{
-				"buffer_size": 7411,
+				"buffer_size": 2212,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "source/partials/_footer.html.slim",
+			"file": "source/stylesheets/_components.scss",
 			"settings":
 			{
-				"buffer_size": 1512,
+				"buffer_size": 17443,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": ".gitignore",
+			"file": "source/stylesheets/_typography.scss",
 			"settings":
 			{
-				"buffer_size": 576,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "source/products/classic_run.html.slim",
-			"settings":
-			{
-				"buffer_size": 7752,
+				"buffer_size": 1978,
 				"line_ending": "Unix"
 			}
 		}
@@ -604,11 +600,13 @@
 	],
 	"file_history":
 	[
-		"/Users/ulflunge/projects/lunge_com/source/products/evo_run.html.slim",
+		"/Users/ulflunge/projects/lunge_com/source/products/classic_run.html.slim",
 		"/Users/ulflunge/projects/lunge_com/source/products/neo_run.html.slim",
+		"/Users/ulflunge/projects/lunge_com/source/partials/_footer.html.slim",
+		"/Users/ulflunge/projects/lunge_com/.gitignore",
+		"/Users/ulflunge/projects/lunge_com/source/products/evo_run.html.slim",
 		"/Users/ulflunge/projects/lunge_com/source/index.html.slim",
 		"/Users/ulflunge/projects/lunge_com/source/stylesheets/_components.scss",
-		"/Users/ulflunge/projects/lunge_com/source/partials/_footer.html.slim",
 		"/Users/ulflunge/projects/lunge_com/data/products/classic_run.yml",
 		"/Users/ulflunge/projects/lunge_com/data/products/neo_run.yml",
 		"/Users/ulflunge/projects/lunge_com/source/stylesheets/_layout.scss",
@@ -618,7 +616,6 @@
 		"/Users/ulflunge/projects/lunge_com/source/products.html.slim",
 		"/Users/ulflunge/projects/lunge_com/Gemfile",
 		"/Users/ulflunge/projects/lunge_com/data/products/classic_walk.yml",
-		"/Users/ulflunge/projects/lunge_com/source/products/classic_run.html.slim",
 		"/Users/ulflunge/projects/lunge_com/source/about/suppliers.html.slim",
 		"/Users/ulflunge/projects/lunge_com/source/javascripts/all.js",
 		"/Users/ulflunge/projects/lunge_com/source/stylesheets/_typography.scss",
@@ -627,7 +624,6 @@
 		"/Users/ulflunge/projects/lunge_com/source/layouts/frontpage.html.slim",
 		"/Users/ulflunge/projects/lunge_com/source/support/care.html.slim",
 		"/Users/ulflunge/projects/lunge_com/source/stylesheets/_variables.scss",
-		"/Users/ulflunge/projects/lunge_com/.gitignore",
 		"/Users/ulflunge/projects/lunge_com/source/beta/buy_sdk.html.slim",
 		"/Users/ulflunge/projects/lunge_com/source/done.html.slim",
 		"/Users/ulflunge/projects/lunge_com/source/layouts/layout.html.slim",
@@ -903,29 +899,28 @@
 	"groups":
 	[
 		{
-			"selected": 2,
+			"selected": 1,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "source/products/neo_run.html.slim",
+					"file": "source/index.html.slim",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 7411,
+						"buffer_size": 2212,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								85,
-								85
+								373,
+								373
 							]
 						],
 						"settings":
 						{
-							"color_scheme": "Packages/Material Theme/schemes/Material-Theme.tmTheme",
 							"syntax": "Packages/Ruby Slim/Syntaxes/Ruby Slim.tmLanguage",
 							"tab_size": 2,
 							"translate_tabs_to_spaces": true
@@ -939,91 +934,62 @@
 				},
 				{
 					"buffer": 1,
-					"file": "source/partials/_footer.html.slim",
+					"file": "source/stylesheets/_components.scss",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1512,
+						"buffer_size": 17443,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								3378,
+								3378
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/Ruby Slim/Syntaxes/Ruby Slim.tmLanguage",
+							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
 							"tab_size": 2,
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": ".gitignore",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 576,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								500,
-								500
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Text/Plain text.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 5054.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
 					"type": "text"
 				},
 				{
-					"buffer": 3,
-					"file": "source/products/classic_run.html.slim",
+					"buffer": 2,
+					"file": "source/stylesheets/_typography.scss",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 7752,
+						"buffer_size": 1978,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								1213,
+								1213
 							]
 						],
 						"settings":
 						{
-							"color_scheme": "Packages/Material Theme/schemes/Material-Theme.tmTheme",
-							"syntax": "Packages/Ruby Slim/Syntaxes/Ruby Slim.tmLanguage",
+							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
 							"tab_size": 2,
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 1142.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 3,
+					"stack_index": 1,
 					"type": "text"
 				}
 			]
@@ -1082,6 +1048,18 @@
 		"selected_items":
 		[
 			[
+				"typograp",
+				"source/stylesheets/_typography.scss"
+			],
+			[
+				"compone",
+				"source/stylesheets/_components.scss"
+			],
+			[
+				"index",
+				"source/index.html.slim"
+			],
+			[
 				"evo",
 				"source/products/evo_run.html.slim"
 			],
@@ -1108,10 +1086,6 @@
 			[
 				"layo",
 				"source/stylesheets/_layout.scss"
-			],
-			[
-				"index",
-				"source/index.html.slim"
 			],
 			[
 				"press",
@@ -1308,10 +1282,6 @@
 			[
 				"ind",
 				"source/index.html.slim"
-			],
-			[
-				"compone",
-				"source/stylesheets/_components.scss"
 			],
 			[
 				"typogra",
@@ -1575,10 +1545,6 @@
 			],
 			[
 				"typ",
-				"source/stylesheets/_typography.scss"
-			],
-			[
-				"typograp",
 				"source/stylesheets/_typography.scss"
 			],
 			[
