@@ -18,6 +18,10 @@ hr {
 
 
 /* LOGO */
+.logo__container {
+  display: flex;
+}
+
 .logo {
   display: block;
   flex: 0 0 auto;
@@ -33,6 +37,37 @@ hr {
   height: inherit;
 }
 
+a.announcement {
+  font-size: 0.825rem;
+  padding: 0.25rem 0.5rem;
+  margin-left: 1rem;
+  background-color: $mint-gray;
+
+  &:hover {
+    background-color: $accent-color;
+    color: $white;
+  }
+}
+
+
+
+/* BUY PANEL */
+.buy-panel {
+  @include tablet-landscape {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.buy-panel__description {
+  flex: 1 1 auto;
+  text-align: left;
+}
+
+.buy-panel__image {
+  flex: 0 0 50%;
+}
+
 
 
 
@@ -41,7 +76,7 @@ hr {
 a.offcanvas-top-open {
   display: block;
 
-  @include tablet-portrait {
+  @include tablet-landscape {
     display: none;
   }
 }
@@ -92,7 +127,7 @@ li.mobile-nav__item {
 nav.main-nav {
   display: none;
 
-  @include tablet-portrait {
+  @include tablet-landscape {
     display: block;
   }
 }
@@ -949,10 +984,6 @@ iframe.responsive--4x3 {
 
 
 
-/* CART */
-.cart {
-  display: none;
-}
 
 
 /* SPECIFICATIONS */
