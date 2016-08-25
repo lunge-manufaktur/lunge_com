@@ -37,7 +37,7 @@ javascript:
 
     var infowindow = null;
 
-    $.getJSON( 'retailers.geojson', function( data ) {
+    $.getJSON( '/retailers.geojson', function( data ) {
       var locations = data.features;
 
       $.each( locations, function( index, location ) {
