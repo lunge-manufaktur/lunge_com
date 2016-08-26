@@ -934,17 +934,37 @@ iframe.responsive--4x3 {
   width: 100%;
 }
 
+.card__container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  justify-content: space-around;
+}
+
 .card {
+  display: flex;
+  flex-direction: column;
+  flex: 0 0 100%;
   width: 100%;
   max-width: 85rem;
-  margin: auto;
+  min-width: 0px;
+  margin-bottom: $gutter;
+
+  @include tablet-portrait {
+    margin: $gutter;
+    flex: 0 0 265px;
+  }
+
+  @include tablet-landscape {
+    flex: 0 0 350px;
+  }
 }
 
 .card__link {
   display: block;
 }
 
-.card__link:hover .card__image {
+.card:hover .card__image {
   transform: scale(1.1);
 }
 
@@ -953,9 +973,10 @@ iframe.responsive--4x3 {
   background-color: $card-description-background;
   padding: 2rem;
   border-bottom: 1px solid $header-background;
+  flex: 1 0 auto;
 }
 
-.card__link:hover .card__description {
+.card:hover .card__description {
   border-color: $accent-color;
 }
 

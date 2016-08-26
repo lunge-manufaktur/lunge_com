@@ -20,9 +20,9 @@ sitemap_changefreq: daily
       = partial "partials/shop_features"
 
 .panel
-  .content.content--narrow
-    .card
-      = link_to "/products/#{data.products.classic_run.slug}", class: "card__link" do
+  .content
+    .card__container
+      = link_to "/products/#{data.products.classic_run.slug}", class: "card" do
         .card__figure
           = image_tag data.products.classic_run.default_image, class: "card__image", alt: "Classic Run"
         .card__description
@@ -38,10 +38,8 @@ sitemap_changefreq: daily
                 .color-icon style="background: linear-gradient(180deg, #{color.first_color}, #{color.first_color} 65%, #{color.second_color} 66%, #{color.second_color} 100%); border: 0px solid #{color.first_color}" title=(color.name)
 
 
-.panel
-  .content.content--narrow
-    .card
-      = link_to "/products/#{data.products.classic_walk.slug}", class: "card__link" do
+
+      = link_to "/products/#{data.products.classic_walk.slug}", class: "card" do
         .card__figure
           = image_tag data.products.classic_walk.default_image, class: "card__image", alt: "Classic Walk"
         .card__description
@@ -56,10 +54,8 @@ sitemap_changefreq: daily
               li
                 .color-icon style="background: linear-gradient(180deg, #{color.first_color}, #{color.first_color} 65%, #{color.second_color} 66%, #{color.second_color} 100%); border: 0px solid #{color.first_color}" title=(color.name)
 
-.panel
-  .content.content--narrow
-    .card
-      = link_to "/products/#{data.products.neo_run.slug}", class: "card__link" do
+
+      = link_to "/products/#{data.products.neo_run.slug}", class: "card" do
         .card__figure
           = image_tag data.products.neo_run.default_image, class: "card__image", alt: "Classic Walk"
         .card__description
@@ -74,10 +70,7 @@ sitemap_changefreq: daily
               li
                 .color-icon style="background: linear-gradient(180deg, #{color.first_color}, #{color.first_color} 65%, #{color.second_color} 66%, #{color.second_color} 100%); border: 0px solid #{color.first_color}" title=(color.name)
 
-.panel
-  .content.content--narrow
-    .card
-      = link_to "/products/#{data.products.classic_run_fis.slug}", class: "card__link" do
+      = link_to "/products/#{data.products.classic_run_fis.slug}", class: "card" do
         .card__figure
           = image_tag data.products.classic_run_fis.default_image, class: "card__image", alt: "Classic Run Fis"
         .card__description
@@ -92,10 +85,8 @@ sitemap_changefreq: daily
               li
                 .color-icon style="background: linear-gradient(180deg, #{color.first_color}, #{color.first_color} 65%, #{color.second_color} 66%, #{color.second_color} 100%); border: 0px solid #{color.first_color}" title=(color.name)
 
-.panel
-  .content.content--narrow
-    .card
-      = link_to "/products/#{data.products.evo_run.slug}", class: "card__link" do
+
+      = link_to "/products/#{data.products.evo_run.slug}", class: "card" do
         .card__figure
           = image_tag data.products.evo_run.default_image, class: "card__image", alt: "Evo Run"
         .card__description
@@ -110,10 +101,7 @@ sitemap_changefreq: daily
               li
                 .color-icon style="background: linear-gradient(180deg, #{color.first_color}, #{color.first_color} 65%, #{color.second_color} 66%, #{color.second_color} 100%); border: 0px solid #{color.first_color}" title=(color.name)
 
-.panel
-  .content.content--narrow
-    .card
-      = link_to "/products/#{data.products.gomax.slug}", class: "card__link" do
+      = link_to "/products/#{data.products.gomax.slug}", class: "card" do
         .card__figure
           = image_tag data.products.gomax.default_image, class: "card__image", alt: "Gomax Einlegesohlen"
         .card__description
