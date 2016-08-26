@@ -11,7 +11,7 @@ body {
 }
 
 p {
-  margin-bottom: $gutter;
+  margin-bottom: $gutter * 2;
 }
 
 a {
@@ -111,12 +111,6 @@ h2.text-center::after {
 }
 
 h3 {
-  font-size: 1.3rem;
-  font-weight: 400;
-  line-height: 2.2rem;
-}
-
-h4 {
   font-size: 1.1rem;
   letter-spacing: 1px;
   font-weight: 700;

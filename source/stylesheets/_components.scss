@@ -1182,6 +1182,44 @@ li.tab-title[not tab-title--active]:hover {
 }
 
 
+/* GENERAL ITEM */
+.item {
+  @include tablet-portrait {
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+.item__figure {
+  @include tablet-portrait {
+    flex: 0 0 33%;
+    border-top: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+    padding: 2rem 2rem 0 0;
+    display: flex;
+    align-items: center;
+  }
+}
+
+.item__image {
+  margin: auto;
+  width: 100%;
+  padding: 20vw;
+  @include tablet-portrait {
+    width: 150px;
+    padding: 0;
+  }
+}
+
+.item__description {
+  @include tablet-portrait {
+    flex: 1 1 auto;
+    border-top: 1px solid #ddd;
+    padding: 2rem 0 0 2rem;
+  }
+}
+
+
 
 /* SUPPORT-ITEMS */
 

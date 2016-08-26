@@ -84,7 +84,7 @@ footer {
   width: 100%;
   margin-left: auto;
   margin-right: auto;
-  padding: $gutter-small;
+  padding: 0 $gutter-small;
 
   @include tablet-portrait {
     padding: $gutter;
