@@ -4,7 +4,7 @@ header
     = link_to "Tag der offen Tür", "/news/tag_der_offenen_tuer_2016", class: "announcement"
   nav.main-nav
     ul
-      - data.navigation_items.each do |item|
+      - data.navigation_items.de.each do |item|
         li
           = nav_link_to item.name, item.url, class: "main-nav__link", section: item.section
       li

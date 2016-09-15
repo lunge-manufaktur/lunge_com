@@ -34,6 +34,8 @@ require "lib/helpers"
 helpers Helpers
 ###
 
+activate :sprockets
+
 # Automatic image dimensions on image_tag helper
 # activate :automatic_image_sizes
 
@@ -123,3 +125,6 @@ after_build do |builder|
   builder.source_paths << File.dirname(__FILE__)
   builder.copy_file(src,dst)
 end
+
+
+activate :i18n, langs: [:de, :en]

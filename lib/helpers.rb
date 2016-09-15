@@ -17,6 +17,6 @@ module Helpers
   end
 
   def meta_description
-    current_page.data.description || 'Lauf- und Bequemschuhe aus deutscher Fertigung.'
+    current_page.data.description || 'Bequem- und Laufschuhe aus deutscher Fertigung.'
   end
 end
