@@ -7,7 +7,7 @@ doctype xml
 urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   - pages.each do |p|
     url
-      loc = "https://www.lunge.com#{p.url.gsub(/\/+$/,'')}"
+      loc = "https://www.lunge.com#{p.url.gsub(/\/+$/,'')}/"
       lastmod    = Date.today.to_time.iso8601
       changefreq = p.data.sitemap_changefreq || 'weekly'
       priority   = p.data.sitemap_priority   || '0.5'
