@@ -1,0 +1,23 @@
+.wheretobuy
+  .wheretobuy__item
+    .wheretobuy__item__figure
+      = image_tag "/images/misc/shopping_bags.svg", class: "wheretobuy__item__image", alt: "Shop"
+    .wheretobuy__item__description
+      h2.text-center Shop
+      p Conveniently order our shoes from the comfort of your home. We ship to all EU countries and Switzerland - including free returns and exchanges.
+      = link_to "Shop now", "en/products", class: "button"
+      hr
+      ul.inline-list.inline-list--center
+        li = image_tag "/images/payment/Paypal-dark.svg", class: "payment-icon", alt: "Paypal"
+        li = image_tag "/images/payment/Visa-dark.svg", class: "payment-icon", alt: "Visa"
+        li = image_tag "/images/payment/MasterCard-dark.svg", class: "payment-icon", alt: "MasterCard"
+        li = image_tag "/images/payment/AmericanExpress-dark.svg", class: "payment-icon", alt: "American Express"
+        li = image_tag "/images/payment/Sepa-dark.svg", class: "payment-icon", alt: "SEPA Banküberweisung"
+        li = image_tag "/images/payment/Amazon-dark.svg", class: "payment-icon", alt: "Amazon Payments"
+  .wheretobuy__item
+    .wheretobuy__item__figure
+      = image_tag "/images/misc/map_pin--black.svg", class: "wheretobuy__item__image", alt: "Händler"
+    .wheretobuy__item__description
+      h2.text-center Retailers
+      p Discover our retail partners in germany and selected international locations.
+      = link_to "Find retailers", "/en/retailers", class: "button"

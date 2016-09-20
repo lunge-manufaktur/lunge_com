@@ -1,0 +1,149 @@
+---
+title: Classic Run
+keywords: laufen, c-dur, a-moll, classic run, running, running shoes, made in germany
+description: Der Laufschuh für anspruchsvoller Läufer. Der Classic Run hat sich über Jahre als Laufschuh der Extraklasse bewährt.
+section: products
+canonical_link: "https://www.lunge.com/en/products/classic_run/"
+url_de: "https://www.lunge.com/products/classic_run/"
+url_en: "https://www.lunge.com/en/products/classic_run/"
+lang: "en" 
+sitemap_priority: 0.8
+sitemap_changefreq: daily
+---
+
+.title__container
+  .title__inner
+    .content.content--narrow
+      h1.title Classic Run
+      p The proven choice for runners - constantly improved and developed for years the Classic Run is a running shoe of highest quality.
+      ul.inline-list.inline-list--center
+        li = link_to "Buy now", "#add-to-cart", class: "button button-large"
+
+.panel
+  .content
+    .panel__inner.panel__inner--reverse
+      .panel__image
+        = image_tag "/images/products/classic_run/hero/STS203RRW__02__square.png", alt: "Classic Run in Royal / Weiß"
+      aside.panel__text
+        .panel__text__inner
+          h2 80% EVA for lasting suspension
+          p The key diffenrentiator of the Classic Run is the high quality midsole material EVA, which is used in its finest form for our shoes. The main characteristics of running shoes are determined by the EVA-share in the midsole as well as its quality.
+          p Most running shoes only use about 20% of EVA in their soles. Lunge shoes, however, are made from solid EVA blocks with a share of 80% - a unique feature that delivers very flexible and long lasting suspension. Furthermore our soles are designed to use progressive suspension resulting in more effective behaviour depending on the strength of the footfall.
+
+.panel
+  .content
+    .panel__inner
+      .panel__image
+        = image_tag "/images/products/classic_run/STS203SSS/STS203SSS__01.jpg", alt: "Classic Run in Schwarz / Silber"
+      aside.panel__text
+        .panel__text__inner
+          h2 Unmatched comfort
+          p As expected of Lunge shoes the Classic Run only uses the finest of materials - as always free of toxic or harmful substances. Since its introduction in 2008 the Classic Run has seen many iterations and improvements to its components. We're always looking for superior materials that keep improving the performance and comfort of already remarkable shoes.
+
+.panel
+  .content
+    .panel__inner.panel__inner--reverse
+      .panel__image
+        = image_tag "/images/products/classic_run/hero/STS203SWR__02__square.png", alt: "Classic Run in Silber / Weiß / Rot"
+      aside.panel__text
+        .panel__text__inner
+          h2 Versatility as speciality
+          p The Classic Run is a remarkably universal and versatile running shoe that covers a wide range of individual foot types and running styles with individual requirements. The pronation support on the inner region of the midsole features very flexible efficiency that gently and securely leads the foot of neutral runners as well as those prone to pronation.
+
+.panel
+  .content
+    .panel__inner
+      .panel__image
+        = image_tag "/images/products/classic_run/hero/STS203GGG__03__square.png", alt: "Classic Run in Grün / Grün"
+      aside.panel__text
+        .panel__text__inner
+          h2 Established strengths and constant improvements
+          p Don't be fooled by the fact that the Classic Run has been manufactured since 2008. While this running shoe makes use of countless proven and established features, it has been subject to several improvements and optimizations. Whether its materials, components, the manufacturing process or other details, we're always looking for ways to improve our shoes.
+
+.gallery.scroll--horizontal
+  - data.products.classic_run.images.each do |image|
+    .gallery__item
+      = image_tag image.path
+      .gallery__item__title = image.title
+
+
+.panel.panel--emphasis
+  .content
+    h1#add-to-cart.anchor-target.text-center Buy now
+    ul.tab-titles
+      li.tab-title.tab-title--active = link_to "Men", "men"
+      li.tab-title = link_to "Women", "women"
+    .tabs
+      .tab.tab--active data-tab="men"
+        div data-background_color="f7f7f9" data-button_background_color="b6be00" data-button_text_color="ffffff" data-buy_button_out_of_stock_text="Derzeit ausverkauft. Bald wieder verfügbar." data-buy_button_product_unavailable_text="Nicht verfügbar" data-buy_button_text="In den Warenkorb legen" data-collection_handle="classic-run" data-display_size="compact" data-embed_type="collection" data-has_image="true" data-next_page_button_text="Next page" data-product_handle="" data-product_modal="true" data-product_name="" data-product_title_color="000000" data-redirect_to="modal" data-shop="lunge-manufaktur.myshopify.com"
+      .tab data-tab="women"
+        div data-background_color="f7f7f9" data-button_background_color="b6be00" data-button_text_color="ffffff" data-buy_button_out_of_stock_text="Derzeit ausverkauft. Bald wieder verfügbar." data-buy_button_product_unavailable_text="Nicht verfügbar" data-buy_button_text="In den Warenkorb legen" data-collection_handle="classic-run-w" data-display_size="compact" data-embed_type="collection" data-has_image="true" data-next_page_button_text="Next page" data-product_handle="" data-product_modal="true" data-product_name="" data-product_title_color="000000" data-redirect_to="modal" data-shop="lunge-manufaktur.myshopify.com"
+    hr
+    .content.content--narrow
+      h2.text-center Find the right size
+      = partial "partials/size_table"
+    hr
+    .row
+      .col-xs-12.col-md-6
+        h4 Specifications
+        ul.spec-list
+          li.spec-list__item
+            label Inner lining
+            span Stockmayer + Sohn Velour Gewirk
+          li.spec-list__item
+            label Upper material
+            span Fashmo DS14
+            br
+            span E.Cima Mesh
+          li.spec-list__item
+            label Thread
+            span Amann & Söhne Isacord ET150
+            br
+            span Amann & Söhne Isacord ET40
+            br
+            span Amann & Söhne Serafil ET60
+            br
+            span Amann & Söhne Serafil ET40
+          li.spec-list__item
+            label Midsole
+            span nora Lunatec CAD35
+            br
+            span nora Lunatec CAD55 (Pronationsstütze)
+            br
+            span nora Lunatec Combi (Crashpad)
+          li.spec-list__item
+            label Outer sole
+            span OK Gummiwerk Eurostar Soft 236
+          li.spec-list__item
+            label Heel lift
+            span 9,5 mm (US Men 10)
+          li.spec-list__item
+            label Weight
+            span 343 g (US Men 10)
+          li.spec-list__item
+            label Available sizes
+            span Damen: US 6 - US 13
+            br
+            span Herren: US 8 - US 15
+      .col-xs-12.col-md-6
+        = partial "partials/add_to_cart_help"
+
+
+script type="application/ld+json"
+  | {
+  |   "@context" : "http://schema.org",
+  |   "@type" : "Product",
+  |   "name" : "Classic Run",
+  |   "image" : "https://www.lunge.com/images/products/classic_run/misc/01.jpg",
+  |   "description" : "Der Klassiker in unserem Sortiment und Geheimtipp anspruchsvoller Läufer. Der Classic Run hat sich über Jahre als Laufschuh der Extraklasse bewährt und wurde dennoch stetig verbessert.",
+  |   "brand": {
+  |     "@type": "Brand",
+  |     "name": "Lunge"
+  |   },
+  |   "offers" : {
+  |     "@type" : "Offer",
+  |     "price" : "220.00",
+  |     "priceCurrency": "EUR",
+  |     "availability": "InStock"
+  |   }
+  | }
