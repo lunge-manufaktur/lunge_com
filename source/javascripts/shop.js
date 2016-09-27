@@ -15,7 +15,7 @@ $(function() {
   var cartLineItemCount;
   
   //grab collection ID from div.collection#collection-id in HTML
-  var collection = $('body').find('.collection').attr('id');
+  var collection = $('.gender-select').val();
   
   // check for existing cart in local storage, if one doesn't exist
   // create new cart object
@@ -24,134 +24,174 @@ $(function() {
       cart = remoteCart;
       cartLineItemCount = cart.lineItems.length;
       renderCartItems();
+      updateCartTabButton();
     });
   } else {
     client.createCart().then(function (newCart) {
       cart = newCart;
       localStorage.setItem('lastCartId', cart.id);
       cartLineItemCount = 0;
+      updateCartTabButton();
     });
   }
 
   var previousFocusItem;
 
 
-  /* Fetch collection and loop through to create HTML for each product
-  ======================================================================== */
-  client.fetchQueryProducts({collection_id: collection, sort_by: 'collection-default' }).then(function(products) {
-    var productSelectHTML = generateProductSelectors(products);
-
-    // Products ==  the array of products within the collection
-    for (i = 0; i < products.length; i++) {
-      product = products[i];
-      var activeClass = (i == 0) ? 'product--active' : '';
-      // var productHTML =
-      //   '<div class="product collection__item ' + activeClass + '" id="buy-button-'+i+'" data-product-id = "'+ product.id+'">'+
-      //     '<div class="product__image-container image-overlay-container">' +
-      //       '<img class="product__image variant-image pointer">'+
-      //     '</div>' +
-      //     '<div class="product__details product-details">'+
-      //       '<h2 class="product-title pointer"></h1>'+
-      //       '<h4 class="variant-title pointer"></h2>'+
-      //       '<h4 class="variant-price"></h2>'+
-      //       '<div class = "product-description"></div>'+
-      //       '<div class="variant-selectors"></div>'+
-      //     '</div>'+
-      //     '<div style = "clear:both"></div>'+'<i class="fa fa-times fa-2x product-modal-close" aria-hidden="true"></i>'+
-      //     '<div class = "button-container">'+
-      //       '<button class="btn buy-button js-prevent-cart-listener add-button" data-product-id = "'+product.id+'" data-variant-id = "'+ product.selectedVariant.id+'">Add To Cart</button>'+
-      //       '</div>'+
-      //     '</div>'+
-      //   '</div>';
-
-      var productHTML =
-        '<div class="product ' + activeClass + '" id="buy-button-'+i+'" data-product-id = "'+ product.id+'">'+
-          '<div class="product__image-container image-overlay-container">' +
-            '<img class="product__image variant-image pointer">'+
-          '</div>' +
-          '<div class="product__details product-details">'+
-            '<h4>Jetzt bestellen</h4>'+
-            '<label>Damen / Herren</label>'+
-
-            '<div class="product-description"></div>'+
-            '<label>Farbe</label>'+
-            '<div class="product-select__container"></div>'+
-            '<label>Größe</label>'+
-            '<div class="variant-selectors"></div>'+
-            '<h4 class="variant-price"></h2>'+
-            '<hr>'+
-            '<div class = "button-container">'+
-              '<button class="btn buy-button js-prevent-cart-listener add-button" data-product-id = "'+product.id+'" data-variant-id = "'+ product.selectedVariant.id+'">In den Warenkorb</button>'+
-              '</div>'+
-            '</div>'+
-          '</div>'+
-        '</div>';
-
-      var productImageHTML =
-        '<div class="product ' + activeClass + '" id="buy-button-'+i+'" data-product-id = "'+ product.id+'">'+
-          '<div class="product__image-container image-overlay-container">' +
-            '<img class="product__image variant-image pointer">'+
-          '</div>'+
-        '</div>';
-
-      var variantSelectHTML =
-        '<div class="product ' + activeClass + '" id="buy-button-'+i+'" data-product-id = "'+ product.id+'">'+
-          '<div class="variant-selectors" data-product-id = "'+ product.id+'"></div>'+
-        '</div>';
 
 
-      $('.collection').append(productHTML);
-      $('.product-select__container').html(productSelectHTML);
-      
-      
-      var selectedVariant = product.selectedVariant;
-      var selectedVariantImage = product.selectedVariantImage;
-      var varCount = product.variants.length;
-      
-      
-      if (varCount > 1) {
-        var variantSelectors = generateSelectors(i, product.variants);
-        updateVariantSelectors(i, variantSelectors);
-        updateVariantTitle(i, selectedVariant);
-      }
 
-      updateProductTitle(i, product.title);
-      updateProductDescription(i, product.description);
-      updateVariantImage(i, selectedVariantImage);
-      updateVariantPrice(i, selectedVariant);
+  bindEventListeners();
+
+  if (collection !== undefined) {
+    getProducts(collection);
+  }
+
+  /* get products */
+  function getProducts(collection) {
+    client.fetchQueryProducts({collection_id: collection, sort_by: 'collection-default' }).then(function(products) {
+      showSpinner();
+
+      var product = products[0];
+      var productSelectHTML = generateProductSelectors(products);
+      var variantSelectHTML = generateVariantSelectors(product.variants);
+
+      $('.product-select').html(productSelectHTML);
+      $('.variant-select').html(variantSelectHTML);
+
+      updateProductData();
+      updateAddToCartButton();
+    });
+  }
+
+
+  // get variants
+  function getVariants(product) {
+    client.fetchProduct(product).then(function(product) {
+      showSpinner();
+
+      var product = product;
+      var variantSelectHTML = generateVariantSelectors(product.variants);
+
+      $('.variant-select').html(variantSelectHTML)
+
+      updateAddToCartButton();
+      updateProductData();
+    });
+  }
+
+
+  // update product image
+  function updateProductImage(selectedVariant) {
+    // var productImageURL = selectedVariant.image.src
+    // $('.product__image').attr('src', productImageURL);
+
+    var productImageURL = selectedVariant.image.src
+    $('.product__image-container').html('<img src="' + productImageURL + '" class="product__image">');
+  }
+
+
+  function showSpinner() {
+    var spinnerHTML = '<div class="loader"></div>';
+    $('.product__image-container').html(spinnerHTML);
+  }
+
+
+
+  // populate variant select box
+  function generateVariantSelectors(variants) {
+    var options;
+    for (var i = 0; i < variants.length; i++) {
+      var disabled = variants[i].available ? false : true
+      options += '<option ' + (disabled ? 'disabled=disabled ' : '') + 'value = "' + variants[i].id + '">' + variants[i].title + '</option>';
     }
+
+    return  '<select name = "variant-select" class = "variant-select">' + options + '</select>';
+  }
+
+  // populate product select box
+  function generateProductSelectors(products) {
+    var options;
+    for (var i = 0; i < products.length; i++) {
+      options += '<option value = "' + products[i].id + '">' + products[i].title + '</option>';
+    }
+
+    return  '<select class="product-select" name = "product-selection">' + options + '</select>';
+  }
+
+
+
+  function updateVariantPrice(selectedVariant) {
+    var selectedVariant = selectedVariant;
+    var formattedPrice = formatAsMoney(selectedVariant.price);
     
-    updateCartTabButton();
-    bindEventListeners();
-    attachOnVariantSelectListeners();
+    $('.variant-price').text(formattedPrice);
+  }
 
-    var productsCount = products.length
-    if (productsCount > 1) {
-      var productSelectors = generateProductSelectors(products);
-      updateVariantSelectors(i, variantSelectors);
-      updateVariantTitle(i, selectedVariant);
-    }
+
+  // update add to cart button
+  function updateAddToCartButton() {
+    var product = $('.product-select').val();
+    var variant = $('.variant-select').val();
+
+    console.log('product: ' + product + ', variant: ' + variant);
+    $('.buy-button').attr({'data-product-id': product, 'data-variant-id': variant})
+  }
+
+
+
+  // gender-select event listener
+  $('.gender-select').on('change', function() {
+    var collection = this.value;
+    console.log('collection set to ' + collection);
+
+    getProducts(collection);
   });
 
 
-  /* Only show active product
-  ============================================================ */
-  $('.collection').on('change', '.product-select', function() {
-    var productID = this.value;
-    console.log('product changed to ' + productID);
+  // product-select event listener
+  $('.product-select').on('change', function() {
+    var product = this.value;
+    console.log('product set to ' + product)
 
-    // set current product
-    $('.product-select').val(productID);
-
-    // hide previously selected product
-    $('.product--active').removeClass('product--active');
-
-    // show currently selected product
-    $('.product[data-product-id="' + productID + '"]').addClass('product--active');
+    getVariants(product);
   });
-  
-  
-  
+
+
+  // variant-select event listener
+  $('.variant-select').on('change', function() {
+    updateProductData();
+  });
+
+
+
+  function updateProductData() {
+    var productID = $('.product-select').val();
+    var variantID = $('.variant-select').val();
+
+    client.fetchProduct(productID).then(function(product) {
+      for (var i = 0; i < product.variants.length; i++) {
+        if (product.variants[i].id == variantID) {
+          var selectedVariant = product.variants[i];
+
+          updateAddToCartButton();
+          updateVariantPrice(selectedVariant);
+          updateProductImage(selectedVariant);
+        }
+      }
+    });
+  }
+
+
+
+
+
+
+
+
+
+
+
     /* Bind Event Listeners
     ============================================================ */
   function bindEventListeners() {
@@ -179,8 +219,8 @@ $(function() {
     });
 
     // checkout button click listener 
-    $('.btn--cart-checkout').on('click', function () {
-      window.open(cart.checkoutUrl, '_self');
+    $('.button--checkout').on('click', function () {
+      window.open(cart.checkoutUrl, '_checkout');
     });
 
     // buy button click listener 
@@ -202,7 +242,8 @@ $(function() {
     $('.cart').on('keyup', '.cart-item__quantity', debounce(fieldQuantityHandler, 250));
 
     // cart tab click listener 
-    $('.btn--cart-tab').click(function() {
+    $('.cart__toggle').on('click', function() {
+      console.log('cart should open');
       setPreviousFocusItem(this);
       openCart();
     });
@@ -224,6 +265,7 @@ $(function() {
   /* Attach and control listeners onto buy button
     ============================================================ */
   function buyButtonClickHandler(evt) {
+    console.log('add to cart button clicked');
   
     evt.preventDefault();
     var productID = $(this).attr('data-product-id');
@@ -326,9 +368,9 @@ $(function() {
 
   /* Update product variant price based on selected variant
   ============================================================ */
-  function updateVariantPrice(i, variant) {
-    $('#buy-button-'+i).find('.variant-price').text('$' + variant.price);
-  }
+  // function updateVariantPrice(i, variant) {
+  //   $('#buy-button-'+i).find('.variant-price').text('$' + variant.price);
+  // }
 
   /* Update product variant selectors 
   ============================================================ */
@@ -423,13 +465,15 @@ $(function() {
   /* Open Cart
   ============================================================ */
   function openCart() {
+    console.log('cartOpen trigerred');
+    $('body').removeClass('offcanvas');
     $('.cart').addClass('js-active');
-    hideModal();
   }
 
   /* Close Cart
   ============================================================ */
   function closeCart() {
+    console.log('closeCart trigerred');
     $('.cart').removeClass('js-active');
     $('.overlay').removeClass('js-active');
   }
@@ -510,10 +554,10 @@ $(function() {
   ============================================================ */
   function updateCartTabButton() {
     if (cart.lineItems.length > 0) {
-      $('.btn--cart-tab .btn__counter').html(cart.lineItemCount);
-      $('.btn--cart-tab').addClass('js-active');
+      $('.cart__toggle .btn__counter').html('Warenkorb (' + cart.lineItemCount + ')');
+      $('.cart__toggle').addClass('js-active');
     } else {
-      $('.btn--cart-tab').removeClass('js-active');
+      $('.cart__toggle').removeClass('js-active');
       $('.cart').removeClass('js-active');
     }
   }

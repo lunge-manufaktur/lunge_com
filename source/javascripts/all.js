@@ -3,4 +3,4 @@
 //= require tabs
 //= require product-variation-preview
 //= require cart
-//= require shop_alternative
+//= require shop
