@@ -3,7 +3,7 @@ form {
 }
 
 .input-group {
-  padding: 0 0 $gutter 0;
+  margin-bottom: 1rem;
 }
 
 input,
@@ -45,4 +45,21 @@ input.newsletter-signup__submit {
   @include tablet-portrait {
     font-size: 1rem;
   }
+}
+
+select {
+  appearance: none;
+  border: 1px solid $gray;
+  border-radius: 0;
+  padding: 0.5rem;
+  background-image: url('/images/ui/select-indicator.svg');
+  background-color: $white;
+  background-repeat: no-repeat;
+  background-size: 1rem;
+  background-position: right 10px center;
+}
+
+select:hover,
+select:focus {
+  border-color: $accent-color;
 }

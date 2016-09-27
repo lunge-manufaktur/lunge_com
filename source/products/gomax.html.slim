@@ -6,38 +6,67 @@ canonical_link: "https://www.lunge.com/products/gomax/"
 sitemap_priority: 0.7
 sitemap_changefreq: daily
 ---
-
-.title__container
+.title__container#add-to-cart.anchor-target
   .title__inner
-    .content.content--narrow
-      h1 Gomax Einlegesohlen
-      p = data.products.gomax.short_description
-      ul.inline-list.inline-list--center
-        li = link_to "Jetzt bestellen", "#add-to-cart", class: "button"
+    .content
+      .collection
+        .product
+          .product__image-container
+            = image_tag "misc/spinner.svg", class: "product__image"
+          .product__details
+            h1 Gomax Einlegesohlen
+            p = data.products.gomax.short_description
+            h4 Jetzt bestellen
+            .input-group
+              label Damen / Herren
+              .gender-select__container
+                select.product__option.gender-select
+                  option value=185224645 Unisex
+            .input-group
+              label Farbe
+              .product-select__container
+                select.product__option.product-select
+            .input-group
+              label Größe (Fusslänge / US / EUR)
+              .variant-select__container
+                select.product__option.variant-select
+            .variant-price__container
+              h2.variant-price
+            ul.inline-list
+              li
+                .add-to-cart-button__container
+                  button.buy-button.js-prevent-cart-listener.add-button In den Warenkorb
+              li = link_to "Größentabelle", "/support/sizes", class: "link"
+
 
 .panel.panel--odd
   .content
     .panel__inner
       .panel__image
         = image_tag "/images/products/gomax/LG105__01__square.png"
-      .panel__text
-        h2 Eine gesunde Entscheidung
-        p 30 Jahre Erfahrung stecken in unseren Gomax 3D-Systemsohle und diese geballte Kompetenz haben sie zu einer wahren Erfolgssohle gemacht. Die Einlagen sind eine Empfehlung, wenn Sie Überlastungsschäden vorbeugen möchten. Gomax 3D-Systemsohlen sind aber auch die erste Wahl bei der Prophylaxe von Fersensporn, Haglundferse, Spreizfuß, Senkfuß und Archillessehnenbeschwerden. Zudem können sie Kniebeschwerden bei Belastungen oder Schienbeinkantenproblemen verhindern. Aber denken Sie daran: Eine gute Einlage setzt natürlich immer einen guten Schuh voraus!
+      aside.panel__text
+        .panel__text__inner
+          h2 Eine gesunde Entscheidung
+          p 30 Jahre Erfahrung stecken in unseren Gomax 3D-Systemsohle und diese geballte Kompetenz haben sie zu einer wahren Erfolgssohle gemacht. Die Einlagen sind eine Empfehlung, wenn Sie Überlastungsschäden vorbeugen möchten. Gomax 3D-Systemsohlen sind aber auch die erste Wahl bei der Prophylaxe von Fersensporn, Haglundferse, Spreizfuß, Senkfuß und Archillessehnenbeschwerden. Zudem können sie Kniebeschwerden bei Belastungen oder Schienbeinkantenproblemen verhindern. Aber denken Sie daran: Eine gute Einlage setzt natürlich immer einen guten Schuh voraus!
+          = link_to "Jetzt bestellen", "#add-to-cart", class: "button button-large"
 
 .panel
   .content.content--narrow
     h2 Sitzt am Fuß wie angegossen
     p Spreiz-, Senk- oder Knickfüße – viele Menschen haben solche Fehlstellungen. Hier leisten Gomax 3D-Systemsohlenkompetente Unterstützung und bieten echten Schutz. Das Problem: Viele Laufschuhe haben ein zu einfaches Innenleben, das zur Prophylaxe von Beinbeschwerden nicht ausreicht. Orthopädische Einlagen dagegen sind oft zu stark in ihrer Wirkung. Gomax 3D-Systemsohlenbieten genau das richtige Maß an Stützwirkung. Also weder zu viel noch zu wenig.
     p Schon nach einer kurzen Eingewöhnungsphase von wenigen Stunden können unsere Einlagen bei vielen Sportarten als Stütze aktiv werden. Sie sind sogar für Skischuhe und Inliner zu empfehlen. In jedem Fall spüren Sie den Unterschied: Gomax 3D-Systemsohlenkorrigieren Spreiz-, Senk- oder Knickfüße genau an der richtigen Stelle und in angenehmer Stärke.
+    = link_to "Jetzt bestellen", "#add-to-cart", class: "button button-large"
 
 .panel.panel--odd
   .content
-    .panel__inner
-      .panel__text
-        h2 Die gezielte Steuerung des Fußes
-        p Die Ferse ist wie ein Lenkrad. Sie steuert den Fuß beim Abrollen und bestimmt seine Richtung. Durch Gomax 3D-Systemsohlen wird die Ferse angenehm im Schuh fixiert und der Fuß kontrolliert bewegt. Auf diese Weise wird die Fußmuskulatur gefördert und einer Schwächung vorgebeugt. Gomax 3D-Systemsohlen sind so etwas wie ein Upgrade für Ihren Sportschuh. Und das Beste: Unsere Systemsohlen halten nach unseren Erfahrungen rund 5000 Kilometer.
+    .panel__inner.panel__inner--reverse
       .panel__image
         = image_tag "/images/products/gomax/LG105__02__square.png"
+      aside.panel__text
+        .panel__text__inner
+          h2 Die gezielte Steuerung des Fußes
+          p Die Ferse ist wie ein Lenkrad. Sie steuert den Fuß beim Abrollen und bestimmt seine Richtung. Durch Gomax 3D-Systemsohlen wird die Ferse angenehm im Schuh fixiert und der Fuß kontrolliert bewegt. Auf diese Weise wird die Fußmuskulatur gefördert und einer Schwächung vorgebeugt. Gomax 3D-Systemsohlen sind so etwas wie ein Upgrade für Ihren Sportschuh. Und das Beste: Unsere Systemsohlen halten nach unseren Erfahrungen rund 5000 Kilometer.
+          = link_to "Jetzt bestellen", "#add-to-cart", class: "button button-large"
 
 .gallery
   - data.products.gomax.images.each do |image|
@@ -48,11 +77,6 @@ sitemap_changefreq: daily
 
 .panel.panel--emphasis
   .content
-    h1#add-to-cart.anchor-target.text-center Jetzt bestellen
-    div data-background_color="f7f7f9" data-button_background_color="b6be00" data-button_text_color="ffffff" data-buy_button_out_of_stock_text="Derzeit ausverkauft. Bald wieder verfügbar." data-buy_button_product_unavailable_text="Nicht verfügbar" data-buy_button_text="In den Warenkorb legen" data-collection_handle="gomax-einlage" data-display_size="compact" data-embed_type="collection" data-has_image="true" data-next_page_button_text="Next page" data-product_handle="" data-product_modal="true" data-product_name="" data-product_title_color="000000" data-redirect_to="modal" data-shop="lunge-manufaktur.myshopify.com"
-
-    hr
-
     .row
       .col-xs-12.col-sm-6
         h4 Technische Daten

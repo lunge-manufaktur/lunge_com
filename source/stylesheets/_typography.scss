@@ -79,8 +79,7 @@ h1::after {
   margin-top: $gutter-small;
 }
 
-h1.text-center::after,
-.title__container h1::after {
+h1.text-center::after {
   margin-left: auto;
   margin-right: auto;
 }
@@ -129,10 +128,18 @@ h5 {
   text-align: center;
 }
 
+.text-right {
+  text-align: right;
+}
+
 .text-small {
   font-size: 0.8125rem;
 }
 
 .text-inverted {
   color: $background-color;
+}
+
+.text-light {
+  color: #999;
 }

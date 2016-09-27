@@ -7,14 +7,45 @@ canonical_link: "https://www.lunge.com/products/neo_run/"
 sitemap_priority: 0.8
 sitemap_changefreq: daily
 ---
-
-.title__container
+.title__container#add-to-cart.anchor-target
   .title__inner
-    .content.content--narrow
-      h1.title Neo Run
-      p Neutraler Laufschuh mit äußerst komfortabler Federung und hervorragendem Tragekomfort.
-      ul.inline-list.inline-list--center
-        li = link_to "Jetzt bestellen", "#add-to-cart", class: "button button-large"
+    .content
+      .collection
+        .product
+          .product__image-container
+            = image_tag "misc/spinner.svg", class: "product__image"
+          .product__details
+            h1 Neo Run
+            p Neutraler Laufschuh mit äußerst komfortabler Federung und hervorragendem Tragekomfort.
+            h4 Jetzt bestellen
+            .input-group
+              label Damen / Herren
+              .gender-select__container
+                select.product__option.gender-select
+                  option value=208119173 Herren
+                  option value=208126213 Damen
+            .input-group
+              label Farbe
+              .product-select__container
+                select.product__option.product-select
+            .input-group
+              label Größe (Fusslänge / US / EUR)
+              .variant-select__container
+                select.product__option.variant-select
+            .variant-price__container
+              h2.variant-price
+            ul.inline-list
+              li
+                .add-to-cart-button__container
+                  button.buy-button.js-prevent-cart-listener.add-button In den Warenkorb
+              li = link_to "Größentabelle", "/support/sizes", class: "link"
+            .product__sizing
+              p
+                span
+                  | Um die passende Größe zu finden, wählen Sie Ihre Schuhe bitte anhand der empfohlenen Fusslänge aus. Schauen Sie sich unsere 
+                = link_to "Größentabelle", "/support/sizes", class: "link"
+                span
+                  |  an um mehr über unsere Größen und das korrekte Messen Ihrer Fusslänge zu erfahren.
 
 .panel
   .content
@@ -27,6 +58,7 @@ sitemap_changefreq: daily
           p Neues Material, optimierte Form und effizienteres Dämpfungsverhalten - die Mittelsohle des Neo Runs ist eine kleine Revolution und bildet das Fundament eines Schuhs, der dank neuer Innovationen und aufwendiger Entwicklung ein neues Maß an Tragekomfort und elastischer Federung von Lunge bietet.
 
           p Ganz gleich ob Training oder Wettkampf - der Neo Run richtet sich als leichter grundstabiler Neutralschuh an alle Läufer, die wenig bis leichte Stützwirkung benötigen und komfortable Federung bevorzugen. Durch seine überragende Elastizität eignet er sich auch für schnelle Läufe, er animiert geradezu schneller zu laufen. Doch auch abseits der Laufstrecke eignet sich der Neo Run als äußerst bequemer Schuh für Alltag und Freizeit - ganz besonders in den neutralen Farbvarianten weiß und schwarz.
+          = link_to "Jetzt bestellen", "#add-to-cart", class: "button button-large"
 
 .panel
   .content
@@ -42,6 +74,7 @@ sitemap_changefreq: daily
 
           p Wie von Lunge Schuhen gewohnt, ist die Formgebung der Mittelsohle sorgfältig durchdacht und wurde unzähligen Detailanpassungen, Tests und Korrekturen unterzogen, wodurch sich ein Fußbett ergibt, dass Ihren Füßen dauerhaft gut tut, Beschwerden lindert und ihnen vorbeugt.
           p Kombiniert mit einer neuen, flacheren Version unserer bewährten Gomax Einlegesohle, welche eigens für den Neo Run angepasst wurde, ergibt sich ein Tragekomfort, der seinesgleichen sucht.
+          = link_to "Jetzt bestellen", "#add-to-cart", class: "button button-large"
 
 .panel
   .content
@@ -54,6 +87,7 @@ sitemap_changefreq: daily
           p Als Laufschuh der Spitzenklasse genießen Funktionalität, Tragekomfort und Passform beim Neo Run oberste Priorität. Mit nur wenigen, großflächigen Einzelkomponenten ergibt sich ein Schaft, der den Fuß wie eine nahtlose, punktelastische Haut sanft umfasst und sicher hält.
 
           p Die Kombination aus feinstem Innenfutter und durchlässigem 3D-Mesh ermöglicht optimale Luftzufuhr sowie Feuchtigkeitstransport von innen nach außen und sorgt zeitgleich dafür, dass weniger Nässe in den Schuh eindringen kann.
+          = link_to "Jetzt bestellen", "#add-to-cart", class: "button button-large"
 
 .gallery.scroll--horizontal
   - data.products.neo_run.images.each do |image|
@@ -63,20 +97,6 @@ sitemap_changefreq: daily
 
 .panel.panel--emphasis
   .content
-    h1#add-to-cart.anchor-target.text-center Jetzt bestellen
-    p
-      | Bitte beachten Sie, dass der Neo Run aufgrund der großen Nachfrage derzeit bereits in vielen Größen ausverkauft ist. Diese Situation wird sich in Kürze und sobald weitere Fertigungsserien abgeschlossen sind, entspannen. Sollte Ihre bevorzugte Größe/Farbe aktuell nicht verfügbar sein, bitte wir um Geduld und verweisen auf unsere 
-      = link_to "Partner aus dem Fachhandel", "/retailers", class: "link"
-      |  welche die gewünschten Schuhe eventuell bereits vorbestellt und vorrätig haben.
-    ul.tab-titles
-      li.tab-title.tab-title--active = link_to "Herren", "men"
-      li.tab-title = link_to "Damen", "women"
-    .tabs
-      .tab.tab--active data-tab="men"
-        div data-background_color="f7f7f9" data-button_background_color="b6be00" data-button_text_color="ffffff" data-buy_button_out_of_stock_text="Derzeit ausverkauft. Bald wieder verfügbar." data-buy_button_product_unavailable_text="Nicht verfügbar" data-buy_button_text="In den Warenkorb legen" data-collection_handle="neo-run" data-display_size="compact" data-embed_type="collection" data-has_image="true" data-next_page_button_text="Next page" data-product_handle="" data-product_modal="true" data-product_name="" data-product_title_color="000000" data-redirect_to="modal" data-shop="lunge-manufaktur.myshopify.com"
-      .tab data-tab="women"
-        div data-background_color="f7f7f9" data-button_background_color="b6be00" data-button_text_color="ffffff" data-buy_button_out_of_stock_text="Derzeit ausverkauft. Bald wieder verfügbar." data-buy_button_product_unavailable_text="Nicht verfügbar" data-buy_button_text="In den Warenkorb legen" data-collection_handle="neo-run-w" data-display_size="compact" data-embed_type="collection" data-has_image="true" data-next_page_button_text="Next page" data-product_handle="" data-product_modal="true" data-product_name="" data-product_title_color="000000" data-redirect_to="modal" data-shop="lunge-manufaktur.myshopify.com"
-    hr
     .row
       .col-xs-12.col-md-6
         h4 Technische Daten

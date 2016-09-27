@@ -1,4 +1,10 @@
+@charset "utf-8";
 @import "_variables";
+
+@import 'loader/variables';
+@import 'loader/animations';
+@import 'loader/loader02';
+
 @import "_utilities";
 @import "_mixins";
 @import "_normalize";
@@ -11,5 +17,3 @@
 @import "_tables";
 @import "_cart";
 @import "_product";
-
-@charset "utf-8";

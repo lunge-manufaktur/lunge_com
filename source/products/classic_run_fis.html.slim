@@ -8,56 +8,82 @@ sitemap_priority: 0.7
 sitemap_changefreq: daily
 ---
 
-.title__container
+.title__container#add-to-cart.anchor-target
   .title__inner
-    .content.content--narrow
-      h1 = data.products.classic_run_fis.name
-      p = data.products.classic_run_fis.short_description
-      ul.inline-list.inline-list--center
-        li = link_to "Jetzt bestellen", "#add-to-cart", class: "button button-large"
+    .content
+      .collection
+        .product
+          .product__image-container
+            = image_tag "misc/spinner.svg", class: "product__image"
+          .product__details
+            h1 = data.products.classic_run_fis.name
+            p = data.products.classic_run_fis.short_description
+            h4 Jetzt bestellen
+            .input-group
+              label Damen / Herren
+              .gender-select__container
+                select.product__option.gender-select
+                  option value=184955653 Herren
+                  option value=184378629 Damen
+            .input-group
+              label Farbe
+              .product-select__container
+                select.product__option.product-select
+            .input-group
+              label Größe (Fusslänge / US / EUR)
+              .variant-select__container
+                select.product__option.variant-select
+            .variant-price__container
+              h2.variant-price
+            ul.inline-list
+              li
+                .add-to-cart-button__container
+                  button.buy-button.js-prevent-cart-listener.add-button In den Warenkorb
+              li = link_to "Größentabelle", "/support/sizes", class: "link"
+            .product__sizing
+              p
+                span
+                  | Um die passende Größe zu finden, wählen Sie Ihre Schuhe bitte anhand der empfohlenen Fusslänge aus. Schauen Sie sich unsere 
+                = link_to "Größentabelle", "/support/sizes", class: "link"
+                span
+                  |  an um mehr über unsere Größen und das korrekte Messen Ihrer Fusslänge zu erfahren.
 
 .panel.panel--odd.panel--reverse
   .panel__inner.content
     .panel__image
       = image_tag "/images/products/classic_run_fis/STW200ABB/STW200ABB__01.png"
     aside.panel__text
-      h2 Im Gelände zu Hause
-      p 
-        | Manchmal läuft es einfach nicht rund – z.B. weil der Boden mit Matsch, Laub oder Schnee überzogen ist – dann muss ein Laufschuh her, der besonders griffig ist: Der Fis ist die geländesichere Modellvariante des bewährten 
-        = link_to "Classic Runs", "products/classic_run", class: "link"
-        | . Dank seiner außergewöhnlichen Vollgummi-Außensohle fühlt er sich unter schwierigsten Bedingungen und auf anspruchsvollem Terrain am wohlsten.
+      .panel__text__inner
+        h2 Im Gelände zu Hause
+        p 
+          | Manchmal läuft es einfach nicht rund – z.B. weil der Boden mit Matsch, Laub oder Schnee überzogen ist – dann muss ein Laufschuh her, der besonders griffig ist: Der Fis ist die geländesichere Modellvariante des bewährten 
+          = link_to "Classic Runs", "products/classic_run", class: "link"
+          | . Dank seiner außergewöhnlichen Vollgummi-Außensohle fühlt er sich unter schwierigsten Bedingungen und auf anspruchsvollem Terrain am wohlsten.
+        = link_to "Jetzt bestellen", "#add-to-cart", class: "button button-large"
 
 .panel.panel--odd
   .content
-    .panel__inner
-      .panel__text
-        h2 Einzigartige Sohle und bewährte Stärken
-        p Der Fis funktioniert auf jedem Untergrund: Straße, Waldböden, Laub, Matsch, Nässe oder Schnee – das ist genau das richtige Terrain für diesen luxuriösen Trailschuh, der sich vor allem durch seine erstklassige Außensohle auszeichnet. Das verwendete Vollgummi-Material hat sich als äußerst rutschfest, griffig und resistent gegen Verschleiß erwiesen. Aufgrund der Wabenstruktur können sich zudem keine Steinen und kaum Dreck in der Sohle sammeln. Auch schwere Läufer werden die Robustheit und Widerstandsfähigkeit des Fis zu schätzen wissen.
-        p Hinzu kommen natürlich die Qualitäten, die bereits unseren Classic Run zu einem Klassiker gemacht haben: Das gewohnt komfortable Abrollverhalten, die dynamische Federung oder die komfortable und flexible Passform sind nur einige der Stärken, die er mit dem Classic Run teilt.
+    .panel__inner.panel__inner--reverse
       .panel__image
         = image_tag "/images/products/classic_run_fis/STW200ABB/02.jpg", class: "image"
+      aside.panel__text
+        .panel__text__inner
+          h2 Einzigartige Sohle und bewährte Stärken
+          p Der Fis funktioniert auf jedem Untergrund: Straße, Waldböden, Laub, Matsch, Nässe oder Schnee – das ist genau das richtige Terrain für diesen luxuriösen Trailschuh, der sich vor allem durch seine erstklassige Außensohle auszeichnet. Das verwendete Vollgummi-Material hat sich als äußerst rutschfest, griffig und resistent gegen Verschleiß erwiesen. Aufgrund der Wabenstruktur können sich zudem keine Steinen und kaum Dreck in der Sohle sammeln. Auch schwere Läufer werden die Robustheit und Widerstandsfähigkeit des Fis zu schätzen wissen.
+          p Hinzu kommen natürlich die Qualitäten, die bereits unseren Classic Run zu einem Klassiker gemacht haben: Das gewohnt komfortable Abrollverhalten, die dynamische Federung oder die komfortable und flexible Passform sind nur einige der Stärken, die er mit dem Classic Run teilt.
+          = link_to "Jetzt bestellen", "#add-to-cart", class: "button button-large"
 
 = partial "products/gallery", locals: { product: data.products.classic_run_fis }
 
 .panel.panel--emphasis
   .content
-    h1#add-to-cart.anchor-target.text-center Jetzt bestellen
-    ul.tab-titles
-      li.tab-title.tab-title--active = link_to "Herren", "men"
-      li.tab-title = link_to "Damen", "women"
-    .tabs
-      .tab.tab--active data-tab="men"
-        div data-background_color="f7f7f9" data-button_background_color="b6be00" data-button_text_color="ffffff" data-buy_button_out_of_stock_text="Derzeit ausverkauft. Bald wieder verfügbar." data-buy_button_product_unavailable_text="Nicht verfügbar" data-buy_button_text="In den Warenkorb legen" data-collection_handle="classic-run-fis" data-display_size="compact" data-embed_type="collection" data-has_image="true" data-next_page_button_text="Next page" data-product_handle="" data-product_modal="true" data-product_name="" data-product_title_color="000000" data-redirect_to="modal" data-shop="lunge-manufaktur.myshopify.com"
-      .tab data-tab="women"
-        div data-background_color="f7f7f9" data-button_background_color="b6be00" data-button_text_color="ffffff" data-buy_button_out_of_stock_text="Derzeit ausverkauft. Bald wieder verfügbar." data-buy_button_product_unavailable_text="Nicht verfügbar" data-buy_button_text="In den Warenkorb legen" data-collection_handle="classic-run-fis-w" data-display_size="compact" data-embed_type="collection" data-has_image="true" data-next_page_button_text="Next page" data-product_handle="" data-product_modal="true" data-product_name="" data-product_title_color="000000" data-redirect_to="modal" data-shop="lunge-manufaktur.myshopify.com"
-    hr
     .row.around-xs
       .col-xs-12.col-sm-6
         h4 Technische Daten
         ul.spec-list
           li.spec-list__item
             label Innenfutter
-            span Stockmayer + Sohn Velour Gewirk Teflon
+            span Stockmayer + Sohn Velour Gewirk
           li.spec-list__item
             label Obermaterial
             span Stockmayer + Sohn Fashmo DS14

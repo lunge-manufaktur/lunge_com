@@ -1,3 +1,14 @@
+.cart__toggle {
+  font-family: $body-font;
+  font-style: normal;
+  padding: 0.25rem 0.5rem;
+  width: auto;
+}
+
+input[type=submit].button--checkout {
+  width: 100%;
+}
+
 .cart {
   position: fixed;
   width: 100%;
@@ -40,18 +51,11 @@
 }
 
 .btn--close {
-  position: absolute;
-  right: 9px;
-  top: 8px;
-  font-size: 35px;
-  color: $accent-color;
-  border: none;
   background: transparent;
-  transition: transform 100ms ease;
-  cursor: pointer;
+  text-align: right;
+
   &:hover {
-    transform: scale(1.2);
-    color: darken($accent-color, 5%);
+    background-color: $mint-gray;
   }
 }
 
@@ -119,51 +123,38 @@
 }
 
 .cart-item__variant-title {
-  float: right;
-  font-weight: bold;
-  font-size: 11px;
-  line-height: 17px;
-  color: #767676;
+  font-size: 0.8125rem;
 }
 
 .cart-item__quantity-container {
-  border: 1px solid #767676;
-  float: left;
-  border-radius: 3px;
+  display: flex;
 }
 
 .quantity-decrement, .quantity-increment {
-  color: #767676;
   display: block;
-  float: left;
-  height: 21px;
-  line-height: 16px;
-  font-family: monospace;
-  width: 25px;
-  padding: 0;
+  width: auto;
+  padding: 0 0.5rem;
   border: none;
-  background: transparent;
-  box-shadow: none;
-  cursor: pointer;
-  font-size: 18px;
-  text-align: center;
+  flex: 0 0 auto;
+  background-color: transparent;
+  color: $almost-black;
+  background-color: $mint-gray;
+
+  &:hover {
+    background-color: $accent-color;
+    color: $white;
+  }
 }
 
 .cart-item__quantity {
-  color: black;
-  width: 38px;
-  height: 21px;
-  font-size: inherit;
+  width: 2rem;
   border: none;
   text-align: center;
   -moz-appearance: textfield;
-  background: transparent;
-  border-left: 1px solid #767676;
-  border-right: 1px solid #767676;
   display: block;
-  float: left;
   padding: 0;
-  border-radius: 0;
+  border: 1px solid $mint-gray;
+  flex: 0 1 auto;
 }
 
 input[type=number]::-webkit-inner-spin-button,
@@ -187,8 +178,6 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 .cart-info__total {
-  float: left;
-  text-transform: uppercase;
 }
 
 .cart-info__small {
@@ -196,11 +185,11 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 .cart-info__pricing {
-  float: right;
+  text-align: right;
 }
 
 .cart-discount-notice {
-  color: $accent-color;
+  color: #999;
   margin-bottom: 10px;
 }
 
