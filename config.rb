@@ -61,8 +61,6 @@ end
 
 require "slim"
 
-activate :directory_indexes
-
 # activate :imageoptim do |options|
 #   # lossy mode allowed?
 #   options.allow_lossy = true
@@ -128,3 +126,4 @@ end
 
 
 activate :i18n, langs: [:de, :en]
+activate :directory_indexes

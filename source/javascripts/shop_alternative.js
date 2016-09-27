@@ -24,12 +24,14 @@ $(function() {
       cart = remoteCart;
       cartLineItemCount = cart.lineItems.length;
       renderCartItems();
+      updateCartTabButton();
     });
   } else {
     client.createCart().then(function (newCart) {
       cart = newCart;
       localStorage.setItem('lastCartId', cart.id);
       cartLineItemCount = 0;
+      updateCartTabButton();
     });
   }
 
@@ -40,11 +42,16 @@ $(function() {
 
 
   bindEventListeners();
-  getProducts(collection);
+
+  if (collection !== undefined) {
+    getProducts(collection);
+  }
 
   /* get products */
   function getProducts(collection) {
     client.fetchQueryProducts({collection_id: collection, sort_by: 'collection-default' }).then(function(products) {
+      showSpinner();
+
       var product = products[0];
       var productSelectHTML = generateProductSelectors(products);
       var variantSelectHTML = generateVariantSelectors(product.variants);
@@ -52,12 +59,8 @@ $(function() {
       $('.product-select').html(productSelectHTML);
       $('.variant-select').html(variantSelectHTML);
 
-      console.log(product.selectedVariant.title);
-      
-      updateAddToCartButton();
       updateProductData();
-
-      updateCartTabButton();
+      updateAddToCartButton();
     });
   }
 
@@ -65,6 +68,8 @@ $(function() {
   // get variants
   function getVariants(product) {
     client.fetchProduct(product).then(function(product) {
+      showSpinner();
+
       var product = product;
       var variantSelectHTML = generateVariantSelectors(product.variants);
 
@@ -78,9 +83,17 @@ $(function() {
 
   // update product image
   function updateProductImage(selectedVariant) {
-    console.log('changing product image');
+    // var productImageURL = selectedVariant.image.src
+    // $('.product__image').attr('src', productImageURL);
+
     var productImageURL = selectedVariant.image.src
-    $('.product__image').attr('src', productImageURL);
+    $('.product__image-container').html('<img src="' + productImageURL + '" class="product__image">');
+  }
+
+
+  function showSpinner() {
+    var spinnerHTML = '<div class="loader"></div>';
+    $('.product__image-container').html(spinnerHTML);
   }
 
 
@@ -91,7 +104,6 @@ $(function() {
     for (var i = 0; i < variants.length; i++) {
       var disabled = variants[i].available ? false : true
       options += '<option ' + (disabled ? 'disabled=disabled ' : '') + 'value = "' + variants[i].id + '">' + variants[i].title + '</option>';
-      console.log(disabled);
     }
 
     return  '<select name = "variant-select" class = "variant-select">' + options + '</select>';
