@@ -14,7 +14,7 @@ sitemap_changefreq: daily
       .collection
         .product
           .product__image-container
-            = image_tag "misc/spinner.svg", class: "product__image"
+            .loader
           .product__details
             h1 = data.products.classic_run_fis.name
             p = data.products.classic_run_fis.short_description
