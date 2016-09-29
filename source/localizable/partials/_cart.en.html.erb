@@ -1,0 +1,57 @@
+<div class = "cart">
+  <div class="cart-section cart-section--top">
+    <div class="row between-xs middle-xs">
+      <div class="col-xs-9">
+        <h2 class="cart-title">Your cart</h2>
+      </div>
+      <div class="col-xs-3 text-right">
+        <button class="btn--close">
+          <%= image_tag "ui/close.svg", width: 16 %>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <div class="cart-form">
+    <div class="cart-item-container cart-section">
+    </div>
+
+    <div class="cart-bottom">
+      <div class="cart-info clearfix cart-section">
+        <div class="row between-xs">
+          <div class="col-xs-6 cart-info__total">Total</div>
+          <div class="col-xs-6 cart-info__pricing">
+            <span class="pricing pricing--no-padding"></span>
+          </div>
+        </div>
+      </div>
+    
+      <div class="cart-actions-container cart-section type--center">
+        <div class="cart-discount-notice cart-info__small">Shipping fee will be calculated during checkout.</div>
+        <input type="submit" class="button--checkout" id="checkout" name="checkout" value="Checkout">
+      </div>
+    </div>
+    </div>
+</div>
+
+<script id="CartItemTemplate" type="text/template">
+  <div class="cart-item">
+    <div class="cart-item__img"></div>
+    <div class="cart-item__content">
+      <div class="cart-item__content-row">
+        <div class="cart-item__title"></div>
+        <div class="cart-item__variant-title"></div>
+      </div>
+      <div class="cart-item__content-row">
+        <div class="row between-xs">
+          <div class="col-xs-6 cart-item__quantity-container">
+            <button class="btn--seamless quantity-decrement" type="button"><span>-</span><span class="visuallyhidden">Decrement</span></button>
+            <input class="cart-item__quantity" type="number" min="0" aria-label="Quantity">
+            <button class="btn--seamless quantity-increment" type="button"><span>+</span><span class="visuallyhidden">Increment</span></button>
+          </div>
+          <span class="col-xs-6 cart-item__price"></span>
+        </div>
+      </div>
+    </div>
+  </div>
+</script>

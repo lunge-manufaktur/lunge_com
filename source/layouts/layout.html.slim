@@ -23,8 +23,7 @@ html lang=(lang || "de")
 
     = javascript_include_tag "all"
     = yield_content :additional_javascript
-    // = javascript_include_tag "https://widgets.shopifyapps.com/assets/widgets/embed/client.js", id: "ShopifyEmbedScript", async: true
     = yield_content :custom_assets
-    
-    // = partial "/partials/cart"
-    = partial "/partials/cart_sdk"
+
+
+    = partial "/partials/cart"

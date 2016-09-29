@@ -83,9 +83,6 @@ $(function() {
 
   // update product image
   function updateProductImage(selectedVariant) {
-    // var productImageURL = selectedVariant.image.src
-    // $('.product__image').attr('src', productImageURL);
-
     var productImageURL = selectedVariant.image.src
     var productTitle = selectedVariant.productTitle
     $('.product__image-container').html('<img src="' + productImageURL + '" class="product__image" alt="' + productTitle + '">');

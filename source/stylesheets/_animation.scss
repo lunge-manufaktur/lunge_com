@@ -1,0 +1,19 @@
+.slide-in--left {
+    animation: slide-in--left 0.5s forwards;
+}
+
+.fade-in {
+    animation: fade-in 0.5s forwards;
+}
+
+@keyframes slide-in--left {
+    100% { left: 0rem; }
+}
+
+@keyframes slide-in--bottom {
+    100% { bottom: 2rem; }
+}
+
+@keyframes fade-in {
+    100% { opacity: 1 }
+}

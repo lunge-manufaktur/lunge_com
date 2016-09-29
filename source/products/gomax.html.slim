@@ -7,6 +7,7 @@ sitemap_priority: 0.7
 sitemap_changefreq: daily
 ---
 .title__container#add-to-cart.anchor-target
+  = partial "partials/made_in_germany"
   .title__inner
     .content
       .collection
@@ -17,7 +18,7 @@ sitemap_changefreq: daily
             h1 Gomax Einlegesohlen
             p = data.products.gomax.short_description
             h4 Jetzt bestellen
-            .input-group
+            .input-group.visuallyhidden
               label Damen / Herren
               .gender-select__container
                 select.product__option.gender-select

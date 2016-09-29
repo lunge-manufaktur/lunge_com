@@ -192,6 +192,39 @@ ul.footer-list li a {
 }
 
 
+.made-in-germany {
+  display: none;
+  position: absolute;
+  left: -140px;
+  background-color: $white;
+  padding: 0.25rem 0.5rem;
+  opacity: 0;
+  animation: slide-in--left 0.5s forwards, fade-in 0.5s forwards;
+  animation-delay: 3s;
+
+  @include tablet-portrait {
+    display: block;
+    transform-origin: left bottom;
+    transform: rotate(90deg);
+    top: 1rem;
+  }
+
+  @include desktop {
+    transform: none;
+    top: initial;
+  }
+}
+
+.black {
+  display: block;
+  background-color: #000;
+}
+
+.red {
+  display: block;
+  background-color: #ff0000;
+}
+
 a.made-in-germany__link {
   @include transition;
   display: block;
@@ -921,6 +954,7 @@ iframe.responsive--4x3 {
 
 /* TITLE */
 .title__container {
+  position: relative;
   width: 100%;
   background-color: $title-background;
   padding: $gutter-large*2 0;
@@ -1358,6 +1392,9 @@ li.tab-title[not tab-title--active]:hover {
 
 .product__image {
   margin: auto;
+  opacity: 0;
+  animation: fade-in 0.5s forwards;
+  animation-delay: 0.5s;
 }
 
 .product__details {

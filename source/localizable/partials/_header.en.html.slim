@@ -7,6 +7,7 @@ header
         li
           = nav_link_to item.name, item.url, class: "main-nav__link", section: item.section
       li
-        = link_to "Cart", "#", class: "main-nav__link main-nav__link--highlight", data: { action: "toggle-cart" }
+        button.main-nav__link.main-nav__link--highlight.cart__toggle.js-prevent-cart-listener data-action="toggle-cart"
+          span.btn__counter Cart
 
   = link_to "Menü", "#", class: "offcanvas-top-open", id: "offcanvas-top-open"
