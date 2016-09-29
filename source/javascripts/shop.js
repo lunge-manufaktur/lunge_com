@@ -87,7 +87,8 @@ $(function() {
     // $('.product__image').attr('src', productImageURL);
 
     var productImageURL = selectedVariant.image.src
-    $('.product__image-container').html('<img src="' + productImageURL + '" class="product__image">');
+    var productTitle = selectedVariant.productTitle
+    $('.product__image-container').html('<img src="' + productImageURL + '" class="product__image" alt="' + productTitle + '">');
   }
 
 
