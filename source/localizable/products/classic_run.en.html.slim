@@ -10,14 +10,45 @@ lang: "en"
 sitemap_priority: 0.8
 sitemap_changefreq: daily
 ---
-
-.title__container
+.title__container#add-to-cart.anchor-target
   .title__inner
-    .content.content--narrow
-      h1.title Classic Run
-      p The proven choice for runners - constantly improved and developed for years the Classic Run is a running shoe of highest quality.
-      ul.inline-list.inline-list--center
-        li = link_to "Buy now", "#add-to-cart", class: "button button-large"
+    .content
+      .collection
+        .product
+          .product__image-container
+            .loader
+          .product__details
+            h1 Classic Run
+            p The proven choice for runners - constantly improved and developed for years the Classic Run is a running shoe of highest quality.
+            h4 Buy now
+            .input-group
+              label Women / Men
+              .gender-select__container
+                select.product__option.gender-select
+                  option value=184953861 Men
+                  option value=184953989 Women
+            .input-group
+              label Color
+              .product-select__container
+                select.product__option.product-select
+            .input-group
+              label Size (Feet length / US / EUR)
+              .variant-select__container
+                select.product__option.variant-select
+            .variant-price__container
+              h2.variant-price
+            ul.inline-list
+              li
+                .add-to-cart-button__container
+                  button.buy-button.js-prevent-cart-listener.add-button Add to cart
+              li = link_to "Size guide", "en/support/sizes", class: "link"
+            .product__sizing
+              p
+                span
+                  | In order to find the right size, we strongly recommend to measure the length of your feet and opt for the size that corresponds to your measured length. Please check our 
+                = link_to "size guide", "/en/support/sizes", class: "link"
+                span
+                  |  to find the recommended foot length for each size and learn how to measure correctly.
 
 .panel
   .content
@@ -69,20 +100,6 @@ sitemap_changefreq: daily
 
 .panel.panel--emphasis
   .content
-    h1#add-to-cart.anchor-target.text-center Buy now
-    ul.tab-titles
-      li.tab-title.tab-title--active = link_to "Men", "men"
-      li.tab-title = link_to "Women", "women"
-    .tabs
-      .tab.tab--active data-tab="men"
-        div data-background_color="f7f7f9" data-button_background_color="b6be00" data-button_text_color="ffffff" data-buy_button_out_of_stock_text="Derzeit ausverkauft. Bald wieder verfügbar." data-buy_button_product_unavailable_text="Nicht verfügbar" data-buy_button_text="In den Warenkorb legen" data-collection_handle="classic-run" data-display_size="compact" data-embed_type="collection" data-has_image="true" data-next_page_button_text="Next page" data-product_handle="" data-product_modal="true" data-product_name="" data-product_title_color="000000" data-redirect_to="modal" data-shop="lunge-manufaktur.myshopify.com"
-      .tab data-tab="women"
-        div data-background_color="f7f7f9" data-button_background_color="b6be00" data-button_text_color="ffffff" data-buy_button_out_of_stock_text="Derzeit ausverkauft. Bald wieder verfügbar." data-buy_button_product_unavailable_text="Nicht verfügbar" data-buy_button_text="In den Warenkorb legen" data-collection_handle="classic-run-w" data-display_size="compact" data-embed_type="collection" data-has_image="true" data-next_page_button_text="Next page" data-product_handle="" data-product_modal="true" data-product_name="" data-product_title_color="000000" data-redirect_to="modal" data-shop="lunge-manufaktur.myshopify.com"
-    hr
-    .content.content--narrow
-      h2.text-center Find the right size
-      = partial "partials/size_table"
-    hr
     .row
       .col-xs-12.col-md-6
         h4 Specifications

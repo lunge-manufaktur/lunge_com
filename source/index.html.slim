@@ -5,19 +5,17 @@ description: Hochwertige Bequem- und Laufschuhe von Lunge aus deutscher Fertigun
 canonical_link: "https://www.lunge.com"
 sitemap_priority: 0.9
 ---
-- content_for :hero
-  .hero
-    .hero__inner
-      .hero__image
-        = link_to "/products/classic_run" do
-          = image_tag "/images/products/classic_run/STS203SWR/STS203SWR__03--square.jpg"
+.hero
+  .hero__inner
+    .hero__image
+      = link_to "/products/classic_walk" do
+        = image_tag "/images/products/classic_walk/misc/classic_walk_top_02.jpg"
+    .hero__text-container
       .hero__text
         .content.content--narrow
-          / = link_to "/about", class: "made-in-germany__link" do
-          /   = image_tag "/images/misc/made_in_germany.svg", class: "made-in-germany__logo", alt: "Made In Germany Logo"
-          h1.hero__title = link_to "Classic Run", "/products/classic_run"
-          p Der Klassiker in unserem Sortiment und Geheimtipp anspruchsvoller Läufer. Der Classic Run hat sich über Jahre als Laufschuh der Extraklasse bewährt und wurde dennoch stetig verbessert.
-          = link_to "Classic Run ansehen", "/products/classic_run", class: "button button--large"
+          h1.hero__title = link_to "Classic Walk", "/products/classic_walk"
+          p Sie müssen kein Läufer sein um in den Genuss von Lunge Schuhen zu kommen: Der Classic Walk ist ein einzigartiger Bequemschuh für alle Lebenslagen – egal ob Alltag, Beruf oder Freizeit.
+          = link_to "Classic Walk ansehen", "/products/classic_walk", class: "button button--large"
 
 .panel
   .content

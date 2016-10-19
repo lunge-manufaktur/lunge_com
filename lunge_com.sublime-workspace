@@ -4,6 +4,58 @@
 		"selected_items":
 		[
 			[
+				"transform",
+				"transform-origin"
+			],
+			[
+				"table",
+				"tablet-portrait"
+			],
+			[
+				"text",
+				"text-align-last"
+			],
+			[
+				"selected",
+				"selectedVariant"
+			],
+			[
+				"variantSe",
+				"variantSelectHTML"
+			],
+			[
+				"generate",
+				"generateVariantSelectors"
+			],
+			[
+				"colle",
+				"collection__item--active"
+			],
+			[
+				"collecti",
+				"collection__item"
+			],
+			[
+				"collectio",
+				"collection__item--active"
+			],
+			[
+				"collection",
+				"collection__item"
+			],
+			[
+				"gene",
+				"generateProductSelectors"
+			],
+			[
+				"language-select",
+				"language-selector__item"
+			],
+			[
+				"content",
+				"content--narrow"
+			],
+			[
 				"kon",
 				"Konformitätserklärung"
 			],
@@ -26,10 +78,6 @@
 			[
 				"classic",
 				"classic_run_fis"
-			],
-			[
-				"table",
-				"tablet-landscape"
 			],
 			[
 				"supplier",
@@ -229,7 +277,7 @@
 			],
 			[
 				"th",
-				"th	text-height"
+				"th\ttext-height"
 			],
 			[
 				"default",
@@ -328,10 +376,6 @@
 				"flex-basis"
 			],
 			[
-				"text",
-				"text-rendering"
-			],
-			[
 				"a",
 				"appearance"
 			],
@@ -374,10 +418,6 @@
 			[
 				"contact",
 				"contact_path"
-			],
-			[
-				"content",
-				"content-middle"
 			],
 			[
 				"border",
@@ -480,34 +520,20 @@
 	"buffers":
 	[
 		{
-			"file": "source/index.html.slim",
+			"file": "source/support/faq.html.slim",
 			"settings":
 			{
-				"buffer_size": 2212,
+				"buffer_size": 7127,
+				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "source/stylesheets/_components.scss",
+			"file": "source/support/sizes.html.slim",
 			"settings":
 			{
-				"buffer_size": 17443,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "source/about/suppliers.html.slim",
-			"settings":
-			{
-				"buffer_size": 5004,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "source/stylesheets/_typography.scss",
-			"settings":
-			{
-				"buffer_size": 1978,
+				"buffer_size": 3996,
+				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
 		}
@@ -520,9 +546,29 @@
 	"command_palette":
 	{
 		"height": 354.0,
-		"last_filter": "package",
+		"last_filter": "",
 		"selected_items":
 		[
+			[
+				"packa",
+				"Package Control: Remove Package"
+			],
+			[
+				"ma",
+				"Material Theme: Configuration"
+			],
+			[
+				"mate",
+				"Material Theme: Configuration"
+			],
+			[
+				"materi",
+				"Material Theme: Activate theme"
+			],
+			[
+				"satisfy",
+				"Package Control: Satisfy Dependencies"
+			],
 			[
 				"package",
 				"Package Control: Remove Package"
@@ -576,10 +622,6 @@
 				"Package Control: Install Package"
 			],
 			[
-				"packa",
-				"Package Control: Install Package"
-			],
-			[
 				"Package Control: ",
 				"Package Control: Remove Package"
 			]
@@ -606,89 +648,125 @@
 	"expanded_folders":
 	[
 		"/Users/ulflunge/projects/lunge_com",
-		"/Users/ulflunge/projects/lunge_com/source",
-		"/Users/ulflunge/projects/lunge_com/source/news",
-		"/Users/ulflunge/projects/lunge_com/source/partials"
+		"/Users/ulflunge/projects/lunge_com/source"
 	],
 	"file_history":
 	[
-		"/Users/ulflunge/projects/lunge_com/source/products/classic_run.html.slim",
-		"/Users/ulflunge/projects/lunge_com/source/products/neo_run.html.slim",
-		"/Users/ulflunge/projects/lunge_com/source/partials/_footer.html.slim",
-		"/Users/ulflunge/projects/lunge_com/.gitignore",
-		"/Users/ulflunge/projects/lunge_com/source/products/evo_run.html.slim",
-		"/Users/ulflunge/projects/lunge_com/source/index.html.slim",
-		"/Users/ulflunge/projects/lunge_com/source/stylesheets/_components.scss",
-		"/Users/ulflunge/projects/lunge_com/data/products/classic_run.yml",
-		"/Users/ulflunge/projects/lunge_com/data/products/neo_run.yml",
-		"/Users/ulflunge/projects/lunge_com/source/stylesheets/_layout.scss",
+		"/Users/ulflunge/projects/lunge_com/source/localizable/support/sizes.en.html.slim",
+		"/Users/ulflunge/projects/lunge_com/source/support/shop.html.slim",
+		"/Users/ulflunge/projects/lunge_com/source/support/returns.html.slim",
+		"/Users/ulflunge/projects/lunge_com/source/support/care.html.slim",
+		"/Users/ulflunge/projects/lunge_com/source/impressum.html.slim",
+		"/Users/ulflunge/projects/lunge_com/source/products.html.slim",
+		"/Users/ulflunge/projects/lunge_com/source/about/suppliers.html.slim",
+		"/Users/ulflunge/projects/lunge_com/source/support.html.slim",
 		"/Users/ulflunge/projects/lunge_com/source/about/press.html.slim",
 		"/Users/ulflunge/projects/lunge_com/source/products/accessories/shoe_laces.html.slim",
-		"/Users/ulflunge/projects/lunge_com/source/stylesheets/_flexboxgrid.scss",
-		"/Users/ulflunge/projects/lunge_com/source/products.html.slim",
-		"/Users/ulflunge/projects/lunge_com/Gemfile",
-		"/Users/ulflunge/projects/lunge_com/data/products/classic_walk.yml",
-		"/Users/ulflunge/projects/lunge_com/source/about/suppliers.html.slim",
-		"/Users/ulflunge/projects/lunge_com/source/javascripts/all.js",
-		"/Users/ulflunge/projects/lunge_com/source/stylesheets/_typography.scss",
-		"/Users/ulflunge/projects/lunge_com/source/javascripts/wallop.js",
-		"/Users/ulflunge/projects/lunge_com/source/stylesheets/all.scss",
-		"/Users/ulflunge/projects/lunge_com/source/layouts/frontpage.html.slim",
-		"/Users/ulflunge/projects/lunge_com/source/support/care.html.slim",
-		"/Users/ulflunge/projects/lunge_com/source/stylesheets/_variables.scss",
-		"/Users/ulflunge/projects/lunge_com/source/beta/buy_sdk.html.slim",
-		"/Users/ulflunge/projects/lunge_com/source/done.html.slim",
+		"/Users/ulflunge/projects/lunge_com/source/products/classic_run_fis.html.slim",
+		"/Users/ulflunge/projects/lunge_com/source/products/evo_run.html.slim",
+		"/Users/ulflunge/projects/lunge_com/source/products/gomax.html.slim",
+		"/Users/ulflunge/projects/lunge_com/source/news/tag_der_offenen_tuer_2016.html.slim",
+		"/Users/ulflunge/projects/lunge_com/source/stylesheets/_components.scss",
+		"/Users/ulflunge/projects/lunge_com/source/javascripts/shop.js",
+		"/Users/ulflunge/projects/lunge_com/source/partials/_header.html.slim",
+		"/Users/ulflunge/projects/lunge_com/source/products/classic_walk.html.slim",
+		"/Users/ulflunge/projects/lunge_com/source/products/neo_run.html.slim",
+		"/Users/ulflunge/projects/lunge_com/source/localizable/partials/_add_to_cart_help.en.html.slim",
+		"/Users/ulflunge/projects/lunge_com/source/partials/_cart.html.erb",
+		"/Users/ulflunge/projects/lunge_com/source/localizable/partials/_header.en.html.slim",
+		"/Users/ulflunge/projects/lunge_com/source/localizable/products/classic_run.en.html.slim",
+		"/Users/ulflunge/projects/lunge_com/source/stylesheets/_animation.scss",
+		"/Users/ulflunge/projects/lunge_com/source/stylesheets/all.css.scss",
+		"/Users/ulflunge/projects/lunge_com/source/partials/_made_in_germany.html.slim",
 		"/Users/ulflunge/projects/lunge_com/source/layouts/layout.html.slim",
+		"/Users/ulflunge/projects/lunge_com/source/products/classic_run.html.slim",
+		"/Users/ulflunge/projects/lunge_com/source/localizable/partials/_cart.en.html.erb",
 		"/Users/ulflunge/projects/lunge_com/source/partials/_cart.html.slim",
+		"/Users/ulflunge/projects/lunge_com/source/javascripts/all.js",
+		"/Users/ulflunge/projects/lunge_com/source/index.html.slim",
+		"/Users/ulflunge/projects/lunge_com/source/done.html.slim",
+		"/Users/ulflunge/projects/lunge_com/source/contact.html.erb",
+		"/Users/ulflunge/projects/lunge_com/source/404.html.slim",
+		"/Users/ulflunge/projects/lunge_com/source/support/terms.html.slim",
+		"/Users/ulflunge/projects/lunge_com/source/support/sizes.html.slim",
+		"/Users/ulflunge/projects/lunge_com/source/support/faq.html.slim",
+		"/Users/ulflunge/projects/lunge_com/source/retailers.html.slim",
+		"/Users/ulflunge/projects/lunge_com/source/products/features.html.slim",
+		"/Users/ulflunge/projects/lunge_com/source/stylesheets/loader/_variables.scss",
+		"/Users/ulflunge/projects/lunge_com/source/javascripts/shop_alternative.js",
+		"/Users/ulflunge/projects/lunge_com/source/about.html.slim",
+		"/Users/ulflunge/projects/lunge_com/source/stylesheets/loader/loaders.scss",
+		"/Users/ulflunge/projects/lunge_com/source/stylesheets/loader/_loader02.scss",
+		"/Users/ulflunge/projects/lunge_com/data/products/classic_run.yml",
+		"/Users/ulflunge/projects/lunge_com/source/stylesheets/_forms.scss",
+		"/Users/ulflunge/projects/lunge_com/source/stylesheets/_cart.scss",
+		"/Users/ulflunge/projects/lunge_com/source/partials/_cart_sdk.html.erb",
+		"/Users/ulflunge/projects/lunge_com/source/partials/_contact_form.html.erb",
+		"/Users/ulflunge/projects/lunge_com/source/stylesheets/_typography.scss",
+		"/Users/ulflunge/projects/lunge_com/source/products/_add_to_cart_help.html.slim",
+		"/Users/ulflunge/projects/lunge_com/source/stylesheets/_variables.scss",
+		"/Users/ulflunge/projects/lunge_com/source/partials/_offcanvas.html.slim",
+		"/Users/ulflunge/projects/lunge_com/source/javascripts/cart.js",
+		"/Users/ulflunge/projects/lunge_com/source/stylesheets/_flexboxgrid.scss",
+		"/Users/ulflunge/projects/lunge_com/source/stylesheets/_utilities.scss",
+		"/Users/ulflunge/projects/lunge_com/source/partials/_cart_button.html.slim",
+		"/Users/ulflunge/projects/lunge_com/source/stylesheets/_flex.scss",
+		"/Users/ulflunge/projects/lunge_com/source/stylesheets/_product.scss",
+		"/Users/ulflunge/projects/lunge_com/source/javascripts/shopify.js.erb",
+		"/Users/ulflunge/projects/lunge_com/source/partials/cart_sdk.html.erb",
+		"/Users/ulflunge/projects/lunge_com/source/localizable/products/classic_walk.en.html.slim",
+		"/Users/ulflunge/projects/lunge_com/source/localizable/partials/_language_selector.en.html.slim",
+		"/Users/ulflunge/projects/lunge_com/source/partials/_language_selector.html.slim",
+		"/Users/ulflunge/projects/lunge_com/config.rb",
+		"/Users/ulflunge/projects/lunge_com/source/localizable/support/shop.en.html.slim",
+		"/Users/ulflunge/projects/lunge_com/source/partials/_footer.html.slim",
+		"/Users/ulflunge/projects/lunge_com/source/partials/_where_to_buy.html.slim",
+		"/Users/ulflunge/projects/lunge_com/source/localizable/index.en.html.slim",
+		"/Users/ulflunge/projects/lunge_com/source/partials/_meta_tags.html.slim",
+		"/Users/ulflunge/projects/lunge_com/source/localizable/partials/_size_table.en.html.slim",
+		"/Users/ulflunge/projects/lunge_com/source/partials/_add_to_cart_help.html.slim",
+		"/Users/ulflunge/projects/lunge_com/source/sitemap.xml.slim",
+		"/Users/ulflunge/projects/lunge_com/source/localizable/partials/_where_to_buy.en.html.slim",
+		"/Users/ulflunge/projects/lunge_com/source/localizable/partials/_footer.en.html.slim",
+		"/Users/ulflunge/projects/lunge_com/source/layouts/frontpage.html.slim",
+		"/Users/ulflunge/projects/lunge_com/source/localizable/products.en.html.slim",
+		"/Users/ulflunge/projects/lunge_com/source/partials/_cart_js.html.erb",
+		"/Users/ulflunge/projects/lunge_com/Gemfile",
+		"/Users/ulflunge/projects/lunge_com/locales/en.yml",
+		"/Users/ulflunge/projects/lunge_com/lib/helpers.rb",
+		"/Users/ulflunge/projects/lunge_com/data/navigation_items.yml",
+		"/Users/ulflunge/projects/lunge_com/build/news/stellungnahme_stiftung_warentest_heft_08-2015/index.html",
+		"/Users/ulflunge/projects/lunge_com/data/products/classic_walk.yml",
+		"/Users/ulflunge/projects/lunge_com/source/stylesheets/_layout.scss",
+		"/Users/ulflunge/projects/lunge_com/source/javascripts/tabs.js",
+		"/Users/ulflunge/projects/lunge_com/source/javascripts/product-variation-preview.js.erb",
+		"/Users/ulflunge/projects/lunge_com/source/stylesheets/all.scss",
+		"/Users/ulflunge/projects/lunge_com/.gitignore",
+		"/Users/ulflunge/projects/lunge_com/data/products/neo_run.yml",
+		"/Users/ulflunge/projects/lunge_com/source/javascripts/wallop.js",
+		"/Users/ulflunge/projects/lunge_com/source/beta/buy_sdk.html.slim",
 		"/Users/ulflunge/projects/lunge_com/source/products/classic_walk_buysdk.html.slim",
 		"/Users/ulflunge/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
-		"/Users/ulflunge/projects/lunge_com/source/about.html.slim",
-		"/Users/ulflunge/projects/lunge_com/source/products/features.html.slim",
-		"/Users/ulflunge/projects/lunge_com/source/products/classic_walk.html.slim",
 		"/Users/ulflunge/projects/lunge_com/data/products/evo_run.yml",
 		"/Users/ulflunge/projects/lunge_com/data/products/classic_run_fis.yml",
 		"/Users/ulflunge/projects/lunge_com/source/products/_gallery.html.slim",
-		"/Users/ulflunge/projects/lunge_com/source/partials/_where_to_buy.html.slim",
-		"/Users/ulflunge/projects/lunge_com/source/products/classic_run_fis.html.slim",
-		"/Users/ulflunge/projects/lunge_com/source/impressum.html.slim",
-		"/Users/ulflunge/projects/lunge_com/config.rb",
-		"/Users/ulflunge/projects/lunge_com/source/products/gomax.html.slim",
 		"/Users/ulflunge/projects/lunge_com/source/partials/_shop_features.html.slim",
 		"/Users/ulflunge/projects/lunge_com/source/_redirects",
-		"/Users/ulflunge/projects/lunge_com/source/retailers.html.slim",
 		"/Users/ulflunge/projects/lunge_com/source/retailers.geojson",
-		"/Users/ulflunge/projects/lunge_com/source/contact.html.erb",
-		"/Users/ulflunge/projects/lunge_com/source/404.html.slim",
-		"/Users/ulflunge/projects/lunge_com/source/support.html.slim",
-		"/Users/ulflunge/projects/lunge_com/source/support/terms.html.slim",
-		"/Users/ulflunge/projects/lunge_com/source/support/sizes.html.slim",
-		"/Users/ulflunge/projects/lunge_com/source/support/shop.html.slim",
-		"/Users/ulflunge/projects/lunge_com/source/support/returns.html.slim",
-		"/Users/ulflunge/projects/lunge_com/source/support/faq.html.slim",
 		"/Users/ulflunge/projects/lunge_com/source/products/product_feed.xml.erb",
-		"/Users/ulflunge/projects/lunge_com/source/products/_add_to_cart_help.html.slim",
 		"/Users/ulflunge/projects/lunge_com/source/partials/newsletter_signup_form.html.slim",
 		"/Users/ulflunge/projects/lunge_com/source/partials/_ribbon.html.slim",
-		"/Users/ulflunge/projects/lunge_com/source/partials/_offcanvas.html.slim",
-		"/Users/ulflunge/projects/lunge_com/source/partials/_meta_tags.html.slim",
-		"/Users/ulflunge/projects/lunge_com/source/partials/_header.html.slim",
 		"/Users/ulflunge/projects/lunge_com/source/partials/_header_frontpage.html.slim",
-		"/Users/ulflunge/projects/lunge_com/source/partials/_contact_form.html.erb",
 		"/Users/ulflunge/projects/lunge_com/source/news/stellungnahme_stiftung_warentest_heft_08-2015.html.slim",
-		"/Users/ulflunge/projects/lunge_com/source/sitemap.xml.slim",
-		"/Users/ulflunge/projects/lunge_com/source/stylesheets/_forms.scss",
 		"/Users/ulflunge/projects/lunge_com/source/partials/_shop_features.slim",
-		"/Users/ulflunge/projects/lunge_com/lib/helpers.rb",
 		"/Users/ulflunge/projects/lunge_com/build/sitemap.xml",
 		"/Users/ulflunge/projects/lunge_com/source/robots.txt",
 		"/Users/ulflunge/projects/lunge_com/build/retailers.geojson",
-		"/Users/ulflunge/projects/lunge_com/data/navigation_items.yml",
 		"/Users/ulflunge/projects/lunge_com/build/products/product_feed.xml",
 		"/Users/ulflunge/projects/lunge_com/build/_redirects",
 		"/Users/ulflunge/projects/lunge_com/Gemfile.lock",
 		"/Users/ulflunge/projects/lunge_com/data/products/gomax.yml",
 		"/Users/ulflunge/projects/lunge_com/source/javascripts/contact-form.js",
-		"/Users/ulflunge/projects/lunge_com/source/stylesheets/_utilities.scss",
 		"/Users/ulflunge/projects/lunge_com/source/_header.html.slim",
 		"/Users/ulflunge/projects/lunge_com/source/_ribbon.html.slim",
 		"/Users/ulflunge/projects/lunge_com/source/_footer.html.slim",
@@ -700,46 +778,8 @@
 		"/Users/ulflunge/projects/lunge_com/source/contact.html.slim",
 		"/Users/ulflunge/projects/lunge_com/source/images/suppliers/stockmayer.svg",
 		"/Users/ulflunge/projects/lunge_com/source/products/comparison.html.slim",
-		"/Users/ulflunge/projects/lunge_com/source/javascripts/cart.js",
 		"/Users/ulflunge/projects/lunge_com/source/javascripts/slider.js",
-		"/Users/ulflunge/projects/lunge_com/source/404.html",
-		"/Users/ulflunge/projects/lunge_com/source/javascripts/product-variation-preview.js.erb",
-		"/Users/ulflunge/projects/lunge_com/source/javascripts/tabs.js",
-		"/Users/ulflunge/projects/lunge_com/assets/misc/size_list.txt",
-		"/Users/ulflunge/projects/lunge_com/source/javascripts/offcanvas-nav.js",
-		"/Users/ulflunge/projects/lunge_com/source/javascripts/jquery.min.js",
-		"/Users/ulflunge/projects/lunge_com/source/javascripts/jquery-2.1.4.min.js",
-		"/Users/ulflunge/Documents/Gunclub/filemaker_export_edit_mail.csv",
-		"/Users/ulflunge/Documents/Gunclub/filemaker_export.csv",
-		"/Users/ulflunge/projects/lunge_com/assets/content_map.md",
-		"/Users/ulflunge/projects/lunge_com/build/javascripts/all.js",
-		"/Users/ulflunge/projects/lunge_com/source/javascripts/smooth-scroll.js",
-		"/Users/ulflunge/projects/lunge_com/source/javascripts/umbrella.js",
-		"/Users/ulflunge/projects/lunge_com/assets/content_map.txt",
-		"/Users/ulflunge/projects/lunge_com/source/manufacture.html.slim",
-		"/Users/ulflunge/projects/lunge_com/source/stylesheets/_grid.scss",
-		"/Users/ulflunge/projects/lunge_com/build/index.html",
-		"/Users/ulflunge/projects/lunge_com/source/stylesheets/_flex.scss",
-		"/Users/ulflunge/projects/lunge_com/data/retailers.yml",
-		"/Users/ulflunge/Downloads/MV80083520151119175608.xml",
-		"/Users/ulflunge/projects/lunge_com/data/bak_products.yml",
-		"/Users/ulflunge/Downloads/files 2/test/beekeeper.js",
-		"/Users/ulflunge/projects/lunge_com/source/javascripts/scrollreveal-initialize.js",
-		"/Users/ulflunge/projects/lunge_com/source/javascripts/scrollreveal.min.js",
-		"/Users/ulflunge/Downloads/log/log/log.smbd",
-		"/Users/ulflunge/projects/lunge_com/data/products.yml",
-		"/Users/ulflunge/projects/lunge_com/source/stylesheets/_swiper.min.css",
-		"/Users/ulflunge/projects/lunge_com/source/javascripts/swiper.jquery.min.js",
-		"/Users/ulflunge/projects/lunge_com/source/data/products.yml",
-		"/Users/ulflunge/projects/lunge_com/source/stylesheets/_mixins.scss",
-		"/Users/ulflunge/projects/lunge_com/source/stylesheets/_normalize.css",
-		"/Users/ulflunge/projects/lunge_com/build/stylesheets/all.css",
-		"/Users/ulflunge/projects/manufaktur/app/controllers/api/products_controller.rb",
-		"/Users/ulflunge/projects/manufaktur/config/routes.rb",
-		"/Users/ulflunge/projects/manufaktur/config/initializers/timeout.rb",
-		"/Users/ulflunge/projects/manufaktur/app/models/product.rb",
-		"/Users/ulflunge/projects/manufaktur/app/controllers/products_controller.rb",
-		"/Users/ulflunge/projects/manufaktur/app/helpers/application_helper.rb"
+		"/Users/ulflunge/projects/lunge_com/source/404.html"
 	],
 	"find":
 	{
@@ -758,6 +798,53 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"title",
+			"updateCartTabButton",
+			"updateProductImage",
+			"btn--cart",
+			"cart__toggle",
+			"btn--cart-tab",
+			"closeCart",
+			"openCar",
+			"btn--cart-tab",
+			"open",
+			"cart.open",
+			"attachOnVariantSelectListeners",
+			"updatevariantPrice",
+			"updateVariantPrice",
+			"image",
+			"cart",
+			"updateCartTabButton",
+			"carttab",
+			"updatecart",
+			"Buybutto",
+			"updateAdd",
+			"product",
+			"generatesele",
+			"renderCart",
+			"produc",
+			"collection__item",
+			"variantselectors",
+			"local",
+			"buybutto",
+			"findCartItemByVariantId",
+			"quantity",
+			"attachonvariants",
+			"carttab",
+			"findcart",
+			"buybu",
+			"incrementQuantity",
+			"findCartItemByVariantId",
+			"addOrUpdateVariant",
+			"variant-id",
+			"opencart",
+			"title",
+			"renderCartItem",
+			"addOrUpdateVariant",
+			"$",
+			"update car",
+			"$",
+			"mm",
 			".66",
 			".33",
 			".5",
@@ -838,54 +925,7 @@
 			"mixin",
 			"class",
 			"link_to",
-			"target",
-			"</a>",
-			"support",
-			"border-right: 16px solid $white;",
-			"ul",
-			"nav__list",
-			", class: \"link\"",
-			"footer-nav__list__item",
-			";\n",
-			"image",
-			"mm",
-			"tr",
-			"style=\"background-color: #f5f5f5;\"",
-			"style=\"width: 100px;\"",
-			"tr",
-			"/tr",
-			">",
-			"<",
-			"</td>",
-			"<",
-			"button",
-			"h5",
-			"inclu",
-			"tablet",
-			"list",
-			"@include",
-			"@incl",
-			"container",
-			"susy",
-			"hero",
-			"classic_walk",
-			"evo_run",
-			"classic_walk",
-			"id",
-			"'",
-			"default.png",
-			"#{$padding + $margin}",
-			"button",
-			"_run",
-			"product.",
-			"product",
-			"hero",
-			"name",
-			"000",
-			"Schwarz",
-			"- ",
-			"\"link\"",
-			"link"
+			"target"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -911,24 +951,23 @@
 	"groups":
 	[
 		{
-			"selected": 2,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "source/index.html.slim",
+					"file": "source/support/faq.html.slim",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 2212,
+						"buffer_size": 7127,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								373,
-								373
+								167,
+								167
 							]
 						],
 						"settings":
@@ -941,54 +980,24 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 3,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "source/stylesheets/_components.scss",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 17443,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								2951,
-								2951
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 5054.0,
-						"zoom_level": 1.0
-					},
 					"stack_index": 1,
 					"type": "text"
 				},
 				{
-					"buffer": 2,
-					"file": "source/about/suppliers.html.slim",
+					"buffer": 1,
+					"file": "source/support/sizes.html.slim",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 5004,
+						"buffer_size": 3996,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								4358,
-								4358
+								461,
+								461
 							]
 						],
 						"settings":
@@ -998,40 +1007,10 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 1085.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "source/stylesheets/_typography.scss",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1978,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1213,
-								1213
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 1142.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 2,
 					"type": "text"
 				}
 			]
@@ -1090,32 +1069,296 @@
 		"selected_items":
 		[
 			[
-				"suppl",
+				"sizes",
+				"source/support/sizes.html.slim"
+			],
+			[
+				"shop",
+				"source/support/shop.html.slim"
+			],
+			[
+				"returns",
+				"source/support/returns.html.slim"
+			],
+			[
+				"faq",
+				"source/support/faq.html.slim"
+			],
+			[
+				"care",
+				"source/support/care.html.slim"
+			],
+			[
+				"impress",
+				"source/impressum.html.slim"
+			],
+			[
+				"produc",
+				"source/products.html.slim"
+			],
+			[
+				"supplier",
 				"source/about/suppliers.html.slim"
 			],
 			[
-				"typograp",
-				"source/stylesheets/_typography.scss"
+				"press",
+				"source/about/press.html.slim"
 			],
 			[
-				"compone",
+				"support",
+				"source/support.html.slim"
+			],
+			[
+				"fis",
+				"source/products/classic_run_fis.html.slim"
+			],
+			[
+				"shoe",
+				"source/products/accessories/shoe_laces.html.slim"
+			],
+			[
+				"heade",
+				"source/partials/_header.html.slim"
+			],
+			[
+				"com",
 				"source/stylesheets/_components.scss"
 			],
 			[
-				"index",
-				"source/index.html.slim"
+				"gomax",
+				"source/products/gomax.html.slim"
 			],
 			[
-				"evo",
+				"ev",
 				"source/products/evo_run.html.slim"
+			],
+			[
+				"neo",
+				"source/products/neo_run.html.slim"
+			],
+			[
+				"walk",
+				"source/products/classic_walk.html.slim"
+			],
+			[
+				"all",
+				"source/stylesheets/all.css.scss"
+			],
+			[
+				"componen",
+				"source/stylesheets/_components.scss"
+			],
+			[
+				"layout",
+				"source/layouts/layout.html.slim"
+			],
+			[
+				"head",
+				"source/localizable/partials/_header.en.html.slim"
+			],
+			[
+				"header",
+				"source/partials/_header.html.slim"
+			],
+			[
+				"adden",
+				"source/localizable/partials/_add_to_cart_help.en.html.slim"
+			],
+			[
+				"classicen",
+				"source/localizable/products/classic_run.en.html.slim"
 			],
 			[
 				"classic",
 				"source/products/classic_run.html.slim"
 			],
 			[
+				"alternati",
+				"source/javascripts/shop_alternative.js"
+			],
+			[
+				"laces",
+				"source/products/accessories/shoe_laces.html.slim"
+			],
+			[
+				"ab",
+				"source/about.html.slim"
+			],
+			[
+				"class",
+				"source/products/classic_walk.html.slim"
+			],
+			[
+				"evo",
+				"source/products/evo_run.html.slim"
+			],
+			[
+				"alter",
+				"source/javascripts/shop_alternative.js"
+			],
+			[
+				"typo",
+				"source/stylesheets/_typography.scss"
+			],
+			[
+				"add",
+				"source/products/_add_to_cart_help.html.slim"
+			],
+			[
+				"form",
+				"source/stylesheets/_forms.scss"
+			],
+			[
+				"flex",
+				"source/stylesheets/_flexboxgrid.scss"
+			],
+			[
+				"contact",
+				"source/partials/_contact_form.html.erb"
+			],
+			[
+				"forms",
+				"source/stylesheets/_forms.scss"
+			],
+			[
+				"variabl",
+				"source/stylesheets/_variables.scss"
+			],
+			[
+				"variables",
+				"source/stylesheets/_variables.scss"
+			],
+			[
+				"lay",
+				"source/layouts/layout.html.slim"
+			],
+			[
+				"cart",
+				"source/javascripts/cart.js"
+			],
+			[
+				"typography",
+				"source/stylesheets/_typography.scss"
+			],
+			[
+				"sh",
+				"source/javascripts/shop.js"
+			],
+			[
+				"classicrun",
+				"data/products/classic_run.yml"
+			],
+			[
+				"compone",
+				"source/stylesheets/_components.scss"
+			],
+			[
+				"all.js",
+				"source/javascripts/all.js"
+			],
+			[
+				"config",
+				"config.rb"
+			],
+			[
+				"cla",
+				"source/products/classic_run.html.slim"
+			],
+			[
+				"comp",
+				"source/stylesheets/_components.scss"
+			],
+			[
+				"sizesen",
+				"source/localizable/support/sizes.en.html.slim"
+			],
+			[
+				"meta",
+				"source/partials/_meta_tags.html.slim"
+			],
+			[
+				"layou",
+				"source/layouts/layout.html.slim"
+			],
+			[
+				"size",
+				"source/support/sizes.html.slim"
+			],
+			[
+				"classic_run",
+				"source/products/classic_run.html.slim"
+			],
+			[
+				"indexen",
+				"source/localizable/index.en.html.slim"
+			],
+			[
+				"contac",
+				"source/partials/_contact_form.html.erb"
+			],
+			[
+				"shopify",
+				"source/javascripts/shopify.js.erb"
+			],
+			[
+				"goamx",
+				"source/products/gomax.html.slim"
+			],
+			[
+				"inde",
+				"source/index.html.slim"
+			],
+			[
+				"lunge",
+				"build/news/stellungnahme_stiftung_warentest_heft_08-2015/index.html"
+			],
+			[
 				"neorun",
 				"source/products/neo_run.html.slim"
+			],
+			[
+				"components",
+				"source/stylesheets/_components.scss"
+			],
+			[
+				"roducts",
+				"source/products.html.slim"
+			],
+			[
+				"typogra",
+				"source/stylesheets/_typography.scss"
+			],
+			[
+				"classicwalk",
+				"source/products/classic_walk.html.slim"
+			],
+			[
+				"retailer",
+				"source/retailers.html.slim"
+			],
+			[
+				"var",
+				"source/stylesheets/_variables.scss"
+			],
+			[
+				"index",
+				"source/index.html.slim"
+			],
+			[
+				"pro",
+				"source/products.html.slim"
+			],
+			[
+				"products",
+				"source/products.html.slim"
+			],
+			[
+				"suppl",
+				"source/about/suppliers.html.slim"
+			],
+			[
+				"typograp",
+				"source/stylesheets/_typography.scss"
 			],
 			[
 				"runyml",
@@ -1134,24 +1377,8 @@
 				"source/stylesheets/_layout.scss"
 			],
 			[
-				"press",
-				"source/about/press.html.slim"
-			],
-			[
 				"neorunyml",
 				"data/products/neo_run.yml"
-			],
-			[
-				"components",
-				"source/stylesheets/_components.scss"
-			],
-			[
-				"classicrun",
-				"data/products/classic_run.yml"
-			],
-			[
-				"products",
-				"source/products.html.slim"
 			],
 			[
 				"productsshoe",
@@ -1166,28 +1393,8 @@
 				"source/products/evo_run.html.slim"
 			],
 			[
-				"all",
-				"source/javascripts/all.js"
-			],
-			[
-				"neo",
-				"data/products/neo_run.yml"
-			],
-			[
-				"layout",
-				"source/layouts/frontpage.html.slim"
-			],
-			[
 				"typogr",
 				"source/stylesheets/_typography.scss"
-			],
-			[
-				"care",
-				"source/support/care.html.slim"
-			],
-			[
-				"layou",
-				"source/layouts/layout.html.slim"
 			],
 			[
 				"gitign",
@@ -1200,22 +1407,6 @@
 			[
 				"run",
 				"data/products/classic_run.yml"
-			],
-			[
-				"fis",
-				"data/products/classic_run_fis.yml"
-			],
-			[
-				"variables",
-				"source/stylesheets/_variables.scss"
-			],
-			[
-				"componen",
-				"source/stylesheets/_components.scss"
-			],
-			[
-				"classicwalk",
-				"source/products/classic_walk.html.slim"
 			],
 			[
 				"where",
@@ -1246,36 +1437,12 @@
 				"source/_redirects"
 			],
 			[
-				"retailer",
-				"source/retailers.html.slim"
-			],
-			[
 				"feautre",
 				"source/products/features.html.slim"
 			],
 			[
-				"pro",
-				"source/products.html.slim"
-			],
-			[
-				"typo",
-				"source/stylesheets/_typography.scss"
-			],
-			[
-				"support",
-				"source/support.html.slim"
-			],
-			[
 				"shop_",
 				"source/partials/_shop_features.html.slim"
-			],
-			[
-				"forms",
-				"source/stylesheets/_forms.scss"
-			],
-			[
-				"typography",
-				"source/stylesheets/_typography.scss"
 			],
 			[
 				"impressu",
@@ -1298,24 +1465,8 @@
 				"source/products/gomax.html.slim"
 			],
 			[
-				"walk",
-				"source/products/classic_walk.html.slim"
-			],
-			[
 				"goma",
 				"source/products/gomax.html.slim"
-			],
-			[
-				"class",
-				"source/products/classic_walk.html.slim"
-			],
-			[
-				"gomax",
-				"source/products/gomax.html.slim"
-			],
-			[
-				"faq",
-				"source/support/faq.html.slim"
 			],
 			[
 				"robots",
@@ -1328,10 +1479,6 @@
 			[
 				"ind",
 				"source/index.html.slim"
-			],
-			[
-				"typogra",
-				"source/stylesheets/_typography.scss"
 			],
 			[
 				"front",
@@ -1354,16 +1501,8 @@
 				"source/404.html.slim"
 			],
 			[
-				"config",
-				"config.rb"
-			],
-			[
 				"redirec",
 				"build/_redirects"
-			],
-			[
-				"contact",
-				"source/partials/_contact_form.html.erb"
 			],
 			[
 				"gemfile",
@@ -1374,16 +1513,8 @@
 				"source/products/features.html.slim"
 			],
 			[
-				"goamx",
-				"source/products/gomax.html.slim"
-			],
-			[
 				"off",
 				"source/partials/_offcanvas.html.slim"
-			],
-			[
-				"header",
-				"source/partials/_header_frontpage.html.slim"
 			],
 			[
 				"suppshop",
@@ -1398,40 +1529,16 @@
 				"source/products.html.slim"
 			],
 			[
-				"variabl",
-				"source/stylesheets/_variables.scss"
-			],
-			[
-				"lay",
-				"source/stylesheets/_layout.scss"
-			],
-			[
 				"frontp",
 				"source/layouts/frontpage.html.slim"
-			],
-			[
-				"heade",
-				"source/_header_frontpage.html.slim"
 			],
 			[
 				"gem",
 				"Gemfile.lock"
 			],
 			[
-				"com",
-				"source/stylesheets/_components.scss"
-			],
-			[
 				"tables",
 				"source/stylesheets/_tables.scss"
-			],
-			[
-				"head",
-				"source/_header_frontpage.html.slim"
-			],
-			[
-				"contac",
-				"source/contact.html.slim"
 			],
 			[
 				"conf",
@@ -1444,18 +1551,6 @@
 			[
 				"contatc",
 				"source/contact.html.slim"
-			],
-			[
-				"sizes",
-				"source/support/sizes.html.slim"
-			],
-			[
-				"add",
-				"source/products/_add_to_cart_help.html.slim"
-			],
-			[
-				"returns",
-				"source/support/returns.html.slim"
 			],
 			[
 				"supportshop",
@@ -1478,128 +1573,12 @@
 				"source/stylesheets/_components.scss"
 			],
 			[
-				"produc",
-				"source/products.html.slim"
-			],
-			[
 				"evor",
 				"source/products/evo_run.html.slim"
 			],
 			[
-				"cart",
-				"source/_cart.html.slim"
-			],
-			[
 				"varial",
 				"source/stylesheets/_variables.scss"
-			],
-			[
-				"java",
-				"source/javascripts/all.js"
-			],
-			[
-				"classi",
-				"source/products/classic_walk.html.slim"
-			],
-			[
-				"size",
-				"source/support/sizes.html.slim"
-			],
-			[
-				"ret",
-				"source/support/returns.html.slim"
-			],
-			[
-				"shop",
-				"source/support/shop.html.slim"
-			],
-			[
-				"varia",
-				"source/stylesheets/_variables.scss"
-			],
-			[
-				"suppo",
-				"source/support.html.slim"
-			],
-			[
-				"variabel",
-				"source/stylesheets/_variables.scss"
-			],
-			[
-				"offc",
-				"source/javascripts/offcanvas-nav.js"
-			],
-			[
-				"all.js",
-				"source/javascripts/all.js"
-			],
-			[
-				"variab",
-				"source/stylesheets/_variables.scss"
-			],
-			[
-				"uti",
-				"source/stylesheets/_utilities.scss"
-			],
-			[
-				"foot",
-				"source/_footer.html.slim"
-			],
-			[
-				"foote",
-				"source/_footer.html.slim"
-			],
-			[
-				"content",
-				"assets/content_map.md"
-			],
-			[
-				"retailers",
-				"source/retailers.html.slim"
-			],
-			[
-				"utili",
-				"source/stylesheets/_utilities.scss"
-			],
-			[
-				"js",
-				"build/javascripts/all.js"
-			],
-			[
-				"retail",
-				"source/retailers.html.slim"
-			],
-			[
-				"foo",
-				"source/_footer.html.slim"
-			],
-			[
-				"classrun",
-				"data/products/classic_run.yml"
-			],
-			[
-				"vorun",
-				"data/products/evo_run.yml"
-			],
-			[
-				"manufac",
-				"source/manufacture.html.slim"
-			],
-			[
-				"variable",
-				"source/stylesheets/_variables.scss"
-			],
-			[
-				"typ",
-				"source/stylesheets/_typography.scss"
-			],
-			[
-				"norma",
-				"source/stylesheets/_normalize.css"
-			],
-			[
-				"seeds",
-				"db/seeds.rb"
 			]
 		],
 		"width": 0.0
