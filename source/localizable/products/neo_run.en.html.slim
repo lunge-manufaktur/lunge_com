@@ -1,0 +1,135 @@
+---
+title: Neo Run
+keywords: laufen, neo run, laufschuhe, made in germany, supination
+description: Der Neo Run von Lunge ist ein neutraler Laufschuh mit äußerst komfortabler Federung und hervorragendem Tragekomfort.
+section: products
+canonical_link: "https://www.lunge.com/products/neo_run/"
+url_de: "https://wwww.lunge.com/products/neo_run/"
+url_en: "https://wwww.lunge.com/en/products/neo_run/"
+sitemap_priority: 0.8
+sitemap_changefreq: daily
+---
+.title__container#add-to-cart.anchor-target
+  = partial "partials/made_in_germany"
+  .title__inner
+    .content
+      .collection
+        .product
+          .product__image-container
+            .loader
+          .product__details
+            h1 Neo Run
+            p Lightweight, neutral running shoe with exceptional fit and unmatched suspension.
+            h4 Order now
+            .input-group
+              label Men / Women
+              .gender-select__container
+                select.product__option.gender-select
+                  option value=208119173 Men
+                  option value=208126213 Women
+            .input-group
+              label Color
+              .product-select__container
+                select.product__option.product-select
+            .input-group
+              label Size (Feet length / US / EUR)
+              .variant-select__container
+                select.product__option.variant-select
+            .variant-price__container
+              h2.variant-price
+            ul.inline-list
+              li
+                .add-to-cart-button__container
+                  button.buy-button.js-prevent-cart-listener.add-button Add to cart
+              li = link_to "Sizing guide", "/support/sizes", class: "link"
+            .product__sizing
+              p
+                span
+                  | In order to find the right size, we strongly recommend to measure the length of your feet and opt for the size that corresponds to your measured length. Please check our 
+                = link_to "size guide", "/en/support/sizes", class: "link"
+                span
+                  |  to find the recommended foot length for each size and learn how to measure correctly.
+
+.panel
+  .content
+    .panel__inner.panel__inner--reverse
+      .panel__image
+        = image_tag "/images/products/neo_run/LTS213PMS/neo_run_LTS213PMS_01_square.jpg", alt: "Neo Run in Plant / Magnesium / Silver"
+      aside.panel__text
+        .panel__text__inner
+          h2 Flexible suspension
+          p New material, optimized surface geometry and improved damping characteristics - the midsole of the Neo Run is a minor revolution and the foundation of a shoe that, thanks to careful development, reaches new heights in terms in terms of comfort and efficient suspension. 
+
+          p Whether it's training or competition - the Neo Run is an excellent choice for any runner that needs little pronation support and stability and enjoys comfortable suspension. Due to its remarkable flexibility and agility this shoe shines on fast runs as well as off the track in everyday life.
+          = link_to "Order now", "#add-to-cart", class: "button button-large"
+
+.panel
+  .content
+    .panel__inner
+      .panel__image
+        = image_tag "/images/products/neo_run/LTS213QSS/neo_run_LTS213QSS_01_square.jpg", alt: "Neo Run in Quicksilver / Snow / Silver"
+      aside.panel__text
+        .panel__text__inner
+          h2 Breeze through your run
+          p For the Neo Run we went back to the drawing board and developed the midsole from scratch. The result is a foundation that allows for a more comfortable and easier run. A key factor to this advantage is our new midsole material, which features exceptional bounce characteristics and efficiently preserves energy during impact, thereby rendering every step of your run slightly more effortless.
+
+          p As expected from Lunge shoes, the geometry of the sole was developed, tested and improved in countless iterations and careful optimizations in order to design a cushion your feet will lastingly benefit from.
+          = link_to "Buy now", "#add-to-cart", class: "button button-large"
+
+.panel
+  .content
+    .panel__inner.panel__inner--reverse
+      .panel__image
+        = image_tag "/images/products/neo_run/LTS213LLL/neo_run_LTS213LLL_02_square.jpg", alt: "Neo Run in Quecksilber / Schnee / Silber"
+      aside.panel__text
+        .panel__text__inner
+          h2 Functionality and simplicity
+          p As a premium running shoe functionality, comfort and fit are key features to consider and the Neo Run, thanks to very few, large upper components, offers an exceptional fit that feels like a seamless second skin on your feet while providing secure footing and welcome flexibility.
+          p The combiantion of finest inner lining and breathable mesh enables optimal air supply as well as moisture transport. 
+          = link_to "Jetzt bestellen", "#add-to-cart", class: "button button-large"
+
+.gallery.scroll--horizontal
+  - data.products.neo_run.images.each do |image|
+    .gallery__item
+      = image_tag image.path
+      .gallery__item__title = image.title
+
+.panel.panel--emphasis
+  .content
+    .row
+      .col-xs-12.col-md-6
+        h4 Technische Daten
+        ul.spec-list
+          li.spec-list__item
+            label Innenfutter
+            span Stockmayer + Sohn Velour Gewirk
+          li.spec-list__item
+            label Obermaterial
+            span Moron onSteam
+            br
+            span Omnipel Softspacer
+          li.spec-list__item
+            label Garn
+            span Amann & Söhne Isacord ET150
+            br
+            span Amann & Söhne Isacord ET40
+            br
+            span Amann & Söhne Serafil ET60
+            br
+            span Amann & Söhne Serafil ET40
+          li.spec-list__item
+            label Mittel- und Außensohle
+            span Individuell entwickelte PU-Sohle
+          li.spec-list__item
+            label Sprengung
+            span 9 mm (US Men 10)
+          li.spec-list__item
+            label Gewicht
+            span 316 g (US Men 10)
+          li.spec-list__item
+            label Verfügbare Größen
+            span Damen: US 6 - US 13
+            br
+            span Herren: US 8 - US 15
+      .col-xs-12.col-md-6
+        = partial "products/add_to_cart_help"
