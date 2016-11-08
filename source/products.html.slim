@@ -4,8 +4,8 @@ keywords: produkte, laufschuhe, bequemschuhe, walking, vegan, deutschland, lunge
 description: Jetzt bestellen - Laufschuhe und Bequemschuhe von Lunge aus deutscher Fertigung und unter Verwendung hochwertigster, schadstofffreier und veganer Materialien.
 section: products
 canonical_link: "https://www.lunge.com/products/"
-url_de: "https://wwww.lunge.com/products/"
-url_en: "https://wwww.lunge.com/en/products/"
+url_de: "https://www.lunge.com/products/"
+url_en: "https://www.lunge.com/en/products/"
 sitemap_priority: 0.8
 sitemap_changefreq: daily
 ---
@@ -17,14 +17,14 @@ sitemap_changefreq: daily
       p Ganz gleich ob Laufschuhe, Bequemschuhe oder Einlegesohlen - Lunge bietet Schuhe und Zubehör sowohl für den Laufsport als auch für den ganz alltäglichen Einsatz in Beruf und Freizeit.
       ul
         li
-          = link_to "Warum Lunge?", "/products/features", class: "link"
+          = link_to "Warum Lunge?", "/products/features/", class: "link"
     .content
       = partial "partials/shop_features"
 
 .panel
   .content
     .card__container
-      = link_to "/products/#{data.products.classic_run.slug}", class: "card" do
+      = link_to "/products/#{data.products.classic_run.slug}/", class: "card" do
         .card__figure
           = image_tag data.products.classic_run.default_image, class: "card__image", alt: "Classic Run"
         .card__description
@@ -41,7 +41,7 @@ sitemap_changefreq: daily
 
 
 
-      = link_to "/products/#{data.products.classic_walk.slug}", class: "card" do
+      = link_to "/products/#{data.products.classic_walk.slug}/", class: "card" do
         .card__figure
           = image_tag data.products.classic_walk.default_image, class: "card__image", alt: "Classic Walk"
         .card__description
@@ -57,7 +57,7 @@ sitemap_changefreq: daily
                 .color-icon style="background: linear-gradient(180deg, #{color.first_color}, #{color.first_color} 65%, #{color.second_color} 66%, #{color.second_color} 100%); border: 0px solid #{color.first_color}" title=(color.name)
 
 
-      = link_to "/products/#{data.products.neo_run.slug}", class: "card" do
+      = link_to "/products/#{data.products.neo_run.slug}/", class: "card" do
         .card__figure
           = image_tag data.products.neo_run.default_image, class: "card__image", alt: "Classic Walk"
         .card__description
@@ -72,7 +72,7 @@ sitemap_changefreq: daily
               li
                 .color-icon style="background: linear-gradient(180deg, #{color.first_color}, #{color.first_color} 65%, #{color.second_color} 66%, #{color.second_color} 100%); border: 0px solid #{color.first_color}" title=(color.name)
 
-      = link_to "/products/#{data.products.classic_run_fis.slug}", class: "card" do
+      = link_to "/products/#{data.products.classic_run_fis.slug}/", class: "card" do
         .card__figure
           = image_tag data.products.classic_run_fis.default_image, class: "card__image", alt: "Classic Run Fis"
         .card__description
@@ -88,7 +88,7 @@ sitemap_changefreq: daily
                 .color-icon style="background: linear-gradient(180deg, #{color.first_color}, #{color.first_color} 65%, #{color.second_color} 66%, #{color.second_color} 100%); border: 0px solid #{color.first_color}" title=(color.name)
 
 
-      = link_to "/products/#{data.products.evo_run.slug}", class: "card" do
+      = link_to "/products/#{data.products.evo_run.slug}/", class: "card" do
         .card__figure
           = image_tag data.products.evo_run.default_image, class: "card__image", alt: "Evo Run"
         .card__description
@@ -103,7 +103,7 @@ sitemap_changefreq: daily
               li
                 .color-icon style="background: linear-gradient(180deg, #{color.first_color}, #{color.first_color} 65%, #{color.second_color} 66%, #{color.second_color} 100%); border: 0px solid #{color.first_color}" title=(color.name)
 
-      = link_to "/products/#{data.products.gomax.slug}", class: "card" do
+      = link_to "/products/#{data.products.gomax.slug}/", class: "card" do
         .card__figure
           = image_tag data.products.gomax.default_image, class: "card__image", alt: "Gomax Einlegesohlen"
         .card__description
@@ -122,7 +122,7 @@ sitemap_changefreq: daily
   .content.content--narrow
     hr
     .card
-      = link_to "/products/accessories/shoe_laces", class: "card__link" do
+      = link_to "/products/accessories/shoe_laces/", class: "card__link" do
         .card__figure
           = image_tag "/images/products/shoe_laces/shoe_laces_01--1200px.jpg", class: "card__image", alt: "Schnürsenkel"
         .card__description
@@ -133,8 +133,8 @@ sitemap_changefreq: daily
   .content.content--narrow
     .feature
       .feature__figure
-        h2 = link_to "Warum Lunge?", "/products/features"
+        h2 = link_to "Warum Lunge?", "/products/features/"
       .feature__description
         p Wodurch unterscheiden sich unsere Schuhe von denen anderer Hersteller? Die hochwertige Materialien, durchdachte Sohlenkonstruktion und Schadstofffreiheit sind nur einige der Vorteile unserer Schuhe.
         p Erfahren Sie weshalb es Sinn macht, sich für Qualität zu entscheiden.
-        = link_to "Mehr erfahren...", "/products/features", class: "link"
+        = link_to "Mehr erfahren...", "/products/features/", class: "link"

@@ -1,11 +1,11 @@
 ---
 title: Produkte & Shop
 keywords: produkte, laufschuhe, bequemschuhe, walking, vegan, deutschland, lunge, laufen
-description: Jetzt bestellen - Laufschuhe und Bequemschuhe von Lunge aus deutscher Fertigung und unter Verwendung hochwertigster, schadstofffreier und veganer Materialien.
+description: Shop finest comfort and running shoes made in germany.
 section: products
 canonical_link: "https://www.lunge.com/en/products/"
-url_de: "https://wwww.lunge.com/products/"
-url_en: "https://wwww.lunge.com/en/products/"
+url_de: "https://www.lunge.com/products/"
+url_en: "https://www.lunge.com/en/products/"
 sitemap_priority: 0.8
 sitemap_changefreq: daily
 lang: en
@@ -14,27 +14,25 @@ lang: en
 .title__container
   .title__inner
     .content.content--narrow
-      h1 Shop
+      h1.text-center Shop
       p Whether you're interested in running or everyday use - Lunge offers finest shoes and insoles for any use case.
       ul
         li
           = link_to "Why Lunge?", "/products/features", class: "link"
-    .content
-      = partial "partials/shop_features"
 
 .panel
   .content
     .card__container
-      = link_to "/products/#{data.products.classic_run.slug}", class: "card" do
+      = link_to "/en/products/#{data.products.classic_run.slug}/", class: "card" do
         .card__figure
           = image_tag data.products.classic_run.default_image, class: "card__image", alt: "Classic Run"
         .card__description
           h2 = data.products.classic_run.name
-          p = data.products.classic_run.short_description
+          p The proven choice for runners - constantly improved and developed for years the Classic Run is a running shoe of highest quality.
           p
-            label Kategorie
-            span = data.products.classic_run.category
-          label Farbvarianten
+            label Category
+            span Running
+          label Colors
           ul.inline-list
             - data.products.classic_run.colors.each do |color|
               li
@@ -42,38 +40,38 @@ lang: en
 
 
 
-      = link_to "/products/#{data.products.classic_walk.slug}", class: "card" do
+      = link_to "/en/products/#{data.products.classic_walk.slug}/", class: "card" do
         .card__figure
           = image_tag data.products.classic_walk.default_image, class: "card__image", alt: "Classic Walk"
         .card__description
           h2 = data.products.classic_walk.name
-          p = data.products.classic_walk.short_description
+          p You don't need to be a runner to enjoy Lunge shoes: Classic Walk is a versatile comfort shoe that covers any use case.
           p
-            label Kategorie
-            span = data.products.classic_walk.category
-          label Farbvarianten
+            label Category
+            span Comfort shoes
+          label Colors
           ul.inline-list
             - data.products.classic_walk.colors.each do |color|
               li
                 .color-icon style="background: linear-gradient(180deg, #{color.first_color}, #{color.first_color} 65%, #{color.second_color} 66%, #{color.second_color} 100%); border: 0px solid #{color.first_color}" title=(color.name)
 
 
-      = link_to "/products/#{data.products.neo_run.slug}", class: "card" do
+      = link_to "/en/products/#{data.products.neo_run.slug}/", class: "card" do
         .card__figure
           = image_tag data.products.neo_run.default_image, class: "card__image", alt: "Classic Walk"
         .card__description
           h2 = data.products.neo_run.name
-          p = data.products.neo_run.short_description
+          p Neo Run is a lightweight, neutral running shoe with exceptional fit and unmatched suspension.
           p
-            label Kategorie
-            span = data.products.neo_run.category
-          label Farbvarianten
+            label Category
+            span Running
+          label Colors
           ul.inline-list
             - data.products.neo_run.colors.each do |color|
               li
                 .color-icon style="background: linear-gradient(180deg, #{color.first_color}, #{color.first_color} 65%, #{color.second_color} 66%, #{color.second_color} 100%); border: 0px solid #{color.first_color}" title=(color.name)
 
-      = link_to "/products/#{data.products.classic_run_fis.slug}", class: "card" do
+      = link_to "/products/#{data.products.classic_run_fis.slug}/", class: "card" do
         .card__figure
           = image_tag data.products.classic_run_fis.default_image, class: "card__image", alt: "Classic Run Fis"
         .card__description
@@ -89,7 +87,7 @@ lang: en
                 .color-icon style="background: linear-gradient(180deg, #{color.first_color}, #{color.first_color} 65%, #{color.second_color} 66%, #{color.second_color} 100%); border: 0px solid #{color.first_color}" title=(color.name)
 
 
-      = link_to "/products/#{data.products.evo_run.slug}", class: "card" do
+      = link_to "/products/#{data.products.evo_run.slug}/", class: "card" do
         .card__figure
           = image_tag data.products.evo_run.default_image, class: "card__image", alt: "Evo Run"
         .card__description
@@ -104,7 +102,7 @@ lang: en
               li
                 .color-icon style="background: linear-gradient(180deg, #{color.first_color}, #{color.first_color} 65%, #{color.second_color} 66%, #{color.second_color} 100%); border: 0px solid #{color.first_color}" title=(color.name)
 
-      = link_to "/products/#{data.products.gomax.slug}", class: "card" do
+      = link_to "/products/#{data.products.gomax.slug}/", class: "card" do
         .card__figure
           = image_tag data.products.gomax.default_image, class: "card__image", alt: "Gomax Einlegesohlen"
         .card__description
@@ -123,7 +121,7 @@ lang: en
   .content.content--narrow
     hr
     .card
-      = link_to "/products/accessories/shoe_laces", class: "card__link" do
+      = link_to "/products/accessories/shoe_laces/", class: "card__link" do
         .card__figure
           = image_tag "/images/products/shoe_laces/shoe_laces_01--1200px.jpg", class: "card__image", alt: "Schnürsenkel"
         .card__description
@@ -131,11 +129,5 @@ lang: en
           p Sorgen Sie für Abwechslung und verleihen Sie Ihren Lunge Schuhen ein neues Gesicht - mit Schnürsenkeln in zahlreichen Farben.
 
 .panel.panel--emphasis
-  .content.content--narrow
-    .feature
-      .feature__figure
-        h2 = link_to "Warum Lunge?", "/products/features"
-      .feature__description
-        p Wodurch unterscheiden sich unsere Schuhe von denen anderer Hersteller? Die hochwertige Materialien, durchdachte Sohlenkonstruktion und Schadstofffreiheit sind nur einige der Vorteile unserer Schuhe.
-        p Erfahren Sie weshalb es Sinn macht, sich für Qualität zu entscheiden.
-        = link_to "Mehr erfahren...", "/products/features", class: "link"
+  .content
+    = partial "partials/shop_features"

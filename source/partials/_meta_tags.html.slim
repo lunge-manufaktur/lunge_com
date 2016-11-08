@@ -22,6 +22,7 @@ link rel="shortcut icon" type="image/x-icon" href="/images/favicon.ico"
   link rel="canonical" href=current_page.data.canonical_link
 
 / language tags
-link rel="alternate" hreflang="de" href=current_page.data.url_de
+- if current_page.data.url_de
+  link rel="alternate" hreflang="de" href=current_page.data.url_de
 - if current_page.data.url_en
   link rel="alternate" hreflang="en" href=current_page.data.url_en
