@@ -137,3 +137,22 @@ sitemap_changefreq: daily
             span Herren: US 8 - US 15
       .col-xs-12.col-md-6
         = partial "products/add_to_cart_help"
+
+script type="application/ld+json"
+  | {
+  |   "@context": "http://schema.org",
+  |   "@type": "Product",
+  |   "name": "Neo Run",
+  |   "image": "https://www.lunge.com/images/products/neo_run/lts213lll/neo_run_LTS213LLL_default.png",
+  |   "description": "Der Neo Run von Lunge ist ein neutraler Laufschuh mit äußerst komfortabler Federung und hervorragendem Tragekomfort.",
+  |   "brand": {
+  |     "@type": "Brand",
+  |     "name": "Lunge"
+  |   },
+  |   "offers": {
+  |     "@type": "Offer",
+  |     "price": "180.00",
+  |     "priceCurrency": "EUR",
+  |     "availability": "InStock"
+  |   }
+  | }
