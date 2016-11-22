@@ -2,7 +2,7 @@ name: "Neo Run"
 category: "Laufschuhe"
 slug: "neo_run"
 short_description: "Neutraler Laufschuh mit äußerst komfortabler Federung und hervorragendem Tragekomfort."
-default_image: "/images/products/neo_run/LTS213PMS/neo_run_LTS213PMS--1200px.jpg"
+default_image: "/images/products/neo_run/LTS213QSS/default.png"
 colors:
   -
     sku: "LTS213PMS"

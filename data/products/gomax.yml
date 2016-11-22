@@ -2,7 +2,7 @@ name: "Gomax Einlegesohlen"
 category: "Zubehör"
 slug: "gomax"
 short_description: "Werten Sie Ihre Schuhe auf und beugen Sie Fuß-, Knie- und Rückenbeschwerden vor."
-default_image: "/images/products/gomax/LG105_03.jpg"
+default_image: "/images/products/gomax/LG105__01__square.png"
 colors:
   -
     sku: "LG105.2"

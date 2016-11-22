@@ -15,11 +15,6 @@ sitemap_changefreq: daily
     .content.content--narrow
       h1.text-center Produkte & Shop
       p Ganz gleich ob Laufschuhe, Bequemschuhe oder Einlegesohlen - Lunge bietet Schuhe und Zubehör sowohl für den Laufsport als auch für den ganz alltäglichen Einsatz in Beruf und Freizeit.
-      ul
-        li
-          = link_to "Warum Lunge?", "/products/features/", class: "link"
-    .content
-      = partial "partials/shop_features"
 
 .panel
   .content
@@ -117,6 +112,10 @@ sitemap_changefreq: daily
             - data.products.gomax.colors.each do |color|
               li
                 .color-icon style="background: linear-gradient(180deg, #{color.first_color}, #{color.first_color} 65%, #{color.second_color} 66%, #{color.second_color} 100%); border: 0px solid #{color.first_color}" title=(color.name)
+
+.panel.panel--emphasis
+  .content
+    = partial "partials/shop_features"
 
 .panel
   .content.content--narrow

@@ -2,7 +2,7 @@ name: "Evo Run"
 category: "Laufschuhe"
 slug: "evo_run"
 short_description: "Unser Laufschuh für Neutralläufer, die keine Stützwirkung benötigen und Wert auf besonders komfortable Dämpfung legen."
-default_image: "/images/products/evo_run/LTS202GWH/evo_run_03--1200px.jpg"
+default_image: "/images/products/evo_run/LTS202GWH/default.png"
 colors:
   -
     sku: "LTS202GWH"

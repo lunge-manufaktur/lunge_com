@@ -2,7 +2,7 @@ name: "Classic Run Fis"
 category: "Laufschuhe"
 slug: "classic_run_fis"
 short_description: "Nicht jeder Lauf ist ein Spaziergang - doch der Fis fühlt sich auch auf schwierigstem Terrain und unbefestigten Wegen zu Hause"
-default_image: "/images/products/classic_run_fis/misc/classic_run_fis_top--1200px.jpg"
+default_image: "/images/products/classic_run_fis/STW200ABB/default.png"
 colors:
   -
     sku: "STW200ABB"

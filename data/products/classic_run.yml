@@ -2,7 +2,7 @@ name: "Classic Run"
 category: "Laufschuhe"
 slug: "classic_run"
 short_description: "Der Klassiker unter den Laufschuhen und Geheimtipp anspruchsvoller Läufer."
-default_image: "/images/products/classic_run/misc/classic_run_group01.jpg"
+default_image: "/images/products/classic_run/STS203SWR/default.png"
 colors:
   -
     sku: "STS203SWR"
