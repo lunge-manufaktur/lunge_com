@@ -1257,6 +1257,8 @@ li.tab-title[not tab-title--active]:hover {
     display: flex;
     flex-direction: row;
   }
+  padding-top: $gutter-large;
+  padding-bottom: $gutter-large;
 }
 
 .item__figure {

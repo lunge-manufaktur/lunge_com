@@ -6,6 +6,10 @@
     animation: fade-in 0.5s forwards;
 }
 
+.slideshow {
+  animation: slideshow 0.125s infinite;
+}
+
 @keyframes slide-in--left {
     100% { left: 0rem; }
 }
@@ -16,4 +20,8 @@
 
 @keyframes fade-in {
     100% { opacity: 1 }
+}
+
+@keyframes slideshow {
+   100% { transform: translateX(-350px);}
 }

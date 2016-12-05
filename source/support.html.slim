@@ -13,7 +13,7 @@ section: support
       h1.text-center Support
       p Haben Sie Fragen zu unseren Schuhen, deren Fertigung oder zum Bestellvorgang? Suchen Sie die passende Schuhgröße oder Pflegehinweise? Vermutlich haben wir bereits eine Antwort parat.
 
-.panel.panel--odd
+.panel
   .content
     .support-item
       .support-item__figure
@@ -23,7 +23,17 @@ section: support
         p Es ist nicht leicht, die richtige Größe für Ihren Schuh zu finden, doch unsere Größentabelle hilft Ihnen, die Auswahl einzsuchränken.
         = link_to "Größentabelle ansehen", "/support/sizes/", class: "button"
 
-.panel.panel--odd
+.panel
+  .content
+    .support-item
+      .support-item__figure
+        = image_tag "/images/misc/resole.svg", class: "support-item__image"
+      .support-item__description
+        h2 Neubesohlung
+        p Auch die Sohlen hochwertigster Schuhe haben irgendwann das Ende ihrer Laufzeit erreicht. Lunge Schuhe lassen sich dann einfach neu besohlen.
+        = link_to "Mehr erfahren...", "/support/resole/", class: "button"
+
+.panel
   .content
     .support-item
       .support-item__figure
@@ -36,7 +46,7 @@ section: support
           li = link_to "Rückgabe und Umtausch", "/support/returns/", class: "link"
           li = link_to "Allgemeine Geschäftsbedignungen und Widerrufsrecht", "/support/terms/", class: "link"
 
-.panel.panel--odd
+.panel
   .content
     .support-item
       .support-item__figure
