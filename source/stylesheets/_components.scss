@@ -1392,12 +1392,16 @@ li.tab-title[not tab-title--active]:hover {
   }
 }
 
-.product__image-container {
+.product__figure {
   flex: 0 0 auto;
   
   @include tablet-portrait {
     width: 50%;
   }
+}
+
+.product__image-container {
+  
 }
 
 .product__image {
@@ -1423,4 +1427,21 @@ li.tab-title[not tab-title--active]:hover {
 
 .product__option {
   width: 100%;
+}
+
+
+
+.product-feature {
+  display: flex;
+  justify-content: center;
+}
+
+.product-feature__item {
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  cursor: help;
+}
+
+.product-feature__icon {
 }

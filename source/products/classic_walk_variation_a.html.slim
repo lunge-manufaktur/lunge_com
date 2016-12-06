@@ -1,0 +1,193 @@
+---
+title: Classic Walk
+keywords: classic walk, adagio, bequemschuhe, walking, walking schuhe, beschwerden, hallux, knieschmerzen, schuhe
+description: Der Classic Walk von Lunge ist ein einzigartiger Bequem- und Walkingschuh für alle Lebenslagen – egal ob Alltag, Beruf oder Freizeit.
+section: products
+canonical_link: "https://www.lunge.com/products/classic_walk/"
+url_de: "https://www.lunge.com/products/classic_walk/"
+url_en: "https://www.lunge.com/en/products/classic_walk/"
+sitemap_priority: 0.8
+sitemap_changefreq: daily
+sitemap_noindex: true
+---
+
+.title__container#add-to-cart.anchor-target
+  = partial "partials/made_in_germany"
+  .title__inner
+    .content
+      .collection
+        .product
+          .product__figure
+            .product__image-container
+              .loader
+            ul.product-feature
+              = partial "partials/product-features/vegan"
+              = partial "partials/product-features/non-toxic"
+              = partial "partials/product-features/made_in_germany"
+              = partial "partials/product-features/resole"
+          .product__details
+            h1 Classic Walk
+            p Sie müssen kein Läufer sein um in den Genuss von Lunge Schuhen zu kommen: Der Classic Walk ist ein einzigartiger Bequemschuh für alle Lebenslagen – egal ob Alltag, Beruf oder Freizeit.
+                span.product-feature-description Vegan
+            h4 Jetzt bestellen
+            .input-group
+              label Damen / Herren
+              .gender-select__container
+                select.product__option.gender-select
+                  option value=184337285 Herren
+                  option value=183800581 Damen
+            .input-group
+              label Farbe
+              .product-select__container
+                select.product__option.product-select
+            .input-group
+              label Größe (Fusslänge / US / EUR)
+              .variant-select__container
+                select.product__option.variant-select
+            .variant-price__container
+              h2.variant-price
+            ul.inline-list
+              li
+                .add-to-cart-button__container
+                  button.buy-button.js-prevent-cart-listener.add-button In den Warenkorb
+              li = link_to "Größentabelle", "/support/sizes/", class: "link"
+            .product__sizing
+              p
+                span
+                  | Um die passende Größe zu finden, wählen Sie Ihre Schuhe bitte anhand der empfohlenen Fusslänge aus. Schauen Sie sich unsere 
+                = link_to "Größentabelle", "/support/sizes/", class: "link"
+                span
+                  |  an um mehr über unsere Größen und das korrekte Messen Ihrer Fusslänge zu erfahren.
+
+.panel.panel--odd
+  .content
+    .panel__inner.panel__inner--reverse
+      .panel__image
+        = image_tag "/images/products/classic_walk/hero/GLS200ROG__01.png", alt: "Classic Walk in Rot / Hellgrau"
+      aside.panel__text
+        .panel__text__inner
+          h2 Sportliches Fundament und einzigartiger Komfort.
+          p
+            | Das Herzstück des Schuhs, die Mittelsohle, basiert auf der selben Geometrie, die sich bereits bei unserem Laufschuh 
+            = link_to "Classic Run", "/products/classic_run/", class: "link"
+            |  bewährt hat. Mit dem Classic Walk haben wir die Qualitäten dieser Schuhe nun auch alltagstauglich gemacht, so dass sich hier ein Bequemschuh ergibt, der sowohl durch seine korrekte Fußführung als auch ungekannten Tragekomfort überzeugt. 
+          p Feinste Materialien und sorgfältige Verarbeitung kombiniert mit technischem Know-How und durchdachter Sohlenkonstruktion machen den Classic Walk zum perfekten Schuh für alle, die gerne länger auf den Beinen sind.
+          = link_to "Jetzt bestellen", "#add-to-cart", class: "button button-large"
+
+.panel
+  .content
+    .panel__inner
+      .panel__image
+        = image_tag "images/products/classic_walk/misc/material_02.jpg", alt: "Materialien nach dem Zuschnitt"
+      aside.panel__text
+        .panel__text__inner
+          .content
+            h2 Feinste Materialien - frei von Schadstoffen
+            p Wie von unseren Schuhen gewohnt, wird auch der Classic Walk ausschließlich unter Verwendung schadstofffreier, zertifizierter und veganer Materialien gefertigt.Außen- und Mittelsohle werden aus einem einzigen soliden Block gefräst. Letztere weist wobei einen einzigartig hohen EVA-Anteil von ca. 80% auf, welcher für ein dynamisches, federndes Auftritts- und Abrollverhalten sorgt – und das über einen sehr langen Zeitraum.
+            p Beim Obermaterial handelt es sich um äußerst hochwertige PU-Mikrofaser, die ausgiebig auf Scheuer-, Reibe-, Falt- und Farbbeständigkeit getestet wurde und Ihrem Fuß bequemen, rutschfreien Halt bietet.
+            = link_to "Jetzt bestellen", "#add-to-cart", class: "button button-large"
+
+.panel.panel--odd
+  .content
+    .panel__inner.panel__inner--reverse
+      .panel__image
+        = image_tag "/images/products/classic_walk/GLS200CCG/default.png", id: "color-preview", alt: "Classic Walk in Caramel / Hellgrau"
+        ul.inline-list.inline-list--center
+          - data.products.classic_walk.colors.each do |color|
+            li
+              .color-icon.color-icon--button class=(color.sku == "GLS200CCG" ? "color-icon--active" : "") style="background: linear-gradient(180deg, #{color.first_color}, #{color.first_color} 65%, #{color.second_color} 66%, #{color.second_color} 100%); border: 0px solid #{color.first_color}" title=(color.name) href="#" data-sku=(color.sku)
+        label.text-small.text-center#color-preview__label Caramel/Hellgrau
+      aside.panel__text
+        .panel__text__inner
+          h2 Dezent bis abenteuerlich: Farben für jeden Geschmack.
+          p Um den Classic Walk auch optisch an jeden erdenklichen Einsatzzweck anzupassen, ist dieses Modell in einem breiten Spektrum an Farbvarianten erhältlich – von klassisch unauffäligen Grau- und Schwarztönen bis hinzu erfrischenden Versionen in Caramel oder Royal Blau.
+          = link_to "Jetzt bestellen", "#add-to-cart", class: "button button-large"
+
+
+.panel
+  .content
+    .panel__inner.panel__inner--reverse
+      .panel__image.panel__image--center
+        .testimonial
+          h3.testimonial__quote "Meine komplizierten Füße haben nach 61 Jahren endlich mal nichts zu meckern."
+          h5.testimonial__author Hartmut / Oberlausitz
+        .testimonial
+          h3.testimonial__quote "...ich habe mich bisher noch nie in einem Schuh von Anfang an so wohl gefühlt. Und dies mit einem Senk- und Spreizfuß sowie einem Hallux Valgus..."
+          h5.testimonial__author Angelika / Baden-Baden
+        .testimonial
+          h3.testimonial__quote "...meine Beschwerden waren nach wenigen Tagen so gut wie weg, und ich laufe während meiner 12-Stunden-Tage plötzlich ohne Schmerzen oder Ermüdungserscheinungen."
+          h5.testimonial__author Thomas / Papenburg
+      aside.panel__text
+        .panel__text__inner
+          h2 Rücken-, Knie- oder Fußbeschwerden vermeiden
+          p Immer wieder Berichten uns Kunden, dass der Classic Walk dabei half, ihre Fuß-, Knie- oder Rückenbeschwerden zunehmend und nachhaltig zu lindern oder ganz verschwinden lassen konnte. Da es sich beim Classic Walk um einen Schuh handelt, der durch seine Geometrie und Sohlenform korrekte und gesunde Bewegungen fördern soll, haben wir sehr viel Wert auf die Verträglichkeit mit verschiedensten Beschwerden gelegt. So sorgt die moderate Pronationsstütze an der Innenseite sowie die perfektionierte Auflagefläche der Mittelsohle für eine gesunde Fußstellung und kontrollierte Führung Ihrer Schritte und ist für viele zufriedene Besitzer gar der einzige Schuh, der beschwerdefreies Gehen auch über längere Zeiträume erlaubt. Darüber hinaus ist der Classic Walk bestens für Diabetiker, Allergiker oder Arthrosebeschwerden geeignet. Beschwerden wie Fersensporn, Archillessehnenüberlastung und vielen anderen mehr kann der Classic Walk durch seine besondere Biomechanik vorbeugen.
+          p Komplettiert wird diese durchdachte Konstruktion durch unsere bewährte Gomax-Einlegesohle, die unseren Schuhen stets von Haus aus kostenlos beiliegt und sich durch äußerst lange Formbeständigkeit und elastischer Passform auszeichnet. Selbstverständlich können Sie aber natürlich auch Ihre eigenen Einlagen verwenden.
+          = link_to "Jetzt bestellen", "#add-to-cart", class: "button button-large"
+
+= partial "products/gallery", locals: { product: data.products.classic_walk }
+
+.panel.panel--emphasis
+  .content
+    .row
+      .col-xs-12.col-md-5
+        h4 Technische Daten
+        ul.spec-list
+          li.spec-list__item
+            label Innenfutter
+            span Omnipel Dynergy 0.7 Microfaser, perforiert
+            br
+            span Stockmayer + Sohn Velour Gewirk Teflon
+          li.spec-list__item
+            label Obermaterial
+            span E.Cima Fashmo DS14
+          li.spec-list__item
+            label Garn
+            span Amann & Söhne Isacord ET150
+            br
+            span Amann & Söhne Isacord ET40
+            br
+            span Amann & Söhne Serafil ET60
+            br
+            span Amann & Söhne Serafil ET40
+          li.spec-list__item
+            label Mittelsohle
+            span nora Lunatec CAD35
+            br
+            span nora Lunatec CAD55 (Pronationsstütze)
+          li.spec-list__item
+            label Außensohle
+            span OK Gummiwerk Eurostar Soft 236
+          li.spec-list__item
+            label Sprengung
+            span 9,5 mm (US Men 10)
+          li.spec-list__item
+            label Gewicht
+            span 354 g (Classic Walk) (US Men 10)
+            br
+            span 336 g (Classic Walk Glatt) (US Men 10)
+          li.spec-list__item
+            label Verfügbare Größen
+            span Damen: US 6 - US 13 (EUR 35 - EUR 43⅔)
+            br
+            span Herren: US 8 - US 15 (EUR 39⅓ - EUR 48⅓)
+      .col-xs-12.col-md-6
+        = partial "partials/add_to_cart_help"
+
+script type="application/ld+json"
+  | {
+  |   "@context": "http://schema.org",
+  |   "@type": "Product",
+  |   "name": "Classic Walk",
+  |   "image": "https://www.lunge.com/images/products/classic_walk/gls200aag/default.png",
+  |   "description": "Sie müssen kein Läufer sein um in den Genuss von Lunge Schuhen zu kommen: Der Classic Walk ist ein einzigartiger Bequemschuh für alle Lebenslagen – egal ob Alltag, Beruf oder Freizeit.",
+  |   "brand": {
+  |     "@type": "Brand",
+  |     "name": "Lunge"
+  |   },
+  |   "offers": {
+  |     "@type": "Offer",
+  |     "price": "200.00",
+  |     "priceCurrency": "EUR",
+  |     "availability": "InStock"
+  |   }
+  | }

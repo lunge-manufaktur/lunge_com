@@ -26,3 +26,7 @@ link rel="shortcut icon" type="image/x-icon" href="/images/favicon.ico"
   link rel="alternate" hreflang="de" href=current_page.data.url_de
 - if current_page.data.url_en
   link rel="alternate" hreflang="en" href=current_page.data.url_en
+
+/ prevent indexing
+- if current_page.data.sitemap_noindex
+  meta name="robots" content="noindex"
