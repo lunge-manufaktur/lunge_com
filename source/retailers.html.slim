@@ -45,12 +45,13 @@ javascript:
       $.each( locations, function( index, location ) {
         var latlng = {lat: location.geometry.coordinates[1], lng: location.geometry.coordinates[0]};
         var id = location.properties.id;
+        var title = location.properties.name
 
         var marker = new google.maps.Marker({
           position: latlng,
           animation: google.maps.Animation.DROP,
           map: map,
-          title: 'Hello World!'
+          title: title
         });
 
         var popupContent =
@@ -105,7 +106,7 @@ javascript:
         //  infowindow.open(map, marker);
         // });
         
-        console.log( location.properties.name + ' with ID ' + id + ' loaded at ' + latlng.lat + ', ' + latlng.lng );
+        // console.log( location.properties.name + ' with ID ' + id + ' loaded at ' + latlng.lat + ', ' + latlng.lng );
       }); 
     });
   }
