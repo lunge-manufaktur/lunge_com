@@ -7,8 +7,6 @@ $(function() {
     domain: 'lunge-manufaktur.myshopify.com', // Your complete Shopify store domain
     appId: '6'
   });
-  
-  console.log(client);
 
   var product;
   var cart;
