@@ -1,5 +1,5 @@
 ---
-title: Support / Rückgabe und Umtausch
+title: Rücksendung und Umtausch
 section: support
 description: Sie haben Schuhe bei uns im Shop bestellt und möchten diese umtauschen oder zurück geben? Kein Problem - Hier finden Sie alles zu Rücksendung udn Umtausch.
 ---
@@ -8,18 +8,15 @@ description: Sie haben Schuhe bei uns im Shop bestellt und möchten diese umtaus
   .title__inner
     .content.content--narrow
         h1.text-center Rückgabe und Umtausch
-        p Sie haben Schuhe bei uns im Shop bestellt und möchten diese umtauschen oder zurück geben? Kein Problem – innerhalb von 14 Tagen und unter Voraussetzung, dass sich die Schuhe im unbenutzten Zustand befinden, ist der Umtausch oder die Rückgabe problemlos möglich.
-
+        p Fordern Sie hier ein Paketlabel für Ihre kostenlose Rücksendung an.
 .panel.panel--odd
   .content.content--narrow
-    h2 Paketlabel anfordern
-  .content
-    iframe src="https://amsel.dpwn.net/abholportal/gw/lp/portal/lunge/customer/RpOrder.action?delivery=RetourenLager01" frameborder="0" height="830" width="100%" scrolling="yes"
+    h2 Ablauf
+    p Sie haben Schuhe bei uns im Shop bestellt und möchten diese umtauschen oder zurück geben? Kein Problem – innerhalb von 14 Tagen und unter Voraussetzung, dass sich die Schuhe im unbenutzten Zustand befinden, ist der Umtausch oder die Rückgabe problemlos möglich. Hier erhalten Sie kostenlose Paketlabel für Ihre Rücksendung:
+    = link_to "Paketlabel anfordern", "https://amsel.dpwn.net/abholportal/gw/lp/portal/lunge/customer/RpOrder.action?delivery=RetourenLager01", target: "_blank", class: "button"
   .content.content--narrow
     h4 Nützliche Hinweise
-    ul
-      li Sie erhalten das Label per e-Mail und drucken es anschließend aus. Achten Sie daher auf die korrekte Eingabe Ihrer E-Mail.
-      li Die E-Mail mit dem Label sollte innerhalb weniger Minuten bei Ihnen eintreffen. Falls Sie auch nach 30 Minuten keine E-Mail erhalten, überprüfen Sie bitte Ihren Spam-Ordner.
+    p Sie erhalten das Label per e-Mail und drucken es anschließend aus. Achten Sie daher auf die korrekte Eingabe Ihrer E-Mail. Die E-Mail mit dem Label sollte innerhalb weniger Minuten bei Ihnen eintreffen. Falls Sie auch nach 30 Minuten keine E-Mail erhalten, überprüfen Sie bitte Ihren Spam-Ordner.
     h4 Paketlabels für internationale Kunden
     ul
       li = link_to "Belgium", "https://amsel.dpwn.net/abholportal/gw/lp/portal/lunge/customer/RpOrder.action?delivery=Lager_BE_CB02", target: "_blank", class: "link"

@@ -520,116 +520,10 @@
 	"buffers":
 	[
 		{
-			"file": "source/support.html.slim",
-			"settings":
-			{
-				"buffer_size": 2470,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
 			"file": "source/support/resole.html.slim",
 			"settings":
 			{
-				"buffer_size": 3168,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "source/localizable/products/neo_run.en.html.slim",
-			"settings":
-			{
-				"buffer_size": 6846,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "source/layouts/layout.html.slim",
-			"settings":
-			{
-				"buffer_size": 841,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "source/sitemap.xml.slim",
-			"settings":
-			{
-				"buffer_size": 471,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "source/stylesheets/_components.scss",
-			"settings":
-			{
-				"buffer_size": 21093,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "source/stylesheets/_tooltips.scss",
-			"settings":
-			{
-				"buffer_size": 751,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "source/products/classic_walk.html.slim",
-			"settings":
-			{
-				"buffer_size": 11067,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "source/products/classic_walk_variation_a.html.slim",
-			"settings":
-			{
-				"buffer_size": 10584,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "source/stylesheets/_utilities.scss",
-			"settings":
-			{
-				"buffer_size": 592,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "source/stylesheets/_variables.scss",
-			"settings":
-			{
-				"buffer_size": 1647,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "source/stylesheets/all.css.scss",
-			"settings":
-			{
-				"buffer_size": 411,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "source/support/sizes.html.slim",
-			"settings":
-			{
-				"buffer_size": 2784,
+				"buffer_size": 4771,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
@@ -752,6 +646,19 @@
 	],
 	"file_history":
 	[
+		"/Users/ulflunge/projects/lunge_com/Gemfile",
+		"/Users/ulflunge/projects/lunge_com/source/support/sizes.html.slim",
+		"/Users/ulflunge/projects/lunge_com/source/stylesheets/all.css.scss",
+		"/Users/ulflunge/projects/lunge_com/source/stylesheets/_variables.scss",
+		"/Users/ulflunge/projects/lunge_com/source/stylesheets/_utilities.scss",
+		"/Users/ulflunge/projects/lunge_com/source/support.html.slim",
+		"/Users/ulflunge/projects/lunge_com/source/support/resole.html.slim",
+		"/Users/ulflunge/projects/lunge_com/source/localizable/products/neo_run.en.html.slim",
+		"/Users/ulflunge/projects/lunge_com/source/layouts/layout.html.slim",
+		"/Users/ulflunge/projects/lunge_com/source/sitemap.xml.slim",
+		"/Users/ulflunge/projects/lunge_com/source/stylesheets/_components.scss",
+		"/Users/ulflunge/projects/lunge_com/source/stylesheets/_tooltips.scss",
+		"/Users/ulflunge/projects/lunge_com/source/products/classic_walk.html.slim",
 		"/Users/ulflunge/projects/lunge_com/source/products/classic_walk_variation_a.html.slim",
 		"/Users/ulflunge/projects/lunge_com/source/localizable/support/sizes.en.html.slim",
 		"/Users/ulflunge/projects/lunge_com/source/localizable/products/classic_walk.en.html.slim",
@@ -760,7 +667,6 @@
 		"/Users/ulflunge/projects/lunge_com/source/products/gomax.html.slim",
 		"/Users/ulflunge/projects/lunge_com/source/products/evo_run.html.slim",
 		"/Users/ulflunge/projects/lunge_com/source/products/classic_run_fis.html.slim",
-		"/Users/ulflunge/projects/lunge_com/source/products/classic_walk.html.slim",
 		"/Users/ulflunge/projects/lunge_com/source/products/classic_run.html.slim",
 		"/Users/ulflunge/projects/lunge_com/source/partials/product-features/_non-toxic.html.slim",
 		"/Users/ulflunge/projects/lunge_com/source/partials/product-features/_made_in_germany.html.slim",
@@ -774,17 +680,13 @@
 		"/Users/ulflunge/projects/lunge_com/source/products.html.slim",
 		"/Users/ulflunge/projects/lunge_com/source/stylesheets/_animation.scss",
 		"/Users/ulflunge/projects/lunge_com/data/products/classic_run.yml",
-		"/Users/ulflunge/projects/lunge_com/source/stylesheets/_variables.scss",
-		"/Users/ulflunge/projects/lunge_com/source/stylesheets/_components.scss",
 		"/Users/ulflunge/projects/lunge_com/data/products/gomax.yml",
 		"/Users/ulflunge/projects/lunge_com/data/products/evo_run.yml",
 		"/Users/ulflunge/projects/lunge_com/data/products/classic_run_fis.yml",
 		"/Users/ulflunge/projects/lunge_com/data/products/neo_run.yml",
 		"/Users/ulflunge/projects/lunge_com/data/products/classic_walk.yml",
-		"/Users/ulflunge/projects/lunge_com/source/localizable/products/neo_run.en.html.slim",
 		"/Users/ulflunge/projects/lunge_com/source/about/press.html.slim",
 		"/Users/ulflunge/projects/lunge_com/source/localizable/index.en.html.slim",
-		"/Users/ulflunge/projects/lunge_com/source/support.html.slim",
 		"/Users/ulflunge/projects/lunge_com/source/retailers.html.slim",
 		"/Users/ulflunge/projects/lunge_com/source/index.html.slim",
 		"/Users/ulflunge/projects/lunge_com/source/about.html.slim",
@@ -801,7 +703,6 @@
 		"/Users/ulflunge/projects/lunge_com/data/navigation_items.yml",
 		"/Users/ulflunge/projects/lunge_com/source/contact.html.erb",
 		"/Users/ulflunge/projects/lunge_com/source/news/tag_der_offenen_tuer_2016.html.slim",
-		"/Users/ulflunge/projects/lunge_com/source/support/sizes.html.slim",
 		"/Users/ulflunge/projects/lunge_com/source/support/shop.html.slim",
 		"/Users/ulflunge/projects/lunge_com/source/localizable/partials/_add_to_cart_help.en.html.slim",
 		"/Users/ulflunge/projects/lunge_com/build/404.html",
@@ -812,9 +713,7 @@
 		"/Users/ulflunge/projects/lunge_com/source/about/suppliers.html.slim",
 		"/Users/ulflunge/projects/lunge_com/source/javascripts/shop.js",
 		"/Users/ulflunge/projects/lunge_com/source/partials/_cart.html.erb",
-		"/Users/ulflunge/projects/lunge_com/source/stylesheets/all.css.scss",
 		"/Users/ulflunge/projects/lunge_com/source/partials/_made_in_germany.html.slim",
-		"/Users/ulflunge/projects/lunge_com/source/layouts/layout.html.slim",
 		"/Users/ulflunge/projects/lunge_com/source/localizable/partials/_cart.en.html.erb",
 		"/Users/ulflunge/projects/lunge_com/source/partials/_cart.html.slim",
 		"/Users/ulflunge/projects/lunge_com/source/javascripts/all.js",
@@ -834,7 +733,6 @@
 		"/Users/ulflunge/projects/lunge_com/source/products/_add_to_cart_help.html.slim",
 		"/Users/ulflunge/projects/lunge_com/source/javascripts/cart.js",
 		"/Users/ulflunge/projects/lunge_com/source/stylesheets/_flexboxgrid.scss",
-		"/Users/ulflunge/projects/lunge_com/source/stylesheets/_utilities.scss",
 		"/Users/ulflunge/projects/lunge_com/source/partials/_cart_button.html.slim",
 		"/Users/ulflunge/projects/lunge_com/source/stylesheets/_flex.scss",
 		"/Users/ulflunge/projects/lunge_com/source/stylesheets/_product.scss",
@@ -844,11 +742,9 @@
 		"/Users/ulflunge/projects/lunge_com/source/partials/_language_selector.html.slim",
 		"/Users/ulflunge/projects/lunge_com/source/partials/_where_to_buy.html.slim",
 		"/Users/ulflunge/projects/lunge_com/source/localizable/partials/_size_table.en.html.slim",
-		"/Users/ulflunge/projects/lunge_com/source/sitemap.xml.slim",
 		"/Users/ulflunge/projects/lunge_com/source/localizable/partials/_where_to_buy.en.html.slim",
 		"/Users/ulflunge/projects/lunge_com/source/layouts/frontpage.html.slim",
 		"/Users/ulflunge/projects/lunge_com/source/partials/_cart_js.html.erb",
-		"/Users/ulflunge/projects/lunge_com/Gemfile",
 		"/Users/ulflunge/projects/lunge_com/locales/en.yml",
 		"/Users/ulflunge/projects/lunge_com/lib/helpers.rb",
 		"/Users/ulflunge/projects/lunge_com/build/news/stellungnahme_stiftung_warentest_heft_08-2015/index.html",
@@ -877,9 +773,7 @@
 		"/Users/ulflunge/projects/lunge_com/build/_redirects",
 		"/Users/ulflunge/projects/lunge_com/Gemfile.lock",
 		"/Users/ulflunge/projects/lunge_com/source/javascripts/contact-form.js",
-		"/Users/ulflunge/projects/lunge_com/source/_header.html.slim",
-		"/Users/ulflunge/projects/lunge_com/source/_ribbon.html.slim",
-		"/Users/ulflunge/projects/lunge_com/source/_footer.html.slim"
+		"/Users/ulflunge/projects/lunge_com/source/_header.html.slim"
 	],
 	"find":
 	{
@@ -1051,260 +945,24 @@
 	"groups":
 	[
 		{
-			"selected": 8,
+			"selected": 0,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "source/support.html.slim",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 2470,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1231,
-								1371
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Ruby Slim/Syntaxes/Ruby Slim.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 12,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
 					"file": "source/support/resole.html.slim",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 3168,
+						"buffer_size": 4771,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								2818,
-								2818
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Ruby Slim/Syntaxes/Ruby Slim.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 6,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "source/localizable/products/neo_run.en.html.slim",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 6846,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								888,
-								888
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Ruby Slim/Syntaxes/Ruby Slim.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 5,
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "source/layouts/layout.html.slim",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 841,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								82,
-								82
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Ruby Slim/Syntaxes/Ruby Slim.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 2,
-					"type": "text"
-				},
-				{
-					"buffer": 4,
-					"file": "source/sitemap.xml.slim",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 471,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								127,
-								142
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Ruby Slim/Syntaxes/Ruby Slim.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 4,
-					"type": "text"
-				},
-				{
-					"buffer": 5,
-					"file": "source/stylesheets/_components.scss",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 21093,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								20605,
-								20605
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 34420.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 7,
-					"type": "text"
-				},
-				{
-					"buffer": 6,
-					"file": "source/stylesheets/_tooltips.scss",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 751,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								682,
-								682
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 3,
-					"type": "text"
-				},
-				{
-					"buffer": 7,
-					"file": "source/products/classic_walk.html.slim",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 11067,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1314,
-								1314
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Ruby Slim/Syntaxes/Ruby Slim.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 164.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 8,
-					"file": "source/products/classic_walk_variation_a.html.slim",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 10584,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								553,
-								553
+								25,
+								25
 							]
 						],
 						"settings":
@@ -1318,124 +976,6 @@
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
-					"type": "text"
-				},
-				{
-					"buffer": 9,
-					"file": "source/stylesheets/_utilities.scss",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 592,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								592,
-								592
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 8,
-					"type": "text"
-				},
-				{
-					"buffer": 10,
-					"file": "source/stylesheets/_variables.scss",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1647,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 697.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 9,
-					"type": "text"
-				},
-				{
-					"buffer": 11,
-					"file": "source/stylesheets/all.css.scss",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 411,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								411,
-								411
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 10,
-					"type": "text"
-				},
-				{
-					"buffer": 12,
-					"file": "source/support/sizes.html.slim",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 2784,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								203,
-								203
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Ruby Slim/Syntaxes/Ruby Slim.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 11,
 					"type": "text"
 				}
 			]
@@ -1493,6 +1033,10 @@
 		"last_filter": "",
 		"selected_items":
 		[
+			[
+				"resole",
+				"source/support/resole.html.slim"
+			],
 			[
 				"walkvar",
 				"source/products/classic_walk_variation_a.html.slim"
@@ -2000,10 +1544,6 @@
 			[
 				"cont",
 				"source/partials/_contact_form.html.erb"
-			],
-			[
-				"produ",
-				"source/products.html.slim"
 			]
 		],
 		"width": 0.0
