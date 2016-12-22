@@ -17,6 +17,11 @@ sitemap_changefreq: daily
           .product__figure
             .product__image-container
               .loader
+            ul.product-feature
+              = partial "partials/product-features/vegan"
+              = partial "partials/product-features/non-toxic"
+              = partial "partials/product-features/made_in_germany"
+              = partial "partials/product-features/resole"
           .product__details
             h1 = data.products.classic_run_fis.name
             p = data.products.classic_run_fis.short_description
