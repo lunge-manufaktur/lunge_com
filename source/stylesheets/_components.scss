@@ -1444,3 +1444,21 @@ li.tab-title[not tab-title--active]:hover {
 
 .product-feature__icon {
 }
+
+.product__notice {
+  background-color: $white;
+  padding: 0.25rem 1rem;
+  display: inline-block;
+}
+
+
+
+
+/* --- BLOG --- */
+.post {
+  padding: 4rem 0;
+}
+
+.post__meta {
+  color: #999;
+}
