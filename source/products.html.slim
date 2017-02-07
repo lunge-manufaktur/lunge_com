@@ -19,7 +19,7 @@ sitemap_changefreq: daily
 .panel
   .content
     .card__container
-      = link_to "/products/#{data.products.classic_run.slug}/", class: "card" do
+      = link_to "/products/#{data.products.classic_run.slug}/", class: "card", data: { product: data.products.classic_run.slug } do
         .card__figure
           = image_tag data.products.classic_run.default_image, class: "card__image", alt: "Classic Run"
         .card__description
@@ -31,12 +31,12 @@ sitemap_changefreq: daily
           label Farbvarianten
           ul.inline-list
             - data.products.classic_run.colors.each do |color|
-              li
+              li.color-icon data-color=color.sku
                 .color-icon style="background: linear-gradient(180deg, #{color.first_color}, #{color.first_color} 65%, #{color.second_color} 66%, #{color.second_color} 100%); border: 0px solid #{color.first_color}" title=(color.name)
 
 
 
-      = link_to "/products/#{data.products.classic_walk.slug}/", class: "card" do
+      = link_to "/products/#{data.products.classic_walk.slug}/", class: "card", data: { product: data.products.classic_walk.slug } do
         .card__figure
           = image_tag data.products.classic_walk.default_image, class: "card__image", alt: "Classic Walk"
         .card__description
@@ -48,13 +48,13 @@ sitemap_changefreq: daily
           label Farbvarianten
           ul.inline-list
             - data.products.classic_walk.colors.each do |color|
-              li
+              li.color-icon data-color=color.sku
                 .color-icon style="background: linear-gradient(180deg, #{color.first_color}, #{color.first_color} 65%, #{color.second_color} 66%, #{color.second_color} 100%); border: 0px solid #{color.first_color}" title=(color.name)
 
 
-      = link_to "/products/#{data.products.neo_run.slug}/", class: "card" do
+      = link_to "/products/#{data.products.neo_run.slug}/", class: "card", data: { product: data.products.neo_run.slug } do
         .card__figure
-          = image_tag data.products.neo_run.default_image, class: "card__image", alt: "Classic Walk"
+          = image_tag data.products.neo_run.default_image, class: "card__image", alt: "Neo Run"
         .card__description
           h2 = data.products.neo_run.name
           p = data.products.neo_run.short_description
@@ -64,7 +64,7 @@ sitemap_changefreq: daily
           label Farbvarianten
           ul.inline-list
             - data.products.neo_run.colors.each do |color|
-              li
+              li.color-icon data-color=color.sku
                 .color-icon style="background: linear-gradient(180deg, #{color.first_color}, #{color.first_color} 65%, #{color.second_color} 66%, #{color.second_color} 100%); border: 0px solid #{color.first_color}" title=(color.name)
 
       = link_to "/products/#{data.products.classic_run_fis.slug}/", class: "card" do
@@ -98,7 +98,7 @@ sitemap_changefreq: daily
               li
                 .color-icon style="background: linear-gradient(180deg, #{color.first_color}, #{color.first_color} 65%, #{color.second_color} 66%, #{color.second_color} 100%); border: 0px solid #{color.first_color}" title=(color.name)
 
-      = link_to "/products/#{data.products.gomax.slug}/", class: "card" do
+      = link_to "/products/#{data.products.gomax.slug}/", class: "card", data: { product: data.products.gomax.slug } do
         .card__figure
           = image_tag data.products.gomax.default_image, class: "card__image", alt: "Gomax Einlegesohlen"
         .card__description
@@ -110,7 +110,7 @@ sitemap_changefreq: daily
           label Farbvarianten
           ul.inline-list
             - data.products.gomax.colors.each do |color|
-              li
+              li.color-icon data-color=color.sku
                 .color-icon style="background: linear-gradient(180deg, #{color.first_color}, #{color.first_color} 65%, #{color.second_color} 66%, #{color.second_color} 100%); border: 0px solid #{color.first_color}" title=(color.name)
 
 .panel.panel--emphasis

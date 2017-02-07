@@ -9,21 +9,21 @@ colors:
     name: "Pflanze/Magnesium/Silver"
     first_color: "#55E000"
     second_color: "#CCC"
-    default_image: "/images/products/classic_run/STS203SWR/default.png"
+    default_image: "/images/products/neo_run/LTS213PMS/default.png"
     price: 180
   -
     sku: "LTS213QSS"
     name: "Quicksilver/Snow/Silver"
     first_color: "#FFFAFA"
     second_color: "#CCC"
-    default_image: "/images/products/classic_run/STS203RRW/default.png"
+    default_image: "/images/products/neo_run/LTS213QSS/default.png"
     price: 180
   -
     sku: "LTS213LLL"
     name: "Lakritze"
     first_color: "#000"
     second_color: "#000"
-    default_image: "/images/products/classic_run/STS203GGG/default.png"
+    default_image: "/images/products/neo_run/LTS213LLL/default.png"
     price: 180
 images:
   -
