@@ -1,6 +1,6 @@
 de:
   -
-    name: Produkte & Shop
+    name: Shop
     url: "/products/"
     section: products
   -
@@ -18,7 +18,7 @@ de:
 
 en:
   -
-    name: Products
+    name: Shop
     url: "/en/products/"
     section: products
   -

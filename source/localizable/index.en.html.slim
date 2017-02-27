@@ -1,6 +1,5 @@
 ---
 title: Comfort and running shoes from Germany
-keywords: lunge, laufschuhe, bequemschuhe, schuhe, made in germany, classic run, classic walk, shop, bestellen
 description: High quality comfort and running shoes manufactured in Germany
 canonical_link: "https://www.lunge.com/en/"
 url_de: "https://www.lunge.com"
@@ -8,19 +7,17 @@ url_en: "https://www.lunge.com/en/"
 sitemap_priority: 0.9
 lang: en
 ---
-- content_for :hero
-  .hero
-    .hero__inner
-      .hero__image
-        = link_to "/products/classic_run" do
-          = image_tag "/images/products/classic_run/STS203SWR/STS203SWR__03--square.jpg"
+.hero
+  .hero__inner
+    .hero__image
+      = link_to "/en/products/classic_walk/" do
+        = image_tag "/images/products/classic_walk/misc/classic_walk_top_02.jpg"
+    .hero__text-container
       .hero__text
         .content.content--narrow
-          / = link_to "/about", class: "made-in-germany__link" do
-          /   = image_tag "/images/misc/made_in_germany.svg", class: "made-in-germany__logo", alt: "Made In Germany Logo"
-          h1.hero__title = link_to "Classic Run", "/en/products/classic_run"
-          p The proven choice for runners - constantly improved and developed for years the Classic Run is a running shoe of highest quality.
-          = link_to "Learn more...", "/en/products/classic_run", class: "button button--large"
+          h1.hero__title = link_to "Classic Walk", "/products/classic_walk/"
+          p You don't need to be a runner to enjoy Lunge shoes: Classic Walk is an exceptional and versatile comfort shoe for everyday use.
+          = link_to "Shop Classic Walk", "/en/products/classic_walk/", class: "button button--large"
 
 .panel
   .content
@@ -42,7 +39,7 @@ lang: en
         .panel__inner__text
           h2 Features
           p Lunge shoes are characterized by features and ideas that are shared across our whole product range. Learn what makes them special.
-          = link_to "Why Lunge?", "/en/products/features", class: "button"
+          = link_to "Why Lunge?", "/products/features", class: "button"
 
 .panel.panel--emphasis
   .content
