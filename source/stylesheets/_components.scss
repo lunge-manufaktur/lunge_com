@@ -1454,6 +1454,24 @@ li.tab-title[not tab-title--active]:hover {
 
 
 
+/* --- RESTOCK FORM --- */
+.restock__message {
+  margin-bottom: 2rem;
+}
+
+.restock__email {
+  flex: 1 0 150px;
+  width: 100%;
+}
+
+.restock__submit {
+  flex: 0 0;
+  width: 100%;
+}
+
+
+
+
 /* --- BLOG --- */
 .post {
   padding: 4rem 0;

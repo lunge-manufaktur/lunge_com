@@ -2,6 +2,10 @@ form {
   margin-bottom: $gutter;
 }
 
+form.inline-form {
+  display: flex;
+}
+
 .input-group {
   margin-bottom: 1rem;
 }

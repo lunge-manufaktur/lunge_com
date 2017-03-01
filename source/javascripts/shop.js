@@ -58,7 +58,7 @@ $(function() {
       $('.variant-select').html(variantSelectHTML);
 
       updateProductData();
-      updateAddToCartButton();
+      // updateAddToCartButton();
     });
   }
 
@@ -73,7 +73,7 @@ $(function() {
 
       $('.variant-select').html(variantSelectHTML)
 
-      updateAddToCartButton();
+      // updateAddToCartButton();
       updateProductData();
     });
   }
@@ -90,6 +90,7 @@ $(function() {
   function showSpinner() {
     var spinnerHTML = '<div class="loader"></div>';
     $('.product__image-container').html(spinnerHTML);
+    $('.add-to-cart-button__container').html(spinnerHTML);
   }
 
 
@@ -99,7 +100,7 @@ $(function() {
     var options;
     for (var i = 0; i < variants.length; i++) {
       var disabled = variants[i].available ? false : true
-      options += '<option ' + (disabled ? 'disabled=disabled ' : '') + 'value = "' + variants[i].id + '">' + variants[i].title + '</option>';
+      options += '<option value = "' + variants[i].id + '">' + variants[i].title + '</option>';
     }
 
     return  '<select name = "variant-select" class = "variant-select">' + options + '</select>';
@@ -132,6 +133,57 @@ $(function() {
 
     console.log('product: ' + product + ', variant: ' + variant);
     $('.buy-button').attr({'data-product-id': product, 'data-variant-id': variant})
+  }
+
+  // show add to cart button
+  function showAddToCartButton() {
+    var product = $('.product-select').val();
+    var variant = $('.variant-select').val();
+
+    console.log('product: ' + product + ', variant: ' + variant);
+    $('.add-to-cart-button__container').html(
+      '<button class="buy-button js-prevent-cart-listener add-button" data-product-id=' + product + ' data-variant-id=' + variant + '>In den Warenkorb</button>'
+    );
+  }
+
+  // show restock notification form
+  function showRestockNotificationForm() {
+    var variant = $('.variant-select').val();
+    var instructions = 'Bitte Wählen Sie eine andere Farbe/Größe oder lassen Sie sich benachrichtigen sobald diese Variante wieder verfügbar ist:'
+
+    $('.add-to-cart-button__container').html(
+      '<h4>Leider ausverkauft</h4>' +
+      '<p class="restock__message">' + instructions + '</p>' +
+      '<form class="inline-form" id="restock-notification-form">' +
+        '<input type="email" class="restock__email" placeholder="E-Mail" id="customer-email">' +
+        '<input type="submit" class="restock__submit" value="Benachrichtigen">' +
+      '</form>' +
+      '<div id="restock-notification-message"></div>'
+    )
+  }
+
+
+  // create restock notification
+  function createRestockNotification() {
+    var variant = $('.variant-select').val();
+    var product = $('.product-select').val();
+    var email = $('#customer-email').val();
+
+    var notificationCallback = function(data) {
+      var msg = '';
+      if (data.status == 'OK') {
+        msg = data.message; // just show the success message
+      } else { // it was an error
+        for (var k in data.errors) {  // collect all the error messages into a string
+           msg += (data.errors[k].join());
+         }
+      }
+      $('#restock-notification-message').html(msg);
+    }
+
+    console.log(email, product, variant);
+
+    BIS.create(email, variant, product).then(notificationCallback);
   }
 
 
@@ -170,7 +222,15 @@ $(function() {
         if (product.variants[i].id == variantID) {
           var selectedVariant = product.variants[i];
 
-          updateAddToCartButton();
+          var disabled = selectedVariant.available ? false : true
+
+          if (disabled) {
+            showRestockNotificationForm();
+          }
+          else {
+            showAddToCartButton();
+          }
+          // updateAddToCartButton();
           updateVariantPrice(selectedVariant);
           updateProductImage(selectedVariant);
         }
@@ -220,7 +280,14 @@ $(function() {
     });
 
     // buy button click listener 
-    $('.buy-button').on('click', buyButtonClickHandler);
+    $(document).on('click', '.buy-button', buyButtonClickHandler);
+
+    // show restock form
+    $(document).on('submit', '#restock-notification-form', function(event) {
+      event.preventDefault();
+      console.log("triggered");
+      createRestockNotification();
+    });
 
     // increment quantity click listener 
     $('.cart').on('click', '.quantity-increment', function () {
@@ -461,7 +528,6 @@ $(function() {
   /* Open Cart
   ============================================================ */
   function openCart() {
-    console.log('cartOpen trigerred');
     $('body').removeClass('offcanvas');
     $('.cart').addClass('js-active');
   }
@@ -469,7 +535,6 @@ $(function() {
   /* Close Cart
   ============================================================ */
   function closeCart() {
-    console.log('closeCart trigerred');
     $('.cart').removeClass('js-active');
     $('.overlay').removeClass('js-active');
   }
