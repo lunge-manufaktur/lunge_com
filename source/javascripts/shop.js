@@ -181,8 +181,6 @@ $(function() {
       $('#restock-notification-message').html(msg);
     }
 
-    console.log(email, product, variant);
-
     BIS.create(email, variant, product).then(notificationCallback);
   }
 
@@ -191,7 +189,6 @@ $(function() {
   // gender-select event listener
   $('.gender-select').on('change', function() {
     var collection = this.value;
-    console.log('collection set to ' + collection);
 
     getProducts(collection);
   });
@@ -200,7 +197,6 @@ $(function() {
   // product-select event listener
   $('.product-select').on('change', function() {
     var product = this.value;
-    console.log('product set to ' + product)
 
     getVariants(product);
   });
@@ -285,7 +281,6 @@ $(function() {
     // show restock form
     $(document).on('submit', '#restock-notification-form', function(event) {
       event.preventDefault();
-      console.log("triggered");
       createRestockNotification();
     });
 
@@ -306,14 +301,12 @@ $(function() {
 
     // cart tab click listener 
     $('.cart__toggle').on('click', function() {
-      console.log('cart should open');
       setPreviousFocusItem(this);
       openCart();
     });
     
     // open product modal
     $('.collection').on('click', '.image-overlay, .variant-image, .product-details', function(){
-      console.log('clicked');
       $(this).parents('.product').find('.product-modal').show();
       if (!$('.product-modal-underlay').length) {
         $('body').append('<div class = "product-modal-underlay"></div>');
@@ -328,7 +321,6 @@ $(function() {
   /* Attach and control listeners onto buy button
     ============================================================ */
   function buyButtonClickHandler(evt) {
-    console.log('add to cart button clicked');
   
     evt.preventDefault();
     var productID = $(this).attr('data-product-id');
@@ -626,7 +618,6 @@ $(function() {
     /* Return required markup for single item rendering
     ============================================================ */
   function renderCartItem(lineItem) {
-    console.log(lineItem);
     var lineItemEmptyTemplate = $('#CartItemTemplate').html();
     var $lineItemTemplate = $(lineItemEmptyTemplate);
     var itemImage = lineItem.image.src;
