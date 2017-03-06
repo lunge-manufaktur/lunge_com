@@ -11,6 +11,26 @@ $(function() {
   var product;
   var cart;
   var cartLineItemCount;
+
+  //discontineud products
+  var discontinuedProducts = [
+    'Evo Run (Grün/Weiß/Grün)',
+    'Evo Run W (Grün/Weiß/Grün)',
+    'Classic Run (Royal/Weiß)',
+    'Classic Run W (Royal/Weiß)',
+    'Classic Walk (Sand/Hellgrau)',
+    'Classic Walk W (Sand/Hellgrau)',
+    'Classic Walk (Royal/Hellgrau)',
+    'Classic Walk W (Royal/Hellgrau)',
+    'Classic Walk (Rot/Hellgrau)',
+    'Classic Walk W (Rot/Hellgrau)',
+    'Classic Walk (Brombeer/Hellgrau)',
+    'Classic Walk W (Brombeer/Hellgrau)',
+    'Classic Walk (Brombeer/Schwarz)',
+    'Classic Walk W (Brombeer/Schwarz)',
+    'Classic Walk (Braun/Hellgrau)',
+    'Classic Walk W (Braun/Hellgrau)'
+  ]
   
   //grab collection ID from div.collection#collection-id in HTML
   var collection = $('.gender-select').val();
@@ -149,16 +169,25 @@ $(function() {
   // show restock notification form
   function showRestockNotificationForm() {
     var variant = $('.variant-select').val();
-    var instructions = 'Bitte Wählen Sie eine andere Farbe/Größe oder lassen Sie sich benachrichtigen sobald diese Variante wieder verfügbar ist:'
+    var instructions = 'Diese Variante ist vorübergehend ausverkauft. Bitte Wählen Sie eine andere Farbe/Größe oder lassen Sie sich benachrichtigen sobald sie wieder verfügbar ist:'
 
     $('.add-to-cart-button__container').html(
-      '<h4>Leider ausverkauft</h4>' +
+      '<h4>Bald wieder verfügbar</h4>' +
       '<p class="restock__message">' + instructions + '</p>' +
       '<form class="inline-form" id="restock-notification-form">' +
         '<input type="email" class="restock__email" placeholder="E-Mail" id="customer-email">' +
         '<input type="submit" class="restock__submit" value="Benachrichtigen">' +
       '</form>' +
       '<div id="restock-notification-message"></div>'
+    )
+  }
+
+  function showDiscontinuedNotice() {
+    var instructions = 'Bei dieser Artikel-/Farbvariante handelt es sich um ein Auslaufmodell, das nicht mehr gefertigt wird. Bitte wählen Sie eine andere Farbe/Größe oder ein anderes Modell.'
+    
+    $('.add-to-cart-button__container').html(
+      '<h4>Nicht mehr verfügbar</h4>' +
+      '<p>' + instructions + '</p>'
     )
   }
 
@@ -218,9 +247,13 @@ $(function() {
         if (product.variants[i].id == variantID) {
           var selectedVariant = product.variants[i];
 
-          var disabled = selectedVariant.available ? false : true
+          var unavailable = !selectedVariant.available
+          var discontinued = discontinuedProducts.includes(product.title)
 
-          if (disabled) {
+          if (discontinued && unavailable) {
+            showDiscontinuedNotice();
+          }
+          else if (!discontinued && unavailable) {
             showRestockNotificationForm();
           }
           else {
