@@ -3,7 +3,7 @@ $(function() {
   /* Build new ShopifyBuy client
   ============================================================ */
   var client = ShopifyBuy.buildClient({
-    apiKey: '019ef96b2d2d314ce01b60fec17b8e84', // Your SDK API/access token 
+    accessToken: '019ef96b2d2d314ce01b60fec17b8e84', // Your SDK API/access token 
     domain: 'lunge-manufaktur.myshopify.com', // Your complete Shopify store domain
     appId: '6'
   });
@@ -248,7 +248,7 @@ $(function() {
           var selectedVariant = product.variants[i];
 
           var unavailable = !selectedVariant.available
-          var discontinued = discontinuedProducts.includes(product.title)
+          var discontinued = discontinuedProducts.indexOf(product.title) != -1
 
           if (discontinued && unavailable) {
             showDiscontinuedNotice();
