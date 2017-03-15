@@ -1464,9 +1464,9 @@ li.tab-title[not tab-title--active]:hover {
   width: 100%;
 }
 
-.restock__submit {
-  flex: 0 0;
-  width: 100%;
+input.restock__submit {
+  flex: 0 0 auto;
+  width: auto;
 }
 
 
