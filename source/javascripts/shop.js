@@ -29,7 +29,8 @@ $(function() {
     'Classic Walk (Brombeer/Schwarz)',
     'Classic Walk W (Brombeer/Schwarz)',
     'Classic Walk (Braun/Hellgrau)',
-    'Classic Walk W (Braun/Hellgrau)'
+    'Classic Walk W (Braun/Hellgrau)',
+    'Classic Walk W (Schwarz/Hellgrau)'
   ]
   
   //grab collection ID from div.collection#collection-id in HTML
