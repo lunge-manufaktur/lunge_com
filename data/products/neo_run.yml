@@ -2,7 +2,7 @@ name: "Neo Run"
 category: "Laufschuhe"
 slug: "neo_run"
 short_description: "Der Neo Run von Lunge ist ein neutraler Laufschuh mit äußerst komfortabler, effizienter Federung und hervorragendem Tragegefühl."
-default_image: "/images/products/neo_run/LTS213QSS/default.png"
+default_image: "/images/products/neo_run/LTS213LLL/default.png"
 colors:
   -
     sku: "LTS213PMS"
