@@ -127,3 +127,8 @@ end
 
 activate :i18n, langs: [:de, :en]
 activate :directory_indexes
+
+activate :blog do |blog|
+  blog.sources = "/blog/{year}-{month}-{day}-{title}.html"
+  blog.permalink = "/blog/{title}.html"
+end

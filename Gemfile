@@ -4,6 +4,8 @@ source 'https://rubygems.org'
 
 gem "middleman"
 gem "middleman-sprockets"
+gem "middleman-blog"
+gem "nokogiri"
 
 # Live-reloading plugin
 gem "middleman-livereload"
