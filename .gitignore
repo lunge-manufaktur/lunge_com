@@ -26,3 +26,6 @@ lunge_com.sublime-workspace
 
 # Ignore experimental stuff
 /source/beta
+
+# Ignore environment variables
+.env

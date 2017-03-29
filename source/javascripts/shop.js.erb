@@ -3,7 +3,7 @@ $(function() {
   /* Build new ShopifyBuy client
   ============================================================ */
   var client = ShopifyBuy.buildClient({
-    accessToken: '019ef96b2d2d314ce01b60fec17b8e84', // Your SDK API/access token 
+    accessToken: '<%= ENV['SHOPIFY_ACCESS_TOKEN'] %>', // Your SDK API/access token 
     domain: 'lunge-manufaktur.myshopify.com', // Your complete Shopify store domain
     appId: '6'
   });
