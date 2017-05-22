@@ -1,13 +1,13 @@
 # Simple redirects from one path to another
-/retoure                                                                      /support/returns
-/produkte                                                                     /products
-/produkte/adagio                                                              /products/classic_walk
-/produkte/cdur_amoll                                                          /products/classic_run
-/produkte/fis                                                                 /products/classic_run_fis
-/produkte/evo_run                                                             /products/evo_run
-/produkte/gomax                                                               /products/gomax
-/shop                                                                         /products
-/kontakt                                                                      /contact
-/fachhandler-vor-ort                                                          /retailers
-/stellungnahme-zum-laufschuh-test-der-stiftung-warentest-in-heft-082015       /news/stellungnahme_stiftung_warentest_heft_08-2015
-/pflege                                                                       /support/care
+/retoure                                                                      /support/returns/
+/produkte                                                                     /products/
+/produkte/adagio                                                              /products/classic_walk/
+/produkte/cdur_amoll                                                          /products/classic_run/
+/produkte/fis                                                                 /products/classic_run_fis/
+/produkte/evo_run                                                             /products/evo_run/
+/produkte/gomax                                                               /products/feetality/
+/shop                                                                         /products/
+/kontakt                                                                      /contact/
+/fachhandler-vor-ort                                                          /retailers/
+/pflege                                                                       /support/care/
+/products/gomax/																																/feetality/

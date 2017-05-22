@@ -102,18 +102,18 @@ lang: en
               li
                 .color-icon style="background: linear-gradient(180deg, #{color.first_color}, #{color.first_color} 65%, #{color.second_color} 66%, #{color.second_color} 100%); border: 0px solid #{color.first_color}" title=(color.name)
 
-      = link_to "/products/#{data.products.gomax.slug}/", class: "card" do
+      = link_to "/products/#{data.products.feetality.slug}/", class: "card" do
         .card__figure
-          = image_tag data.products.gomax.default_image, class: "card__image", alt: "Gomax Einlegesohlen"
+          = image_tag data.products.feetality.default_image, class: "card__image", alt: "Feetality Einlegesohlen"
         .card__description
-          h2 = data.products.gomax.name
-          p = data.products.gomax.short_description
+          h2 = data.products.feetality.name
+          p = data.products.feetality.short_description
           p
             label Kategorie
-            span = data.products.gomax.category
+            span = data.products.feetality.category
           label Farbvarianten
           ul.inline-list
-            - data.products.gomax.colors.each do |color|
+            - data.products.feetality.colors.each do |color|
               li
                 .color-icon style="background: linear-gradient(180deg, #{color.first_color}, #{color.first_color} 65%, #{color.second_color} 66%, #{color.second_color} 100%); border: 0px solid #{color.first_color}" title=(color.name)
 
