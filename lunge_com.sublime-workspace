@@ -527,6 +527,15 @@
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
+		},
+		{
+			"file": "source/products/classic_walk.html.slim",
+			"settings":
+			{
+				"buffer_size": 10647,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
 		}
 	],
 	"build_system": "",
@@ -643,6 +652,7 @@
 	],
 	"file_history":
 	[
+		"/Users/ulflunge/projects/lunge_com/source/products/accessories/shoe_laces.html.slim",
 		"/Users/ulflunge/projects/lunge_com/source/javascripts/shop.js.erb",
 		"/Users/ulflunge/projects/lunge_com/source/support/resole.html.slim",
 		"/Users/ulflunge/projects/lunge_com/source/products.html.slim",
@@ -728,7 +738,6 @@
 		"/Users/ulflunge/projects/lunge_com/source/about.html.slim",
 		"/Users/ulflunge/projects/lunge_com/source/localizable/partials/_shop_features.en.html.slim",
 		"/Users/ulflunge/projects/lunge_com/source/partials/_shop_features.html.slim",
-		"/Users/ulflunge/projects/lunge_com/source/products/accessories/shoe_laces.html.slim",
 		"/Users/ulflunge/projects/lunge_com/source/contact.html.erb",
 		"/Users/ulflunge/projects/lunge_com/source/news/tag_der_offenen_tuer_2016.html.slim",
 		"/Users/ulflunge/projects/lunge_com/source/localizable/partials/_add_to_cart_help.en.html.slim",
@@ -942,7 +951,7 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 1,
 			"sheets":
 			[
 				{
@@ -960,6 +969,36 @@
 							[
 								350,
 								350
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Ruby Slim/Syntaxes/Ruby Slim.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "source/products/classic_walk.html.slim",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 10647,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1014,
+								997
 							]
 						],
 						"settings":
@@ -1031,6 +1070,14 @@
 		"selected_items":
 		[
 			[
+				"shoe",
+				"source/products/accessories/shoe_laces.html.slim"
+			],
+			[
+				"class",
+				"source/products/classic_walk.html.slim"
+			],
+			[
 				"shop.js",
 				"source/javascripts/shop.js.erb"
 			],
@@ -1097,10 +1144,6 @@
 			[
 				"faq",
 				"source/support/faq.html.slim"
-			],
-			[
-				"class",
-				"source/products/classic_walk.html.slim"
 			],
 			[
 				"fis",
@@ -1237,10 +1280,6 @@
 			[
 				"classicwalken",
 				"source/localizable/products/classic_walk.en.html.slim"
-			],
-			[
-				"shoe",
-				"source/products/accessories/shoe_laces.html.slim"
 			],
 			[
 				"heade",
