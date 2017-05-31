@@ -7,15 +7,14 @@ url_en: "https://www.lunge.com/en/"
 sitemap_priority: 0.9
 ---
 .hero
-  .hero__inner
-    .hero__text
-      .content
-        h1.text-center = link_to "Neo Run", "/products/neo_run/"
-        p Der flexible Laufschuh mit unübertroffenem Tragekomfort - jetzt in neuen Farben verfügbar.
-        = link_to "Neo Run ansehen", "/products/neo_run/", class: "button button--large"
-    .hero__image
-      = link_to "/products/neo_run/" do
-        = image_tag "/images/products/neo_run/misc/neo_run_hero_03@3200px.jpg", srcset: "/images/products/neo_run/misc/neo_run_hero_03@800px.jpg 800w, /images/products/neo_run/misc/neo_run_hero_03@1600px.jpg 1600w, /images/products/neo_run/misc/neo_run_hero_03@3200px.jpg 3200w", alt: "Neo Run in neuen Farben"
+  .hero__text
+    .content
+      h1.text-center = link_to "Neo Run", "/products/neo_run/"
+      p Der flexible Laufschuh mit unübertroffenem Tragekomfort - jetzt in neuen Farben verfügbar.
+      = link_to "Neo Run ansehen", "/products/neo_run/", class: "button button--large"
+  .hero__image
+    = link_to "/products/neo_run/" do
+      = image_tag "/images/products/neo_run/misc/neo_run_hero_03@3200px.jpg", srcset: "/images/products/neo_run/misc/neo_run_hero_03@800px.jpg 800w, /images/products/neo_run/misc/neo_run_hero_03@1600px.jpg 1600w, /images/products/neo_run/misc/neo_run_hero_03@3200px.jpg 3200w", alt: "Neo Run in neuen Farben"
 
 .panel
   .content
