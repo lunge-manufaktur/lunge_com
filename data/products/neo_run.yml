@@ -5,11 +5,11 @@ short_description: "Der Neo Run von Lunge ist ein neutraler Laufschuh mit äuße
 default_image: "/images/products/neo_run/LTS213LLL/default.png"
 colors:
   -
-    sku: "LTS213PMS"
-    name: "Pflanze/Magnesium/Silver"
-    first_color: "#55E000"
-    second_color: "#CCC"
-    default_image: "/images/products/neo_run/LTS213PMS/default.png"
+    sku: "LTS213LLL"
+    name: "Lakritze"
+    first_color: "#000"
+    second_color: "#000"
+    default_image: "/images/products/neo_run/LTS213LLL/default.png"
     price: 180
   -
     sku: "LTS213QSS"
@@ -19,28 +19,59 @@ colors:
     default_image: "/images/products/neo_run/LTS213QSS/default.png"
     price: 180
   -
-    sku: "LTS213LLL"
-    name: "Lakritze"
-    first_color: "#000"
-    second_color: "#000"
-    default_image: "/images/products/neo_run/LTS213LLL/default.png"
+    sku: "LTS114SC"
+    name: "Skyblue/Cobalt"
+    first_color: "#ACBEDD"
+    second_color: "#CCC"
+    default_image: "/images/products/neo_run/LTS114SC/default.jpg"
+    price: 180
+  -
+    sku: "LTS114LA"
+    name: "Lime/Aquamarine"
+    first_color: "#D0DC63"
+    second_color: "#D4C3EA"
+    default_image: "/images/products/neo_run/LTS114LA/default.jpg"
+    price: 180
+  -
+    sku: "LTS214MN"
+    name: "Midnightblue/Navy"
+    first_color: "#404DA6"
+    second_color: "#5A5873"
+    default_image: "/images/products/neo_run/LTS214MN/default.jpg"
+    price: 180
+  -
+    sku: "LTS214MA"
+    name: "Midnightblue/Aquamarine"
+    first_color: "#3B4799"
+    second_color: "#EBD781"
+    default_image: "/images/products/neo_run/LTS214MA/default.jpg"
+    price: 180
+  -
+    sku: "LTS213PMS"
+    name: "Pflanze/Magnesium/Silver"
+    first_color: "#55E000"
+    second_color: "#CCC"
+    default_image: "/images/products/neo_run/LTS213PMS/default.jpg"
     price: 180
 images:
   -
-    path: "/images/products/neo_run/LTS213PMS/neo_run_LTS213PMS_01.jpg"
-    title: "Neo Run (Pflanze/Magnesium/Silber)"
+    path: "/images/products/neo_run/LTS114SC/LTS114SC_01@2500px.jpg"
+    title: "Neo Run W (Skyblue/Cobalt)"
   -
-    path: "/images/products/neo_run/LTS213QSS/neo_run_LTS213QSS_02.jpg"
-    title: Neo Run (Quecksilber/Schnee/Silber)
-  -
-    path: "/images/products/neo_run/LTS213LLL/neo_run_LTS213LLL_01.jpg"
+    path: "/images/products/neo_run/LTS213LLL/LTS213LLL_01.jpg"
     title: Neo Run (Lakritz)
   -
-    path: "/images/products/neo_run/LTS213PMS/neo_run_LTS213PMS_03.jpg"
-    title: Neo Run (Pflanze/Magnesium/Silber)
+    path: "/images/products/neo_run/LTS214MA/LTS214MA_01@2500px.jpg"
+    title: "Neo Run (Midnightblue/Aquamarine)"
   -
-    path: "/images/products/neo_run/LTS213PMS/neo_run_LTS213PMS_04.jpg"
-    title: Neo Run (Pflanze/Magnesium/Silber)
+    path: "/images/products/neo_run/LTS214MN/LTS214MN_01@2500px.jpg"
+    title: Neo Run (Quecksilber/Schnee/Silber)
+  -
+    path: "/images/products/neo_run/LTS114LA/LTS114LA_01@2500px.jpg"
+    title: Neo Run W (Lime/Aquamarine)
   -
     path: "/images/products/neo_run/LTS213QSS/neo_run_LTS213QSS_01.jpg"
     title: Neo Run (Quecksilber/Schnee/Silber)
+  -
+    path: "/images/products/neo_run/LTS213PMS/neo_run_LTS213PMS_03.jpg"
+    title: Neo Run (Pflanze/Magnesium/Silber)

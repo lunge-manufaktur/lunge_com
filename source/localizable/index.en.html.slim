@@ -9,21 +9,20 @@ lang: en
 ---
 .hero
   .hero__inner
+    .hero__text
+      .content.content--narrow
+        h1.text-center = link_to "Neo Run", "/en/products/neo_run/"
+        p Lightweight, neutral running shoe with exceptional fit and unmatched suspension - now available in new designs.
+        = link_to "Shop Neo Run", "/en/products/neo_run/", class: "button button--large"
     .hero__image
-      = link_to "/en/products/classic_walk/" do
-        = image_tag "/images/products/classic_walk/misc/classic_walk_top_02.jpg"
-    .hero__text-container
-      .hero__text
-        .content.content--narrow
-          h1.hero__title = link_to "Classic Walk", "/products/classic_walk/"
-          p You don't need to be a runner to enjoy Lunge shoes: Classic Walk is an exceptional and versatile comfort shoe for everyday use.
-          = link_to "Shop Classic Walk", "/en/products/classic_walk/", class: "button button--large"
+      = link_to "/products/neo_run/" do
+        = image_tag "/images/products/neo_run/misc/neo_run_hero_03@3200px.jpg", srcset: "/images/products/neo_run/misc/neo_run_hero_03@800px.jpg 800w, /images/products/neo_run/misc/neo_run_hero_03@1600px.jpg 1600w, /images/products/neo_run/misc/neo_run_hero_03@3200px.jpg 3200w", alt: "Neo Run in new designs"
 
 .panel
   .content
     .panel__inner.panel__inner--reverse
       .panel__image
-        iframe src="https://player.vimeo.com/video/80367695" class="responsive--16x9" height="488" width="868" allowfullscreen="" frameborder="0"
+        iframe src="https://www.youtube.com/embed/IWenljGkCyk" frameborder="0" class="responsive--16x9" height="488" width="868" allowfullscreen="true"
       aside.panel__text
         .panel__text__inner
           h2 About us

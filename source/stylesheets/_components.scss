@@ -131,6 +131,8 @@ li.mobile-nav__item {
 }
 
 nav.main-nav {
+  font-family: $header-font;
+  font-weight: 700;
   display: none;
 
   @include tablet-landscape {
@@ -244,18 +246,20 @@ img.made-in-germany__logo {
 
 /* HERO */
 .hero {
-  background-color: #ddecf3;
+  background-color: #cedde5;
+  height: calc(100vh - 4rem);
 }
 
 .hero__inner {
   width: 100%;
   margin-left: auto;
   margin-right: auto;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
 
   @include tablet-landscape {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
   }
 }
 
@@ -292,37 +296,23 @@ aside.hero__text {
   }
 }
 
-.hero__text-container {
-  border-top: 2px solid $white;
-  flex: 1 1 auto;
-
-  @include tablet-landscape {
-    border: none;
-  }
-}
-
-.hero__text__inner h2 {
-  color: $body-font-color;
-}
-
 .hero__text {
-  margin: auto;
+  width: 100%;
+  background: linear-gradient(#f1f4f7, #cedde5 95%);
   text-align: center;
-
-  @include tablet-landscape {
-    text-align: left;
-    width: 350px;
-  }
-
-  @include desktop {
-  }
+  flex: 1 0 auto;
+  display: flex;
+  align-items: center;
 }
 
 .hero__image {
-  flex: 0 1 auto;
+  flex: 0 0 auto;
   overflow: hidden;
   z-index: 0;
   min-width: 0;
+  max-width: 85em;
+  margin-left: auto;
+  margin-right: auto;
 
   @include tablet-landscape {
     order: 2;
@@ -330,7 +320,6 @@ aside.hero__text {
 }
 
 .hero__image img {
-  max-height: calc(100vh - 5rem);
 }
 
 
@@ -347,8 +336,7 @@ input[type="submit"] {
   color: $white;
   display: inline-block;
   font-family: $header-font;
-  font-weight: 400;
-  font-style: italic;
+  font-weight: 700;
   line-height: 1.6rem;
   padding: 0.5rem 1rem;
   text-align: center;

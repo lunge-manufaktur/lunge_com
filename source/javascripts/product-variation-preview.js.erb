@@ -17,26 +17,27 @@
 $('[data-product="classic_run"] li.color-icon').on("mouseover tap", function(event) {
   event.preventDefault();
   var sku = $(this).data("color");
-  $('[data-product=classic_run] .card__image').attr("src", "/images/products/classic_run/" + sku + "/default.png");
+  var imagePath = $(this).data("image-path")
+  $('[data-product=classic_run] .card__image').attr("src", imagePath);
 });
 
 $('[data-product="classic_walk"] li.color-icon').on("mouseover tap", function(event) {
   event.preventDefault();
   var sku = $(this).data("color");
-  console.log(sku);
-  $('[data-product=classic_walk] .card__image').attr("src", "/images/products/classic_walk/" + sku + "/default.png");
+  var imagePath = $(this).data("image-path")
+  $('[data-product=classic_walk] .card__image').attr("src", imagePath);
 });
 
 $('[data-product="neo_run"] li.color-icon').on("mouseover tap", function(event) {
   event.preventDefault();
   var sku = $(this).data("color");
-  console.log(sku);
-  $('[data-product=neo_run] .card__image').attr("src", "/images/products/neo_run/" + sku + "/default.png");
+  var imagePath = $(this).data("image-path")
+  $('[data-product=neo_run] .card__image').attr("src", imagePath);
 });
 
-$('[data-product="gomax"] li.color-icon').on("mouseover tap", function(event) {
+$('[data-product="feetality"] li.color-icon').on("mouseover tap", function(event) {
   event.preventDefault();
   var sku = $(this).data("color");
-  console.log(sku);
-  $('[data-product=gomax] .card__image').attr("src", "/images/products/gomax/" + sku + "__01__square.png");
+  var imagePath = $(this).data("image-path")
+  $('[data-product=feetality] .card__image').attr("src", imagePath);
 });

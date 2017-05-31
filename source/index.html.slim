@@ -8,21 +8,20 @@ sitemap_priority: 0.9
 ---
 .hero
   .hero__inner
+    .hero__text
+      .content
+        h1.text-center = link_to "Neo Run", "/products/neo_run/"
+        p Der flexible Laufschuh mit unübertroffenem Tragekomfort - jetzt in neuen Farben verfügbar.
+        = link_to "Neo Run ansehen", "/products/neo_run/", class: "button button--large"
     .hero__image
-      = link_to "/products/classic_walk/" do
-        = image_tag "/images/products/classic_walk/misc/classic_walk_top_02.jpg"
-    .hero__text-container
-      .hero__text
-        .content.content--narrow
-          h1.hero__title = link_to "Classic Walk", "/products/classic_walk/"
-          p Sie müssen kein Läufer sein um in den Genuss von Lunge Schuhen zu kommen: Der Classic Walk ist ein einzigartiger Bequemschuh für alle Lebenslagen – egal ob Alltag, Beruf oder Freizeit.
-          = link_to "Classic Walk ansehen", "/products/classic_walk/", class: "button button--large"
+      = link_to "/products/neo_run/" do
+        = image_tag "/images/products/neo_run/misc/neo_run_hero_03@3200px.jpg", srcset: "/images/products/neo_run/misc/neo_run_hero_03@800px.jpg 800w, /images/products/neo_run/misc/neo_run_hero_03@1600px.jpg 1600w, /images/products/neo_run/misc/neo_run_hero_03@3200px.jpg 3200w", alt: "Neo Run in neuen Farben"
 
 .panel
   .content
     .panel__inner.panel__inner--reverse
       .panel__image
-        iframe src="https://www.youtube.com/embed/IWenljGkCyk" frameborder="0" class="responsive--16x9" height="488" width="868"
+        iframe src="https://www.youtube.com/embed/IWenljGkCyk" frameborder="0" class="responsive--16x9" height="488" width="868" allowfullscreen="true"
       aside.panel__text
         .panel__text__inner
           h2 Über uns

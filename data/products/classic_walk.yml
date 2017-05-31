@@ -2,7 +2,7 @@ name: "Classic Walk"
 category: "Bequemschuhe"
 slug: "classic_walk"
 short_description: "Sie müssen kein Läufer sein um in den Genuss von Lunge Schuhen zu kommen: Der Classic Walk ist ein einzigartiger Bequemschuh für alle Lebenslagen - ganz gleich ob Alltag, Beruf oder Freizeit."
-default_image: "/images/products/classic_walk/GLS200AAG/default.png"
+default_image: "/images/products/classic_walk/GLS200AAG/default.jpg"
 colors:
   -
     sku: "GLS200SSS"
@@ -17,28 +17,28 @@ colors:
     name: "Anthrazit/Schwarz"
     first_color: "#656670"
     second_color: "#000"
-    default_image: "/images/products/classic_walk/GLS200AAS/default.png"
+    default_image: "/images/products/classic_walk/GLS200AAS/default.jpg"
     price: 200
   -
     sku: "GLS200MMS"
     name: "Marine/Schwarz"
     first_color: "#31335A"
     second_color: "#000"
-    default_image: "/images/products/classic_walk/GLS200MMS/default.png"
+    default_image: "/images/products/classic_walk/GLS200MMS/default.jpg"
     price: 200
   -
     sku: "GLS200BRS"
     name: "Braun/Schwarz"
     first_color: "#79463C"
     second_color: "#000"
-    default_image: "/images/products/classic_walk/GLS200BRS/default.png"
+    default_image: "/images/products/classic_walk/GLS200BRS/default.jpg"
     price: 200
   -
     sku: "GLS200BBS"
     name: "Brombeer/Schwarz"
     first_color: "#93243E"
     second_color: "#000"
-    default_image: "/images/products/classic_walk/GLS200BBS/default.png"
+    default_image: "/images/products/classic_walk/GLS200BBS/default.jpg"
     price: 200
   -
     sku: "GLS200SIL"
@@ -52,7 +52,7 @@ colors:
     name: "Caramel/Hellgrau"
     first_color: "#CEA17F"
     second_color: "#DFDFDF"
-    default_image: "/images/products/classic_walk/GLS200CCG/default.png"
+    default_image: "/images/products/classic_walk/GLS200CCG/default.jpg"
     price: 200
   -
     sku: "GLS200RRG"
@@ -73,28 +73,28 @@ colors:
     name: "Anthrazit/Hellgrau"
     first_color: "#656670"
     second_color: "#DFDFDF"
-    default_image: "/images/products/classic_walk/GLS200AAG/default.png"
+    default_image: "/images/products/classic_walk/GLS200AAG/default.jpg"
     price: 200
   -
     sku: "GLS200MMG"
     name: "Marine/Hellgrau"
     first_color: "#31335A"
     second_color: "#DFDFDF"
-    default_image: "/images/products/classic_walk/GLS200MMG/default.png"
+    default_image: "/images/products/classic_walk/GLS200MMG/default.jpg"
     price: 200
   -
     sku: "GLS200BRG"
     name: "Braun/Hellgrau"
     first_color: "#79463C"
     second_color: "#DFDFDF"
-    default_image: "/images/products/classic_walk/GLS200BRG/default.png"
+    default_image: "/images/products/classic_walk/GLS200BRG/default.jpg"
     price: 200
   -
     sku: "GLS200BBG"
     name: "Brombeer/Hellgrau"
     first_color: "#93243E"
     second_color: "#DFDFDF"
-    default_image: "/images/products/classic_walk/GLS200BBG/default.png"
+    default_image: "/images/products/classic_walk/GLS200BBG/default.jpg"
     price: 200
   -
     sku: "GLS200ROG"
@@ -120,8 +120,8 @@ colors:
   -
     sku: "GLS202WGW"
     name: "Glatt/Weiß"
-    first_color: "#FFF"
-    second_color: "#FFF"
+    first_color: "#FCFCFC"
+    second_color: "#EEEEEE"
     default_image: "/images/products/classic_walk/GLS202WGW/default.png"
     price: 230
 images:

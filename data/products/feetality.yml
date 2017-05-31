@@ -2,18 +2,18 @@ name: "Feetality Einlegesohlen"
 category: "Zubehör"
 slug: "feetality"
 short_description: "Werten Sie Ihre Schuhe auf und beugen Sie Fuß-, Knie- und Rückenbeschwerden vor."
-default_image: "/images/products/feetality/LG105.3__01__square.png"
+default_image: "/images/products/feetality/LG105_3/default.png"
 colors:
   -
     sku: "LG105.2"
     name: "Rot"
-    default_image: "/images/products/feetality/LG105.3/LG105__02__square.png"
+    default_image: "/images/products/feetality/LG105_3/default.png"
     first_color: "#B52F20"
     second_color: "#777"
   -
     sku: "LG105.3"
     name: "Schwarz"
-    default_image: "/images/products/feetality/LG105.3/LG105__01__square.png"
+    default_image: "/images/products/feetality/LG105_2/default.png"
     first_color: "#000"
     second_color: "#777"
 images:
