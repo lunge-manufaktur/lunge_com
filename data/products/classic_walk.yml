@@ -9,7 +9,7 @@ colors:
     name: "Schwarz/Schwarz"
     first_color: "#000"
     second_color: "#000"
-    default_image: "/images/products/classic_walk/GLS200SSS/default.png"
+    default_image: "/images/products/classic_walk/GLS200SSS/default.jpg"
     price: 200
     price: 200
   -
@@ -45,7 +45,7 @@ colors:
     name: "Silber/Hellgrau"
     first_color: "#B1C0C7"
     second_color: "#DFDFDF"
-    default_image: "/images/products/classic_walk/GLS200SIL/default.png"
+    default_image: "/images/products/classic_walk/GLS200SIL/default.jpg"
     price: 200
   -
     sku: "GLS200CCG"
@@ -59,14 +59,14 @@ colors:
     name: "Royal/Hellgrau"
     first_color: "#3763BC"
     second_color: "#DFDFDF"
-    default_image: "/images/products/classic_walk/GLS200RRG/default.png"
+    default_image: "/images/products/classic_walk/GLS200RRG/default.jpg"
     price: 200
   -
     sku: "GLS200SSG"
     name: "Schwarz/Hellgrau"
     first_color: "#000"
     second_color: "#DFDFDF"
-    default_image: "/images/products/classic_walk/GLS200SSG/default.png"
+    default_image: "/images/products/classic_walk/GLS200SSG/default.jpg"
     price: 200
   -
     sku: "GLS200AAG"
@@ -101,28 +101,28 @@ colors:
     name: "Rot/Hellgrau"
     first_color: "#DF3F41"
     second_color: "#DFDFDF"
-    default_image: "/images/products/classic_walk/GLS200ROG/default.png"
+    default_image: "/images/products/classic_walk/GLS200ROG/default.jpg"
     price: 200
   -
     sku: "GLS200SAN"
     name: "Sand/Hellgrau"
     first_color: "#F4E4C0"
     second_color: "#DFDFDF"
-    default_image: "/images/products/classic_walk/GLS200SAN/default.png"
+    default_image: "/images/products/classic_walk/GLS200SAN/default.jpg"
     price: 200
   -
     sku: "GLS202SGS"
     name: "Glatt/Schwarz"
     first_color: "#000"
     second_color: "#000"
-    default_image: "/images/products/classic_walk/GLS202SGS/default.png"
+    default_image: "/images/products/classic_walk/GLS202SGS/default.jpg"
     price: 230
   -
     sku: "GLS202WGW"
     name: "Glatt/Weiß"
     first_color: "#FCFCFC"
     second_color: "#EEEEEE"
-    default_image: "/images/products/classic_walk/GLS202WGW/default.png"
+    default_image: "/images/products/classic_walk/GLS202WGW/default.jpg"
     price: 230
 images:
   -

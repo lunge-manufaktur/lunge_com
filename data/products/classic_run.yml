@@ -2,35 +2,35 @@ name: "Classic Run"
 category: "Laufschuhe"
 slug: "classic_run"
 short_description: "Der Klassiker unter den Laufschuhen und Geheimtipp anspruchsvoller Läufer."
-default_image: "/images/products/classic_run/STS203SWR/default.png"
+default_image: "/images/products/classic_run/STS203SWR/default.jpg"
 colors:
   -
     sku: "STS203SWR"
     name: "Silber/Rot/Weiß"
     first_color: "#BD3C42"
     second_color: "#DDD"
-    default_image: "/images/products/classic_run/STS203SWR/default.png"
+    default_image: "/images/products/classic_run/STS203SWR/default.jpg"
     price: 220
   -
     sku: "STS203RRW"
     name: "Royal/Weiß"
     first_color: "#385BC1"
     second_color: "#FFF"
-    default_image: "/images/products/classic_run/STS203RRW/default.png"
+    default_image: "/images/products/classic_run/STS203RRW/default.jpg"
     price: 220
   -
     sku: "STS203GGG"
     name: "Grün/Weiß"
     first_color: "#A4B93A"
     second_color: "#FFF"
-    default_image: "/images/products/classic_run/STS203GGG/default.png"
+    default_image: "/images/products/classic_run/STS203GGG/default.jpg"
     price: 220
   -
     sku: "STS203SSS"
     name: "Schwarz/Silber"
     first_color: "#000000"
     second_color: "#FFF"
-    default_image: "/images/products/classic_run/STS203SSS/default.png"
+    default_image: "/images/products/classic_run/STS203SSS/default.jpg"
     price: 220
 images:
   -
