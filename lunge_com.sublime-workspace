@@ -519,24 +519,6 @@
 	},
 	"buffers":
 	[
-		{
-			"file": "source/contact.html.slim",
-			"settings":
-			{
-				"buffer_size": 841,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "source/partials/_contact_form.html.erb",
-			"settings":
-			{
-				"buffer_size": 1618,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		}
 	],
 	"build_system": "",
 	"build_system_choices":
@@ -653,6 +635,8 @@
 	],
 	"file_history":
 	[
+		"/Users/ulflunge/projects/lunge_com/source/partials/_contact_form.html.erb",
+		"/Users/ulflunge/projects/lunge_com/source/contact.html.slim",
 		"/Users/ulflunge/projects/lunge_com/data/products/classic_run.yml",
 		"/Users/ulflunge/projects/lunge_com/source/layouts/layout.html.slim",
 		"/Users/ulflunge/projects/lunge_com/lib/helpers.rb",
@@ -764,7 +748,6 @@
 		"/Users/ulflunge/projects/lunge_com/source/stylesheets/loader/_loader02.scss",
 		"/Users/ulflunge/projects/lunge_com/source/stylesheets/_forms.scss",
 		"/Users/ulflunge/projects/lunge_com/source/partials/_cart_sdk.html.erb",
-		"/Users/ulflunge/projects/lunge_com/source/partials/_contact_form.html.erb",
 		"/Users/ulflunge/projects/lunge_com/source/products/_add_to_cart_help.html.slim",
 		"/Users/ulflunge/projects/lunge_com/source/partials/_cart_button.html.slim",
 		"/Users/ulflunge/projects/lunge_com/source/stylesheets/_flex.scss",
@@ -779,8 +762,7 @@
 		"/Users/ulflunge/projects/lunge_com/locales/en.yml",
 		"/Users/ulflunge/projects/lunge_com/build/news/stellungnahme_stiftung_warentest_heft_08-2015/index.html",
 		"/Users/ulflunge/projects/lunge_com/source/stylesheets/_layout.scss",
-		"/Users/ulflunge/projects/lunge_com/source/javascripts/tabs.js",
-		"/Users/ulflunge/projects/lunge_com/source/stylesheets/all.scss"
+		"/Users/ulflunge/projects/lunge_com/source/javascripts/tabs.js"
 	],
 	"find":
 	{
@@ -952,67 +934,8 @@
 	"groups":
 	[
 		{
-			"selected": 0,
 			"sheets":
 			[
-				{
-					"buffer": 0,
-					"file": "source/contact.html.slim",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 841,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								775,
-								775
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Ruby Slim/Syntaxes/Ruby Slim.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "source/partials/_contact_form.html.erb",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1618,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1271,
-								1271
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Rails/HTML (Rails).sublime-syntax",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				}
 			]
 		}
 	],
