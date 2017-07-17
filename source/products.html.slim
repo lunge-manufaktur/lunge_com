@@ -51,7 +51,6 @@ sitemap_changefreq: daily
               li.color-icon data-color=color.sku data-image-path=color.default_image
                 .color-icon style="background: linear-gradient(180deg, #{color.first_color}, #{color.first_color} 65%, #{color.second_color} 66%, #{color.second_color} 100%); border: 0px solid #{color.first_color}" title=(color.name)
 
-
       = link_to "/products/#{data.products.neo_run.slug}/", class: "card", data: { product: data.products.neo_run.slug } do
         .card__figure
           = image_tag data.products.neo_run.default_image, class: "card__image", alt: "Neo Run"
@@ -64,6 +63,21 @@ sitemap_changefreq: daily
           label Farbvarianten
           ul.inline-list
             - data.products.neo_run.colors.each do |color|
+              li.color-icon data-color=color.sku data-image-path=color.default_image
+                .color-icon style="background: linear-gradient(180deg, #{color.first_color}, #{color.first_color} 65%, #{color.second_color} 66%, #{color.second_color} 100%); border: 0px solid #{color.first_color}" title=(color.name)
+
+      = link_to "/products/#{data.products.neo_walk.slug}/", class: "card", data: { product: data.products.neo_walk.slug } do
+        .card__figure
+          = image_tag data.products.neo_walk.default_image, class: "card__image", alt: "Neo Run"
+        .card__description
+          h2 = data.products.neo_walk.name
+          p = data.products.neo_walk.short_description
+          p
+            label Kategorie
+            span = data.products.neo_walk.category
+          label Farbvarianten
+          ul.inline-list
+            - data.products.neo_walk.colors.each do |color|
               li.color-icon data-color=color.sku data-image-path=color.default_image
                 .color-icon style="background: linear-gradient(180deg, #{color.first_color}, #{color.first_color} 65%, #{color.second_color} 66%, #{color.second_color} 100%); border: 0px solid #{color.first_color}" title=(color.name)
 

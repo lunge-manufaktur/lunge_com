@@ -1,0 +1,147 @@
+---
+title: Neo Walk - Leichter Schuh mit komfortabler Federung
+description: Der Neo Walk ist ein leichter Bequem- und Alltagsschuh mit äußerst komfortabler, flexibler Mittelsohle und exzellentem Tragegefühl.
+section: products
+canonical_link: "https://www.lunge.com/products/neo_run/"
+url_de: "https://www.lunge.com/products/neo_run/"
+url_en: "https://www.lunge.com/en/products/neo_run/"
+sitemap_priority: 0.8
+sitemap_changefreq: daily
+---
+.title__container#add-to-cart.anchor-target
+  = partial "partials/made_in_germany"
+  .title__inner
+    .content
+      .collection
+        .product
+          .product__figure
+            .product__image-container
+              .loader
+            ul.product-feature
+              = partial "partials/product-features/vegan"
+              = partial "partials/product-features/non-toxic"
+              = partial "partials/product-features/made_in_germany"
+          .product__details
+            h1 Neo Walk
+            p = data.products.neo_walk.short_description
+            h4 Jetzt bestellen
+            .input-group
+              label Damen / Herren
+              .gender-select__container
+                select.product__option.gender-select
+                  option value=391366793 Herren
+                  option value=391367049 Damen
+            .input-group
+              label Farbe
+              .product-select__container
+                select.product__option.product-select
+            .input-group
+              label Größe (Fusslänge / US / EUR)
+              .variant-select__container
+                select.product__option.variant-select
+            .variant-price__container
+              h2.variant-price
+            .add-to-cart-button__container
+              button.buy-button.js-prevent-cart-listener.add-button In den Warenkorb
+            .product__sizing
+              p
+                span
+                  | Um die passende Größe zu finden, wählen Sie Ihre Schuhe bitte anhand der empfohlenen Fusslänge aus. Schauen Sie sich unsere 
+                = link_to "Größentabelle", "/support/sizes/", class: "link"
+                span
+                  |  an um mehr über unsere Größen und das korrekte Messen Ihrer Fusslänge zu erfahren.
+
+.panel
+  .content
+    .panel__inner.panel__inner--reverse
+      .panel__image
+        = image_tag "/images/products/neo_walk/misc/neo_walk_hero_01_square.jpg", alt: "Neo Walk in Steelblue/Marine für Herren und Ivory/Champagne für Damen"
+      aside.panel__text
+        .panel__text__inner
+          h2 Sportliche Federung für den Alltag
+          p
+          	| Die Mittelsohle des Neo Walks besteht aus dem selben hochwertigen Material, das dank effizienter Federung bereits unseren Laufschuh 
+          	= link_to "Neo Run", "/products/neo_run", class: "link"
+          	|  zu einem außergewöhnlichen Trageerlebnis machte.
+
+          p Mit dem Neo Walk genießen Sie nun diese bereits im Laufsport erprobten und bewährten Qualitäten in einem Bequemschuh für Alltag, Beruf und Freizeit. Ein sportliches Fundament für einen vielseitigen Allrounder.
+          = link_to "Jetzt bestellen", "#add-to-cart", class: "button button-large"
+
+.panel
+  .content
+    .panel__inner
+      .panel__image
+        = image_tag "/images/products/neo_walk/GTS114IC/GTS114IC_01@2500px.jpg", alt: "Neo Walk in Steelblue/Marine für Herren und Ivory/Champagne für Damen"
+      aside.panel__text
+        .panel__text__inner
+          h2 Gehen wird zum Erlebnis
+          p Die Kombination aus flexibler, federnder Sohle und dem feinen, sich an den Fuß anschmiegenden Obermaterial sowie Innenfutter sorgt für einen Tragekomfort, der Ihnen auch über längere Distanzen jeden einzelnen Schritt erleichtert.
+          = link_to "Jetzt bestellen", "#add-to-cart", class: "button button-large"
+
+.panel
+  .content
+    .panel__inner.panel__inner--reverse
+      .panel__image
+        = image_tag "/images/products/neo_walk/GTS214SB/GTS214SB_01@2500px.jpg", alt: "Neo Walk in Steelblue/Marine für Herren und Ivory/Champagne für Damen"
+      aside.panel__text
+        .panel__text__inner
+          h2 Feinste, vegane Materialien
+          p Wie von Lunge Schuhen gewohnt, kommen auch beim Neo Walk ausschließlich hochwertige, vegane Materialien mit ansprechender Haptik und einem Fokus auf Funktionalität zum Einsatz.
+          = link_to "Jetzt bestellen", "#add-to-cart", class: "button button-large"
+
+.panel.panel--emphasis
+  .content
+    .row
+      .col-xs-12.col-md-6
+        h4 Technische Daten
+        ul.spec-list
+          li.spec-list__item
+            label Innenfutter
+            span Stockmayer + Sohn Velour Gewirk
+          li.spec-list__item
+            label Obermaterial
+            span Moron onSteam
+          li.spec-list__item
+            label Garn
+            span Amann & Söhne Isacord ET150
+            br
+            span Amann & Söhne Isacord ET40
+            br
+            span Amann & Söhne Serafil ET60
+            br
+            span Amann & Söhne Serafil ET40
+          li.spec-list__item
+            label Mittel- und Außensohle
+            span Individuell entwickelte PU-Sohle
+          li.spec-list__item
+            label Sprengung
+            span 9 mm (US Men 10)
+          li.spec-list__item
+            label Gewicht
+            span 336 g (US Men 10)
+          li.spec-list__item
+            label Verfügbare Größen
+            span Damen: US 6 - US 13
+            br
+            span Herren: US 8 - US 15
+      .col-xs-12.col-md-6
+        = partial "products/add_to_cart_help"
+
+script type="application/ld+json"
+  | {
+  |   "@context": "http://schema.org",
+  |   "@type": "Product",
+  |   "name": "Neo Run",
+  |   "image": "https://www.lunge.com/images/products/neo_run/lts213lll/neo_run_LTS213LLL_default.png",
+  |   "description": "Der Neo Run von Lunge ist ein neutraler Laufschuh mit äußerst komfortabler Federung und hervorragendem Tragekomfort.",
+  |   "brand": {
+  |     "@type": "Brand",
+  |     "name": "Lunge"
+  |   },
+  |   "offers": {
+  |     "@type": "Offer",
+  |     "price": "180.00",
+  |     "priceCurrency": "EUR",
+  |     "availability": "InStock"
+  |   }
+  | }

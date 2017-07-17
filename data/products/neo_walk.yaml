@@ -1,0 +1,42 @@
+name: "Neo Walk"
+category: "Bequemschuhe"
+slug: "neo_walk"
+short_description: "Ein leichter, neutraler Bequem- und Alltagsschuh mit äußerst komfortabler, flexibler Mittelsohle und hervorragendem Tragegefühl."
+default_image: "/images/products/neo_walk/GTS214SB/default.jpg"
+colors:
+  -
+    sku: "GTS214SB"
+    name: "Steelblue/Marine"
+    first_color: "#687696"
+    second_color: "#434968"
+    default_image: "/images/products/neo_walk/GTS214SB/default.jpg"
+    price: 180
+  -
+    sku: "GTS114IC"
+    name: "Ivory/Champagne"
+    first_color: "#EAE7DE"
+    second_color: "#B5AEA9"
+    default_image: "/images/products/neo_walk/GTS114IC/default.jpg"
+    price: 180
+images:
+  -
+    path: "/images/products/neo_walk/misc/neo_walk_hero_01@2500px.jpg"
+    title: "Neo Run W (Skyblue/Cobalt)"
+  -
+    path: "/images/products/neo_run/LTS213LLL/LTS213LLL_01.jpg"
+    title: Neo Run (Lakritz)
+  -
+    path: "/images/products/neo_run/LTS214MA/LTS214MA_01@2500px.jpg"
+    title: "Neo Run (Midnightblue/Aquamarine)"
+  -
+    path: "/images/products/neo_run/LTS214MN/LTS214MN_01@2500px.jpg"
+    title: Neo Run (Quecksilber/Schnee/Silber)
+  -
+    path: "/images/products/neo_run/LTS114LA/LTS114LA_01@2500px.jpg"
+    title: Neo Run W (Lime/Aquamarine)
+  -
+    path: "/images/products/neo_run/LTS213QSS/neo_run_LTS213QSS_01.jpg"
+    title: Neo Run (Quecksilber/Schnee/Silber)
+  -
+    path: "/images/products/neo_run/LTS213PMS/neo_run_LTS213PMS_03.jpg"
+    title: Neo Run (Pflanze/Magnesium/Silber)
