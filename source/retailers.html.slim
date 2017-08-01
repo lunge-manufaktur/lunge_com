@@ -27,6 +27,7 @@ section: retailers
 
 - content_for :custom_assets
   = javascript_include_tag "https://maps.googleapis.com/maps/api/js?key=AIzaSyAGLRt1xAtAgjvg9qJURzumMJw_JpfwHVg&callback=initMap", async: true, defer: true
+  = javascript_include_tag "/javascripts/markerclusterer.js"
 
 javascript:
   var map;
@@ -42,46 +43,39 @@ javascript:
     $.getJSON( '/retailers.geojson', function( data ) {
       var locations = data.features;
 
-      $.each( locations, function( index, location ) {
-        var latlng = {lat: location.geometry.coordinates[1], lng: location.geometry.coordinates[0]};
-        var id = location.properties.id;
-        var title = location.properties.name
+      var markers = locations.map(function(location, i) {
+        var popupContent = 
+          '<div class="popup__content">' +
+            '<h4>' + location.properties.name + '</h3>' +
+            '<p>' +
+            '<label>Adresse</label>' +
+            location.properties.address + '<br>' +
+            location.properties.zip + ' ' + location.properties.city + '<br>' +
+            location.properties.country +
+            '</p>' +
+            '<p>' +
+            '<label>Telefon</label>' +
+            location.properties.phone +
+            '</p>' +
+            '<p>'+
+            '<a class="link" href="' + encodeURI(location.properties.website) + '" target="_blank">Website</a>' +
+            '</p>' +
+          '</div>';
 
-        var marker = new google.maps.Marker({
-          position: latlng,
-          animation: google.maps.Animation.DROP,
-          map: map,
-          title: title
-        });
-
-        var popupContent =
-        '<div class="popup__content">' +
-          '<h4>' + location.properties.name + '</h3>' +
-          '<p>' +
-          '<label>Adresse</label>' +
-          location.properties.address + '<br>' +
-          location.properties.zip + ' ' + location.properties.city + '<br>' +
-          location.properties.country +
-          '</p>' +
-          '<p>' +
-          '<label>Telefon</label>' +
-          location.properties.phone +
-          '</p>' +
-          '<p>'+
-          '<a class="link" href="' + encodeURI(location.properties.website) + '" target="_blank">Website</a>' +
-          '</p>' +
-        '</div>'
-
-        var infowindow = new google.maps.InfoWindow({
+        var infoWindow = new google.maps.InfoWindow({
           content: popupContent,
           maxWidth: 300
+        });
+
+        var marker = new google.maps.Marker({
+          map: map,
+          position: {lat: location.geometry.coordinates[1], lng: location.geometry.coordinates[0]},
+          title: location.properties.name
         })
 
         marker.addListener('click', function() {
-          infowindow.open(map, marker);
+          infoWindow.open(map, marker);
         });
-
-
 
         $('.map__list').append(
           '<div class="map__list__item">' +
@@ -100,14 +94,8 @@ javascript:
           '</div>'
         );
 
-        // google.maps.event.addDomListener(document.getElementById("map__list__item__link__" + id), "click", function(ev) {
-        //  map.setCenter(marker.getPosition());
-        //  infowindow.close();
-        //  infowindow.open(map, marker);
-        // });
-        
-        // console.log( location.properties.name + ' with ID ' + id + ' loaded at ' + latlng.lat + ', ' + latlng.lng );
-      }); 
+        return marker
+      });
     });
   }
   
