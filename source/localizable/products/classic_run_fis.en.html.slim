@@ -1,8 +1,8 @@
 ---
-title: Classic Run Fis - Laufschuh für schwieriges Terrain
-description: Der Classic Run Fis ist ein veganer Laufschuh, der sich auch auf schwierigstem Terrain und unbefestigten Wegen zu Hause fühlt.
+title: Classic Run Fis - running shoes for unforgiving terrain
+description: Not every run is a walk in the park, but the Classic Run Fis offers excellent grip even off-road and on the most unforgiving terrain.
 section: products
-canonical_link: "https://www.lunge.com/products/classic_run_fis/"
+canonical_link: "https://www.lunge.com/en/products/classic_run_fis/"
 url_de: "https://www.lunge.com/products/classic_run_fis/"
 url_en: "https://www.lunge.com/en/products/classic_run_fis/"
 sitemap_priority: 0.8
@@ -25,26 +25,26 @@ sitemap_changefreq: daily
               = partial "partials/product-features/resole"
           .product__details
             h1 = data.products.classic_run_fis.name
-            p = data.products.classic_run_fis.short_description
-            h4 Jetzt bestellen
+            p = data.products.classic_run_fis.short_description_en
+            h4 Buy now
             .input-group
-              label Damen / Herren
+              label Men / Women
               .gender-select__container
                 select.product__option.gender-select
-                  option value=184955653 Herren
-                  option value=184378629 Damen
+                  option value=184955653 Men
+                  option value=184378629 Women
             .input-group
-              label Farbe
+              label Color
               .product-select__container
                 select.product__option.product-select
             .input-group
-              label Größe (Fusslänge / US / EUR)
+              label Size (foot length / US / EUR)
               .variant-select__container
                 select.product__option.variant-select
             .variant-price__container
               h2.variant-price
             .add-to-cart-button__container
-              button.buy-button.js-prevent-cart-listener.add-button In den Warenkorb
+              button.buy-button.js-prevent-cart-listener.add-button Add to cart
             .product__sizing
               = partial "partials/size_guide_note"
 
@@ -54,12 +54,12 @@ sitemap_changefreq: daily
       = image_tag "/images/products/classic_run_fis/STW200ABB/STW200ABB__01.png"
     aside.panel__text
       .panel__text__inner
-        h2 Im Gelände zu Hause
+        h2 At home on every terrain
         p 
-          | Manchmal läuft es einfach nicht rund – z.B. weil der Boden mit Matsch, Laub oder Schnee überzogen ist – dann muss ein Laufschuh her, der besonders griffig ist: Der Fis ist die geländesichere Modellvariante des bewährten 
-          = link_to "Classic Runs", "/products/classic_run", class: "link"
-          | . Dank seiner außergewöhnlichen Vollgummi-Außensohle fühlt er sich unter schwierigsten Bedingungen und auf anspruchsvollem Terrain am wohlsten.
-        = link_to "Jetzt bestellen", "#add-to-cart", class: "button button-large"
+          | Sometimes it just doesn't go smoothly—such as when the ground is covered in mud, leaves, or snow—in which case, a running shoe with superior grip is a must: Fis is the all-terrain model variant of the tried-and-tested  
+          = link_to "Classic Run", "/en/products/classic_run", class: "link"
+          | . Thanks to its exceptional full-rubber outsole, it has the most comfortable feel under the toughest conditions and most challenging terrain.
+        = link_to "Buy now", "#add-to-cart", class: "button button-large"
 
 .panel.panel--odd
   .content
@@ -68,10 +68,10 @@ sitemap_changefreq: daily
         = image_tag "/images/products/classic_run_fis/STW200ABB/02.jpg", class: "image"
       aside.panel__text
         .panel__text__inner
-          h2 Einzigartige Sohle und bewährte Stärken
-          p Der Fis funktioniert auf jedem Untergrund: Straße, Waldböden, Laub, Matsch, Nässe oder Schnee – das ist genau das richtige Terrain für diesen luxuriösen Trailschuh, der sich vor allem durch seine erstklassige Außensohle auszeichnet. Das verwendete Vollgummi-Material hat sich als äußerst rutschfest, griffig und resistent gegen Verschleiß erwiesen. Aufgrund der Wabenstruktur können sich zudem keine Steinen und kaum Dreck in der Sohle sammeln. Auch schwere Läufer werden die Robustheit und Widerstandsfähigkeit des Fis zu schätzen wissen.
-          p Hinzu kommen natürlich die Qualitäten, die bereits unseren Classic Run zu einem Klassiker gemacht haben: Das gewohnt komfortable Abrollverhalten, die dynamische Federung oder die komfortable und flexible Passform sind nur einige der Stärken, die er mit dem Classic Run teilt.
-          = link_to "Jetzt bestellen", "#add-to-cart", class: "button button-large"
+          h2 A unique sole and proven strengths
+          p The Classic Run Fis works well on any terrain: on-road, forest ground, leaves, mud, as well as wet or snowy ground—which is precisely the kind of terrain this luxurious trail shoe was made for, which stands out due to its first-class outsole. Its full-rubber material has proven to be exceptionally slip-resistant, grippy, and resistant to wear. Due to its honeycomb structure, hardly any small rocks or dirt can get stuck in the sole. Even serious runners will appreciate the robustness and ruggedness of the Classic Run Fis.
+          p Moreover, it has all the qualities that have already made our Classic Run into a classic: The familiar comfortable rolling property, dynamic support, and comfortable and flexible fit are just some of the strengths it shares with the Classic Run.
+          = link_to "Buy now", "#add-to-cart", class: "button button-large"
 
 = partial "products/gallery", locals: { product: data.products.classic_run_fis }
 
@@ -79,41 +79,41 @@ sitemap_changefreq: daily
   .content
     .row.around-xs
       .col-xs-12.col-sm-6
-        h4 Technische Daten
+        h4 Specifications
         ul.spec-list
           li.spec-list__item
-            label Innenfutter
+            label Inner lining
             span Stockmayer + Sohn Velour Gewirk
           li.spec-list__item
-            label Obermaterial
+            label Upper material
             span Stockmayer + Sohn Fashmo DS14
             br
             span Stockmayer + Sohn Nylon
             br
             span e.cima Mesh
           li.spec-list__item
-            label Mittelsohle
+            label Midsole
             span nora Lunatec CAD35
             br
             span nora Lunatec CAD55 (Pronationsstütze)
             br
             span nora Lunatec Combi (Crashpad)
           li.spec-list__item
-            label Außensohle
+            label Outer sole
             span OK Gummiwerk B-Tech
           li.spec-list__item
-            label Sprengung
+            label Heel lift
             span 9,5 mm (US Men 10)
           li.spec-list__item
-            label Gewicht
+            label Weight
             span 347 g (US Men 10)
           li.spec-list__item
-            label Verfügbare Größen
+            label Available sizes
             span Damen: US 7 - US 13 (EUR 36⅓ - EUR 43⅔)
             br
             span Herren: US 8 - US 15 (EUR 39⅓ - EUR 48⅓)
       .col-xs-12.col-sm-6
-          = partial "products/add_to_cart_help"
+          = partial "partials/add_to_cart_help"
 
 script type="application/ld+json"
   | {

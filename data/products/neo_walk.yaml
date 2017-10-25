@@ -1,7 +1,9 @@
 name: "Neo Walk"
 category: "Bequemschuhe"
+category_en: "Comfort shoes"
 slug: "neo_walk"
 short_description: "Ein leichter, neutraler Bequem- und Alltagsschuh mit äußerst komfortabler, flexibler Mittelsohle und hervorragendem Tragegefühl."
+short_description_en: "A light everyday shoe with extremely comfortable, flexible midsole and exceptional fit."
 default_image: "/images/products/neo_walk/GTS214SB/default.jpg"
 colors:
   -

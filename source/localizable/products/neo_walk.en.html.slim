@@ -1,8 +1,8 @@
 ---
-title: Neo Walk - Leichter Schuh mit komfortabler Federung
-description: Der Neo Walk ist ein leichter Bequem- und Alltagsschuh mit äußerst komfortabler, flexibler Mittelsohle und exzellentem Tragegefühl.
+title: Neo Walk - light everyday shoe with exceptional comfort
+description: Neo Walk is light everyday shoe with extremely comfortable, flexible midsole and exceptional fit.
 section: products
-canonical_link: "https://www.lunge.com/products/neo_walk/"
+canonical_link: "https://www.lunge.com/en/products/neo_walk/"
 url_de: "https://www.lunge.com/products/neo_walk/"
 url_en: "https://www.lunge.com/en/products/neo_walk/"
 sitemap_priority: 0.8
@@ -23,20 +23,20 @@ sitemap_changefreq: daily
               = partial "partials/product-features/made_in_germany"
           .product__details
             h1 Neo Walk
-            p = data.products.neo_walk.short_description
+            p = data.products.neo_walk.short_description_en
             h4 Jetzt bestellen
             .input-group
-              label Damen / Herren
+              label Men / Women
               .gender-select__container
                 select.product__option.gender-select
-                  option value=391366793 Herren
-                  option value=391367049 Damen
+                  option value=391366793 Men
+                  option value=391367049 Women
             .input-group
-              label Farbe
+              label Color
               .product-select__container
                 select.product__option.product-select
             .input-group
-              label Größe (Fusslänge / US / EUR)
+              label Size (foot length / US / EUR)
               .variant-select__container
                 select.product__option.variant-select
             .variant-price__container
@@ -44,12 +44,7 @@ sitemap_changefreq: daily
             .add-to-cart-button__container
               button.buy-button.js-prevent-cart-listener.add-button In den Warenkorb
             .product__sizing
-              p
-                span
-                  | Um die passende Größe zu finden, wählen Sie Ihre Schuhe bitte anhand der empfohlenen Fusslänge aus. Schauen Sie sich unsere 
-                = link_to "Größentabelle", "/support/sizes/", class: "link"
-                span
-                  |  an um mehr über unsere Größen und das korrekte Messen Ihrer Fusslänge zu erfahren.
+              = partial "partials/size_guide_note"
 
 .panel
   .content
@@ -58,14 +53,14 @@ sitemap_changefreq: daily
         = image_tag "/images/products/neo_walk/misc/neo_walk_hero_01_square.jpg", alt: "Neo Walk in Steelblue/Marine für Herren und Ivory/Champagne für Damen"
       aside.panel__text
         .panel__text__inner
-          h2 Sportliche Federung für den Alltag
+          h2 Athletic spring suspension for the whole day
           p
-          	| Die Mittelsohle des Neo Walks besteht aus dem selben hochwertigen Material, das dank effizienter Federung bereits unseren Laufschuh 
+          	| The Neo Walk has a midsole that's made of the same high-quality material and an efficient suspension that turned our  
           	= link_to "Neo Run", "/products/neo_run", class: "link"
-          	|  zu einem außergewöhnlichen Trageerlebnis machte.
+          	|  into such an exceptional wearing experience.
 
-          p Mit dem Neo Walk genießen Sie nun diese bereits im Laufsport erprobten und bewährten Qualitäten in einem Bequemschuh für Alltag, Beruf und Freizeit. Ein sportliches Fundament für einen vielseitigen Allrounder.
-          = link_to "Jetzt bestellen", "#add-to-cart", class: "button button-large"
+          p With the Neo Walk, you can now enjoy this tried and true quality in a shoe for everyday, work, and leisure. An athletic foundation for a versatile all-round shoe.
+          = link_to "Buy now", "#add-to-cart", class: "button button-large"
 
 .panel
   .content
@@ -74,9 +69,9 @@ sitemap_changefreq: daily
         = image_tag "/images/products/neo_walk/GTS114IC/GTS114IC_01@2500px.jpg", srcset: "/images/products/neo_walk/GTS114IC/GTS114IC_01@1200px.jpg 1200w, /images/products/neo_walk/GTS114IC/GTS114IC_01@2500px.jpg 2500w", alt: "Neo Walk in Steelblue/Marine für Herren und Ivory/Champagne für Damen"
       aside.panel__text
         .panel__text__inner
-          h2 Gehen wird zum Erlebnis
-          p Die Kombination aus flexibler, federnder Sohle und dem feinen, sich an den Fuß anschmiegenden Obermaterial sowie Innenfutter sorgt für einen Tragekomfort, der Ihnen auch über längere Distanzen jeden einzelnen Schritt erleichtert.
-          = link_to "Jetzt bestellen", "#add-to-cart", class: "button button-large"
+          h2 A new walking experience
+          p The combination of flexible, suspended sole, custom-made feel in the upper material and inner lining makes for a comfort that will ease your every step, even over longer distances.
+          = link_to "Buy now", "#add-to-cart", class: "button button-large"
 
 .panel
   .content
@@ -85,24 +80,24 @@ sitemap_changefreq: daily
         = image_tag "/images/products/neo_walk/GTS214SB/GTS214SB_01@2500px.jpg", srcset: "/images/products/neo_walk/GTS214SB/GTS214SB_01@1200px.jpg 1200w, /images/products/neo_walk/GTS214SB/GTS214SB_01@2500px.jpg 2500w", alt: "Neo Walk in Steelblue/Marine für Herren und Ivory/Champagne für Damen"
       aside.panel__text
         .panel__text__inner
-          h2 Feinste, vegane Materialien
-          p Wie von Lunge Schuhen gewohnt, kommen auch beim Neo Walk ausschließlich hochwertige, vegane Materialien mit ansprechender Haptik und einem Fokus auf Funktionalität zum Einsatz.
-          = link_to "Jetzt bestellen", "#add-to-cart", class: "button button-large"
+          h2 Finest vegan materials
+          p As with all Lunge shoes, Neo Walks are made only from high-quality, vegan materials with attractive feel and a focus on functionality.
+          = link_to "Buy now", "#add-to-cart", class: "button button-large"
 
 .panel.panel--emphasis
   .content
     .row
       .col-xs-12.col-md-6
-        h4 Technische Daten
+        h4 Specifications
         ul.spec-list
           li.spec-list__item
-            label Innenfutter
+            label Inner lining
             span Stockmayer + Sohn Velour Gewirk
           li.spec-list__item
-            label Obermaterial
+            label Upper material
             span Moron onSteam
           li.spec-list__item
-            label Garn
+            label Thread
             span Amann & Söhne Isacord ET150
             br
             span Amann & Söhne Isacord ET40
@@ -111,21 +106,21 @@ sitemap_changefreq: daily
             br
             span Amann & Söhne Serafil ET40
           li.spec-list__item
-            label Mittel- und Außensohle
+            label Mid- & outer sole
             span Individuell entwickelte PU-Sohle
           li.spec-list__item
-            label Sprengung
+            label Heel lift
             span 9 mm (US Men 10)
           li.spec-list__item
-            label Gewicht
+            label Weight
             span 336 g (US Men 10)
           li.spec-list__item
-            label Verfügbare Größen
+            label Available sizes
             span Damen: US 6 - US 13
             br
             span Herren: US 8 - US 15
       .col-xs-12.col-md-6
-        = partial "products/add_to_cart_help"
+        = partial "partials/add_to_cart_help"
 
 script type="application/ld+json"
   | {

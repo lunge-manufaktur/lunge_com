@@ -1,6 +1,5 @@
 ---
-title: Produkte & Shop
-keywords: produkte, laufschuhe, bequemschuhe, walking, vegan, deutschland, lunge, laufen
+title: Shop
 description: Shop finest comfort and running shoes made in germany.
 section: products
 canonical_link: "https://www.lunge.com/en/products/"
@@ -23,7 +22,7 @@ lang: en
 .panel
   .content
     .card__container
-      = link_to "/en/products/#{data.products.classic_run.slug}/", class: "card" do
+      = link_to "/en/products/#{data.products.classic_run.slug}/", class: "card", data: { product: data.products.classic_run.slug } do
         .card__figure
           = image_tag data.products.classic_run.default_image, class: "card__image", alt: "Classic Run"
         .card__description
@@ -35,12 +34,12 @@ lang: en
           label Colors
           ul.inline-list
             - data.products.classic_run.colors.each do |color|
-              li
+              li.color-icon data-color=color.sku data-image-path=color.default_image
                 .color-icon style="background: linear-gradient(180deg, #{color.first_color}, #{color.first_color} 65%, #{color.second_color} 66%, #{color.second_color} 100%); border: 0px solid #{color.first_color}" title=(color.name)
 
 
 
-      = link_to "/en/products/#{data.products.classic_walk.slug}/", class: "card" do
+      = link_to "/en/products/#{data.products.classic_walk.slug}/", class: "card", data: { product: data.products.classic_walk.slug } do
         .card__figure
           = image_tag data.products.classic_walk.default_image, class: "card__image", alt: "Classic Walk"
         .card__description
@@ -52,11 +51,11 @@ lang: en
           label Colors
           ul.inline-list
             - data.products.classic_walk.colors.each do |color|
-              li
+              li.color-icon data-color=color.sku data-image-path=color.default_image
                 .color-icon style="background: linear-gradient(180deg, #{color.first_color}, #{color.first_color} 65%, #{color.second_color} 66%, #{color.second_color} 100%); border: 0px solid #{color.first_color}" title=(color.name)
 
 
-      = link_to "/en/products/#{data.products.neo_run.slug}/", class: "card" do
+      = link_to "/en/products/#{data.products.neo_run.slug}/", class: "card", data: { product: data.products.neo_run.slug } do
         .card__figure
           = image_tag data.products.neo_run.default_image, class: "card__image", alt: "Classic Walk"
         .card__description
@@ -68,65 +67,55 @@ lang: en
           label Colors
           ul.inline-list
             - data.products.neo_run.colors.each do |color|
-              li
+              li.color-icon data-color=color.sku data-image-path=color.default_image
                 .color-icon style="background: linear-gradient(180deg, #{color.first_color}, #{color.first_color} 65%, #{color.second_color} 66%, #{color.second_color} 100%); border: 0px solid #{color.first_color}" title=(color.name)
 
-      = link_to "/products/#{data.products.classic_run_fis.slug}/", class: "card" do
+      = link_to "/en/products/#{data.products.classic_run_fis.slug}/", class: "card", data: { product: data.products.classic_run_fis.slug } do
         .card__figure
           = image_tag data.products.classic_run_fis.default_image, class: "card__image", alt: "Classic Run Fis"
         .card__description
           h2 = data.products.classic_run_fis.name
-          p = data.products.classic_run_fis.short_description
+          p = data.products.classic_run_fis.short_description_en
           p
-            label Kategorie
-            span = data.products.classic_run_fis.category
-          label Farbvarianten
+            label Category
+            span = data.products.classic_run_fis.category_en
+          label Colors
           ul.inline-list
             - data.products.classic_run_fis.colors.each do |color|
-              li
-                .color-icon style="background: linear-gradient(180deg, #{color.first_color}, #{color.first_color} 65%, #{color.second_color} 66%, #{color.second_color} 100%); border: 0px solid #{color.first_color}" title=(color.name)
+              li.color-icon data-color=color.sku data-image-path=color.default_image
+                .color-icon style="background: linear-gradient(180deg, #{color.first_color}, #{color.first_color} 65%, #{color.second_color} 66%, #{color.second_color} 100%); border: 0px solid #{color.first_color}" title=(color.name_en)
 
-
-      = link_to "/products/#{data.products.evo_run.slug}/", class: "card" do
+      = link_to "/en/products/#{data.products.neo_walk.slug}/", class: "card", data: { product: data.products.neo_walk.slug } do
         .card__figure
-          = image_tag data.products.evo_run.default_image, class: "card__image", alt: "Evo Run"
+          = image_tag data.products.neo_walk.default_image, class: "card__image", alt: "Neo Walk"
         .card__description
-          h2 = data.products.evo_run.name
-          p = data.products.evo_run.short_description
+          h2 = data.products.neo_walk.name
+          p = data.products.neo_walk.short_description_en
           p
-            label Kategorie
-            span = data.products.evo_run.category
-          label Farbvarianten
+            label Category
+            span = data.products.neo_walk.category_en
+          label Colors
           ul.inline-list
-            - data.products.evo_run.colors.each do |color|
-              li
+            - data.products.neo_walk.colors.each do |color|
+              li.color-icon data-color=color.sku data-image-path=color.default_image
                 .color-icon style="background: linear-gradient(180deg, #{color.first_color}, #{color.first_color} 65%, #{color.second_color} 66%, #{color.second_color} 100%); border: 0px solid #{color.first_color}" title=(color.name)
 
-      = link_to "/products/#{data.products.feetality.slug}/", class: "card" do
+
+      = link_to "/en/products/#{data.products.feetality.slug}/", class: "card", data: { product: data.products.feetality.slug } do
         .card__figure
           = image_tag data.products.feetality.default_image, class: "card__image", alt: "Feetality Einlegesohlen"
         .card__description
-          h2 = data.products.feetality.name
-          p = data.products.feetality.short_description
+          h2 = data.products.feetality.name_en
+          p = data.products.feetality.short_description_en
           p
-            label Kategorie
-            span = data.products.feetality.category
-          label Farbvarianten
+            label Category
+            span = data.products.feetality.category_en
+          label Colors
           ul.inline-list
             - data.products.feetality.colors.each do |color|
-              li
-                .color-icon style="background: linear-gradient(180deg, #{color.first_color}, #{color.first_color} 65%, #{color.second_color} 66%, #{color.second_color} 100%); border: 0px solid #{color.first_color}" title=(color.name)
+              li.color-icon data-color=color.sku data-image-path=color.default_image
+                .color-icon style="background: linear-gradient(180deg, #{color.first_color}, #{color.first_color} 65%, #{color.second_color} 66%, #{color.second_color} 100%); border: 0px solid #{color.first_color}" title=(color.name_en)
 
-.panel
-  .content.content--narrow
-    hr
-    .card
-      = link_to "/products/accessories/shoe_laces/", class: "card__link" do
-        .card__figure
-          = image_tag "/images/products/shoe_laces/shoe_laces_01--1200px.jpg", class: "card__image", alt: "Schnürsenkel"
-        .card__description
-          h2 = "Schnürsenkel"
-          p Sorgen Sie für Abwechslung und verleihen Sie Ihren Lunge Schuhen ein neues Gesicht - mit Schnürsenkeln in zahlreichen Farben.
 
 .panel.panel--emphasis
   .content
