@@ -19,6 +19,7 @@ html lang=(lang || "de")
 
   body class=page_classes
     = partial "/partials/offcanvas"
+    
     .oncanvas
         = partial "/partials/header"
         = yield_content :hero

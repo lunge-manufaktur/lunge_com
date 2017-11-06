@@ -1,0 +1,58 @@
+---
+title: Support
+section: support
+description: Support and help for all questions related to our shoes
+canonical_link: "https://www.lunge.com/support/"
+url_de: "https://www.lunge.com/support/"
+url_en: "https://www.lunge.com/en/support/"
+lang: en
+---
+
+.title__container
+  .title__inner
+    .content.content--narrow
+      h1.text-center Support
+      p Whether you're trying to find the right shoe size or have questions regarding our shoes, manufactory or the ordering process. Here you'll find help.
+
+.panel
+  .content
+    .support-item
+      .support-item__figure
+        = image_tag "/images/misc/size_table.svg", class: "support-item__image"
+      .support-item__description
+        h2 Sizing guide
+        p Learn how to find the right size for your Lunge shoes - simply by measuring your feet length.
+        = link_to "Show sizing guide", "/en/support/sizes/", class: "button"
+
+.panel
+  .content
+    .support-item
+      .support-item__figure
+        = image_tag "/images/misc/resole.svg", class: "support-item__image"
+      .support-item__description
+        h2 Resole
+        p Even the highest quality soles show signs of wear after extensive use. Many Lunge shoes can be resoled when that time comes.
+        = link_to "Learn more...", "/support/resole/", class: "button"
+
+.panel
+  .content
+    .support-item
+      .support-item__figure
+        = image_tag "/images/misc/shopping_bags.svg", class: "support-item__image"
+      .support-item__description
+        h2 Shop, delivery and returns
+        p Learn more about our ordering process, shipping, payments and returns.
+        ul
+          li = link_to "Ordering process", "/en/support/shop/", class: "link"
+          li = link_to "Returns", "/en/support/returns/", class: "link"
+          li = link_to "Terms & conditions", "/support/terms/", class: "link"
+
+.panel
+  .content
+    .support-item
+      .support-item__figure
+        = image_tag "/images/misc/faq.svg", class: "support-item__image"
+      .support-item__description
+        h2 Frequently asked questions
+        p Find answers to common and frequently asked questions about Lunge shoes.
+        = link_to "Frequently asked questions", "/support/faq/", class: "button"

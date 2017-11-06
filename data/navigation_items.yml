@@ -27,9 +27,9 @@ en:
     section: manufacture
   -
     name: Retailers
-    url: "/retailers/"
+    url: "/en/retailers/"
     section: retailers
   -
     name: Support
-    url: "/support/"
+    url: "/en/support/"
     section: support

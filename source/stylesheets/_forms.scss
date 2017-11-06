@@ -1,5 +1,4 @@
 form {
-  margin-bottom: $gutter;
 }
 
 form.inline-form {
@@ -26,12 +25,10 @@ textarea:focus {
 }
 
 form.newsletter-signup {
-  border-top: 1px solid #ddd;
   text-align: center;
 }
 
 .newsletter-signup__input-group {
-  margin: 2rem auto;
   width: 100%;
   max-width: 500px;
   display: flex;

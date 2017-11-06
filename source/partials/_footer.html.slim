@@ -1,44 +1,46 @@
 footer
   .footer__inner
-    nav.footer-nav
-      .footer-nav__section
-        h5 Produkte & Shop
-        ul.footer-list
-          li = link_to "Classic Walk", "/products/classic_walk/"
-          li = link_to "Classic Run", "/products/classic_run/"
-          li = link_to "Neo Run", "/products/neo_run/"
-          li = link_to "Neo Walk", "/products/neo_walk/"
-          li = link_to "Classic Run Fis", "/products/classic_run_fis/"
-          li = link_to "Evo Run", "/products/evo_run/"
-          li = link_to "Feetality Einlegesohlen", "/products/feetality/"
-          li = link_to "Schnürsenkel", "/products/accessories/shoe_laces/"
+    .footer__nav-container
+      nav.footer-nav
+        .footer-nav__section
+          h5 Produkte & Shop
+          ul.footer-list
+            li = link_to "Classic Walk", "/products/classic_walk/"
+            li = link_to "Classic Run", "/products/classic_run/"
+            li = link_to "Classic Run Fis", "/products/classic_run_fis/"
+            li = link_to "Neo Run", "/products/neo_run/"
+            li = link_to "Neo Walk", "/products/neo_walk/"
+            li = link_to "Feetality Einlegesohlen", "/products/feetality/"
+            li = link_to "Schnürsenkel", "/products/accessories/shoe_laces/"
 
-      .footer-nav__section
-        h5 Manufaktur
-        ul.footer-list
-          li = link_to "Über uns", "/about/"
-          li = link_to "Materialien & Zulieferer", "/about/suppliers/"
-          li = link_to "Presse", "/about/press/"
+        .footer-nav__section
+          h5 Manufaktur
+          ul.footer-list
+            li = link_to "Über uns", "/about/"
+            li = link_to "Materialien & Zulieferer", "/about/suppliers/"
+            li = link_to "Presse", "/about/press/"
 
-      .footer-nav__section
-        h5 Support
-        ul.footer-list
-          li = link_to "Größentabelle", "/support/sizes/"
-          li = link_to "Rücksendung & Umtausch", "/support/returns/"
-          li = link_to "Neubesohlung", "/support/resole/"
-          li = link_to "Häufig gestellte Fragen", "/support/faq/"
-          li = link_to "Pflege", "/support/care/"
+        .footer-nav__section
+          h5 Support
+          ul.footer-list
+            li = link_to "Größentabelle", "/support/sizes/"
+            li = link_to "Rücksendung & Umtausch", "/support/returns/"
+            li = link_to "Neubesohlung", "/support/resole/"
+            li = link_to "Häufig gestellte Fragen", "/support/faq/"
+            li = link_to "Pflege", "/support/care/"
 
-      .footer-nav__section
-        h5 Kontakt
-        ul.footer-list
-          li = link_to "Kontakt", "/contact/"
-          li = link_to "Impressum", "/impressum/"
+        .footer-nav__section
+          h5 Kontakt
+          ul.footer-list
+            li = link_to "Kontakt", "/contact/"
+            li = link_to "Impressum", "/impressum/"
 
 
-    .footer__info
-      .footer__info-item
-        = link_to "/about", class: "made-in-germany__link" do
-          = image_tag "/images/misc/made_in_germany.svg", class: "made-in-germany__logo"
+      .footer__info
+        .footer__info-item
+          = link_to "/about", class: "made-in-germany__link" do
+            = image_tag "/images/misc/made_in_germany.svg", class: "made-in-germany__logo"
 
-  = partial "partials/newsletter_signup_form"
+    .footer__bottom-line
+      = partial "partials/language_selector"
+      = partial "partials/newsletter_signup_form"

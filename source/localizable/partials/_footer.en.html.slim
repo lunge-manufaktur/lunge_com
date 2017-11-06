@@ -1,41 +1,44 @@
 footer
   .footer__inner
-    nav.footer-nav
-      .footer-nav__section
-        h5 Shop
-        ul.footer-list
-          li = link_to "Classic Walk", "/en/products/classic_walk/"
-          li = link_to "Classic Run", "/en/products/classic_run/"
-          li = link_to "Classic Run Fis", "/en/products/classic_run_fis/"
-          li = link_to "Neo Run", "/en/products/neo_run/"
-          li = link_to "Neo Walk", "/en/products/neo_walk/"
-          li = link_to "Feetality Insoles", "/products/feetality/"
+    .footer__nav-container
+      nav.footer-nav
+        .footer-nav__section
+          h5 Shop
+          ul.footer-list
+            li = link_to "Classic Walk", "/en/products/classic_walk/"
+            li = link_to "Classic Run", "/en/products/classic_run/"
+            li = link_to "Classic Run Fis", "/en/products/classic_run_fis/"
+            li = link_to "Neo Run", "/en/products/neo_run/"
+            li = link_to "Neo Walk", "/en/products/neo_walk/"
+            li = link_to "Feetality Insoles", "/en/products/feetality/"
 
-      .footer-nav__section
-        h5 About
-        ul.footer-list
-          li = link_to "About Us", "/about/"
-          li = link_to "Material & Suppliers", "/about/suppliers/"
-          li = link_to "Press", "/about/press/"
+        .footer-nav__section
+          h5 About
+          ul.footer-list
+            li = link_to "About Us", "/about/"
+            li = link_to "Material & Suppliers", "/about/suppliers/"
+            li = link_to "Press", "/about/press/"
 
-      .footer-nav__section
-        h5 Support
-        ul.footer-list
-          li = link_to "Sizes", "/en/support/sizes/"
-          li = link_to "Returns", "/support/returns/"
-          li = link_to "Frequently Asked Questions", "/support/faq/"
-          li = link_to "Care", "/support/care/"
+        .footer-nav__section
+          h5 Support
+          ul.footer-list
+            li = link_to "Sizes", "/en/support/sizes/"
+            li = link_to "Returns", "/en/support/returns/"
+            li = link_to "Frequently Asked Questions", "/en/support/faq/"
+            li = link_to "Care", "/support/care/"
 
-      .footer-nav__section
-        h5 Contact
-        ul.footer-list
-          li = link_to "Contact", "/contact/"
-          li = link_to "Imprint", "/impressum/"
+        .footer-nav__section
+          h5 Contact
+          ul.footer-list
+            li = link_to "Contact", "/contact/"
+            li = link_to "Imprint", "/impressum/"
 
 
-    .footer__info
-      .footer__info-item
-        = link_to "/about/", class: "made-in-germany__link" do
-          = image_tag "/images/misc/made_in_germany.svg", class: "made-in-germany__logo"
+      .footer__info
+        .footer__info-item
+          = link_to "/about/", class: "made-in-germany__link" do
+            = image_tag "/images/misc/made_in_germany.svg", class: "made-in-germany__logo"
 
-  = partial "partials/newsletter_signup_form"
+    .footer__bottom-line
+      = partial "partials/language_selector"
+      = partial "partials/newsletter_signup_form"

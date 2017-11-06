@@ -1,17 +1,18 @@
 ---
-title: Fachhändler vor Ort
-description: Finden Sie Fachhändler vor Ort, die Lunge Schuhe führen.
-canonical_link: "https://www.lunge.com/retailers/"
+title: Retailers
+description: Find retailers that sell Lunge shoes.
+canonical_link: "https://www.lunge.com/en/retailers/"
 url_de: "https://www.lunge.com/retailers/"
 url_en: "https://www.lunge.com/en/retailers/"
 section: retailers
+lang: en
 ---
 
 .title__container
   .title__inner
     .content.content--narrow
-      h1.text-center Fachhändler vor Ort
-      p Finden Sie einen Lunge-Fachhändler in Ihrer Nähe und nehmen Sie die kompetente Beratung vor Ort in Anspruch.
+      h1.text-center Retailers
+      p Find retailers in your area that sell Lunge shoes.
 
 .map#map
 #listings
@@ -19,9 +20,9 @@ section: retailers
 
 .panel
   .content.content--narrow.text-center
-    h3 Kein Händler in Ihrer Nähe?
-    p Bestellen Sie bequem bei uns im Shop. Versandkostenfrei und ohne Risiko.
-    = link_to "zum Shop", "/products/", class: "button"
+    h3 No retailer in your area?
+    p Order from our shop - riskless with free returns and exchanges.
+    = link_to "Shop", "/products/", class: "button"
   .content
     = partial "partials/shop_features"
 
@@ -48,13 +49,13 @@ javascript:
           '<div class="popup__content">' +
             '<h4>' + location.properties.name + '</h3>' +
             '<p>' +
-            '<label>Adresse</label>' +
+            '<label>Address</label>' +
             location.properties.address + '<br>' +
             location.properties.zip + ' ' + location.properties.city + '<br>' +
             location.properties.country +
             '</p>' +
             '<p>' +
-            '<label>Telefon</label>' +
+            '<label>Phone</label>' +
             location.properties.phone +
             '</p>' +
             '<p>'+

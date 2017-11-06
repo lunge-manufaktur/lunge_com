@@ -71,12 +71,6 @@ footer {
   @include tablet-portrait {
     padding: 0 2rem;
   }
-
-  @include tablet-portrait {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
 }
 
 .content {
