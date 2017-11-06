@@ -258,17 +258,31 @@ img.made-in-germany__logo {
 /* HERO */
 .hero {
   display: flex;
-  flex-direction: row;
-  align-items: stretch;
-  background-color: #42688d;
+  flex-direction: column;
+  align-items: center;
+  background-color: #cedde5;
+  min-height: calc(100vh - 4rem);
+}
+
+.hero__inner {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
+
+  @include tablet-landscape {
+  }
 }
 
 .hero__title {
-  color: $white;
-}
+  text-align: center;
 
-.hero__title a {
-  color: inherit;
+  @include tablet-landscape {
+    text-align: left;
+  }
 }
 
 .hero__title::after {
@@ -281,36 +295,99 @@ img.made-in-germany__logo {
   }
 }
 
-.hero__text {
+aside.hero__text {
+  flex: 0 0 auto;
+  background-color: #DCEAF3;
+  padding: $gutter;
   width: 100%;
-  text-align: center;
-  flex: 0 0 33%;
-  display: flex;
-  align-items: center;
-  color: #fff;
 
-  @include tablet-portrait {
-    border-right: 1rem solid $white;
-    text-align: right;
-    align-items: end;
+  @include tablet-landscape {
+    flex: 0 0 33%;
+  }
+
+  @include desktop {
+    padding: $gutter $gutter * 3;
   }
 }
 
-.hero__title {
-  color: $white;
+.hero__text {
+  width: 100%;
+  background: linear-gradient(#f1f4f7, #cedde5 95%);
+  text-align: center;
+  flex: 1 0 auto;
+  display: flex;
+  align-items: center;
 }
 
 .hero__image {
-  flex: 1 1 auto;
+  flex: 0 0 auto;
   overflow: hidden;
   z-index: 0;
   min-width: 0;
+  max-width: 85em;
   margin-left: auto;
   margin-right: auto;
 }
 
 .hero__image img {
 }
+
+// /* HERO */
+// .hero {
+//   display: flex;
+//   flex-direction: row;
+//   align-items: stretch;
+//   background-color: #42688d;
+// }
+
+// .hero__title {
+//   color: $white;
+// }
+
+// .hero__title a {
+//   color: inherit;
+// }
+
+// .hero__title::after {
+//   margin-left: auto;
+//   margin-right: auto;
+
+//   @include tablet-landscape {
+//     margin-left: 0;
+//     margin-right: 0;
+//   }
+// }
+
+// .hero__text {
+//   width: 100%;
+//   text-align: center;
+//   flex: 0 0 33%;
+//   display: flex;
+//   align-items: center;
+//   color: #fff;
+
+//   @include tablet-portrait {
+//     border-right: 1rem solid $white;
+//     text-align: right;
+//     align-items: end;
+//   }
+// }
+
+// .hero__title {
+//   color: $white;
+// }
+
+// .hero__image {
+//   flex: 1 1 auto;
+//   overflow: hidden;
+//   z-index: 0;
+//   min-width: 0;
+//   margin-left: auto;
+//   margin-right: auto;
+// }
+
+// .hero__image img {
+// }
 
 
 
