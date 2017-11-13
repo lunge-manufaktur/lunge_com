@@ -96,18 +96,21 @@ sitemap_changefreq: daily
   .content
     .panel__inner.panel__inner--reverse
       .panel__image
-        = image_tag "/images/products/integer_walk_cushion/misc/integer_walk_cushion_outer_sole@2400px.jpg", srcset: "/images/products/integer_walk_cushion/misc/integer_walk_cushion_outer_sole@1200px.jpg 1200w, /images/products/integer_walk_cushion/misc/integer_walk_cushion_outer_sole@2400px.jpg 2400w", alt: "Neo Run in Lackritz"
+        = image_tag "/images/products/integer_walk_cushion/misc/integer_walk_cushion_outer_sole@2400px.jpg", srcset: "/images/products/integer_walk_cushion/misc/integer_walk_cushion_outer_sole@1200px.jpg 1200w, /images/products/integer_walk_cushion/misc/integer_walk_cushion_outer_sole@2400px.jpg 2400w", alt: "Außensohle des Integer Walk Cushion"
       aside.panel__text
         .panel__text__inner
           h2 Widerstandsfähige Außensohle
-          p Die antistatische Außensohle des Integer Walks präsentiert sich abriebfester und resistenter denn je. Eine widerstandsfähige, extrem rutschhemmende Vollgummi-Sohle wie sie bisher unserem Trail Laufschuh Classic Run Fis vorbehalten war - erstmals in einem Schuh für den Alltag.
+          p
+            | Die antistatische Außensohle des Integer Walks präsentiert sich abriebfester und resistenter denn je. Eine widerstandsfähige, extrem rutschhemmende Vollgummi-Sohle wie sie bisher unserem Trail Laufschuh 
+            = link_to "Classic Run Fis", "products/classic_run_fis", class: "link"
+            |  vorbehalten war - erstmals in einem Schuh für den Alltag.
           = link_to "Jetzt bestellen", "#add-to-cart", class: "button button-large"
 
 .panel
   .content
     .panel__inner
       .panel__image
-        = image_tag "/images/products/integer_walk_cushion/misc/integer_walk_cushion_material@2400px.jpg", srcset: "/images/products/integer_walk_cushion/misc/integer_walk_cushion_material@1200px.jpg 1200w, /images/products/integer_walk_cushion/misc/integer_walk_cushion_material@2400px.jpg 2400w", alt: "Die Mittelsohle des Integer Walk Cushion"
+        = image_tag "/images/products/integer_walk_cushion/misc/integer_walk_cushion_material@2400px.jpg", srcset: "/images/products/integer_walk_cushion/misc/integer_walk_cushion_material@1200px.jpg 1200w, /images/products/integer_walk_cushion/misc/integer_walk_cushion_material@2400px.jpg 2400w", alt: "Obermaterial des Integer Walk Cushion"
       aside.panel__text
         .panel__text__inner
           h2 Zertifizierte Qualität
@@ -118,13 +121,13 @@ sitemap_changefreq: daily
   .content
     .panel__inner.panel__inner--reverse
       .panel__image
-        = image_tag "/images/misc/peta-approved-logo.svg", alt: "Neo Run in Lackritz"
+        = image_tag "/images/misc/peta-approved-logo.svg", alt: "PETA-Approved"
       aside.panel__text
         .panel__text__inner
           h2 Vegan gefertigt
           p
             | Der Integer Walk wird ausschließlich unter Verwendung veganer Materialien und Stoffe gefertigt. Das begrüßt auch die Tierrechtsorganisation PETA, welche Lunge Schuhe mit dem 
-            = link_to "PETA-Approved Label", "https://www.peta.de/petaapprovedvegan", class: "link"
+            = link_to "PETA-Approved Label", "https://www.peta.de/petaapprovedvegan", class: "link", target: "_blank"
             |  auszeichnet.
           = link_to "Jetzt bestellen", "#add-to-cart", class: "button button-large"
 
