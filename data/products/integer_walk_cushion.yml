@@ -1,0 +1,49 @@
+name: "Integer Walk Cushion"
+category: "Bequemschuhe"
+slug: "integer_walk_cushion"
+short_description: "Leichter und bequemer Walking-Schuh für alle, die länger auf den Beinen sind."
+default_image: "/images/products/integer_walk_cushion/GLS400OGG/default.jpg"
+colors:
+  -
+    sku: "GLS400OGG"
+    name: "Olive/Green/Gray"
+    first_color: "#9EA198"
+    second_color: "#CCC"
+    default_image: "/images/products/integer_walk_cushion/GLS400OGG/default.jpg"
+    price: 230
+  -
+    sku: "GLS400SGG"
+    name: "Slate/Gray"
+    first_color: "#6D6773"
+    second_color: "#CCC"
+    default_image: "/images/products/integer_walk_cushion/GLS400SGG/default.jpg"
+    price: 230
+  -
+    sku: "GLS400LLL"
+    name: "Lakritze"
+    first_color: "#000"
+    second_color: "#000"
+    default_image: "/images/products/integer_walk_cushion/GLS400LLL/default.jpg"
+    price: 230
+images:
+  -
+    path: "/images/products/integer_walk_cushion/GLS400SGG/GLS400SGG_02@2400px.jpg"
+    title: "Integer Walk Cushion (Slate/Gray)"
+  -
+    path: "/images/products/integer_walk_cushion/GLS400OGG/GLS400OGG_02@2400px.jpg"
+    title: Integer Walk Cushion (Olive/Green/Gray)
+  -
+    path: "/images/products/integer_walk_cushion/GLS400LLL/GLS400LLL_02@2400px.jpg"
+    title: "Integer Walk Cushion (Lakritze)"
+  -
+    path: "/images/products/integer_walk_cushion/misc/integer_walk_cushion_group01@2400px.jpg"
+    title: Integer Walk Cushion
+  -
+    path: "/images/products/integer_walk_cushion/GLS400OGG/GLS400OGG_01@2400px.jpg"
+    title: Integer Walk Cushion (Olive/Green/Gray)
+  -
+    path: "/images/products/integer_walk_cushion/GLS400SGG/GLS400SGG_01@2400px.jpg"
+    title: Integer Walk Cushion (Slate/Gray)
+  -
+    path: "/images/products/integer_walk_cushion/GLS400LLL/GLS400LLL_01@2400px.jpg"
+    title: Integer Walk Cushion (Lakritze)

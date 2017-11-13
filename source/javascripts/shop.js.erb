@@ -164,7 +164,7 @@ $(function() {
 
     console.log('product: ' + product + ', variant: ' + variant);
     $('.add-to-cart-button__container').html(
-      '<button class="buy-button js-prevent-cart-listener add-button" data-product-id=' + product + ' data-variant-id=' + variant + '>In den Warenkorb</button>'
+      '<button class="buy-button js-prevent-cart-listener add-button" data-product-id=' + product + ' data-variant-id=' + variant + '>In den Warenkorb</button><div class="availability-note"><div class="availability-note__indicator"></div><div class="availability-note__text">Sofort lieferbar</div></div>'
     );
   }
 

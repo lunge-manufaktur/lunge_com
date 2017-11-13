@@ -42,6 +42,13 @@ $('[data-product="neo_walk"] li.color-icon').on("mouseover tap", function(event)
   $('[data-product=neo_walk] .card__image').attr("src", imagePath);
 });
 
+$('[data-product="integer_walk_cushion"] li.color-icon').on("mouseover tap", function(event) {
+  event.preventDefault();
+  var sku = $(this).data("color");
+  var imagePath = $(this).data("image-path")
+  $('[data-product=integer_walk_cushion] .card__image').attr("src", imagePath);
+});
+
 $('[data-product="feetality"] li.color-icon').on("mouseover tap", function(event) {
   event.preventDefault();
   var sku = $(this).data("color");
