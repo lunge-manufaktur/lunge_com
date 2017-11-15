@@ -55,3 +55,10 @@ $('[data-product="feetality"] li.color-icon').on("mouseover tap", function(event
   var imagePath = $(this).data("image-path")
   $('[data-product=feetality] .card__image').attr("src", imagePath);
 });
+
+$('[data-product="integer_walk_cushion"] li.color-icon').on("mouseover tap", function(event) {
+  event.preventDefault();
+  var sku = $(this).data("color");
+  var imagePath = $(this).data("image-path")
+  $('[data-product=integer_walk_cushion] .product-grid__image').attr("src", imagePath);
+});

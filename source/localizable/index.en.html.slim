@@ -7,15 +7,39 @@ url_en: "https://www.lunge.com/en/"
 sitemap_priority: 0.9
 lang: en
 ---
-.hero
-  .hero__text
-    .content
-      h1.hero__title = link_to "Integer Walk Cushion", "/products/integer_walk_cushion/"
-      p Versatile and comfortable walking shoes that turn any extra mile into a breeze.
-      = link_to "Buy now", "/products/integer_walk_cushion", class: "button"
-  .hero__image
-    = link_to "/products/integer_walk_cushion/" do
-      = image_tag "/images/products/integer_walk_cushion/misc/integer_walk_cushion_group01@3200px.jpg", srcset: "/images/products/integer_walk_cushion/misc/integer_walk_cushion_group01@1200px.jpg 1200w, /images/products/integer_walk_cushion/misc/integer_walk_cushion_group01@2400px.jpg 2400w, /images/products/integer_walk_cushion/misc/integer_walk_cushion_group01@3200px.jpg 3200w", alt: "Integer Walk Cushion"
+.product-grid
+  = link_to "/products/integer_walk_cushion/", class: "product-grid__item product-grid__item--integer-walk" do
+    .product-grid__text
+      .product-grid__content
+        h2 Integer Walk Cushion
+        p Versatile and comfortable walking shoes that turn any extra mile into a breeze.
+        ul.inline-list
+          - data.products.integer_walk_cushion.colors.each do |color|
+            li.color-icon
+              .color-icon style="background: linear-gradient(180deg, #{color.first_color}, #{color.first_color} 65%, #{color.second_color} 66%, #{color.second_color} 100%); border: 1px solid #fff" title=(color.name)
+    = image_tag "/images/products/integer_walk_cushion/misc/integer_walk_cushion_group01@3200px.jpg", srcset: "/images/products/integer_walk_cushion/misc/integer_walk_cushion_group01@1200px.jpg 1200w, /images/products/integer_walk_cushion/misc/integer_walk_cushion_group01@2400px.jpg 2400w, /images/products/integer_walk_cushion/misc/integer_walk_cushion_group01@3200px.jpg 3200w", alt: "Integer Walk Cushion", class: "product-grid__image"
+
+  = link_to "/en/products/neo_run/", class: "product-grid__item product-grid__item--neo-run" do
+    .product-grid__text
+      .product-grid__content
+        h2 Neo Run
+        p Lightweight, neutral running shoes with exceptional fit and unmatched suspension.
+        ul.inline-list
+          - data.products.neo_run.colors.each do |color|
+            li.color-icon data-color=color.sku data-image-path=color.default_image
+              .color-icon style="background: linear-gradient(180deg, #{color.first_color}, #{color.first_color} 65%, #{color.second_color} 66%, #{color.second_color} 100%); border: 1px solid #fff" title=(color.name)
+    = image_tag "/images/products/neo_run/misc/neo_run_hero_03@3200px.jpg", srcset: "/images/products/neo_run/misc/neo_run_hero_03@800px.jpg 800w, /images/products/neo_run/misc/neo_run_hero_03@1600px.jpg 1600w, /images/products/neo_run/misc/neo_run_hero_03@3200px.jpg 3200w", alt: "Neo Run", class: "product-grid__image"
+
+  = link_to "/en/products/classic_walk/", class: "product-grid__item product-grid__item--classic-walk" do
+    .product-grid__text
+      .product-grid__content
+        h2 Classic Walk
+    = image_tag "/images/products/classic_walk/misc/classic_walk_group_01@2400px.jpg", srcset: "/images/products/classic_walk/misc/classic_walk_group_01@800px.jpg 800w, /images/products/classic_walk/misc/classic_walk_group_01@1600px.jpg 1600w, /images/products/classic_walk/misc/classic_walk_group_01@2400px.jpg 2400w", alt: "Classic Walk", class: "product-grid__image"
+
+
+  = link_to "/en/products/", class: "product-grid__item product-grid__item--all-products" do
+    .product-grid__text
+      h2 More shoes →
 
 .panel
   .content
