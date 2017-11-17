@@ -13,12 +13,23 @@
   background-color: #fff;
 
   @include tablet-portrait {
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(3, 1fr);
+    grid-template-areas:  "integer-walk integer-walk"
+                          "integer-walk integer-walk"
+                          "neo-run classic-walk"
+                          "neo-run all-products";
+  }
+
+  @include tablet-landscape {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, auto);
     grid-template-areas:  "integer-walk integer-walk neo-run neo-run"
                           "integer-walk integer-walk neo-run neo-run"
                           "integer-walk integer-walk classic-walk all-products";
-    max-height: calc(100vh - 4rem);
+  }
+
+  @include desktop {
   }
 }
 
