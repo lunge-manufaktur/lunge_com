@@ -126,27 +126,23 @@ lang: de
               li.color-icon data-color=color.sku data-image-path=color.default_image
                 .color-icon style="background: linear-gradient(180deg, #{color.first_color}, #{color.first_color} 65%, #{color.second_color} 66%, #{color.second_color} 100%); border: 0px solid #{color.first_color}" title=(color.name)
 
-.panel.panel--emphasis
-  .content
-    = partial "partials/shop_features"
-
-.panel
-  .content.content--narrow
-    hr
-    .card
-      = link_to "/products/accessories/shoe_laces/", class: "card__link" do
+      = link_to "/products/gift_cards/", class: "card" do
+        .card__figure
+          = image_tag "https://cdn.shopify.com/s/files/1/0963/5924/products/e38bd83af578077b65a31424bd24d085_grande.png?v=1461848683", class: "card__image", alt: "Gutscheine"
+        .card__description
+          h2 Geschenkgutscheine
+          p Machen Sie Freunden und Verwandten eine Freude und schenken Sie gesundes Schuhwerk.
+      
+      = link_to "/products/accessories/shoe_laces/", class: "card", data: { product: data.products.feetality.slug } do
         .card__figure
           = image_tag "/images/products/shoe_laces/shoe_laces_01--1200px.jpg", class: "card__image", alt: "Schnürsenkel"
         .card__description
-          h2 = "Schnürsenkel"
+          h2 Schnürsenkel
           p Sorgen Sie für Abwechslung und verleihen Sie Ihren Lunge Schuhen ein neues Gesicht - mit Schnürsenkeln in zahlreichen Farben.
+          p
+            label Kategorie
+            span Zubehör
 
 .panel.panel--emphasis
-  .content.content--narrow
-    .feature
-      .feature__figure
-        h2 = link_to "Warum Lunge?", "/products/features/"
-      .feature__description
-        p Wodurch unterscheiden sich unsere Schuhe von denen anderer Hersteller? Die hochwertige Materialien, durchdachte Sohlenkonstruktion und Schadstofffreiheit sind nur einige der Vorteile unserer Schuhe.
-        p Erfahren Sie weshalb es Sinn macht, sich für Qualität zu entscheiden.
-        = link_to "Mehr erfahren...", "/products/features/", class: "link"
+  .content
+    = partial "partials/shop_features"
