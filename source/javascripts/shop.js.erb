@@ -73,8 +73,9 @@ $(function() {
       showSpinner();
 
       var product = products[0];
+      var selectedVariantName = $('.variant-select option:selected').text();
       var productSelectHTML = generateProductSelectors(products);
-      var variantSelectHTML = generateVariantSelectors(product.variants);
+      var variantSelectHTML = generateVariantSelectors(product.variants, selectedVariantName);
 
       $('.product-select').html(productSelectHTML);
       $('.variant-select').html(variantSelectHTML);
@@ -91,7 +92,8 @@ $(function() {
       showSpinner();
 
       var product = product;
-      var variantSelectHTML = generateVariantSelectors(product.variants);
+      var selectedVariantName = $('.variant-select option:selected').text();
+      var variantSelectHTML = generateVariantSelectors(product.variants, selectedVariantName);
 
       $('.variant-select').html(variantSelectHTML)
 
@@ -118,11 +120,12 @@ $(function() {
 
 
   // populate variant select box
-  function generateVariantSelectors(variants) {
+  function generateVariantSelectors(variants, selectedVariantName) {
     var options;
     for (var i = 0; i < variants.length; i++) {
       var disabled = variants[i].available ? false : true
-      options += '<option value = "' + variants[i].id + '">' + variants[i].title + '</option>';
+      var selected = variants[i].title == selectedVariantName ? 'selected' : '';
+      options += '<option value = "' + variants[i].id + '"' + selected + '>' + variants[i].title + '</option>';
     }
 
     return  '<select name = "variant-select" class = "variant-select">' + options + '</select>';
@@ -621,7 +624,7 @@ $(function() {
   function addVariantToCart(variantObject, quantity) {
     openCart();
     var lineItems = $('<div class = "lineItems"></div>');
-    cart.addVariants({ variant: variantObject, quantity: quantity }).then(function(cart) {
+    cart.createLineItemsFromVariants({ variant: variantObject, quantity: quantity }).then(function(cart) {
       for (var i = 0; i < cart.lineItems.length; i++) {
         lineItems.append(renderCartItem(cart.lineItems[i]));
       }
