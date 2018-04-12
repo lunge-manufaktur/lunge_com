@@ -25,10 +25,6 @@ lang: de
         .card__description
           h2 = data.products.classic_run.name
           p = data.products.classic_run.short_description
-          p
-            label Kategorie
-            span = data.products.classic_run.category
-          label Farbvarianten
           ul.inline-list
             - data.products.classic_run.colors.each do |color|
               li.color-icon data-color=color.sku data-image-path=color.default_image
@@ -40,10 +36,6 @@ lang: de
         .card__description
           h2 = data.products.classic_walk.name
           p = data.products.classic_walk.short_description
-          p
-            label Kategorie
-            span = data.products.classic_walk.category
-          label Farbvarianten
           ul.inline-list
             - data.products.classic_walk.colors.each do |color|
               li.color-icon data-color=color.sku data-image-path=color.default_image
@@ -55,10 +47,6 @@ lang: de
         .card__description
           h2 = data.products.neo_run.name
           p = data.products.neo_run.short_description
-          p
-            label Kategorie
-            span = data.products.neo_run.category
-          label Farbvarianten
           ul.inline-list
             - data.products.neo_run.colors.each do |color|
               li.color-icon data-color=color.sku data-image-path=color.default_image
@@ -70,10 +58,6 @@ lang: de
         .card__description
           h2 = data.products.integer_walk_cushion.name
           p = data.products.integer_walk_cushion.short_description
-          p
-            label Kategorie
-            span = data.products.integer_walk_cushion.category
-          label Farbvarianten
           ul.inline-list
             - data.products.integer_walk_cushion.colors.each do |color|
               li.color-icon data-color=color.sku data-image-path=color.default_image
@@ -85,10 +69,6 @@ lang: de
         .card__description
           h2 = data.products.neo_walk.name
           p = data.products.neo_walk.short_description
-          p
-            label Kategorie
-            span = data.products.neo_walk.category
-          label Farbvarianten
           ul.inline-list
             - data.products.neo_walk.colors.each do |color|
               li.color-icon data-color=color.sku data-image-path=color.default_image
@@ -100,10 +80,6 @@ lang: de
         .card__description
           h2 = data.products.classic_run_fis.name
           p = data.products.classic_run_fis.short_description
-          p
-            label Kategorie
-            span = data.products.classic_run_fis.category
-          label Farbvarianten
           ul.inline-list
             - data.products.classic_run_fis.colors.each do |color|
               li
@@ -115,10 +91,6 @@ lang: de
         .card__description
           h2 = data.products.feetality.name
           p = data.products.feetality.short_description
-          p
-            label Kategorie
-            span = data.products.feetality.category
-          label Farbvarianten
           ul.inline-list
             - data.products.feetality.colors.each do |color|
               li.color-icon data-color=color.sku data-image-path=color.default_image
@@ -137,9 +109,7 @@ lang: de
         .card__description
           h2 Schnürsenkel
           p Sorgen Sie für Abwechslung und verleihen Sie Ihren Lunge Schuhen ein neues Gesicht - mit Schnürsenkeln in zahlreichen Farben.
-          p
-            label Kategorie
-            span Zubehör
+
 
 .panel.panel--emphasis
   .content
