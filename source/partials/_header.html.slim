@@ -1,6 +1,7 @@
 header
   .logo__container
     = link_to (image_tag "logo_alternative.svg", class: "logo__image"), "/", class: "logo"
+    = link_to "Werksverkauf / 04.05.2018", "/news/werksverkauf_2018", class: "announcement"
   nav.main-nav
     ul
       - data.navigation_items.de.each do |item|
