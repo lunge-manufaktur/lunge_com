@@ -10,6 +10,7 @@
   grid-auto-flow: dense;
   margin-bottom: $gutter-small;
   padding-bottom: 1rem;
+  padding-top: 1rem;
   background-color: #fff;
 
   @include tablet-portrait {
@@ -505,6 +506,10 @@ input[type="submit"] {
   @include tablet-portrait {
     width: auto;
   }
+}
+
+.button--full-width {
+  width: 100%;
 }
 
 
