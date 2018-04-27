@@ -12,14 +12,24 @@ colors:
     first_color: "#687696"
     second_color: "#434968"
     default_image: "/images/products/neo_walk/GTS214SB/default.jpg"
-    price: 180
+    price: 160
   -
     sku: "GTS114IC"
     name: "Ivory/Champagne"
     first_color: "#EAE7DE"
     second_color: "#B5AEA9"
     default_image: "/images/products/neo_walk/GTS114IC/default.jpg"
-    price: 180
+    price: 160
+
+new_colors:
+  -
+    sku: "GTS214LLL"
+    name: "Lakritze"
+    first_color: "#000"
+    second_color: "#000"
+    default_image: "/images/products/neo_walk/GTS214LLL/default.jpg"
+    price: 160
+
 images:
   -
     path: "/images/products/neo_walk/misc/neo_walk_hero_01@2500px.jpg"

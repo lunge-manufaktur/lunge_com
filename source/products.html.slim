@@ -29,6 +29,8 @@ lang: de
             - data.products.classic_run.colors.each do |color|
               li.color-icon data-color=color.sku data-image-path=color.default_image
                 .color-icon style="background: linear-gradient(180deg, #{color.first_color}, #{color.first_color} 65%, #{color.second_color} 66%, #{color.second_color} 100%); border: 0px solid #{color.first_color}" title=(color.name)
+        .price-overlay.price-overlay--bottom-left
+          span € 220,-
 
       = link_to "/products/#{data.products.classic_walk.slug}/", class: "card", data: { product: data.products.classic_walk.slug } do
         .card__figure
@@ -40,6 +42,8 @@ lang: de
             - data.products.classic_walk.colors.each do |color|
               li.color-icon data-color=color.sku data-image-path=color.default_image
                 .color-icon style="background: linear-gradient(180deg, #{color.first_color}, #{color.first_color} 65%, #{color.second_color} 66%, #{color.second_color} 100%); border: 0px solid #{color.first_color}" title=(color.name)
+        .price-overlay.price-overlay--bottom-left
+          span ab € 200,-
 
       = link_to "/products/#{data.products.neo_run.slug}/", class: "card", data: { product: data.products.neo_run.slug } do
         .card__figure
@@ -51,6 +55,15 @@ lang: de
             - data.products.neo_run.colors.each do |color|
               li.color-icon data-color=color.sku data-image-path=color.default_image
                 .color-icon style="background: linear-gradient(180deg, #{color.first_color}, #{color.first_color} 65%, #{color.second_color} 66%, #{color.second_color} 100%); border: 0px solid #{color.first_color}" title=(color.name)
+          span Neue Saison, neue Farben:
+          ul.inline-list
+            - data.products.neo_run.new_colors.each do |color|
+              li.color-icon data-color=color.sku data-image-path=color.default_image
+                .color-icon style="background: linear-gradient(180deg, #{color.first_color}, #{color.first_color} 65%, #{color.second_color} 66%, #{color.second_color} 100%); border: 0px solid #{color.first_color}" title=(color.name)
+        .price-overlay.price-overlay--discounted.price-overlay--bottom-left
+          strike € 180,-
+          |  → 
+          b € 160,-
 
       = link_to "/products/#{data.products.integer_walk_cushion.slug}/", class: "card", data: { product: data.products.integer_walk_cushion.slug } do
         .card__figure
@@ -62,6 +75,8 @@ lang: de
             - data.products.integer_walk_cushion.colors.each do |color|
               li.color-icon data-color=color.sku data-image-path=color.default_image
                 .color-icon style="background: linear-gradient(180deg, #{color.first_color}, #{color.first_color} 65%, #{color.second_color} 66%, #{color.second_color} 100%); border: 0px solid #{color.first_color}" title=(color.name)
+        .price-overlay.price-overlay--bottom-left
+          span € 230,-
 
       = link_to "/products/#{data.products.neo_walk.slug}/", class: "card", data: { product: data.products.neo_walk.slug } do
         .card__figure
@@ -73,6 +88,15 @@ lang: de
             - data.products.neo_walk.colors.each do |color|
               li.color-icon data-color=color.sku data-image-path=color.default_image
                 .color-icon style="background: linear-gradient(180deg, #{color.first_color}, #{color.first_color} 65%, #{color.second_color} 66%, #{color.second_color} 100%); border: 0px solid #{color.first_color}" title=(color.name)
+          span Neue Farbe:
+          ul.inline-list
+            - data.products.neo_walk.new_colors.each do |color|
+              li.color-icon data-color=color.sku data-image-path=color.default_image
+                .color-icon style="background: linear-gradient(180deg, #{color.first_color}, #{color.first_color} 65%, #{color.second_color} 66%, #{color.second_color} 100%); border: 0px solid #{color.first_color}" title=(color.name)
+        .price-overlay.price-overlay--discounted.price-overlay--bottom-left
+          strike € 180,-
+          |  → 
+          b € 160,-
 
       = link_to "/products/#{data.products.classic_run_fis.slug}/", class: "card" do
         .card__figure
@@ -84,6 +108,8 @@ lang: de
             - data.products.classic_run_fis.colors.each do |color|
               li
                 .color-icon style="background: linear-gradient(180deg, #{color.first_color}, #{color.first_color} 65%, #{color.second_color} 66%, #{color.second_color} 100%); border: 0px solid #{color.first_color}" title=(color.name)
+        .price-overlay.price-overlay--bottom-left
+          span € 220,-
 
       = link_to "/products/#{data.products.feetality.slug}/", class: "card", data: { product: data.products.feetality.slug } do
         .card__figure
@@ -95,6 +121,8 @@ lang: de
             - data.products.feetality.colors.each do |color|
               li.color-icon data-color=color.sku data-image-path=color.default_image
                 .color-icon style="background: linear-gradient(180deg, #{color.first_color}, #{color.first_color} 65%, #{color.second_color} 66%, #{color.second_color} 100%); border: 0px solid #{color.first_color}" title=(color.name)
+        .price-overlay.price-overlay--bottom-left
+          span € 38,-
 
       = link_to "/products/gift_cards/", class: "card" do
         .card__figure
@@ -109,6 +137,8 @@ lang: de
         .card__description
           h2 Schnürsenkel
           p Sorgen Sie für Abwechslung und verleihen Sie Ihren Lunge Schuhen ein neues Gesicht - mit Schnürsenkeln in zahlreichen Farben.
+        .price-overlay.price-overlay--bottom-left
+          span € 3,-
 
 
 .panel.panel--emphasis

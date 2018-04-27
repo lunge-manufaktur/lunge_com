@@ -45,15 +45,48 @@ colors:
     first_color: "#3B4799"
     second_color: "#EBD781"
     default_image: "/images/products/neo_run/LTS214MA/default.jpg"
-    price: 180
+    price: 160
   -
     sku: "LTS213PMS"
     name: "Pflanze/Magnesium/Silver"
     first_color: "#55E000"
     second_color: "#CCC"
     default_image: "/images/products/neo_run/LTS213PMS/default.jpg"
-    price: 180
+    price: 160
+new_colors:
+  -
+    sku: "LTS114CV"
+    name: "Champagne/Violet"
+    first_color: "#E0D9D2"
+    second_color: "#8D65A6"
+    default_image: "/images/products/neo_run/LTS114CV/default.jpg"
+    price: 160
+  -
+    sku: "LTS114DV"
+    name: "Deep Pink/Violet"
+    first_color: "#DE4EA5"
+    second_color: "#E997CA"
+    default_image: "/images/products/neo_run/LTS114DV/default.jpg"
+    price: 160
+  -
+    sku: "LTS214LD"
+    name: "Light Gray/Dark Orange"
+    first_color: "#C2C9CB"
+    second_color: "#E06937"
+    default_image: "/images/products/neo_run/LTS214LD/default.jpg"
+    price: 160
+  -
+    sku: "LTS214LB"
+    name: "Light Gray/Black"
+    first_color: "#C2C9CB"
+    second_color: "#000"
+    default_image: "/images/products/neo_run/LTS214LB/default.jpg"
+    price: 160
+
 images:
+  -
+    path: "/images/products/neo_run/LTS114LA/LTS114LA_02@2500px.jpg"
+    title: "Neo Run W (Lime/Aquamarine)"
   -
     path: "/images/products/neo_run/LTS114SC/LTS114SC_01@2500px.jpg"
     title: "Neo Run W (Skyblue/Cobalt)"
@@ -63,6 +96,9 @@ images:
   -
     path: "/images/products/neo_run/LTS214MA/LTS214MA_01@2500px.jpg"
     title: "Neo Run (Midnightblue/Aquamarine)"
+  -
+    path: "/images/products/neo_run/LTS214LD/LTS214LD_01@2500px.jpg"
+    title: "Neo Run (Light Gray/Dark Orange)"
   -
     path: "/images/products/neo_run/LTS214MN/LTS214MN_01@2500px.jpg"
     title: Neo Run (Midnightblue/Navy)

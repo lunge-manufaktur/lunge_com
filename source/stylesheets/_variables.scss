@@ -78,3 +78,12 @@ $transition-slow: ease-in-out 220ms;
 @mixin transition() {
   transition: $transition;
 }
+
+@mixin press-down() {
+  transform: translate(0.25rem, 0.25rem);
+}
+
+@mixin lift-up() {
+  transform: translate(-0.25rem, -0.25rem);
+  box-shadow: 2px 2px 12px 1px rgba(0, 0, 0, 0.06);
+}
