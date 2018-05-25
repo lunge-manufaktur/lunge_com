@@ -1651,6 +1651,18 @@ li.tab-title[not tab-title--active]:hover {
   display: inline-block;
 }
 
+.variant-price__container {
+  margin: $gutter 0;
+}
+
+.variant-price__container::after {
+  content: "";
+  display: block;
+  border-bottom: 1px solid $accent-color;
+  width: 100px;
+  margin-top: $gutter-small;
+}
+
 
 
 
