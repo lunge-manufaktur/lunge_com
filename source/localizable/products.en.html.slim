@@ -25,14 +25,13 @@ lang: en
         .card__description
           h2 = data.products.classic_run.name
           p The proven choice for runners - constantly improved and developed for years the Classic Run is a running shoe of highest quality.
-          p
-            label Category
-            span Running
           label Colors
           ul.inline-list
             - data.products.classic_run.colors.each do |color|
               li.color-icon data-color=color.sku data-image-path=color.default_image
                 .color-icon style="background: linear-gradient(180deg, #{color.first_color}, #{color.first_color} 65%, #{color.second_color} 66%, #{color.second_color} 100%); border: 0px solid #{color.first_color}" title=(color.name)
+        .price-overlay.price-overlay--bottom-left
+          span € 220,-
 
 
 
@@ -42,14 +41,13 @@ lang: en
         .card__description
           h2 = data.products.classic_walk.name
           p You don't need to be a runner to enjoy Lunge shoes: Classic Walk is a versatile comfort shoe that covers any use case.
-          p
-            label Category
-            span Comfort shoes
           label Colors
           ul.inline-list
             - data.products.classic_walk.colors.each do |color|
               li.color-icon data-color=color.sku data-image-path=color.default_image
                 .color-icon style="background: linear-gradient(180deg, #{color.first_color}, #{color.first_color} 65%, #{color.second_color} 66%, #{color.second_color} 100%); border: 0px solid #{color.first_color}" title=(color.name)
+        .price-overlay.price-overlay--bottom-left
+          span from € 200,-
 
 
       = link_to "/en/products/#{data.products.neo_run.slug}/", class: "card", data: { product: data.products.neo_run.slug } do
@@ -58,14 +56,28 @@ lang: en
         .card__description
           h2 = data.products.neo_run.name
           p Neo Run is a lightweight, neutral running shoe with exceptional fit and unmatched suspension.
-          p
-            label Category
-            span Running
           label Colors
           ul.inline-list
             - data.products.neo_run.colors.each do |color|
               li.color-icon data-color=color.sku data-image-path=color.default_image
                 .color-icon style="background: linear-gradient(180deg, #{color.first_color}, #{color.first_color} 65%, #{color.second_color} 66%, #{color.second_color} 100%); border: 0px solid #{color.first_color}" title=(color.name)
+        .price-overlay.price-overlay--discounted.price-overlay--bottom-left
+          strike € 180,-
+          |  → 
+          b € 160,-
+
+      = link_to "/products/en/#{data.products.integer_walk_cushion.slug}/", class: "card", data: { product: data.products.integer_walk_cushion.slug } do
+        .card__figure
+          = image_tag data.products.integer_walk_cushion.default_image, class: "card__image", alt: "Classic Run"
+        .card__description
+          h2 = data.products.integer_walk_cushion.name
+          p Versatile and comfortable walking shoes that turn any extra mile into a breeze.
+          ul.inline-list
+            - data.products.integer_walk_cushion.colors.each do |color|
+              li.color-icon data-color=color.sku data-image-path=color.default_image
+                .color-icon style="background: linear-gradient(180deg, #{color.first_color}, #{color.first_color} 65%, #{color.second_color} 66%, #{color.second_color} 100%); border: 0px solid #{color.first_color}" title=(color.name)
+        .price-overlay.price-overlay--bottom-left
+          span € 230,-
 
       = link_to "/en/products/#{data.products.classic_run_fis.slug}/", class: "card", data: { product: data.products.classic_run_fis.slug } do
         .card__figure
@@ -73,14 +85,13 @@ lang: en
         .card__description
           h2 = data.products.classic_run_fis.name
           p = data.products.classic_run_fis.short_description_en
-          p
-            label Category
-            span = data.products.classic_run_fis.category_en
           label Colors
           ul.inline-list
             - data.products.classic_run_fis.colors.each do |color|
               li.color-icon data-color=color.sku data-image-path=color.default_image
                 .color-icon style="background: linear-gradient(180deg, #{color.first_color}, #{color.first_color} 65%, #{color.second_color} 66%, #{color.second_color} 100%); border: 0px solid #{color.first_color}" title=(color.name_en)
+        .price-overlay.price-overlay--bottom-left
+          span € 220,-
 
       = link_to "/en/products/#{data.products.neo_walk.slug}/", class: "card", data: { product: data.products.neo_walk.slug } do
         .card__figure
@@ -88,14 +99,15 @@ lang: en
         .card__description
           h2 = data.products.neo_walk.name
           p = data.products.neo_walk.short_description_en
-          p
-            label Category
-            span = data.products.neo_walk.category_en
           label Colors
           ul.inline-list
             - data.products.neo_walk.colors.each do |color|
               li.color-icon data-color=color.sku data-image-path=color.default_image
                 .color-icon style="background: linear-gradient(180deg, #{color.first_color}, #{color.first_color} 65%, #{color.second_color} 66%, #{color.second_color} 100%); border: 0px solid #{color.first_color}" title=(color.name)
+        .price-overlay.price-overlay--discounted.price-overlay--bottom-left
+          strike € 180,-
+          |  → 
+          b € 160,-
 
 
       = link_to "/en/products/#{data.products.feetality.slug}/", class: "card", data: { product: data.products.feetality.slug } do
@@ -104,14 +116,13 @@ lang: en
         .card__description
           h2 = data.products.feetality.name_en
           p = data.products.feetality.short_description_en
-          p
-            label Category
-            span = data.products.feetality.category_en
           label Colors
           ul.inline-list
             - data.products.feetality.colors.each do |color|
               li.color-icon data-color=color.sku data-image-path=color.default_image
                 .color-icon style="background: linear-gradient(180deg, #{color.first_color}, #{color.first_color} 65%, #{color.second_color} 66%, #{color.second_color} 100%); border: 0px solid #{color.first_color}" title=(color.name_en)
+        .price-overlay.price-overlay--bottom-left
+          span € 38,-
 
 
 .panel.panel--emphasis
