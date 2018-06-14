@@ -585,6 +585,11 @@ ul.inline-list li {
   }
 }
 
+ul.bullet-list {
+  list-style: inside disc;
+  margin-bottom: $gutter;
+}
+
 
 
 
