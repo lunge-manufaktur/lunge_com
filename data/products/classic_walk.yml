@@ -92,13 +92,6 @@ colors:
     default_image: "/images/products/classic_walk/GLS200BRG/default.jpg"
     price: 200
   -
-    sku: "GLS200BBG"
-    name: "Brombeer/Hellgrau"
-    first_color: "#93243E"
-    second_color: "#DFDFDF"
-    default_image: "/images/products/classic_walk/GLS200BBG/default.jpg"
-    price: 200
-  -
     sku: "GLS200ROG"
     name: "Rot/Hellgrau"
     first_color: "#DF3F41"
