@@ -7,13 +7,6 @@
   });
 <% end %>
 
-// <% data.products.classic_run.colors.each do |color| %>
-//   $('[data-color="<%= color.sku %>"]').on("mouseover tap", function() {
-//     $('.card__image').attr("src", "<%= color.default_image %>");
-//   });
-// <% end %>
-
-
 $('[data-product="classic_run"] li.color-icon').on("mouseover tap", function(event) {
   event.preventDefault();
   var sku = $(this).data("color");
@@ -60,5 +53,20 @@ $('[data-product="integer_walk_cushion"] li.color-icon').on("mouseover tap", fun
   event.preventDefault();
   var sku = $(this).data("color");
   var imagePath = $(this).data("image-path")
-  $('[data-product=integer_walk_cushion] .product-grid__image').attr("src", imagePath);
+  $('[data-product=integer_walk_cushion] .card__image').attr("src", imagePath);
+});
+
+$('[data-product="integer_run_rebound"] li.color-icon').on("mouseover tap", function(event) {
+  event.preventDefault();
+  var sku = $(this).data("color");
+  var imagePath = $(this).data("image-path")
+  console.log(imagePath);
+  $('[data-product=integer_run_rebound] .card__image').attr("src", imagePath);
+});
+
+$('[data-product="integer_walk_rebound"] li.color-icon').on("mouseover tap", function(event) {
+  event.preventDefault();
+  var sku = $(this).data("color");
+  var imagePath = $(this).data("image-path")
+  $('[data-product=integer_walk_rebound] .card__image').attr("src", imagePath);
 });

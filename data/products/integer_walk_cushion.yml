@@ -3,6 +3,7 @@ category: "Bequemschuhe"
 slug: "integer_walk_cushion"
 short_description: "Leichter und bequemer Walking-Schuh für alle, die länger auf den Beinen sind."
 default_image: "/images/products/integer_walk_cushion/GLS400OGG/default.jpg"
+price: 230
 colors:
   -
     sku: "GLS400OGG"
@@ -47,3 +48,45 @@ images:
   -
     path: "/images/products/integer_walk_cushion/GLS400LLL/GLS400LLL_01@2400px.jpg"
     title: Integer Walk Cushion (Lakritze)
+
+attributes:
+  -
+    name: ground.name
+    start:
+      name: ground.start_name
+      value: 1
+      description: ground.start_description
+    end:
+      name: ground.end_name
+      value: 6
+      description: ground.end_description
+  -
+    name: stability.name
+    start:
+      name: stability.start_name
+      value: 2
+      description: stability.start_description
+    end:
+      name: stability.end_name
+      value: 8
+      description: stability.end_description
+  -
+    name: rebound.name
+    start:
+      name: rebound.start_name
+      value: 3
+      description: rebound.start_description
+    end:
+      name: rebound.end_name
+      value: 9
+      description: rebound.end_description
+  -
+    name: firmness.name
+    start:
+      name: firmness.start_name
+      value: 3
+      description: firmness.start_description
+    end:
+      name: firmness.end_name
+      value: 7
+      description: firmness.end_description

@@ -1,8 +1,10 @@
 name: "Classic Walk"
 category: "Bequemschuhe"
 slug: "classic_walk"
-short_description: "Sie müssen kein Läufer sein, um in den Genuss von Lunge Schuhen zu kommen: Der Classic Walk ist ein einzigartiger Bequemschuh für alle Lebenslagen - ganz gleich ob Alltag, Beruf oder Freizeit."
+short_description: "Der Classic Walk ist ein einzigartiger Bequemschuh für alle Lebenslagen - ganz gleich ob Alltag, Beruf oder Freizeit."
+short_description_en: "Classic Walk is a unique and versatile walking shoe for everyday use."
 default_image: "/images/products/classic_walk/GLS200AAG/default.jpg"
+price: 200
 colors:
   -
     sku: "GLS200SSS"
@@ -164,3 +166,45 @@ images:
   -
     path: "/images/products/classic_walk/GLS202WGW/01.jpg"
     title: Classic Walk (Glatt/Weiß)
+
+attributes:
+  -
+    name: ground.name
+    start:
+      name: ground.start_name
+      value: 1
+      description: ground.start_description
+    end:
+      name: ground.end_name
+      value: 6
+      description: ground.end_description
+  -
+    name: stability.name
+    start:
+      name: stability.start_name
+      value: 5
+      description: stability.start_description
+    end:
+      name: stability.end_name
+      value: 9
+      description: stability.end_description
+  -
+    name: rebound.name
+    start:
+      name: rebound.start_name
+      value: 2
+      description: rebound.start_description
+    end:
+      name: rebound.end_name
+      value: 6
+      description: rebound.end_description
+  -
+    name: firmness.name
+    start:
+      name: firmness.start_name
+      value: 3
+      description: firmness.start_description
+    end:
+      name: firmness.end_name
+      value: 6
+      description: firmness.end_description

@@ -2,7 +2,9 @@ name: "Neo Run"
 category: "Laufschuhe"
 slug: "neo_run"
 short_description: "Der Neo Run von Lunge ist ein neutraler Laufschuh mit äußerst komfortabler, effizienter Federung und hervorragendem Tragegefühl."
+short_description_en: "Neo Run is a neutral, flexible running show with very efficient rebound effect."
 default_image: "/images/products/neo_run/LTS214MA/default.jpg"
+price: 160
 colors:
   -
     sku: "LTS213LLL"
@@ -53,7 +55,6 @@ colors:
     second_color: "#CCC"
     default_image: "/images/products/neo_run/LTS213PMS/default.jpg"
     price: 160
-new_colors:
   -
     sku: "LTS114CV"
     name: "Champagne/Violet"
@@ -111,3 +112,45 @@ images:
   -
     path: "/images/products/neo_run/LTS213PMS/neo_run_LTS213PMS_03.jpg"
     title: Neo Run (Pflanze/Magnesium/Silber)
+
+attributes:
+  -
+    name: ground.name
+    start:
+      name: ground.start_name
+      value: 1
+      description: ground.start_description
+    end:
+      name: ground.end_name
+      value: 5
+      description: ground.end_description
+  -
+    name: stability.name
+    start:
+      name: stability.start_name
+      value: 1
+      description: stability.start_description
+    end:
+      name: stability.end_name
+      value: 5
+      description: stability.end_description
+  -
+    name: rebound.name
+    start:
+      name: rebound.start_name
+      value: 6
+      description: rebound.start_description
+    end:
+      name: rebound.end_name
+      value: 10
+      description: rebound.end_description
+  -
+    name: firmness.name
+    start:
+      name: firmness.start_name
+      value: 5
+      description: firmness.start_description
+    end:
+      name: firmness.end_name
+      value: 9
+      description: firmness.end_description

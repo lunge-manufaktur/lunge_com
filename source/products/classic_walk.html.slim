@@ -16,12 +16,13 @@ sitemap_changefreq: daily
         .product
           .product__figure
             .product__image-container
-              .loader
+              img.product__image
             ul.product-feature
               = partial "partials/product-features/vegan"
               = partial "partials/product-features/non-toxic"
               = partial "partials/product-features/made_in_germany"
               = partial "partials/product-features/resole"
+            = partial "partials/product_attributes", locals: { product: "classic_walk" }
           .product__details
             h1 Classic Walk
             p Sie müssen kein Läufer sein, um in den Genuss von Lunge Schuhen zu kommen: Der Classic Walk ist ein einzigartiger, veganer Bequemschuh für alle Lebenslagen – ganz gleich ob Alltag, Beruf oder Freizeit. Ein Schuh, der zudem eine gesunde Fußstellung fördert und ein einzigartigen Tragegefühl bietet. Ob Knieschmerzen, Hallux Valgus oder gänzlich beschwerdefrei - der vielseitige Classic Walk glänzt auch in schwierigen Situationen durch unerreichten Komfort.

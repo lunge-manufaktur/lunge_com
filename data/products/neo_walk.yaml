@@ -2,9 +2,10 @@ name: "Neo Walk"
 category: "Bequemschuhe"
 category_en: "Comfort shoes"
 slug: "neo_walk"
-short_description: "Ein leichter, neutraler Bequem- und Alltagsschuh mit äußerst komfortabler, flexibler Mittelsohle und hervorragendem Tragegefühl."
-short_description_en: "A light everyday shoe with extremely comfortable, flexible midsole and exceptional fit."
+short_description: "Ein leichter, neutraler Bequem- und Alltagsschuh mit rückfedernder, flexibler Mittelsohle und hervorragendem Tragegefühl."
+short_description_en: "A light everyday shoe with extremely springy, flexible midsole and exceptional fit."
 default_image: "/images/products/neo_walk/GTS214SB/default.jpg"
+price: 160
 colors:
   -
     sku: "GTS214SB"
@@ -52,3 +53,45 @@ images:
   -
     path: "/images/products/neo_run/LTS213PMS/neo_run_LTS213PMS_03.jpg"
     title: Neo Run (Pflanze/Magnesium/Silber)
+
+attributes:
+  -
+    name: ground.name
+    start:
+      name: ground.start_name
+      value: 1
+      description: ground.start_description
+    end:
+      name: ground.end_name
+      value: 5
+      description: ground.end_description
+  -
+    name: stability.name
+    start:
+      name: stability.start_name
+      value: 1
+      description: stability.start_description
+    end:
+      name: stability.end_name
+      value: 6
+      description: stability.end_description
+  -
+    name: rebound.name
+    start:
+      name: rebound.start_name
+      value: 5
+      description: rebound.start_description
+    end:
+      name: rebound.end_name
+      value: 10
+      description: rebound.end_description
+  -
+    name: firmness.name
+    start:
+      name: firmness.start_name
+      value: 5
+      description: firmness.start_description
+    end:
+      name: firmness.end_name
+      value: 9
+      description: firmness.end_description

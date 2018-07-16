@@ -18,127 +18,148 @@ lang: de
 
 .panel
   .content
+    h2 Schuhe
     .card__container
-      = link_to "/products/#{data.products.classic_run.slug}/", class: "card", data: { product: data.products.classic_run.slug } do
+      = link_to "/products/#{data.products.integer_run_rebound.slug}/", class: "card", data: { product: "integer_run_rebound" } do
         .card__figure
-          = image_tag data.products.classic_run.default_image, class: "card__image", alt: "Classic Run"
-        .card__description
-          h2 = data.products.classic_run.name
-          p = data.products.classic_run.short_description
-          ul.inline-list
-            - data.products.classic_run.colors.each do |color|
-              li.color-icon data-color=color.sku data-image-path=color.default_image
-                .color-icon style="background: linear-gradient(180deg, #{color.first_color}, #{color.first_color} 65%, #{color.second_color} 66%, #{color.second_color} 100%); border: 0px solid #{color.first_color}" title=(color.name)
-        .price-overlay.price-overlay--bottom-left
-          span € 220,-
+          = image_tag data.products.integer_run_rebound.default_image, class: "card__image", alt: "Integer Run Rebound"
+          .card__color-options
+            = partial "partials/color_options", locals: { product: "integer_run_rebound" } 
+        .card__body
+          .card__description
+            h2.marginless--top = data.products.integer_run_rebound.name
+            h4.card__price = "€ #{data.products.integer_run_rebound.price},-"
+            p = data.products.integer_run_rebound.short_description
+          .card__attributes
+            = partial "partials/product_attributes", locals: { product: "integer_run_rebound" }
+        .notice.notice--alarm.notice--top-right Neu
 
-      = link_to "/products/#{data.products.classic_walk.slug}/", class: "card", data: { product: data.products.classic_walk.slug } do
+      = link_to "/products/#{data.products.integer_walk_rebound.slug}/", class: "card", data: { product: "integer_walk_rebound" } do
         .card__figure
-          = image_tag data.products.classic_walk.default_image, class: "card__image", alt: "Classic Walk"
-        .card__description
-          h2 = data.products.classic_walk.name
-          p = data.products.classic_walk.short_description
-          ul.inline-list
-            - data.products.classic_walk.colors.each do |color|
-              li.color-icon data-color=color.sku data-image-path=color.default_image
-                .color-icon style="background: linear-gradient(180deg, #{color.first_color}, #{color.first_color} 65%, #{color.second_color} 66%, #{color.second_color} 100%); border: 0px solid #{color.first_color}" title=(color.name)
-        .price-overlay.price-overlay--bottom-left
-          span ab € 200,-
+          = image_tag data.products.integer_walk_rebound.default_image, class: "card__image", alt: "Integer Run Rebound"
+          .card__color-options
+            = partial "partials/color_options", locals: { product: "integer_walk_rebound" } 
+        .card__body
+          .card__description
+            h2.marginless--top = data.products.integer_walk_rebound.name
+            h4.card__price = "€ #{data.products.integer_walk_rebound.price},-"
+            p = data.products.integer_walk_rebound.short_description
+          .card__attributes
+            = partial "partials/product_attributes", locals: { product: "integer_walk_rebound" }
+        .notice.notice--alarm.notice--top-right Neu
 
-      = link_to "/products/#{data.products.neo_run.slug}/", class: "card", data: { product: data.products.neo_run.slug } do
+      = link_to "/products/#{data.products.classic_run.slug}/", class: "card", data: { product: "classic_run" } do
         .card__figure
-          = image_tag data.products.neo_run.default_image, class: "card__image", alt: "Neo Run"
-        .card__description
-          h2 = data.products.neo_run.name
-          p = data.products.neo_run.short_description
-          ul.inline-list
-            - data.products.neo_run.colors.each do |color|
-              li.color-icon data-color=color.sku data-image-path=color.default_image
-                .color-icon style="background: linear-gradient(180deg, #{color.first_color}, #{color.first_color} 65%, #{color.second_color} 66%, #{color.second_color} 100%); border: 0px solid #{color.first_color}" title=(color.name)
-          span Neue Saison, neue Farben:
-          ul.inline-list
-            - data.products.neo_run.new_colors.each do |color|
-              li.color-icon data-color=color.sku data-image-path=color.default_image
-                .color-icon style="background: linear-gradient(180deg, #{color.first_color}, #{color.first_color} 65%, #{color.second_color} 66%, #{color.second_color} 100%); border: 0px solid #{color.first_color}" title=(color.name)
-        .price-overlay.price-overlay--discounted.price-overlay--bottom-left
-          strike € 180,-
-          |  → 
-          b € 160,-
+          = image_tag data.products.classic_run.default_image, class: "card__image", alt: "Integer Run Rebound"
+          .card__color-options
+            = partial "partials/color_options", locals: { product: "classic_run" } 
+        .card__body
+          .card__description
+            h2.marginless--top = data.products.classic_run.name
+            h4.card__price = "€ #{data.products.classic_run.price},-"
+            p = data.products.classic_run.short_description
+          .card__attributes
+            = partial "partials/product_attributes", locals: { product: "classic_run" }
+        .notice.notice--top-right Beliebt
 
-      = link_to "/products/#{data.products.integer_walk_cushion.slug}/", class: "card", data: { product: data.products.integer_walk_cushion.slug } do
+      = link_to "/products/#{data.products.classic_walk.slug}/", class: "card", data: { product: "classic_walk" } do
         .card__figure
-          = image_tag data.products.integer_walk_cushion.default_image, class: "card__image", alt: "Classic Run"
-        .card__description
-          h2 = data.products.integer_walk_cushion.name
-          p = data.products.integer_walk_cushion.short_description
-          ul.inline-list
-            - data.products.integer_walk_cushion.colors.each do |color|
-              li.color-icon data-color=color.sku data-image-path=color.default_image
-                .color-icon style="background: linear-gradient(180deg, #{color.first_color}, #{color.first_color} 65%, #{color.second_color} 66%, #{color.second_color} 100%); border: 0px solid #{color.first_color}" title=(color.name)
-        .price-overlay.price-overlay--bottom-left
-          span € 230,-
+          = image_tag data.products.classic_walk.default_image, class: "card__image", alt: "Integer Run Rebound"
+          .card__color-options
+            = partial "partials/color_options", locals: { product: "classic_walk" } 
+        .card__body
+          .card__description
+            h2.marginless--top = data.products.classic_walk.name
+            h4.card__price = "ab € #{data.products.classic_walk.price},-"
+            p = data.products.classic_walk.short_description
+          .card__attributes
+            = partial "partials/product_attributes", locals: { product: "classic_walk" }
+        .notice.notice--top-right Beliebt
 
-      = link_to "/products/#{data.products.neo_walk.slug}/", class: "card", data: { product: data.products.neo_walk.slug } do
+      = link_to "/products/#{data.products.neo_run.slug}/", class: "card", data: { product: "neo_run" } do
         .card__figure
-          = image_tag data.products.neo_walk.default_image, class: "card__image", alt: "Neo Run"
-        .card__description
-          h2 = data.products.neo_walk.name
-          p = data.products.neo_walk.short_description
-          ul.inline-list
-            - data.products.neo_walk.colors.each do |color|
-              li.color-icon data-color=color.sku data-image-path=color.default_image
-                .color-icon style="background: linear-gradient(180deg, #{color.first_color}, #{color.first_color} 65%, #{color.second_color} 66%, #{color.second_color} 100%); border: 0px solid #{color.first_color}" title=(color.name)
-          span Neue Farbe:
-          ul.inline-list
-            - data.products.neo_walk.new_colors.each do |color|
-              li.color-icon data-color=color.sku data-image-path=color.default_image
-                .color-icon style="background: linear-gradient(180deg, #{color.first_color}, #{color.first_color} 65%, #{color.second_color} 66%, #{color.second_color} 100%); border: 0px solid #{color.first_color}" title=(color.name)
-        .price-overlay.price-overlay--discounted.price-overlay--bottom-left
-          strike € 180,-
-          |  → 
-          b € 160,-
+          = image_tag data.products.neo_run.default_image, class: "card__image", alt: "Integer Run Rebound"
+          .card__color-options
+            = partial "partials/color_options", locals: { product: "neo_run" } 
+        .card__body
+          .card__description
+            h2.marginless--top = data.products.neo_run.name
+            h4.card__price = "€ #{data.products.neo_run.price},-"
+            p = data.products.neo_run.short_description
+          .card__attributes
+            = partial "partials/product_attributes", locals: { product: "neo_run" }
 
-      = link_to "/products/#{data.products.classic_run_fis.slug}/", class: "card" do
+      = link_to "/products/#{data.products.integer_walk_cushion.slug}/", class: "card", data: { product: "integer_walk_cushion" } do
         .card__figure
-          = image_tag data.products.classic_run_fis.default_image, class: "card__image", alt: "Classic Run Fis"
-        .card__description
-          h2 = data.products.classic_run_fis.name
-          p = data.products.classic_run_fis.short_description
-          ul.inline-list
-            - data.products.classic_run_fis.colors.each do |color|
-              li
-                .color-icon style="background: linear-gradient(180deg, #{color.first_color}, #{color.first_color} 65%, #{color.second_color} 66%, #{color.second_color} 100%); border: 0px solid #{color.first_color}" title=(color.name)
-        .price-overlay.price-overlay--bottom-left
-          span € 220,-
+          = image_tag data.products.integer_walk_cushion.default_image, class: "card__image", alt: "Integer Run Rebound"
+          .card__color-options
+            = partial "partials/color_options", locals: { product: "integer_walk_cushion" } 
+        .card__body
+          .card__description
+            h2.marginless--top = data.products.integer_walk_cushion.name
+            h4.card__price = "€ #{data.products.integer_walk_cushion.price},-"
+            p = data.products.integer_walk_cushion.short_description
+          .card__attributes
+            = partial "partials/product_attributes", locals: { product: "integer_walk_cushion" }
 
-      = link_to "/products/#{data.products.feetality.slug}/", class: "card", data: { product: data.products.feetality.slug } do
+      = link_to "/products/#{data.products.neo_walk.slug}/", class: "card", data: { product: "neo_walk" } do
         .card__figure
-          = image_tag data.products.feetality.default_image, class: "card__image", alt: "Feetality Einlegesohlen"
-        .card__description
-          h2 = data.products.feetality.name
-          p = data.products.feetality.short_description
-          ul.inline-list
-            - data.products.feetality.colors.each do |color|
-              li.color-icon data-color=color.sku data-image-path=color.default_image
-                .color-icon style="background: linear-gradient(180deg, #{color.first_color}, #{color.first_color} 65%, #{color.second_color} 66%, #{color.second_color} 100%); border: 0px solid #{color.first_color}" title=(color.name)
-        .price-overlay.price-overlay--bottom-left
-          span € 38,-
+          = image_tag data.products.neo_walk.default_image, class: "card__image", alt: "Integer Run Rebound"
+          .card__color-options
+            = partial "partials/color_options", locals: { product: "neo_walk" } 
+        .card__body
+          .card__description
+            h2.marginless--top = data.products.neo_walk.name
+            h4.card__price = "€ #{data.products.neo_walk.price},-"
+            p = data.products.neo_walk.short_description
+          .card__attributes
+            = partial "partials/product_attributes", locals: { product: "neo_walk" }
+
+      = link_to "/products/#{data.products.classic_run_fis.slug}/", class: "card", data: { product: "classic_run_fis" } do
+        .card__figure
+          = image_tag data.products.classic_run_fis.default_image, class: "card__image", alt: "Integer Run Rebound"
+          .card__color-options
+            = partial "partials/color_options", locals: { product: "classic_run_fis" } 
+        .card__body
+          .card__description
+            h2.marginless--top = data.products.classic_run_fis.name
+            h4.card__price = "€ #{data.products.classic_run_fis.price},-"
+            p = data.products.classic_run_fis.short_description
+          .card__attributes
+            = partial "partials/product_attributes", locals: { product: "classic_run_fis" }
+
+.panel
+  .content
+    h2 Zubehör
+    .card__container
+      = link_to "/products/#{data.products.feetality.slug}/", class: "card", data: { product: "feetality" } do
+        .card__figure
+          = image_tag data.products.feetality.default_image, class: "card__image", alt: "Integer Run Rebound"
+          .card__color-options
+            = partial "partials/color_options", locals: { product: "feetality" } 
+        .card__body
+          .card__description
+            h2.marginless--top = data.products.feetality.name
+            h4.card__price = "€ #{data.products.feetality.price},-"
+            p = data.products.feetality.short_description
 
       = link_to "/products/gift_cards/", class: "card" do
         .card__figure
           = image_tag "https://cdn.shopify.com/s/files/1/0963/5924/products/e38bd83af578077b65a31424bd24d085_grande.png?v=1461848683", class: "card__image", alt: "Gutscheine"
-        .card__description
-          h2 Geschenkgutscheine
-          p Machen Sie Freunden und Verwandten eine Freude und schenken Sie gesundes Schuhwerk.
+        .card__body
+          .card__description
+            h2 Geschenkgutscheine
+            p Machen Sie Freunden und Verwandten eine Freude und schenken Sie gesundes Schuhwerk.
       
       = link_to "/products/accessories/shoe_laces/", class: "card", data: { product: data.products.feetality.slug } do
         .card__figure
           = image_tag "/images/products/shoe_laces/shoe_laces_01--1200px.jpg", class: "card__image", alt: "Schnürsenkel"
-        .card__description
-          h2 Schnürsenkel
-          p Sorgen Sie für Abwechslung und verleihen Sie Ihren Lunge Schuhen ein neues Gesicht - mit Schnürsenkeln in zahlreichen Farben.
-        .price-overlay.price-overlay--bottom-left
-          span € 3,-
+        .card__body
+          .card__description
+            h2 Schnürsenkel
+            p Sorgen Sie für Abwechslung und verleihen Sie Ihren Lunge Schuhen ein neues Gesicht - mit Schnürsenkeln in zahlreichen Farben.
+          .price-overlay.price-overlay--bottom-left
+            span € 3,-
 
 
 .panel.panel--emphasis

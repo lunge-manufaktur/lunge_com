@@ -8,37 +8,25 @@ sitemap_priority: 0.9
 lang: en
 ---
 .product-grid
-  = link_to "/en/products/neo_run/", class: "product-grid__item product-grid__item--neo-run" do
+  = link_to "/products/integer_run_rebound/", class: "product-grid__item product-grid__item--integer-run-rebound" do
     .product-grid__text
       .product-grid__content
-        h2 Neo Run
-        span Lightweight, neutral running shoes with exceptional fit and unmatched suspension.
-        ul.inline-list
-          - data.products.neo_run.colors.each do |color|
-            li.color-icon data-color=color.sku data-image-path=color.default_image
-              .color-icon style="background: linear-gradient(180deg, #{color.first_color}, #{color.first_color} 65%, #{color.second_color} 66%, #{color.second_color} 100%); border: 1px solid #fff" title=(color.name)
-        Span New season, new colors - now available in:
-        ul.inline-list
-          - data.products.neo_run.new_colors.each do |color|
-            li.color-icon data-color=color.sku data-image-path=color.default_image
-              .color-icon style="background: linear-gradient(180deg, #{color.first_color}, #{color.first_color} 65%, #{color.second_color} 66%, #{color.second_color} 100%); border: 1px solid #fff" title=(color.name)
-    = image_tag "/images/products/neo_run/misc/neo_run_hero_03@3200px.jpg", srcset: "/images/products/neo_run/misc/neo_run_hero_03@800px.jpg 800w, /images/products/neo_run/misc/neo_run_hero_03@1600px.jpg 1600w, /images/products/neo_run/misc/neo_run_hero_03@3200px.jpg 3200w", alt: "Neo Run", class: "product-grid__image"
-    .price-overlay.price-overlay--discounted.price-overlay--top-right
-      span
-        strike 180,- €
-        |  → 
-        b 160,- €
+        h2 = data.products.integer_run_rebound.name
+        span = data.products.integer_run_rebound.short_description_en
+        = partial "partials/color_options", locals: { product: "integer_run_rebound" }
+    = image_tag "/images/products/integer_run_rebound/misc/integer_run_rebound_01@3200px.jpg", srcset: "/images/products/integer_run_rebound/misc/integer_run_rebound_01@1600px.jpg 1600w, /images/products/integer_run_rebound/misc/integer_run_rebound_01@2400px.jpg 2400w, /images/products/integer_run_rebound/misc/integer_run_rebound_01@3200px.jpg 3200w", alt: "Neo Run", class: "product-grid__image"
+    .notice.notice--alarm.notice--top-right
+      span New
 
-  = link_to "/en/products/integer_walk_cushion/", class: "product-grid__item product-grid__item--integer-walk" do
+  = link_to "/products/integer_walk_rebound/", class: "product-grid__item product-grid__item--integer-walk-rebound" do
     .product-grid__text
       .product-grid__content
-        h2 Integer Walk Cushion
-        p Versatile and comfortable walking shoes that turn any extra mile into a breeze.
-        ul.inline-list
-          - data.products.integer_walk_cushion.colors.each do |color|
-            li.color-icon data-color=color.sku data-image-path=color.default_image
-              .color-icon style="background: linear-gradient(180deg, #{color.first_color}, #{color.first_color} 65%, #{color.second_color} 66%, #{color.second_color} 100%); border: 1px solid #fff" title=(color.name)
-    = image_tag "/images/products/integer_walk_cushion/misc/integer_walk_cushion_group01@3200px.jpg", srcset: "/images/products/integer_walk_cushion/misc/integer_walk_cushion_group01@1200px.jpg 1200w, /images/products/integer_walk_cushion/misc/integer_walk_cushion_group01@2400px.jpg 2400w, /images/products/integer_walk_cushion/misc/integer_walk_cushion_group01@3200px.jpg 3200w", alt: "Integer Walk Cushion", class: "product-grid__image"
+        h2 = data.products.integer_walk_rebound.name
+        p = data.products.integer_walk_rebound.short_description_en
+        = partial "partials/color_options", locals: { product: "integer_walk_rebound" }
+    = image_tag "/images/products/integer_walk_rebound/misc/integer_walk_rebound_02@3200px.jpg", srcset: "/images/products/integer_walk_rebound/misc/integer_walk_rebound_02@1600px.jpg 1600w, /images/products/integer_walk_rebound/misc/integer_walk_rebound_02@2400px.jpg 2400w, /images/products/integer_walk_rebound/misc/integer_walk_rebound_02@3200px.jpg 3200w", alt: "Integer Walk Cushion", class: "product-grid__image"
+    .notice.notice--alarm.notice--top-right
+      span New
 
   = link_to "/en/products/classic_run", class: "product-grid__item product-grid__item--classic-run" do
     .product-grid__text

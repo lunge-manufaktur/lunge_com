@@ -41,6 +41,10 @@ $height-options: (
   margin-bottom: 0;
 }
 
+.marginless--top {
+  margin-top: 0;
+}
+
 @mixin truncated {
   overflow: hidden;
   white-space: nowrap;

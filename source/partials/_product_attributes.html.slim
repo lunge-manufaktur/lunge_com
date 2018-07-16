@@ -1,0 +1,9 @@
+- data.products.instance_eval(product).attributes.each do |attribute|
+	.attribute__title = t(attribute.name)
+	.attribute
+	  .attribute__legend.attribute__legend-start
+	    span = t(attribute.start.name)
+	  - (1..10).each do |i|
+	    div class="attribute__segment #{'attribute__segment--active' if i.between?(attribute.start.value, attribute.end.value)}"
+	  .attribute__legend.attribute__legend-end
+	    span = t(attribute.end.name)

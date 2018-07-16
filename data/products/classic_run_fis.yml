@@ -5,6 +5,7 @@ slug: "classic_run_fis"
 short_description: "Nicht jeder Lauf ist ein Spaziergang - doch der Classic Run Fis bietet dank seiner griffigen Außensohle auch abseits der Straße und auf schwierigstem Terrain exzellenten Halt."
 short_description_en: "Not every run is a walk in the park—yet the Classic Run Fis offers excellent grip even off-road and on the most unforgiving terrain thanks to its grippy outsole."
 default_image: "/images/products/classic_run_fis/STW200ABB/default.png"
+price: 220
 colors:
   -
     sku: "STW200ABB"
@@ -25,3 +26,45 @@ images:
   -
     path: "images/products/classic_run_fis/STW200ABB/03.jpg"
     title: "Classic Run Fis (Anthrazit/Blau)"
+
+attributes:
+  -
+    name: ground.name
+    start:
+      name: ground.start_name
+      value: 2
+      description: ground.start_description
+    end:
+      name: ground.end_name
+      value: 9
+      description: ground.end_description
+  -
+    name: stability.name
+    start:
+      name: stability.start_name
+      value: 5
+      description: stability.start_description
+    end:
+      name: stability.end_name
+      value: 8
+      description: stability.end_description
+  -
+    name: rebound.name
+    start:
+      name: rebound.start_name
+      value: 3
+      description: rebound.start_description
+    end:
+      name: rebound.end_name
+      value: 6
+      description: rebound.end_description
+  -
+    name: firmness.name
+    start:
+      name: firmness.start_name
+      value: 3
+      description: firmness.start_description
+    end:
+      name: firmness.end_name
+      value: 7
+      description: firmness.end_description

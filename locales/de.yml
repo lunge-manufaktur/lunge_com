@@ -1,0 +1,25 @@
+de:
+  ground:
+    name: Untergrund
+    start_name: Straße
+    end_name: Trail
+    start_description: Befestigte Wege
+    end_description: Gelände, Feld- und Waldwege
+  stability:
+    name: Stabilität
+    start_name: Neutral
+    end_name: Stabil
+    start_description: Keine oder nur geringe Stützwirkung zur Korrektur einknickender Fußstellungen.
+    end_description: Verstärkung an der Innenseite der Mittelsohle, die dem Einknicken des Fußes kontrolliert entgegen wirkt.
+  rebound:
+    name: Federungsverhalten
+    start_name: Dämpfend
+    end_name: Federnd
+    start_description: Ausgeprägte Dämpfung sorgt für ein sanftes, komfortables Auprallverhalten des Fußes.
+    end_description: Rückfederndes Material ermöglicht ein äußerst effizientes Laufverhalten, bei dem die Aufprallenergie genutzt wird um bereits den nächsten Schritt anzutreiben.
+  firmness:
+    name: Härte
+    start_name: Komfortabel
+    end_name: Direkt
+    start_description: Weiches Mittelsohlenmaterial sorgt für ein äußerst komfortables Tragegefühl.
+    end_description: Festeres, direkteres Aufprallverhalten dank erhöhtem Härtegrad der Sohle.

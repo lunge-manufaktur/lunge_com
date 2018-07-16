@@ -1,8 +1,11 @@
 name: "Classic Run"
 category: "Laufschuhe"
+category_en: "Running shoes"
 slug: "classic_run"
 short_description: "Der Klassiker unter den Laufschuhen und Geheimtipp anspruchsvoller Läufer."
+short_description_en: "The proven choice for runners - constantly improved and developed for years the Classic Run is a running shoe of highest quality."
 default_image: "/images/products/classic_run/STS203SWR/default.jpg"
+price: 220
 colors:
   -
     sku: "STS203SWR"
@@ -63,3 +66,44 @@ variants:
       color: "Royal/Weiß"
       buy_button: div data-embed_type="product" data-shop="lunge-manufaktur.myshopify.com" data-product_name="Classic Run (Rot/Weiß)" data-product_handle="classic-run-royal-weiss" data-has_image="false" data-display_size="compact" data-redirect_to="cart" data-buy_button_text="In den Warenkorb legen" data-buy_button_out_of_stock_text="Out of Stock" data-buy_button_product_unavailable_text="Unavailable" data-button_background_color="b6be00" data-button_text_color="ffffff" data-product_modal="false" data-product_title_color="000000" data-next_page_button_text="Next page"
 
+attributes:
+  -
+    name: ground.name
+    start:
+      name: ground.start_name
+      value: 1
+      description: ground.start_description
+    end:
+      name: ground.end_name
+      value: 6
+      description: ground.end_description
+  -
+    name: stability.name
+    start:
+      name: stability.start_name
+      value: 5
+      description: stability.start_description
+    end:
+      name: stability.end_name
+      value: 8
+      description: stability.end_description
+  -
+    name: rebound.name
+    start:
+      name: rebound.start_name
+      value: 3
+      description: rebound.start_description
+    end:
+      name: rebound.end_name
+      value: 6
+      description: rebound.end_description
+  -
+    name: firmness.name
+    start:
+      name: firmness.start_name
+      value: 3
+      description: firmness.start_description
+    end:
+      name: firmness.end_name
+      value: 6
+      description: firmness.end_description

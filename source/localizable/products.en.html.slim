@@ -19,110 +19,125 @@ lang: en
 .panel
   .content
     .card__container
-      = link_to "/en/products/#{data.products.classic_run.slug}/", class: "card", data: { product: data.products.classic_run.slug } do
+      = link_to "/products/#{data.products.integer_run_rebound.slug}/", class: "card", data: { product: "integer_run_rebound" } do
         .card__figure
-          = image_tag data.products.classic_run.default_image, class: "card__image", alt: "Classic Run"
-        .card__description
-          h2 = data.products.classic_run.name
-          p The proven choice for runners - constantly improved and developed for years the Classic Run is a running shoe of highest quality.
-          label Colors
-          ul.inline-list
-            - data.products.classic_run.colors.each do |color|
-              li.color-icon data-color=color.sku data-image-path=color.default_image
-                .color-icon style="background: linear-gradient(180deg, #{color.first_color}, #{color.first_color} 65%, #{color.second_color} 66%, #{color.second_color} 100%); border: 0px solid #{color.first_color}" title=(color.name)
-        .price-overlay.price-overlay--bottom-left
-          span € 220,-
+          = image_tag data.products.integer_run_rebound.default_image, class: "card__image", alt: "Integer Run Rebound"
+          .card__color-options
+            = partial "partials/color_options", locals: { product: "integer_run_rebound" } 
+        .card__body
+          .card__description
+            h2.marginless--top = data.products.integer_run_rebound.name
+            h4.card__price = "€ #{data.products.integer_run_rebound.price},-"
+            p = data.products.integer_run_rebound.short_description_en
+          .card__attributes
+            = partial "partials/product_attributes", locals: { product: "integer_run_rebound" }
+        .notice.notice--alarm.notice--top-right New
 
-
-
-      = link_to "/en/products/#{data.products.classic_walk.slug}/", class: "card", data: { product: data.products.classic_walk.slug } do
+      = link_to "/products/#{data.products.integer_walk_rebound.slug}/", class: "card", data: { product: "integer_walk_rebound" } do
         .card__figure
-          = image_tag data.products.classic_walk.default_image, class: "card__image", alt: "Classic Walk"
-        .card__description
-          h2 = data.products.classic_walk.name
-          p You don't need to be a runner to enjoy Lunge shoes: Classic Walk is a versatile comfort shoe that covers any use case.
-          label Colors
-          ul.inline-list
-            - data.products.classic_walk.colors.each do |color|
-              li.color-icon data-color=color.sku data-image-path=color.default_image
-                .color-icon style="background: linear-gradient(180deg, #{color.first_color}, #{color.first_color} 65%, #{color.second_color} 66%, #{color.second_color} 100%); border: 0px solid #{color.first_color}" title=(color.name)
-        .price-overlay.price-overlay--bottom-left
-          span from € 200,-
+          = image_tag data.products.integer_walk_rebound.default_image, class: "card__image", alt: "Integer Run Rebound"
+          .card__color-options
+            = partial "partials/color_options", locals: { product: "integer_walk_rebound" } 
+        .card__body
+          .card__description
+            h2.marginless--top = data.products.integer_walk_rebound.name
+            h4.card__price = "€ #{data.products.integer_walk_rebound.price},-"
+            p = data.products.integer_walk_rebound.short_description_en
+          .card__attributes
+            = partial "partials/product_attributes", locals: { product: "integer_walk_rebound" }
+        .notice.notice--alarm.notice--top-right New
 
-
-      = link_to "/en/products/#{data.products.neo_run.slug}/", class: "card", data: { product: data.products.neo_run.slug } do
+      = link_to "/en/products/#{data.products.classic_run.slug}/", class: "card", data: { product: "classic_run" } do
         .card__figure
-          = image_tag data.products.neo_run.default_image, class: "card__image", alt: "Classic Walk"
-        .card__description
-          h2 = data.products.neo_run.name
-          p Neo Run is a lightweight, neutral running shoe with exceptional fit and unmatched suspension.
-          label Colors
-          ul.inline-list
-            - data.products.neo_run.colors.each do |color|
-              li.color-icon data-color=color.sku data-image-path=color.default_image
-                .color-icon style="background: linear-gradient(180deg, #{color.first_color}, #{color.first_color} 65%, #{color.second_color} 66%, #{color.second_color} 100%); border: 0px solid #{color.first_color}" title=(color.name)
-        .price-overlay.price-overlay--discounted.price-overlay--bottom-left
-          strike € 180,-
-          |  → 
-          b € 160,-
+          = image_tag data.products.classic_run.default_image, class: "card__image", alt: "Integer Run Rebound"
+          .card__color-options
+            = partial "partials/color_options", locals: { product: "classic_run" } 
+        .card__body
+          .card__description
+            h2.marginless--top = data.products.classic_run.name
+            h4.card__price = "€ #{data.products.classic_run.price},-"
+            p = data.products.classic_run.short_description_en
+          .card__attributes
+            = partial "partials/product_attributes", locals: { product: "classic_run" }
+        .notice.notice--top-right Popular
 
-      = link_to "/products/en/#{data.products.integer_walk_cushion.slug}/", class: "card", data: { product: data.products.integer_walk_cushion.slug } do
+      = link_to "/en/products/#{data.products.classic_walk.slug}/", class: "card", data: { product: "classic_walk" } do
         .card__figure
-          = image_tag data.products.integer_walk_cushion.default_image, class: "card__image", alt: "Classic Run"
-        .card__description
-          h2 = data.products.integer_walk_cushion.name
-          p Versatile and comfortable walking shoes that turn any extra mile into a breeze.
-          ul.inline-list
-            - data.products.integer_walk_cushion.colors.each do |color|
-              li.color-icon data-color=color.sku data-image-path=color.default_image
-                .color-icon style="background: linear-gradient(180deg, #{color.first_color}, #{color.first_color} 65%, #{color.second_color} 66%, #{color.second_color} 100%); border: 0px solid #{color.first_color}" title=(color.name)
-        .price-overlay.price-overlay--bottom-left
-          span € 230,-
+          = image_tag data.products.classic_walk.default_image, class: "card__image", alt: "Integer Run Rebound"
+          .card__color-options
+            = partial "partials/color_options", locals: { product: "classic_walk" } 
+        .card__body
+          .card__description
+            h2.marginless--top = data.products.classic_walk.name
+            h4.card__price = "ab € #{data.products.classic_walk.price},-"
+            p = data.products.classic_walk.short_description_en
+          .card__attributes
+            = partial "partials/product_attributes", locals: { product: "classic_walk" }
+        .notice.notice--top-right Popular
 
-      = link_to "/en/products/#{data.products.classic_run_fis.slug}/", class: "card", data: { product: data.products.classic_run_fis.slug } do
+      = link_to "/en/products/#{data.products.neo_run.slug}/", class: "card", data: { product: "neo_run" } do
         .card__figure
-          = image_tag data.products.classic_run_fis.default_image, class: "card__image", alt: "Classic Run Fis"
-        .card__description
-          h2 = data.products.classic_run_fis.name
-          p = data.products.classic_run_fis.short_description_en
-          label Colors
-          ul.inline-list
-            - data.products.classic_run_fis.colors.each do |color|
-              li.color-icon data-color=color.sku data-image-path=color.default_image
-                .color-icon style="background: linear-gradient(180deg, #{color.first_color}, #{color.first_color} 65%, #{color.second_color} 66%, #{color.second_color} 100%); border: 0px solid #{color.first_color}" title=(color.name_en)
-        .price-overlay.price-overlay--bottom-left
-          span € 220,-
+          = image_tag data.products.neo_run.default_image, class: "card__image", alt: "Integer Run Rebound"
+          .card__color-options
+            = partial "partials/color_options", locals: { product: "neo_run" } 
+        .card__body
+          .card__description
+            h2.marginless--top = data.products.neo_run.name
+            h4.card__price = "€ #{data.products.neo_run.price},-"
+            p = data.products.neo_run.short_description_en
+          .card__attributes
+            = partial "partials/product_attributes", locals: { product: "neo_run" }
 
-      = link_to "/en/products/#{data.products.neo_walk.slug}/", class: "card", data: { product: data.products.neo_walk.slug } do
+      = link_to "/en/products/#{data.products.integer_walk_cushion.slug}/", class: "card", data: { product: "integer_walk_cushion" } do
         .card__figure
-          = image_tag data.products.neo_walk.default_image, class: "card__image", alt: "Neo Walk"
-        .card__description
-          h2 = data.products.neo_walk.name
-          p = data.products.neo_walk.short_description_en
-          label Colors
-          ul.inline-list
-            - data.products.neo_walk.colors.each do |color|
-              li.color-icon data-color=color.sku data-image-path=color.default_image
-                .color-icon style="background: linear-gradient(180deg, #{color.first_color}, #{color.first_color} 65%, #{color.second_color} 66%, #{color.second_color} 100%); border: 0px solid #{color.first_color}" title=(color.name)
-        .price-overlay.price-overlay--discounted.price-overlay--bottom-left
-          strike € 180,-
-          |  → 
-          b € 160,-
+          = image_tag data.products.integer_walk_cushion.default_image, class: "card__image", alt: "Integer Run Rebound"
+          .card__color-options
+            = partial "partials/color_options", locals: { product: "integer_walk_cushion" } 
+        .card__body
+          .card__description
+            h2.marginless--top = data.products.integer_walk_cushion.name
+            h4.card__price = "€ #{data.products.integer_walk_cushion.price},-"
+            p = data.products.integer_walk_cushion.short_description_en
+          .card__attributes
+            = partial "partials/product_attributes", locals: { product: "integer_walk_cushion" }
 
-
-      = link_to "/en/products/#{data.products.feetality.slug}/", class: "card", data: { product: data.products.feetality.slug } do
+      = link_to "/en/products/#{data.products.neo_walk.slug}/", class: "card", data: { product: "neo_walk" } do
         .card__figure
-          = image_tag data.products.feetality.default_image, class: "card__image", alt: "Feetality Einlegesohlen"
-        .card__description
-          h2 = data.products.feetality.name_en
-          p = data.products.feetality.short_description_en
-          label Colors
-          ul.inline-list
-            - data.products.feetality.colors.each do |color|
-              li.color-icon data-color=color.sku data-image-path=color.default_image
-                .color-icon style="background: linear-gradient(180deg, #{color.first_color}, #{color.first_color} 65%, #{color.second_color} 66%, #{color.second_color} 100%); border: 0px solid #{color.first_color}" title=(color.name_en)
-        .price-overlay.price-overlay--bottom-left
-          span € 38,-
+          = image_tag data.products.neo_walk.default_image, class: "card__image", alt: "Integer Run Rebound"
+          .card__color-options
+            = partial "partials/color_options", locals: { product: "neo_walk" } 
+        .card__body
+          .card__description
+            h2.marginless--top = data.products.neo_walk.name
+            h4.card__price = "€ #{data.products.neo_walk.price},-"
+            p = data.products.neo_walk.short_description_en
+          .card__attributes
+            = partial "partials/product_attributes", locals: { product: "neo_walk" }
+
+      = link_to "/en/products/#{data.products.classic_run_fis.slug}/", class: "card", data: { product: "classic_run_fis" } do
+        .card__figure
+          = image_tag data.products.classic_run_fis.default_image, class: "card__image", alt: "Integer Run Rebound"
+          .card__color-options
+            = partial "partials/color_options", locals: { product: "classic_run_fis" } 
+        .card__body
+          .card__description
+            h2.marginless--top = data.products.classic_run_fis.name
+            h4.card__price = "€ #{data.products.classic_run_fis.price},-"
+            p = data.products.classic_run_fis.short_description_en
+          .card__attributes
+            = partial "partials/product_attributes", locals: { product: "classic_run_fis" }
+
+
+      = link_to "/en/products/#{data.products.feetality.slug}/", class: "card", data: { product: "feetality" } do
+        .card__figure
+          = image_tag data.products.feetality.default_image, class: "card__image", alt: "Integer Run Rebound"
+          .card__color-options
+            = partial "partials/color_options", locals: { product: "feetality" } 
+        .card__body
+          .card__description
+            h2.marginless--top = data.products.feetality.name
+            h4.card__price = "€ #{data.products.feetality.price},-"
+            p = data.products.feetality.short_description_en
 
 
 .panel.panel--emphasis

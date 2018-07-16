@@ -1,0 +1,130 @@
+---
+title: Integer Walk Rebound  
+description: Ein Alltagsschuh der Spitzenklasse, der sportliche Funktionalität mit einem dezenten Erscheinungsbild vereint.
+section: products
+canonical_link: "https://www.lunge.com/products/integer_walk_rebound/"
+url_de: "https://www.lunge.com/products/integer_walk_rebound/"
+sitemap_priority: 0.9
+sitemap_changefreq: daily
+---
+.title__container#add-to-cart.anchor-target
+  = partial "partials/made_in_germany"
+  .title__inner
+    .content
+      .collection
+        .product
+          .product__figure
+            .product__image-container
+              img.product__image
+            ul.product-feature
+              = partial "partials/product-features/vegan"
+              = partial "partials/product-features/non-toxic"
+              = partial "partials/product-features/made_in_germany"
+              = partial "partials/product-features/resole"
+            = partial "partials/product_attributes", locals: { product: "integer_walk_rebound" }
+          .product__details
+            h1 Integer Walk Rebound
+            p = data.products.integer_walk_rebound.short_description
+            h4 Jetzt bestellen
+            .input-group
+              label Damen / Herren
+              .gender-select__container
+                select.product__option.gender-select
+                  option value=40527134756 Herren
+                  option value=40527167524 Damen
+            .input-group
+              label Farbe
+              .product-select__container
+                select.product__option.product-select
+            .input-group
+              label Größe (Fusslänge / US / EUR)
+              .variant-select__container
+                select.product__option.variant-select
+            .variant-price__container
+              h2.variant-price
+              small inkl. Mwst., versandkostenfrei innerhalb Deutschlands
+            .add-to-cart-button__container
+              button.buy-button.js-prevent-cart-listener.add-button In den Warenkorb
+            .product__sizing
+              p
+                = link_to "Um die passende Größe zu finden, wählen Sie Ihre Schuhe bitte anhand der empfohlenen Fusslänge aus.", "/support/sizes/", class: "link"
+
+.gallery.scroll--horizontal
+  - data.products.integer_walk_rebound.images.each do |image|
+    .gallery__item
+      = image_tag image.path
+      .gallery__item__title = image.title
+
+.panel
+  .content
+    .panel__inner.panel__inner--reverse
+      .panel__image
+        = image_tag "/images/products/integer_walk_rebound/misc/integer_walk_rebound_01@3200px.jpg", srcset: "/images/products/integer_walk_rebound/misc/integer_walk_rebound_01@1600px.jpg 1600w, /images/products/integer_walk_rebound/misc/integer_walk_rebound_01@2400px.jpg 2400w /images/products/integer_walk_rebound/misc/integer_walk_rebound_01@3200px.jpg 3200w", alt: "Integer Walk Rebound"
+      aside.panel__text
+        .panel__text__inner
+          h2 Für alle, die länger auf den Beinen sind
+          p
+            | Die selbe hochwertige Mittelsohle, die bereits unseren Laufschuh 
+            = link_to "Integer Run Rebound", "/products/integer_run_rebound/", class: "link"
+            |  antreibt, sorgt mit ihrer einzigartigen Rückfederwirkung dafür, dass Sie auch nach langen Tagen noch leichten Schrittes voran gehen können.
+
+          = link_to "Jetzt bestellen", "#add-to-cart", class: "button button-large"
+
+.panel
+  .content
+    .panel__inner
+      .panel__image
+        = image_tag "/images/products/integer_walk_rebound/GLS410SSW/GLS410SSW_04@3200px.jpg", srcset: "/images/products/integer_walk_rebound/GLS410SSW/GLS410SSW_04@1600px.jpg 1600w, /images/products/integer_walk_rebound/GLS410SSW/GLS410SSW_04@2400px.jpg 2400w /images/products/integer_walk_rebound/GLS410SSW/GLS410SSW_04@3200px.jpg 3200w", alt: "Integer Walk Rebound (Silver/Snow/White)"
+      aside.panel__text
+        .panel__text__inner
+          h2 Grenzenloser Komfort
+          p Der Integer Walk hüllt den Fuß in feinste Materialien, welche ganztägig für ein angenehmes Fußklima sorgen und unterstützt von der natürlich abrollenden Sohle die Leichtfüßigkeit in jedem Ihrer Schritte erwecken.
+          = link_to "Jetzt bestellen", "#add-to-cart", class: "button button-large"
+
+.panel.panel--emphasis
+  .content
+    .row
+      .col-xs-12.col-md-6
+        h4 Technische Daten
+        ul.spec-list
+          li.spec-list__item
+            label Innenfutter
+            span Stockmayer + Sohn Velour Gewirk
+          li.spec-list__item
+            label Obermaterial
+            span Limonta 1893 Micro Lim Suede
+          li.spec-list__item
+            label Garn
+            span Amann & Söhne Serafil ET40
+          li.spec-list__item
+            label Mittel- und Außensohle
+            span Individuell entwickelte TPU/PU-Sohle
+          li.spec-list__item
+            label Sprengung
+            span 9 mm (US Men 10)
+          li.spec-list__item
+            label Verfügbare Größen
+            span Damen: US 6 - US 13
+            br
+            span Herren: US 8 - US 15
+      .col-xs-12.col-md-6
+        = partial "products/add_to_cart_help"
+
+script type="application/ld+json"
+  | {
+  |   "@context": "http://schema.org",
+  |   "@type": "Product",
+  |   "name": "Integer Run Rebound",
+  |   "image": "https://www.lunge.com/images/products/integer_run_rebound/STS410DLW/default.png",
+  |   "description": "Komfortabler Laufschuh mit einzigartiger Rückfederung.",
+  |   "brand": {
+  |     "@type": "Brand",
+  |     "name": "Lunge"
+  |   },
+  |   "offers": {
+  |     "@type": "Offer",
+  |     "price": "180.00",
+  |     "priceCurrency": "EUR",
+  |     "availability": "InStock"
+  |   }
+  | }

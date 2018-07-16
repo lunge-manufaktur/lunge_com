@@ -1,0 +1,94 @@
+name: "Integer Walk Rebound"
+category: "Bequem- und Alltagsschuhe"
+category_en: "Walking / everyday shoes"
+slug: "integer_walk_rebound"
+short_description: "Ein Alltagsschuh der Spitzenklasse, der sportliche Funktionalität mit einem dezenten Erscheinungsbild vereint."
+short_description_en: "Premium everyday shoes, that combine athletic functionality and elegant, unobtrusive appearance."
+default_image: "/images/products/integer_walk_rebound/GLS410SSW/default.jpg"
+price: 200
+colors:
+  -
+    sku: "GLS410SSW"
+    name: "Silver/Snow/White"
+    first_color: "#D5D9E2"
+    second_color: "#E0C87A"
+    default_image: "/images/products/integer_walk_rebound/GLS410SSW/default.jpg"
+    price: 200
+  -
+    sku: "GLS310SRW"
+    name: "Dark Slate Blue/Navy/White"
+    first_color: "#D5D9E2"
+    second_color: "#9C4243"
+    default_image: "/images/products/integer_walk_rebound/GLS310SRW/default.jpg"
+    price: 200
+  -
+    sku: "GLS410LLG"
+    name: "Lakritze/Gray"
+    first_color: "#000000"
+    second_color: "#3A3A3A"
+    default_image: "/images/products/integer_walk_rebound/GLS410LLG/default.jpg"
+    price: 200
+images:
+  -
+    path: "/images/products/integer_walk_rebound/GLS410SSW/GLS410SSW_02@2400px.jpg"
+    title: "Integer Walk Rebound (Silver/Snow/White)"
+  -
+    path: "/images/products/integer_walk_rebound/GLS310SRW/GLS310SRW_01@2400px.jpg"
+    title: "Integer Walk Rebound W (Silver/Red/White)"
+  -
+    path: "/images/products/integer_walk_rebound/GLS410LLG/GLS410LLG_01@2400px.jpg"
+    title: "Integer Walk Rebound (Lakritze/Gray)"
+  -
+    path: "/images/products/integer_walk_rebound/GLS410SSW/GLS410SSW_03@2400px.jpg"
+    title: "Integer Walk Rebound (Silver/Snow/White)"
+  -
+    path: "/images/products/integer_walk_rebound/GLS410SSW/GLS410SSW_05@2400px.jpg"
+    title: "Integer Walk Rebound (Silver/Snow/White)"
+  -
+    path: "/images/products/integer_walk_rebound/GLS410LLG/GLS410LLG_02@2400px.jpg"
+    title: "Integer Walk Rebound (Lakritze/Gray)"
+  -
+    path: "/images/products/integer_walk_rebound/GLS310SRW/GLS310SRW_02@2400px.jpg"
+    title: "Integer Walk Rebound (Silver/Red/White)"
+
+attributes:
+  -
+    name: ground.name
+    start:
+      name: ground.start_name
+      value: 1
+      description: ground.start_description
+    end:
+      name: ground.end_name
+      value: 6
+      description: ground.end_description
+  -
+    name: stability.name
+    start:
+      name: stability.start_name
+      value: 1
+      description: stability.start_description
+    end:
+      name: stability.end_name
+      value: 8
+      description: stability.end_description
+  -
+    name: rebound.name
+    start:
+      name: rebound.start_name
+      value: 3
+      description: rebound.start_description
+    end:
+      name: rebound.end_name
+      value: 10
+      description: rebound.end_description
+  -
+    name: firmness.name
+    start:
+      name: firmness.start_name
+      value: 1
+      description: firmness.start_description
+    end:
+      name: firmness.end_name
+      value: 6
+      description: firmness.end_description

@@ -8,7 +8,6 @@ url_en: "https://www.lunge.com/en/products/classic_run/"
 sitemap_priority: 0.9
 sitemap_changefreq: daily
 ---
-
 .title__container#add-to-cart.anchor-target
   = partial "partials/made_in_germany"
   .title__inner
@@ -17,12 +16,13 @@ sitemap_changefreq: daily
         .product
           .product__figure
             .product__image-container
-              .loader
+              img.product__image
             ul.product-feature
               = partial "partials/product-features/vegan"
               = partial "partials/product-features/non-toxic"
               = partial "partials/product-features/made_in_germany"
               = partial "partials/product-features/resole"
+            = partial "partials/product_attributes", locals: { product: "classic_run" }
           .product__details
             h1 Classic Run
             p Der Klassiker in unserem Sortiment und Geheimtipp anspruchsvoller Läufer. Der Classic Run hat sich über Jahre als Laufschuh der Extraklasse bewährt und wurde dennoch stetig verbessert. Ein Laufschuh, der durch sein einzigartiges Sohlendesign, hochwertigste Materialien, höchsten Komfort und kompromisslose Funktionalität überzeugt.

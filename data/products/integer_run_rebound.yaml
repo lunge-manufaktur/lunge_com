@@ -1,0 +1,91 @@
+name: "Integer Run Rebound"
+category: "Laufschuhe"
+category_en: "Running shoes"
+slug: "integer_run_rebound"
+short_description: "Komfortabler und effizienter Laufschuh mit einzigartiger Rückfederung."
+short_description_en: "Comfortable and efficient runnig shoes with exceptional rebound."
+default_image: "/images/products/integer_run_rebound/STS410DLW/default.jpg"
+price: 180
+colors:
+  -
+    sku: "STS410DLW"
+    name: "Deep Sky Blue/Light Gray/White"
+    first_color: "#5C98D2"
+    second_color: "#D4D5DA"
+    default_image: "/images/products/integer_run_rebound/STS410DLW/default.jpg"
+    price: 180
+  -
+    sku: "STS410DNW"
+    name: "Dark Slate Blue/Navy/White"
+    first_color: "#515782"
+    second_color: "#8597D1"
+    default_image: "/images/products/integer_run_rebound/STS410DNW/default.jpg"
+    price: 180
+  -
+    sku: "STS310PGW"
+    name: "Light Pink/Light Grey/White"
+    first_color: "#FE9CA1"
+    second_color: "#DAE0EE"
+    default_image: "/images/products/integer_run_rebound/STS310PGW/default.jpg"
+    price: 180
+images:
+  -
+    path: "/images/products/integer_run_rebound/STS410DLW/STS410DLW_01@2400px.jpg"
+    title: "Integer Run Rebound (Deep Sky Blue/Light Gray/White)"
+  -
+    path: "/images/products/integer_run_rebound/STS410DNW/STS410DNW_01@2400px.jpg"
+    title: "Integer Run Rebound (Dark Slate Blue/Navy/White)"
+  -
+    path: "/images/products/integer_run_rebound/STS310PGW/STS310PGW_01@2400px.jpg"
+    title: "Integer Run Rebound W (Light Pink/Light Gray/White)"
+  -
+    path: "/images/products/integer_run_rebound/STS410DLW/STS410DLW_03@2400px.jpg"
+    title: "Integer Run Rebound (Deep Sky Blue/Light Gray/White)"
+  -
+    path: "/images/products/integer_run_rebound/STS410DNW/STS410DNW_02@2400px.jpg"
+    title: "Integer Run Rebound (Dark Slate Blue/Navy/White)"
+  -
+    path: "/images/products/integer_run_rebound/STS310PGW/STS310PGW_02@2400px.jpg"
+    title: "Integer Run Rebound W (Light Pink/Light Gray/White)"
+
+attributes:
+  -
+    name: ground.name
+    start:
+      name: ground.start_name
+      value: 1
+      description: ground.start_description
+    end:
+      name: ground.end_name
+      value: 6
+      description: ground.end_description
+  -
+    name: stability.name
+    start:
+      name: stability.start_name
+      value: 3
+      description: stability.start_description
+    end:
+      name: stability.end_name
+      value: 7
+      description: stability.end_description
+  -
+    name: rebound.name
+    start:
+      name: rebound.start_name
+      value: 5
+      description: rebound.start_description
+    end:
+      name: rebound.end_name
+      value: 10
+      description: rebound.end_description
+  -
+    name: firmness.name
+    start:
+      name: firmness.start_name
+      value: 1
+      description: firmness.start_description
+    end:
+      name: firmness.end_name
+      value: 6
+      description: firmness.end_description
