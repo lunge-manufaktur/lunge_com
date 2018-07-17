@@ -24,7 +24,7 @@ lang: de
         .card__figure
           = image_tag data.products.integer_run_rebound.default_image, class: "card__image", alt: "Integer Run Rebound"
           .card__color-options
-            = partial "partials/color_options", locals: { product: "integer_run_rebound" } 
+            = partial "partials/color_options", locals: { product: "integer_run_rebound" }
         .card__body
           .card__description
             h2.marginless--top = data.products.integer_run_rebound.name
@@ -156,10 +156,9 @@ lang: de
           = image_tag "/images/products/shoe_laces/shoe_laces_01--1200px.jpg", class: "card__image", alt: "Schnürsenkel"
         .card__body
           .card__description
-            h2 Schnürsenkel
+            h2.marginless--top Schnürsenkel
+            h4.card__price = "€ 3,-"
             p Sorgen Sie für Abwechslung und verleihen Sie Ihren Lunge Schuhen ein neues Gesicht - mit Schnürsenkeln in zahlreichen Farben.
-          .price-overlay.price-overlay--bottom-left
-            span € 3,-
 
 
 .panel.panel--emphasis

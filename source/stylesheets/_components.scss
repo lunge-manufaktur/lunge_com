@@ -1248,13 +1248,21 @@ iframe.responsive--4x3 {
   width: 100%;
 }
 
+
 .card__container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-  grid-gap: 1rem;
+  display: flex;
+  flex-direction: row;
   flex-wrap: wrap;
-  align-items: stretch;
-  justify-content: space-around;
+  margin: 0 -1rem;
+}
+
+@supports (display: grid) {
+  .card__container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-gap: 2rem;
+    margin: 0 0;
+  }
 }
 
 .card {
@@ -1264,13 +1272,126 @@ iframe.responsive--4x3 {
   flex-direction: column;
   background-color: #ebebf0;
   width: 100%;
-  max-width: 85rem;
-  min-width: 0px;
   overflow: hidden;
+  -ms-grid-column-span: 1;
+  -ms-grid-row-span: 1;
+  margin: 1rem;
+  flex: 1 0 350px;
 
   @include tablet-landscape {
   }
 }
+
+@supports (display: grid) {
+  .card {
+    margin: 0;
+  }
+}
+
+// [data-product="integer_run_rebound"] {
+//   -ms-grid-column: 1;
+//   -ms-grid-row: 1;
+// }
+
+// [data-product="integer_walk_rebound"] {
+//   -ms-grid-column: 1;
+//   -ms-grid-row: 2;
+
+//   @include tablet-landscape {
+//     -ms-grid-column: 2;
+//     -ms-grid-row: 1;
+//   }
+// }
+
+// [data-product="classic_run"] {
+//   -ms-grid-column: 1;
+//   -ms-grid-row: 3;
+
+//   @include tablet-portrait {
+//     -ms-grid-column: 1;
+//     -ms-grid-row: 2;
+//   }
+
+//   @include desktop {
+//     -ms-grid-column: 3;
+//     -ms-grid-row: 1;
+//   }
+// }
+
+// [data-product="classic_walk"] {
+//   -ms-grid-column: 1;
+//   -ms-grid-row: 4;
+
+//   @include tablet-landscape {
+//     -ms-grid-column: 2;
+//     -ms-grid-row: 2;
+//   }
+
+//   @include desktop {
+//     -ms-grid-column: 1;
+//     -ms-grid-row: 2;
+//   }
+// }
+
+// [data-product="neo_run"] {
+//   -ms-grid-column: 1;
+//   -ms-grid-row: 5;
+
+//   @include tablet-landscape {
+//     -ms-grid-column: 1;
+//     -ms-grid-row: 3;
+//   }
+
+//   @include desktop {
+//     -ms-grid-column: 2;
+//     -ms-grid-row: 2;
+//   }
+// }
+
+// [data-product="integer_walk_cushion"] {
+//   -ms-grid-column: 1;
+//   -ms-grid-row: 6;
+
+//   @include tablet-landscape {
+//     -ms-grid-column: 2;
+//     -ms-grid-row: 3;
+//   }
+
+//   @include desktop {
+//     -ms-grid-column: 3;
+//     -ms-grid-row: 2;
+//   }
+// }
+
+// [data-product="neo_walk"] {
+//   -ms-grid-column: 1;
+//   -ms-grid-row: 7;
+
+//   @include tablet-landscape {
+//     -ms-grid-column: 1;
+//     -ms-grid-row: 4;
+//   }
+
+//   @include desktop {
+//     -ms-grid-column: 1;
+//     -ms-grid-row: 3;
+//   }
+// }
+
+// [data-product="classic_run_fis"] {
+//   -ms-grid-column: 1;
+//   -ms-grid-row: 8;
+
+//   @include tablet-landscape {
+//     -ms-grid-column: 2;
+//     -ms-grid-row: 4;
+//   }
+
+//   @include desktop {
+//     -ms-grid-column: 2;
+//     -ms-grid-row: 3;
+//   }
+// }
 
 .card--2x2 {
   grid-area: span 2 / span 2;
