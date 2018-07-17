@@ -476,6 +476,16 @@ ul.footer-list li a {
   }
 }
 
+.footer-list__item--new:before {
+  position: absolute;
+  left: -100%;
+  content: "Neu";
+  text-align: center;
+  font-size: 0.8125rem;
+  background-color: $red;
+  color: $white;
+}
+
 
 .made-in-germany {
   display: none;

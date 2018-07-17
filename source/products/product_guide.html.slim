@@ -1,0 +1,17 @@
+---
+---
+.title__container
+  .title__inner
+    .content.content--narrow
+      h1.text-center Schuhratgeber
+      p = lorem.paragraphs(1)
+
+.panel
+	.content.content--narrow
+		h2 Untergrund
+		h4 Straße
+		p = lorem.paragraphs(2)
+		h4 Trail
+		p = lorem.paragraphs(2)
+
+		= partial "partials/single_product_attribute", locals: { product: "classic_run", attribute: "ground" }
