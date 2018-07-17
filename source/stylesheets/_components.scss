@@ -1817,6 +1817,7 @@ li.tab-title[not tab-title--active]:hover {
 
 .product {
   display: block;
+  width: 100%;
 
   @include tablet-portrait {
     display: flex;
@@ -1827,11 +1828,7 @@ li.tab-title[not tab-title--active]:hover {
 
 .product__figure {
   position: relative;
-  flex: 0 0 auto;
-  
-  @include tablet-portrait {
-    width: 50%;
-  }
+  flex: 0 1 50%;
 }
 
 .product__image-container {
