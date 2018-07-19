@@ -13,6 +13,6 @@ en:
     start_name: Damping
     end_name: Springy
   firmness:
-    name: firmness
+    name: Firmness
     start_name: Comfortable
     end_name: Direct

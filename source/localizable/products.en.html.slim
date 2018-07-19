@@ -19,7 +19,7 @@ lang: en
 .panel
   .content
     .card__container
-      = link_to "/products/#{data.products.integer_run_rebound.slug}/", class: "card", data: { product: "integer_run_rebound" } do
+      = link_to "/en/products/#{data.products.integer_run_rebound.slug}/", class: "card", data: { product: "integer_run_rebound" } do
         .card__figure
           = image_tag data.products.integer_run_rebound.default_image, class: "card__image", alt: "Integer Run Rebound"
           .card__color-options
@@ -33,7 +33,7 @@ lang: en
             = partial "partials/product_attributes", locals: { product: "integer_run_rebound" }
         .notice.notice--alarm.notice--top-right New
 
-      = link_to "/products/#{data.products.integer_walk_rebound.slug}/", class: "card", data: { product: "integer_walk_rebound" } do
+      = link_to "/en/products/#{data.products.integer_walk_rebound.slug}/", class: "card", data: { product: "integer_walk_rebound" } do
         .card__figure
           = image_tag data.products.integer_walk_rebound.default_image, class: "card__image", alt: "Integer Run Rebound"
           .card__color-options

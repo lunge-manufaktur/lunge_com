@@ -1,9 +1,10 @@
 ---
 title: Integer Run Rebound  
-description: Komfortabler Laufschuh mit einzigartiger Rückfederung
+description: Comfortable and efficient runnig shoes with exceptional rebound characteristics.
 section: products
-canonical_link: "https://www.lunge.com/products/integer_run_rebound/"
+canonical_link: "https://www.lunge.com/en/products/integer_run_rebound/"
 url_de: "https://www.lunge.com/products/integer_run_rebound/"
+url_en: "https://www.lunge.com/en/products/integer_run_rebound/"
 sitemap_priority: 0.9
 sitemap_changefreq: daily
 ---
@@ -24,30 +25,28 @@ sitemap_changefreq: daily
             = partial "partials/product_attributes", locals: { product: "integer_run_rebound" }
           .product__details
             h1 Integer Run Rebound
-            p = data.products.integer_run_rebound.short_description
-            h4 Jetzt bestellen
+            p = data.products.integer_run_rebound.short_description_en
+            h4 Order now
             .input-group
-              label Damen / Herren
+              label Women / Men
               .gender-select__container
                 select.product__option.gender-select
                   option value=40527036452 Herren
                   option value=40527069220 Damen
             .input-group
-              label Farbe
+              label Color
               .product-select__container
                 select.product__option.product-select
             .input-group
-              label Größe (Fusslänge / US / EUR)
+              label Size (Foot length / US / EUR)
               .variant-select__container
                 select.product__option.variant-select
             .variant-price__container
               h2.variant-price
-              small inkl. Mwst., versandkostenfrei innerhalb Deutschlands
             .add-to-cart-button__container
-              button.buy-button.js-prevent-cart-listener.add-button In den Warenkorb
+              button.buy-button.js-prevent-cart-listener.add-button Add to cart
             .product__sizing
-              p
-                = link_to "Um die passende Größe zu finden, wählen Sie Ihre Schuhe bitte anhand der empfohlenen Fusslänge aus.", "/support/sizes/", class: "link"
+              = partial "partials/size_guide_note"
 
 .gallery.scroll--horizontal
   - data.products.integer_run_rebound.images.each do |image|
@@ -62,10 +61,10 @@ sitemap_changefreq: daily
         = image_tag "/images/products/integer_run_rebound/misc/integer_run_rebound_01@3200px.jpg", srcset: "/images/products/integer_run_rebound/misc/integer_run_rebound_01@1600px.jpg 1600w, /images/products/integer_run_rebound/misc/integer_run_rebound_01@2400px.jpg 2400w /images/products/integer_run_rebound/misc/integer_run_rebound_01@3200px.jpg 3200w", alt: "Integer Run Rebound"
       aside.panel__text
         .panel__text__inner
-          h2 Stabilität und Komfort
-          p Die einzigartige und neu entwickelte PU-Mittelsohle des Integer Run Rebound vereint dank durchdachter Formgebung zuverlässige Grundstabilität mit höchst effizienter Rückfederung, die jeden einzelnen Schritt erleichtert und beispiellosen Komfort bietet.
+          h2 Stability and comfort
+          p The unique and reengineered PU midsole of the Integer Run Rebound combines reliable fundamental stability with highly efficient rebound that eases every single step and offers unparalleled comfort.
 
-          = link_to "Jetzt bestellen", "#add-to-cart", class: "button button-large"
+          = link_to "Order now", "#add-to-cart", class: "button button-large"
 
 .panel
   .content
@@ -74,9 +73,9 @@ sitemap_changefreq: daily
         = image_tag "/images/products/integer_run_rebound/STS410DNW/STS410DNW_02@3200px.jpg", srcset: "/images/products/integer_run_rebound/STS410DNW/STS410DNW_02@1600px.jpg 1600w, /images/products/integer_run_rebound/STS410DNW/STS410DNW_02@2400px.jpg 2400w /images/products/integer_run_rebound/STS410DNW/STS410DNW_02@3200px.jpg 3200w", alt: "Integer Run Rebound"
       aside.panel__text
         .panel__text__inner
-          h2 Ausdauernde Qualitäten
-          p Während der Entwicklung wurde besonderes Augenmerk auf die Langlebigkeit des Integer Runs gelegt - so bleiben die hervoragenden Feder- und Dämpfungseigenschaften der neuen Mittelsohle besonders lange erhalten. Das neue Profil und der erhöhte Härtegrad der Außensohle sorgen zudem für sichere Griffigkeit und minimierten Verschleiß.
-          = link_to "Jetzt bestellen", "#add-to-cart", class: "button button-large"
+          h2 Lasting qualities
+          p During developement, special care was taken to ensure the longevity of the integer run - this ensures that the outstanding spring and cushioning properties of the new midsole are maintained for a particularly long time. The new profile and the increased strength of the outsole also ensure secure grip and minimised wear.
+          = link_to "Order now", "#add-to-cart", class: "button button-large"
 
 .panel
   .content
@@ -85,9 +84,9 @@ sitemap_changefreq: daily
         = image_tag "/images/products/integer_run_rebound/STS310PGW/STS310PGW_02@3200px.jpg", srcset: "/images/products/integer_run_rebound/STS310PGW/STS310PGW_02@1600px.jpg 1600w, /images/products/integer_run_rebound/STS310PGW/STS310PGW_02@2400px.jpg 2400w /images/products/integer_run_rebound/STS310PGW/STS310PGW_02@3200px.jpg 3200w", alt: "Integer Run Rebound"
       aside.panel__text
         .panel__text__inner
-          h2 Komfortable Funktionalität
-          p Die Kombination aus wärmeregulierender, hoch-funktionaler Mikrofaser und durchlässigem Netzgewebe, sorgt für hervorragende Atmungsaktivität und einen beschleunigten Feuchtigkeitstransport nach außen, während sich das feine Innenfutter sanft an den Fuß schmiegt und für hochwertigstes, Lunge-typisches Tragegefühl sorgt.
-          = link_to "Jetzt bestellen", "#add-to-cart", class: "button button-large"
+          h2 Convenient functionality
+          p The combination of heat-regulating, highly functional microfibre and breathable mesh fabric ensures excellent air circulation and accelerated moisture transport to the outside, while the fine inner lining gently fits the foot and ensures the highest quality, Lunge-typical wearing comfort.
+          = link_to "Order now", "#add-to-cart", class: "button button-large"
 
 .panel
   .content
@@ -96,38 +95,38 @@ sitemap_changefreq: daily
         = image_tag "/images/products/integer_run_rebound/STS410DNW/STS410DNW_01@3200px.jpg", srcset: "/images/products/integer_run_rebound/STS410DNW/STS410DNW_01@1600px.jpg 1600w, /images/products/integer_run_rebound/STS410DNW/STS410DNW_01@2400px.jpg 2400w /images/products/integer_run_rebound/STS410DNW/STS410DNW_01@3200px.jpg 3200w", alt: "Integer Run Rebound"
       aside.panel__text
         .panel__text__inner
-          h2 Effiziente Einlegesohlen
-          p Komplettiert wird das ausgezeichnete Tragegefühl des Integer Run Rebounds durch eine weiter entwickelte Variante unserer Feetality Einlegesohlen, deren neue Materialzusammensetzung zur angenehmen Rückfederwirkung des Schuhs beiträgt. Diese neue Feetality-Version kommt zunächst exklusiv im Integer Run Rebound zum Einsatz.
-          = link_to "Jetzt bestellen", "#add-to-cart", class: "button button-large"
+          h2 Efficient insoles
+          p The excellent wearing comfort of the Integer Run Rebound is completed by a refined version of our Feetality insoles, whose new material composition contributes to the shoe's pleasant rebound effect. This new Feetality version will initially be shipped exclusively with the Integer Run Rebound.
+          = link_to "Order now", "#add-to-cart", class: "button button-large"
 
 .panel.panel--emphasis
   .content
     .row
       .col-xs-12.col-md-6
-        h4 Technische Daten
+        h4 Specifications
         ul.spec-list
           li.spec-list__item
-            label Innenfutter
+            label Inner lining
             span Stockmayer + Sohn Velour Gewirk
           li.spec-list__item
-            label Obermaterial
+            label Upper material
             span Morón Ozone
             br
             span Morón OnSteam
           li.spec-list__item
-            label Garn
+            label Thread
             span Amann & Söhne Serafil ET40
           li.spec-list__item
-            label Mittel- und Außensohle
+            label Mid- and outsole
             span Individuell entwickelte TPU/PU-Sohle
           li.spec-list__item
-            label Sprengung
+            label Heel lift
             span 9 mm (US Men 10)
           li.spec-list__item
-            label Verfügbare Größen
-            span Damen: US 6 - US 13
+            label Available sizes
+            span Women: US 6 - US 13
             br
-            span Herren: US 8 - US 15
+            span Men: US 8 - US 15
       .col-xs-12.col-md-6
         = partial "partials/add_to_cart_help"
 
