@@ -1,4 +1,5 @@
 de:
+  test: Erfolg
   ground:
     name: Untergrund
     start_name: Straße
@@ -23,3 +24,5 @@ de:
     end_name: Direkt
     start_description: Weiches Mittelsohlenmaterial sorgt für ein äußerst komfortables Tragegefühl.
     end_description: Festeres, direkteres Aufprallverhalten dank erhöhtem Härtegrad der Sohle.
+  availability:
+    discontinued: Bei dieser Artikel-/Farbvariante handelt es sich um ein Auslaufmodell, das nicht mehr gefertigt wird. Bitte wählen Sie eine andere Farbe/Größe oder ein anderes Modell.
