@@ -36,13 +36,6 @@ colors:
     default_image: "/images/products/classic_walk/GLS200BRS/default.jpg"
     price: 200
   -
-    sku: "GLS200BBS"
-    name: "Brombeer/Schwarz"
-    first_color: "#93243E"
-    second_color: "#000"
-    default_image: "/images/products/classic_walk/GLS200BBS/default.jpg"
-    price: 200
-  -
     sku: "GLS200SIL"
     name: "Silber/Hellgrau"
     first_color: "#B1C0C7"
