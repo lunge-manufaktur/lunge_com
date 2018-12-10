@@ -25,10 +25,10 @@ colors:
 images:
   -
     path: "/images/products/feetality/LG105_03.jpg"
-    title: "Feetality Einlegesohle (Rot)"
+    title: "Feetality Einlegesohle (Rot / Glatt)"
   -
     path: "/images/products/feetality/LG105_02.jpg"
-    title: "Feetality Einlegesohle (Schwarz)"
+    title: "Feetality Einlegesohle (Schwarz / Glatt)"
   -
-    path: "/images/products/feetality/LG105_01.jpg"
-    title: "Feetality Einlegesohle (Rot)"
+    path: "/images/products/feetality/LG105_4/LG105_4_01.jpg"
+    title: "Feetality Einlegesohle (Anthrazit / Stumpf)"
