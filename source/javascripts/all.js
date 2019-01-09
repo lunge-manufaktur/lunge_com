@@ -1,3 +1,4 @@
+//= require polyfills
 //= require jquery.min
 //= require offcanvas-nav
 //= require tabs

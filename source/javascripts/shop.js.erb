@@ -136,10 +136,44 @@ $(function() {
   // populate variant select box
   function generateVariantSelectors(variants, selectedVariantName) {
     var options;
+    var selectedVariantId
+    var selectedVariant = variants.find(function(el) {
+      return el.title == selectedVariantName
+    });
+    var firstAvailableVariant = variants.find(function(el) {
+      return el.available == true
+    });
+    
+    if (selectedVariant) {
+      selectedVariantId = selectedVariant.id
+    } else if (firstAvailableVariant) {
+      selectedVariantId = firstAvailableVariant.id
+    } else {
+      selectedVariantId = variants[0].id
+    }
+    console.log(firstAvailableVariant);
+    console.log(selectedVariant);
+    console.log(selectedVariantId);
+
+    // while (selectedVariantName == '' && firstAvailableVariant == null && i < variants.length) {
+    //   firstAvailableVariant = variants[i].available ? variants[i].id : null;
+    //   console.log(i);
+    //   console.log(firstAvailableVariant);
+    //   i++;
+    // }
+
     for (var i = 0; i < variants.length; i++) {
-      var disabled = variants[i].available ? false : true
-      var selected = variants[i].title == selectedVariantName ? 'selected' : '';
-      options += '<option value = "' + variants[i].id + '"' + selected + '>' + variants[i].title + '</option>';
+      var disabled = variants[i].available ? false : true;
+      // var selectedVariantId = selectedVariant ? selectedVariant.id : firstAvailableVariant.id;
+      var selectedAttribute = selectedVariantId == variants[i].id ? 'selected' : ''; 
+      // if (variants[i].title == selectedVariantName) {
+      //   selected = 'selected'
+      // } else if (variants[i].id == firstAvailableVariant.id) {
+      //   selected = 'selected'
+      // } else {
+      //   selected = ''
+      // };
+      options += '<option value = "' + variants[i].id + '"' + selectedAttribute + '>' + variants[i].title + '</option>';
     }
 
     return  '<select name = "variant-select" class = "variant-select">' + options + '</select>';

@@ -1433,10 +1433,6 @@ iframe.responsive--4x3 {
 .card__figure {
   overflow: hidden;
   background-color: $mint-gray;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
 }
 
 .card__image {
@@ -1445,6 +1441,8 @@ iframe.responsive--4x3 {
 }
 
 .card__color-options {
+  display: flex;
+  justify-content: center;
   padding: 0 $gutter;
 }
 
