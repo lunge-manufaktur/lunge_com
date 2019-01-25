@@ -1770,6 +1770,7 @@ li.tab-title[not tab-title--active]:hover {
 .footer__bottom-line {
   margin: $gutter auto;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
 }

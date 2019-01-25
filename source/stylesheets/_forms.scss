@@ -26,6 +26,8 @@ textarea:focus {
 
 form.newsletter-signup {
   text-align: center;
+  margin: $gutter 0;
+  overflow: hidden;
 }
 
 .newsletter-signup__input-group {
