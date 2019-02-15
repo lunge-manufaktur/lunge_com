@@ -23,6 +23,7 @@ sitemap_changefreq: daily
             = partial "partials/product_attributes", locals: { product: "integer_run_rebound" }
           .product__details
             h1 Integer Run Rebound
+            = partial "partials/video_link", locals: { product_name: "Integer Run Rebound" }
             p = data.products.integer_run_rebound.short_description
             h4 Jetzt bestellen
             .input-group
@@ -47,12 +48,9 @@ sitemap_changefreq: daily
             .product__sizing
               p
                 = link_to "Um die passende Größe zu finden, wählen Sie Ihre Schuhe bitte anhand der empfohlenen Fusslänge aus.", "/support/sizes/", class: "link"
+    #video.anchor-target
 
-.gallery.scroll--horizontal
-  - data.products.integer_run_rebound.images.each do |image|
-    .gallery__item
-      = image_tag image.path
-      .gallery__item__title = image.title
+= partial "partials/video_card", locals: { youtube_id: "szwNrLXkdMA", product_name: "Integer Run Rebound" }
 
 .panel
   .content
@@ -98,6 +96,8 @@ sitemap_changefreq: daily
           h2 Effiziente Einlegesohlen
           p Komplettiert wird das ausgezeichnete Tragegefühl des Integer Run Rebounds durch eine weiter entwickelte Variante unserer Feetality Einlegesohlen, deren neue Materialzusammensetzung zur angenehmen Rückfederwirkung des Schuhs beiträgt. Diese neue Feetality-Version kommt zunächst exklusiv im Integer Run Rebound zum Einsatz.
           = link_to "Jetzt bestellen", "#add-to-cart", class: "button button-large"
+
+= partial "products/gallery", locals: { product: data.products.integer_run_rebound }
 
 .panel.panel--emphasis
   .content

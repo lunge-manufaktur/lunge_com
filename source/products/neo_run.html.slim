@@ -24,6 +24,7 @@ sitemap_changefreq: daily
             = partial "partials/product_attributes", locals: { product: "neo_run" }
           .product__details
             h1 Neo Run
+            = partial "partials/video_link", locals: { product_name: "Neo Run" }
             p = data.products.neo_run.short_description
             h4 Jetzt bestellen
             .input-group
@@ -52,6 +53,9 @@ sitemap_changefreq: daily
                 = link_to "Größentabelle", "/support/sizes/", class: "link"
                 span
                   |  an um mehr über unsere Größen und das korrekte Messen Ihrer Fusslänge zu erfahren.
+    #video.anchor-target
+
+= partial "partials/video_card", locals: { youtube_id: "1t8Rp3zKbFQ", product_name: "Neo Run" }
 
 .panel
   .content
@@ -95,11 +99,7 @@ sitemap_changefreq: daily
           p Die Kombination aus feinstem Innenfutter und durchlässigem 3D-Mesh ermöglicht optimale Luftzufuhr sowie Feuchtigkeitstransport von innen nach außen und sorgt zeitgleich dafür, dass weniger Nässe in den Schuh eindringen kann.
           = link_to "Jetzt bestellen", "#add-to-cart", class: "button button-large"
 
-.gallery.scroll--horizontal
-  - data.products.neo_run.images.each do |image|
-    .gallery__item
-      = image_tag image.path
-      .gallery__item__title = image.title
+= partial "products/gallery", locals: { product: data.products.neo_run }
 
 .panel.panel--emphasis
   .content

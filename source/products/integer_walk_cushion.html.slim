@@ -25,6 +25,7 @@ sitemap_changefreq: daily
             = partial "partials/product_attributes", locals: { product: "integer_walk_cushion" }
           .product__details
             h1 Integer Walk Cushion
+            = partial "partials/video_link", locals: { product_name: "Integer Walk" }
             p = data.products.integer_walk_cushion.short_description
             h4 Jetzt bestellen
             .input-group
@@ -49,6 +50,9 @@ sitemap_changefreq: daily
             .product__sizing
               p
                 = link_to "Um die passende Größe zu finden, wählen Sie Ihre Schuhe bitte anhand der empfohlenen Fusslänge aus.", "/support/sizes/", class: "link"
+    #video.anchor-target
+
+= partial "partials/video_card", locals: { youtube_id: "RtOYxu8qBa4", product_name: "Integer Walk Cushion" }
 
 .panel
   .content
@@ -148,11 +152,7 @@ sitemap_changefreq: daily
            |  ergänzt, welche für zusätzliche Stabilität sorgt und eine gesunde Fußstellung fördert.
           = link_to "Jetzt bestellen", "#add-to-cart", class: "button button-large"
 
-.gallery.scroll--horizontal
-  - data.products.integer_walk_cushion.images.each do |image|
-    .gallery__item
-      = image_tag image.path
-      .gallery__item__title = image.title
+= partial "products/gallery", locals: { product: data.products.integer_walk_cushion }
 
 .panel.panel--emphasis
   .content
