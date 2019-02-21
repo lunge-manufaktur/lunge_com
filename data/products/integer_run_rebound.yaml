@@ -28,6 +28,20 @@ colors:
     second_color: "#DAE0EE"
     default_image: "/images/products/integer_run_rebound/STS310PGW/default.jpg"
     price: 180
+  -
+    sku: "STS410LLG"
+    name: "Lakritze/Gray"
+    first_color: "#000"
+    second_color: "#514A54"
+    default_image: "/images/products/integer_run_rebound/STS410LLG/default.jpg"
+    price: 180
+  -
+    sku: "STS310NAW"
+    name: "Nickel/Aquamarine/White"
+    first_color: "#C9E1E4"
+    second_color: "#DD3549"
+    default_image: "/images/products/integer_run_rebound/STS310NAW/default.jpg"
+    price: 180
 images:
   -
     path: "/images/products/integer_run_rebound/STS410DLW/STS410DLW_01@2400px.jpg"

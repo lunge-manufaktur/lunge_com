@@ -42,6 +42,27 @@ colors:
     second_color: "#555"
     default_image: "/images/products/integer_walk_rebound/GLS412BSG/default.jpg"
     price: 200
+  -
+    sku: "GLS410CNW"
+    name: "Cornflower Blue/Navy/White"
+    first_color: "#6D7CAA"
+    second_color: "#F8F8F8"
+    default_image: "/images/products/integer_walk_rebound/GLS410CNW/default.jpg"
+    price: 200
+  -
+    sku: "GLS410DWG"
+    name: "Dark Gray/Wheat/Gray"
+    first_color: "#A08F99"
+    second_color: "#D5C2B7"
+    default_image: "/images/products/integer_walk_rebound/GLS410DWG/default.jpg"
+    price: 200
+  -
+    sku: "GLS310DHG"
+    name: "Dark Gray/Hot Pink/Gray"
+    first_color: "#A08F99"
+    second_color: "#E56899"
+    default_image: "/images/products/integer_walk_rebound/GLS310DHG/default.jpg"
+    price: 200
 images:
   -
     path: "/images/products/integer_walk_rebound/GLS410SSW/GLS410SSW_02@2400px.jpg"
