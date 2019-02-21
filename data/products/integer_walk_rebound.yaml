@@ -28,6 +28,20 @@ colors:
     second_color: "#3A3A3A"
     default_image: "/images/products/integer_walk_rebound/GLS410LLG/default.jpg"
     price: 200
+  -
+    sku: "GLS412WSW"
+    name: "White/Smooth"
+    first_color: "#FFF"
+    second_color: "#FDFDFD"
+    default_image: "/images/products/integer_walk_rebound/GLS412WSW/default.jpg"
+    price: 200
+  -
+    sku: "GLS412BSG"
+    name: "Black/Smooth"
+    first_color: "#333"
+    second_color: "#555"
+    default_image: "/images/products/integer_walk_rebound/GLS412BSG/default.jpg"
+    price: 200
 images:
   -
     path: "/images/products/integer_walk_rebound/GLS410SSW/GLS410SSW_02@2400px.jpg"
