@@ -73,6 +73,7 @@ lang: de
             h4.card__price = "€ #{data.products.classic_run.price},-"
             p = data.products.classic_run.short_description
           .card__attributes
+            = partial "partials/product_attributes", locals: { product: "classic_run" }
 
       = link_to "/products/#{data.products.integer_walk_cushion.slug}/", class: "card", data: { product: "integer_walk_cushion" } do
         .card__figure

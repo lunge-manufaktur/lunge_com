@@ -27,5 +27,8 @@
 # Ignore experimental stuff
 /source/beta
 
+# Ignore Pixelmator template
+/assets/images/square_template.pxd
+
 # Ignore environment variables
 .env
