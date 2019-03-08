@@ -15,10 +15,21 @@ lang: de
     .content.content--narrow
       h1.text-center Produkte & Shop
       p Ganz gleich ob Laufschuhe, Bequemschuhe oder Einlegesohlen - Lunge bietet Schuhe und Zubehör sowohl für den Laufsport als auch für den ganz alltäglichen Einsatz in Beruf und Freizeit.
+      ul.inline-list.inline-list--center
+        li
+          h4 = link_to "Integer Serie", "#integer-series", class: "link"
+        li
+          h4 = link_to "Classic Serie", "#classic-series", class: "link"
+        li
+          h4 = link_to "Neo Serie", "#neo-series", class: "link"
+        li
+          h4 = link_to "Zubehör", "#accessories", class: "link"
 
-.panel
+.panel.anchor-target#integer-series
+  .content.content--narrow
+    h2 Integer Serie
+    p Bequem- und Laufschuhe, deren einzigartiges Sohlenmaterial effiziente, komfortable Rückfederung bietet und somit jeden Schritt erleichtert - ganz gleich ob kurz vor der Ziellinie oder am Ende eines langen Tages.
   .content
-    h2 Schuhe
     .card__container
       = link_to "/products/#{data.products.integer_run_rebound.slug}/", class: "card", data: { product: "integer_run_rebound" } do
         .card__figure
@@ -48,6 +59,39 @@ lang: de
             = partial "partials/product_attributes", locals: { product: "integer_walk_rebound" }
         .notice.notice--alarm.notice--top-right Neue Farben
 
+      = link_to "/products/#{data.products.integer_walk_rebound_leder.slug}/", class: "card", data: { product: "integer_walk_rebound_leder" } do
+        .card__figure
+          = image_tag data.products.integer_walk_rebound_leder.default_image, class: "card__image", alt: "Integer Run Rebound"
+          .card__color-options
+            = partial "partials/color_options", locals: { product: "integer_walk_rebound_leder" }
+        .card__body
+          .card__description
+            h2.marginless--top = data.products.integer_walk_rebound_leder.name
+            h4.card__price = "€ #{data.products.integer_walk_rebound_leder.price},-"
+            p = data.products.integer_walk_rebound_leder.short_description
+          .card__attributes
+            = partial "partials/product_attributes", locals: { product: "integer_walk_rebound_leder" }
+        .notice.notice--alarm.notice--top-right Neu
+
+      = link_to "/products/#{data.products.integer_walk_cushion.slug}/", class: "card", data: { product: "integer_walk_cushion" } do
+        .card__figure
+          = image_tag data.products.integer_walk_cushion.default_image, class: "card__image", alt: "Integer Run Rebound"
+          .card__color-options
+            = partial "partials/color_options", locals: { product: "integer_walk_cushion" } 
+        .card__body
+          .card__description
+            h2.marginless--top = data.products.integer_walk_cushion.name
+            h4.card__price = "€ #{data.products.integer_walk_cushion.price},-"
+            p = data.products.integer_walk_cushion.short_description
+          .card__attributes
+            = partial "partials/product_attributes", locals: { product: "integer_walk_cushion" }
+
+.panel.anchor-target#classic-series
+  .content.content--narrow
+    h2 Classic Serie
+    p Unser Dauerläufer und Publikumsliebling: Seit mehr als 10 Jahren etabliert und stetig weiter entwickelt, überzeugen unsere Classic Modelle durch eine einzigartige Sohlenkonstruktion, kontrollierte Fußführung und exzellentes Aufprall- und Abrollverhalten - auf und abseits der Laufstrecke.
+  .content
+    .card__container
       = link_to "/products/#{data.products.classic_walk.slug}/", class: "card", data: { product: "classic_walk" } do
         .card__figure
           = image_tag data.products.classic_walk.default_image, class: "card__image", alt: "Classic Walk"
@@ -75,19 +119,6 @@ lang: de
           .card__attributes
             = partial "partials/product_attributes", locals: { product: "classic_run" }
 
-      = link_to "/products/#{data.products.integer_walk_cushion.slug}/", class: "card", data: { product: "integer_walk_cushion" } do
-        .card__figure
-          = image_tag data.products.integer_walk_cushion.default_image, class: "card__image", alt: "Integer Run Rebound"
-          .card__color-options
-            = partial "partials/color_options", locals: { product: "integer_walk_cushion" } 
-        .card__body
-          .card__description
-            h2.marginless--top = data.products.integer_walk_cushion.name
-            h4.card__price = "€ #{data.products.integer_walk_cushion.price},-"
-            p = data.products.integer_walk_cushion.short_description
-          .card__attributes
-            = partial "partials/product_attributes", locals: { product: "integer_walk_cushion" }
-
       = link_to "/products/#{data.products.classic_run_fis.slug}/", class: "card", data: { product: "classic_run_fis" } do
         .card__figure
           = image_tag data.products.classic_run_fis.default_image, class: "card__image", alt: "Integer Run Rebound"
@@ -101,6 +132,12 @@ lang: de
           .card__attributes
             = partial "partials/product_attributes", locals: { product: "classic_run_fis" }
 
+.panel.anchor-target#neo-series
+  .content.content--narrow
+    h2 Neo Serie
+    p Leichte, flexible Neutralschuhe, die dank innovativer PU-Mittelsohle für ein äußerst dynamisches, effizientes Laufverhalten mit hoher Rückfederung sorgen. 
+  .content
+    .card__container
       = link_to "/products/#{data.products.neo_run.slug}/", class: "card", data: { product: "neo_run" } do
         .card__figure
           = image_tag data.products.neo_run.default_image, class: "card__image", alt: "Integer Run Rebound"
@@ -127,7 +164,7 @@ lang: de
           .card__attributes
             = partial "partials/product_attributes", locals: { product: "neo_walk" }
 
-.panel
+.panel.anchor-target#accessories
   .content
     h2 Zubehör
     .card__container

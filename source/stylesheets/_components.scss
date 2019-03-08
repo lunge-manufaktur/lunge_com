@@ -1080,13 +1080,11 @@ h5.testimonial__author {
   font-size: 0.75rem;
   text-align: center;
   padding: 0.5rem 1rem;
-  color: #aaa;
 
   @include tablet-portrait {
     display: block;
     position: absolute;
     background-color: #fff;
-    border: 1px solid #B6BE00;
     bottom: 1rem;
     left: 1rem;
   }

@@ -1,0 +1,98 @@
+name: "Integer Walk Rebound Leder"
+category: "Bequem- und Alltagsschuhe"
+category_en: "Walking / everyday shoes"
+slug: "integer_walk_rebound_leder"
+short_description: "Der bequeme und effiziente Alltagsschuh - jetzt erstmals aus Leder."
+short_description_en: "Premium everyday shoes, that combine athletic functionality and elegant, unobtrusive appearance."
+default_image: "/images/products/integer_walk_rebound_leder/GLS610SW/default.jpg"
+price: 250
+colors:
+  -
+    sku: "GLS610EG"
+    name: "Espresso/Gray"
+    first_color: "#3F3634"
+    second_color: "#64646B"
+    default_image: "/images/products/integer_walk_rebound_leder/GLS610EG/default.jpg"
+    price: 250
+  -
+    sku: "GLS610LG"
+    name: "Lakritze/Gray"
+    first_color: "#000"
+    second_color: "#64646B"
+    default_image: "/images/products/integer_walk_rebound_leder/GLS610LG/default.jpg"
+    price: 250
+  -
+    sku: "GLS610SW"
+    name: "Saddle Brown/White"
+    first_color: "#8E5D3D"
+    second_color: "#FFF"
+    default_image: "/images/products/integer_walk_rebound_leder/GLS610SW/default.jpg"
+    price: 250
+  -
+    sku: "GLS610WW"
+    name: "Whitesmoke/White"
+    first_color: "#EFEFEF"
+    second_color: "#FFF"
+    default_image: "/images/products/integer_walk_rebound_leder/GLS610WW/default.jpg"
+    price: 250
+images:
+  -
+    path: "/images/products/integer_walk_rebound_leder/GLS610LG/GLS610LG_01@2400px.jpg"
+    title: "Integer Walk Rebound Leder (Lakritze/Gray)"
+  -
+    path: "/images/products/integer_walk_rebound_leder/GLS610EG/GLS610EG_01@2400px.jpg"
+    title: "Integer Walk Rebound Leder (Espresso/Gray)"
+  -
+    path: "/images/products/integer_walk_rebound_leder/GLS610SW/GLS610SW_01@2400px.jpg"
+    title: "Integer Walk Rebound Leder (Saddle Brown/White)"
+  -
+    path: "/images/products/integer_walk_rebound_leder/GLS610WW/GLS610WW_01@2400px.jpg"
+    title: "Integer Walk Rebound Leder (Whitesmoke/White)"
+  -
+    path: "/images/products/integer_walk_rebound_leder/GLS610EG/GLS610EG_03@2400px.jpg"
+    title: "Integer Walk Rebound Leder (Espresso/Gray)"
+  -
+    path: "/images/products/integer_walk_rebound_leder/GLS610LG/GLS610LG_02@2400px.jpg"
+    title: "Integer Walk Rebound Leder (Lakritze/Gray)"
+
+attributes:
+  -
+    name: ground.name
+    start:
+      name: ground.start_name
+      value: 1
+      description: ground.start_description
+    end:
+      name: ground.end_name
+      value: 6
+      description: ground.end_description
+  -
+    name: stability.name
+    start:
+      name: stability.start_name
+      value: 2
+      description: stability.start_description
+    end:
+      name: stability.end_name
+      value: 8
+      description: stability.end_description
+  -
+    name: rebound.name
+    start:
+      name: rebound.start_name
+      value: 3
+      description: rebound.start_description
+    end:
+      name: rebound.end_name
+      value: 10
+      description: rebound.end_description
+  -
+    name: firmness.name
+    start:
+      name: firmness.start_name
+      value: 1
+      description: firmness.start_description
+    end:
+      name: firmness.end_name
+      value: 6
+      description: firmness.end_description

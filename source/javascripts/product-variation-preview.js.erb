@@ -70,3 +70,10 @@ $('[data-product="integer_walk_rebound"] li.color-icon').on("mouseover tap", fun
   var imagePath = $(this).data("image-path")
   $('[data-product=integer_walk_rebound] .card__image').attr("src", imagePath);
 });
+
+$('[data-product="integer_walk_rebound_leder"] li.color-icon').on("mouseover tap", function(event) {
+  event.preventDefault();
+  var sku = $(this).data("color");
+  var imagePath = $(this).data("image-path")
+  $('[data-product=integer_walk_rebound_leder] .card__image').attr("src", imagePath);
+});

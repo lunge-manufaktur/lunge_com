@@ -1,10 +1,9 @@
 ---
-title: Integer Walk Rebound  
+title: Integer Walk Rebound Leder 
 description: Ein Alltagsschuh der Spitzenklasse, der sportliche Funktionalität mit einem dezenten Erscheinungsbild vereint.
 section: products
-canonical_link: "https://www.lunge.com/products/integer_walk_rebound/"
-url_de: "https://www.lunge.com/products/integer_walk_rebound/"
-url_en: "https://www.lunge.com/en/products/integer_walk_rebound/"
+canonical_link: "https://www.lunge.com/products/integer_walk_rebound_leder/"
+url_de: "https://www.lunge.com/products/integer_walk_rebound_leder/"
 sitemap_priority: 0.9
 sitemap_changefreq: daily
 ---
@@ -18,21 +17,26 @@ sitemap_changefreq: daily
             .product__image-container
               img.product__image
             ul.product-feature
-              = partial "partials/product-features/vegan"
               = partial "partials/product-features/non-toxic"
               = partial "partials/product-features/made_in_germany"
             = partial "partials/product_attributes", locals: { product: "integer_walk_rebound" }
           .product__details
-            h1 Integer Walk Rebound
+            h1 Integer Walk Rebound Leder
             = partial "partials/video_link", locals: { product_name: "Integer Walk" }
-            p = data.products.integer_walk_rebound.short_description
+            p
+              = data.products.integer_walk_rebound_leder.short_description
+              br
+              br
+              | Mit größter Sorgfalt haben wir uns auf die Suche nach einem Leder gemacht, welches den hohen Ansprüchen unserer Schuhe entspricht und sind dabei in der  
+              = link_to "Terracare Serie des Traditionsunternehmens Heinen", "/products/integer_run_rebound/", class: "link", target: "_blank"
+              |  fündig geworden. Dabei handelt es sich um schadstofffreies, vegetabil gegerbtes, umweltfreundlich verarbeitetes Leder deutscher Herkunft, das durch ausgezeichnete Haptik, Haltbarkeit und Komfort glänzt.
             h4 Jetzt bestellen
             .input-group
               label Damen / Herren
               .gender-select__container
                 select.product__option.gender-select
-                  option value=40527134756 Herren
-                  option value=40527167524 Damen
+                  option value=46293090340 Herren
+                  option value=46293155876 Damen
             .input-group
               label Farbe
               .product-select__container
@@ -54,32 +58,8 @@ sitemap_changefreq: daily
 = partial "partials/video_card", locals: { youtube_id: "_Gk50VaFaAo", product_name: "Integer Walk Rebound" }
 
 .panel
-  .content
-    .panel__inner.panel__inner--reverse
-      .panel__image
-        = image_tag "/images/products/integer_walk_rebound/misc/integer_walk_rebound_01@3200px.jpg", srcset: "/images/products/integer_walk_rebound/misc/integer_walk_rebound_01@1600px.jpg 1600w, /images/products/integer_walk_rebound/misc/integer_walk_rebound_01@2400px.jpg 2400w /images/products/integer_walk_rebound/misc/integer_walk_rebound_01@3200px.jpg 3200w", alt: "Integer Walk Rebound"
-      aside.panel__text
-        .panel__text__inner
-          h2 Für alle, die länger auf den Beinen sind
-          p
-            | Die selbe hochwertige Mittelsohle, die bereits unseren Laufschuh 
-            = link_to "Integer Run Rebound", "/products/integer_run_rebound/", class: "link"
-            |  antreibt, sorgt mit ihrer einzigartigen Rückfederwirkung dafür, dass Sie auch nach langen Tagen noch leichten Schrittes voran gehen können.
 
-          = link_to "Jetzt bestellen", "#add-to-cart", class: "button button-large"
-
-.panel
-  .content
-    .panel__inner
-      .panel__image
-        = image_tag "/images/products/integer_walk_rebound/GLS410SSW/GLS410SSW_04@3200px.jpg", srcset: "/images/products/integer_walk_rebound/GLS410SSW/GLS410SSW_04@1600px.jpg 1600w, /images/products/integer_walk_rebound/GLS410SSW/GLS410SSW_04@2400px.jpg 2400w /images/products/integer_walk_rebound/GLS410SSW/GLS410SSW_04@3200px.jpg 3200w", alt: "Integer Walk Rebound (Silver/Snow/White)"
-      aside.panel__text
-        .panel__text__inner
-          h2 Grenzenloser Komfort
-          p Der Integer Walk hüllt den Fuß in feinste Materialien, welche ganztägig für ein angenehmes Fußklima sorgen und unterstützt von der natürlich abrollenden Sohle die Leichtfüßigkeit in jedem Ihrer Schritte erwecken.
-          = link_to "Jetzt bestellen", "#add-to-cart", class: "button button-large"
-
-= partial "products/gallery", locals: { product: data.products.integer_walk_rebound }
+= partial "products/gallery", locals: { product: data.products.integer_walk_rebound_leder }
 
 .panel.panel--emphasis
   .content
@@ -88,14 +68,8 @@ sitemap_changefreq: daily
         h4 Technische Daten
         ul.spec-list
           li.spec-list__item
-            label Innenfutter
-            span Stockmayer + Sohn Velour Gewirk
-          li.spec-list__item
-            label Obermaterial
-            span Limonta 1893 Micro Lim Suede
-          li.spec-list__item
-            label Garn
-            span Amann & Söhne Serafil ET40
+            label Leder
+            span Heinen Terracare
           li.spec-list__item
             label Mittel- und Außensohle
             span Individuell entwickelte TPU/PU-Sohle
