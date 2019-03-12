@@ -43,17 +43,14 @@ images:
     path: "/images/products/integer_walk_rebound_leder/GLS610EG/GLS610EG_01@2400px.jpg"
     title: "Integer Walk Rebound Leder (Espresso/Gray)"
   -
-    path: "/images/products/integer_walk_rebound_leder/GLS610SW/GLS610SW_01@2400px.jpg"
+    path: "/images/products/integer_walk_rebound_leder/GLS610SW/GLS610SW_03@2400px.jpg"
     title: "Integer Walk Rebound Leder (Saddle Brown/White)"
   -
-    path: "/images/products/integer_walk_rebound_leder/GLS610WW/GLS610WW_01@2400px.jpg"
+    path: "/images/products/integer_walk_rebound_leder/GLS610WW/GLS610WW_02@2400px.jpg"
     title: "Integer Walk Rebound Leder (Whitesmoke/White)"
   -
-    path: "/images/products/integer_walk_rebound_leder/GLS610EG/GLS610EG_03@2400px.jpg"
-    title: "Integer Walk Rebound Leder (Espresso/Gray)"
-  -
-    path: "/images/products/integer_walk_rebound_leder/GLS610LG/GLS610LG_02@2400px.jpg"
-    title: "Integer Walk Rebound Leder (Lakritze/Gray)"
+    path: "/images/products/integer_walk_rebound_leder/GLS610SW/GLS610SW_02@2400px.jpg"
+    title: "Integer Walk Rebound Leder (Saddle Brown/White)"
 
 attributes:
   -
