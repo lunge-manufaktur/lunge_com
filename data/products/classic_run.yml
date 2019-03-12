@@ -8,6 +8,27 @@ default_image: "/images/products/classic_run/STS203SWR/default.jpg"
 price: 220
 colors:
   -
+    sku: "STS220BNG"
+    name: "Steel Blue/Navy/Light Gray"
+    first_color: "#3A3551"
+    second_color: "#656BA0"
+    default_image: "/images/products/classic_run/STS220BNG/default.jpg"
+    price: 220
+  -
+    sku: "STS220BNG"
+    name: "Lakritze"
+    first_color: "#000"
+    second_color: "#333"
+    default_image: "/images/products/classic_run/STS220LLL/default.jpg"
+    price: 220
+  -
+    sku: "STS220YGG"
+    name: "Yellow/Lawn Green/Light Gray"
+    first_color: "#5CEB65"
+    second_color: "#D9D8DF"
+    default_image: "/images/products/classic_run/STS220YGG/default.jpg"
+    price: 220
+  -
     sku: "STS203SWR"
     name: "Silber/Rot/Weiß"
     first_color: "#BD3C42"
@@ -36,6 +57,15 @@ colors:
     default_image: "/images/products/classic_run/STS203SSS/default.jpg"
     price: 220
 images:
+  -
+    path: "/images/products/classic_run/STS220BNG/STS220BNG_01@2400px.jpg"
+    title: Classic Run (Steel Blue/Navy/Light Gray)
+  -
+    path: "/images/products/classic_run/STS220YGG/STS220YGG_01@2400px.jpg"
+    title: Classic Run (Yellow/Lawn Green/Light Gray)
+  -
+    path: "/images/products/classic_run/STS120BBG/STS120BBG_01@2400px.jpg"
+    title: Classic Run (Steel Blue/Medium Blue/Light Gray)
   -
     path: "/images/products/classic_run/misc/classic_run_group02@2500px.jpg"
     title: "Classic Run"
