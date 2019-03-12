@@ -65,20 +65,20 @@ colors:
     price: 200
 images:
   -
-    path: "/images/products/integer_walk_rebound/GLS410SSW/GLS410SSW_02@2400px.jpg"
+    path: "/images/products/integer_walk_rebound/GLS410SSW/GLS410SSW_06@2400px.jpg"
     title: "Integer Walk Rebound (Silver/Snow/White)"
   -
-    path: "/images/products/integer_walk_rebound/GLS310SRW/GLS310SRW_01@2400px.jpg"
-    title: "Integer Walk Rebound W (Silver/Red/White)"
-  -
-    path: "/images/products/integer_walk_rebound/GLS410LLG/GLS410LLG_01@2400px.jpg"
-    title: "Integer Walk Rebound (Lakritze/Gray)"
+    path: "/images/products/integer_walk_rebound/GLS410CNW/GLS410CNW_01@2400px.jpg"
+    title: "Integer Walk Rebound W (Cornflower Blue/Navy/White)"
   -
     path: "/images/products/integer_walk_rebound/GLS410SSW/GLS410SSW_03@2400px.jpg"
     title: "Integer Walk Rebound (Silver/Snow/White)"
   -
     path: "/images/products/integer_walk_rebound/GLS410SSW/GLS410SSW_05@2400px.jpg"
     title: "Integer Walk Rebound (Silver/Snow/White)"
+  -
+    path: "/images/products/integer_walk_rebound/GLS410DWG/GLS410DWG_01@2400px.jpg"
+    title: "Integer Walk Rebound (Dark Gray/Wheat/Gray)"
   -
     path: "/images/products/integer_walk_rebound/GLS410LLG/GLS410LLG_02@2400px.jpg"
     title: "Integer Walk Rebound (Lakritze/Gray)"
