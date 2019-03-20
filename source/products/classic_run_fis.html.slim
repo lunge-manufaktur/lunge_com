@@ -47,6 +47,11 @@ sitemap_changefreq: daily
               small inkl. Mwst., versandkostenfrei innerhalb Deutschlands
             .add-to-cart-button__container
               button.buy-button.js-prevent-cart-listener.add-button In den Warenkorb
+            .alternative-product__container
+              span
+                | Als Alternative empfehlen wir den 
+                = link_to "Classic Run", "/products/classic_run", class: "link"
+                |  in der neuen 2019-Fassung, welcher mit seiner abriebfesteren Außensohle über sämtliche Qualitäten des bisherigen Classic Run Fis verfügt.
             .product__sizing
               = partial "partials/size_guide_note"
 

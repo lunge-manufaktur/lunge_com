@@ -29,6 +29,7 @@ a.link {
   }
 }
 
+span a.link,
 p a.link {
   @include transition;
   font-weight: 700;

@@ -61,7 +61,9 @@ $(function() {
     'Classic Run W (Rot/Weiß)',
     'Classic Run W (Royal/Weiß)',
     'Classic Run W (Grün/Weiß)',
-    'Feetality (Schwarz / Glatt)'
+    'Feetality (Schwarz / Glatt)',
+    'Classic Run Fis (Anthrazit/Blau/Weiß)',
+    'Classic Run Fis W (Anthrazit/Blau/Weiß)'
   ]
   
   //grab collection ID from div.collection#collection-id in HTML
@@ -246,6 +248,8 @@ $(function() {
     $('.add-to-cart-button__container').html(
       '<button class="buy-button js-prevent-cart-listener add-button" data-product-id=' + product + ' data-variant-id=' + variant + '>In den Warenkorb</button><div class="availability-note"><div class="availability-note__indicator"></div><div class="availability-note__text">Sofort lieferbar</div></div>'
     );
+
+    $('.alternative-product__container').hide();
   }
 
   // show restock notification form
@@ -262,6 +266,8 @@ $(function() {
       '</form>' +
       '<div id="restock-notification-message"></div>'
     )
+
+    $('.alternative-product__container').hide();
   }
 
   function showDiscontinuedNotice() {
@@ -269,8 +275,10 @@ $(function() {
     
     $('.add-to-cart-button__container').html(
       '<h4>Nicht mehr verfügbar</h4>' +
-      '<p>' + instructions + '</p>'
-    )
+      '<span>' + instructions + '</span>'
+    );
+
+    $('.alternative-product__container').show();
   }
 
 
