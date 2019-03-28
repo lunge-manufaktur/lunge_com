@@ -18,40 +18,42 @@ sitemap_changefreq: daily
           .product__figure
             .product__image-container
               img.product__image
-            ul.product-feature
-              = partial "partials/product-features/vegan"
-              = partial "partials/product-features/non-toxic"
-              = partial "partials/product-features/made_in_germany"
-              = partial "partials/product-features/resole"
+            .product__features
+              ul.product-feature
+                = partial "partials/product-features/vegan"
+                = partial "partials/product-features/non-toxic"
+                = partial "partials/product-features/made_in_germany"
+                = partial "partials/product-features/resole"
+            = partial "partials/product_attributes", locals: { product: "classic_run" }
           .product__details
-            h1 Classic Run
-            p The proven choice for runners - constantly improved and developed for years the Classic Run is a running shoe of highest quality.
-            h4 Buy now
-            .input-group
-              label Women / Men
-              .gender-select__container
-                select.product__option.gender-select
-                  option value=184953861 Men
-                  option value=184953989 Women
-            .input-group
-              label Color
-              .product-select__container
-                select.product__option.product-select
-            .input-group
-              label Size (Feet length / US / EUR)
-              .variant-select__container
-                select.product__option.variant-select
-            .variant-price__container
-              h2.variant-price
-            .add-to-cart-button__container
-              button.buy-button.js-prevent-cart-listener.add-button Add To Cart
-            .product__sizing
-              p
-                span
-                  | In order to find the right size, we strongly recommend to measure the length of your feet and opt for the size that corresponds to your measured length. Please check our 
-                = link_to "size guide", "/en/support/sizes/", class: "link"
-                span
-                  |  to find the recommended foot length for each size and learn how to measure correctly.
+            .product__title
+              h1 Classic Run
+            .product__description
+              p The proven choice for runners - constantly improved and developed for years the Classic Run is a running shoe of highest quality.
+            .product__order-form
+              h4 Buy now
+              .input-group
+                label Women / Men
+                .gender-select__container
+                  select.product__option.gender-select
+                    option value=184953861 Men
+                    option value=184953989 Women
+              .input-group
+                label Color
+                .product-select__container
+                  select.product__option.product-select
+                  span
+                    small Update 2019: Now with much more resistant outer sole and improved mesh.
+              .input-group
+                label Size (Feet length / US / EUR)
+                .variant-select__container
+                  select.product__option.variant-select
+              .variant-price__container
+                h2.variant-price
+              .add-to-cart-button__container
+                button.buy-button.js-prevent-cart-listener.add-button Add To Cart
+              .product__sizing
+                = partial "partials/size_guide_note"
 
 .panel
   .content
@@ -154,10 +156,10 @@ script type="application/ld+json"
   |   "@context" : "http://schema.org",
   |   "@type" : "Product",
   |   "name" : "Classic Run",
-  |   "image" : "https://www.lunge.com/images/products/classic_run/sts203swr/default.png",
-  |   "description" : "Der Klassiker in unserem Sortiment und Geheimtipp anspruchsvoller Läufer. Der Classic Run hat sich über Jahre als Laufschuh der Extraklasse bewährt und wurde dennoch stetig verbessert.",
+  |   "image" : "https://www.lunge.com/images/products/classic_run/STS220BNG/default.png",
+  |   "description" : "The proven choice for runners - constantly improved and developed for years the Classic Run is a running shoe of highest quality.",
   |   "brand": {
-  |     "@type": "Thing",
+  |     "@type": "Brand",
   |     "name": "Lunge"
   |   },
   |   "offers" : {

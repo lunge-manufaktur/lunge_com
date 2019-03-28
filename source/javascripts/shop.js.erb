@@ -258,11 +258,11 @@ $(function() {
     var instructions = 'Diese Variante ist vorübergehend ausverkauft. Bitte Wählen Sie eine andere Farbe/Größe oder lassen Sie sich benachrichtigen sobald sie wieder verfügbar ist:'
 
     $('.add-to-cart-button__container').html(
-      '<h4>Bald wieder verfügbar</h4>' +
+      '<h4>Bald wieder verfügbar. Jetzt benachrichtigen lassen.</h4>' +
       '<p class="restock__message">' + instructions + '</p>' +
       '<form class="inline-form" id="restock-notification-form">' +
-        '<input type="email" class="restock__email" placeholder="E-Mail" id="customer-email">' +
-        '<input type="submit" class="restock__submit" value="Benachrichtigen">' +
+        '<input type="email" class="restock__email" placeholder="E-Mail" id="customer-email" size=15>' +
+        '<input type="submit" class="restock__submit" value="OK">' +
       '</form>' +
       '<div id="restock-notification-message"></div>'
     )

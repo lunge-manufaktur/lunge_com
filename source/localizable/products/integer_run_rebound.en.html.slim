@@ -17,35 +17,39 @@ sitemap_changefreq: daily
           .product__figure
             .product__image-container
               img.product__image
-            ul.product-feature
-              = partial "partials/product-features/vegan"
-              = partial "partials/product-features/non-toxic"
-              = partial "partials/product-features/made_in_germany"
+            .product__features
+              ul.product-feature
+                = partial "partials/product-features/vegan"
+                = partial "partials/product-features/non-toxic"
+                = partial "partials/product-features/made_in_germany"
             = partial "partials/product_attributes", locals: { product: "integer_run_rebound" }
           .product__details
-            h1 Integer Run Rebound
-            p = data.products.integer_run_rebound.short_description_en
-            h4 Order now
-            .input-group
-              label Women / Men
-              .gender-select__container
-                select.product__option.gender-select
-                  option value=40527036452 Herren
-                  option value=40527069220 Damen
-            .input-group
-              label Color
-              .product-select__container
-                select.product__option.product-select
-            .input-group
-              label Size (Foot length / US / EUR)
-              .variant-select__container
-                select.product__option.variant-select
-            .variant-price__container
-              h2.variant-price
-            .add-to-cart-button__container
-              button.buy-button.js-prevent-cart-listener.add-button Add to cart
-            .product__sizing
-              = partial "partials/size_guide_note"
+            .product__title
+              h1 Integer Run Rebound
+            .product__description
+              p = data.products.integer_run_rebound.short_description_en
+            .product__order-form
+              h4 Order now
+              .input-group
+                label Women / Men
+                .gender-select__container
+                  select.product__option.gender-select
+                    option value=40527036452 Herren
+                    option value=40527069220 Damen
+              .input-group
+                label Color
+                .product-select__container
+                  select.product__option.product-select
+              .input-group
+                label Size (Foot length / US / EUR)
+                .variant-select__container
+                  select.product__option.variant-select
+              .variant-price__container
+                h2.variant-price
+              .add-to-cart-button__container
+                button.buy-button.js-prevent-cart-listener.add-button Add to cart
+              .product__sizing
+                = partial "partials/size_guide_note"
 
 .gallery.scroll--horizontal
   - data.products.integer_run_rebound.images.each do |image|
@@ -134,8 +138,8 @@ script type="application/ld+json"
   |   "@context": "http://schema.org",
   |   "@type": "Product",
   |   "name": "Integer Run Rebound",
-  |   "image": "https://www.lunge.com/images/products/integer_run_rebound/STS410DLW/default.png",
-  |   "description": "Komfortabler Laufschuh mit einzigartiger Rückfederung.",
+  |   "image": "https://www.lunge.com/images/products/integer_run_rebound/STS410DNW/default.png",
+  |   "description": "Comfortable and efficient runnig shoes with exceptional rebound characteristics.",
   |   "brand": {
   |     "@type": "Brand",
   |     "name": "Lunge"

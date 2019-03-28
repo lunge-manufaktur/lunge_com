@@ -17,36 +17,40 @@ sitemap_changefreq: daily
           .product__figure
             .product__image-container
               img.product__image
-            ul.product-feature
-              = partial "partials/product-features/vegan"
-              = partial "partials/product-features/non-toxic"
-              = partial "partials/product-features/made_in_germany"
-              = partial "partials/product-features/resole"
+            .product__features
+              ul.product-feature
+                = partial "partials/product-features/vegan"
+                = partial "partials/product-features/non-toxic"
+                = partial "partials/product-features/made_in_germany"
+                = partial "partials/product-features/resole"
+            = partial "partials/product_attributes", locals: { product: "integer_walk_cushion" }
           .product__details
-            h1 Integer Walk Cushion
-            p Versatile and comfortable walking shoes that turn any extra mile into a breeze.
-            h4 Select your color and size
-            .input-group
-              label Men / Women
-              .gender-select__container
-                select.product__option.gender-select
-                  option value=17836671012 Men
-                  option value=17844731940 Women
-            .input-group
-              label Color
-              .product-select__container
-                select.product__option.product-select
-            .input-group
-              label Size (Foot length / US / EUR)
-              .variant-select__container
-                select.product__option.variant-select
-            .variant-price__container
-              h2.variant-price
-            .add-to-cart-button__container
-              button.buy-button.js-prevent-cart-listener.add-button Add to cart
-            .product__sizing
-              p
-                = link_to "We stronlgy recommend to select the size that corresponds to the length of your feet. Learn more in our sizing guide.", "/en/support/sizes/", class: "link"
+            .product__title
+              h1 Integer Walk Cushion
+            .product__description
+              p Versatile and comfortable walking shoes that turn any extra mile into a breeze.
+            .product__order-form
+              h4 Select your color and size
+              .input-group
+                label Men / Women
+                .gender-select__container
+                  select.product__option.gender-select
+                    option value=17836671012 Men
+                    option value=17844731940 Women
+              .input-group
+                label Color
+                .product-select__container
+                  select.product__option.product-select
+              .input-group
+                label Size (Foot length / US / EUR)
+                .variant-select__container
+                  select.product__option.variant-select
+              .variant-price__container
+                h2.variant-price
+              .add-to-cart-button__container
+                button.buy-button.js-prevent-cart-listener.add-button Add to cart
+              .product__sizing
+                = partial "partials/size_guide_note"
 
 .panel
   .content
@@ -193,7 +197,7 @@ script type="application/ld+json"
   |   "@type": "Product",
   |   "name": "Integer Walk Cushion",
   |   "image": "https://www.lunge.com/images/products/integer_walk_cushion/GLS400OGG/default.png",
-  |   "description": "Leichter und bequemer Walking-Schuh für alle, die länger auf den Beinen sind.",
+  |   "description": "Versatile and comfortable walking shoes that turn any extra mile into a breeze.",
   |   "brand": {
   |     "@type": "Brand",
   |     "name": "Lunge"

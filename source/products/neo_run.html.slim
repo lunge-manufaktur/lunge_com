@@ -17,42 +17,41 @@ sitemap_changefreq: daily
           .product__figure
             .product__image-container
               img.product__image
-            ul.product-feature
-              = partial "partials/product-features/vegan"
-              = partial "partials/product-features/non-toxic"
-              = partial "partials/product-features/made_in_germany"
+            .product__features
+              ul.product-feature
+                = partial "partials/product-features/vegan"
+                = partial "partials/product-features/non-toxic"
+                = partial "partials/product-features/made_in_germany"
             = partial "partials/product_attributes", locals: { product: "neo_run" }
           .product__details
-            h1 Neo Run
-            = partial "partials/video_link", locals: { product_name: "Neo Run" }
-            p = data.products.neo_run.short_description
-            h4 Jetzt bestellen
-            .input-group
-              label Damen / Herren
-              .gender-select__container
-                select.product__option.gender-select
-                  option value=208119173 Herren
-                  option value=208126213 Damen
-            .input-group
-              label Farbe
-              .product-select__container
-                select.product__option.product-select
-            .input-group
-              label Größe (Fusslänge / US / EUR)
-              .variant-select__container
-                select.product__option.variant-select
-            .variant-price__container
-              h2.variant-price
-              small inkl. Mwst., versandkostenfrei innerhalb Deutschlands
-            .add-to-cart-button__container
-              button.buy-button.js-prevent-cart-listener.add-button In den Warenkorb
-            .product__sizing
-              p
-                span
-                  | Um die passende Größe zu finden, wählen Sie Ihre Schuhe bitte anhand der empfohlenen Fusslänge aus. Schauen Sie sich unsere 
-                = link_to "Größentabelle", "/support/sizes/", class: "link"
-                span
-                  |  an um mehr über unsere Größen und das korrekte Messen Ihrer Fusslänge zu erfahren.
+            .product__title
+              h1 Neo Run
+            .product__description
+              = partial "partials/video_link", locals: { product_name: "Neo Run" }
+              p = data.products.neo_run.short_description
+            .product__order-form
+              h4 Jetzt bestellen
+              .input-group
+                label Damen / Herren
+                .gender-select__container
+                  select.product__option.gender-select
+                    option value=208119173 Herren
+                    option value=208126213 Damen
+              .input-group
+                label Farbe
+                .product-select__container
+                  select.product__option.product-select
+              .input-group
+                label Größe (Fusslänge / US / EUR)
+                .variant-select__container
+                  select.product__option.variant-select
+              .variant-price__container
+                h2.variant-price
+                small inkl. Mwst., versandkostenfrei innerhalb Deutschlands
+              .add-to-cart-button__container
+                button.buy-button.js-prevent-cart-listener.add-button In den Warenkorb
+              .product__sizing
+                = partial "partials/size_guide_note"
     #video.anchor-target
 
 = partial "partials/video_card", locals: { youtube_id: "1t8Rp3zKbFQ", product_name: "Neo Run" }
@@ -146,7 +145,7 @@ script type="application/ld+json"
   |   "@context": "http://schema.org",
   |   "@type": "Product",
   |   "name": "Neo Run",
-  |   "image": "https://www.lunge.com/images/products/neo_run/lts213lll/neo_run_LTS213LLL_default.png",
+  |   "image": "https://www.lunge.com/images/products/neo_run/LTS213LLL/default.png",
   |   "description": "Der Neo Run von Lunge ist ein neutraler Laufschuh mit äußerst komfortabler Federung und hervorragendem Tragekomfort.",
   |   "brand": {
   |     "@type": "Brand",

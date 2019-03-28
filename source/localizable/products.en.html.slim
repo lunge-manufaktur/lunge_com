@@ -15,8 +15,20 @@ lang: en
     .content.content--narrow
       h1.text-center Products
       p Whether you're interested in running or everyday use - Lunge offers finest shoes and insoles for any use case.
+      ul.inline-list.inline-list--center
+        li
+          h4 = link_to "Integer Serie", "#integer-series", class: "link"
+        li
+          h4 = link_to "Classic Serie", "#classic-series", class: "link"
+        li
+          h4 = link_to "Neo Serie", "#neo-series", class: "link"
+        li
+          h4 = link_to "Zubehör", "#accessories", class: "link"
 
-.panel
+.panel.anchor-target#integer-series
+  .content.content--narrow
+    h2 Integer Series
+    p Running and everyday shoes that feature a unique, highly efficient sole material offers comfortable, springy rebound with every single step easier - whether it's right before the finish line or at the end of a long day.
   .content
     .card__container
       = link_to "/en/products/#{data.products.integer_run_rebound.slug}/", class: "card", data: { product: "integer_run_rebound" } do
@@ -47,46 +59,19 @@ lang: en
             = partial "partials/product_attributes", locals: { product: "integer_walk_rebound" }
         .notice.notice--alarm.notice--top-right New colors
 
-      = link_to "/en/products/#{data.products.classic_run.slug}/", class: "card", data: { product: "classic_run" } do
+      = link_to "/en/products/integer_walk_rebound_leather/", class: "card", data: { product: "integer_walk_rebound_leder" } do
         .card__figure
-          = image_tag data.products.classic_run.default_image, class: "card__image", alt: "Integer Run Rebound"
+          = image_tag data.products.integer_walk_rebound_leder.default_image, class: "card__image", alt: "Integer Run Rebound Leather"
           .card__color-options
-            = partial "partials/color_options", locals: { product: "classic_run" } 
+            = partial "partials/color_options", locals: { product: "integer_walk_rebound_leder" } 
         .card__body
           .card__description
-            h2.marginless--top = data.products.classic_run.name
-            h4.card__price = "€ #{data.products.classic_run.price},-"
-            p = data.products.classic_run.short_description_en
+            h2.marginless--top = data.products.integer_walk_rebound_leder.name
+            h4.card__price = "€ #{data.products.integer_walk_rebound_leder.price},-"
+            p = data.products.integer_walk_rebound_leder.short_description_en
           .card__attributes
-            = partial "partials/product_attributes", locals: { product: "classic_run" }
-        .notice.notice--top-right Popular
-
-      = link_to "/en/products/#{data.products.classic_walk.slug}/", class: "card", data: { product: "classic_walk" } do
-        .card__figure
-          = image_tag data.products.classic_walk.default_image, class: "card__image", alt: "Integer Run Rebound"
-          .card__color-options
-            = partial "partials/color_options", locals: { product: "classic_walk" } 
-        .card__body
-          .card__description
-            h2.marginless--top = data.products.classic_walk.name
-            h4.card__price = "ab € #{data.products.classic_walk.price},-"
-            p = data.products.classic_walk.short_description_en
-          .card__attributes
-            = partial "partials/product_attributes", locals: { product: "classic_walk" }
-        .notice.notice--top-right Updated
-
-      = link_to "/en/products/#{data.products.neo_run.slug}/", class: "card", data: { product: "neo_run" } do
-        .card__figure
-          = image_tag data.products.neo_run.default_image, class: "card__image", alt: "Integer Run Rebound"
-          .card__color-options
-            = partial "partials/color_options", locals: { product: "neo_run" } 
-        .card__body
-          .card__description
-            h2.marginless--top = data.products.neo_run.name
-            h4.card__price = "€ #{data.products.neo_run.price},-"
-            p = data.products.neo_run.short_description_en
-          .card__attributes
-            = partial "partials/product_attributes", locals: { product: "neo_run" }
+            = partial "partials/product_attributes", locals: { product: "integer_walk_rebound" }
+        .notice.notice--alarm.notice--top-right New
 
       = link_to "/en/products/#{data.products.integer_walk_cushion.slug}/", class: "card", data: { product: "integer_walk_cushion" } do
         .card__figure
@@ -101,18 +86,39 @@ lang: en
           .card__attributes
             = partial "partials/product_attributes", locals: { product: "integer_walk_cushion" }
 
-      = link_to "/en/products/#{data.products.neo_walk.slug}/", class: "card", data: { product: "neo_walk" } do
+.panel.anchor-target#classic-series
+  .content.content--narrow
+    h2 Classic Series
+    p Our timelessly popular choice: Established more than 10 years ago and still improving, our Classic models impress with their unique sole construction, controlled foot guidance and excellent impact and rolling characteristics - on and off the running track.
+  .content
+    .card__container
+      = link_to "/en/products/#{data.products.classic_walk.slug}/", class: "card", data: { product: "classic_walk" } do
         .card__figure
-          = image_tag data.products.neo_walk.default_image, class: "card__image", alt: "Integer Run Rebound"
+          = image_tag data.products.classic_walk.default_image, class: "card__image", alt: "Integer Run Rebound"
           .card__color-options
-            = partial "partials/color_options", locals: { product: "neo_walk" } 
+            = partial "partials/color_options", locals: { product: "classic_walk" } 
         .card__body
           .card__description
-            h2.marginless--top = data.products.neo_walk.name
-            h4.card__price = "€ #{data.products.neo_walk.price},-"
-            p = data.products.neo_walk.short_description_en
+            h2.marginless--top = data.products.classic_walk.name
+            h4.card__price = "ab € #{data.products.classic_walk.price},-"
+            p = data.products.classic_walk.short_description_en
           .card__attributes
-            = partial "partials/product_attributes", locals: { product: "neo_walk" }
+            = partial "partials/product_attributes", locals: { product: "classic_walk" }
+        .notice.notice--top-right Updated
+
+      = link_to "/en/products/#{data.products.classic_run.slug}/", class: "card", data: { product: "classic_run" } do
+        .card__figure
+          = image_tag data.products.classic_run.default_image, class: "card__image", alt: "Integer Run Rebound"
+          .card__color-options
+            = partial "partials/color_options", locals: { product: "classic_run" } 
+        .card__body
+          .card__description
+            h2.marginless--top = data.products.classic_run.name
+            h4.card__price = "€ #{data.products.classic_run.price},-"
+            p = data.products.classic_run.short_description_en
+          .card__attributes
+            = partial "partials/product_attributes", locals: { product: "classic_run" }
+        .notice.notice--top-right Updated
 
       = link_to "/en/products/#{data.products.classic_run_fis.slug}/", class: "card", data: { product: "classic_run_fis" } do
         .card__figure
@@ -127,7 +133,42 @@ lang: en
           .card__attributes
             = partial "partials/product_attributes", locals: { product: "classic_run_fis" }
 
+.panel.anchor-target#neo-series
+  .content.content--narrow
+    h2 Neo series
+    p Lightweight, flexible neutral shoes with innovative PU midsole for extremely dynamic, efficient running characteristics.
+  .content
+    .card__container
+      = link_to "/en/products/#{data.products.neo_run.slug}/", class: "card", data: { product: "neo_run" } do
+        .card__figure
+          = image_tag data.products.neo_run.default_image, class: "card__image", alt: "Integer Run Rebound"
+          .card__color-options
+            = partial "partials/color_options", locals: { product: "neo_run" } 
+        .card__body
+          .card__description
+            h2.marginless--top = data.products.neo_run.name
+            h4.card__price = "€ #{data.products.neo_run.price},-"
+            p = data.products.neo_run.short_description_en
+          .card__attributes
+            = partial "partials/product_attributes", locals: { product: "neo_run" }
 
+      = link_to "/en/products/#{data.products.neo_walk.slug}/", class: "card", data: { product: "neo_walk" } do
+        .card__figure
+          = image_tag data.products.neo_walk.default_image, class: "card__image", alt: "Integer Run Rebound"
+          .card__color-options
+            = partial "partials/color_options", locals: { product: "neo_walk" } 
+        .card__body
+          .card__description
+            h2.marginless--top = data.products.neo_walk.name
+            h4.card__price = "€ #{data.products.neo_walk.price},-"
+            p = data.products.neo_walk.short_description_en
+          .card__attributes
+            = partial "partials/product_attributes", locals: { product: "neo_walk" }
+
+.panel.anchor-target#accessories
+  .content
+    h2 Accessoires
+    .card__container
       = link_to "/en/products/#{data.products.feetality.slug}/", class: "card", data: { product: "feetality" } do
         .card__figure
           = image_tag data.products.feetality.default_image, class: "card__image", alt: "Integer Run Rebound"
@@ -135,7 +176,7 @@ lang: en
             = partial "partials/color_options", locals: { product: "feetality" } 
         .card__body
           .card__description
-            h2.marginless--top = data.products.feetality.name
+            h2.marginless--top Feetality Insoles
             h4.card__price = "€ #{data.products.feetality.price},-"
             p = data.products.feetality.short_description_en
 

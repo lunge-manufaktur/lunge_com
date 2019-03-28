@@ -19,27 +19,30 @@ sitemap_changefreq: daily
               img.product__image
             .product__notice Unsere Schuhe werden bereits inklusive Feetality Einlegesohle ausgeliefert.
           .product__details
-            h1 Feetality Einlegesohlen
-            p = data.products.feetality.short_description
-            h4 Jetzt bestellen
-            .input-group.visuallyhidden
-              label Damen / Herren
-              .gender-select__container
-                select.product__option.gender-select
-                  option value=185224645 Unisex
-            .input-group
-              label Farbe
-              .product-select__container
-                select.product__option.product-select
-            .input-group
-              label Größe (Fusslänge / US / EUR)
-              .variant-select__container
-                select.product__option.variant-select
-            .variant-price__container
-              h2.variant-price
-              small inkl. Mwst., versandkostenfrei innerhalb Deutschlands
-            .add-to-cart-button__container
-              button.buy-button.js-prevent-cart-listener.add-button In den Warenkorb
+            .product__title
+              h1 Feetality Einlegesohlen
+            .product__description
+              p = data.products.feetality.short_description
+            .product__order-form
+              h4 Jetzt bestellen
+              .input-group.visuallyhidden
+                label Damen / Herren
+                .gender-select__container
+                  select.product__option.gender-select
+                    option value=185224645 Unisex
+              .input-group
+                label Farbe
+                .product-select__container
+                  select.product__option.product-select
+              .input-group
+                label Größe (Fusslänge / US / EUR)
+                .variant-select__container
+                  select.product__option.variant-select
+              .variant-price__container
+                h2.variant-price
+                small inkl. Mwst., versandkostenfrei innerhalb Deutschlands
+              .add-to-cart-button__container
+                button.buy-button.js-prevent-cart-listener.add-button In den Warenkorb
 
 
 .panel.panel--odd
@@ -98,7 +101,7 @@ sitemap_changefreq: daily
             br
             span US Women 6 - 14
       .col-xs-12.col-sm-6
-        = partial "products/add_to_cart_help"
+        = partial "partials/add_to_cart_help"
 
 script type="application/ld+json"
   | {

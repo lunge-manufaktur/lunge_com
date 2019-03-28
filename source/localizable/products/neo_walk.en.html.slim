@@ -17,34 +17,39 @@ sitemap_changefreq: daily
           .product__figure
             .product__image-container
               img.product__image
-            ul.product-feature
-              = partial "partials/product-features/vegan"
-              = partial "partials/product-features/non-toxic"
-              = partial "partials/product-features/made_in_germany"
+            .product__features
+              ul.product-feature
+                = partial "partials/product-features/vegan"
+                = partial "partials/product-features/non-toxic"
+                = partial "partials/product-features/made_in_germany"
+            = partial "partials/product_attributes", locals: { product: "neo_run" }
           .product__details
-            h1 Neo Walk
-            p = data.products.neo_walk.short_description_en
-            h4 Jetzt bestellen
-            .input-group
-              label Men / Women
-              .gender-select__container
-                select.product__option.gender-select
-                  option value=391366793 Men
-                  option value=391367049 Women
-            .input-group
-              label Color
-              .product-select__container
-                select.product__option.product-select
-            .input-group
-              label Size (foot length / US / EUR)
-              .variant-select__container
-                select.product__option.variant-select
-            .variant-price__container
-              h2.variant-price
-            .add-to-cart-button__container
-              button.buy-button.js-prevent-cart-listener.add-button In den Warenkorb
-            .product__sizing
-              = partial "partials/size_guide_note"
+            .product__title
+              h1 Neo Walk
+            .product__description
+              p = data.products.neo_walk.short_description_en
+            .product__order-form
+              h4 Jetzt bestellen
+              .input-group
+                label Men / Women
+                .gender-select__container
+                  select.product__option.gender-select
+                    option value=391366793 Men
+                    option value=391367049 Women
+              .input-group
+                label Color
+                .product-select__container
+                  select.product__option.product-select
+              .input-group
+                label Size (foot length / US / EUR)
+                .variant-select__container
+                  select.product__option.variant-select
+              .variant-price__container
+                h2.variant-price
+              .add-to-cart-button__container
+                button.buy-button.js-prevent-cart-listener.add-button In den Warenkorb
+              .product__sizing
+                = partial "partials/size_guide_note"
 
 .panel
   .content
@@ -135,7 +140,7 @@ script type="application/ld+json"
   |   },
   |   "offers": {
   |     "@type": "Offer",
-  |     "price": "180.00",
+  |     "price": "160.00",
   |     "priceCurrency": "EUR",
   |     "availability": "InStock"
   |   }

@@ -24,39 +24,37 @@ sitemap_changefreq: daily
               = partial "partials/product-features/resole"
             = partial "partials/product_attributes", locals: { product: "classic_run" }
           .product__details
-            h1 Classic Run
-            = partial "partials/video_link", locals: { product_name: "Classic Run" }
-            p Der Klassiker in unserem Sortiment und Geheimtipp anspruchsvoller Läufer. Der Classic Run hat sich über Jahre als Laufschuh der Extraklasse bewährt und wurde dennoch stetig verbessert. Ein Laufschuh, der durch sein einzigartiges Sohlendesign, hochwertigste Materialien, höchsten Komfort und kompromisslose Funktionalität überzeugt.
-            h4 Jetzt bestellen
-            .input-group
-              label Damen / Herren
-              .gender-select__container
-                select.product__option.gender-select
-                  option value=184953861 Herren
-                  option value=184953989 Damen
-            .input-group
-              label Farbe
-              .product-select__container
-                select.product__option.product-select
-                span
-                  small Update 2019: Jetzt mit neuer, abriebfesterer Sohle und neuem Obermaterial.
-            .input-group
-              label Größe (Fusslänge / US / EUR)
-              .variant-select__container
-                select.product__option.variant-select
-            .variant-price__container
-              h2.variant-price
-              small inkl. Mwst., versandkostenfrei innerhalb Deutschlands
-            .add-to-cart-button__container
-              button.buy-button.js-prevent-cart-listener.add-button In den Warenkorb
-            .product__sizing
-              p
-                span
-                  | Um die passende Größe zu finden, wählen Sie Ihre Schuhe bitte anhand der empfohlenen Fusslänge aus. Schauen Sie sich unsere 
-                = link_to "Größentabelle", "/support/sizes/", class: "link"
-                span
-                  |  an um mehr über unsere Größen und das korrekte Messen Ihrer Fusslänge zu erfahren.
-    #video.anchor-target
+            .product__title
+              h1 Classic Run
+            .product__description
+              = partial "partials/video_link", locals: { product_name: "Classic Run" }
+              p Der Klassiker in unserem Sortiment und Geheimtipp anspruchsvoller Läufer. Der Classic Run hat sich über Jahre als Laufschuh der Extraklasse bewährt und wurde dennoch stetig verbessert. Ein Laufschuh, der durch sein einzigartiges Sohlendesign, hochwertigste Materialien, höchsten Komfort und kompromisslose Funktionalität überzeugt.
+            .product__order-form
+              h4 Jetzt bestellen
+              .input-group
+                label Damen / Herren
+                .gender-select__container
+                  select.product__option.gender-select
+                    option value=184953861 Herren
+                    option value=184953989 Damen
+              .input-group
+                label Farbe
+                .product-select__container
+                  select.product__option.product-select
+                  span
+                    small Update 2019: Jetzt mit neuer, abriebfesterer Sohle und neuem Obermaterial.
+              .input-group
+                label Größe (Fusslänge / US / EUR)
+                .variant-select__container
+                  select.product__option.variant-select
+              .variant-price__container
+                h2.variant-price
+                small inkl. Mwst., versandkostenfrei innerhalb Deutschlands
+              .add-to-cart-button__container
+                button.buy-button.js-prevent-cart-listener.add-button In den Warenkorb
+              .product__sizing
+                = partial "partials/size_guide_note"
+      #video.anchor-target
 
 = partial "partials/video_card", locals: { youtube_id: "rteugRmdqCc", product_name: "Classic Run" }
 

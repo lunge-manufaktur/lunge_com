@@ -18,36 +18,45 @@ sitemap_changefreq: daily
           .product__figure
             .product__image-container
               img.product__image
-            ul.product-feature
-              = partial "partials/product-features/vegan"
-              = partial "partials/product-features/non-toxic"
-              = partial "partials/product-features/made_in_germany"
-              = partial "partials/product-features/resole"
+            .product__features
+              ul.product-feature
+                = partial "partials/product-features/vegan"
+                = partial "partials/product-features/non-toxic"
+                = partial "partials/product-features/made_in_germany"
+                = partial "partials/product-features/resole"
             = partial "partials/product_attributes", locals: { product: "classic_run_fis" }
           .product__details
-            h1 = data.products.classic_run_fis.name
-            p = data.products.classic_run_fis.short_description_en
-            h4 Buy now
-            .input-group
-              label Men / Women
-              .gender-select__container
-                select.product__option.gender-select
-                  option value=184955653 Men
-                  option value=184378629 Women
-            .input-group
-              label Color
-              .product-select__container
-                select.product__option.product-select
-            .input-group
-              label Size (foot length / US / EUR)
-              .variant-select__container
-                select.product__option.variant-select
-            .variant-price__container
-              h2.variant-price
-            .add-to-cart-button__container
-              button.buy-button.js-prevent-cart-listener.add-button Add to cart
-            .product__sizing
-              = partial "partials/size_guide_note"
+            .product__title
+              h1 = data.products.classic_run_fis.name
+            .product__description
+              p = data.products.classic_run_fis.short_description_en
+            .product__order-form
+              h4 Buy now
+              .input-group
+                label Men / Women
+                .gender-select__container
+                  select.product__option.gender-select
+                    option value=184955653 Men
+                    option value=184378629 Women
+              .input-group
+                label Color
+                .product-select__container
+                  select.product__option.product-select
+              .input-group
+                label Size (foot length / US / EUR)
+                .variant-select__container
+                  select.product__option.variant-select
+              .variant-price__container
+                h2.variant-price
+              .add-to-cart-button__container
+                button.buy-button.js-prevent-cart-listener.add-button Add to cart
+              .alternative-product__container
+                span
+                  | We recommend the new and improved 2019 update of the 
+                  = link_to "Classic Run", "/en/products/classic_run", class: "link"
+                  |  as successor to the discontinued Classic Run Fis.
+              .product__sizing
+                = partial "partials/size_guide_note"
 
 .panel.panel--odd.panel--reverse
   .panel__inner.content
@@ -121,7 +130,7 @@ script type="application/ld+json"
   |   "@context": "http://schema.org",
   |   "@type": "Product",
   |   "name": "Classic Run Fis",
-  |   "image": "https://www.lunge.com/images/products/classic_run_fis/stw200abb/default.png",
+  |   "image": "https://www.lunge.com/images/products/classic_run_fis/STW200ABB/default.png",
   |   "description": "Not every run is a walk in the park, but the Classic Run Fis offers excellent grip even off-road and on the most unforgiving terrain.",
   |   "brand": {
   |     "@type": "Brand",

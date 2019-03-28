@@ -17,35 +17,39 @@ sitemap_changefreq: daily
           .product__figure
             .product__image-container
               img.product__image
-            ul.product-feature
-              = partial "partials/product-features/vegan"
-              = partial "partials/product-features/non-toxic"
-              = partial "partials/product-features/made_in_germany"
+            .product__features
+              ul.product-feature
+                = partial "partials/product-features/vegan"
+                = partial "partials/product-features/non-toxic"
+                = partial "partials/product-features/made_in_germany"
             = partial "partials/product_attributes", locals: { product: "integer_walk_rebound" }
           .product__details
-            h1 Integer Walk Rebound
-            p = data.products.integer_walk_rebound.short_description_en
-            h4 Order now
-            .input-group
-              label Women / Men
-              .gender-select__container
-                select.product__option.gender-select
-                  option value=40527134756 Herren
-                  option value=40527167524 Damen
-            .input-group
-              label Farbe
-              .product-select__container
-                select.product__option.product-select
-            .input-group
-              label Size (Foot length / US / EUR)
-              .variant-select__container
-                select.product__option.variant-select
-            .variant-price__container
-              h2.variant-price
-            .add-to-cart-button__container
-              button.buy-button.js-prevent-cart-listener.add-button Add to cart
-            .product__sizing
-              = partial "partials/size_guide_note"
+            .product__title
+              h1 Integer Walk Rebound
+            .product__description
+              p = data.products.integer_walk_rebound.short_description_en
+            .product__order-form
+              h4 Order now
+              .input-group
+                label Women / Men
+                .gender-select__container
+                  select.product__option.gender-select
+                    option value=40527134756 Herren
+                    option value=40527167524 Damen
+              .input-group
+                label Farbe
+                .product-select__container
+                  select.product__option.product-select
+              .input-group
+                label Size (Foot length / US / EUR)
+                .variant-select__container
+                  select.product__option.variant-select
+              .variant-price__container
+                h2.variant-price
+              .add-to-cart-button__container
+                button.buy-button.js-prevent-cart-listener.add-button Add to cart
+              .product__sizing
+                = partial "partials/size_guide_note"
 
 .gallery.scroll--horizontal
   - data.products.integer_walk_rebound.images.each do |image|
@@ -96,7 +100,7 @@ sitemap_changefreq: daily
             span Amann & Söhne Serafil ET40
           li.spec-list__item
             label Mid- and outsole
-            span Individuell entwickelte TPU/PU-Sohle
+            span Custom designed TPU/PU-Sole
           li.spec-list__item
             label Hell lift
             span 9 mm (US Men 10)
@@ -113,8 +117,8 @@ script type="application/ld+json"
   |   "@context": "http://schema.org",
   |   "@type": "Product",
   |   "name": "Integer Walk Rebound",
-  |   "image": "https://www.lunge.com/images/products/integer_wal_rebound/GLS410SSW/default.png",
-  |   "description": "Komfortabler Laufschuh mit einzigartiger Rückfederung.",
+  |   "image": "https://www.lunge.com/images/products/integer_walk_rebound/GLS410SSW/default.png",
+  |   "description": "Premium everyday shoes, that combine athletic functionality and elegant, unobtrusive appearance.",
   |   "brand": {
   |     "@type": "Brand",
   |     "name": "Lunge"

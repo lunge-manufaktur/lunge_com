@@ -16,38 +16,41 @@ sitemap_changefreq: daily
           .product__figure
             .product__image-container
               img.product__image
-            ul.product-feature
-              = partial "partials/product-features/vegan"
-              = partial "partials/product-features/non-toxic"
-              = partial "partials/product-features/made_in_germany"
+            .product__features
+              ul.product-feature
+                = partial "partials/product-features/vegan"
+                = partial "partials/product-features/non-toxic"
+                = partial "partials/product-features/made_in_germany"
             = partial "partials/product_attributes", locals: { product: "integer_run_rebound" }
           .product__details
-            h1 Integer Run Rebound
-            = partial "partials/video_link", locals: { product_name: "Integer Run Rebound" }
-            p = data.products.integer_run_rebound.short_description
-            h4 Jetzt bestellen
-            .input-group
-              label Damen / Herren
-              .gender-select__container
-                select.product__option.gender-select
-                  option value=40527036452 Herren
-                  option value=40527069220 Damen
-            .input-group
-              label Farbe
-              .product-select__container
-                select.product__option.product-select
-            .input-group
-              label Größe (Fusslänge / US / EUR)
-              .variant-select__container
-                select.product__option.variant-select
-            .variant-price__container
-              h2.variant-price
-              small inkl. Mwst., versandkostenfrei innerhalb Deutschlands
-            .add-to-cart-button__container
-              button.buy-button.js-prevent-cart-listener.add-button In den Warenkorb
-            .product__sizing
-              p
-                = link_to "Um die passende Größe zu finden, wählen Sie Ihre Schuhe bitte anhand der empfohlenen Fusslänge aus.", "/support/sizes/", class: "link"
+            .product__title
+              h1 Integer Run Rebound
+            .product__description
+              = partial "partials/video_link", locals: { product_name: "Integer Run Rebound" }
+              p = data.products.integer_run_rebound.short_description
+            .product__order-form
+              h4 Jetzt bestellen
+              .input-group
+                label Damen / Herren
+                .gender-select__container
+                  select.product__option.gender-select
+                    option value=40527036452 Herren
+                    option value=40527069220 Damen
+              .input-group
+                label Farbe
+                .product-select__container
+                  select.product__option.product-select
+              .input-group
+                label Größe (Fusslänge / US / EUR)
+                .variant-select__container
+                  select.product__option.variant-select
+              .variant-price__container
+                h2.variant-price
+                small inkl. Mwst., versandkostenfrei innerhalb Deutschlands
+              .add-to-cart-button__container
+                button.buy-button.js-prevent-cart-listener.add-button In den Warenkorb
+              .product__sizing
+                = partial "partials/size_guide_note"
     #video.anchor-target
 
 = partial "partials/video_card", locals: { youtube_id: "szwNrLXkdMA", product_name: "Integer Run Rebound" }

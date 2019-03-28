@@ -18,42 +18,42 @@ sitemap_changefreq: daily
           .product__figure
             .product__image-container
               img.product__image
-            ul.product-feature
-              = partial "partials/product-features/vegan"
-              = partial "partials/product-features/non-toxic"
-              = partial "partials/product-features/made_in_germany"
-              = partial "partials/product-features/resole"
+            .product__features
+              ul.product-feature
+                = partial "partials/product-features/vegan"
+                = partial "partials/product-features/non-toxic"
+                = partial "partials/product-features/made_in_germany"
+                = partial "partials/product-features/resole"
+            = partial "partials/product_attributes", locals: { product: "classic_walk" }
           .product__details
-            h1 Classic Walk
-            p You don't need to be a runner to enjoy Lunge shoes: Classic Walk is a versatile comfort shoe that covers any use case.
-            h4 Buy now
-            .input-group
-              label Women / Men
-              .gender-select__container
-                select.product__option.gender-select
-                  option value=184337285 Men
-                  option value=183800581 Women
-            .input-group
-              label Color
-              .product-select__container
-                select.product__option.product-select
-                span
-                  small Update 2019: Now with new and improved outer sole.
-            .input-group
-              label Size (Feet length / US / EUR)
-              .variant-select__container
-                select.product__option.variant-select
-            .variant-price__container
-              h2.variant-price
-            .add-to-cart-button__container
-              button.buy-button.js-prevent-cart-listener.add-button Add To Cart
-            .product__sizing
-              p
-                span
-                  | In order to find the right size, we strongly recommend to measure the length of your feet and opt for the size that corresponds to your measured length. Please check our 
-                = link_to "size guide", "/en/support/sizes/", class: "link"
-                span
-                  |  to find the recommended foot length for each size and learn how to measure correctly.
+            .product__title
+              h1 Classic Walk
+            .product__description
+              p You don't need to be a runner to enjoy Lunge shoes: Classic Walk is a versatile comfort shoe that covers any use case.
+            .product__order-form
+              h4 Buy now
+              .input-group
+                label Women / Men
+                .gender-select__container
+                  select.product__option.gender-select
+                    option value=184337285 Men
+                    option value=183800581 Women
+              .input-group
+                label Color
+                .product-select__container
+                  select.product__option.product-select
+                  span
+                    small Update 2019: Now with new and improved outer sole.
+              .input-group
+                label Size (Feet length / US / EUR)
+                .variant-select__container
+                  select.product__option.variant-select
+              .variant-price__container
+                h2.variant-price
+              .add-to-cart-button__container
+                button.buy-button.js-prevent-cart-listener.add-button Add To Cart
+              .product__sizing
+                = partial "partials/size_guide_note"
 
 .panel.panel--odd
   .content
@@ -164,15 +164,16 @@ script type="application/ld+json"
   |   "@context": "http://schema.org",
   |   "@type": "Product",
   |   "name": "Classic Walk",
-  |   "image": "https://www.lunge.com/images/products/classic_walk/gls200aag/default.png",
+  |   "image": "https://www.lunge.com/images/products/classic_walk/GLS210AAG/default.png",
   |   "description": "Classic Walk is a versatile comfort shoe that covers any use case.",
   |   "brand": {
   |     "@type": "Brand",
   |     "name": "Lunge"
   |   },
   |   "offers": {
-  |     "@type": "Offer",
-  |     "price": "200.00",
+  |     "@type": "AggregateOffer",
+  |     "lowPrice": "200.00",
+  |     "highPrice": "230.00",
   |     "priceCurrency": "EUR",
   |     "availability": "InStock"
   |   }
