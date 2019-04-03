@@ -7,6 +7,8 @@ $lighter-gray: #f7f7f9;
 $mint-gray: #EDECF2;
 $gray: #D8D8D8;
 $almost-black: #333;
+$midnight-blue: #373f62;
+$midnight-blue-lighter: #505981;
 
 $accent-color: $green;
 $alternative-accent-color: $red;
@@ -73,7 +75,7 @@ $start-desktop: 1280px;
 /* ANIMATION */
 $transition: ease-in-out 140ms;
 $transition-fast: ease-in-out 80ms;
-$transition-slow: ease-in-out 220ms;
+$transition-slow: ease-in-out 400ms;
 
 @mixin transition() {
   transition: $transition;

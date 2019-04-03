@@ -52,7 +52,7 @@ label.text-inverted {
 
 h1, h2, h3, h4, h5, h6 {
   font-family: $header-font;
-  color: $body-font-color;
+  color: inherit;
   text-rendering: geometricPrecision;
   line-height: 1em;
 }
@@ -75,7 +75,7 @@ h1::after {
   content: "";
   display: block;
   border-bottom: 1px solid $accent-color;
-  width: 100px;
+  width: 8rem;
   margin-top: $gutter-small;
 }
 
@@ -100,7 +100,7 @@ h2::after {
   content: "";
   display: block;
   border-bottom: 1px solid $accent-color;
-  width: 100px;
+  width: 8rem;
   margin-top: $gutter-small;
 }
 

@@ -7,52 +7,63 @@ url_en: "https://www.lunge.com/en/"
 sitemap_priority: 0.9
 lang: en
 ---
-.product-grid
-  = link_to "/en/products/integer_run_rebound/", class: "product-grid__item product-grid__item--integer-run-rebound" do
-    .product-grid__text
-      .product-grid__content
-        h2 = data.products.integer_run_rebound.name
-        span = data.products.integer_run_rebound.short_description_en
-        = partial "partials/color_options", locals: { product: "integer_run_rebound" }
-    = image_tag "/images/products/integer_run_rebound/misc/integer_run_rebound_01@3200px.jpg", srcset: "/images/products/integer_run_rebound/misc/integer_run_rebound_01@1600px.jpg 1600w, /images/products/integer_run_rebound/misc/integer_run_rebound_01@2400px.jpg 2400w, /images/products/integer_run_rebound/misc/integer_run_rebound_01@3200px.jpg 3200w", alt: "Neo Run", class: "product-grid__image"
-    .notice.notice--alarm.notice--bottom-right
-      span New colors
-
-  = link_to "/en/products/integer_walk_rebound/", class: "product-grid__item product-grid__item--integer-walk-rebound" do
-    .product-grid__text
-      .product-grid__content
-        h2 = data.products.integer_walk_rebound.name
+.product-showcase__container
+  = link_to "/en/products/integer_walk_rebound/", class: "hero-product" do
+    .hero-product__image
+    .hero-product__text
+      .hero-product__content
+        h1 = data.products.integer_walk_rebound.name
         p = data.products.integer_walk_rebound.short_description_en
-        = partial "partials/color_options", locals: { product: "integer_walk_rebound" }
-    = image_tag "/images/products/integer_walk_rebound/misc/integer_walk_rebound_02@3200px.jpg", srcset: "/images/products/integer_walk_rebound/misc/integer_walk_rebound_02@1600px.jpg 1600w, /images/products/integer_walk_rebound/misc/integer_walk_rebound_02@2400px.jpg 2400w, /images/products/integer_walk_rebound/misc/integer_walk_rebound_02@3200px.jpg 3200w", alt: "Integer Walk Cushion", class: "product-grid__image"
-    .notice.notice--alarm.notice--bottom-right
-      span New colors
-
-  = link_to "/en/products/classic_run", class: "product-grid__item product-grid__item--classic-run" do
-    .product-grid__text
-      .product-grid__content
-        h2 Classic Run
-        span The proven choice for runners.
         ul.inline-list
-          - data.products.classic_run.colors.each do |color|
+          - data.products.integer_walk_rebound.colors.each do |color|
             li.color-icon data-color=color.sku data-image-path=color.default_image
               .color-icon style="background: linear-gradient(180deg, #{color.first_color}, #{color.first_color} 65%, #{color.second_color} 66%, #{color.second_color} 100%); border: 1px solid #fff" title=(color.name)
-    = image_tag "/images/products/classic_run/misc/classic_run_group01.jpg", alt: "Classic Run", class: "product-grid__image"
+    .notice.notice--alarm.notice--top-right
+      span New
 
-  = link_to "/en/products/classic_walk/", class: "product-grid__item product-grid__item--classic-walk" do
-    .product-grid__text
-      .product-grid__content
-        h2 Classic Walk
-        ul.inline-list
-          - data.products.classic_walk.colors.each do |color|
-            li.color-icon data-color=color.sku data-image-path=color.default_image
-              .color-icon style="background: linear-gradient(180deg, #{color.first_color}, #{color.first_color} 65%, #{color.second_color} 66%, #{color.second_color} 100%); border: 1px solid #fff" title=(color.name)
-    = image_tag "/images/products/classic_walk/misc/classic_walk_group_01@2400px.jpg", srcset: "/images/products/classic_walk/misc/classic_walk_group_01@800px.jpg 800w, /images/products/classic_walk/misc/classic_walk_group_01@1600px.jpg 1600w, /images/products/classic_walk/misc/classic_walk_group_01@2400px.jpg 2400w", alt: "Classic Walk", class: "product-grid__image"
+  .featured-products.content
+    .card__container
+      = link_to "/en/products/classic_walk/", class: "card card--dark" do
+        .card__figure
+          = image_tag "/images/products/classic_walk/GLS200AAG/GLS200AAG_01@1200px.jpg", srcset: "/images/products/classic_walk/GLS200AAG/GLS200AAG_01@1200px.jpg 1200w, /images/products/classic_walk/GLS200AAG/GLS200AAG_01@2500px.jpg 2500w", alt: "Classic Walk", class: "card__image"
+        .card__body
+          h2 = data.products.classic_walk.name
+          p = data.products.classic_walk.short_description_en
+          ul.inline-list
+            - data.products.classic_walk.colors.each do |color|
+              li.color-icon data-color=color.sku data-image-path=color.default_image
+                .color-icon style="background: linear-gradient(180deg, #{color.first_color}, #{color.first_color} 65%, #{color.second_color} 66%, #{color.second_color} 100%); border: 1px solid #fff" title=(color.name)
+        .notice.notice--top-right
+          span Update
 
+      = link_to "/en/products/classic_run", class: "card card--dark" do
+        .card__figure
+          = image_tag "/images/products/classic_run/STS220BNG/STS220BNG_01@1200px.jpg", alt: "Classic Run", class: "card__image"
+        .card__body
+          h2 = data.products.classic_run.name
+          p = data.products.classic_run.short_description_en
+          ul.inline-list
+            - data.products.classic_run.colors.each do |color|
+              li.color-icon data-color=color.sku data-image-path=color.default_image
+                .color-icon style="background: linear-gradient(180deg, #{color.first_color}, #{color.first_color} 65%, #{color.second_color} 66%, #{color.second_color} 100%); border: 1px solid #fff" title=(color.name)
+        .notice.notice--top-right
+          span Update
 
-  = link_to "/en/products/", class: "product-grid__item product-grid__item--all-products" do
-    .product-grid__text
-      h2 All products →
+      = link_to "/en/products/integer_walk_rebound_leather/", class: "card card--dark" do
+        .card__figure
+          = image_tag "images/products/integer_walk_rebound_leder/GLS610LG/GLS610LG_01@1200px.jpg"
+        .card__body
+          h2 = data.products.integer_walk_rebound_leder.name
+          p = data.products.integer_walk_rebound_leder.short_description_en
+          ul.inline-list
+            - data.products.integer_walk_rebound_leder.colors.each do |color|
+              li.color-icon data-color=color.sku data-image-path=color.default_image
+                .color-icon style="background: linear-gradient(180deg, #{color.first_color}, #{color.first_color} 65%, #{color.second_color} 66%, #{color.second_color} 100%); border: 1px solid #fff" title=(color.name)
+        .notice.notice--alarm.notice--top-right
+          span Neu
+
+.hero-button__container
+  = link_to "Alle Schuhe zeigen ➝", "/products", class: "button button--hero"
 
 .panel
   .content
