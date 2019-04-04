@@ -442,7 +442,6 @@ ul.footer-list li a {
   opacity: 0;
   animation: slide-in--left 0.5s forwards, fade-in 0.5s forwards;
   animation-delay: 3s;
-  margin-left: 1rem;
 
   @include tablet-portrait {
     display: block;
@@ -571,6 +570,28 @@ input[type="submit"] {
 
 .button--full-width {
   width: 100%;
+}
+
+.button--announcement {
+  position: absolute;
+  transform-origin: bottom left;
+  background-color: #fff;
+  color: #333;
+  top: 1rem;
+  left: 1rem;
+  font-weight: 700;
+  padding: 0.5rem 1rem;
+  font-size: 0.8125rem;
+
+  @include tablet-portrait {
+    top: 2rem;
+    left: 0;
+  }
+}
+
+.button--announcement:hover {
+  background-color: $accent-color;
+  color: $white;
 }
 
 .button--hero {
@@ -1212,13 +1233,25 @@ iframe.responsive--4x3 {
   width: 100%;
   background-color: $title-background;
   padding: $gutter-large 0;
-  text-align: center;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
 
   @include desktop {
     padding: $gutter-large*3 0;
+  }
+}
+
+.title__container--dark {
+  background-color: $midnight-blue;
+  color: $white;
+}
+
+.title__container--dark a.link {
+  border-bottom: 1px solid $white;
+
+  &:hover {
+    color: $accent-color;
+    border-bottom: 1px solid $accent-color;
   }
 }
 
@@ -1768,7 +1801,6 @@ li.tab-title[not tab-title--active]:hover {
 
 .product__sizing {
   font-size: 0.8125rem;
-  color: #666;
 }
 
 .product__option {
