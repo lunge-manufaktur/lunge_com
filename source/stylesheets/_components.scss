@@ -104,7 +104,7 @@
 }
 
 .notice {
-  background-color: $almost-black;
+  background-color: $accent-color;
   color: $white;
   border: 2px solid white;
   font-weight: 700;
@@ -199,7 +199,6 @@
 
 /* LOADER */
 .loader {
-  @include loader02;
   margin: auto;
 }
 
@@ -309,9 +308,6 @@ img.offcanvas-top-close {
   cursor: pointer;
   width: 2rem;
   flex: 0 0 auto;
-  font-family: $body-font;
-  font-style: italic;
-  font-weight: 400;
   letter-spacing: 1px;
   opacity: 0.7;
   margin: auto;
@@ -477,68 +473,6 @@ img.made-in-germany__logo {
     width: 180px;
   }
 }
-
-/* HERO */
-.hero {
-  background-color: #42688d;
-
-  @include tablet-landscape {
-    display: flex;
-    flex-direction: row;
-    align-items: stretch;
-  }
-}
-
-.hero__title {
-  color: $white;
-}
-
-.hero__title a {
-  color: inherit;
-}
-
-.hero__title::after {
-  margin-left: auto;
-  margin-right: auto;
-
-  @include tablet-landscape {
-    margin-left: auto;
-    margin-right: 0;
-  }
-}
-
-.hero__text {
-  width: 100%;
-  text-align: center;
-  flex: 0 0 33%;
-  display: flex;
-  align-items: center;
-  color: #fff;
-
-  @include tablet-landscape {
-    border-right: 1rem solid $white;
-    text-align: right;
-    align-items: end;
-  }
-}
-
-.hero__title {
-  color: $white;
-}
-
-.hero__image {
-  flex: 1 1 auto;
-  overflow: hidden;
-  z-index: 0;
-  min-width: 0;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.hero__image img {
-}
-
-
 
 
 
@@ -1004,8 +938,6 @@ footer a.link {
 
 h3.testimonial__quote {
   font-size: 1rem;
-  font-family: "merriweather", "Georgia", "serif";
-  font-style: italic;
   color: #333;
 
   @media screen and (min-width: $start-tablet-landscape) {
@@ -1014,7 +946,7 @@ h3.testimonial__quote {
 }
 
 h5.testimonial__author {
-  color: #aaa;
+  color: #666;
 }
 
 
@@ -1408,7 +1340,6 @@ li.spec-list__item {
 ul.tab-titles {
   font-family: $header-font;
   letter-spacing: 1px;
-  font-style: italic;
   display: flex;
   border: 2px solid $tabs-accent-color;
 }
@@ -1766,18 +1697,6 @@ li.tab-title[not tab-title--active]:hover {
   @include tablet-portrait {
     display: block;
   }
-}
-
-.product__spinner-overlay {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  width: 100%;
-  height: 100%;
-  background-color: #ffffff80;
-  display: flex;
 }
 
 .product__details {

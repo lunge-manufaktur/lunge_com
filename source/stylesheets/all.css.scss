@@ -1,15 +1,12 @@
 @charset "utf-8";
 @import "_variables";
 
-@import 'loader/variables';
-@import 'loader/animations';
-@import 'loader/loader02';
+@import "inter/inter.css";
 
 @import "_animation";
 @import "_utilities";
 @import "_mixins";
 @import "_normalize";
-@import "_flexboxgrid";
 @import "_flex";
 @import "_layout";
 @import "_typography";

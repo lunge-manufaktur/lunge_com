@@ -17,14 +17,14 @@ sitemap_priority: 0.9
           - data.products.integer_walk_rebound.colors.each do |color|
             li.color-icon data-color=color.sku data-image-path=color.default_image
               .color-icon style="background: linear-gradient(180deg, #{color.first_color}, #{color.first_color} 65%, #{color.second_color} 66%, #{color.second_color} 100%); border: 1px solid #fff" title=(color.name)
-    .notice.notice--alarm.notice--top-right
+    .notice.notice--top-right
       span Neu
 
   .featured-products.content
     .card__container
       = link_to "/products/classic_walk/", class: "card card--dark" do
         .card__figure
-          = image_tag "/images/products/classic_walk/GLS200AAG/GLS200AAG_01@1200px.jpg", srcset: "/images/products/classic_walk/GLS200AAG/GLS200AAG_01@1200px.jpg 1200w, /images/products/classic_walk/GLS200AAG/GLS200AAG_01@2500px.jpg 2500w", alt: "Classic Walk", class: "card__image"
+          = image_tag "/images/products/classic_walk/GLS200AAG/GLS200AAG_01@1200px.jpg", alt: "Classic Walk", class: "card__image"
         .card__body
           h2 Classic Walk
           p = data.products.classic_walk.short_description
@@ -58,7 +58,7 @@ sitemap_priority: 0.9
             - data.products.integer_walk_rebound_leder.colors.each do |color|
               li.color-icon data-color=color.sku data-image-path=color.default_image
                 .color-icon style="background: linear-gradient(180deg, #{color.first_color}, #{color.first_color} 65%, #{color.second_color} 66%, #{color.second_color} 100%); border: 1px solid #fff" title=(color.name)
-        .notice.notice--alarm.notice--top-right
+        .notice.notice--top-right
           span Neu
 
 .hero-button__container
