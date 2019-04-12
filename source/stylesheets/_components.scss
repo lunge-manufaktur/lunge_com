@@ -1310,7 +1310,7 @@ iframe.responsive--4x3 {
 
 .card__attributes {
   flex: 0 1 auto;
-  padding-top: $gutter;
+  padding-top: $gutter-small;
   border-top: 1px solid $mint-gray;
 }
 
@@ -1684,7 +1684,7 @@ li.tab-title[not tab-title--active]:hover {
   margin: auto;
 }
 
-.product__attributes {
+.product .product__attributes {
   display: none;
 
   @include tablet-portrait {
