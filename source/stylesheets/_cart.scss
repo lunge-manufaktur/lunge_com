@@ -9,6 +9,9 @@ input[type=submit].button--checkout {
 }
 
 .cart {
+  display: flex;
+  flex-direction: column;
+  padding: $gutter-small;
   position: fixed;
   width: 100%;
   max-width: 350px;
@@ -30,7 +33,6 @@ input[type=submit].button--checkout {
 
 .cart-section {
   position: relative;
-  padding: 20px;
 }
 
 .cart-section--top {
@@ -38,10 +40,6 @@ input[type=submit].button--checkout {
 }
 
 .cart-title {
-  color: $accent-color;
-  display: inline-block;
-  font-weight: 400;
-  font-size: 18px;
   line-height: 1.5;
   overflow: hidden;
   white-space: nowrap;
@@ -49,7 +47,7 @@ input[type=submit].button--checkout {
   max-width: 90%;
 }
 
-.btn--close {
+.cart__close-button {
   background: transparent;
   text-align: right;
 
@@ -59,21 +57,14 @@ input[type=submit].button--checkout {
 }
 
 .cart-form {
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  top: 0;
-  padding: 70px 0 140px 0;
+  flex: 1 0 auto;
 }
 
 .cart-item-container {
-  height: 100%;
   position: relative;
   overflow-x: hidden;
-  overflow-y: auto;
+  overflow-y: scroll;
   -webkit-overflow-scrolling: touch;
-  perspective: 400px;
-  perspective-origin: 50% 0px;
 }
 
 .cart-item {
@@ -125,6 +116,12 @@ input[type=submit].button--checkout {
   font-size: 0.8125rem;
 }
 
+.cart-item__pricing {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
 .cart-item__quantity-container {
   display: flex;
 }
@@ -146,6 +143,7 @@ input[type=submit].button--checkout {
 }
 
 .cart-item__quantity {
+  font-size: 0.8125rem;
   width: 2rem;
   border: none;
   text-align: center;
@@ -163,9 +161,19 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 .cart-item__price {
-  line-height: 23px;
-  float: right;
-  font-weight: bold;
+}
+
+.cart__pricing {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 700;
+}
+
+.cart__close-button {
+  position: absolute;
+  top: 0;
+  right: 0;
 }
 
 .cart-bottom {
@@ -173,7 +181,7 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 .cart-info {
-  padding: 15px 20px 10px;
+  padding: $gutter-small 0;
 }
 
 .cart-info__total {
