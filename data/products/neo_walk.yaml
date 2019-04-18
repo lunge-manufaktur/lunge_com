@@ -21,8 +21,6 @@ colors:
     second_color: "#B5AEA9"
     default_image: "/images/products/neo_walk/GTS114IC/default.jpg"
     price: 160
-
-new_colors:
   -
     sku: "GTS214LLL"
     name: "Lakritze"
