@@ -1329,6 +1329,16 @@ iframe.responsive--4x3 {
 
 
 /* SPECIFICATIONS */
+.additional-information {
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-gap: $gutter;
+
+  @include tablet-landscape {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
 ul.spec-list {}
 
 li.spec-list__item {
