@@ -48,18 +48,18 @@ sitemap_priority: 0.9
         .notice.notice--top-right
           span Update
 
-      = link_to "/products/integer_walk_rebound_leder/", class: "card card--dark" do
+      = link_to "/products/integer_walk_rebound/", class: "card card--dark" do
         .card__figure
-          = image_tag "images/products/integer_walk_rebound_leder/GLS610LG/GLS610LG_01@1200px.jpg"
+          = image_tag "images/products/integer_walk_rebound/GLS410SSW/GLS410SSW_06@1200px.jpg"
         .card__body
-          h2 = data.products.integer_walk_rebound_leder.name
-          p = data.products.integer_walk_rebound_leder.short_description
+          h2 = data.products.integer_walk_rebound.name
+          p = data.products.integer_walk_rebound.short_description
           ul.inline-list
-            - data.products.integer_walk_rebound_leder.colors.each do |color|
+            - data.products.integer_walk_rebound.colors.each do |color|
               li.color-icon data-color=color.sku data-image-path=color.default_image
                 .color-icon style="background: linear-gradient(180deg, #{color.first_color}, #{color.first_color} 65%, #{color.second_color} 66%, #{color.second_color} 100%); border: 1px solid #fff" title=(color.name)
         .notice.notice--top-right
-          span Neu
+          span Neue Farben
 
 .hero-button__container
   = link_to "Alle Schuhe zeigen ➝", "/products/", class: "button button--hero"
