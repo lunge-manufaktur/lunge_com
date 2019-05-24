@@ -120,12 +120,16 @@ configure :build do
   # set :http_prefix, "/Content/images/"
 end
 
-after_build do |builder|
-  src = File.join(config[:source],"_redirects")
-  dst = File.join(config[:build_dir],"_redirects")
-  builder.thor.source_paths << File.dirname(__FILE__)
-  builder.thor.copy_file(src,dst)
-end
+# Process hidden files
+# after_build do |builder|
+#   src = File.join(config[:source],"_redirects")
+#   dst = File.join(config[:build_dir],"_redirects")
+#   builder.thor.source_paths << File.dirname(__FILE__)
+#   builder.thor.copy_file(src,dst)
+# end
+
+import_file File.expand_path("_headers", config[:source]), "/_headers"
+import_file File.expand_path("_redirects", config[:source]), "/_headers"
 
 
 activate :i18n, langs: [:de, :en]
