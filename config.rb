@@ -129,7 +129,7 @@ end
 # end
 
 import_file File.expand_path("_headers", config[:source]), "/_headers"
-import_file File.expand_path("_redirects", config[:source]), "/_headers"
+import_file File.expand_path("_redirects", config[:source]), "/_redirects"
 
 
 activate :i18n, langs: [:de, :en]
