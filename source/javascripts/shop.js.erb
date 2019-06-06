@@ -250,7 +250,8 @@ $(function() {
       '<button class="buy-button js-prevent-cart-listener add-button" data-product-id=' + product + ' data-variant-id=' + variant + '>In den Warenkorb</button><div class="availability-note"><div class="availability-note__indicator"></div><div class="availability-note__text">Sofort lieferbar</div></div>'
     );
 
-    $('.alternative-product__container').hide();
+    $('.product__availability-notice--discontinued').hide();
+    $('.product__availability-notice--out-of-stock').hide();
   }
 
   // show restock notification form
@@ -268,7 +269,8 @@ $(function() {
       '<div id="restock-notification-message"></div>'
     )
 
-    $('.alternative-product__container').hide();
+    $('.product__availability-notice--discontinued').hide();
+    $('.product__availability-notice--out-of-stock').show();
   }
 
   function showDiscontinuedNotice() {
@@ -279,7 +281,8 @@ $(function() {
       '<span>' + instructions + '</span>'
     );
 
-    $('.alternative-product__container').show();
+    $('.product__availability-notice--discontinued').show();
+    $('.product__availability-notice--out-of-stock').hide();
   }
 
 
