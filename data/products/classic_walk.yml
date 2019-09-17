@@ -3,101 +3,65 @@ category: "Bequemschuhe"
 slug: "classic_walk"
 short_description: "Der Classic Walk ist ein einzigartiger Bequemschuh für alle Lebenslagen - ganz gleich ob Alltag, Beruf oder Freizeit."
 short_description_en: "Classic Walk is a unique and versatile walking shoe for everyday use."
-default_image: "/images/products/classic_walk/GLS200SIL/default.jpg"
-price: 200
+default_image: "/images/products/classic_walk/GLS210SIL/default.jpg"
+price: 230
 colors:
-  -
-    sku: "GLS210SSS"
-    name: "Schwarz/Schwarz"
-    first_color: "#000"
-    second_color: "#000"
-    default_image: "/images/products/classic_walk/GLS210SSS/default.jpg"
-    price: 200
-    price: 200
-  -
-    sku: "GLS210AAS"
-    name: "Anthrazit/Schwarz"
-    first_color: "#656670"
-    second_color: "#000"
-    default_image: "/images/products/classic_walk/GLS210AAS/default.jpg"
-    price: 200
-  -
-    sku: "GLS210MMS"
-    name: "Marine/Schwarz"
-    first_color: "#31335A"
-    second_color: "#000"
-    default_image: "/images/products/classic_walk/GLS210MMS/default.jpg"
-    price: 200
-  -
-    sku: "GLS210BRS"
-    name: "Braun/Schwarz"
-    first_color: "#79463C"
-    second_color: "#000"
-    default_image: "/images/products/classic_walk/GLS210BRS/default.jpg"
-    price: 200
   -
     sku: "GLS210SIL"
     name: "Silber/Hellgrau"
     first_color: "#B1C0C7"
     second_color: "#DFDFDF"
     default_image: "/images/products/classic_walk/GLS210SIL/default.jpg"
-    price: 200
+    price: 230
   -
     sku: "GLS210CCG"
     name: "Caramel/Hellgrau"
     first_color: "#CEA17F"
     second_color: "#DFDFDF"
     default_image: "/images/products/classic_walk/GLS210CCG/default.jpg"
-    price: 200
-  -
-    sku: "GLS200RRG"
-    name: "Royal/Hellgrau"
-    first_color: "#3763BC"
-    second_color: "#DFDFDF"
-    default_image: "/images/products/classic_walk/GLS200RRG/default.jpg"
-    price: 200
+    price: 230
   -
     sku: "GLS210SSG"
     name: "Schwarz/Hellgrau"
     first_color: "#000"
     second_color: "#DFDFDF"
     default_image: "/images/products/classic_walk/GLS210SSG/default.jpg"
-    price: 200
+    price: 230
   -
     sku: "GLS210AAG"
     name: "Anthrazit/Hellgrau"
     first_color: "#656670"
     second_color: "#DFDFDF"
     default_image: "/images/products/classic_walk/GLS210AAG/default.jpg"
-    price: 200
+    price: 230
   -
     sku: "GLS210MMG"
     name: "Marine/Hellgrau"
     first_color: "#31335A"
     second_color: "#DFDFDF"
     default_image: "/images/products/classic_walk/GLS210MMG/default.jpg"
-    price: 200
+    price: 230
   -
-    sku: "GLS200BRG"
-    name: "Braun/Hellgrau"
-    first_color: "#79463C"
-    second_color: "#DFDFDF"
-    default_image: "/images/products/classic_walk/GLS200BRG/default.jpg"
-    price: 200
+    sku: "GLS210SSS"
+    name: "Schwarz/Schwarz"
+    first_color: "#000"
+    second_color: "#000"
+    default_image: "/images/products/classic_walk/GLS210SSS/default.jpg"
+    price: 230
   -
-    sku: "GLS200ROG"
-    name: "Rot/Hellgrau"
-    first_color: "#DF3F41"
-    second_color: "#DFDFDF"
-    default_image: "/images/products/classic_walk/GLS200ROG/default.jpg"
-    price: 200
+    sku: "GLS210AAS"
+    name: "Anthrazit/Schwarz"
+    first_color: "#656670"
+    second_color: "#000"
+    default_image: "/images/products/classic_walk/GLS210AAS/default.jpg"
+    price: 230
   -
-    sku: "GLS200SAN"
-    name: "Sand/Hellgrau"
-    first_color: "#F4E4C0"
-    second_color: "#DFDFDF"
-    default_image: "/images/products/classic_walk/GLS200SAN/default.jpg"
-    price: 200
+    sku: "GLS210MMS"
+    name: "Marine/Schwarz"
+    first_color: "#31335A"
+    second_color: "#000"
+    default_image: "/images/products/classic_walk/GLS210MMS/default.jpg"
+    price: 230
   -
     sku: "GLS202SGS"
     name: "Glatt/Schwarz"
@@ -114,9 +78,6 @@ colors:
     price: 230
 images:
   -
-    path: "/images/products/classic_walk/GLS200BRG/01.jpg"
-    title: Classic Walk (Braun/Hellgrau)
-  -
     path: "/images/products/classic_walk/GLS200MMS/01.jpg"
     title: Classic Walk (Marine/Schwarz)
   -
@@ -129,17 +90,8 @@ images:
     path: "/images/products/classic_walk/GLS200SIL/01.jpg"
     title: Classic Walk (Silber/Hellgrau)
   -
-    path: "/images/products/classic_walk/GLS200RRG/01.jpg"
-    title: Classic Walk (Royal/Hellgrau)
-  -
     path: "/images/products/classic_walk/GLS200SSS/01.jpg"
     title: Classic Walk (Schwarz/Schwarz)
-  -
-    path: "/images/products/classic_walk/GLS200BRS/01.jpg"
-    title: Classic Walk (Braun/Schwarz)
-  -
-    path: "/images/products/classic_walk/GLS200ROG/01.jpg"
-    title: Classic Walk (Rot/Hellgrau)
   -
     path: "/images/products/classic_walk/GLS200MMG/01.jpg"
     title: Classic Walk (Marine/Hellgrau)
