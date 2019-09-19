@@ -18,8 +18,6 @@ lang: en
           - data.products.integer_walk_rebound.colors.each do |color|
             li.color-icon data-color=color.sku data-image-path=color.default_image
               .color-icon style="background: linear-gradient(180deg, #{color.first_color}, #{color.first_color} 65%, #{color.second_color} 66%, #{color.second_color} 100%); border: 1px solid #fff" title=(color.name)
-    .notice.notice--top-right
-      span New
 
   .featured-products.content
     .card__container
@@ -33,8 +31,6 @@ lang: en
             - data.products.classic_walk.colors.each do |color|
               li.color-icon data-color=color.sku data-image-path=color.default_image
                 .color-icon style="background: linear-gradient(180deg, #{color.first_color}, #{color.first_color} 65%, #{color.second_color} 66%, #{color.second_color} 100%); border: 1px solid #fff" title=(color.name)
-        .notice.notice--top-right
-          span Update
 
       = link_to "/en/products/classic_run/", class: "card card--dark" do
         .card__figure
@@ -46,8 +42,6 @@ lang: en
             - data.products.classic_run.colors.each do |color|
               li.color-icon data-color=color.sku data-image-path=color.default_image
                 .color-icon style="background: linear-gradient(180deg, #{color.first_color}, #{color.first_color} 65%, #{color.second_color} 66%, #{color.second_color} 100%); border: 1px solid #fff" title=(color.name)
-        .notice.notice--top-right
-          span Update
 
       = link_to "/en/products/integer_walk_rebound/", class: "card card--dark" do
         .card__figure
@@ -59,11 +53,9 @@ lang: en
             - data.products.integer_walk_rebound.colors.each do |color|
               li.color-icon data-color=color.sku data-image-path=color.default_image
                 .color-icon style="background: linear-gradient(180deg, #{color.first_color}, #{color.first_color} 65%, #{color.second_color} 66%, #{color.second_color} 100%); border: 1px solid #fff" title=(color.name)
-        .notice.notice--top-right
-          span Neu
 
 .hero-button__container
-  = link_to "Alle Schuhe zeigen ➝", "/en/products/", class: "button button--hero"
+  = link_to "See all shoes ➝", "/en/products/", class: "button button--hero"
 
 .panel
   .content

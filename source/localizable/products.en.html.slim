@@ -43,7 +43,6 @@ lang: en
             p = data.products.integer_run_rebound.short_description_en
           .card__attributes
             = partial "partials/product_attributes", locals: { product: "integer_run_rebound" }
-        .notice.notice--top-right New colors
 
       = link_to "/en/products/#{data.products.integer_walk_rebound.slug}/", class: "card", data: { product: "integer_walk_rebound" } do
         .card__figure
@@ -57,7 +56,6 @@ lang: en
             p = data.products.integer_walk_rebound.short_description_en
           .card__attributes
             = partial "partials/product_attributes", locals: { product: "integer_walk_rebound" }
-        .notice.notice--top-right New colors
 
       = link_to "/en/products/#{data.products.integer_walk_cushion.slug}/", class: "card", data: { product: "integer_walk_cushion" } do
         .card__figure
@@ -84,7 +82,6 @@ lang: en
             p = data.products.integer_walk_rebound_leder.short_description_en
           .card__attributes
             = partial "partials/product_attributes", locals: { product: "integer_walk_rebound" }
-        .notice.notice--top-right New
 
 .panel.anchor-target#classic-series
   .content.content--narrow
@@ -100,11 +97,10 @@ lang: en
         .card__body
           .card__description
             h2.marginless--top = data.products.classic_walk.name
-            h4.card__price = "ab € #{data.products.classic_walk.price},-"
+            h4.card__price = "€ #{data.products.classic_walk.price},-"
             p = data.products.classic_walk.short_description_en
           .card__attributes
             = partial "partials/product_attributes", locals: { product: "classic_walk" }
-        .notice.notice--top-right Updated
 
       = link_to "/en/products/#{data.products.classic_run.slug}/", class: "card", data: { product: "classic_run" } do
         .card__figure
@@ -118,7 +114,6 @@ lang: en
             p = data.products.classic_run.short_description_en
           .card__attributes
             = partial "partials/product_attributes", locals: { product: "classic_run" }
-        .notice.notice--top-right Updated
 
       = link_to "/en/products/#{data.products.classic_run_fis.slug}/", class: "card", data: { product: "classic_run_fis" } do
         .card__figure
