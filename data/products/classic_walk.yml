@@ -78,32 +78,20 @@ colors:
     price: 230
 images:
   -
-    path: "/images/products/classic_walk/GLS200MMS/01.jpg"
-    title: Classic Walk (Marine/Schwarz)
+    path: "/images/products/classic_walk/GLS220BBG/GLS220BBG_02@2400px.jpg"
+    title: Classic Walk W (Steel Blue / Light Gray)
   -
-    path: "/images/products/classic_walk/GLS200CCG/01.jpg"
-    title: Classic Walk (Caramel/Hellgrau)
+    path: "/images/products/classic_walk/GLS220SSG/GLS220SSG_01@2400px.jpg"
+    title: Classic Walk (Silver / Light Gray)
   -
-    path: "/images/products/classic_walk/GLS200AAS/01.jpg"
-    title: Classic Walk (Anthrazit/Schwarz)
+    path: "/images/products/classic_walk/GLS220NNG/GLS220NNG_01@2400px.jpg"
+    title: Classic Walk (Navy / Light Gray)
   -
-    path: "/images/products/classic_walk/GLS200SIL/01.jpg"
-    title: Classic Walk (Silber/Hellgrau)
+    path: "/images/products/classic_walk/GLS120NNG/GLS120NNG_01@2400px.jpg"
+    title: Classic Walk W (Navy / Light Gray)
   -
-    path: "/images/products/classic_walk/GLS200SSS/01.jpg"
-    title: Classic Walk (Schwarz/Schwarz)
-  -
-    path: "/images/products/classic_walk/GLS200MMG/01.jpg"
-    title: Classic Walk (Marine/Hellgrau)
-  -
-    path: "/images/products/classic_walk/GLS200AAG/01.jpg"
-    title: Classic Walk (Anthrazit/Hellgrau)
-  -
-    path: "/images/products/classic_walk/GLS202SGS/01.jpg"
-    title: Classic Walk (Glatt/Schwarz)
-  -
-    path: "/images/products/classic_walk/GLS202WGW/01.jpg"
-    title: Classic Walk (Glatt/Weiß)
+    path: "/images/products/classic_walk/GLS220BBG/GLS220BBG_01@2400px.jpg"
+    title: Classic Walk W (Steel Blue / Light Gray)
 
 attributes:
   -
