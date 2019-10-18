@@ -13,5 +13,5 @@
 /care																																					/en/support/care/
 /products/gomax/																															/feetality/
 /bestand/																																			https://cdn.lunge.de/files/bestand.pdf						200
-/produktdaten/																																https://cdn.lunge.de/files/product_data.csv
+/produktdaten/																																https://cdn.lunge.de/files/product_data.xlsx			200
 /b2b/*																																				https://lunge-manufaktur.myshopify.com/:splat			200
