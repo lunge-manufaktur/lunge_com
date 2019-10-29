@@ -1,7 +1,7 @@
 /* PRODUCT GRID */
 .product-showcase__container {
-  background-color: $midnight-blue;
   padding-bottom: 0;
+  background-color: $midnight-blue;
 
   @include tablet-landscape {
     padding-bottom: 2rem;
@@ -11,11 +11,10 @@
 .hero-product {
   @include transition;
   position: relative;
-  color: $white;
   margin-bottom: 0;
 
   @include tablet-portrait {
-    display: flex;
+    display: block;
     min-height: 75vh;
     flew-direction: row;
     align-items: stretch;
@@ -33,7 +32,7 @@
 
   @include tablet-portrait {
     order: 1;
-    justify-content: flex-end;
+    justify-content: flex-start;
     flex: 0 1 250px;
   }
 
@@ -50,35 +49,42 @@
 .hero-product__content {
   padding: $gutter;
   transition: $transition-slow;
+  width: 100%;
+  background-color: $white;
 
   @include tablet-portrait {
-    margin-right: -8rem;
+    padding: 0 $gutter;
+    color: $body-font-color;
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    width: 400px;
   }
 
   @include tablet-landscape {
-    margin-right: 0;
-    margin-left: -6rem;
   }
 }
 
 .hero-product:hover .hero-product__content {
-  background-color: $midnight-blue-lighter;
+  @include tablet-portrait {
+    @include lift-up();
+  }
 }
 
 .hero-product__image {
   flex: 1 1 auto;
   min-height: 60vh;
   transition: $transition-slow;
-  background-image: url(/images/products/integer_walk_rebound/GLS410CNW/GLS410CNW_01@1200px.jpg);
+  background-image: url(/images/products/classic_walk/GLS220BBG/GLS220BBG_02@1600px.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: 40% center;
   background-blend-mode: lighten;
   background-color: $midnight-blue;
 
   @include tablet-portrait {
     min-height: 75vh;
-    background-image: url(/images/products/integer_walk_rebound/GLS410CNW/GLS410CNW_01@1600px.jpg);
+    background-image: url(/images/products/classic_walk/GLS220BBG/GLS220BBG_02@1600px.jpg);
     order: 2;
   }
 
@@ -88,7 +94,7 @@
   }
 
   @include desktop {
-    background-image: url(/images/products/integer_walk_rebound/GLS410CNW/GLS410CNW_01@2400px.jpg);
+    background-image: url(/images/products/classic_walk/GLS220BBG/GLS220BBG_02@2400px.jpg);
   }
 }
 
@@ -108,7 +114,7 @@
   color: $white;
   border: 2px solid white;
   font-weight: 700;
-  padding: 1rem;
+  padding: 0.5rem 1rem;
   position: absolute;
 }
 
@@ -123,6 +129,12 @@
   border-top: none;
 }
 
+.notice--top-left {
+  top: 0;
+  left: $gutter;
+  border-top: none;
+}
+
 .notice--bottom-right {
   bottom: 0;
   right: $gutter;
@@ -134,6 +146,25 @@
   left: 0;
   border-left: none;
   padding-left: $gutter;
+}
+
+.badge {
+  display: inline-block;
+}
+
+.badge--small {
+  font-size: 0.8125rem;
+  padding: 0.25rem 0.5rem;
+}
+
+.badge--black-on-white {
+  background-color: $white;
+  color: $body-font-color;
+}
+
+.badge--white-on-black {
+  background-color: $almost-black;
+  color: $white;
 }
 
 .featured-products {

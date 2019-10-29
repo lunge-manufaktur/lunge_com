@@ -7,24 +7,22 @@ url_en: "https://www.lunge.com/en/"
 sitemap_priority: 0.9
 ---
 .product-showcase__container
-  = link_to "/products/integer_walk_rebound/", class: "hero-product" do
+  = link_to "/products/classic_walk/", class: "hero-product" do
     .hero-product__image
-    .hero-product__text
-      .hero-product__content
-        h1 = data.products.integer_walk_rebound.name
-        p = data.products.integer_walk_rebound.short_description
-        ul.inline-list
-          - data.products.integer_walk_rebound.colors.each do |color|
-            li.color-icon data-color=color.sku data-image-path=color.default_image
-              .color-icon style="background: linear-gradient(180deg, #{color.first_color}, #{color.first_color} 65%, #{color.second_color} 66%, #{color.second_color} 100%); border: 1px solid #fff" title=(color.name)
-    .notice.notice--top-right
-      span Neu
+    .hero-product__content
+      h1 = data.products.classic_walk.name
+      .badge.badge--small.badge--white-on-black Neue Farben
+      p = data.products.classic_walk.short_description
+      ul.inline-list
+        - data.products.classic_walk.colors.each do |color|
+          li.color-icon data-color=color.sku data-image-path=color.default_image
+            .color-icon style="background: linear-gradient(180deg, #{color.first_color}, #{color.first_color} 65%, #{color.second_color} 66%, #{color.second_color} 100%); border: 1px solid #fff" title=(color.name)
 
   .featured-products.content
     .card__container
       = link_to "/products/classic_walk/", class: "card card--dark" do
         .card__figure
-          = image_tag "/images/products/classic_walk/GLS200AAG/GLS200AAG_01@1200px.jpg", alt: "Classic Walk", class: "card__image"
+          = image_tag "/images/products/classic_walk/GLS220NNG/GLS220NNG_01@1600px.jpg", alt: "Classic Walk", class: "card__image"
         .card__body
           h2 Classic Walk
           p = data.products.classic_walk.short_description
@@ -32,6 +30,8 @@ sitemap_priority: 0.9
             - data.products.classic_walk.colors.each do |color|
               li.color-icon data-color=color.sku data-image-path=color.default_image
                 .color-icon style="background: linear-gradient(180deg, #{color.first_color}, #{color.first_color} 65%, #{color.second_color} 66%, #{color.second_color} 100%); border: 1px solid #fff" title=(color.name)
+        .notice.notice--top-right
+          span Neue Farben
 
       = link_to "/products/classic_run", class: "card card--dark" do
         .card__figure

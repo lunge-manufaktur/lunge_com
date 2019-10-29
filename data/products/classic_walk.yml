@@ -7,11 +7,32 @@ default_image: "/images/products/classic_walk/GLS210SIL/default.jpg"
 price: 230
 colors:
   -
-    sku: "GLS210SIL"
-    name: "Silber/Hellgrau"
+    sku: "GLS220SSG"
+    name: "Silver/Light Gray"
     first_color: "#B1C0C7"
     second_color: "#DFDFDF"
-    default_image: "/images/products/classic_walk/GLS210SIL/default.jpg"
+    default_image: "/images/products/classic_walk/GLS220SSG/default.jpg"
+    price: 230
+  -
+    sku: "GLS220NNG"
+    name: "Navy/Light Gray"
+    first_color: "#31335A"
+    second_color: "#DFDFDF"
+    default_image: "/images/products/classic_walk/GLS220NNG/default.jpg"
+    price: 230
+  -
+    sku: "GLS220BBG"
+    name: "Steel Blue/Light Gray"
+    first_color: "#435982"
+    second_color: "#EB8A51"
+    default_image: "/images/products/classic_walk/GLS220BBG/default.jpg"
+    price: 230
+  -
+    sku: "GLS220LLL"
+    name: "Lakritze"
+    first_color: "#000"
+    second_color: "#000"
+    default_image: "/images/products/classic_walk/GLS220LLL/default.jpg"
     price: 230
   -
     sku: "GLS210CCG"
@@ -33,20 +54,6 @@ colors:
     first_color: "#656670"
     second_color: "#DFDFDF"
     default_image: "/images/products/classic_walk/GLS210AAG/default.jpg"
-    price: 230
-  -
-    sku: "GLS210MMG"
-    name: "Marine/Hellgrau"
-    first_color: "#31335A"
-    second_color: "#DFDFDF"
-    default_image: "/images/products/classic_walk/GLS210MMG/default.jpg"
-    price: 230
-  -
-    sku: "GLS210SSS"
-    name: "Schwarz/Schwarz"
-    first_color: "#000"
-    second_color: "#000"
-    default_image: "/images/products/classic_walk/GLS210SSS/default.jpg"
     price: 230
   -
     sku: "GLS210AAS"

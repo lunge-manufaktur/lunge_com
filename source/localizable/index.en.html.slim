@@ -8,22 +8,22 @@ sitemap_priority: 0.9
 lang: en
 ---
 .product-showcase__container
-  = link_to "/en/products/integer_walk_rebound/", class: "hero-product" do
+  = link_to "/en/products/classic_walk/", class: "hero-product" do
     .hero-product__image
-    .hero-product__text
-      .hero-product__content
-        h1 = data.products.integer_walk_rebound.name
-        p = data.products.integer_walk_rebound.short_description_en
-        ul.inline-list
-          - data.products.integer_walk_rebound.colors.each do |color|
-            li.color-icon data-color=color.sku data-image-path=color.default_image
-              .color-icon style="background: linear-gradient(180deg, #{color.first_color}, #{color.first_color} 65%, #{color.second_color} 66%, #{color.second_color} 100%); border: 1px solid #fff" title=(color.name)
+    .hero-product__content
+      h1 = data.products.classic_walk.name
+      .badge.badge--small.badge--white-on-black New color options
+      p = data.products.classic_walk.short_description_en
+      ul.inline-list
+        - data.products.classic_walk.colors.each do |color|
+          li.color-icon data-color=color.sku data-image-path=color.default_image
+            .color-icon style="background: linear-gradient(180deg, #{color.first_color}, #{color.first_color} 65%, #{color.second_color} 66%, #{color.second_color} 100%); border: 1px solid #fff" title=(color.name)
 
   .featured-products.content
     .card__container
       = link_to "/en/products/classic_walk/", class: "card card--dark" do
         .card__figure
-          = image_tag "/images/products/classic_walk/GLS200AAG/GLS200AAG_01@1200px.jpg", srcset: "/images/products/classic_walk/GLS200AAG/GLS200AAG_01@1200px.jpg 1200w, /images/products/classic_walk/GLS200AAG/GLS200AAG_01@2500px.jpg 2500w", alt: "Classic Walk", class: "card__image"
+          = image_tag "/images/products/classic_walk/GLS220NNG/GLS220NNG_01@1600px.jpg", srcset: "/images/products/classic_walk/GLS220NNG/GLS220NNG_01@1600px.jpg 1600w, /images/products/classic_walk/GLS220NNG/GLS220NNG_01@2400px.jpg 2400w", alt: "Classic Walk", class: "card__image"
         .card__body
           h2 = data.products.classic_walk.name
           p = data.products.classic_walk.short_description_en
@@ -31,6 +31,8 @@ lang: en
             - data.products.classic_walk.colors.each do |color|
               li.color-icon data-color=color.sku data-image-path=color.default_image
                 .color-icon style="background: linear-gradient(180deg, #{color.first_color}, #{color.first_color} 65%, #{color.second_color} 66%, #{color.second_color} 100%); border: 1px solid #fff" title=(color.name)
+        .notice.notice--top-right
+          span New color options
 
       = link_to "/en/products/classic_run/", class: "card card--dark" do
         .card__figure

@@ -101,6 +101,8 @@ lang: en
             p = data.products.classic_walk.short_description_en
           .card__attributes
             = partial "partials/product_attributes", locals: { product: "classic_walk" }
+        .notice.notice--top-right
+          span New color options
 
       = link_to "/en/products/#{data.products.classic_run.slug}/", class: "card", data: { product: "classic_run" } do
         .card__figure
