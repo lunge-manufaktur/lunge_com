@@ -2,20 +2,15 @@
 # the following line to use "http://" instead
 source 'https://rubygems.org'
 
-gem "middleman", "~> 4.2.1"
-gem "middleman-sprockets"
+gem "middleman", "~> 4.3.5"
+gem "middleman-autoprefixer"
 gem "middleman-blog"
-gem "nokogiri"
-
-# Live-reloading plugin
 gem "middleman-livereload"
+gem "slim"
+gem "dotenv"
 
 # For faster file watcher updates on Windows:
 gem "wdm", "~> 0.1.1", :platforms => [:mswin, :mingw]
 
 # Windows does not come with time zone data
 gem "tzinfo-data", platforms: [:mswin, :mingw, :jruby]
-
-gem "slim"
-gem "middleman-autoprefixer"
-gem "dotenv"

@@ -1403,7 +1403,7 @@ li.tab-title--active {
   color: #fff;
 }
 
-li.tab-title[not tab-title--active]:hover {
+li.tab-title:not(tab-title--active):hover {
   background-color: $white;
 }
 

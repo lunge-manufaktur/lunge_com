@@ -85,23 +85,6 @@ sitemap_changefreq: daily
             p Beim Obermaterial handelt es sich um äußerst hochwertige PU-Mikrofaser, die ausgiebig auf Scheuer-, Reibe-, Falt- und Farbbeständigkeit getestet wurde und Ihrem Fuß bequemen, rutschfreien Halt bietet.
             = link_to "Jetzt bestellen", "#add-to-cart", class: "button button-large"
 
-.panel.panel--odd
-  .content
-    .panel__inner.panel__inner--reverse
-      .panel__image
-        = image_tag "/images/products/classic_walk/GLS200CCG/default.png", id: "color-preview", alt: "Classic Walk in Caramel / Hellgrau"
-        ul.inline-list.inline-list--center
-          - data.products.classic_walk.colors.each do |color|
-            li
-              .color-icon.color-icon--button class=(color.sku == "GLS200CCG" ? "color-icon--active" : "") style="background: linear-gradient(180deg, #{color.first_color}, #{color.first_color} 65%, #{color.second_color} 66%, #{color.second_color} 100%); border: 0px solid #{color.first_color}" title=(color.name) href="#" data-sku=(color.sku)
-        label.text-small.text-center#color-preview__label Caramel/Hellgrau
-      aside.panel__text
-        .panel__text__inner
-          h2 Dezent bis abenteuerlich: Farben für jeden Geschmack.
-          p Um den Classic Walk auch optisch an jeden erdenklichen Einsatzzweck anzupassen, ist dieses Modell in einem breiten Spektrum an Farbvarianten erhältlich – von klassisch unauffäligen Grau- und Schwarztönen bis hinzu erfrischenden Versionen in Caramel oder Royal Blau.
-          = link_to "Jetzt bestellen", "#add-to-cart", class: "button button-large"
-
-
 .panel
   .content
     .panel__inner.panel__inner--reverse

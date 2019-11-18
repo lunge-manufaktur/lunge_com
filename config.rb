@@ -37,7 +37,7 @@ require "lib/helpers"
 helpers Helpers
 ###
 
-activate :sprockets
+# activate :sprockets
 
 # Automatic image dimensions on image_tag helper
 # activate :automatic_image_sizes

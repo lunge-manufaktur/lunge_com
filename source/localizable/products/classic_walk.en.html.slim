@@ -81,22 +81,6 @@ sitemap_changefreq: daily
             p The upper is made from high quality microfiber, which has been thoroughly tested and offers a secure and comfortable fit for your feet.
             = link_to "Buy now", "#add-to-cart", class: "button button-large"
 
-.panel.panel--odd
-  .content
-    .panel__inner.panel__inner--reverse
-      .panel__image
-        = image_tag "/images/products/classic_walk/GLS200CCG/default.png", id: "color-preview", alt: "Classic Walk in Caramel / Hellgrau"
-        ul.inline-list.inline-list--center
-          - data.products.classic_walk.colors.each do |color|
-            li
-              .color-icon.color-icon--button class=(color.sku == "GLS200CCG" ? "color-icon--active" : "") style="background: linear-gradient(180deg, #{color.first_color}, #{color.first_color} 65%, #{color.second_color} 66%, #{color.second_color} 100%); border: 0px solid #{color.first_color}" title=(color.name) href="#" data-sku=(color.sku)
-        label.text-small.text-center#color-preview__label Caramel/Hellgrau
-      aside.panel__text
-        .panel__text__inner
-          h2 Subtle or radiant: Colors for any preference. 
-          p The Classic Walk is a perfect fit in terms of color as well. From classic black and grey to bright and radiant hues - the wide range of options make these shoes suitable for any occasion.
-          = link_to "Buy now", "#add-to-cart", class: "button button-large"
-
 .panel
   .content
     .panel__inner

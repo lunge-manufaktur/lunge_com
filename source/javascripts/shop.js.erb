@@ -129,7 +129,7 @@ $(function() {
 
   function disableAddToCartButton() {
     $('.buy-button').attr('disabled', 'disabled').text("Laden...");
-    console.log("cart disabled");
+    // console.log("cart disabled");
   }
 
   function enableAddToCartButton() {
@@ -156,9 +156,9 @@ $(function() {
     } else {
       selectedVariantId = variants[0].id
     }
-    console.log(firstAvailableVariant);
-    console.log(selectedVariant);
-    console.log(selectedVariantId);
+    // console.log(firstAvailableVariant);
+    // console.log(selectedVariant);
+    // console.log(selectedVariantId);
 
     // while (selectedVariantName == '' && firstAvailableVariant == null && i < variants.length) {
     //   firstAvailableVariant = variants[i].available ? variants[i].id : null;
@@ -535,8 +535,8 @@ $(function() {
   }
 
   function updateBuyButton(productID, variant) {
-    console.log(productID);
-    console.log(variant);
+    // console.log(productID);
+    // console.log(variant);
     $('.add-button[data-product-id="'+ productID +'"]').data('variant-id', variant.id);
   }
   
