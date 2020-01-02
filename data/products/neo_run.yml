@@ -49,13 +49,6 @@ colors:
     default_image: "/images/products/neo_run/LTS214MA/default.jpg"
     price: 160
   -
-    sku: "LTS213PMS"
-    name: "Pflanze/Magnesium/Silver"
-    first_color: "#55E000"
-    second_color: "#CCC"
-    default_image: "/images/products/neo_run/LTS213PMS/default.jpg"
-    price: 160
-  -
     sku: "LTS114CV"
     name: "Champagne/Violet"
     first_color: "#E0D9D2"
