@@ -16,3 +16,7 @@ en:
     name: Firmness
     start_name: Comfortable
     end_name: Direct
+  fit:
+    name: Fit
+    start_name: Narrow
+    end_name: Wide

@@ -91,3 +91,13 @@ attributes:
       name: firmness.end_name
       value: 7
       description: firmness.end_description
+  -
+    name: fit.name
+    start:
+      name: fit.start_name
+      value: 2
+      description: fit.description
+    end:
+      name: fit.end_name
+      value: 6
+      description: fit.description
