@@ -63,13 +63,6 @@ colors:
     default_image: "/images/products/classic_walk/GLS210AAS/default.jpg"
     price: 230
   -
-    sku: "GLS210MMS"
-    name: "Marine/Schwarz"
-    first_color: "#31335A"
-    second_color: "#000"
-    default_image: "/images/products/classic_walk/GLS210MMS/default.jpg"
-    price: 230
-  -
     sku: "GLS202SGS"
     name: "Glatt/Schwarz"
     first_color: "#000"
