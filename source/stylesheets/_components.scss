@@ -1,5 +1,6 @@
 /* PRODUCT GRID */
 .product-showcase__container {
+  position: relative;
   padding-bottom: 0;
   background-color: $midnight-blue;
 
@@ -547,6 +548,7 @@ input[type="submit"] {
   font-weight: 700;
   padding: 0.5rem 1rem;
   font-size: 0.8125rem;
+  z-index: 1;
 
   @include tablet-portrait {
     top: 2rem;
@@ -1190,8 +1192,15 @@ iframe.responsive--4x3 {
 
 
 
-
 /* TITLE */
+.title__announcement {
+  padding: 0.5rem 1rem;
+  text-align: center;
+  font-size: 0.825rem;
+  font-weight: 700;
+  background-color: #fffbbc;
+}
+
 .title__container {
   width: 100%;
   background-color: $title-background;

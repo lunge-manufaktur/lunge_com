@@ -21,6 +21,8 @@ html lang=(lang || "de")
         = partial "/partials/header"
         = yield_content :hero
         main
+            .title__announcement
+                span Wir versenden Ihre Bestellungen weiterhin ohne Verzögerungen. Bleiben Sie gesund.
             = yield
         = partial "/partials/footer"
 
