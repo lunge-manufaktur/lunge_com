@@ -7,11 +7,6 @@ url_en: "https://www.lunge.com/en/"
 sitemap_priority: 0.9
 ---
 .product-showcase__container
-  = link_to "/news/werksverkauf_2020/", class: "button--announcement" do
-    span Werksverkauf:
-    br
-    span 08./09. Mai 2020
-    
   = link_to "/products/classic_walk/", class: "hero-product" do
     .hero-product__image
     .hero-product__content
@@ -22,6 +17,10 @@ sitemap_priority: 0.9
         - data.products.classic_walk.colors.each do |color|
           li.color-icon data-color=color.sku data-image-path=color.default_image
             .color-icon style="background: linear-gradient(180deg, #{color.first_color}, #{color.first_color} 65%, #{color.second_color} 66%, #{color.second_color} 100%); border: 1px solid #fff" title=(color.name)
+  = link_to "/news/werksverkauf_2020/", class: "button--announcement" do
+    span Werksverkauf:
+    br
+    span 08./09. Mai 2020
 
   .featured-products.content
     .card__container
