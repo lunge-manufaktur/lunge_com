@@ -203,6 +203,13 @@ $(function() {
     return  '<select class="product-select" name = "product-selection">' + options + '</select>';
   }
 
+  function preselectProductOption() {
+    var productVariantId = window.location.hash.substring(1);
+    console.log(productVariantId);
+
+    $('select.product-select').val(productVariantId);
+  }
+
 
 
   function updateVariantPrice(selectedVariant) {
@@ -410,7 +417,7 @@ $(function() {
     $('.cart').on('keyup', '.cart-item__quantity', debounce(fieldQuantityHandler, 250));
 
     // cart tab click listener 
-    $('.cart__toggle').on('click', function() {
+    $('[data-action="toggle-cart"]').on('click', function() {
       setPreviousFocusItem(this);
       openCart();
     });

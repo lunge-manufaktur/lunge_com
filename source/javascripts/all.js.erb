@@ -49,9 +49,15 @@ if (!Array.prototype.find) {
 
 
 // OFFCANVAS-NAV
-$("#offcanvas-top-open, #offcanvas-top-close").click(function() {
-    $("body").toggleClass("offcanvas")
-});
+$('#offcanvas-menu__toggle').on('click', function(event) {
+  event.preventDefault();
+  $('body').toggleClass('offcanvas');
+})
+
+$('body').on('click', '.overlay', function(event) {
+  event.preventDefault();
+  $('body').toggleClass('offcanvas');
+})
 
 
 
@@ -161,3 +167,7 @@ $('[data-product="integer_walk_rebound_leder"] li.color-icon').on("mouseover tap
   var imagePath = $(this).data("image-path")
   $('[data-product=integer_walk_rebound_leder] .card__image').attr("src", imagePath);
 });
+
+
+
+// SET PRODUCT_OPTIONS ON LOAD

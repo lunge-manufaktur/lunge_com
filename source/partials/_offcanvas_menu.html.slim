@@ -1,0 +1,6 @@
+.offcanvas-menu
+	label Menü
+	ul.mobile-nav
+		- data.navigation_items.de.each do |item|
+			li.mobile-nav__item
+				= nav_link_to item.name, item.url, class: "mobile-nav__link", section: item.section

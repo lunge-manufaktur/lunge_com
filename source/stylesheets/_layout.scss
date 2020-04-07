@@ -14,16 +14,6 @@ img {
 body {
   @include transition;
   background-color: $background-color;
-  position: absolute;
-  top: -100vh;
-  right: 0;
-  left: 0;
-}
-
-.oncanvas {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
 
   @include tablet-portrait {
     border: 1rem solid $white;
@@ -31,8 +21,7 @@ body {
   }
 }
 
-body.offcanvas {
-  transform: translateY(100vh);
+body.offcanvas {;
   overflow: hidden;
   -webkit-overflow-scrolling: hidden;
 }
@@ -41,24 +30,54 @@ header {
   background-color: $background-border;
   overflow: hidden;
   position: fixed;
+  top: 0;
   left: 0;
   right: 0;
   display: flex;
   width: 100%;
   height: 4rem;
-  padding: 1rem;
   align-items: center;
   justify-content: space-between;
-  z-index: 1
+  z-index: 1;
+  border-bottom: 1px solid $mint-gray;
+
+  @include tablet-portrait {
+    border-bottom: none;
+  }
 }
 
 header.header--frontpage {
 }
 
 main {
+  @include transition();
   position: relative;
   flex: 0 0 auto;
   margin-top: 4rem;
+}
+
+/* --- OVERLAY --- */
+.overlay {
+  display: none;
+  background-color: $background-color;
+  z-index: 1;
+  transition: 140ms ease-in-out;
+  cursor: w-resize;
+}
+
+body.offcanvas .overlay {
+  opacity: 0.6;
+  display: block;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 4rem;
+  bottom: 0;
+
+  @include tablet-portrait {
+    left: 4rem;
+    top: 0;
+  }
 }
 
 footer {

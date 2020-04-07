@@ -50,6 +50,10 @@ input[type=submit].button--checkout {
 .cart__close-button {
   background: transparent;
   text-align: right;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: auto;
 
   &:hover {
     background-color: $mint-gray;
@@ -58,13 +62,13 @@ input[type=submit].button--checkout {
 
 .cart-form {
   flex: 1 0;
-  overflow: scroll;
+  overflow: auto;
 }
 
 .cart-item-container {
   position: relative;
   overflow-x: hidden;
-  overflow-y: scroll;
+  overflow-y: auto;
   -webkit-overflow-scrolling: touch;
 }
 
@@ -169,12 +173,6 @@ input[type=number]::-webkit-outer-spin-button {
   justify-content: space-between;
   align-items: center;
   font-weight: 700;
-}
-
-.cart__close-button {
-  position: absolute;
-  top: 0;
-  right: 0;
 }
 
 .cart-bottom {

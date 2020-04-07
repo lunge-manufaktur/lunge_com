@@ -15,20 +15,18 @@ html lang=(lang || "de")
     = javascript_include_tag "https://assets.backinstock.org/widget/6707_1488287006.js?v=5&shop=lunge-manufaktur.myshopify.com"
 
   body class=page_classes
-    = partial "/partials/offcanvas"
-    
-    .oncanvas
-        = partial "/partials/header"
-        = yield_content :hero
-        main
-            .title__announcement
-                span Wir versenden Ihre Bestellungen weiterhin ohne Verzögerungen. Bleiben Sie gesund.
-            = yield
-        = partial "/partials/footer"
+    .overlay
+    = partial "/partials/offcanvas_menu"
+    = partial "/partials/header"
+    main
+      .title__announcement
+        span Wir versenden Ihre Bestellungen weiterhin ohne Verzögerungen. Bleiben Sie gesund.
+      = yield
+    = partial "/partials/footer"
 
     = javascript_include_tag "jquery_341.min"
-    = javascript_include_tag "all"
     = javascript_include_tag "shop"
+    = javascript_include_tag "all"
     = yield_content :additional_javascript
     = yield_content :custom_assets
 

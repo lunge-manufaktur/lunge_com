@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="17px" height="16px" viewBox="0 0 17 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 41.2 (35397) - http://www.bohemiancoding.com/sketch -->
+    <title>Streamline-Basic</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Frames-24px" transform="translate(-651.000000, -303.000000)">
+            <rect id="Rectangle-1-Copy-168" x="648" y="288" width="24" height="24"></rect>
+        </g>
+        <g id="Icons" transform="translate(-651.000000, -303.000000)" stroke-linecap="round" stroke="#000000" stroke-linejoin="round">
+            <g id="Group-928" transform="translate(652.000000, 303.320222)">
+                <path d="M15,0.5176113 L0.043,0.5176113" id="Stroke-4443"></path>
+                <path d="M15,4.6585017 L0.043,4.6585017" id="Stroke-4444"></path>
+                <path d="M15,8.7993921 L0.043,8.7993921" id="Stroke-4445"></path>
+                <path d="M15,12.9402825 L0.043,12.9402825" id="Stroke-4446"></path>
+            </g>
+        </g>
+        <g id="Text" transform="translate(-651.000000, -495.000000)"></g>
+    </g>
+</svg>
