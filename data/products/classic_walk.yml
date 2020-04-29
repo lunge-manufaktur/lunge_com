@@ -35,11 +35,25 @@ colors:
     default_image: "/images/products/classic_walk/GLS220LLL/default.jpg"
     price: 230
   -
+    sku: "GLS220GGG"
+    name: "Grey / Light Grey"
+    first_color: "#656670"
+    second_color: "#DFDFDF"
+    default_image: "/images/products/classic_walk/GLS220GGG/default.jpg"
+    price: 230
+  -
     sku: "GLS220CCG"
     name: "Caramel/Light Grey"
     first_color: "#CEA17F"
     second_color: "#DFDFDF"
     default_image: "/images/products/classic_walk/GLS220CCG/default.jpg"
+    price: 230
+  -
+    sku: "GLS220GGL"
+    name: "Grey / Lakritze"
+    first_color: "#656670"
+    second_color: "#000"
+    default_image: "/images/products/classic_walk/GLS220GGL/default.jpg"
     price: 230
   -
     sku: "GLS210SSG"
