@@ -60,7 +60,7 @@ sitemap_changefreq: daily
   .content
     .panel__inner.panel__inner--reverse
       .panel__image
-        = image_tag "/images/products/classic_run/hero/STS203RRW__02__square.png", alt: "Classic Run in Royal / Weiß"
+        = image_tag "/images/products/classic_run/STS220YGG/STS220YGG_01@2400px.jpg", srcset: "/images/products/classic_run/STS220YGG/STS220YGG_01@1200px.jpg 1200w, /images/products/classic_run/STS220YGG/STS220YGG_01@2400px.jpg 2400w", alt: "Classic Run in Yellow/Lawn Green/Light Gray"
       aside.panel__text
         .panel__text__inner
           h2 80 Prozent EVA-Anteil für eine dauerhafte Federung
@@ -72,7 +72,7 @@ sitemap_changefreq: daily
   .content
     .panel__inner
       .panel__image
-        = image_tag "/images/products/classic_run/STS203SSS/STS203SSS__01.jpg", alt: "Classic Run in Schwarz / Silber"
+        = image_tag "/images/products/classic_run/STS220BNG/STS220BNG_03@2400px.jpg", srcset: "/images/products/classic_run/STS220BNG/STS220BNG_03@1200px.jpg 1200w, /images/products/classic_run/STS220BNG/STS220BNG_03@2400px.jpg 2400w", alt: "Classic Run in Steel Blue/Navy/Light Gray"
       aside.panel__text
         .panel__text__inner
           h2 Ein himmlisches Gefühl
@@ -80,26 +80,13 @@ sitemap_changefreq: daily
           = link_to "Jetzt bestellen", "#add-to-cart", class: "button button-large"
 
 .panel
-  .content
-    .panel__inner.panel__inner--reverse
-      .panel__image
-        = image_tag "/images/products/classic_run/hero/STS203SWR__02__square.png", alt: "Classic Run in Silber / Weiß / Rot"
-      aside.panel__text
-        .panel__text__inner
-          h2 Vielseitigkeit als Spezialität
-          p Der Classic Run ist ein überaus universeller und vielseitiger Laufschuh, der die meisten Fußformen und individuellen Anforderungen verschiedener Laufstile abdeckt. So zeichnet sich die dezente Pronationsstütze an der Innenseite durch einen flexiblen Wirkungsgrad aus, der den Fuß sanft und kontrolliert führt, wodurch sich dieser Schuh sowohl für Neutralläufer als auch moderate Pronierer eignet. Im Zweifel hilft Ihnen einer unserer Händler in ganz Deutschland gerne mit einer fachkundigen Beratung und Videoanalyse weiter.
-          = link_to "Jetzt bestellen", "#add-to-cart", class: "button button-large"
+  .content.content--narrow
+    h2 Vielseitigkeit als Spezialität
+    p Der Classic Run ist ein überaus universeller und vielseitiger Laufschuh, der die meisten Fußformen und individuellen Anforderungen verschiedener Laufstile abdeckt. So zeichnet sich die dezente Pronationsstütze an der Innenseite durch einen flexiblen Wirkungsgrad aus, der den Fuß sanft und kontrolliert führt, wodurch sich dieser Schuh sowohl für Neutralläufer als auch moderate Pronierer eignet. Im Zweifel hilft Ihnen einer unserer Händler in ganz Deutschland gerne mit einer fachkundigen Beratung und Videoanalyse weiter.
 
-.panel
-  .content
-    .panel__inner
-      .panel__image
-        = image_tag "/images/products/classic_run/hero/STS203GGG__03__square.png", alt: "Classic Run in Grün / Grün"
-      aside.panel__text
-        .panel__text__inner
-          h2 Stetige Verbesserungen
-          p Lassen Sie sich nicht von der Tatsache irritieren, dass der Classic Run bereits seit 2008 verkauft wird - es handelt sich hierbei um einen Laufschuh mit bewährten Stärken, der dennoch stetig angepasst und verbessert wurde. So haben wir im Laufe der Jahre verschiedenste Komponenten und Details des Schuhs verbessert - von der Laufsohle, über die Schnürsenkel bis hin zum Innenfutter. Bei uns stehen Material und Fertigungsweise immer auf dem Prüfstand.
-          = link_to "Jetzt bestellen", "#add-to-cart", class: "button button-large"
+    h2 Stetige Verbesserungen
+    p Lassen Sie sich nicht von der Tatsache irritieren, dass der Classic Run bereits seit 2008 verkauft wird - es handelt sich hierbei um einen Laufschuh mit bewährten Stärken, der dennoch stetig angepasst und verbessert wurde. So haben wir im Laufe der Jahre verschiedenste Komponenten und Details des Schuhs verbessert - von der Laufsohle, über die Schnürsenkel bis hin zum Innenfutter. Bei uns stehen Material und Fertigungsweise immer auf dem Prüfstand.
+    = link_to "Jetzt bestellen", "#add-to-cart", class: "button button-large"
 
 .gallery.scroll--horizontal
   - data.products.classic_run.images.each do |image|

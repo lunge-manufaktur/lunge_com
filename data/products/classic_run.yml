@@ -65,22 +65,10 @@ images:
     title: Classic Run (Yellow/Lawn Green/Light Gray)
   -
     path: "/images/products/classic_run/STS120BBG/STS120BBG_01@2400px.jpg"
-    title: Classic Run (Steel Blue/Medium Blue/Light Gray)
+    title: Classic Run W (Steel Blue/Medium Blue/Light Gray)
   -
-    path: "/images/products/classic_run/misc/classic_run_group02@2500px.jpg"
-    title: "Classic Run"
-  -
-    path: "/images/products/classic_run/STS203SWR/STS203SWR__01.jpg"
-    title: Classic Run (Silber/Weiß/Rot)
-  -
-    path: "/images/products/classic_run/STS203SSS/STS203SSS__02.jpg"
-    title: Classic Walk (Schwarz/Silber)
-  -
-    path: "/images/products/classic_run/STS203RRW/STS203RRW__01.jpg"
-    title: "Classic Run (Royal/Weiß)"
-  -
-    path: "/images/products/classic_run/STS203GGG/STS203GGG__03.jpg"
-    title: "Classic Run (Grün/Weiß)"
+    path: "/images/products/classic_run/STS220BNG/STS220BNG_03@2400px.jpg"
+    title: "Classic Run (Steel Blue/Navy/Light Gray)"
 variants:
   men:
     -
