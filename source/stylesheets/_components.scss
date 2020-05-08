@@ -1696,7 +1696,7 @@ li.tab-title:not(tab-title--active):hover {
 
 /* FOOTER BOTTOM LINE */
 .footer__bottom-line {
-  margin: $gutter auto;
+  padding: $gutter 0;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
