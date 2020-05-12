@@ -1,6 +1,10 @@
 header
-  .logo__container
-    = link_to (image_tag "logo_alternative.svg", class: "logo__image"), "/en/", class: "logo"
+  .header__menu
+    = link_to "#", class: "offcanvas-menu__toggle", id: "offcanvas-menu__toggle" do
+      = image_tag "/images/misc/menu.svg", class: "offcanvas-menu__icon"
+    .logo__container
+      = link_to (image_tag "logo_alternative.svg", class: "logo__image"), "/", class: "logo"
+  .header__nav
   nav.main-nav
     ul
       - data.navigation_items.en.each do |item|
@@ -8,6 +12,6 @@ header
           = nav_link_to item.name, item.url, class: "main-nav__link", section: item.section
       li
         button.main-nav__link.main-nav__link--highlight.cart__toggle.js-prevent-cart-listener data-action="toggle-cart"
-          span.btn__counter Cart
-
-  = link_to "Menü", "#", class: "offcanvas-top-open", id: "offcanvas-top-open"
+          span.btn__counter Warenkorb
+  = link_to "#", class: "cart__toggle--mobile js-prevent-cart-listener", data: { action: "toggle-cart" } do
+    = image_tag "/images/misc/shopping_cart_filled.svg", class: "cart__icon"
