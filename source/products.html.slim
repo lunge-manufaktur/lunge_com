@@ -43,8 +43,6 @@ lang: de
             p = data.products.classic_walk.short_description
           .card__attributes
             = partial "partials/product_attributes", locals: { product: "classic_walk" }
-        .notice.notice--top-right
-          span Neue Farben
 
       = link_to "/products/#{data.products.classic_run.slug}/", class: "card", data: { product: "classic_run" } do
         .card__figure
