@@ -55,6 +55,20 @@ colors:
     second_color: "#000"
     default_image: "/images/products/classic_walk/GLS220GGL/default.jpg"
     price: 230
+  -
+    sku: "GLS120BLG"
+    name: "Blackberry / Light Gray"
+    first_color: "#583A41"
+    second_color: "#DFDFDF"
+    default_image: "/images/products/classic_walk/GLS120BLG/default.jpg"
+    price: 230
+  -
+    sku: "GLS120SAG"
+    name: "Sand / Light Gray"
+    first_color: "#DECFAD"
+    second_color: "#48315B"
+    default_image: "/images/products/classic_walk/GLS120SAG/default.jpg"
+    price: 230
 images:
   -
     path: "/images/products/classic_walk/GLS220BBG/GLS220BBG_02@2400px.jpg"
