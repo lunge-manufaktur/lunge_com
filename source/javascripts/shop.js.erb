@@ -102,7 +102,7 @@ $(function() {
       var productSelectHTML = generateProductSelectors(products);
       var variantSelectHTML = generateVariantSelectors(product.variants, selectedVariantName);
 
-      $('.product-select').html(productSelectHTML);
+      $('.product-select__container').html(productSelectHTML);
       $('.variant-select').html(variantSelectHTML);
 
       updateProductData();
@@ -137,6 +137,13 @@ $(function() {
     $('.product__image').attr('alt', productTitle);
   }
 
+  // update product title
+  function updateTitle(product) {
+    var productTitle = product.title;
+
+    $('.product-select__title-container').html('<span class="product-select__title">' + productTitle + '</span>');
+  }
+
 
   function showSpinner() {
     var spinnerHTML = '<div class="loader"></div>';
@@ -157,7 +164,7 @@ $(function() {
 
   // populate variant select box
   function generateVariantSelectors(variants, selectedVariantName) {
-    var options;
+    var options = '';
     var selectedVariantId
     var selectedVariant = variants.find(function(el) {
       return el.title == selectedVariantName
@@ -202,13 +209,30 @@ $(function() {
   }
 
   // populate product select box
+  // function generateProductSelectors(products) {
+  //   var options;
+  //   for (var i = 0; i < products.length; i++) {
+  //     options += '<option value = "' + products[i].id + '">' + products[i].title + '</option>';
+  //   }
+
+  //   return  '<select class="product-select" name = "product-selection">' + options + '</select>';
+  // }
+
+  // alternative product selection
   function generateProductSelectors(products) {
-    var options;
+    var options = '';
+    var selectedClass = '';
     for (var i = 0; i < products.length; i++) {
-      options += '<option value = "' + products[i].id + '">' + products[i].title + '</option>';
+      if (i === 0) {
+        selectedClass = " product-select__item--selected";
+      } else {
+        selectedClass = '';
+      };
+
+      options += '<a class="product-select__item' + selectedClass + '" data-product-id=' + products[i].id + ' href="#"><img src="' + products[i].images[0].src + '" title="' + products[i].title + '"></a>';
     }
 
-    return  '<select class="product-select" name = "product-selection">' + options + '</select>';
+    return '<div class="product-select" name="product-selection">' + options + '</div>';
   }
 
   function preselectProductOption() {
@@ -230,7 +254,8 @@ $(function() {
 
   // update add to cart button
   function updateAddToCartButton() {
-    var product = $('.product-select').val();
+    // var product = $('.product-select').val();
+    var product = $('.product-select__item--selected').data("product-id");
     var variant = $('.variant-select').val();
 
     console.log('product: ' + product + ', variant: ' + variant);
@@ -241,7 +266,8 @@ $(function() {
 
   // show add to cart button
   function showAddToCartButton() {
-    var product = $('.product-select').val();
+    // var product = $('.product-select').val();
+    var product = $('.product-select__item--selected').data("product-id");
     var variant = $('.variant-select').val();
 
     console.log('product: ' + product + ', variant: ' + variant);
@@ -288,7 +314,8 @@ $(function() {
   // create restock notification
   function createRestockNotification() {
     var variant = $('.variant-select').val();
-    var product = $('.product-select').val();
+    // var product = $('.product-select').val();
+    var product = $('.product-select__item--selected').data("product-id");
     var email = $('#customer-email').val();
 
     var notificationCallback = function(data) {
@@ -317,8 +344,14 @@ $(function() {
 
 
   // product-select event listener
-  $('.product-select').on('change', function() {
-    var product = this.value;
+  $('.product-select__container').on('click', '.product-select__item', function(event) {
+    event.preventDefault();
+    // var product = this.value;
+    var product = this.getAttribute('data-product-id');
+
+    // toggle selected status
+    $('.product-select__item--selected').removeClass('product-select__item--selected');
+    $(this).addClass('product-select__item--selected');
 
     getVariants(product);
   });
@@ -332,7 +365,8 @@ $(function() {
 
 
   function updateProductData() {
-    var productID = $('.product-select').val();
+    // var productID = $('.product-select').val();
+    var productID = $('.product-select__item--selected').data("product-id");
     var variantID = $('.variant-select').val();
 
     client.fetchProduct(productID).then(function(product) {
@@ -354,6 +388,7 @@ $(function() {
           }
           updateVariantPrice(selectedVariant);
           updateProductImage(selectedVariant);
+          updateTitle(product);
         }
       }
     });
@@ -477,17 +512,6 @@ $(function() {
     return  '<select name = "variant-selection" class = "product' + num + '">' + options + '</select>';
   }
 
-    /* Generate DOM elements for product selectors
-    ============================================================ */
-  // function generateProductSelectors(products) {
-  //   var options;
-
-  //   for (var i = 0; i < products.length; i++) {
-  //     options += '<option value = "' + products[i].id + '">' + products[i].title + '</option>';
-  //   }
-
-  //   return  '<select class="product-select" name = "product-selection">' + options + '</select>';
-  // }
 
     /* Variant option change handler
     ============================================================ */

@@ -51,6 +51,7 @@ header.header--frontpage {
 
 main {
   @include transition();
+  display: block;
   position: relative;
   flex: 0 0 auto;
   margin-top: 4rem;

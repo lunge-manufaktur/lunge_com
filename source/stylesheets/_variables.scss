@@ -71,6 +71,12 @@ $start-desktop: 1280px;
   }
 }
 
+@mixin ie10() {
+  @media all and (-ms-high-contrast:none) {
+    @content;
+  }
+}
+
 
 /* ANIMATION */
 $transition: ease-in-out 140ms;
@@ -79,6 +85,10 @@ $transition-slow: ease-in-out 400ms;
 
 @mixin transition() {
   transition: $transition;
+}
+
+@mixin transition-slow() {
+  transition: $transition-slow;
 }
 
 @mixin press-down() {

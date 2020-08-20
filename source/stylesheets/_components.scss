@@ -151,6 +151,7 @@
 
 .badge {
   display: inline-block;
+  padding: 0.25rem 0.5rem;
 }
 
 .badge--small {
@@ -1244,9 +1245,13 @@ iframe.responsive--4x3 {
 .title__container {
   width: 100%;
   background-color: $title-background;
-  padding: $gutter-large 0;
+  padding: 3rem 0;
   flex-direction: column;
   align-items: center;
+
+  @include tablet-landscape {
+    padding: 6rem 0;
+  }
 
   @include desktop {
     padding: $gutter-large*3 0;
@@ -1744,7 +1749,44 @@ li.tab-title:not(tab-title--active):hover {
 
 /* ADD TO CART FORM */
 .product-select {
+  @include ie10() {
+    display: flex;
+    flex-wrap: wrap;
+  }
 
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(4rem, 1fr));
+  grid-gap: 0.5rem;
+}
+
+.product-select__item {
+  @include transition();
+  display: block;
+  border: 1px solid $mint-gray;
+
+  @include ie10() {
+    flex: 0 0 4rem;
+    margin-right: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
+}
+
+.product-select__item:focus {
+  outline: 0;
+}
+
+.product-select__item:hover {
+  background-color: $white;
+  border: 1px solid $gray;
+}
+
+.product-select__item--selected {
+  background-color: $white;
+  border: 1px solid $gray;
+}
+
+.product-select__title {
+  font-size: 0.825rem;
 }
 
 .collection {
@@ -1797,7 +1839,7 @@ li.tab-title:not(tab-title--active):hover {
   }
 
   @include tablet-landscape {
-    flex: 0 0 350px;
+    flex: 0 0 400px;
   }
 }
 
