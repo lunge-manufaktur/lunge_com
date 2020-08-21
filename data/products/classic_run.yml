@@ -75,13 +75,13 @@ attributes:
       description: stability.start_description
     end:
       name: stability.end_name
-      value: 8
+      value: 9
       description: stability.end_description
   -
     name: rebound.name
     start:
       name: rebound.start_name
-      value: 3
+      value: 2
       description: rebound.start_description
     end:
       name: rebound.end_name

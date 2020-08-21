@@ -95,7 +95,7 @@ attributes:
       description: ground.start_description
     end:
       name: ground.end_name
-      value: 7
+      value: 8
       description: ground.end_description
   -
     name: stability.name
