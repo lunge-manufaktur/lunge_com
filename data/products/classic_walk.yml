@@ -5,6 +5,7 @@ short_description: "Der Classic Walk ist ein einzigartiger Bequemschuh für alle
 short_description_en: "Classic Walk is a unique and versatile walking shoe for everyday use."
 default_image: "/images/products/classic_walk/GLS220SSG/default.jpg"
 price: "224,20"
+discount_price: "150,00"
 colors:
   -
     sku: "GLS220SSG"
@@ -69,6 +70,71 @@ colors:
     second_color: "#48315B"
     default_image: "/images/products/classic_walk/GLS120SAG/default.jpg"
     price: 230
+outlet_colors:
+  -
+    sku: "GLS220SSG"
+    name: "Silver/Light Grey"
+    first_color: "#B1C0C7"
+    second_color: "#DFDFDF"
+    default_image: "/images/products/classic_walk/GLS220SSG/default.jpg"
+    price: 230
+  -
+    sku: "GLS220NNG"
+    name: "Navy/Light Grey"
+    first_color: "#31335A"
+    second_color: "#DFDFDF"
+    default_image: "/images/products/classic_walk/GLS220NNG/default.jpg"
+    price: 230
+  -
+    sku: "GLS220BBG"
+    name: "Steel Blue/Light Grey"
+    first_color: "#435982"
+    second_color: "#EB8A51"
+    default_image: "/images/products/classic_walk/GLS220BBG/default.jpg"
+    price: 230
+  -
+    sku: "GLS220LLL"
+    name: "Lakritze"
+    first_color: "#000"
+    second_color: "#000"
+    default_image: "/images/products/classic_walk/GLS220LLL/default.jpg"
+    price: 230
+  -
+    sku: "GLS220GGG"
+    name: "Grey / Light Grey"
+    first_color: "#656670"
+    second_color: "#DFDFDF"
+    default_image: "/images/products/classic_walk/GLS220GGG/default.jpg"
+    price: 230
+  -
+    sku: "GLS220CCG"
+    name: "Caramel/Light Grey"
+    first_color: "#CEA17F"
+    second_color: "#DFDFDF"
+    default_image: "/images/products/classic_walk/GLS220CCG/default.jpg"
+    price: 230
+  -
+    sku: "GLS220GGL"
+    name: "Grey / Lakritze"
+    first_color: "#656670"
+    second_color: "#000"
+    default_image: "/images/products/classic_walk/GLS220GGL/default.jpg"
+    price: 230
+  -
+    sku: "GLS202SGS"
+    name: "Glatt/Schwarz"
+    first_color: "#000"
+    second_color: "#000"
+    default_image: "/images/products/classic_walk/GLS202SGS/default.jpg"
+    price: 230
+  -
+    sku: "GLS202WGW"
+    name: "Glatt/Weiß"
+    first_color: "#FCFCFC"
+    second_color: "#EEEEEE"
+    default_image: "/images/products/classic_walk/GLS202WGW/default.jpg"
+    price: 230
+
 images:
   -
     path: "/images/products/classic_walk/GLS220BBG/GLS220BBG_02@2400px.jpg"

@@ -6,7 +6,37 @@ short_description: "Der bequeme und effiziente Alltagsschuh - jetzt erstmals aus
 short_description_en: "Premium everyday shoes, that combine athletic functionality and elegant, unobtrusive appearance - now available in real leather."
 default_image: "/images/products/integer_walk_rebound_leder/GLS610SW/default.jpg"
 price: "243,70"
+discount_price: "180,00"
 colors:
+  -
+    sku: "GLS610EG"
+    name: "Espresso/Gray"
+    first_color: "#3F3634"
+    second_color: "#64646B"
+    default_image: "/images/products/integer_walk_rebound_leder/GLS610EG/default.jpg"
+    price: 250
+  -
+    sku: "GLS610LG"
+    name: "Lakritze/Gray"
+    first_color: "#000"
+    second_color: "#64646B"
+    default_image: "/images/products/integer_walk_rebound_leder/GLS610LG/default.jpg"
+    price: 250
+  -
+    sku: "GLS610SW"
+    name: "Saddle Brown/White"
+    first_color: "#8E5D3D"
+    second_color: "#FFF"
+    default_image: "/images/products/integer_walk_rebound_leder/GLS610SW/default.jpg"
+    price: 250
+  -
+    sku: "GLS610WW"
+    name: "Whitesmoke/White"
+    first_color: "#EFEFEF"
+    second_color: "#FFF"
+    default_image: "/images/products/integer_walk_rebound_leder/GLS610WW/default.jpg"
+    price: 250
+outlet_colors:
   -
     sku: "GLS610EG"
     name: "Espresso/Gray"

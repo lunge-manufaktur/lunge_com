@@ -11,7 +11,7 @@ body {
 }
 
 p {
-  margin-bottom: $gutter * 2;
+  margin-bottom: 2.5rem;
 }
 
 a {
@@ -157,4 +157,8 @@ h5 {
 
 .text-light {
   color: #999;
+}
+
+.text-bold {
+  font-weight: 700;
 }

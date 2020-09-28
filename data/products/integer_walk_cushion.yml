@@ -5,7 +5,30 @@ short_description: "Leichter und bequemer Walking-Schuh für alle, die länger a
 short_description_en: "Versatile and comfortable walking shoes that turn any extra mile into a breeze."
 default_image: "/images/products/integer_walk_cushion/GLS400OGG/default.jpg"
 price: "224,20"
+discount_price: "180,00"
 colors:
+  -
+    sku: "GLS400OGG"
+    name: "Olive/Green/Gray"
+    first_color: "#9EA198"
+    second_color: "#CCC"
+    default_image: "/images/products/integer_walk_cushion/GLS400OGG/default.jpg"
+    price: 230
+  -
+    sku: "GLS400SGG"
+    name: "Slate/Gray"
+    first_color: "#6D6773"
+    second_color: "#CCC"
+    default_image: "/images/products/integer_walk_cushion/GLS400SGG/default.jpg"
+    price: 230
+  -
+    sku: "GLS400LLL"
+    name: "Lakritze"
+    first_color: "#000"
+    second_color: "#000"
+    default_image: "/images/products/integer_walk_cushion/GLS400LLL/default.jpg"
+    price: 230
+outlet_colors:
   -
     sku: "GLS400OGG"
     name: "Olive/Green/Gray"

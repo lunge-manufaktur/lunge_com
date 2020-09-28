@@ -1,0 +1,60 @@
+---
+title: Integer Run Rebound (Outlet) 
+description:
+canonical_link: "https://www.lunge.com/outlet/integer_run_rebound/"
+url_de: "https://www.lunge.com/outlet/integer_run_rebound/"
+url_en: "https://www.lunge.com/en/outlet/integer_run_rebound/"
+sitemap_priority: 0.1
+sitemap_changefreq: monthly
+sitemap_noindex: true
+---
+= partial "/partials/outlet/outlet_notice"
+.title__container#add-to-cart.anchor-target
+  = partial "partials/made_in_germany"
+  .title__inner
+    .content
+      .collection
+        .product
+          .product__figure
+            .product__image-container
+              img.product__image
+            ul.product-feature
+              = partial "partials/product-features/vegan"
+              = partial "partials/product-features/non-toxic"
+              = partial "partials/product-features/made_in_germany"
+            = partial "partials/product_attributes", locals: { product: "integer_run_rebound" }
+          .product__details
+            .product__title
+              = link_to "← Outlet", "/outlet/", class: "link"
+              h1 Integer Run Rebound
+            .product__description
+              p Komfortabler und effizienter Laufschuh mit einzigartiger Rückfederung.
+            .product__order-form
+              h4 Jetzt bestellen
+              .input-group
+                label Damen / Herren
+                .gender-select__container
+                  select.product__option.gender-select
+                    option value=214555164822 Herren
+                    option value=214555033750 Damen
+              .input-group
+                label Farbe
+                .product-select__title-container
+                .product-select__container
+              .input-group
+                label Größe (Fusslänge / US / EUR)
+                .variant-select__container
+                  select.product__option.variant-select
+              .variant-price__container
+                h3
+                  del = "€ #{data.products.integer_run_rebound.price}"
+                h2.variant-price
+                small inkl. Mwst., versandkostenfrei innerhalb Deutschlands
+              .add-to-cart-button__container
+                button.buy-button.js-prevent-cart-listener.add-button In den Warenkorb
+              .product__sizing
+                = partial "partials/size_guide_note"
+
+= partial "partials/outlet/product_page_redirect", locals: { product_name: "Integer Run Rebound", product_slug: "integer_run_rebound" }
+
+= partial "partials/outlet/outlet_faq"

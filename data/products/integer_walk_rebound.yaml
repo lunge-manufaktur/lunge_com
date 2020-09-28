@@ -6,7 +6,65 @@ short_description: "Ein Alltagsschuh der Spitzenklasse, der sportliche Funktiona
 short_description_en: "Premium everyday shoes, that combine athletic functionality and elegant, unobtrusive appearance."
 default_image: "/images/products/integer_walk_rebound/GLS410SSW/default.jpg"
 price: "194,96"
+discount_price: "150,00"
 colors:
+  -
+    sku: "GLS410SSW"
+    name: "Silver/Snow/White"
+    first_color: "#D5D9E2"
+    second_color: "#E0C87A"
+    default_image: "/images/products/integer_walk_rebound/GLS410SSW/default.jpg"
+    price: 200
+  -
+    sku: "GLS310SRW"
+    name: "Dark Slate Blue/Navy/White"
+    first_color: "#D5D9E2"
+    second_color: "#9C4243"
+    default_image: "/images/products/integer_walk_rebound/GLS310SRW/default.jpg"
+    price: 200
+  -
+    sku: "GLS410LLG"
+    name: "Lakritze/Gray"
+    first_color: "#000000"
+    second_color: "#3A3A3A"
+    default_image: "/images/products/integer_walk_rebound/GLS410LLG/default.jpg"
+    price: 200
+  -
+    sku: "GLS412WSW"
+    name: "White/Smooth"
+    first_color: "#FFF"
+    second_color: "#FDFDFD"
+    default_image: "/images/products/integer_walk_rebound/GLS412WSW/default.jpg"
+    price: 200
+  -
+    sku: "GLS412BSG"
+    name: "Black/Smooth"
+    first_color: "#333"
+    second_color: "#555"
+    default_image: "/images/products/integer_walk_rebound/GLS412BSG/default.jpg"
+    price: 200
+  -
+    sku: "GLS410CNW"
+    name: "Cornflower Blue/Navy/White"
+    first_color: "#6D7CAA"
+    second_color: "#F8F8F8"
+    default_image: "/images/products/integer_walk_rebound/GLS410CNW/default.jpg"
+    price: 200
+  -
+    sku: "GLS410DWG"
+    name: "Dark Gray/Wheat/Gray"
+    first_color: "#A08F99"
+    second_color: "#D5C2B7"
+    default_image: "/images/products/integer_walk_rebound/GLS410DWG/default.jpg"
+    price: 200
+  -
+    sku: "GLS310DHG"
+    name: "Dark Gray/Hot Pink/Gray"
+    first_color: "#A08F99"
+    second_color: "#E56899"
+    default_image: "/images/products/integer_walk_rebound/GLS310DHG/default.jpg"
+    price: 200
+outlet_colors:
   -
     sku: "GLS410SSW"
     name: "Silver/Snow/White"

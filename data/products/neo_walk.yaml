@@ -4,8 +4,9 @@ category_en: "Comfort shoes"
 slug: "neo_walk"
 short_description: "Ein leichter, neutraler Bequem- und Alltagsschuh mit rückfedernder, flexibler Mittelsohle und hervorragendem Tragegefühl."
 short_description_en: "A light everyday shoe with extremely springy, flexible midsole and exceptional fit."
-default_image: "/images/products/neo_walk/GTS214SB/default.jpg"
+default_image: "/images/products/neo_walk/GTS214LLL/default.jpg"
 price: "155,97"
+discount_price: "100,00"
 colors:
   -
     sku: "GTS214SB"
@@ -14,6 +15,21 @@ colors:
     second_color: "#434968"
     default_image: "/images/products/neo_walk/GTS214SB/default.jpg"
     price: 160
+  -
+    sku: "GTS114IC"
+    name: "Ivory/Champagne"
+    first_color: "#EAE7DE"
+    second_color: "#B5AEA9"
+    default_image: "/images/products/neo_walk/GTS114IC/default.jpg"
+    price: 160
+  -
+    sku: "GTS214LLL"
+    name: "Lakritze"
+    first_color: "#000"
+    second_color: "#000"
+    default_image: "/images/products/neo_walk/GTS214LLL/default.jpg"
+    price: 160
+outlet_colors:
   -
     sku: "GTS114IC"
     name: "Ivory/Champagne"

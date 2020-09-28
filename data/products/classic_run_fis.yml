@@ -6,6 +6,7 @@ short_description: "Nicht jeder Lauf ist ein Spaziergang - doch der Classic Run 
 short_description_en: "Not every run is a walk in the park—yet the Classic Run Fis offers excellent grip even off-road and on the most unforgiving terrain thanks to its grippy outsole."
 default_image: "/images/products/classic_run_fis/STW200ABB/default.png"
 price: "214,45"
+discount_price: "170,00"
 colors:
   -
     sku: "STW200ABB"
@@ -13,7 +14,7 @@ colors:
     name_en: "Dark Gray/Blue"
     first_color: "#303A49"
     second_color: "#2E57C3"
-    default_image: "/images/products/evo_run/LTS202GWH/default.png"
+    default_image: "/images/products/classic_run_fis/STW200ABB/default.png"
     price: 220
 
 images:

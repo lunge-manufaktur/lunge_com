@@ -25,6 +25,7 @@ sitemap_changefreq: daily
             = partial "partials/product_attributes", locals: { product: "classic_run" }
           .product__details
             .product__title
+              = link_to "← Shop", "/products/", class: "link"
               h1 Classic Run
             .product__description
               = partial "partials/video_link", locals: { product_name: "Classic Run" }

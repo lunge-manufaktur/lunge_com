@@ -102,7 +102,8 @@ $(function() {
       disableAddToCartButton();
 
       var product = products[0];
-      var selectedVariantName = $('.variant-select option:selected').text();
+      var selectedVariantName = $('.variant-select option:selected').text().replace(/○ |● /, '');
+      console.log('getProducts: ' + selectedVariantName);
       var productSelectHTML = generateProductSelectors(products);
       var variantSelectHTML = generateVariantSelectors(product.variants, selectedVariantName);
 
@@ -120,7 +121,8 @@ $(function() {
       disableAddToCartButton();
 
       var product = product;
-      var selectedVariantName = $('.variant-select option:selected').text();
+      var selectedVariantName = $('.variant-select option:selected').text().replace(/○ |● /, '');
+      console.log('getVariants: ' + selectedVariantName);
       var variantSelectHTML = generateVariantSelectors(product.variants, selectedVariantName);
 
       $('.variant-select').html(variantSelectHTML);
@@ -199,6 +201,8 @@ $(function() {
       var disabled = variants[i].available ? false : true;
       // var selectedVariantId = selectedVariant ? selectedVariant.id : firstAvailableVariant.id;
       var selectedAttribute = selectedVariantId == variants[i].id ? 'selected' : ''; 
+      var unavailableClass = disabled ? ' variant-select__option--unavailable' : '';
+      var availabilityIcon = disabled ? '○' : '●';
       // if (variants[i].title == selectedVariantName) {
       //   selected = 'selected'
       // } else if (variants[i].id == firstAvailableVariant.id) {
@@ -206,7 +210,7 @@ $(function() {
       // } else {
       //   selected = ''
       // };
-      options += '<option value = "' + variants[i].id + '"' + selectedAttribute + '>' + variants[i].title + '</option>';
+      options += '<option class="variant-select__option' + unavailableClass + '" value = "' + variants[i].id + '"' + selectedAttribute + '>' + availabilityIcon + ' ' + variants[i].title + '</option>';
     }
 
     return  '<select name = "variant-select" class = "variant-select">' + options + '</select>';
@@ -314,6 +318,18 @@ $(function() {
     $('.product__availability-notice--out-of-stock').hide();
   }
 
+  function showNotAvailableNotice() {
+    var instructions = 'Der Artikel ist in der gewünschten Größe nicht verfügbar. Bitte wählen Sie eine andere Farbe/Größe oder ein anderes Modell.'
+    
+    $('.add-to-cart-button__container').html(
+      '<h4>Nicht verfügbar</h4>' +
+      '<span>' + instructions + '</span>'
+    );
+
+    $('.product__availability-notice--discontinued').show();
+    $('.product__availability-notice--out-of-stock').hide();
+  }
+
 
   // create restock notification
   function createRestockNotification() {
@@ -380,9 +396,13 @@ $(function() {
 
           var unavailable = !selectedVariant.available
           var discontinued = discontinuedProducts.indexOf(product.title) != -1
+          var outlet = product.attrs.product_type == "Outlet" ? true : false
 
           if (discontinued && unavailable) {
             showDiscontinuedNotice();
+          }
+          else if (unavailable && outlet) {
+            showNotAvailableNotice();
           }
           else if (!discontinued && unavailable) {
             showRestockNotificationForm();

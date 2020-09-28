@@ -25,6 +25,7 @@ sitemap_changefreq: daily
             = partial "partials/product_attributes", locals: { product: "neo_walk" }
           .product__details
             .product__title
+              = link_to "← Shop", "/products/", class: "link"
               h1 Neo Walk
             .product__description
               p = data.products.neo_walk.short_description

@@ -24,6 +24,7 @@ sitemap_changefreq: daily
             = partial "partials/product_attributes", locals: { product: "integer_run_rebound" }
           .product__details
             .product__title
+              = link_to "← Shop", "/products/", class: "link"
               h1 Integer Run Rebound
             .product__description
               = partial "partials/video_link", locals: { product_name: "Integer Run Rebound" }

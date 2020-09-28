@@ -20,6 +20,7 @@ sitemap_changefreq: daily
             .product__notice Unsere Schuhe werden bereits inklusive Feetality Einlegesohle ausgeliefert.
           .product__details
             .product__title
+              = link_to "← Shop", "/products/", class: "link"
               h1 Feetality Einlegesohlen
             .product__description
               p = data.products.feetality.short_description

@@ -6,6 +6,7 @@ short_description: "Der Klassiker unter den Laufschuhen und Geheimtipp anspruchs
 short_description_en: "The proven choice for runners - constantly improved and developed for years the Classic Run is a running shoe of highest quality."
 default_image: "/images/products/classic_run/STS220BNG/default.jpg"
 price: "214,45"
+discount_price: "170,00"
 colors:
   -
     sku: "STS220BNG"
@@ -28,6 +29,64 @@ colors:
     second_color: "#D9D8DF"
     default_image: "/images/products/classic_run/STS220YGG/default.jpg"
     price: 214,45
+outlet_colors:
+  -
+    sku: "STS220BNG"
+    name: "Steel Blue/Navy/Light Gray"
+    first_color: "#3A3551"
+    second_color: "#656BA0"
+    default_image: "/images/products/classic_run/STS220BNG/default.jpg"
+    price: 214,45
+  -
+    sku: "STS220BNG"
+    name: "Lakritze"
+    first_color: "#000"
+    second_color: "#333"
+    default_image: "/images/products/classic_run/STS220LLL/default.jpg"
+    price: 214,45
+  -
+    sku: "STS220YGG"
+    name: "Yellow/Lawn Green/Light Gray"
+    first_color: "#5CEB65"
+    second_color: "#D9D8DF"
+    default_image: "/images/products/classic_run/STS220YGG/default.jpg"
+    price: 214,45
+  -
+    sku: "STS203SWR"
+    name: "Silber/Rot/Weiß"
+    first_color: "#BD3C42"
+    second_color: "#DDD"
+    default_image: "/images/products/classic_run/STS203SWR/default.jpg"
+    price: 220
+  -
+    sku: "STS203RRW"
+    name: "Royal/Weiß"
+    first_color: "#385BC1"
+    second_color: "#FFF"
+    default_image: "/images/products/classic_run/STS203RRW/default.jpg"
+    price: 220
+  -
+    sku: "STS203GGG"
+    name: "Grün/Weiß"
+    first_color: "#A4B93A"
+    second_color: "#FFF"
+    default_image: "/images/products/classic_run/STS203GGG/default.jpg"
+    price: 220
+  -
+    sku: "STS203SSS"
+    name: "Schwarz/Silber"
+    first_color: "#000000"
+    second_color: "#FFF"
+    default_image: "/images/products/classic_run/STS203SSS/default.jpg"
+    price: 220
+  -
+    sku: "STW200ABB"
+    name: "Anthrazit/Blau"
+    name_en: "Dark Gray/Blue"
+    first_color: "#303A49"
+    second_color: "#2E57C3"
+    default_image: "/images/products/classic_run_fis/STW200ABB/default.png"
+    price: 220
 images:
   -
     path: "/images/products/classic_run/STS220BNG/STS220BNG_01@2400px.jpg"

@@ -23,6 +23,7 @@ sitemap_changefreq: daily
             = partial "partials/product_attributes", locals: { product: "integer_walk_rebound" }
           .product__details
             .product__title
+              = link_to "← Shop", "/products/", class: "link"
               h1 Integer Walk Rebound Leder
             .product__description
               = partial "partials/video_link", locals: { product_name: "Integer Walk Leder" }
