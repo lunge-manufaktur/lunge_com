@@ -1,0 +1,139 @@
+name: "Neo Walk Sondermodell"
+category: "Bequemschuhe"
+category_en: "Comfort shoes"
+slug: "neo_walk_sondermodell"
+short_description: "Der leichte, neutrale Bequem- und Alltagsschuh in einer limitierten Leder-Version."
+short_description_en: "A light everyday shoe with extremely springy, flexible midsole and exceptional fit - now available as a limited leather version"
+default_image: "/images/products/neo_walk/NWN61/default.jpg"
+price: "155,97"
+discount_price: "70,00"
+outlet_colors:
+  -
+    sku: "NWN11"
+    name: "Foulardcalf/White"
+    first_color: "#f2f1ea"
+    second_color: "#cbcac4"
+    default_image: "/images/products/neo_walk/NWN11/default.jpg"
+  -
+    sku: "NWN21"
+    name: "Foulardcalf/Ocean"
+    first_color: "#3a4d5f"
+    second_color: "#c2d249"
+    default_image: "/images/products/neo_walk/NWN21/default.jpg"
+  -
+    sku: "NWN31"
+    name: "Strato Soft/Schoko"
+    first_color: "#33322e"
+    second_color: "#c2d249"
+    default_image: "/images/products/neo_walk/NWN31/default.jpg"
+  -
+    sku: "NWN41"
+    name: "Gabin/Black"
+    first_color: "#28282a"
+    second_color: "#3f4143"
+    default_image: "/images/products/neo_walk/NWN41/default.jpg"
+  -
+    sku: "NWN51"
+    name: "Softy/Black"
+    first_color: "#1e1f23"
+    second_color: "#202224"
+    default_image: "/images/products/neo_walk/NWN51/default.jpg"
+  -
+    sku: "NWN61"
+    name: "Nabuk Sport/Anthrazit"
+    first_color: "#5f5349"
+    second_color: "#cbcac4"
+    default_image: "/images/products/neo_walk/NWN61/default.jpg"
+  -
+    sku: "NWN71"
+    name: "Strato Soft/Black"
+    first_color: "#1e1f23"
+    second_color: "#cbcac4"
+    default_image: "/images/products/neo_walk/NWN71/default.jpg"
+  -
+    sku: "NWN81"
+    name: "Mammut/Black"
+    first_color: "#1e1f23"
+    second_color: "#cbcac4"
+    default_image: "/images/products/neo_walk/NWN81/default.jpg"
+  -
+    sku: "NWN91"
+    name: "Nappa/Espresso"
+    first_color: "#46423e"
+    second_color: "#cbcac4"
+    default_image: "/images/products/neo_walk/NWN91/default.jpg"
+
+images:
+  -
+    path: "/images/products/neo_walk/misc/neo_walk_hero_01@2500px.jpg"
+    title: "Neo Run W (Skyblue/Cobalt)"
+  -
+    path: "/images/products/neo_run/LTS213LLL/LTS213LLL_01.jpg"
+    title: Neo Run (Lakritz)
+  -
+    path: "/images/products/neo_run/LTS214MA/LTS214MA_01@2500px.jpg"
+    title: "Neo Run (Midnightblue/Aquamarine)"
+  -
+    path: "/images/products/neo_run/LTS214MN/LTS214MN_01@2500px.jpg"
+    title: Neo Run (Quecksilber/Schnee/Silber)
+  -
+    path: "/images/products/neo_run/LTS114LA/LTS114LA_01@2500px.jpg"
+    title: Neo Run W (Lime/Aquamarine)
+  -
+    path: "/images/products/neo_run/LTS213QSS/neo_run_LTS213QSS_01.jpg"
+    title: Neo Run (Quecksilber/Schnee/Silber)
+  -
+    path: "/images/products/neo_run/LTS213PMS/neo_run_LTS213PMS_03.jpg"
+    title: Neo Run (Pflanze/Magnesium/Silber)
+
+attributes:
+  -
+    name: ground.name
+    start:
+      name: ground.start_name
+      value: 1
+      description: ground.start_description
+    end:
+      name: ground.end_name
+      value: 5
+      description: ground.end_description
+  -
+    name: stability.name
+    start:
+      name: stability.start_name
+      value: 1
+      description: stability.start_description
+    end:
+      name: stability.end_name
+      value: 6
+      description: stability.end_description
+  -
+    name: rebound.name
+    start:
+      name: rebound.start_name
+      value: 5
+      description: rebound.start_description
+    end:
+      name: rebound.end_name
+      value: 10
+      description: rebound.end_description
+  -
+    name: firmness.name
+    start:
+      name: firmness.start_name
+      value: 5
+      description: firmness.start_description
+    end:
+      name: firmness.end_name
+      value: 9
+      description: firmness.end_description
+  -
+    name: fit.name
+    start:
+      name: fit.start_name
+      value: 3
+      description: fit.description
+    end:
+      name: fit.end_name
+      value: 7
+      description: fit.description
