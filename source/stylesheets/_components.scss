@@ -154,6 +154,13 @@
   color: $white;
   padding: 0.5rem 1rem;
   text-align: center;
+
+  @include tablet-portrait() {
+    position: fixed;
+    z-index: 1;
+    left: 1rem;
+    right: 1rem;
+  }
 }
 
 .outlet-notice .link {
