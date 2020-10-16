@@ -6,7 +6,7 @@ short_description: "Der Klassiker unter den Laufschuhen und Geheimtipp anspruchs
 short_description_en: "The proven choice for runners - constantly improved and developed for years the Classic Run is a running shoe of highest quality."
 default_image: "/images/products/classic_run/STS220BNG/default.jpg"
 price: "214,45"
-discount_price: "170,00"
+discount_price: "130,00"
 colors:
   -
     sku: "STS220BNG"
@@ -86,6 +86,13 @@ outlet_colors:
     first_color: "#303A49"
     second_color: "#2E57C3"
     default_image: "/images/products/classic_run_fis/STW200ABB/default.png"
+    price: 220
+  -
+    sku: "STS200GWV"
+    name: "Grün/Weiß/Violett"
+    first_color: "#A4B93A"
+    second_color: "#773d6a"
+    default_image: "/images/products/classic_run/STS200GWV/default.png"
     price: 220
 images:
   -
