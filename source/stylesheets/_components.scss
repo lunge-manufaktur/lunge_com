@@ -236,12 +236,22 @@
   flex: 1 1 1rem;
   height: 0.5rem;
   background-color: $white;
-  border-right: 1px solid $mint-gray;
+  border-right: 2px solid $mint-gray;
+}
+
+.attribute__segment:nth-child(2) {
+  border-radius: 1rem 0 0 1rem;
+}
+
+.card .attribute__segment:nth-child(11),
+.attribute__segment:nth-child(11) {
+  border-right: 0px;
+  border-radius: 0 2rem 2rem 0;
 }
 
 .card .attribute__segment {
   background-color: $mint-gray;
-  border-right: 1px solid $white;
+  border-right: 2px solid $white;
 }
 
 .card .attribute__segment--active,
@@ -271,8 +281,12 @@
   padding: $gutter-small;
   padding-bottom: 0;
   margin: auto;
-  margin-top: -6rem;
+  margin-top: -2rem;
   box-shadow: 2px 2px 12px 1px rgba(0, 0, 0, 0.06);
+
+  @include tablet-portrait {
+    margin-top: -6rem;
+  }
 }
 
 .video__title {
@@ -1850,7 +1864,7 @@ li.tab-title:not(tab-title--active):hover {
   display: block;
   width: 100%;
 
-  @include tablet-portrait {
+  @include tablet-landscape {
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -1872,7 +1886,7 @@ li.tab-title:not(tab-title--active):hover {
 .product .product__attributes {
   display: none;
 
-  @include tablet-portrait {
+  @include tablet-landscape {
     display: block;
   }
 }
@@ -1885,6 +1899,8 @@ li.tab-title:not(tab-title--active):hover {
 }
 
 .product__details {
+  display: flex;
+  flex-direction: column;
   text-align: left;
 
   @include tablet-portrait {
@@ -1893,6 +1909,26 @@ li.tab-title:not(tab-title--active):hover {
 
   @include tablet-landscape {
     flex: 0 0 400px;
+  }
+}
+
+.product__title {
+  order: 1;
+}
+
+.product__order-form {
+  order: 2;
+
+  @include tablet-portrait {
+    order: 3;
+  }
+}
+
+.product__description {
+  order: 3;
+
+  @include tablet-portrait {
+    order: 2;
   }
 }
 
