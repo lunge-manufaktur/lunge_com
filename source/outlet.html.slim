@@ -15,18 +15,8 @@ lang: de
     .content.content--narrow
       h1 Outlet
       p In unserem Outlet finden Sie Schuhe zweiter Wahl, welche aufgrund verschiedener kosmetischer Mängel zu reduzierten Preisen angeboten werden.
-      ul.inline-list
-        li
-          h4 = link_to "Classic Serie", "#classic-series", class: "link"
-        li
-          h4 = link_to "Integer Serie", "#integer-series", class: "link"
-        li
-          h4 = link_to "Neo Serie", "#neo-series", class: "link"
 
-.panel.anchor-target#classic-series
-  .content.content--narrow
-    h2 Classic Serie
-    p Unser Dauerläufer und Publikumsliebling: Seit mehr als 10 Jahren etabliert und stetig weiter entwickelt, überzeugen unsere Classic Modelle durch eine einzigartige Sohlenkonstruktion, kontrollierte Fußführung und exzellentes Aufprall- und Abrollverhalten - auf und abseits der Laufstrecke.
+.panel
   .content
     .card__container
       = link_to "/outlet/#{data.products.classic_walk.slug}/", class: "card", data: { product: "classic_walk" } do
@@ -61,12 +51,6 @@ lang: de
           .card__attributes
             = partial "partials/product_attributes", locals: { product: "classic_run" }
 
-.panel.anchor-target#integer-series
-  .content.content--narrow
-    h2 Integer Serie
-    p Bequem- und Laufschuhe, deren einzigartiges Sohlenmaterial effiziente, komfortable Rückfederung bietet und somit jeden Schritt erleichtert - ganz gleich ob kurz vor der Ziellinie oder am Ende eines langen Tages.
-  .content
-    .card__container
       = link_to "/outlet/#{data.products.integer_run_rebound.slug}/", class: "card", data: { product: "integer_run_rebound" } do
         .card__figure
           = image_tag data.products.integer_run_rebound.default_image, class: "card__image", alt: "Integer Run Rebound"
@@ -131,12 +115,6 @@ lang: de
           .card__attributes
             = partial "partials/product_attributes", locals: { product: "integer_walk_rebound_leder" }
 
-.panel.anchor-target#neo-series
-  .content.content--narrow
-    h2 Neo Serie
-    p Leichte, flexible Neutralschuhe, die dank innovativer PU-Mittelsohle für ein äußerst dynamisches, effizientes Laufverhalten mit hoher Rückfederung sorgen. 
-  .content
-    .card__container
       = link_to "/outlet/#{data.products.neo_run.slug}/", class: "card", data: { product: "neo_run" } do
         .card__figure
           = image_tag data.products.neo_run.default_image, class: "card__image", alt: "Integer Run Rebound"
@@ -184,6 +162,22 @@ lang: de
             p = data.products.neo_walk_sondermodell.short_description
           .card__attributes
             = partial "partials/product_attributes", locals: { product: "neo_walk" }
+
+      = link_to "/outlet/#{data.products.evo_run.slug}/", class: "card", data: { product: "evo_run" } do
+        .card__figure
+          = image_tag data.products.evo_run.default_image, class: "card__image", alt: "Neo Walk Sondermodell"
+          .card__color-options
+            = partial "partials/outlet/color_options", locals: { product: "evo_run" } 
+        .card__body
+          .card__description
+            h2.marginless--top = data.products.evo_run.name
+            .badge.badge--white-on-black B-Ware
+            h5
+              del = "€ #{data.products.neo_walk.price}"
+            h4.card__price.marginless--top = "ab € #{data.products.evo_run.discount_price}"
+            p = data.products.evo_run.short_description
+          .card__attributes
+            = partial "partials/product_attributes", locals: { product: "evo_run" }
 
 
 .panel.panel--emphasis

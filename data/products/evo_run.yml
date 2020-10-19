@@ -3,12 +3,22 @@ category: "Laufschuhe"
 slug: "evo_run"
 short_description: "Unser Laufschuh für Neutralläufer, die keine Stützwirkung benötigen und Wert auf besonders komfortable Dämpfung legen."
 default_image: "/images/products/evo_run/LTS202GWH/default.png"
+price: "180,00"
+discount_price: "90,00"
 colors:
   -
     sku: "LTS202GWH"
     name: "Grün/Weiß/Hellgrau"
-    first_color: "#A4B93A"
-    second_color: "#FFF"
+    first_color: "#cbd0da"
+    second_color: "#8acd47"
+    default_image: "/images/products/evo_run/LTS202GWH/default.png"
+    price: 180
+outlet_colors:
+  -
+    sku: "LTS202GWH"
+    name: "Grün/Weiß/Hellgrau"
+    first_color: "#cbd0da"
+    second_color: "#8acd47"
     default_image: "/images/products/evo_run/LTS202GWH/default.png"
     price: 180
 images:
@@ -21,3 +31,54 @@ images:
   - 
     path: "/images/products/evo_run/LTS202GWH/03.jpg"
     title: Evo Run (Grün/Weiß/Hellgrau)
+attributes:
+  -
+    name: ground.name
+    start:
+      name: ground.start_name
+      value: 1
+      description: ground.start_description
+    end:
+      name: ground.end_name
+      value: 5
+      description: ground.end_description
+  -
+    name: stability.name
+    start:
+      name: stability.start_name
+      value: 2
+      description: stability.start_description
+    end:
+      name: stability.end_name
+      value: 6
+      description: stability.end_description
+  -
+    name: rebound.name
+    start:
+      name: rebound.start_name
+      value: 2
+      description: rebound.start_description
+    end:
+      name: rebound.end_name
+      value: 6
+      description: rebound.end_description
+  -
+    name: firmness.name
+    start:
+      name: firmness.start_name
+      value: 3
+      description: firmness.start_description
+    end:
+      name: firmness.end_name
+      value: 7
+      description: firmness.end_description
+  -
+    name: fit.name
+    start:
+      name: fit.start_name
+      value: 3
+      description: fit.description
+    end:
+      name: fit.end_name
+      value: 7
+      description: fit.description
