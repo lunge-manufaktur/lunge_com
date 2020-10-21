@@ -1,4 +1,3 @@
 User-agent: *
 Disallow: /done
-Disallow: /outlet/
 Sitemap: https://www.lunge.com/sitemap.xml
