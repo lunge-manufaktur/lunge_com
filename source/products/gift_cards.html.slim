@@ -16,29 +16,32 @@ sitemap_changefreq: daily
             .product__image-container
               img.product__image
           .product__details
-            = link_to "← Shop", "/products/", class: "link"
-            h1 Geschenkgutschein
-            p Machen Sie Freunden und Verwandten eine Freude und schenken Sie gesundes Schuhwerk.
-            p Nach erfolgreicher Bestellung erhalten Sie einen Gutschein-Code, den Sie ausdrucken können. Die spätere Einlösung erfolgt durch Eingabe des Codes während des Bestellvorgangs.
-            h4 Bitte beachten Sie, dass der Gutschein ausschließlich für den Online Shop der Lunge Manufaktur gilt. 
-            h4 Jetzt bestellen
-            .input-group.visuallyhidden
-              label Gutscheine
-              .gender-select__container
-                select.product__option.gender-select
-                  option value=19414122532 Geschenkgutscheine
-            .input-group.visuallyhidden
-              label Farbe
-              .product-select__container
-                select.product__option.product-select
-            .input-group
-              label Wert
-              .variant-select__container
-                select.product__option.variant-select
-            .variant-price__container
-              h2.variant-price
-            .add-to-cart-button__container
-              button.buy-button.js-prevent-cart-listener.add-button In den Warenkorb
+            .product__title
+              = link_to "← Shop", "/products/", class: "link"
+              h1 Geschenkgutschein
+            .product__description
+              p Machen Sie Freunden und Verwandten eine Freude und schenken Sie gesundes Schuhwerk.
+              p Nach erfolgreicher Bestellung erhalten Sie einen Gutschein-Code, den Sie ausdrucken können. Die spätere Einlösung erfolgt durch Eingabe des Codes während des Bestellvorgangs.
+              h4 Bitte beachten Sie, dass der Gutschein ausschließlich für den Online Shop der Lunge Manufaktur gilt. 
+            .product__order-form
+              h4 Jetzt bestellen
+              .input-group.visuallyhidden
+                label Gutscheine
+                .gender-select__container
+                  select.product__option.gender-select
+                    option value=19414122532 Geschenkgutscheine
+              .input-group.visuallyhidden
+                label Farbe
+                .product-select__container
+                  select.product__option.product-select
+              .input-group
+                label Wert
+                .variant-select__container
+                  select.product__option.variant-select
+              .variant-price__container
+                h2.variant-price
+              .add-to-cart-button__container
+                button.buy-button.js-prevent-cart-listener.add-button In den Warenkorb
 
 
 script type="application/ld+json"
