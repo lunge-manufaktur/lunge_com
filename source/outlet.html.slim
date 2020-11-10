@@ -19,6 +19,38 @@ lang: de
 .panel
   .content
     .card__container
+      = link_to "/outlet/#{data.products.neo_walk.slug}/", class: "card", data: { product: "neo_walk" } do
+        .card__figure
+          = image_tag data.products.neo_walk.default_image, class: "card__image", alt: "Neo Walk"
+          .card__color-options
+            = partial "partials/outlet/color_options", locals: { product: "neo_walk" } 
+        .card__body
+          .card__description
+            h2.marginless--top = data.products.neo_walk.name
+            .badge.badge--white-on-black B-Ware
+            h5
+              del = "€ #{data.products.neo_walk.price}"
+            h4.card__price.marginless--top = "ab € #{data.products.neo_walk.discount_price}"
+            p = data.products.neo_walk.short_description
+          .card__attributes
+            = partial "partials/product_attributes", locals: { product: "neo_walk" }
+
+      = link_to "/outlet/#{data.products.neo_walk_sondermodell.slug}/", class: "card", data: { product: "neo_walk_sondermodell" } do
+        .card__figure
+          = image_tag data.products.neo_walk_sondermodell.default_image, class: "card__image", alt: "Neo Walk Sondermodell"
+          .card__color-options
+            = partial "partials/outlet/color_options", locals: { product: "neo_walk_sondermodell" } 
+        .card__body
+          .card__description
+            h2.marginless--top = data.products.neo_walk_sondermodell.name
+            .badge.badge--white-on-black Sondermodell
+            h5
+              del = "€ #{data.products.neo_walk.price}"
+            h4.card__price.marginless--top = "ab € #{data.products.neo_walk_sondermodell.discount_price}"
+            p = data.products.neo_walk_sondermodell.short_description
+          .card__attributes
+            = partial "partials/product_attributes", locals: { product: "neo_walk" }
+            
       = link_to "/outlet/#{data.products.classic_walk.slug}/", class: "card", data: { product: "classic_walk" } do
         .card__figure
           = image_tag data.products.classic_walk.default_image, class: "card__image", alt: "Classic Walk"
@@ -130,38 +162,6 @@ lang: de
             p = data.products.neo_run.short_description
           .card__attributes
             = partial "partials/product_attributes", locals: { product: "neo_run" }
-
-      = link_to "/outlet/#{data.products.neo_walk.slug}/", class: "card", data: { product: "neo_walk" } do
-        .card__figure
-          = image_tag data.products.neo_walk.default_image, class: "card__image", alt: "Neo Walk"
-          .card__color-options
-            = partial "partials/outlet/color_options", locals: { product: "neo_walk" } 
-        .card__body
-          .card__description
-            h2.marginless--top = data.products.neo_walk.name
-            .badge.badge--white-on-black B-Ware
-            h5
-              del = "€ #{data.products.neo_walk.price}"
-            h4.card__price.marginless--top = "€ #{data.products.neo_walk.discount_price}"
-            p = data.products.neo_walk.short_description
-          .card__attributes
-            = partial "partials/product_attributes", locals: { product: "neo_walk" }
-
-      = link_to "/outlet/#{data.products.neo_walk_sondermodell.slug}/", class: "card", data: { product: "neo_walk_sondermodell" } do
-        .card__figure
-          = image_tag data.products.neo_walk_sondermodell.default_image, class: "card__image", alt: "Neo Walk Sondermodell"
-          .card__color-options
-            = partial "partials/outlet/color_options", locals: { product: "neo_walk_sondermodell" } 
-        .card__body
-          .card__description
-            h2.marginless--top = data.products.neo_walk_sondermodell.name
-            .badge.badge--white-on-black Sondermodell
-            h5
-              del = "€ #{data.products.neo_walk.price}"
-            h4.card__price.marginless--top = "ab € #{data.products.neo_walk_sondermodell.discount_price}"
-            p = data.products.neo_walk_sondermodell.short_description
-          .card__attributes
-            = partial "partials/product_attributes", locals: { product: "neo_walk" }
 
       = link_to "/outlet/#{data.products.evo_run.slug}/", class: "card", data: { product: "evo_run" } do
         .card__figure

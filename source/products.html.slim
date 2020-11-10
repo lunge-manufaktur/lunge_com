@@ -134,19 +134,6 @@ lang: de
           .card__attributes
             = partial "partials/product_attributes", locals: { product: "neo_run" }
 
-      = link_to "/products/#{data.products.neo_walk.slug}/", class: "card", data: { product: "neo_walk" } do
-        .card__figure
-          = image_tag data.products.neo_walk.default_image, class: "card__image", alt: "Integer Run Rebound"
-          .card__color-options
-            = partial "partials/color_options", locals: { product: "neo_walk" } 
-        .card__body
-          .card__description
-            h2.marginless--top = data.products.neo_walk.name
-            h4.card__price = "€ #{data.products.neo_walk.price}"
-            p = data.products.neo_walk.short_description
-          .card__attributes
-            = partial "partials/product_attributes", locals: { product: "neo_walk" }
-
 .panel.anchor-target#accessories
   .content
     h2 Zubehör
