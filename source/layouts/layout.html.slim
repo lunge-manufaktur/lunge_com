@@ -20,6 +20,8 @@ html lang=(lang || "de")
     = partial "/partials/offcanvas_menu"
     = partial "/partials/header"
     main
+      .title__announcement
+        = link_to "Wir liefern auch zur Weihnachtszeit durchgehend und verlängern die Rückgabefrist bis zum 15. Januar →", "/news/informationen_zum_versand_in_der_weihnachtszeit"
       = yield
     = partial "/partials/footer"
 

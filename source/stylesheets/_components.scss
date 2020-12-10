@@ -154,9 +154,9 @@
   color: $white;
   padding: 0.5rem 1rem;
   text-align: center;
+  font-size: 0.825rem;
 
   @include tablet-portrait() {
-    position: fixed;
     z-index: 1;
     left: 1rem;
     right: 1rem;
