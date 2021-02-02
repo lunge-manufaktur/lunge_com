@@ -14,7 +14,7 @@ colors:
     name_en: "Dark Gray/Blue"
     first_color: "#303A49"
     second_color: "#2E57C3"
-    default_image: "/images/products/classic_run_fis/STW200ABB/default.png"
+    default_image: "/images/products/classic_run_fis/STW200ABB/STW200ABB.png"
     price: 220
 
 images:
