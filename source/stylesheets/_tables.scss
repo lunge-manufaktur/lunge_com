@@ -1,3 +1,9 @@
+.table-container {
+  max-width: 100%;
+  overflow-x: scroll;
+  -webkit-overflow-scrolling: touch;
+}
+
 table {
   width: 100%;
   margin-bottom: 4rem;
