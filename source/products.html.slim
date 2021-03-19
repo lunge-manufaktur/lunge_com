@@ -15,15 +15,11 @@ lang: de
     .content.content--narrow
       h1 Shop
       p Ganz gleich ob Laufschuhe, Bequemschuhe oder Einlegesohlen - Lunge bietet Schuhe und Zubehör sowohl für den Laufsport als auch für den ganz alltäglichen Einsatz in Beruf und Freizeit.
-      ul.inline-list
-        li
-          h4 = link_to "Classic Serie", "#classic-series", class: "link"
-        li
-          h4 = link_to "Integer Serie", "#integer-series", class: "link"
-        li
-          h4 = link_to "Neo Serie", "#neo-series", class: "link"
-        li
-          h4 = link_to "Zubehör", "#accessories", class: "link"
+      .categories-list.categories-list--bright
+        = link_to "Classic Serie", "#classic-series", class: "categories-list__item"
+        = link_to "Integer Serie", "#integer-series", class: "categories-list__item"
+        = link_to "Neo Serie", "#neo-series", class: "categories-list__item"
+        = link_to "Zubehör", "#accessories", class: "categories-list__item"
 
 .panel.anchor-target#classic-series
   .content.content--narrow

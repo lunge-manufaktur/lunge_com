@@ -693,6 +693,12 @@ ul.inline-list {
   align-items: center;
 }
 
+ul.inline-list--scrollable {
+  flex-wrap: nowrap;
+  overflow-x: scroll;
+  -webkit-overflow-scrolling: touch;
+}
+
 ul.inline-list--center {
   justify-content: center;
 }
@@ -714,6 +720,37 @@ ul.inline-list--marginless-bottom li {
 ul.bullet-list {
   list-style: inside disc;
   margin-bottom: $gutter;
+}
+
+.categories-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  overflow-x: scroll;
+  -webkit-overflow-scrolling: touch;
+}
+
+.categories-list__item {
+  font-weight: 700;
+  padding: 0.5rem 1rem;
+  flex: 0 0 auto;
+  margin-right: 0.5rem;
+}
+
+.categories-list .categories-list__item:hover {
+  background-color: $accent-color;
+  color: $white;
+}
+
+.categories-list--dark .categories-list__item {
+  background-color: $almost-black;
+  color: $white;
+}
+
+.categories-list--bright .categories-list__item {
+  background-color: $white;
+  color: $almost-black;
 }
 
 
@@ -1346,9 +1383,6 @@ iframe.responsive--4x3 {
   -ms-grid-row-span: 1;
   margin: 1rem;
   flex: 1 0 350px;
-
-  @include tablet-landscape {
-  }
 }
 
 @supports (display: grid) {
