@@ -1,0 +1,152 @@
+---
+title: Classic Walk R - Sportliche Bequemschuhe mit unerreichtem Komfort und rückfedernder Mittelsohle
+description: Der Classic Walk von Lunge ist ein einzigartiger, veganer Schuh für Alltag, Beruf und Freizeit, der durch einzigartigen Tragekomfort glänzt.
+section: products
+canonical_link: "https://www.lunge.com/products/classic_walk_r/"
+url_de: "https://www.lunge.com/products/classic_walk_r/"
+url_en: "https://www.lunge.com/en/products/classic_walk_r/"
+sitemap_priority: 0.9
+sitemap_changefreq: daily
+---
+.title__container#add-to-cart.anchor-target
+  = partial "partials/made_in_germany"
+  .title__inner
+    .content
+      .collection
+        .product
+          .product__figure
+            .product__image-container
+              img.product__image
+            .product__features
+              ul.product-feature
+                = partial "partials/product-features/vegan"
+                = partial "partials/product-features/non-toxic"
+                = partial "partials/product-features/made_in_germany"
+                = partial "partials/product-features/resole"
+            = partial "partials/product_attributes", locals: { product: "classic_walk_r" }
+          .product__details
+            .product__title
+              = link_to "← Shop", "/products/", class: "link"
+              h1 Classic Walk R
+            .product__description
+              = partial "partials/video_link", locals: { product_name: "Classic Walk R" }
+              p 
+                | Der 
+                span.small-caps Classic Walk
+                |  ist in der R-Variante jetzt mit unserer neuen PU-Laufsohle erhältlich. Der Rückfedereffekt ermöglicht extrem komfortables Gehen auf jedem Untergrund.
+              p Mit der Mittelsohle aus PU-Schaum der neuesten Generation erleben Sie beim Gehen revolutionären Federkomfort mit ungekannter Energierückgewinnung - Schritt für Schritt und Tag für Tag.
+            .product__order-form
+              h4 Jetzt bestellen
+              .input-group
+                label Damen / Herren
+                .gender-select__container
+                  select.product__option.gender-select
+                    option value=233719955606 Herren
+                    option value=233719857302 Damen
+              .input-group
+                label Farbe
+                .product-select__title-container
+                .product-select__container
+              .input-group
+                label Größe (Fusslänge / US / EUR)
+                .variant-select__container
+                  select.product__option.variant-select
+              .variant-price__container
+                h2.variant-price
+                small inkl. Mwst., versandkostenfrei innerhalb Deutschlands
+              .add-to-cart-button__container
+                button.buy-button.js-prevent-cart-listener.add-button In den Warenkorb
+              .product__sizing
+                = partial "partials/size_guide_note"
+    #video.anchor-target
+
+= partial "partials/video_card", locals: { youtube_id: "QTWah5vzKbU", product_name: "Classic Walk R" }
+
+.panel.panel--odd
+  .content
+    .feature-panel
+      .feature-panel__title
+        h2 Komfortable Vielseitigkeit
+      .feature-panel__content
+        p Unser bequemster Schuh mit seinen einzigartigen, rückfedernden Eigenschaften ist jetzt in edel-dezenten Varianten verfügbar.
+        p 
+          | Wir haben ganz bewusst die attraktivsten Farben des 
+          span.small-caps Classic
+          | -Schafts mit der verfeinerten Farbgebung der Rebound-Sohlen kombiniert. Entstanden ist eine ganz eigene Klasse von komfortablen und zeitlos modernen Freizeitschuhen.
+        = link_to "Jetzt bestellen", "#add-to-cart", class: "button button-large"
+    .feature-panel
+      .feature-panel__title
+        h2 Mehr als nur bequem
+      .feature-panel__content
+        p Die lebendige Rebound-Sohle beeindruckt durch außergewöhnliches Abrollen und ihre Sportlichkeit. Ein Schuh mit dem keine Langeweile aufkommt. Jeder Schritt ist ein Erlebnis.
+        p
+          | Ob City-Walking oder Naturerlebnis - mit dem neuen 
+          span.small-caps Classic Walk R
+          |  geht beides. Das leicht zu reinigende Profil und das imprägnierbare Obermaterial sind auf jeden Einsatz vorbereitet.
+        = link_to "Jetzt bestellen", "#add-to-cart", class: "button button-large"
+    .feature-panel
+      .feature-panel__title
+        h2 Selbstgänger mit Extra-Grip
+      .feature-panel__content
+        p Der Mix macht's! Mit der Mittelsohle aus PU-Schaum der neuesten Generation erleben Sie beim Gehen revolutionären Federkomfort mit ungekannter Energierückgewinnung - Schritt für Schritt und Tag für Tag.
+        p Die speziell darauf abgestimmte Außensohle verschafft den nötigen Extra-Grip und bietet wenig Angriffsfläche für Schmutz. Das Profil reinigt sich wie von selbst.
+        = link_to "Jetzt bestellen", "#add-to-cart", class: "button button-large"
+
+.panel.panel--emphasis
+  .content
+    .additional-information
+      .specifications
+        h4 Technische Daten
+        ul.spec-list
+          li.spec-list__item
+            label Innenfutter
+            span Otto Stockmayer & Sohn Velour Gewirk
+          li.spec-list__item
+            label Obermaterial
+            span Morón On Micro Suede
+            br
+            span Morón Artico
+          li.spec-list__item
+            label Garn
+            span Amann & Söhne Serafil ET40
+          li.spec-list__item
+            label Mittel- und Außensohle
+            span Individuell entwickelte TPU/PU-Sohle
+          li.spec-list__item
+            label Schnürsenkel
+            span Gebrüder Jaeger GmbH
+          li.spec-list__item
+            label Sprengung
+            span 9,5 mm (US Men 10)
+          li.spec-list__item
+            label Gewicht
+            span 354 g (Classic Walk) (US Men 10)
+            br
+            span 336 g (Classic Walk Glatt) (US Men 10)
+          li.spec-list__item
+            label Verfügbare Größen
+            span Damen: US 6 - US 13 (EUR 35 - EUR 43⅔)
+            br
+            span Herren: US 8 - US 15 (EUR 39⅓ - EUR 48⅓)
+      .add-to-cart-help
+        = partial "partials/add_to_cart_help"
+
+script type="application/ld+json"
+  | {
+  |   "@context": "http://schema.org",
+  |   "@type": "Product",
+  |   "name": "Classic Walk R",
+  |   "image": "https://www.lunge.com/images/products/classic_walk/GLR222WSW/GLR222WSW.png",
+  |   "description": "Sie müssen kein Läufer sein um in den Genuss von Lunge Schuhen zu kommen: Der Classic Walk ist ein einzigartiger Bequemschuh für alle Lebenslagen – egal ob Alltag, Beruf oder Freizeit.",
+  |   "brand": {
+  |     "@type": "Brand",
+  |     "name": "Lunge"
+  |   },
+  |   "offers": {
+  |     "@type": "AggregateOffer",
+  |     "lowPrice": "200.00",
+  |     "highPrice": "200.00",
+  |     "priceCurrency": "EUR",
+  |     "availability": "InStock"
+  |   }
+  | }

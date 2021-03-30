@@ -1,0 +1,148 @@
+name: "Classic Walk R"
+category: "Bequemschuhe"
+slug: "classic_walk_r"
+short_description: "Der beliebteste Alltags- und Bequemschuh jetzt mit neuer rückfedernder Mittelsohle."
+short_description_en: "Our most popular everyday shoe now comes with a new, innovative midsole."
+default_image: "/images/products/classic_walk/GLR222WSW/GLR222WSW.jpg"
+price: "200,00"
+discount_price: "150,00"
+colors:
+  -
+    sku: "GLR220CYW"
+    name: "Curry/White"
+    first_color: "#FDC340"
+    second_color: "#FFFFFF"
+    default_image: "/images/products/classic_walk/GLR220CYW/GLR220CYW.jpg"
+    price: 200
+  -
+    sku: "GLR220BBW"
+    name: "Steel Blue/White"
+    first_color: "#435982"
+    second_color: "#EB8A51"
+    default_image: "/images/products/classic_walk/GLR220BBW/GLR220BBW.jpg"
+    price: 200
+  -
+    sku: "GLR220EBW"
+    name: "Espresso/Brown/White"
+    first_color: "#6F5A55"
+    second_color: "#FFFFFF"
+    default_image: "/images/products/classic_walk/GLR220EBW/GLR220EBW.jpg"
+    price: 200
+  -
+    sku: "GLR222WSW"
+    name: "White/Smooth"
+    first_color: "#FFFFFF"
+    second_color: "#FFFFFF"
+    default_image: "/images/products/classic_walk/GLR222WSW/GLR222WSW.jpg"
+    price: 200
+  -
+    sku: "GLR220NNW"
+    name: "Navy/Light Grey"
+    first_color: "#31335A"
+    second_color: "#FFFFFF"
+    default_image: "/images/products/classic_walk/GLR220NNW/GLR220NNW.jpg"
+    price: 200
+  -
+    sku: "GLR220CCW"
+    name: "Caramel/White"
+    first_color: "#CEA17F"
+    second_color: "#FFFFFF"
+    default_image: "/images/products/classic_walk/GLR220CCW/GLR220CCW.jpg"
+    price: 200
+  -
+    sku: "GLR220GGG"
+    name: "Grey/Grey"
+    first_color: "#656670"
+    second_color: "#45464D"
+    default_image: "/images/products/classic_walk/GLR220GGG/GLR220GGG.jpg"
+    price: 200
+  -
+    sku: "GLR220GGW"
+    name: "Grey/White"
+    first_color: "#656670"
+    second_color: "#FFFFFF"
+    default_image: "/images/products/classic_walk/GLR220GGW/GLR220GGW.jpg"
+    price: 200
+  -
+    sku: "GLR220LLG"
+    name: "Lakritze/Grey"
+    first_color: "#000000"
+    second_color: "#45464D"
+    default_image: "/images/products/classic_walk/GLR220LLG/GLR220LLG.jpg"
+    price: 200
+  -
+    sku: "GLR220SSW"
+    name: "Silver/White"
+    first_color: "#B1C0C7"
+    second_color: "#FFFFFF"
+    default_image: "/images/products/classic_walk/GLR220SSW/GLR220SSW.jpg"
+    price: 200
+
+images:
+  -
+    path: "/images/products/classic_walk/GLS220BBG/GLS220BBG_02@2400px.jpg"
+    title: Classic Walk W (Steel Blue / Light Grey)
+  -
+    path: "/images/products/classic_walk/GLS220SSG/GLS220SSG_01@2400px.jpg"
+    title: Classic Walk (Silver / Light Grey)
+  -
+    path: "/images/products/classic_walk/GLS220NNG/GLS220NNG_01@2400px.jpg"
+    title: Classic Walk (Navy / Light Grey)
+  -
+    path: "/images/products/classic_walk/GLS120NNG/GLS120NNG_01@2400px.jpg"
+    title: Classic Walk W (Navy / Light Grey)
+  -
+    path: "/images/products/classic_walk/GLS220BBG/GLS220BBG_01@2400px.jpg"
+    title: Classic Walk W (Steel Blue / Light Grey)
+
+attributes:
+  -
+    name: ground.name
+    start:
+      name: ground.start_name
+      value: 1
+      description: ground.start_description
+    end:
+      name: ground.end_name
+      value: 8
+      description: ground.end_description
+  -
+    name: stability.name
+    start:
+      name: stability.start_name
+      value: 2
+      description: stability.start_description
+    end:
+      name: stability.end_name
+      value: 6
+      description: stability.end_description
+  -
+    name: rebound.name
+    start:
+      name: rebound.start_name
+      value: 5
+      description: rebound.start_description
+    end:
+      name: rebound.end_name
+      value: 10
+      description: rebound.end_description
+  -
+    name: firmness.name
+    start:
+      name: firmness.start_name
+      value: 1
+      description: firmness.start_description
+    end:
+      name: firmness.end_name
+      value: 6
+      description: firmness.end_description
+  -
+    name: fit.name
+    start:
+      name: fit.start_name
+      value: 4
+      description: fit.description
+    end:
+      name: fit.end_name
+      value: 9
+      description: fit.description

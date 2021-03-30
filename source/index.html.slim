@@ -6,55 +6,25 @@ url_de: "https://www.lunge.com"
 url_en: "https://www.lunge.com/en/"
 sitemap_priority: 0.9
 ---
-.product-showcase__container
-  = link_to "/products/classic_walk/", class: "hero-product" do
-    .hero-product__image
-    .hero-product__content
-      h1 = data.products.classic_walk.name
-      .badge.badge--small.badge--white-on-black Neue Farben
-      p = data.products.classic_walk.short_description
-      ul.inline-list
-        - data.products.classic_walk.colors.each do |color|
-          li.color-icon data-color=color.sku data-image-path=color.default_image
-            .color-icon style="background: linear-gradient(180deg, #{color.first_color}, #{color.first_color} 65%, #{color.second_color} 66%, #{color.second_color} 100%); border: 1px solid #fff" title=(color.name)
-
-  .featured-products.content
-    .card__container
-      = link_to "/products/classic_walk/", class: "card card--dark" do
-        .card__figure
-          = image_tag "/images/products/classic_walk/GLS220NNG/GLS220NNG_01@1600px.jpg", alt: "Classic Walk", class: "card__image"
-        .card__body
-          h2 Classic Walk
-          p = data.products.classic_walk.short_description
-          ul.inline-list
-            - data.products.classic_walk.colors.each do |color|
-              li.color-icon data-color=color.sku data-image-path=color.default_image
-                .color-icon style="background: linear-gradient(180deg, #{color.first_color}, #{color.first_color} 65%, #{color.second_color} 66%, #{color.second_color} 100%); border: 1px solid #fff" title=(color.name)
-
-      = link_to "/products/classic_run", class: "card card--dark" do
-        .card__figure
-          = image_tag "/images/products/classic_run/STS220BNG/STS220BNG_01@1200px.jpg", alt: "Classic Run", class: "card__image"
-        .card__body
-          h2 Classic Run
-          p Der Klassiker für anspruchsvolle Läufer.
-          ul.inline-list
-            - data.products.classic_run.colors.each do |color|
-              li.color-icon data-color=color.sku data-image-path=color.default_image
-                .color-icon style="background: linear-gradient(180deg, #{color.first_color}, #{color.first_color} 65%, #{color.second_color} 66%, #{color.second_color} 100%); border: 1px solid #fff" title=(color.name)
-
-      = link_to "/products/integer_walk_rebound/", class: "card card--dark" do
-        .card__figure
-          = image_tag "images/products/integer_walk_rebound/GLS410SSW/GLS410SSW_06@1200px.jpg"
-        .card__body
-          h2 = data.products.integer_walk_rebound.name
-          p = data.products.integer_walk_rebound.short_description
-          ul.inline-list
-            - data.products.integer_walk_rebound.colors.each do |color|
-              li.color-icon data-color=color.sku data-image-path=color.default_image
-                .color-icon style="background: linear-gradient(180deg, #{color.first_color}, #{color.first_color} 65%, #{color.second_color} 66%, #{color.second_color} 100%); border: 1px solid #fff" title=(color.name)
+= link_to "/products/classic_run_r/", class: "hero-product__container" do
+  .content
+    .hero-product
+      picture class="hero-product__image-container"
+        source srcset="/images/products/classic_run/STR220CYW/STR220CYW@3200px.webp 3200w, /images/products/classic_run/STR220CYW/STR220CYW@2400px.webp 2400w, /images/products/classic_run/STR220CYW/STR220CYW@1600px.webp 1600w, /images/products/classic_run/STR220CYW/STR220CYW@800px.webp 800w" type="image/webp"
+        source srcset="/images/products/classic_run/STR220CYW/STR220CYW@3200px.png 3200w, /images/products/classic_run/STR220CYW/STR220CYW@2400px.png 2400w, /images/products/classic_run/STR220CYW/STR220CYW@1600px.png 1600w, /images/products/classic_run/STR220CYW/STR220CYW@800px.png 800w" type="image/png"
+        = image_tag "/images/products/classic_run/STR220CYW/STR220CYW.png", class: "hero-product__image"
+      .hero-product__content
+        h1.hero-product__title = data.products.classic_run_r.name
+        h3 = "€ #{data.products.classic_run_r.price}"
+        p = data.products.classic_run_r.short_description
+        .hero-product__color-bar
+          - data.products.classic_run_r.colors.each do |color|
+            .color-icon data-color=color.sku data-image-path=color.default_image style="background: linear-gradient(180deg, #{color.first_color}, #{color.first_color} 65%, #{color.second_color} 66%, #{color.second_color} 100%); border: 1px solid #fff" title=(color.name)
+        = button_tag "Jetzt bestelllen", class: "button button--dark" 
+  .notice.notice--left-top.notice--white-border Neu
 
 .hero-button__container
-  = link_to "Alle Schuhe zeigen ➝", "/products/", class: "button button--hero"
+  = link_to "Alle Schuhe zeigen ➝", "/products/", class: "button button--hero button--dark"
 
 .panel
   .content

@@ -1,0 +1,113 @@
+name: "Classic Walk N"
+category: "Bequemschuhe"
+slug: "classic_walk_n"
+short_description: "Der bewährte Classic Walk - jetzt mit neutraler Mittelsohle ohne Pronationsstütze."
+short_description_en: "The tried and tested Classic Walk - now with a new neutral midsole option."
+default_image: "/images/products/classic_walk/GLN220BBG/GLN220BBG.png"
+price: "230,00"
+discount_price: "150,00"
+colors:
+  -
+    sku: "GLN220BBG"
+    name: "Steel Blue/Light Grey"
+    first_color: "#435982"
+    second_color: "#EB8A51"
+    default_image: "/images/products/classic_walk/GLN220BBG/GLN220BBG.png"
+    price: 230
+  -
+    sku: "GLN220SSG"
+    name: "Silver/Light Grey"
+    first_color: "#B1C0C7"
+    second_color: "#DFDFDF"
+    default_image: "/images/products/classic_walk/GLN220SSG/GLN220SSG.png"
+    price: 230
+  -
+    sku: "GLN220NNG"
+    name: "Navy/Light Grey"
+    first_color: "#31335A"
+    second_color: "#DFDFDF"
+    default_image: "/images/products/classic_walk/GLN220NNG/GLN220NNG.png"
+    price: 230
+  -
+    sku: "GLN220LLL"
+    name: "Lakritze"
+    first_color: "#000"
+    second_color: "#000"
+    default_image: "/images/products/classic_walk/GLN220LLL/GLN220LLL.png"
+    price: 230
+  -
+    sku: "GLN220GGG"
+    name: "Grey / Light Grey"
+    first_color: "#656670"
+    second_color: "#DFDFDF"
+    default_image: "/images/products/classic_walk/GLN220GGG/GLN220GGG.png"
+    price: 230
+
+images:
+  -
+    path: "/images/products/classic_walk/GLS220BBG/GLS220BBG_02@2400px.jpg"
+    title: Classic Walk W (Steel Blue / Light Grey)
+  -
+    path: "/images/products/classic_walk/GLS220SSG/GLS220SSG_01@2400px.jpg"
+    title: Classic Walk (Silver / Light Grey)
+  -
+    path: "/images/products/classic_walk/GLS220NNG/GLS220NNG_01@2400px.jpg"
+    title: Classic Walk (Navy / Light Grey)
+  -
+    path: "/images/products/classic_walk/GLS120NNG/GLS120NNG_01@2400px.jpg"
+    title: Classic Walk W (Navy / Light Grey)
+  -
+    path: "/images/products/classic_walk/GLS220BBG/GLS220BBG_01@2400px.jpg"
+    title: Classic Walk W (Steel Blue / Light Grey)
+
+attributes:
+  -
+    name: ground.name
+    start:
+      name: ground.start_name
+      value: 1
+      description: ground.start_description
+    end:
+      name: ground.end_name
+      value: 8
+      description: ground.end_description
+  -
+    name: stability.name
+    start:
+      name: stability.start_name
+      value: 2
+      description: stability.start_description
+    end:
+      name: stability.end_name
+      value: 6
+      description: stability.end_description
+  -
+    name: rebound.name
+    start:
+      name: rebound.start_name
+      value: 2
+      description: rebound.start_description
+    end:
+      name: rebound.end_name
+      value: 6
+      description: rebound.end_description
+  -
+    name: firmness.name
+    start:
+      name: firmness.start_name
+      value: 3
+      description: firmness.start_description
+    end:
+      name: firmness.end_name
+      value: 6
+      description: firmness.end_description
+  -
+    name: fit.name
+    start:
+      name: fit.start_name
+      value: 4
+      description: fit.description
+    end:
+      name: fit.end_name
+      value: 9
+      description: fit.description

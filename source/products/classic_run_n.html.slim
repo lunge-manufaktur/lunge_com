@@ -1,0 +1,163 @@
+---
+title: Classic Run N - Laufschuhe für höchste Ansprüche
+description: Der vegane Laufschuh für anspruchsvoller Läufer. Der Classic Run ist ein bequemer Laufschuh, der durch einzigartiges Tragegefühl und Dämpfungsverhalten glänzt.
+section: products
+canonical_link: "https://www.lunge.com/products/classic_run_n/"
+url_de: "https://www.lunge.com/products/classic_run_n/"
+url_en: "https://www.lunge.com/en/products/classic_run_n/"
+sitemap_priority: 0.9
+sitemap_changefreq: daily
+---
+.title__container#add-to-cart.anchor-target
+  = partial "partials/made_in_germany"
+  .title__inner
+    .content
+      .collection
+        .product
+          .product__figure
+            .product__image-container
+              img.product__image
+            ul.product-feature
+              = partial "partials/product-features/vegan"
+              = partial "partials/product-features/non-toxic"
+              = partial "partials/product-features/made_in_germany"
+              = partial "partials/product-features/resole"
+            = partial "partials/product_attributes", locals: { product: "classic_run_n" }
+          .product__details
+            .product__title
+              = link_to "← Shop", "/products/", class: "link"
+              h1 Classic Run N
+            .product__description
+              = partial "partials/video_link", locals: { product_name: "Classic Run N" }
+              p
+                | Der Klassiker in unserem Sortiment und zugleich Geheimtipp für anspruchsvolle Läufer. Der 
+                span.small-caps Classic Run
+                |  hat sich über Jahre als Laufschuh der Extraklasse bewährt und wurde dennoch stetig verbessert.
+              p
+                | Als Neuerung ist der 
+                span.small-caps Classic Run
+                |  nun neben der bewährten 
+                = link_to "Sohlenvariante S", "/products/classic_run/", class: "link"
+                |  mit Pronationsstütze auch mit der Neutralsohle als Version N erhältlich.
+            .product__order-form
+              h4 Jetzt bestellen
+              .input-group
+                label Damen / Herren
+                .gender-select__container
+                  select.product__option.gender-select
+                    option value=233736503446 Herren
+                    option value=233736437910 Damen
+              .input-group
+                label Farbe
+                .product-select__title-container
+                .product-select__container
+              .input-group
+                label Größe (Fusslänge / US / EUR)
+                .variant-select__container
+                  select.product__option.variant-select
+              .variant-price__container
+                h2.variant-price
+                small inkl. Mwst., versandkostenfrei innerhalb Deutschlands
+              .add-to-cart-button__container
+                button.buy-button.js-prevent-cart-listener.add-button In den Warenkorb
+              .product__sizing
+                = partial "partials/size_guide_note"
+      #video.anchor-target
+
+= partial "partials/video_card", locals: { youtube_id: "26ws6GFOSh8", product_name: "Classic Run N" }
+
+.panel
+  .content
+    .panel__inner.panel__inner--reverse
+      .panel__image
+        = image_tag "/images/products/classic_run/STS220BNG/STS220BNG_01@2400px.jpg", srcset: "/images/products/classic_run/STS220BNG/STS220BNG_01@1200px.jpg 1200w, /images/products/classic_run/STS220BNG/STS220BNG_01@2400px.jpg 2400w", alt: "Classic Run in Yellow/Lawn Green/Light Gray"
+      aside.panel__text
+        .panel__text__inner
+          h2 80 Prozent EVA-Anteil für eine dauerhafte Federung
+          p
+            | Die echte Besonderheit des 
+            span.small-caps Classic Run
+            |  ist das hochwertige Mittelsohlenmaterial EVA, das bei uns in der höchsten Güte verarbeitet wird. Der Anteil und die Qualität von EVA bestimmen die wesentlichen Eigenschaften eines Laufschuhs. 
+          p
+            | Entgegen herkömmlichen Laufschuhen mit oft nur einem EVA-Anteil von 20% in der Mittelsohle, haben unsere Lauf- schuhe einen hohen Anteil von 80%. Das macht unsere Schuhe besonders dauerelastisch.
+          = link_to "Jetzt bestellen", "#add-to-cart", class: "button button-large"
+
+.panel
+  .content
+    .panel__inner
+      .panel__image
+        = image_tag "/images/products/classic_run/STS220BNG/STS220BNG_03@2400px.jpg", srcset: "/images/products/classic_run/STS220BNG/STS220BNG_03@1200px.jpg 1200w, /images/products/classic_run/STS220BNG/STS220BNG_03@2400px.jpg 2400w", alt: "Classic Run in Steel Blue/Navy/Light Gray"
+      aside.panel__text
+        .panel__text__inner
+          h2 Ein himmlisches Gefühl
+          p Wie bei allen Lunge-Schuhen, kommen auch beim Classic Run nur die feinsten Materialien zum Einsatz – selbstverständlich frei von Schadstoffen und Ökotex 100-zertifiziert. So werden Sie die sanfte Innenauskleidung dieses Modells kaum spüren, während sie Ihrem Fuß sicheren, rutsch- und scheuerfreien Halt bietet.
+          = link_to "Jetzt bestellen", "#add-to-cart", class: "button button-large"
+
+.gallery.scroll--horizontal
+  - data.products.classic_run.images.each do |image|
+    .gallery__item
+      = image_tag image.path
+      .gallery__item__title = image.title
+
+
+.panel.panel--emphasis
+  .content
+    .additional-information
+      .specifications
+        h4 Technische Daten
+        ul.spec-list
+          li.spec-list__item
+            label Innenfutter
+            span Otto Stockmayer & Sohn Velour Gewirk
+          li.spec-list__item
+            label Obermaterial
+            span Morón On Micro Suede
+            br
+            span Morón Artico
+          li.spec-list__item
+            label Garn
+            span Amann & Söhne Serafil ET40
+          li.spec-list__item
+            label Mittelsohle
+            span nora Lunatec CAD35
+            br
+            span nora Lunatec CAD55 (Pronationsstütze)
+          li.spec-list__item
+            label Außensohle
+            span OK Gummiwerk Hexa4Grip High-Grip
+          li.spec-list__item
+            label Schnürsenkel
+            span Gebrüder Jaeger GmbH
+          li.spec-list__item
+            label Sprengung
+            span 9,5 mm (US Men 10)
+          li.spec-list__item
+            label Gewicht
+            span 343 g (US Men 10)
+          li.spec-list__item
+            label Verfügbare Größen
+            span Damen: US 6 - US 13
+            br
+            span Herren: US 8 - US 15
+      .add-to-cart-help
+        = partial "partials/add_to_cart_help"
+
+
+script type="application/ld+json"
+  | {
+  |   "@context" : "http://schema.org",
+  |   "@type" : "Product",
+  |   "name" : "Classic Run N",
+  |   "image" : "https://www.lunge.com/images/products/classic_run/STN220RBG/STN220RBG.png",
+  |   "description" : "Der Klassiker in unserem Sortiment und Geheimtipp anspruchsvoller Läufer. Der Classic Run hat sich über Jahre als Laufschuh der Extraklasse bewährt und wurde dennoch stetig verbessert.",
+  |   "brand": {
+  |     "@type": "Brand",
+  |     "name": "Lunge"
+  |   },
+  |   "offers" : {
+  |     "@type" : "Offer",
+  |     "price" : "220.00",
+  |     "priceCurrency": "EUR",
+  |     "availability": "InStock"
+  |   }
+  | }

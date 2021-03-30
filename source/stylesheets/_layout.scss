@@ -38,7 +38,7 @@ header {
   height: 4rem;
   align-items: center;
   justify-content: space-between;
-  z-index: 1;
+  z-index: 2;
   border-bottom: 1px solid $mint-gray;
 
   @include tablet-portrait {
@@ -61,7 +61,7 @@ main {
 .overlay {
   display: none;
   background-color: $background-color;
-  z-index: 1;
+  z-index: 2;
   transition: 140ms ease-in-out;
   cursor: w-resize;
 }
@@ -106,7 +106,7 @@ footer {
   padding: 0 $gutter-small;
 
   @include tablet-portrait {
-    padding: $gutter;
+    padding: 0 $gutter;
   }
 }
 

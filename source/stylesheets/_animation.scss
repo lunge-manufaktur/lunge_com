@@ -1,9 +1,9 @@
 .slide-in--left {
-    animation: slide-in--left 0.5s forwards;
+  animation: slide-in--left 0.5s forwards;
 }
 
 .fade-in {
-    animation: fade-in 0.5s forwards;
+  animation: fade-in 0.5s forwards;
 }
 
 .slideshow {
@@ -18,6 +18,14 @@
 	animation: shadow-drop 0.8s cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.5s both;
 }
 
+.animation--fade-out {
+  animation: fade-out 0.5s forwards;
+}
+
+.animation--fade-in {
+  animation: fade-in 0.5s forwards;
+}
+
 @keyframes slide-in--left {
     100% { left: 0rem; }
 }
@@ -27,7 +35,12 @@
 }
 
 @keyframes fade-in {
-    100% { opacity: 1 }
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1
+  }
 }
 
 @keyframes slideshow {
@@ -55,5 +68,16 @@
   100% {
   	transform: translateZ(50px);
     box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
+  }
+}
+
+
+@keyframes fade-out {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
   }
 }

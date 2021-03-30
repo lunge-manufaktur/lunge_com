@@ -1,0 +1,175 @@
+name: "Classic Run N"
+category: "Laufschuhe"
+category_en: "Running shoes"
+slug: "classic_run_n"
+short_description: "Der Classic Run mit neutraler Mittelsohlenform - für Läufer, die weniger Stützwirkung benötigen."
+short_description_en: "The Classic Run with neutral midsole - for runners that require less stability."
+default_image: "/images/products/classic_run/STN220RBG/STN220RBG.png"
+price: "220,00"
+discount_price: "130,00"
+colors:
+  -
+    sku: "STN220RBG"
+    name: "Royal/Blue/Ligth Grey"
+    first_color: "#1966C9"
+    second_color: "#8CE664"
+    default_image: "/images/products/classic_run/STN220RBG/STN220RBG.png"
+    price: 220
+  -
+    sku: "STN120RBG"
+    name: "Royal/Blue/Ligth Grey"
+    first_color: "#1966C9"
+    second_color: "#FB67A6"
+    default_image: "/images/products/classic_run/STN120RBG/STN120RBG.jpg"
+    price: 220
+  -
+    sku: "STN220LLL"
+    name: "Lakritze"
+    first_color: "#000"
+    second_color: "#333"
+    default_image: "/images/products/classic_run/STN220LLL/STN220LLL.jpg"
+    price: 220
+outlet_colors:
+  -
+    sku: "STS220BNG"
+    name: "Steel Blue/Navy/Light Gray"
+    first_color: "#3A3551"
+    second_color: "#656BA0"
+    default_image: "/images/products/classic_run/STS220BNG/STS220BNG.jpg"
+    price: 220
+  -
+    sku: "STS220BNG"
+    name: "Lakritze"
+    first_color: "#000"
+    second_color: "#333"
+    default_image: "/images/products/classic_run/STS220LLL/STS220LLL.jpg"
+    price: 220
+  -
+    sku: "STS220YGG"
+    name: "Yellow/Lawn Green/Light Gray"
+    first_color: "#5CEB65"
+    second_color: "#D9D8DF"
+    default_image: "/images/products/classic_run/STS220YGG/STS220YGG.jpg"
+    price: 220
+  -
+    sku: "STS203SWR"
+    name: "Silber/Rot/Weiß"
+    first_color: "#BD3C42"
+    second_color: "#DDD"
+    default_image: "/images/products/classic_run/STS203SWR/STS203SWR.jpg"
+    price: 220
+  -
+    sku: "STS203RRW"
+    name: "Royal/Weiß"
+    first_color: "#385BC1"
+    second_color: "#FFF"
+    default_image: "/images/products/classic_run/STS203RRW/STS203RRW.jpg"
+    price: 220
+  -
+    sku: "STS203GGG"
+    name: "Grün/Weiß"
+    first_color: "#A4B93A"
+    second_color: "#FFF"
+    default_image: "/images/products/classic_run/STS203GGG/STS203GGG.jpg"
+    price: 220
+  -
+    sku: "STS203SSS"
+    name: "Schwarz/Silber"
+    first_color: "#000000"
+    second_color: "#FFF"
+    default_image: "/images/products/classic_run/STS203SSS/STS203SSS.jpg"
+    price: 220
+  -
+    sku: "STW200ABB"
+    name: "Anthrazit/Blau"
+    name_en: "Dark Gray/Blue"
+    first_color: "#303A49"
+    second_color: "#2E57C3"
+    default_image: "/images/products/classic_run_fis/STW200ABB/STW200ABB.png"
+    price: 220
+  -
+    sku: "STS200GWV"
+    name: "Grün/Weiß/Violett"
+    first_color: "#A4B93A"
+    second_color: "#773d6a"
+    default_image: "/images/products/classic_run/STS200GWV/STS200GWV.png"
+    price: 220
+images:
+  -
+    path: "/images/products/classic_run/STS220BNG/STS220BNG_01@2400px.jpg"
+    title: Classic Run (Steel Blue/Navy/Light Gray)
+  -
+    path: "/images/products/classic_run/STS220YGG/STS220YGG_01@2400px.jpg"
+    title: Classic Run (Yellow/Lawn Green/Light Gray)
+  -
+    path: "/images/products/classic_run/STS120BBG/STS120BBG_01@2400px.jpg"
+    title: Classic Run W (Steel Blue/Medium Blue/Light Gray)
+  -
+    path: "/images/products/classic_run/STS220BNG/STS220BNG_03@2400px.jpg"
+    title: "Classic Run (Steel Blue/Navy/Light Gray)"
+variants:
+  men:
+    -
+      shopify_product_id: 5275501573
+      shopify_handle: classic-run-rot-weiss
+      sku: STS203SWR
+      buy_button: div data-embed_type="product" data-shop="lunge-manufaktur.myshopify.com" data-product_name="Classic Run (Rot/Weiß)" data-product_handle="classic-run-rot-weiss" data-has_image="false" data-display_size="compact" data-redirect_to="cart" data-buy_button_text="In den Warenkorb legen" data-buy_button_out_of_stock_text="Out of Stock" data-buy_button_product_unavailable_text="Unavailable" data-button_background_color="b6be00" data-button_text_color="ffffff" data-product_modal="false" data-product_title_color="000000" data-next_page_button_text="Next page"
+      color: "Silber/Weiß/Rot"
+    -
+      shopify_product_id: 5271800005
+      shopify_handle: classic-run-royal-weiss
+      sku: STS203RRW
+      color: "Royal/Weiß"
+      buy_button: div data-embed_type="product" data-shop="lunge-manufaktur.myshopify.com" data-product_name="Classic Run (Rot/Weiß)" data-product_handle="classic-run-royal-weiss" data-has_image="false" data-display_size="compact" data-redirect_to="cart" data-buy_button_text="In den Warenkorb legen" data-buy_button_out_of_stock_text="Out of Stock" data-buy_button_product_unavailable_text="Unavailable" data-button_background_color="b6be00" data-button_text_color="ffffff" data-product_modal="false" data-product_title_color="000000" data-next_page_button_text="Next page"
+
+attributes:
+  -
+    name: ground.name
+    start:
+      name: ground.start_name
+      value: 1
+      description: ground.start_description
+    end:
+      name: ground.end_name
+      value: 8
+      description: ground.end_description
+  -
+    name: stability.name
+    start:
+      name: stability.start_name
+      value: 2
+      description: stability.start_description
+    end:
+      name: stability.end_name
+      value: 6
+      description: stability.end_description
+  -
+    name: rebound.name
+    start:
+      name: rebound.start_name
+      value: 2
+      description: rebound.start_description
+    end:
+      name: rebound.end_name
+      value: 6
+      description: rebound.end_description
+  -
+    name: firmness.name
+    start:
+      name: firmness.start_name
+      value: 3
+      description: firmness.start_description
+    end:
+      name: firmness.end_name
+      value: 6
+      description: firmness.end_description
+  -
+    name: fit.name
+    start:
+      name: fit.start_name
+      value: 4
+      description: fit.description
+    end:
+      name: fit.end_name
+      value: 9
+      description: fit.description

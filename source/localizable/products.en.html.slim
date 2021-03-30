@@ -15,139 +15,195 @@ lang: en
     .content.content--narrow
       h1 Products
       p Whether you're interested in running or everyday use - Lunge offers finest shoes and insoles for any use case.
-      ul.inline-list
-        li
-          h4 = link_to "Classic Series", "#classic-series", class: "link"
-        li
-          h4 = link_to "Integer Series", "#integer-series", class: "link"
-        li
-          h4 = link_to "Neo Series", "#neo-series", class: "link"
-        li
-          h4 = link_to "Accessoires", "#accessories", class: "link"
 
-.panel.anchor-target#classic-series
-  .content.content--narrow
-    h2 Classic Series
-    p Our timelessly popular choice: Established more than 10 years ago and still improving, our Classic models impress with their unique sole construction, controlled foot guidance and excellent impact and rolling characteristics - on and off the running track.
+.filter__section
+  .filter__scroll-indicator
+    span.filter__scroll-icon →
   .content
-    .card__container
-      = link_to "/en/products/#{data.products.classic_walk.slug}/", class: "card", data: { product: "classic_walk" } do
-        .card__figure
-          = image_tag data.products.classic_walk.default_image, class: "card__image", alt: "Integer Run Rebound"
-          .card__color-options
-            = partial "partials/color_options", locals: { product: "classic_walk" } 
-        .card__body
-          .card__description
-            h2.marginless--top = data.products.classic_walk.name
-            h4.card__price = "€ #{data.products.classic_walk.price}"
-            p = data.products.classic_walk.short_description_en
-          .card__attributes
-            = partial "partials/product_attributes", locals: { product: "classic_walk" }
-        .notice.notice--top-right
-          span New color options
+    .filter__container
+      form.filter__group
+        label.filter__group-label Use case
+        .filter__options data-filter-group=""
+          = button_tag "Running", type: "button", class: "filter__option", data: { toggle: '[data-filter-usage="running"]' }
+          = button_tag "Everyday use & walking", type: "button", class: "filter__option", data: { toggle: '[data-filter-usage="everyday"]' }
+          = button_tag "Any", type: "reset", class: "filter__clear-button"
+      form.filter__group
+        label.filter__group-label Series
+        .filter__options data-filter-group=""
+          = button_tag "Classic", type: "button", class: "filter__option", data: { toggle: '[data-filter-series="classic"]' }
+          = button_tag "Integer", type: "button", class: "filter__option", data: { toggle: '[data-filter-series="integer"]' }
+          = button_tag "Neo", type: "button", class: "filter__option", data: { toggle: '[data-filter-series="neo"]' }
+          = button_tag "Any", type: "reset", class: "filter__clear-button"
+      form.filter__group
+        label.filter__group-label Midsole
+        .filter__options data-filter-group=""
+          = button_tag "Stability", type: "button", class: "filter__option", data: { toggle: '[data-filter-sole="stability"]' }
+          = button_tag "Neutral", type: "button", class: "filter__option", data: { toggle: '[data-filter-sole="neutral"]' }
+          = button_tag "Rebound", type: "button", class: "filter__option", data: { toggle: '[data-filter-sole="rebound"]' }
+          = button_tag "Any", type: "reset", class: "filter__clear-button"
+      form.filter__group
+        label.filter__group-label Materials
+        .filter__options data-filter-group=""
+          = button_tag "Vegan", type: "button", class: "filter__option", data: { toggle: '[data-filter-material="vegan"]' }
+          = button_tag "Leather", type: "button", class: "filter__option", data: { toggle: '[data-filter-material="leather"]' }
+          = button_tag "Any", type: "reset", class: "filter__clear-button"
 
-      = link_to "/en/products/#{data.products.classic_run.slug}/", class: "card", data: { product: "classic_run" } do
-        .card__figure
-          = image_tag data.products.classic_run.default_image, class: "card__image", alt: "Integer Run Rebound"
-          .card__color-options
-            = partial "partials/color_options", locals: { product: "classic_run" } 
-        .card__body
-          .card__description
-            h2.marginless--top = data.products.classic_run.name
-            h4.card__price = "€ #{data.products.classic_run.price}"
-            p = data.products.classic_run.short_description_en
-          .card__attributes
-            = partial "partials/product_attributes", locals: { product: "classic_run" }
+.content
+  .card__container
+    = link_to "/en/products/#{data.products.classic_walk.slug}/", class: "card", data: { product: "classic_walk", "filter-usage": "everyday", "filter-series": "classic", "filter-sole": "stability", "filter-material": "vegan" } do
+      .card__figure
+        = image_tag data.products.classic_walk.default_image, class: "card__image", alt: "Integer Run Rebound"
+        .card__color-options
+          = partial "partials/color_options", locals: { product: "classic_walk" } 
+      .card__body
+        .card__description
+          h2.marginless--top = data.products.classic_walk.name
+          h4.card__price = "€ #{data.products.classic_walk.price}"
+          p = data.products.classic_walk.short_description_en
+        .card__attributes
+          = partial "partials/product_attributes", locals: { product: "classic_walk" }
+      .notice.notice--top-left
+        span Updated
 
-.panel.anchor-target#integer-series
-  .content.content--narrow
-    h2 Integer Series
-    p Running and everyday shoes that feature a unique, highly efficient sole material offers comfortable, springy rebound with every single step easier - whether it's right before the finish line or at the end of a long day.
-  .content
-    .card__container
-      = link_to "/en/products/#{data.products.integer_run_rebound.slug}/", class: "card", data: { product: "integer_run_rebound" } do
-        .card__figure
-          = image_tag data.products.integer_run_rebound.default_image, class: "card__image", alt: "Integer Run Rebound"
-          .card__color-options
-            = partial "partials/color_options", locals: { product: "integer_run_rebound" } 
-        .card__body
-          .card__description
-            h2.marginless--top = data.products.integer_run_rebound.name
-            h4.card__price = "€ #{data.products.integer_run_rebound.price}"
-            p = data.products.integer_run_rebound.short_description_en
-          .card__attributes
-            = partial "partials/product_attributes", locals: { product: "integer_run_rebound" }
+    = link_to "/en/products/#{data.products.classic_run.slug}/", class: "card", data: { product: "classic_run", "filter-usage": "running", "filter-series": "classic", "filter-sole": "stability", "filter-material": "vegan" } do
+      .card__figure
+        = image_tag data.products.classic_run.default_image, class: "card__image", alt: "Integer Run Rebound"
+        .card__color-options
+          = partial "partials/color_options", locals: { product: "classic_run" } 
+      .card__body
+        .card__description
+          h2.marginless--top = data.products.classic_run.name
+          h4.card__price = "€ #{data.products.classic_run.price}"
+          p = data.products.classic_run.short_description_en
+        .card__attributes
+          = partial "partials/product_attributes", locals: { product: "classic_run" }
+      .notice.notice--top-left
+        span Updated
 
-      = link_to "/en/products/#{data.products.integer_walk_rebound.slug}/", class: "card", data: { product: "integer_walk_rebound" } do
-        .card__figure
-          = image_tag data.products.integer_walk_rebound.default_image, class: "card__image", alt: "Integer Run Rebound"
-          .card__color-options
-            = partial "partials/color_options", locals: { product: "integer_walk_rebound" }
-        .card__body
-          .card__description
-            h2.marginless--top = data.products.integer_walk_rebound.name
-            h4.card__price = "€ #{data.products.integer_walk_rebound.price}"
-            p = data.products.integer_walk_rebound.short_description_en
-          .card__attributes
-            = partial "partials/product_attributes", locals: { product: "integer_walk_rebound" }
+    = link_to "/products/#{data.products.classic_walk_r.slug}/", class: "card", data: { product: "classic_walk_r", "filter-usage": "everyday", "filter-series": "classic", "filter-sole": "rebound", "filter-material": "vegan" } do
+      .card__figure
+        = image_tag data.products.classic_walk_r.default_image, class: "card__image", alt: "Classic Walk N"
+        .card__color-options
+          = partial "partials/color_options", locals: { product: "classic_walk_r" } 
+      .card__body
+        .card__description
+          h2.marginless--top = data.products.classic_walk_r.name
+          h4.card__price = "€ #{data.products.classic_walk_r.price}"
+          p = data.products.classic_walk_r.short_description_en
+        .card__attributes
+          = partial "partials/product_attributes", locals: { product: "classic_walk_r" }
+      .notice.notice--top-left
+        span New
 
-      = link_to "/en/products/#{data.products.integer_walk_cushion.slug}/", class: "card", data: { product: "integer_walk_cushion" } do
-        .card__figure
-          = image_tag data.products.integer_walk_cushion.default_image, class: "card__image", alt: "Integer Run Rebound"
-          .card__color-options
-            = partial "partials/color_options", locals: { product: "integer_walk_cushion" } 
-        .card__body
-          .card__description
-            h2.marginless--top = data.products.integer_walk_cushion.name
-            h4.card__price = "€ #{data.products.integer_walk_cushion.price}"
-            p = data.products.integer_walk_cushion.short_description_en
-          .card__attributes
-            = partial "partials/product_attributes", locals: { product: "integer_walk_cushion" }
+    = link_to "/products/#{data.products.classic_run_r.slug}/", class: "card", data: { product: "classic_run_r", "filter-usage": "running", "filter-series": "classic", "filter-sole": "rebound", "filter-material": "vegan" } do
+      .card__figure
+        = image_tag data.products.classic_run_r.default_image, class: "card__image", alt: "Classic Walk N"
+        .card__color-options
+          = partial "partials/color_options", locals: { product: "classic_run_r" } 
+      .card__body
+        .card__description
+          h2.marginless--top = data.products.classic_run_r.name
+          h4.card__price = "€ #{data.products.classic_run_r.price}"
+          p = data.products.classic_run_r.short_description_en
+        .card__attributes
+          = partial "partials/product_attributes", locals: { product: "classic_run_r" }
+      .notice.notice--top-left
+        span New
 
-      = link_to "/en/products/integer_walk_rebound_leather/", class: "card", data: { product: "integer_walk_rebound_leder" } do
-        .card__figure
-          = image_tag data.products.integer_walk_rebound_leder.default_image, class: "card__image", alt: "Integer Run Rebound Leather"
-          .card__color-options
-            = partial "partials/color_options", locals: { product: "integer_walk_rebound_leder" } 
-        .card__body
-          .card__description
-            h2.marginless--top = data.products.integer_walk_rebound_leder.name
-            h4.card__price = "€ #{data.products.integer_walk_rebound_leder.price}"
-            p = data.products.integer_walk_rebound_leder.short_description_en
-          .card__attributes
-            = partial "partials/product_attributes", locals: { product: "integer_walk_rebound" }
+    = link_to "/products/#{data.products.classic_walk_n.slug}/", class: "card", data: { product: "classic_walk_n", "filter-usage": "everyday", "filter-series": "classic", "filter-sole": "neutral", "filter-material": "vegan" } do
+      .card__figure
+        = image_tag data.products.classic_walk_n.default_image, class: "card__image", alt: "Classic Walk N"
+        .card__color-options
+          = partial "partials/color_options", locals: { product: "classic_walk_n" } 
+      .card__body
+        .card__description
+          h2.marginless--top = data.products.classic_walk_n.name
+          h4.card__price = "€ #{data.products.classic_walk_n.price}"
+          p = data.products.classic_walk_n.short_description_en
+        .card__attributes
+          = partial "partials/product_attributes", locals: { product: "classic_walk_n" }
+      .notice.notice--top-left
+        span New
 
-.panel.anchor-target#neo-series
-  .content.content--narrow
-    h2 Neo series
-    p Lightweight, flexible neutral shoes with innovative PU midsole for extremely dynamic, efficient running characteristics.
-  .content
-    .card__container
-      = link_to "/en/products/#{data.products.neo_run.slug}/", class: "card", data: { product: "neo_run" } do
-        .card__figure
-          = image_tag data.products.neo_run.default_image, class: "card__image", alt: "Integer Run Rebound"
-          .card__color-options
-            = partial "partials/color_options", locals: { product: "neo_run" } 
-        .card__body
-          .card__description
-            h2.marginless--top = data.products.neo_run.name
-            h4.card__price = "€ #{data.products.neo_run.price}"
-            p = data.products.neo_run.short_description_en
-          .card__attributes
-            = partial "partials/product_attributes", locals: { product: "neo_run" }
+    = link_to "/products/#{data.products.classic_run_n.slug}/", class: "card", data: { product: "classic_run_n", "filter-usage": "running", "filter-series": "classic", "filter-sole": "neutral", "filter-material": "vegan" } do
+      .card__figure
+        = image_tag data.products.classic_run_n.default_image, class: "card__image", alt: "Integer Run Rebound"
+        .card__color-options
+          = partial "partials/color_options", locals: { product: "classic_run_n" } 
+      .card__body
+        .card__description
+          h2.marginless--top = data.products.classic_run_n.name
+          h4.card__price = "€ #{data.products.classic_run_n.price}"
+          p = data.products.classic_run_n.short_description_en
+        .card__attributes
+          = partial "partials/product_attributes", locals: { product: "classic_run_n" }
+      .notice.notice--top-left
+        span New
 
-      = link_to "/en/products/#{data.products.neo_walk.slug}/", class: "card", data: { product: "neo_walk" } do
-        .card__figure
-          = image_tag data.products.neo_walk.default_image, class: "card__image", alt: "Integer Run Rebound"
-          .card__color-options
-            = partial "partials/color_options", locals: { product: "neo_walk" } 
-        .card__body
-          .card__description
-            h2.marginless--top = data.products.neo_walk.name
-            h4.card__price = "€ #{data.products.neo_walk.price}"
-            p = data.products.neo_walk.short_description_en
-          .card__attributes
-            = partial "partials/product_attributes", locals: { product: "neo_walk" }
+    = link_to "/en/products/#{data.products.integer_run_rebound.slug}/", class: "card", data: { product: "integer_run_rebound", "filter-usage": "running", "filter-series": "integer", "filter-sole": "rebound", "filter-material": "vegan" } do
+      .card__figure
+        = image_tag data.products.integer_run_rebound.default_image, class: "card__image", alt: "Integer Run Rebound"
+        .card__color-options
+          = partial "partials/color_options", locals: { product: "integer_run_rebound" } 
+      .card__body
+        .card__description
+          h2.marginless--top = data.products.integer_run_rebound.name
+          h4.card__price = "€ #{data.products.integer_run_rebound.price}"
+          p = data.products.integer_run_rebound.short_description_en
+        .card__attributes
+          = partial "partials/product_attributes", locals: { product: "integer_run_rebound" }
+
+    = link_to "/en/products/#{data.products.integer_walk_rebound.slug}/", class: "card", data: { product: "integer_walk_rebound", "filter-usage": "everyday", "filter-series": "integer", "filter-sole": "rebound", "filter-material": "vegan" } do
+      .card__figure
+        = image_tag data.products.integer_walk_rebound.default_image, class: "card__image", alt: "Integer Run Rebound"
+        .card__color-options
+          = partial "partials/color_options", locals: { product: "integer_walk_rebound" }
+      .card__body
+        .card__description
+          h2.marginless--top = data.products.integer_walk_rebound.name
+          h4.card__price = "€ #{data.products.integer_walk_rebound.price}"
+          p = data.products.integer_walk_rebound.short_description_en
+        .card__attributes
+          = partial "partials/product_attributes", locals: { product: "integer_walk_rebound" }
+
+    = link_to "/en/products/#{data.products.integer_walk_cushion.slug}/", class: "card", data: { product: "integer_walk_cushion", "filter-usage": "everyday", "filter-series": "integer", "filter-sole": "neutral", "filter-material": "vegan" } do
+      .card__figure
+        = image_tag data.products.integer_walk_cushion.default_image, class: "card__image", alt: "Integer Run Rebound"
+        .card__color-options
+          = partial "partials/color_options", locals: { product: "integer_walk_cushion" } 
+      .card__body
+        .card__description
+          h2.marginless--top = data.products.integer_walk_cushion.name
+          h4.card__price = "€ #{data.products.integer_walk_cushion.price}"
+          p = data.products.integer_walk_cushion.short_description_en
+        .card__attributes
+          = partial "partials/product_attributes", locals: { product: "integer_walk_cushion" }
+
+    = link_to "/en/products/integer_walk_rebound_leather/", class: "card", data: { product: "integer_walk_rebound_leder", "filter-usage": "everyday", "filter-series": "integer", "filter-sole": "rebound", "filter-material": "leather" } do
+      .card__figure
+        = image_tag data.products.integer_walk_rebound_leder.default_image, class: "card__image", alt: "Integer Run Rebound Leather"
+        .card__color-options
+          = partial "partials/color_options", locals: { product: "integer_walk_rebound_leder" } 
+      .card__body
+        .card__description
+          h2.marginless--top = data.products.integer_walk_rebound_leder.name
+          h4.card__price = "€ #{data.products.integer_walk_rebound_leder.price}"
+          p = data.products.integer_walk_rebound_leder.short_description_en
+        .card__attributes
+          = partial "partials/product_attributes", locals: { product: "integer_walk_rebound" }
+
+    = link_to "/en/products/#{data.products.neo_run.slug}/", class: "card", data: { product: "neo_run", "filter-usage": "running", "filter-series": "neo", "filter-sole": "rebound", "filter-material": "vegan" } do
+      .card__figure
+        = image_tag data.products.neo_run.default_image, class: "card__image", alt: "Integer Run Rebound"
+        .card__color-options
+          = partial "partials/color_options", locals: { product: "neo_run" } 
+      .card__body
+        .card__description
+          h2.marginless--top = data.products.neo_run.name
+          h4.card__price = "€ #{data.products.neo_run.price}"
+          p = data.products.neo_run.short_description_en
+        .card__attributes
+          = partial "partials/product_attributes", locals: { product: "neo_run" }
 
 .panel.anchor-target#accessories
   .content
@@ -168,3 +224,52 @@ lang: en
 .panel.panel--emphasis
   .content
     = partial "partials/shop_features"
+
+- content_for :custom_assets
+  = javascript_include_tag "mixitup.min.js"
+  = javascript_include_tag "mixitup-multifilter.min.js"
+
+  javascript:
+    // PRODUCT FILTER
+    var mixer = mixitup('.card__container', {
+      multifilter: {
+        enable: true,
+        logicBetweenGroups: 'and',
+        logicWithinGroup: 'or'
+      },
+      selectors: {
+        target: '.card'
+      },
+      layout: {
+        allowNestedTargets: false
+      },
+      animation: {
+        enable: false,
+        queueLimit: 10,
+        animateResizeTargets: true,
+        effects: 'fade',
+        duration: 100
+      }
+    });
+
+    let scrollpos = window.scrollX
+    const filterContainer = document.querySelector(".filter__container")
+    const filterScrollIndicator = document.querySelector(".filter__scroll-indicator")
+    const filterContainerWidth = filterContainer.scrollWidth - filterContainer.clientWidth
+
+    const add_class_on_scroll = () => filterScrollIndicator.classList.add("fade-in")
+    const remove_class_on_scroll = () => filterScrollIndicator.classList.remove("fade-in")
+
+    filterContainer.addEventListener('scroll', function() {
+      scrollPosition = filterContainer.scrollLeft;
+
+      if ( scrollPosition >= filterContainerWidth ) {
+        console.log('end of element reached');
+        filterScrollIndicator.classList.remove("animation--fade-in");
+        filterScrollIndicator.classList.add("animation--fade-out");
+      }
+      else {
+        filterScrollIndicator.classList.remove("animation--fade-out");
+        filterScrollIndicator.classList.add("animation--fade-in");
+      }
+    })

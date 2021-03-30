@@ -1,12 +1,33 @@
-name: "Classic Walk"
+name: "Classic Walk S"
 category: "Bequemschuhe"
 slug: "classic_walk"
-short_description: "Der Classic Walk ist ein einzigartiger Bequemschuh für alle Lebenslagen - ganz gleich ob Alltag, Beruf oder Freizeit."
-short_description_en: "Classic Walk is a unique and versatile walking shoe for everyday use."
-default_image: "/images/products/classic_walk/GLS220SSG/GLS220SSG.jpg"
+short_description: "Ein einzigartiger Bequemschuh für alle Lebenslagen - ganz gleich ob Alltag, Beruf oder Freizeit."
+short_description_en: "Classic Walk S is a unique and versatile walking shoe for everyday use."
+default_image: "/images/products/classic_walk/GLS220EBG/GLS220EBG.jpg"
 price: "230,00"
 discount_price: "150,00"
 colors:
+  -
+    sku: "GLS220EBG"
+    name: "Espresso/Brown/Light Grey"
+    first_color: "#6F5A55"
+    second_color: "#DFDFDF"
+    default_image: "/images/products/classic_walk/GLS220EBG/GLS220EBG.jpg"
+    price: 230
+  -
+    sku: "GLS220CYG"
+    name: "Curry/Light Grey"
+    first_color: "#FDC340"
+    second_color: "#DFDFDF"
+    default_image: "/images/products/classic_walk/GLS220CYG/GLS220CYG.jpg"
+    price: 230
+  -
+    sku: "GLS222WSW"
+    name: "White/Smooth"
+    first_color: "#FFF"
+    second_color: "#DFDFDF"
+    default_image: "/images/products/classic_walk/GLS222WSW/GLS222WSW.jpg"
+    price: 230
   -
     sku: "GLS220SSG"
     name: "Silver/Light Grey"

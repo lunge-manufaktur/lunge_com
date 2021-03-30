@@ -23,11 +23,11 @@ html lang=(lang || "de")
       = yield
     = partial "/partials/footer"
 
+    = yield_content :custom_assets
     = javascript_include_tag "jquery_341.min"
     = javascript_include_tag "shop"
     = javascript_include_tag "all"
     = yield_content :additional_javascript
-    = yield_content :custom_assets
 
 
     = partial "/partials/cart"

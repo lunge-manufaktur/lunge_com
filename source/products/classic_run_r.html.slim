@@ -1,0 +1,154 @@
+---
+title: Classic Run R - Laufschuhe für höchste Ansprüche
+description: Der vegane Laufschuh für anspruchsvolle Läufer. Der Classic Run R ist ein bequemer Laufschuh, der durch einzigartiges Tragegefühl und Dämpfungsverhalten glänzt.
+section: products
+canonical_link: "https://www.lunge.com/products/classic_run_r/"
+url_de: "https://www.lunge.com/products/classic_run_r/"
+url_en: "https://www.lunge.com/en/products/classic_run_r/"
+sitemap_priority: 0.9
+sitemap_changefreq: daily
+---
+.title__container#add-to-cart.anchor-target
+  = partial "partials/made_in_germany"
+  .title__inner
+    .content
+      .collection
+        .product
+          .product__figure
+            .product__image-container
+              img.product__image
+            .product__features
+              ul.product-feature
+                = partial "partials/product-features/vegan"
+                = partial "partials/product-features/non-toxic"
+                = partial "partials/product-features/made_in_germany"
+                = partial "partials/product-features/resole"
+            = partial "partials/product_attributes", locals: { product: "classic_run_r" }
+          .product__details
+            .product__title
+              = link_to "← Shop", "/products/", class: "link"
+              h1 Classic Run R
+            .product__description
+              = partial "partials/video_link", locals: { product_name: "Classic Run R" }
+              p 
+                | Der neue Laufschuh für jede Streckenlaänge. Die innovative PU-Sohle des 
+                span.small-caps Classic Run R 
+                | bietet den höchsten Rückfedereffekt unter den LUNGE-Schuhen. Die Sohlenkonstruktion dieses neutralen Laufschuhs ermöglicht ein natürliches Abrollverhalten und angenehme Grundstabililtät.
+            .product__order-form
+              h4 Jetzt bestellen
+              .input-group
+                label Damen / Herren
+                .gender-select__container
+                  select.product__option.gender-select
+                    option value=234046587030 Herren
+                    option value=234046423190 Damen
+              .input-group
+                label Farbe
+                .product-select__title-container
+                .product-select__container
+              .input-group
+                label Größe (Fusslänge / US / EUR)
+                .variant-select__container
+                  select.product__option.variant-select
+              .variant-price__container
+                h2.variant-price
+                small inkl. Mwst., versandkostenfrei innerhalb Deutschlands
+              .add-to-cart-button__container
+                button.buy-button.js-prevent-cart-listener.add-button In den Warenkorb
+              .product__sizing
+                = partial "partials/size_guide_note"
+    #video.anchor-target
+
+= partial "partials/video_card", locals: { youtube_id: "7VqT4q0anqA", product_name: "Classic Run R" }
+
+.panel.panel--odd
+  .content
+    .feature-panel
+      .feature-panel__title
+        h2 Schaummaterial neuester Generation
+      .feature-panel__content
+        p
+          | Unser komfortabelster Laufschuh bietet ungekannten Federkomfort. Das Sohlenmaterial des 
+          span.small-caps CLASSIC RUN R
+          |  hat eine belebende Rückfederung und ist LUNGE-typisch dauerelastisch. Tolles Reboundverhalten kombiniert mit Bodenkontrolle und Sicherheit für empfindliche und anspruchsvolle Läufer.
+        = link_to "Jetzt bestellen", "#add-to-cart", class: "button button-large"
+    .feature-panel
+      .feature-panel__title
+        h2 Entlastung, die begeistert
+      .feature-panel__content
+        p
+          | Wie bei allen unseren Schuhen verzichten wir auch hier auf Balligkeit und Kerben im Vorfußbereich. Das Ergebnis begeistert: traumhafter Komfort mit bester Entlastung für die Ballenkette. Der Fuß rollt ab, ohne sich zu spreizen oder gar durchzutreten. Jetzt ist unser bewährter 
+          span.small-caps CLASSIC
+          | -Schaft endlich mit der federnden Rebound-Version der 
+          span.small-caps INTEGER
+          | -Sohle erhältlich.
+        = link_to "Jetzt bestellen", "#add-to-cart", class: "button button-large"
+    .feature-panel
+      .feature-panel__title
+        h2 Vegan & für hohe Ansprüche gefertigt
+      .feature-panel__content
+        p
+          | Der 
+          span.small-caps CLASSIC RUN R
+          |  präsentiert sich in speziell von uns ausgewählten, edlen Hochleistungsmaterialien, die unsere hohen Ansprüche an für das Laufen wichtige Eigenschaften wie Flexibilität, Punktelastizität, Zugfestigkeit, Formstabilität und Langlebigkeit erfüllen.
+        p Doch wir verwenden wir nicht nur überaus strapazierfähige und angenehme Komponenten für höchsten Laufkomfort, sondern darüber hinaus ausschließlich schadstofffreie, vegane Materialien.
+        = link_to "Jetzt bestellen", "#add-to-cart", class: "button button-large"
+
+.panel.panel--emphasis
+  .content
+    .additional-information
+      .specifications
+        h4 Technische Daten
+        ul.spec-list
+          li.spec-list__item
+            label Innenfutter
+            span Otto Stockmayer & Sohn Velour Gewirk
+          li.spec-list__item
+            label Obermaterial
+            span Morón On Micro Suede
+            br
+            span Morón Artico
+          li.spec-list__item
+            label Garn
+            span Amann & Söhne Serafil ET40
+          li.spec-list__item
+            label Mittel- und Außensohle
+            span Individuell entwickelte TPU/PU-Sohle
+          li.spec-list__item
+            label Schnürsenkel
+            span Gebrüder Jaeger GmbH
+          li.spec-list__item
+            label Sprengung
+            span 9,5 mm (US Men 10)
+          li.spec-list__item
+            label Gewicht
+            span 354 g (Classic Walk) (US Men 10)
+            br
+            span 336 g (Classic Walk Glatt) (US Men 10)
+          li.spec-list__item
+            label Verfügbare Größen
+            span Damen: US 6 - US 13 (EUR 35 - EUR 43⅔)
+            br
+            span Herren: US 8 - US 15 (EUR 39⅓ - EUR 48⅓)
+      .add-to-cart-help
+        = partial "partials/add_to_cart_help"
+
+script type="application/ld+json"
+  | {
+  |   "@context": "http://schema.org",
+  |   "@type": "Product",
+  |   "name": "Classic Run R",
+  |   "image": "https://www.lunge.com/images/products/classic_run/STR220CYW/STR220CYW.png",
+  |   "description": "Der vegane Laufschuh für anspruchsvolle Läufer. Der Classic Run R ist ein bequemer Laufschuh, der durch einzigartiges Tragegefühl und Dämpfungsverhalten glänzt.",
+  |   "brand": {
+  |     "@type": "Brand",
+  |     "name": "Lunge"
+  |   },
+  |   "offers": {
+  |     "@type": "AggregateOffer",
+  |     "lowPrice": "180.00",
+  |     "highPrice": "180.00",
+  |     "priceCurrency": "EUR",
+  |     "availability": "InStock"
+  |   }
+  | }
