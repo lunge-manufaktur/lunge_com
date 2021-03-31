@@ -5,8 +5,12 @@ footer
         .footer-nav__section
           h5 Shop
           ul.footer-list
-            li = link_to "Classic Walk", "/en/products/classic_walk/"
-            li = link_to "Classic Run", "/en/products/classic_run/"
+            li = link_to "Classic Run S", "/en/products/classic_run/"
+            li = link_to "Classic Walk S", "/en/products/classic_walk/"
+            li = link_to "Classic Run N", "/products/classic_run_n/"
+            li = link_to "Classic Walk N", "/products/classic_walk_n/"
+            li = link_to "Classic Run R", "/products/classic_run_r/"
+            li = link_to "Classic Walk R", "/products/classic_walk_r/"
             li = link_to "Integer Run Rebound", "/en/products/integer_run_rebound/"
             li = link_to "Integer Walk Rebound", "/en/products/integer_walk_rebound/"
             li = link_to "Integer Walk Rebound Leather", "/en/products/integer_walk_rebound_leather/"
@@ -15,6 +19,9 @@ footer
             li = link_to "Neo Walk", "/en/products/neo_walk/"
             li = link_to "Classic Run Fis", "/en/products/classic_run_fis/"
             li = link_to "Feetality Insoles", "/en/products/feetality/"
+            li
+              = link_to "Outlet", "/outlet/", class: "footer-list__item--new"
+              .badge.badge--white-on-black.footer-list__badge %
 
         .footer-nav__section
           h5 About

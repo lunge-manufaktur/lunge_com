@@ -24,35 +24,35 @@ lang: en
       form.filter__group
         label.filter__group-label Use case
         .filter__options data-filter-group=""
-          = button_tag "Running", type: "button", class: "filter__option", data: { toggle: '[data-filter-usage="running"]' }
-          = button_tag "Everyday use & walking", type: "button", class: "filter__option", data: { toggle: '[data-filter-usage="everyday"]' }
+          = button_tag "Running", type: "button", class: "filter__option", data: { toggle: '[data-filter-usage~="running"]' }
+          = button_tag "Everyday use & walking", type: "button", class: "filter__option", data: { toggle: '[data-filter-usage~="everyday"]' }
           = button_tag "Any", type: "reset", class: "filter__clear-button"
       form.filter__group
         label.filter__group-label Series
         .filter__options data-filter-group=""
-          = button_tag "Classic", type: "button", class: "filter__option", data: { toggle: '[data-filter-series="classic"]' }
-          = button_tag "Integer", type: "button", class: "filter__option", data: { toggle: '[data-filter-series="integer"]' }
-          = button_tag "Neo", type: "button", class: "filter__option", data: { toggle: '[data-filter-series="neo"]' }
+          = button_tag "Classic", type: "button", class: "filter__option", data: { toggle: '[data-filter-series~="classic"]' }
+          = button_tag "Integer", type: "button", class: "filter__option", data: { toggle: '[data-filter-series~="integer"]' }
+          = button_tag "Neo", type: "button", class: "filter__option", data: { toggle: '[data-filter-series~="neo"]' }
           = button_tag "Any", type: "reset", class: "filter__clear-button"
       form.filter__group
         label.filter__group-label Midsole
         .filter__options data-filter-group=""
-          = button_tag "Stability", type: "button", class: "filter__option", data: { toggle: '[data-filter-sole="stability"]' }
-          = button_tag "Neutral", type: "button", class: "filter__option", data: { toggle: '[data-filter-sole="neutral"]' }
-          = button_tag "Rebound", type: "button", class: "filter__option", data: { toggle: '[data-filter-sole="rebound"]' }
+          = button_tag "Stability", type: "button", class: "filter__option", data: { toggle: '[data-filter-sole~="stability"]' }
+          = button_tag "Neutral", type: "button", class: "filter__option", data: { toggle: '[data-filter-sole~="neutral"]' }
+          = button_tag "Rebound", type: "button", class: "filter__option", data: { toggle: '[data-filter-sole~="rebound"]' }
           = button_tag "Any", type: "reset", class: "filter__clear-button"
       form.filter__group
         label.filter__group-label Materials
         .filter__options data-filter-group=""
-          = button_tag "Vegan", type: "button", class: "filter__option", data: { toggle: '[data-filter-material="vegan"]' }
-          = button_tag "Leather", type: "button", class: "filter__option", data: { toggle: '[data-filter-material="leather"]' }
+          = button_tag "Vegan", type: "button", class: "filter__option", data: { toggle: '[data-filter-material~="vegan"]' }
+          = button_tag "Leather", type: "button", class: "filter__option", data: { toggle: '[data-filter-material~="leather"]' }
           = button_tag "Any", type: "reset", class: "filter__clear-button"
 
 .content
   .card__container
     = link_to "/en/products/#{data.products.classic_walk.slug}/", class: "card", data: { product: "classic_walk", "filter-usage": "everyday", "filter-series": "classic", "filter-sole": "stability", "filter-material": "vegan" } do
       .card__figure
-        = image_tag data.products.classic_walk.default_image, class: "card__image", alt: "Integer Run Rebound"
+        = image_tag data.products.classic_walk.default_image, class: "card__image", alt: data.products.classic_walk.name
         .card__color-options
           = partial "partials/color_options", locals: { product: "classic_walk" } 
       .card__body
@@ -67,7 +67,7 @@ lang: en
 
     = link_to "/en/products/#{data.products.classic_run.slug}/", class: "card", data: { product: "classic_run", "filter-usage": "running", "filter-series": "classic", "filter-sole": "stability", "filter-material": "vegan" } do
       .card__figure
-        = image_tag data.products.classic_run.default_image, class: "card__image", alt: "Integer Run Rebound"
+        = image_tag data.products.classic_run.default_image, class: "card__image", alt: data.products.classic_run.name
         .card__color-options
           = partial "partials/color_options", locals: { product: "classic_run" } 
       .card__body
@@ -80,9 +80,9 @@ lang: en
       .notice.notice--top-left
         span Updated
 
-    = link_to "/products/#{data.products.classic_walk_r.slug}/", class: "card", data: { product: "classic_walk_r", "filter-usage": "everyday", "filter-series": "classic", "filter-sole": "rebound", "filter-material": "vegan" } do
+    = link_to "/products/#{data.products.classic_walk_r.slug}/", class: "card", data: { product: "classic_walk_r", "filter-usage": "everyday", "filter-series": "classic", "filter-sole": "neutral rebound", "filter-material": "vegan" } do
       .card__figure
-        = image_tag data.products.classic_walk_r.default_image, class: "card__image", alt: "Classic Walk N"
+        = image_tag data.products.classic_walk_r.default_image, class: "card__image", alt: data.products.classic_walk_r.name
         .card__color-options
           = partial "partials/color_options", locals: { product: "classic_walk_r" } 
       .card__body
@@ -95,9 +95,9 @@ lang: en
       .notice.notice--top-left
         span New
 
-    = link_to "/products/#{data.products.classic_run_r.slug}/", class: "card", data: { product: "classic_run_r", "filter-usage": "running", "filter-series": "classic", "filter-sole": "rebound", "filter-material": "vegan" } do
+    = link_to "/products/#{data.products.classic_run_r.slug}/", class: "card", data: { product: "classic_run_r", "filter-usage": "running", "filter-series": "classic", "filter-sole": "neutral rebound", "filter-material": "vegan" } do
       .card__figure
-        = image_tag data.products.classic_run_r.default_image, class: "card__image", alt: "Classic Walk N"
+        = image_tag data.products.classic_run_r.default_image, class: "card__image", alt: data.products.classic_run_r.name
         .card__color-options
           = partial "partials/color_options", locals: { product: "classic_run_r" } 
       .card__body
@@ -112,7 +112,7 @@ lang: en
 
     = link_to "/products/#{data.products.classic_walk_n.slug}/", class: "card", data: { product: "classic_walk_n", "filter-usage": "everyday", "filter-series": "classic", "filter-sole": "neutral", "filter-material": "vegan" } do
       .card__figure
-        = image_tag data.products.classic_walk_n.default_image, class: "card__image", alt: "Classic Walk N"
+        = image_tag data.products.classic_walk_n.default_image, class: "card__image", alt: data.products.classic_walk_n.name
         .card__color-options
           = partial "partials/color_options", locals: { product: "classic_walk_n" } 
       .card__body
@@ -127,7 +127,7 @@ lang: en
 
     = link_to "/products/#{data.products.classic_run_n.slug}/", class: "card", data: { product: "classic_run_n", "filter-usage": "running", "filter-series": "classic", "filter-sole": "neutral", "filter-material": "vegan" } do
       .card__figure
-        = image_tag data.products.classic_run_n.default_image, class: "card__image", alt: "Integer Run Rebound"
+        = image_tag data.products.classic_run_n.default_image, class: "card__image", alt: data.products.classic_run_n.name
         .card__color-options
           = partial "partials/color_options", locals: { product: "classic_run_n" } 
       .card__body
@@ -140,9 +140,9 @@ lang: en
       .notice.notice--top-left
         span New
 
-    = link_to "/en/products/#{data.products.integer_run_rebound.slug}/", class: "card", data: { product: "integer_run_rebound", "filter-usage": "running", "filter-series": "integer", "filter-sole": "rebound", "filter-material": "vegan" } do
+    = link_to "/en/products/#{data.products.integer_run_rebound.slug}/", class: "card", data: { product: "integer_run_rebound", "filter-usage": "running", "filter-series": "integer", "filter-sole": "neutral rebound", "filter-material": "vegan" } do
       .card__figure
-        = image_tag data.products.integer_run_rebound.default_image, class: "card__image", alt: "Integer Run Rebound"
+        = image_tag data.products.integer_run_rebound.default_image, class: "card__image", alt: data.products.integer_run_rebound.name
         .card__color-options
           = partial "partials/color_options", locals: { product: "integer_run_rebound" } 
       .card__body
@@ -153,9 +153,9 @@ lang: en
         .card__attributes
           = partial "partials/product_attributes", locals: { product: "integer_run_rebound" }
 
-    = link_to "/en/products/#{data.products.integer_walk_rebound.slug}/", class: "card", data: { product: "integer_walk_rebound", "filter-usage": "everyday", "filter-series": "integer", "filter-sole": "rebound", "filter-material": "vegan" } do
+    = link_to "/en/products/#{data.products.integer_walk_rebound.slug}/", class: "card", data: { product: "integer_walk_rebound", "filter-usage": "everyday", "filter-series": "integer", "filter-sole": "neutral rebound", "filter-material": "vegan" } do
       .card__figure
-        = image_tag data.products.integer_walk_rebound.default_image, class: "card__image", alt: "Integer Run Rebound"
+        = image_tag data.products.integer_walk_rebound.default_image, class: "card__image", alt: data.products.integer_walk_rebound.name
         .card__color-options
           = partial "partials/color_options", locals: { product: "integer_walk_rebound" }
       .card__body
@@ -168,7 +168,7 @@ lang: en
 
     = link_to "/en/products/#{data.products.integer_walk_cushion.slug}/", class: "card", data: { product: "integer_walk_cushion", "filter-usage": "everyday", "filter-series": "integer", "filter-sole": "neutral", "filter-material": "vegan" } do
       .card__figure
-        = image_tag data.products.integer_walk_cushion.default_image, class: "card__image", alt: "Integer Run Rebound"
+        = image_tag data.products.integer_walk_cushion.default_image, class: "card__image", alt: data.products.integer_walk_cushion.name
         .card__color-options
           = partial "partials/color_options", locals: { product: "integer_walk_cushion" } 
       .card__body
@@ -179,9 +179,9 @@ lang: en
         .card__attributes
           = partial "partials/product_attributes", locals: { product: "integer_walk_cushion" }
 
-    = link_to "/en/products/integer_walk_rebound_leather/", class: "card", data: { product: "integer_walk_rebound_leder", "filter-usage": "everyday", "filter-series": "integer", "filter-sole": "rebound", "filter-material": "leather" } do
+    = link_to "/en/products/integer_walk_rebound_leather/", class: "card", data: { product: "integer_walk_rebound_leder", "filter-usage": "everyday", "filter-series": "integer", "filter-sole": "neutral rebound", "filter-material": "leather" } do
       .card__figure
-        = image_tag data.products.integer_walk_rebound_leder.default_image, class: "card__image", alt: "Integer Run Rebound Leather"
+        = image_tag data.products.integer_walk_rebound_leder.default_image, class: "card__image", alt: data.products.integer_walk_rebound_leder.name
         .card__color-options
           = partial "partials/color_options", locals: { product: "integer_walk_rebound_leder" } 
       .card__body
@@ -192,9 +192,9 @@ lang: en
         .card__attributes
           = partial "partials/product_attributes", locals: { product: "integer_walk_rebound" }
 
-    = link_to "/en/products/#{data.products.neo_run.slug}/", class: "card", data: { product: "neo_run", "filter-usage": "running", "filter-series": "neo", "filter-sole": "rebound", "filter-material": "vegan" } do
+    = link_to "/en/products/#{data.products.neo_run.slug}/", class: "card", data: { product: "neo_run", "filter-usage": "running", "filter-series": "neo", "filter-sole": "neutral rebound", "filter-material": "vegan" } do
       .card__figure
-        = image_tag data.products.neo_run.default_image, class: "card__image", alt: "Integer Run Rebound"
+        = image_tag data.products.neo_run.default_image, class: "card__image", alt: data.products.neo_run.name
         .card__color-options
           = partial "partials/color_options", locals: { product: "neo_run" } 
       .card__body
@@ -211,7 +211,7 @@ lang: en
     .card__container
       = link_to "/en/products/#{data.products.feetality.slug}/", class: "card", data: { product: "feetality" } do
         .card__figure
-          = image_tag data.products.feetality.default_image, class: "card__image", alt: "Integer Run Rebound"
+          = image_tag data.products.feetality.default_image, class: "card__image", alt: "Feetality Insoles"
           .card__color-options
             = partial "partials/color_options", locals: { product: "feetality" } 
         .card__body
