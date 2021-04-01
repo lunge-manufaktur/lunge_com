@@ -18,7 +18,7 @@ lang: en
 
 .filter__section
   .filter__scroll-indicator
-    span.filter__scroll-icon →
+    = link_to "→", "#", class: "filter__scroll-icon"
   .content
     .filter__container
       form.filter__group
@@ -252,9 +252,10 @@ lang: en
       }
     });
 
-    let scrollpos = window.scrollX
+    // Scroll Indicator
     const filterContainer = document.querySelector(".filter__container")
     const filterScrollIndicator = document.querySelector(".filter__scroll-indicator")
+    const filterScrollButton = document.querySelector("a.filter__scroll-icon")
     const filterContainerWidth = filterContainer.scrollWidth - filterContainer.clientWidth
 
     const add_class_on_scroll = () => filterScrollIndicator.classList.add("fade-in")
@@ -273,3 +274,7 @@ lang: en
         filterScrollIndicator.classList.add("animation--fade-in");
       }
     })
+
+    filterScrollButton.onclick = function () {
+      filterContainer.scrollLeft += 350;
+    };

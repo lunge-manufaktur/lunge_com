@@ -1665,6 +1665,7 @@ iframe.responsive--4x3 {
   overflow-y: scroll;
   webkit-overflow-scrolling: touch;
   padding: 1rem 0;
+  scroll-behavior: smooth;
 
   @include tablet-portrait {
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
@@ -1675,12 +1676,11 @@ iframe.responsive--4x3 {
 .filter__scroll-indicator {
   position: absolute;
   top: 0;
-  right: 0;
+  right: 1rem;
   bottom: 0;
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 3rem;
 
   @include tablet-portrait {
     display: none;
@@ -1690,6 +1690,10 @@ iframe.responsive--4x3 {
 .filter__scroll-icon {
   background-color: #fff;
   padding: 0.25rem 0.5rem;
+}
+
+a.filter__scroll-icon:focus {
+  outline: none;
 }
 
 .filter__group {
