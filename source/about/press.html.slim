@@ -51,3 +51,13 @@ lang: de
   .content.content--narrow
     h2 Katalog
     = link_to "Katalog (PDF)", "http://cdn.lunge.de/files/presskit/katalog_2021_web.pdf", class: "link", target: "_blank"
+
+.panel
+  .content.content--narrow
+    h2 Presse Newsletter
+    p Möchten Sie als Journalist über Neuigkeiten aus der Lunge Manufaktur informiert werden möchten, abonnieren Sie einfach unseren Presse-Newsletter:
+    form class="newsletter-signup" action="https://static.mailerlite.com/webforms/submit/c2e6e8" data-code="c2e6e8" method="post" target="_blank"
+      .newsletter-signup__input-group
+        input type="email" class="newsletter-signup__email-field" data-inputmask="" name="fields[email]" value="" placeholder="Email" required="true" size=12 autocomplete="email"
+        input type="submit" class="newsletter-signup__submit " value="Newsletter abonnieren"
+        input type="hidden" name="ml-submit" value="1"
