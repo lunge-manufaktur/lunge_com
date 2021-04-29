@@ -4,7 +4,8 @@ category_en: "Running shoes"
 slug: "classic_run"
 short_description: "Der Klassiker unter den Laufschuhen - Seit mehr als 10 Jahren etabliert und dennoch stetig weiter entwickelt."
 short_description_en: "The proven choice for runners - constantly improved and developed for years the Classic Run is a running shoe of highest quality."
-default_image: "/images/products/classic_run/STS220CYG/STS220CYG.jpg"
+default_image_png: "/images/products/classic_run/STS220CYG/STS220CYG.png"
+default_image_webp: "/images/products/classic_run/STS220CYG/STS220CYG.webp"
 price: "220,00"
 discount_price: "130,00"
 colors:
@@ -13,35 +14,40 @@ colors:
     name: "Curry/Light Gray"
     first_color: "#FDC340"
     second_color: "#DFDFDF"
-    default_image: "/images/products/classic_run/STS220CYG/STS220CYG.jpg"
+    default_image_png: "/images/products/classic_run/STS220CYG/STS220CYG.png"
+    default_image_webp: "/images/products/classic_run/STS220CYG/STS220CYG.webp"
     price: 220
   -
     sku: "STS220BNG"
     name: "Steel Blue/Navy/Light Gray"
     first_color: "#3A3551"
     second_color: "#656BA0"
-    default_image: "/images/products/classic_run/STS220BNG/STS220BNG.jpg"
+    default_image_png: "/images/products/classic_run/STS220BNG/STS220BNG.png"
+    default_image_webp: "/images/products/classic_run/STS220BNG/STS220BNG.webp"
     price: 220
   -
     sku: "STS220RBG"
     name: "Royal/Blue/Light Grey"
     first_color: "#1966C9"
     second_color: "#8CE664"
-    default_image: "/images/products/classic_run/STS220RBG/STS220RBG.jpg"
+    default_image_png: "/images/products/classic_run/STS220RBG/STS220RBG.png"
+    default_image_webp: "/images/products/classic_run/STS220RBG/STS220RBG.webp"
     price: 220
   -
     sku: "STS120RBG"
     name: "Royal/Blue/Light Grey"
     first_color: "#1966C9"
     second_color: "#FB67A6"
-    default_image: "/images/products/classic_run/STS120RBG/STS120RBG.jpg"
+    default_image_png: "/images/products/classic_run/STS120RBG/STS120RBG.png"
+    default_image_webp: "/images/products/classic_run/STS120RBG/STS120RBG.webp"
     price: 220
   -
     sku: "STS220BNG"
     name: "Lakritze"
     first_color: "#000"
     second_color: "#333"
-    default_image: "/images/products/classic_run/STS220LLL/STS220LLL.jpg"
+    default_image_png: "/images/products/classic_run/STS220LLL/STS220LLL.png"
+    default_image_webp: "/images/products/classic_run/STS220LLL/STS220LLL.webp"
     price: 220
 outlet_colors:
   -
@@ -49,49 +55,56 @@ outlet_colors:
     name: "Steel Blue/Navy/Light Gray"
     first_color: "#3A3551"
     second_color: "#656BA0"
-    default_image: "/images/products/classic_run/STS220BNG/STS220BNG.jpg"
+    default_image_png: "/images/products/classic_run/STS220BNG/STS220BNG.png"
+    default_image_webp: "/images/products/classic_run/STS220BNG/STS220BNG.webp"
     price: 220
   -
     sku: "STS220BNG"
     name: "Lakritze"
     first_color: "#000"
     second_color: "#333"
-    default_image: "/images/products/classic_run/STS220LLL/STS220LLL.jpg"
+    default_image_png: "/images/products/classic_run/STS220LLL/STS220LLL.png"
+    default_image_webp: "/images/products/classic_run/STS220LLL/STS220LLL.webp"
     price: 220
   -
     sku: "STS220YGG"
     name: "Yellow/Lawn Green/Light Gray"
     first_color: "#5CEB65"
     second_color: "#D9D8DF"
-    default_image: "/images/products/classic_run/STS220YGG/STS220YGG.jpg"
+    default_image_png: "/images/products/classic_run/STS220YGG/STS220YGG.png"
+    default_image_webp: "/images/products/classic_run/STS220YGG/STS220YGG.webp"
     price: 220
   -
     sku: "STS203SWR"
     name: "Silber/Rot/Weiß"
     first_color: "#BD3C42"
     second_color: "#DDD"
-    default_image: "/images/products/classic_run/STS203SWR/STS203SWR.jpg"
+    default_image_png: "/images/products/classic_run/STS203SWR/STS203SWR.png"
+    default_image_webp: "/images/products/classic_run/STS203SWR/STS203SWR.webp"
     price: 220
   -
     sku: "STS203RRW"
     name: "Royal/Weiß"
     first_color: "#385BC1"
     second_color: "#FFF"
-    default_image: "/images/products/classic_run/STS203RRW/STS203RRW.jpg"
+    default_image_png: "/images/products/classic_run/STS203RRW/STS203RRW.png"
+    default_image_webp: "/images/products/classic_run/STS203RRW/STS203RRW.webp"
     price: 220
   -
     sku: "STS203GGG"
     name: "Grün/Weiß"
     first_color: "#A4B93A"
     second_color: "#FFF"
-    default_image: "/images/products/classic_run/STS203GGG/STS203GGG.jpg"
+    default_image_png: "/images/products/classic_run/STS203GGG/STS203GGG.png"
+    default_image_webp: "/images/products/classic_run/STS203GGG/STS203GGG.webp"
     price: 220
   -
     sku: "STS203SSS"
     name: "Schwarz/Silber"
     first_color: "#000000"
     second_color: "#FFF"
-    default_image: "/images/products/classic_run/STS203SSS/STS203SSS.jpg"
+    default_image_png: "/images/products/classic_run/STS203SSS/STS203SSS.png"
+    default_image_webp: "/images/products/classic_run/STS203SSS/STS203SSS.webp"
     price: 220
   -
     sku: "STW200ABB"
@@ -99,14 +112,16 @@ outlet_colors:
     name_en: "Dark Gray/Blue"
     first_color: "#303A49"
     second_color: "#2E57C3"
-    default_image: "/images/products/classic_run_fis/STW200ABB/STW200ABB.png"
+    default_image_png: "/images/products/classic_run_fis/STW200ABB/STW200ABB.png"
+    default_image_webp: "/images/products/classic_run_fis/STW200ABB/STW200ABB.webp"
     price: 220
   -
     sku: "STS200GWV"
     name: "Grün/Weiß/Violett"
     first_color: "#A4B93A"
     second_color: "#773d6a"
-    default_image: "/images/products/classic_run/STS200GWV/STS200GWV.png"
+    default_image_png: "/images/products/classic_run/STS200GWV/STS200GWV.png"
+    default_image_webp: "/images/products/classic_run/STS200GWV/STS200GWV.webp"
     price: 220
 images:
   -

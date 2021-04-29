@@ -4,7 +4,8 @@ category_en: "Running shoes"
 slug: "classic_run_r"
 short_description: "Bewährter Klassiker trifft auf innovative Mittelsohle mit hohem Rückfederwert."
 short_description_en: "Proven classic meets new and innovative midsole with very high rebound."
-default_image: "/images/products/classic_run/STR220BNW/STR220BNW.png"
+default_image_png: "/images/products/classic_run/STR220BNW/STR220BNW.png"
+default_image_webp: "/images/products/classic_run/STR220BNW/STR220BNW.webp"
 price: "180,00"
 discount_price: "130,00"
 colors:
@@ -13,28 +14,32 @@ colors:
     name: "Curry/White"
     first_color: "#FDC340"
     second_color: "#FFFFFF"
-    default_image: "/images/products/classic_run/STR220CYW/STR220CYW.jpg"
+    default_image_png: "/images/products/classic_run/STR220CYW/STR220CYW.png"
+    default_image_webp: "/images/products/classic_run/STR220CYW/STR220CYW.webp"
     price: 180
   -
     sku: "STR220BNW"
     name: "Steel Blue/Navy/White"
     first_color: "#3A3551"
     second_color: "#FFFFFF"
-    default_image: "/images/products/classic_run/STR220BNW/STR220BNW.jpg"
+    default_image_png: "/images/products/classic_run/STR220BNW/STR220BNW.png"
+    default_image_webp: "/images/products/classic_run/STR220BNW/STR220BNW.webp"
     price: 180
   -
     sku: "STR120BBW"
     name: "Steel Blue/Medium Blue/White"
     first_color: "#5B547D"
     second_color: "#FFFFFF"
-    default_image: "/images/products/classic_run/STR120BBW/STR120BBW.jpg"
+    default_image_png: "/images/products/classic_run/STR120BBW/STR120BBW.png"
+    default_image_webp: "/images/products/classic_run/STR120BBW/STR120BBW.webp"
     price: 180
   -
     sku: "STR220LLG"
     name: "Lakritze"
     first_color: "#000"
     second_color: "#45464D"
-    default_image: "/images/products/classic_run/STR220LLG/STR220LLG.jpg"
+    default_image_png: "/images/products/classic_run/STR220LLG/STR220LLG.png"
+    default_image_webp: "/images/products/classic_run/STR220LLG/STR220LLG.webp"
     price: 180
 outlet_colors:
   -

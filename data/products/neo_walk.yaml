@@ -4,7 +4,8 @@ category_en: "Comfort shoes"
 slug: "neo_walk"
 short_description: "Ein leichter, neutraler Bequem- und Alltagsschuh mit rückfedernder, flexibler Mittelsohle und hervorragendem Tragegefühl."
 short_description_en: "A light everyday shoe with extremely springy, flexible midsole and exceptional fit."
-default_image: "/images/products/neo_walk/GTS214LLL/default.jpg"
+default_image_png: "/images/products/neo_walk/GTS214LLL/GTS214LLL.png"
+default_image_webp: "/images/products/neo_walk/GTS214LLL/GTS214LLL.webp"
 price: "160,00"
 discount_price: "70,00"
 colors:
@@ -13,21 +14,24 @@ colors:
     name: "Steelblue/Marine"
     first_color: "#687696"
     second_color: "#434968"
-    default_image: "/images/products/neo_walk/GTS214SB/default.jpg"
+    default_image_png: "/images/products/neo_walk/GTS214SB/GTS214SB.png"
+    default_image_webp: "/images/products/neo_walk/GTS214SB/GTS214SB.webp"
     price: 160
   -
     sku: "GTS114IC"
     name: "Ivory/Champagne"
     first_color: "#EAE7DE"
     second_color: "#B5AEA9"
-    default_image: "/images/products/neo_walk/GTS114IC/default.jpg"
+    default_image_png: "/images/products/neo_walk/GTS114IC/GTS114IC.png"
+    default_image_webp: "/images/products/neo_walk/GTS114IC/GTS114IC.webp"
     price: 160
   -
     sku: "GTS214LLL"
     name: "Lakritze"
     first_color: "#000"
     second_color: "#000"
-    default_image: "/images/products/neo_walk/GTS214LLL/default.jpg"
+    default_image_png: "/images/products/neo_walk/GTS214LLL/GTS214LLL.png"
+    default_image_webp: "/images/products/neo_walk/GTS214LLL/GTS214LLL.webp"
     price: 160
 outlet_colors:
   -
@@ -35,21 +39,24 @@ outlet_colors:
     name: "Lakritze"
     first_color: "#000"
     second_color: "#000"
-    default_image: "/images/products/neo_walk/GTS214LLL/default.jpg"
+    default_image_png: "/images/products/neo_walk/GTS214LLL/GTS214LLL.png"
+    default_image_webp: "/images/products/neo_walk/GTS214LLL/GTS214LLL.webp"
     price: 160
   -
     sku: "GTS114IC"
     name: "Ivory/Champagne"
     first_color: "#EAE7DE"
     second_color: "#B5AEA9"
-    default_image: "/images/products/neo_walk/GTS114IC/default.jpg"
+    default_image_png: "/images/products/neo_walk/GTS114IC/GTS114IC.png"
+    default_image_webp: "/images/products/neo_walk/GTS114IC/GTS114IC.webp"
     price: 160
   -
     sku: "GTS214SB"
     name: "Steelblue/Marine"
     first_color: "#687696"
     second_color: "#434968"
-    default_image: "/images/products/neo_walk/GTS214SB/default.jpg"
+    default_image_png: "/images/products/neo_walk/GTS214SB/GTS214SB.png"
+    default_image_webp: "/images/products/neo_walk/GTS214SB/GTS214SB.webp"
     price: 160
 
 images:

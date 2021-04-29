@@ -3,7 +3,8 @@ category: "Bequemschuhe"
 slug: "integer_walk_cushion"
 short_description: "Leichter und bequemer Walking-Schuh für alle, die länger auf den Beinen sind."
 short_description_en: "Versatile and comfortable walking shoes that turn any extra mile into a breeze."
-default_image: "/images/products/integer_walk_cushion/GLS400OGG/default.jpg"
+default_image_png: "/images/products/integer_walk_cushion/GLS400OGG/GLS400OGG.png"
+default_image_webp: "/images/products/integer_walk_cushion/GLS400OGG/GLS400OGG.webp"
 price: "230,00"
 discount_price: "180,00"
 colors:
@@ -12,21 +13,24 @@ colors:
     name: "Olive/Green/Gray"
     first_color: "#9EA198"
     second_color: "#CCC"
-    default_image: "/images/products/integer_walk_cushion/GLS400OGG/default.jpg"
+    default_image_png: "/images/products/integer_walk_cushion/GLS400OGG/GLS400OGG.png"
+    default_image_webp: "/images/products/integer_walk_cushion/GLS400OGG/GLS400OGG.webp"
     price: 230
   -
     sku: "GLS400SGG"
     name: "Slate/Gray"
     first_color: "#6D6773"
     second_color: "#CCC"
-    default_image: "/images/products/integer_walk_cushion/GLS400SGG/default.jpg"
+    default_image_png: "/images/products/integer_walk_cushion/GLS400SGG/GLS400SGG.png"
+    default_image_webp: "/images/products/integer_walk_cushion/GLS400SGG/GLS400SGG.webp"
     price: 230
   -
     sku: "GLS400LLL"
     name: "Lakritze"
     first_color: "#000"
     second_color: "#000"
-    default_image: "/images/products/integer_walk_cushion/GLS400LLL/default.jpg"
+    default_image_png: "/images/products/integer_walk_cushion/GLS400LLL/GLS400LLL.png"
+    default_image_webp: "/images/products/integer_walk_cushion/GLS400LLL/GLS400LLL.webp"
     price: 230
 outlet_colors:
   -
@@ -34,21 +38,24 @@ outlet_colors:
     name: "Olive/Green/Gray"
     first_color: "#9EA198"
     second_color: "#CCC"
-    default_image: "/images/products/integer_walk_cushion/GLS400OGG/default.jpg"
+    default_image_png: "/images/products/integer_walk_cushion/GLS400OGG/GLS400OGG.png"
+    default_image_webp: "/images/products/integer_walk_cushion/GLS400OGG/GLS400OGG.webp"
     price: 230
   -
     sku: "GLS400SGG"
     name: "Slate/Gray"
     first_color: "#6D6773"
     second_color: "#CCC"
-    default_image: "/images/products/integer_walk_cushion/GLS400SGG/default.jpg"
+    default_image_png: "/images/products/integer_walk_cushion/GLS400SGG/GLS400SGG.png"
+    default_image_webp: "/images/products/integer_walk_cushion/GLS400SGG/GLS400SGG.webp"
     price: 230
   -
     sku: "GLS400LLL"
     name: "Lakritze"
     first_color: "#000"
     second_color: "#000"
-    default_image: "/images/products/integer_walk_cushion/GLS400LLL/default.jpg"
+    default_image_png: "/images/products/integer_walk_cushion/GLS400LLL/GLS400LLL.png"
+    default_image_webp: "/images/products/integer_walk_cushion/GLS400LLL/GLS400LLL.webp"
     price: 230
 images:
   -

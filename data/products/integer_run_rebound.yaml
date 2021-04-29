@@ -4,80 +4,91 @@ category_en: "Running shoes"
 slug: "integer_run_rebound"
 short_description: "Komfortabler und effizienter Laufschuh mit einzigartiger Rückfederung."
 short_description_en: "Comfortable and efficient runnig shoes with exceptional rebound characteristics."
-default_image: "/images/products/integer_run_rebound/STS410DNW/default.jpg"
+default_image_png: "/images/products/integer_run_rebound/STS410DNW/STS410DNW.png"
+default_image_webp: "/images/products/integer_run_rebound/STS410DNW/STS410DNW.webp"
 price: "180,00"
 discount_price: "120,00"
 colors:
   -
-    sku: "STS410DLW"
-    name: "Deep Sky Blue/Light Gray/White"
-    first_color: "#5C98D2"
-    second_color: "#D4D5DA"
-    default_image: "/images/products/integer_run_rebound/STS410DLW/default.jpg"
-    price: 180
-  -
     sku: "STS410DNW"
     name: "Dark Slate Blue/Navy/White"
     first_color: "#515782"
     second_color: "#8597D1"
-    default_image: "/images/products/integer_run_rebound/STS410DNW/default.jpg"
+    default_image_png: "/images/products/integer_run_rebound/STS410DNW/STS410DNW.png"
+    default_image_webp: "/images/products/integer_run_rebound/STS410DNW/STS410DNW.webp"
+    price: 180
+  -
+    sku: "STS410DLW"
+    name: "Deep Sky Blue/Light Gray/White"
+    first_color: "#5C98D2"
+    second_color: "#D4D5DA"
+    default_image_png: "/images/products/integer_run_rebound/STS410DLW/STS410DLW.png"
+    default_image_webp: "/images/products/integer_run_rebound/STS410DLW/STS410DLW.webp"
     price: 180
   -
     sku: "STS310PGW"
     name: "Light Pink/Light Grey/White"
     first_color: "#FE9CA1"
     second_color: "#DAE0EE"
-    default_image: "/images/products/integer_run_rebound/STS310PGW/default.jpg"
+    default_image_png: "/images/products/integer_run_rebound/STS310PGW/STS310PGW.png"
+    default_image_webp: "/images/products/integer_run_rebound/STS310PGW/STS310PGW.webp"
     price: 180
   -
     sku: "STS410LLG"
     name: "Lakritze/Gray"
     first_color: "#000"
     second_color: "#514A54"
-    default_image: "/images/products/integer_run_rebound/STS410LLG/default.jpg"
+    default_image_png: "/images/products/integer_run_rebound/STS410LLG/STS410LLG.png"
+    default_image_webp: "/images/products/integer_run_rebound/STS410LLG/STS410LLG.webp"
     price: 180
   -
     sku: "STS310NAW"
     name: "Nickel/Aquamarine/White"
     first_color: "#C9E1E4"
     second_color: "#DD3549"
-    default_image: "/images/products/integer_run_rebound/STS310NAW/default.jpg"
+    default_image_png: "/images/products/integer_run_rebound/STS310NAW/STS310NAW.png"
+    default_image_webp: "/images/products/integer_run_rebound/STS310NAW/STS310NAW.webp"
     price: 180
 outlet_colors:
   -
-    sku: "STS410DLW"
-    name: "Deep Sky Blue/Light Gray/White"
-    first_color: "#5C98D2"
-    second_color: "#D4D5DA"
-    default_image: "/images/products/integer_run_rebound/STS410DLW/default.jpg"
-    price: 180
-  -
     sku: "STS410DNW"
     name: "Dark Slate Blue/Navy/White"
     first_color: "#515782"
     second_color: "#8597D1"
-    default_image: "/images/products/integer_run_rebound/STS410DNW/default.jpg"
+    default_image_png: "/images/products/integer_run_rebound/STS410DNW/STS410DNW.png"
+    default_image_webp: "/images/products/integer_run_rebound/STS410DNW/STS410DNW.webp"
+    price: 180
+  -
+    sku: "STS410DLW"
+    name: "Deep Sky Blue/Light Gray/White"
+    first_color: "#5C98D2"
+    second_color: "#D4D5DA"
+    default_image_png: "/images/products/integer_run_rebound/STS410DLW/STS410DLW.png"
+    default_image_webp: "/images/products/integer_run_rebound/STS410DLW/STS410DLW.webp"
     price: 180
   -
     sku: "STS310PGW"
     name: "Light Pink/Light Grey/White"
     first_color: "#FE9CA1"
     second_color: "#DAE0EE"
-    default_image: "/images/products/integer_run_rebound/STS310PGW/default.jpg"
+    default_image_png: "/images/products/integer_run_rebound/STS310PGW/STS310PGW.png"
+    default_image_webp: "/images/products/integer_run_rebound/STS310PGW/STS310PGW.webp"
     price: 180
   -
     sku: "STS410LLG"
     name: "Lakritze/Gray"
     first_color: "#000"
     second_color: "#514A54"
-    default_image: "/images/products/integer_run_rebound/STS410LLG/default.jpg"
+    default_image_png: "/images/products/integer_run_rebound/STS410LLG/STS410LLG.png"
+    default_image_webp: "/images/products/integer_run_rebound/STS410LLG/STS410LLG.webp"
     price: 180
   -
     sku: "STS310NAW"
     name: "Nickel/Aquamarine/White"
     first_color: "#C9E1E4"
     second_color: "#DD3549"
-    default_image: "/images/products/integer_run_rebound/STS310NAW/default.jpg"
+    default_image_png: "/images/products/integer_run_rebound/STS310NAW/STS310NAW.png"
+    default_image_webp: "/images/products/integer_run_rebound/STS310NAW/STS310NAW.webp"
     price: 180
 images:
   -

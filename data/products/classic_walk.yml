@@ -4,6 +4,8 @@ slug: "classic_walk"
 short_description: "Ein einzigartiger Bequemschuh für alle Lebenslagen - ganz gleich ob Alltag, Beruf oder Freizeit."
 short_description_en: "Classic Walk S is a unique and versatile walking shoe for everyday use."
 default_image: "/images/products/classic_walk/GLS220EBG/GLS220EBG.jpg"
+default_image_png: "/images/products/classic_walk/GLS220EBG/GLS220EBG.png"
+default_image_webp: "/images/products/classic_walk/GLS220EBG/GLS220EBG.webp"
 price: "230,00"
 discount_price: "150,00"
 colors:
@@ -12,84 +14,96 @@ colors:
     name: "Espresso/Brown/Light Grey"
     first_color: "#6F5A55"
     second_color: "#DFDFDF"
-    default_image: "/images/products/classic_walk/GLS220EBG/GLS220EBG.jpg"
+    default_image_png: "/images/products/classic_walk/GLS220EBG/GLS220EBG.png"
+    default_image_webp: "/images/products/classic_walk/GLS220EBG/GLS220EBG.webp"
     price: 230
   -
     sku: "GLS220CYG"
     name: "Curry/Light Grey"
     first_color: "#FDC340"
     second_color: "#DFDFDF"
-    default_image: "/images/products/classic_walk/GLS220CYG/GLS220CYG.jpg"
+    default_image_png: "/images/products/classic_walk/GLS220CYG/GLS220CYG.png"
+    default_image_webp: "/images/products/classic_walk/GLS220CYG/GLS220CYG.webp"
     price: 230
   -
     sku: "GLS222WSW"
     name: "White/Smooth"
     first_color: "#FFF"
     second_color: "#DFDFDF"
-    default_image: "/images/products/classic_walk/GLS222WSW/GLS222WSW.jpg"
+    default_image_png: "/images/products/classic_walk/GLS222WSW/GLS222WSW.png"
+    default_image_webp: "/images/products/classic_walk/GLS222WSW/GLS222WSW.webp"
     price: 230
   -
     sku: "GLS220SSG"
     name: "Silver/Light Grey"
     first_color: "#B1C0C7"
     second_color: "#DFDFDF"
-    default_image: "/images/products/classic_walk/GLS220SSG/GLS220SSG.jpg"
+    default_image_png: "/images/products/classic_walk/GLS220SSG/GLS220SSG.png"
+    default_image_webp: "/images/products/classic_walk/GLS220SSG/GLS220SSG.webp"
     price: 230
   -
     sku: "GLS220NNG"
     name: "Navy/Light Grey"
     first_color: "#31335A"
     second_color: "#DFDFDF"
-    default_image: "/images/products/classic_walk/GLS220NNG/GLS220NNG.jpg"
+    default_image_png: "/images/products/classic_walk/GLS220NNG/GLS220NNG.png"
+    default_image_webp: "/images/products/classic_walk/GLS220NNG/GLS220NNG.webp"
     price: 230
   -
     sku: "GLS220BBG"
     name: "Steel Blue/Light Grey"
     first_color: "#435982"
     second_color: "#EB8A51"
-    default_image: "/images/products/classic_walk/GLS220BBG/GLS220BBG.jpg"
+    default_image_png: "/images/products/classic_walk/GLS220BBG/GLS220BBG.png"
+    default_image_webp: "/images/products/classic_walk/GLS220BBG/GLS220BBG.webp"
     price: 230
   -
     sku: "GLS220LLL"
     name: "Lakritze"
     first_color: "#000"
     second_color: "#000"
-    default_image: "/images/products/classic_walk/GLS220LLL/GLS220LLL.jpg"
+    default_image_png: "/images/products/classic_walk/GLS220LLL/GLS220LLL.png"
+    default_image_webp: "/images/products/classic_walk/GLS220LLL/GLS220LLL.webp"
     price: 230
   -
     sku: "GLS220GGG"
     name: "Grey / Light Grey"
     first_color: "#656670"
     second_color: "#DFDFDF"
-    default_image: "/images/products/classic_walk/GLS220GGG/GLS220GGG.jpg"
+    default_image_png: "/images/products/classic_walk/GLS220GGG/GLS220GGG.png"
+    default_image_webp: "/images/products/classic_walk/GLS220GGG/GLS220GGG.webp"
     price: 230
   -
     sku: "GLS220CCG"
     name: "Caramel/Light Grey"
     first_color: "#CEA17F"
     second_color: "#DFDFDF"
-    default_image: "/images/products/classic_walk/GLS220CCG/GLS220CCG.jpg"
+    default_image_png: "/images/products/classic_walk/GLS220CCG/GLS220CCG.png"
+    default_image_webp: "/images/products/classic_walk/GLS220CCG/GLS220CCG.webp"
     price: 230
   -
     sku: "GLS220GGL"
     name: "Grey / Lakritze"
     first_color: "#656670"
     second_color: "#000"
-    default_image: "/images/products/classic_walk/GLS220GGL/GLS220GGL.jpg"
+    default_image_png: "/images/products/classic_walk/GLS220GGL/GLS220GGL.png"
+    default_image_webp: "/images/products/classic_walk/GLS220GGL/GLS220GGL.webp"
     price: 230
   -
     sku: "GLS120BLG"
     name: "Blackberry / Light Gray"
     first_color: "#583A41"
     second_color: "#DFDFDF"
-    default_image: "/images/products/classic_walk/GLS120BLG/GLS120BLG.jpg"
+    default_image_png: "/images/products/classic_walk/GLS120BLG/GLS120BLG.png"
+    default_image_webp: "/images/products/classic_walk/GLS120BLG/GLS120BLG.webp"
     price: 230
   -
     sku: "GLS120SAG"
     name: "Sand / Light Gray"
     first_color: "#DECFAD"
     second_color: "#48315B"
-    default_image: "/images/products/classic_walk/GLS120SAG/GLS120SAG.jpg"
+    default_image_png: "/images/products/classic_walk/GLS120SAG/GLS120SAG.png"
+    default_image_webp: "/images/products/classic_walk/GLS120SAG/GLS120SAG.webp"
     price: 230
 outlet_colors:
   -
@@ -97,63 +111,72 @@ outlet_colors:
     name: "Silver/Light Grey"
     first_color: "#B1C0C7"
     second_color: "#DFDFDF"
-    default_image: "/images/products/classic_walk/GLS220SSG/GLS220SSG.jpg"
+    default_image_png: "/images/products/classic_walk/GLS220SSG/GLS220SSG.png"
+    default_image_webp: "/images/products/classic_walk/GLS220SSG/GLS220SSG.webp"
     price: 230
   -
     sku: "GLS220NNG"
     name: "Navy/Light Grey"
     first_color: "#31335A"
     second_color: "#DFDFDF"
-    default_image: "/images/products/classic_walk/GLS220NNG/GLS220NNG.jpg"
+    default_image_png: "/images/products/classic_walk/GLS220NNG/GLS220NNG.png"
+    default_image_webp: "/images/products/classic_walk/GLS220NNG/GLS220NNG.webp"
     price: 230
   -
     sku: "GLS220BBG"
     name: "Steel Blue/Light Grey"
     first_color: "#435982"
     second_color: "#EB8A51"
-    default_image: "/images/products/classic_walk/GLS220BBG/GLS220BBG.jpg"
+    default_image_png: "/images/products/classic_walk/GLS220BBG/GLS220BBG.png"
+    default_image_webp: "/images/products/classic_walk/GLS220BBG/GLS220BBG.webp"
     price: 230
   -
     sku: "GLS220LLL"
     name: "Lakritze"
     first_color: "#000"
     second_color: "#000"
-    default_image: "/images/products/classic_walk/GLS220LLL/GLS220LLL.jpg"
+    default_image_png: "/images/products/classic_walk/GLS220LLL/GLS220LLL.png"
+    default_image_webp: "/images/products/classic_walk/GLS220LLL/GLS220LLL.webp"
     price: 230
   -
     sku: "GLS220GGG"
     name: "Grey / Light Grey"
     first_color: "#656670"
     second_color: "#DFDFDF"
-    default_image: "/images/products/classic_walk/GLS220GGG/GLS220GGG.jpg"
+    default_image_png: "/images/products/classic_walk/GLS220GGG/GLS220GGG.png"
+    default_image_webp: "/images/products/classic_walk/GLS220GGG/GLS220GGG.webp"
     price: 230
   -
     sku: "GLS220CCG"
     name: "Caramel/Light Grey"
     first_color: "#CEA17F"
     second_color: "#DFDFDF"
-    default_image: "/images/products/classic_walk/GLS220CCG/GLS220CCG.jpg"
+    default_image_png: "/images/products/classic_walk/GLS220CCG/GLS220CCG.png"
+    default_image_webp: "/images/products/classic_walk/GLS220CCG/GLS220CCG.webp"
     price: 230
   -
     sku: "GLS220GGL"
     name: "Grey / Lakritze"
     first_color: "#656670"
     second_color: "#000"
-    default_image: "/images/products/classic_walk/GLS220GGL/GLS220GGL.jpg"
+    default_image_png: "/images/products/classic_walk/GLS220GGL/GLS220GGL.png"
+    default_image_webp: "/images/products/classic_walk/GLS220GGL/GLS220GGL.webp"
     price: 230
   -
     sku: "GLS202SGS"
     name: "Glatt/Schwarz"
     first_color: "#000"
     second_color: "#000"
-    default_image: "/images/products/classic_walk/GLS202SGS/GLS202SGS.jpg"
+    default_image_png: "/images/products/classic_walk/GLS202SGS/GLS202SGS.png"
+    default_image_webp: "/images/products/classic_walk/GLS202SGS/GLS202SGS.webp"
     price: 230
   -
     sku: "GLS202WGW"
     name: "Glatt/Weiß"
     first_color: "#FCFCFC"
     second_color: "#EEEEEE"
-    default_image: "/images/products/classic_walk/GLS202WGW/GLS202WGW.jpg"
+    default_image_png: "/images/products/classic_walk/GLS202WGW/GLS202WGW.png"
+    default_image_webp: "/images/products/classic_walk/GLS202WGW/GLS202WGW.webp"
     price: 230
 
 images:

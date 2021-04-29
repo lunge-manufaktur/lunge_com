@@ -21,9 +21,11 @@ lang: de
     .card__container
       = link_to "/outlet/#{data.products.neo_walk.slug}/", class: "card", data: { product: "neo_walk" } do
         .card__figure
-          = image_tag data.products.neo_walk.default_image, class: "card__image", alt: "Neo Walk"
-          .card__color-options
-            = partial "partials/outlet/color_options", locals: { product: "neo_walk" } 
+          picture class="card__image-container"
+            source srcset=data.products.neo_walk.default_image_webp type="image/webp"
+            source srcset=data.products.neo_walk.default_image_png type="image/png"
+            = image_tag data.products.neo_walk.default_image_webp, class: "card__image", alt: "Neo Walk"
+          = partial "partials/outlet/color_options", locals: { product: "neo_walk" } 
         .card__body
           .card__description
             h2.marginless--top = data.products.neo_walk.name
@@ -37,9 +39,11 @@ lang: de
 
       = link_to "/outlet/#{data.products.neo_walk_sondermodell.slug}/", class: "card", data: { product: "neo_walk_sondermodell" } do
         .card__figure
-          = image_tag data.products.neo_walk_sondermodell.default_image, class: "card__image", alt: "Neo Walk Sondermodell"
-          .card__color-options
-            = partial "partials/outlet/color_options", locals: { product: "neo_walk_sondermodell" } 
+          picture class="card__image-container"
+            source srcset=data.products.neo_walk_sondermodell.default_image_webp type="image/webp"
+            source srcset=data.products.neo_walk_sondermodell.default_image_png type="image/png"
+            = image_tag data.products.neo_walk_sondermodell.default_image_webp, class: "card__image", alt: "Neo Walk Sondermodell"
+          = partial "partials/outlet/color_options", locals: { product: "neo_walk_sondermodell" } 
         .card__body
           .card__description
             h2.marginless--top = data.products.neo_walk_sondermodell.name
@@ -53,9 +57,11 @@ lang: de
             
       = link_to "/outlet/#{data.products.classic_walk.slug}/", class: "card", data: { product: "classic_walk" } do
         .card__figure
-          = image_tag data.products.classic_walk.default_image, class: "card__image", alt: "Classic Walk"
-          .card__color-options
-            = partial "partials/outlet/color_options", locals: { product: "classic_walk" } 
+          picture class="card__image-container"
+            source srcset="/images/products/classic_walk/GLS220SSG/GLS220SSG.webp" type="image/webp"
+            source srcset="/images/products/classic_walk/GLS220SSG/GLS220SSG.webp" type="image/png"
+            = image_tag "/images/products/classic_walk/GLS220SSG/GLS220SSG.webp", class: "card__image", alt: "Classic Walk S"
+          = partial "partials/outlet/color_options", locals: { product: "classic_walk" } 
         .card__body
           .card__description
             h2.marginless--top = data.products.classic_walk.name
@@ -69,9 +75,11 @@ lang: de
 
       = link_to "/outlet/#{data.products.classic_run.slug}/", class: "card", data: { product: "classic_run" } do
         .card__figure
-          = image_tag data.products.classic_run.default_image, class: "card__image", alt: "Integer Run Rebound"
-          .card__color-options
-            = partial "partials/outlet/color_options", locals: { product: "classic_run" } 
+          picture class="card__image-container"
+            source srcset="/images/products/classic_run/STS220YGG/STS220YGG.webp" type="image/webp"
+            source srcset="/images/products/classic_run/STS220YGG/STS220YGG.png" type="image/png"
+            = image_tag "/images/products/classic_run/STS220YGG/STS220YGG.png", class: "card__image", alt: "Classic Run S"
+          = partial "partials/outlet/color_options", locals: { product: "classic_run" } 
         .card__body
           .card__description
             h2.marginless--top = data.products.classic_run.name
@@ -85,9 +93,11 @@ lang: de
 
       = link_to "/outlet/#{data.products.integer_run_rebound.slug}/", class: "card", data: { product: "integer_run_rebound" } do
         .card__figure
-          = image_tag data.products.integer_run_rebound.default_image, class: "card__image", alt: "Integer Run Rebound"
-          .card__color-options
-            = partial "partials/outlet/color_options", locals: { product: "integer_run_rebound" }
+          picture class="card__image-container"
+            source srcset=data.products.integer_run_rebound.default_image_webp type="image/webp"
+            source srcset=data.products.integer_run_rebound.default_image_png type="image/png"
+            = image_tag data.products.integer_run_rebound.default_image_webp, class: "card__image", alt: "Integer Run Rebound"
+          = partial "partials/outlet/color_options", locals: { product: "integer_run_rebound" }
         .card__body
           .card__description
             h2.marginless--top = data.products.integer_run_rebound.name
@@ -101,9 +111,11 @@ lang: de
 
       = link_to "/outlet/#{data.products.integer_walk_rebound.slug}/", class: "card", data: { product: "integer_walk_rebound" } do
         .card__figure
-          = image_tag data.products.integer_walk_rebound.default_image, class: "card__image", alt: "Integer Run Rebound"
-          .card__color-options
-            = partial "partials/outlet/color_options", locals: { product: "integer_walk_rebound" } 
+          picture class="card__image-container"
+            source srcset=data.products.integer_walk_rebound.default_image_webp type="image/webp"
+            source srcset=data.products.integer_walk_rebound.default_image_webp type="image/png"
+            = image_tag data.products.integer_walk_rebound.default_image_webp, class: "card__image", alt: "Integer Walk Rebound"
+          = partial "partials/outlet/color_options", locals: { product: "integer_walk_rebound" } 
         .card__body
           .card__description
             h2.marginless--top = data.products.integer_walk_rebound.name
@@ -117,9 +129,11 @@ lang: de
 
       = link_to "/outlet/#{data.products.integer_walk_cushion.slug}/", class: "card", data: { product: "integer_walk_cushion" } do
         .card__figure
-          = image_tag data.products.integer_walk_cushion.default_image, class: "card__image", alt: "Integer Run Rebound"
-          .card__color-options
-            = partial "partials/outlet/color_options", locals: { product: "integer_walk_cushion" } 
+          picture class="card__image-container"
+            source srcset=data.products.integer_walk_cushion.default_image_webp type="image/webp"
+            source srcset=data.products.integer_walk_cushion.default_image_webp type="image/png"
+            = image_tag data.products.integer_walk_cushion.default_image_webp, class: "card__image", alt: "Integer Walk Cushion"
+          = partial "partials/outlet/color_options", locals: { product: "integer_walk_cushion" } 
         .card__body
           .card__description
             h2.marginless--top = data.products.integer_walk_cushion.name
@@ -133,9 +147,11 @@ lang: de
 
       = link_to "/outlet/#{data.products.integer_walk_rebound_leder.slug}/", class: "card", data: { product: "integer_walk_rebound_leder" } do
         .card__figure
-          = image_tag data.products.integer_walk_rebound_leder.default_image, class: "card__image", alt: "Integer Run Rebound"
-          .card__color-options
-            = partial "partials/outlet/color_options", locals: { product: "integer_walk_rebound_leder" }
+          picture class="card__image-container"
+            source srcset=data.products.integer_walk_rebound_leder.default_image_webp type="image/webp"
+            source srcset=data.products.integer_walk_rebound_leder.default_image_webp type="image/png"
+            = image_tag data.products.integer_walk_rebound_leder.default_image_webp, class: "card__image", alt: "Integer Walk Rebound Leder"
+          = partial "partials/outlet/color_options", locals: { product: "integer_walk_rebound_leder" }
         .card__body
           .card__description
             h2.marginless--top = data.products.integer_walk_rebound_leder.name
@@ -149,9 +165,11 @@ lang: de
 
       = link_to "/outlet/#{data.products.neo_run.slug}/", class: "card", data: { product: "neo_run" } do
         .card__figure
-          = image_tag data.products.neo_run.default_image, class: "card__image", alt: "Integer Run Rebound"
-          .card__color-options
-            = partial "partials/outlet/color_options", locals: { product: "neo_run" } 
+          picture class="card__image-container"
+            source srcset=data.products.neo_run.default_image_webp type="image/webp"
+            source srcset=data.products.neo_run.default_image_webp type="image/png"
+            = image_tag data.products.neo_run.default_image_webp, class: "card__image", alt: "Neo Run"
+          = partial "partials/outlet/color_options", locals: { product: "neo_run" } 
         .card__body
           .card__description
             h2.marginless--top = data.products.neo_run.name
@@ -165,9 +183,11 @@ lang: de
 
       = link_to "/outlet/#{data.products.evo_run.slug}/", class: "card", data: { product: "evo_run" } do
         .card__figure
-          = image_tag data.products.evo_run.default_image, class: "card__image", alt: "Neo Walk Sondermodell"
-          .card__color-options
-            = partial "partials/outlet/color_options", locals: { product: "evo_run" } 
+          picture class="card__image-container"
+            source srcset=data.products.evo_run.default_image_webp type="image/webp"
+            source srcset=data.products.evo_run.default_image_webp type="image/png"
+            = image_tag data.products.evo_run.default_image_webp, class: "card__image", alt: "Evo Run"
+          = partial "partials/outlet/color_options", locals: { product: "evo_run" } 
         .card__body
           .card__description
             h2.marginless--top = data.products.evo_run.name

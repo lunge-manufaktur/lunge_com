@@ -3,7 +3,8 @@ category: "Bequemschuhe"
 slug: "classic_walk_r"
 short_description: "Unser beliebtester Alltags- und Bequemschuh jetzt mit neuer rückfedernder Mittelsohle."
 short_description_en: "Our most popular everyday shoe now comes with a new, innovative midsole."
-default_image: "/images/products/classic_walk/GLR222WSW/GLR222WSW.jpg"
+default_image_png: "/images/products/classic_walk/GLR222WSW/GLR222WSW.png"
+default_image_webp: "/images/products/classic_walk/GLR222WSW/GLR222WSW.webp"
 price: "200,00"
 discount_price: "150,00"
 colors:
@@ -12,70 +13,80 @@ colors:
     name: "Curry/White"
     first_color: "#FDC340"
     second_color: "#FFFFFF"
-    default_image: "/images/products/classic_walk/GLR220CYW/GLR220CYW.jpg"
+    default_image_png: "/images/products/classic_walk/GLR220CYW/GLR220CYW.png"
+    default_image_webp: "/images/products/classic_walk/GLR220CYW/GLR220CYW.webp"
     price: 200
   -
     sku: "GLR220BBW"
     name: "Steel Blue/White"
     first_color: "#435982"
     second_color: "#EB8A51"
-    default_image: "/images/products/classic_walk/GLR220BBW/GLR220BBW.jpg"
+    default_image_png: "/images/products/classic_walk/GLR220BBW/GLR220BBW.png"
+    default_image_webp: "/images/products/classic_walk/GLR220BBW/GLR220BBW.webp"
     price: 200
   -
     sku: "GLR220EBW"
     name: "Espresso/Brown/White"
     first_color: "#6F5A55"
     second_color: "#FFFFFF"
-    default_image: "/images/products/classic_walk/GLR220EBW/GLR220EBW.jpg"
+    default_image_png: "/images/products/classic_walk/GLR220EBW/GLR220EBW.png"
+    default_image_webp: "/images/products/classic_walk/GLR220EBW/GLR220EBW.webp"
     price: 200
   -
     sku: "GLR222WSW"
     name: "White/Smooth"
     first_color: "#FFFFFF"
     second_color: "#FFFFFF"
-    default_image: "/images/products/classic_walk/GLR222WSW/GLR222WSW.jpg"
+    default_image_png: "/images/products/classic_walk/GLR222WSW/GLR222WSW.png"
+    default_image_webp: "/images/products/classic_walk/GLR222WSW/GLR222WSW.webp"
     price: 200
   -
     sku: "GLR220NNW"
     name: "Navy/Light Grey"
     first_color: "#31335A"
     second_color: "#FFFFFF"
-    default_image: "/images/products/classic_walk/GLR220NNW/GLR220NNW.jpg"
+    default_image_png: "/images/products/classic_walk/GLR220NNW/GLR220NNW.png"
+    default_image_webp: "/images/products/classic_walk/GLR220NNW/GLR220NNW.webp"
     price: 200
   -
     sku: "GLR220CCW"
     name: "Caramel/White"
     first_color: "#CEA17F"
     second_color: "#FFFFFF"
-    default_image: "/images/products/classic_walk/GLR220CCW/GLR220CCW.jpg"
+    default_image_png: "/images/products/classic_walk/GLR220CCW/GLR220CCW.png"
+    default_image_webp: "/images/products/classic_walk/GLR220CCW/GLR220CCW.webp"
     price: 200
   -
     sku: "GLR220GGG"
     name: "Grey/Grey"
     first_color: "#656670"
     second_color: "#45464D"
-    default_image: "/images/products/classic_walk/GLR220GGG/GLR220GGG.jpg"
+    default_image_png: "/images/products/classic_walk/GLR220GGG/GLR220GGG.png"
+    default_image_webp: "/images/products/classic_walk/GLR220GGG/GLR220GGG.webp"
     price: 200
   -
     sku: "GLR220GGW"
     name: "Grey/White"
     first_color: "#656670"
     second_color: "#FFFFFF"
-    default_image: "/images/products/classic_walk/GLR220GGW/GLR220GGW.jpg"
+    default_image_png: "/images/products/classic_walk/GLR220GGW/GLR220GGW.png"
+    default_image_webp: "/images/products/classic_walk/GLR220GGW/GLR220GGW.webp"
     price: 200
   -
     sku: "GLR220LLG"
     name: "Lakritze/Grey"
     first_color: "#000000"
     second_color: "#45464D"
-    default_image: "/images/products/classic_walk/GLR220LLG/GLR220LLG.jpg"
+    default_image_png: "/images/products/classic_walk/GLR220LLG/GLR220LLG.png"
+    default_image_webp: "/images/products/classic_walk/GLR220LLG/GLR220LLG.webp"
     price: 200
   -
     sku: "GLR220SSW"
     name: "Silver/White"
     first_color: "#B1C0C7"
     second_color: "#FFFFFF"
-    default_image: "/images/products/classic_walk/GLR220SSW/GLR220SSW.jpg"
+    default_image_png: "/images/products/classic_walk/GLR220SSW/GLR220SSW.png"
+    default_image_webp: "/images/products/classic_walk/GLR220SSW/GLR220SSW.webp"
     price: 200
 
 images:

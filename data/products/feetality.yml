@@ -5,14 +5,16 @@ category_en: "Insoles"
 slug: "feetality"
 short_description: "Werten Sie Ihre Schuhe auf und beugen Sie Fuß-, Knie- und Rückenbeschwerden vor."
 short_description_en: "Upgrade your shoes and prevent foot, knee, and back problems."
-default_image: "/images/products/feetality/LG105_4/default.png"
+default_image_png: "/images/products/feetality/LG105_4/LG105_4.png"
+default_image_webp: "/images/products/feetality/LG105_4/LG105_4.webp"
 price: "38,00"
 colors:
   -
     sku: "LG105.4"
     name: "Anthrazit"
     name_en: "Anthrazit"
-    default_image: "/images/products/feetality/LG105_4/default.png"
+    default_image_png: "/images/products/feetality/LG105_4/LG105_4.png"
+    default_image_webp: "/images/products/feetality/LG105_4/LG105_4.webp"
     first_color: "#777"
     second_color: "#777"
 images:

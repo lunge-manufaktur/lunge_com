@@ -3,7 +3,8 @@ category: "Laufschuhe"
 slug: "neo_run"
 short_description: "Der Neo Run von Lunge ist ein neutraler Laufschuh mit äußerst komfortabler, effizienter Federung und hervorragendem Tragegefühl."
 short_description_en: "Neo Run is a neutral, flexible running shoe with very efficient rebound effect."
-default_image: "/images/products/neo_run/LTS214MA/default.jpg"
+default_image_png: "/images/products/neo_run/LTS214MA/LTS214MA.png"
+default_image_webp: "/images/products/neo_run/LTS214MA/LTS214MA.webp"
 price: "160,00"
 discount_price: "100,00"
 colors:
@@ -12,70 +13,80 @@ colors:
     name: "Lakritze"
     first_color: "#000"
     second_color: "#000"
-    default_image: "/images/products/neo_run/LTS213LLL/default.jpg"
+    default_image_png: "/images/products/neo_run/LTS213LLL/LTS213LLL.jpg"
+    default_image_webp: "/images/products/neo_run/LTS213LLL/LTS213LLL.webp"
     price: 180
   -
     sku: "LTS213QSS"
     name: "Quicksilver/Snow/Silver"
     first_color: "#FFFAFA"
     second_color: "#CCC"
-    default_image: "/images/products/neo_run/LTS213QSS/default.jpg"
+    default_image_png: "/images/products/neo_run/LTS213QSS/LTS213QSS.jpg"
+    default_image_webp: "/images/products/neo_run/LTS213QSS/LTS213QSS.webp"
     price: 180
   -
     sku: "LTS114SC"
     name: "Skyblue/Cobalt"
     first_color: "#ACBEDD"
     second_color: "#CCC"
-    default_image: "/images/products/neo_run/LTS114SC/default.jpg"
+    default_image_png: "/images/products/neo_run/LTS114SC/LTS114SC.png"
+    default_image_webp: "/images/products/neo_run/LTS114SC/LTS114SC.webp"
     price: 180
   -
     sku: "LTS114LA"
     name: "Lime/Aquamarine"
     first_color: "#D0DC63"
     second_color: "#D4C3EA"
-    default_image: "/images/products/neo_run/LTS114LA/default.jpg"
+    default_image_png: "/images/products/neo_run/LTS114LA/LTS114LA.png"
+    default_image_webp: "/images/products/neo_run/LTS114LA/LTS114LA.webp"
     price: 180
   -
     sku: "LTS214MN"
     name: "Midnightblue/Navy"
     first_color: "#404DA6"
     second_color: "#5A5873"
-    default_image: "/images/products/neo_run/LTS214MN/default.jpg"
+    default_image_png: "/images/products/neo_run/LTS214MN/LTS214MN.png"
+    default_image_webp: "/images/products/neo_run/LTS214MN/LTS214MN.webp"
     price: 180
   -
     sku: "LTS214MA"
     name: "Midnightblue/Aquamarine"
     first_color: "#3B4799"
     second_color: "#EBD781"
-    default_image: "/images/products/neo_run/LTS214MA/default.jpg"
+    default_image_png: "/images/products/neo_run/LTS214MA/LTS214MA.png"
+    default_image_webp: "/images/products/neo_run/LTS214MA/LTS214MA.webp"
     price: 160
   -
     sku: "LTS114CV"
     name: "Champagne/Violet"
     first_color: "#E0D9D2"
     second_color: "#8D65A6"
-    default_image: "/images/products/neo_run/LTS114CV/default.jpg"
+    default_image_png: "/images/products/neo_run/LTS114CV/LTS114CV.png"
+    default_image_webp: "/images/products/neo_run/LTS114CV/LTS114CV.webp"
     price: 160
   -
     sku: "LTS114DV"
     name: "Deep Pink/Violet"
     first_color: "#DE4EA5"
     second_color: "#E997CA"
-    default_image: "/images/products/neo_run/LTS114DV/default.jpg"
+    default_image_png: "/images/products/neo_run/LTS114DV/LTS114DV.png"
+    default_image_webp: "/images/products/neo_run/LTS114DV/LTS114DV.webp"
     price: 160
   -
     sku: "LTS214LD"
     name: "Light Gray/Dark Orange"
     first_color: "#C2C9CB"
     second_color: "#E06937"
-    default_image: "/images/products/neo_run/LTS214LD/default.jpg"
+    default_image_png: "/images/products/neo_run/LTS214LD/LTS214LD.png"
+    default_image_webp: "/images/products/neo_run/LTS214LD/LTS214LD.webp"
     price: 160
   -
     sku: "LTS214LB"
     name: "Light Gray/Black"
     first_color: "#C2C9CB"
     second_color: "#000"
-    default_image: "/images/products/neo_run/LTS214LB/default.jpg"
+    default_image_png: "/images/products/neo_run/LTS214LB/LTS214LB.png"
+    default_image_webp: "/images/products/neo_run/LTS214LB/LTS214LB.webp"
     price: 160
 outlet_colors:
   -
@@ -83,70 +94,80 @@ outlet_colors:
     name: "Lakritze"
     first_color: "#000"
     second_color: "#000"
-    default_image: "/images/products/neo_run/LTS213LLL/default.jpg"
+    default_image_png: "/images/products/neo_run/LTS213LLL/LTS213LLL.jpg"
+    default_image_webp: "/images/products/neo_run/LTS213LLL/LTS213LLL.webp"
     price: 180
   -
     sku: "LTS213QSS"
     name: "Quicksilver/Snow/Silver"
     first_color: "#FFFAFA"
     second_color: "#CCC"
-    default_image: "/images/products/neo_run/LTS213QSS/default.jpg"
+    default_image_png: "/images/products/neo_run/LTS213QSS/LTS213QSS.jpg"
+    default_image_webp: "/images/products/neo_run/LTS213QSS/LTS213QSS.webp"
     price: 180
   -
     sku: "LTS114SC"
     name: "Skyblue/Cobalt"
     first_color: "#ACBEDD"
     second_color: "#CCC"
-    default_image: "/images/products/neo_run/LTS114SC/default.jpg"
+    default_image_png: "/images/products/neo_run/LTS114SC/LTS114SC.png"
+    default_image_webp: "/images/products/neo_run/LTS114SC/LTS114SC.webp"
     price: 180
   -
     sku: "LTS114LA"
     name: "Lime/Aquamarine"
     first_color: "#D0DC63"
     second_color: "#D4C3EA"
-    default_image: "/images/products/neo_run/LTS114LA/default.jpg"
+    default_image_png: "/images/products/neo_run/LTS114LA/LTS114LA.png"
+    default_image_webp: "/images/products/neo_run/LTS114LA/LTS114LA.webp"
     price: 180
   -
     sku: "LTS214MN"
     name: "Midnightblue/Navy"
     first_color: "#404DA6"
     second_color: "#5A5873"
-    default_image: "/images/products/neo_run/LTS214MN/default.jpg"
+    default_image_png: "/images/products/neo_run/LTS214MN/LTS214MN.png"
+    default_image_webp: "/images/products/neo_run/LTS214MN/LTS214MN.webp"
     price: 180
   -
     sku: "LTS214MA"
     name: "Midnightblue/Aquamarine"
     first_color: "#3B4799"
     second_color: "#EBD781"
-    default_image: "/images/products/neo_run/LTS214MA/default.jpg"
+    default_image_png: "/images/products/neo_run/LTS214MA/LTS214MA.png"
+    default_image_webp: "/images/products/neo_run/LTS214MA/LTS214MA.webp"
     price: 160
   -
     sku: "LTS114CV"
     name: "Champagne/Violet"
     first_color: "#E0D9D2"
     second_color: "#8D65A6"
-    default_image: "/images/products/neo_run/LTS114CV/default.jpg"
+    default_image_png: "/images/products/neo_run/LTS114CV/LTS114CV.png"
+    default_image_webp: "/images/products/neo_run/LTS114CV/LTS114CV.webp"
     price: 160
   -
     sku: "LTS114DV"
     name: "Deep Pink/Violet"
     first_color: "#DE4EA5"
     second_color: "#E997CA"
-    default_image: "/images/products/neo_run/LTS114DV/default.jpg"
+    default_image_png: "/images/products/neo_run/LTS114DV/LTS114DV.png"
+    default_image_webp: "/images/products/neo_run/LTS114DV/LTS114DV.webp"
     price: 160
   -
     sku: "LTS214LD"
     name: "Light Gray/Dark Orange"
     first_color: "#C2C9CB"
     second_color: "#E06937"
-    default_image: "/images/products/neo_run/LTS214LD/default.jpg"
+    default_image_png: "/images/products/neo_run/LTS214LD/LTS214LD.png"
+    default_image_webp: "/images/products/neo_run/LTS214LD/LTS214LD.webp"
     price: 160
   -
     sku: "LTS214LB"
     name: "Light Gray/Black"
     first_color: "#C2C9CB"
     second_color: "#000"
-    default_image: "/images/products/neo_run/LTS214LB/default.jpg"
+    default_image_png: "/images/products/neo_run/LTS214LB/LTS214LB.png"
+    default_image_webp: "/images/products/neo_run/LTS214LB/LTS214LB.webp"
     price: 160
 
 images:

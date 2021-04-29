@@ -100,105 +100,153 @@ $("[data-action='toggle-cart']").on("click", function() {
 $('[data-product="classic_run"] .color-icon').on("mouseover tap", function(event) {
   event.preventDefault();
   var sku = $(this).data("color");
-  var imagePath = $(this).data("image-path")
-  $('[data-product=classic_run] .card__image').attr("src", imagePath);
+  var imagePathPNG = $(this).data("image-path-png");
+  var imagePathWEBP = $(this).data("image-path-webp");
+
+  $('[data-product=classic_run] .card__image-container [type="image/png"]').attr("srcset", imagePathPNG);
+  $('[data-product=classic_run] .card__image-container [type="image/webp"]').attr("srcset", imagePathWEBP);
+  $('[data-product=classic_run] .card__image').attr("src", imagePathPNG);
 });
 
 $('[data-product="classic_walk"] .color-icon').on("mouseover tap", function(event) {
   event.preventDefault();
   var sku = $(this).data("color");
-  var imagePath = $(this).data("image-path")
-  $('[data-product=classic_walk] .card__image').attr("src", imagePath);
+  var imagePathPNG = $(this).data("image-path-png");
+  var imagePathWEBP = $(this).data("image-path-webp");
+
+  $('[data-product=classic_walk] .card__image-container [type="image/png"]').attr("srcset", imagePathPNG);
+  $('[data-product=classic_walk] .card__image-container [type="image/webp"]').attr("srcset", imagePathWEBP);
+  $('[data-product=classic_walk] .card__image').attr("src", imagePathPNG);
 });
 
 $('[data-product="classic_walk_n"] .color-icon').on("mouseover tap", function(event) {
   event.preventDefault();
   var sku = $(this).data("color");
-  var imagePath = $(this).data("image-path")
-  $('[data-product=classic_walk_n] .card__image').attr("src", imagePath);
+  var imagePathPNG = $(this).data("image-path-png");
+  var imagePathWEBP = $(this).data("image-path-webp");
+
+  $('[data-product=classic_walk_n] .card__image-container [type="image/png"]').attr("srcset", imagePathPNG);
+  $('[data-product=classic_walk_n] .card__image-container [type="image/webp"]').attr("srcset", imagePathWEBP);
+  $('[data-product=classic_walk_n] .card__image').attr("src", imagePathPNG);
 });
 
 $('[data-product="classic_run_n"] .color-icon').on("mouseover tap", function(event) {
   event.preventDefault();
   var sku = $(this).data("color");
-  var imagePath = $(this).data("image-path")
-  $('[data-product=classic_run_n] .card__image').attr("src", imagePath);
+  var imagePathPNG = $(this).data("image-path-png");
+  var imagePathWEBP = $(this).data("image-path-webp");
+
+  $('[data-product=classic_run_n] .card__image-container [type="image/png"]').attr("srcset", imagePathPNG);
+  $('[data-product=classic_run_n] .card__image-container [type="image/webp"]').attr("srcset", imagePathWEBP);
+  $('[data-product=classic_run_n] .card__image').attr("src", imagePathPNG);
 });
 
 $('[data-product="classic_walk_r"] .color-icon').on("mouseover tap", function(event) {
   event.preventDefault();
   var sku = $(this).data("color");
-  var imagePath = $(this).data("image-path")
-  $('[data-product=classic_walk_r] .card__image').attr("src", imagePath);
+  var imagePathPNG = $(this).data("image-path-png");
+  var imagePathWEBP = $(this).data("image-path-webp");
+
+  $('[data-product=classic_walk_r] .card__image-container [type="image/png"]').attr("srcset", imagePathPNG);
+  $('[data-product=classic_walk_r] .card__image-container [type="image/webp"]').attr("srcset", imagePathWEBP);
+  $('[data-product=classic_walk_r] .card__image').attr("src", imagePathPNG);
 });
 
 $('[data-product="classic_run_r"] .color-icon').on("mouseover tap", function(event) {
   event.preventDefault();
   var sku = $(this).data("color");
-  var imagePath = $(this).data("image-path")
-  $('[data-product=classic_run_r] .card__image').attr("src", imagePath);
+  var imagePathPNG = $(this).data("image-path-png");
+  var imagePathWEBP = $(this).data("image-path-webp");
+
+  $('[data-product=classic_run_r] .card__image-container [type="image/png"]').attr("srcset", imagePathPNG);
+  $('[data-product=classic_run_r] .card__image-container [type="image/webp"]').attr("srcset", imagePathWEBP);
+  $('[data-product=classic_run_r] .card__image').attr("src", imagePathPNG);
 });
 
 $('[data-product="neo_run"] .color-icon').on("mouseover tap", function(event) {
   event.preventDefault();
   var sku = $(this).data("color");
-  var imagePath = $(this).data("image-path")
-  $('[data-product=neo_run] .card__image').attr("src", imagePath);
+  var imagePathPNG = $(this).data("image-path-png");
+  var imagePathWEBP = $(this).data("image-path-webp");
+
+  $('[data-product=neo_run] .card__image-container [type="image/png"]').attr("srcset", imagePathPNG);
+  $('[data-product=neo_run] .card__image-container [type="image/webp"]').attr("srcset", imagePathWEBP);
+  $('[data-product=neo_run] .card__image').attr("src", imagePathPNG);
 });
 
 $('[data-product="neo_walk"] .color-icon').on("mouseover tap", function(event) {
   event.preventDefault();
   var sku = $(this).data("color");
-  var imagePath = $(this).data("image-path")
-  $('[data-product=neo_walk] .card__image').attr("src", imagePath);
+  var imagePathPNG = $(this).data("image-path-png");
+  var imagePathWEBP = $(this).data("image-path-webp");
+
+  $('[data-product=neo_walk] .card__image-container [type="image/png"]').attr("srcset", imagePathPNG);
+  $('[data-product=neo_walk] .card__image-container [type="image/webp"]').attr("srcset", imagePathWEBP);
+  $('[data-product=neo_walk] .card__image').attr("src", imagePathPNG);
 });
 
 $('[data-product="neo_walk_sondermodell"] .color-icon').on("mouseover tap", function(event) {
   event.preventDefault();
   var sku = $(this).data("color");
-  var imagePath = $(this).data("image-path")
-  $('[data-product=neo_walk_sondermodell] .card__image').attr("src", imagePath);
-});
+  var imagePathPNG = $(this).data("image-path-png");
+  var imagePathWEBP = $(this).data("image-path-webp");
 
-$('[data-product="integer_walk_cushion"] .color-icon').on("mouseover tap", function(event) {
-  event.preventDefault();
-  var sku = $(this).data("color");
-  var imagePath = $(this).data("image-path")
-  $('[data-product=integer_walk_cushion] .card__image').attr("src", imagePath);
+  $('[data-product=neo_walk_sondermodell] .card__image-container [type="image/png"]').attr("srcset", imagePathPNG);
+  $('[data-product=neo_walk_sondermodell] .card__image-container [type="image/webp"]').attr("srcset", imagePathWEBP);
+  $('[data-product=neo_walk_sondermodell] .card__image').attr("src", imagePathPNG);
 });
 
 $('[data-product="feetality"] .color-icon').on("mouseover tap", function(event) {
   event.preventDefault();
   var sku = $(this).data("color");
-  var imagePath = $(this).data("image-path")
-  $('[data-product=feetality] .card__image').attr("src", imagePath);
+  var imagePathPNG = $(this).data("image-path-png");
+  var imagePathWEBP = $(this).data("image-path-webp");
+
+  $('[data-product=feetality] .card__image-container [type="image/png"]').attr("srcset", imagePathPNG);
+  $('[data-product=feetality] .card__image-container [type="image/webp"]').attr("srcset", imagePathWEBP);
+  $('[data-product=feetality] .card__image').attr("src", imagePathPNG);
 });
 
 $('[data-product="integer_walk_cushion"] .color-icon').on("mouseover tap", function(event) {
   event.preventDefault();
   var sku = $(this).data("color");
-  var imagePath = $(this).data("image-path")
-  $('[data-product=integer_walk_cushion] .card__image').attr("src", imagePath);
+  var imagePathPNG = $(this).data("image-path-png");
+  var imagePathWEBP = $(this).data("image-path-webp");
+
+  $('[data-product=integer_walk_cushion] .card__image-container [type="image/png"]').attr("srcset", imagePathPNG);
+  $('[data-product=integer_walk_cushion] .card__image-container [type="image/webp"]').attr("srcset", imagePathWEBP);
+  $('[data-product=integer_walk_cushion] .card__image').attr("src", imagePathPNG);
 });
 
 $('[data-product="integer_run_rebound"] .color-icon').on("mouseover tap", function(event) {
   event.preventDefault();
   var sku = $(this).data("color");
-  var imagePath = $(this).data("image-path")
-  console.log(imagePath);
-  $('[data-product=integer_run_rebound] .card__image').attr("src", imagePath);
+  var imagePathPNG = $(this).data("image-path-png");
+  var imagePathWEBP = $(this).data("image-path-webp");
+
+  $('[data-product=integer_run_rebound] .card__image-container [type="image/png"]').attr("srcset", imagePathPNG);
+  $('[data-product=integer_run_rebound] .card__image-container [type="image/webp"]').attr("srcset", imagePathWEBP);
+  $('[data-product=integer_run_rebound] .card__image').attr("src", imagePathPNG);
 });
 
 $('[data-product="integer_walk_rebound"] .color-icon').on("mouseover tap", function(event) {
   event.preventDefault();
   var sku = $(this).data("color");
-  var imagePath = $(this).data("image-path")
-  $('[data-product=integer_walk_rebound] .card__image').attr("src", imagePath);
+  var imagePathPNG = $(this).data("image-path-png");
+  var imagePathWEBP = $(this).data("image-path-webp");
+
+  $('[data-product=integer_walk_rebound] .card__image-container [type="image/png"]').attr("srcset", imagePathPNG);
+  $('[data-product=integer_walk_rebound] .card__image-container [type="image/webp"]').attr("srcset", imagePathWEBP);
+  $('[data-product=integer_walk_rebound] .card__image').attr("src", imagePathPNG);
 });
 
 $('[data-product="integer_walk_rebound_leder"] .color-icon').on("mouseover tap", function(event) {
   event.preventDefault();
   var sku = $(this).data("color");
-  var imagePath = $(this).data("image-path")
-  $('[data-product=integer_walk_rebound_leder] .card__image').attr("src", imagePath);
+  var imagePathPNG = $(this).data("image-path-png");
+  var imagePathWEBP = $(this).data("image-path-webp");
+
+  $('[data-product=integer_walk_rebound_leder] .card__image-container [type="image/png"]').attr("srcset", imagePathPNG);
+  $('[data-product=integer_walk_rebound_leder] .card__image-container [type="image/webp"]').attr("srcset", imagePathWEBP);
+  $('[data-product=integer_walk_rebound_leder] .card__image').attr("src", imagePathPNG);
 });

@@ -2,7 +2,8 @@ name: "Evo Run"
 category: "Laufschuhe"
 slug: "evo_run"
 short_description: "Unser Laufschuh für Neutralläufer, die keine Stützwirkung benötigen und Wert auf besonders komfortable Dämpfung legen."
-default_image: "/images/products/evo_run/LTS202GWH/default.png"
+default_image_png: "/images/products/evo_run/LTS202GWH/LTS202GWH.png"
+default_image_webp: "/images/products/evo_run/LTS202GWH/LTS202GWH.webp"
 price: "180,00"
 discount_price: "90,00"
 colors:
@@ -11,7 +12,8 @@ colors:
     name: "Grün/Weiß/Hellgrau"
     first_color: "#cbd0da"
     second_color: "#8acd47"
-    default_image: "/images/products/evo_run/LTS202GWH/default.png"
+    default_image_png: "/images/products/evo_run/LTS202GWH/LTS202GWH.png"
+    default_image_webp: "/images/products/evo_run/LTS202GWH/LTS202GWH.webp"
     price: 180
 outlet_colors:
   -
@@ -19,7 +21,8 @@ outlet_colors:
     name: "Grün/Weiß/Hellgrau"
     first_color: "#cbd0da"
     second_color: "#8acd47"
-    default_image: "/images/products/evo_run/LTS202GWH/default.png"
+    default_image_png: "/images/products/evo_run/LTS202GWH/LTS202GWH.png"
+    default_image_webp: "/images/products/evo_run/LTS202GWH/LTS202GWH.webp"
     price: 180
 images:
   - 

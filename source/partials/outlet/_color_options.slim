@@ -1,4 +1,3 @@
-ul.inline-list
+.card__color-bar
 	- data.products.instance_eval(product).outlet_colors.each do |color|
-	  li.color-icon data-color=color.sku data-image-path=color.default_image
-	    .color-icon style="background: linear-gradient(180deg, #{color.first_color}, #{color.first_color} 65%, #{color.second_color} 66%, #{color.second_color} 100%); border: 0px solid #{color.first_color}" title=(color.name)
+	  .color-icon data-color=color.sku data-image-path-png=color.default_image_png data-image-path-webp=color.default_image_webp style="background: linear-gradient(180deg, #{color.first_color}, #{color.first_color} 65%, #{color.second_color} 65%, #{color.second_color} 100%); border: 0px solid #{color.first_color}" title=(color.name)
