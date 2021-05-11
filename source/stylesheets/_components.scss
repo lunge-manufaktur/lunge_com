@@ -1250,8 +1250,12 @@ h5.testimonial__author {
 .gallery__item {
   position: relative;
   margin-right: 1rem;
-  flex: 0 0 auto;
+  flex: 0 0 80vw;
   transition: ease-in-out 200ms;
+
+  @media screen and (min-width: 1920px) {
+    flex: 0 0 40vw;;
+  }
 }
 
 .gallery__item:first-child {
@@ -1971,6 +1975,7 @@ li.tab-title:not(tab-title--active):hover {
     padding: 2rem 2rem 0 0;
     display: flex;
     align-items: center;
+    justify-content: center;
   }
 }
 
