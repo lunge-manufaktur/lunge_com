@@ -176,7 +176,7 @@ lang: de
             .badge.badge--white-on-black B-Ware
             h5
               del = "€ #{data.products.neo_run.price}"
-            h4.card__price.marginless--top = "€ #{data.products.neo_run.discount_price}"
+            h4.card__price.marginless--top = "ab € #{data.products.neo_run.discount_price}"
             p = data.products.neo_run.short_description
           .card__attributes
             = partial "partials/product_attributes", locals: { product: "neo_run" }

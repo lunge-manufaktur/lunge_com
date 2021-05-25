@@ -7,7 +7,7 @@ default_image: "/images/products/classic_walk/GLS220EBG/GLS220EBG.jpg"
 default_image_png: "/images/products/classic_walk/GLS220EBG/GLS220EBG.png"
 default_image_webp: "/images/products/classic_walk/GLS220EBG/GLS220EBG.webp"
 price: "230,00"
-discount_price: "150,00"
+discount_price: "120,00"
 colors:
   -
     sku: "GLS220EBG"

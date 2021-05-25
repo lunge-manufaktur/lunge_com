@@ -7,7 +7,7 @@ short_description_en: "A light everyday shoe with extremely springy, flexible mi
 default_image_png: "/images/products/neo_walk/NWN61/NWN61.png"
 default_image_webp: "/images/products/neo_walk/NWN61/NWN61.webp"
 price: "160,00"
-discount_price: "70,00"
+discount_price: "50,00"
 outlet_colors:
   -
     sku: "NWN11"

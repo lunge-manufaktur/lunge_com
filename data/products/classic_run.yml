@@ -7,7 +7,7 @@ short_description_en: "The proven choice for runners - constantly improved and d
 default_image_png: "/images/products/classic_run/STS220CYG/STS220CYG.png"
 default_image_webp: "/images/products/classic_run/STS220CYG/STS220CYG.webp"
 price: "220,00"
-discount_price: "130,00"
+discount_price: "50,00"
 colors:
   -
     sku: "STS220CYG"

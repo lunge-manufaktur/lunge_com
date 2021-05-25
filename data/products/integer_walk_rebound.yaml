@@ -7,7 +7,7 @@ short_description_en: "Premium everyday shoes, that combine athletic functionali
 default_image_png: "/images/products/integer_walk_rebound/GLS410SSW/GLS410SSW.png"
 default_image_webp: "/images/products/integer_walk_rebound/GLS410SSW/GLS410SSW.webp"
 price: "200,00"
-discount_price: "150,00"
+discount_price: "120,00"
 colors:
   -
     sku: "GLS410SSW"

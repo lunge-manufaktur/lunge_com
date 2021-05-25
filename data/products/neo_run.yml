@@ -6,7 +6,7 @@ short_description_en: "Neo Run is a neutral, flexible running shoe with very eff
 default_image_png: "/images/products/neo_run/LTS214MA/LTS214MA.png"
 default_image_webp: "/images/products/neo_run/LTS214MA/LTS214MA.webp"
 price: "160,00"
-discount_price: "100,00"
+discount_price: "50,00"
 colors:
   -
     sku: "LTS213LLL"
