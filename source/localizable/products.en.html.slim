@@ -50,39 +50,22 @@ lang: en
 
 .content
   .card__container
-    = link_to "/en/products/#{data.products.classic_walk.slug}/", class: "card", data: { product: "classic_walk", "filter-usage": "everyday", "filter-series": "classic", "filter-sole": "stability", "filter-material": "vegan" } do
+    = link_to "/products/#{data.products.classic_run_r.slug}/", class: "card", data: { product: "classic_run_r", "filter-usage": "running", "filter-series": "classic", "filter-sole": "neutral rebound", "filter-material": "vegan" } do
       .card__figure
         picture class="card__image-container"
-          source srcset=data.products.classic_walk.default_image_webp type="image/webp"
-          source srcset=data.products.classic_walk.default_image_png type="image/png"
-          = image_tag data.products.classic_walk.default_image, class: "card__image", alt: data.products.classic_walk.name
-        = partial "partials/color_options", locals: { product: "classic_walk" } 
+          source srcset=data.products.classic_run_r.default_image_webp type="image/webp"
+          source srcset=data.products.classic_run_r.default_image_png type="image/png"
+          = image_tag data.products.classic_run_r.default_image, class: "card__image", alt: data.products.classic_run_r.name
+        = partial "partials/color_options", locals: { product: "classic_run_r" } 
       .card__body
         .card__description
-          h2.marginless--top = data.products.classic_walk.name
-          h4.card__price = "€ #{data.products.classic_walk.price}"
-          p = data.products.classic_walk.short_description_en
+          h2.marginless--top = data.products.classic_run_r.name
+          h4.card__price = "€ #{data.products.classic_run_r.price}"
+          p = data.products.classic_run_r.short_description_en
         .card__attributes
-          = partial "partials/product_attributes", locals: { product: "classic_walk" }
+          = partial "partials/product_attributes", locals: { product: "classic_run_r" }
       .notice.notice--top-left
-        span Updated
-
-    = link_to "/en/products/#{data.products.classic_run.slug}/", class: "card", data: { product: "classic_run", "filter-usage": "running", "filter-series": "classic", "filter-sole": "stability", "filter-material": "vegan" } do
-      .card__figure
-        picture class="card__image-container"
-          source srcset=data.products.classic_run.default_image_webp type="image/webp"
-          source srcset=data.products.classic_run.default_image_png type="image/png"
-          = image_tag data.products.classic_run.default_image, class: "card__image", alt: data.products.classic_run.name
-        = partial "partials/color_options", locals: { product: "classic_run" } 
-      .card__body
-        .card__description
-          h2.marginless--top = data.products.classic_run.name
-          h4.card__price = "€ #{data.products.classic_run.price}"
-          p = data.products.classic_run.short_description_en
-        .card__attributes
-          = partial "partials/product_attributes", locals: { product: "classic_run" }
-      .notice.notice--top-left
-        span Updated
+        span New
 
     = link_to "/products/#{data.products.classic_walk_r.slug}/", class: "card", data: { product: "classic_walk_r", "filter-usage": "everyday", "filter-series": "classic", "filter-sole": "neutral rebound", "filter-material": "vegan" } do
       .card__figure
@@ -101,20 +84,54 @@ lang: en
       .notice.notice--top-left
         span New
 
-    = link_to "/products/#{data.products.classic_run_r.slug}/", class: "card", data: { product: "classic_run_r", "filter-usage": "running", "filter-series": "classic", "filter-sole": "neutral rebound", "filter-material": "vegan" } do
+    = link_to "/en/products/#{data.products.classic_run.slug}/", class: "card", data: { product: "classic_run", "filter-usage": "running", "filter-series": "classic", "filter-sole": "stability", "filter-material": "vegan" } do
       .card__figure
         picture class="card__image-container"
-          source srcset=data.products.classic_run_r.default_image_webp type="image/webp"
-          source srcset=data.products.classic_run_r.default_image_png type="image/png"
-          = image_tag data.products.classic_run_r.default_image, class: "card__image", alt: data.products.classic_run_r.name
-        = partial "partials/color_options", locals: { product: "classic_run_r" } 
+          source srcset=data.products.classic_run.default_image_webp type="image/webp"
+          source srcset=data.products.classic_run.default_image_png type="image/png"
+          = image_tag data.products.classic_run.default_image, class: "card__image", alt: data.products.classic_run.name
+        = partial "partials/color_options", locals: { product: "classic_run" } 
       .card__body
         .card__description
-          h2.marginless--top = data.products.classic_run_r.name
-          h4.card__price = "€ #{data.products.classic_run_r.price}"
-          p = data.products.classic_run_r.short_description_en
+          h2.marginless--top = data.products.classic_run.name
+          h4.card__price = "€ #{data.products.classic_run.price}"
+          p = data.products.classic_run.short_description_en
         .card__attributes
-          = partial "partials/product_attributes", locals: { product: "classic_run_r" }
+          = partial "partials/product_attributes", locals: { product: "classic_run" }
+      .notice.notice--top-left
+        span Updated
+
+    = link_to "/en/products/#{data.products.classic_walk.slug}/", class: "card", data: { product: "classic_walk", "filter-usage": "everyday", "filter-series": "classic", "filter-sole": "stability", "filter-material": "vegan" } do
+      .card__figure
+        picture class="card__image-container"
+          source srcset=data.products.classic_walk.default_image_webp type="image/webp"
+          source srcset=data.products.classic_walk.default_image_png type="image/png"
+          = image_tag data.products.classic_walk.default_image, class: "card__image", alt: data.products.classic_walk.name
+        = partial "partials/color_options", locals: { product: "classic_walk" } 
+      .card__body
+        .card__description
+          h2.marginless--top = data.products.classic_walk.name
+          h4.card__price = "€ #{data.products.classic_walk.price}"
+          p = data.products.classic_walk.short_description_en
+        .card__attributes
+          = partial "partials/product_attributes", locals: { product: "classic_walk" }
+      .notice.notice--top-left
+        span Updated
+
+    = link_to "/products/#{data.products.classic_run_n.slug}/", class: "card", data: { product: "classic_run_n", "filter-usage": "running", "filter-series": "classic", "filter-sole": "neutral", "filter-material": "vegan" } do
+      .card__figure
+        picture class="card__image-container"
+          source srcset=data.products.classic_run_n.default_image_webp type="image/webp"
+          source srcset=data.products.classic_run_n.default_image_png type="image/png"
+          = image_tag data.products.classic_run_n.default_image, class: "card__image", alt: data.products.classic_run_n.name
+        = partial "partials/color_options", locals: { product: "classic_run_n" } 
+      .card__body
+        .card__description
+          h2.marginless--top = data.products.classic_run_n.name
+          h4.card__price = "€ #{data.products.classic_run_n.price}"
+          p = data.products.classic_run_n.short_description_en
+        .card__attributes
+          = partial "partials/product_attributes", locals: { product: "classic_run_n" }
       .notice.notice--top-left
         span New
 
@@ -132,23 +149,6 @@ lang: en
           p = data.products.classic_walk_n.short_description_en
         .card__attributes
           = partial "partials/product_attributes", locals: { product: "classic_walk_n" }
-      .notice.notice--top-left
-        span New
-
-    = link_to "/products/#{data.products.classic_run_n.slug}/", class: "card", data: { product: "classic_run_n", "filter-usage": "running", "filter-series": "classic", "filter-sole": "neutral", "filter-material": "vegan" } do
-      .card__figure
-        picture class="card__image-container"
-          source srcset=data.products.classic_run_n.default_image_webp type="image/webp"
-          source srcset=data.products.classic_run_n.default_image_png type="image/png"
-          = image_tag data.products.classic_run_n.default_image, class: "card__image", alt: data.products.classic_run_n.name
-        = partial "partials/color_options", locals: { product: "classic_run_n" } 
-      .card__body
-        .card__description
-          h2.marginless--top = data.products.classic_run_n.name
-          h4.card__price = "€ #{data.products.classic_run_n.price}"
-          p = data.products.classic_run_n.short_description_en
-        .card__attributes
-          = partial "partials/product_attributes", locals: { product: "classic_run_n" }
       .notice.notice--top-left
         span New
 
