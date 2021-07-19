@@ -42,10 +42,11 @@ lang: en
           = button_tag "Rebound", type: "button", class: "filter__option", data: { toggle: '[data-filter-sole~="rebound"]' }
           = button_tag "Any", type: "reset", class: "filter__clear-button"
       form.filter__group
-        label.filter__group-label Materials
+        label.filter__group-label Features
         .filter__options data-filter-group=""
           = button_tag "Vegan", type: "button", class: "filter__option", data: { toggle: '[data-filter-material~="vegan"]' }
           = button_tag "Leather", type: "button", class: "filter__option", data: { toggle: '[data-filter-material~="leather"]' }
+          = button_tag "Extra wide fit", type: "button", class: "filter__option", data: { toggle: '[data-filter-material~="wide"]' }
           = button_tag "Any", type: "reset", class: "filter__clear-button"
 
 .content
@@ -149,6 +150,23 @@ lang: en
           p = data.products.classic_walk_n.short_description_en
         .card__attributes
           = partial "partials/product_attributes", locals: { product: "classic_walk_n" }
+      .notice.notice--top-left
+        span New
+
+    = link_to "/en/products/#{data.products.derby_walk_s.slug}/", class: "card", data: { product: "derby_walk_s", "filter-usage": "everyday", "filter-series": "classic", "filter-sole": "neutral", "filter-material": "vegan wide" } do
+      .card__figure
+        picture class="card__image-container"
+          source srcset=data.products.derby_walk_s.default_image_webp type="image/webp"
+          source srcset=data.products.derby_walk_s.default_image_png type="image/png"
+          = image_tag data.products.derby_walk_s.default_image, class: "card__image", alt: data.products.derby_walk_s.name
+        = partial "partials/color_options", locals: { product: "derby_walk_s" } 
+      .card__body
+        .card__description
+          h2.marginless--top = data.products.derby_walk_s.name
+          h4.card__price = "€ #{data.products.derby_walk_s.price}"
+          p = data.products.derby_walk_s.short_description_en
+        .card__attributes
+          = partial "partials/product_attributes", locals: { product: "derby_walk_s" }
       .notice.notice--top-left
         span New
 

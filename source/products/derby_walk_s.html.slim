@@ -1,0 +1,138 @@
+---
+title: "Derby Walk S - Endlich Platz für mehr Fuß: Der Lunge Schuh für besonders breite Füße"
+description: Der Derby Walk S von Lunge ist ein komfortable, veganer Alltagsschuh, der endlich genug Platz für besonders breite Füße bietet.
+section: products
+canonical_link: "https://www.lunge.com/products/derby_walk_s/"
+url_de: "https://www.lunge.com/products/derby_walk_s/"
+url_en: "https://www.lunge.com/en/products/derby_walk_s/"
+sitemap_priority: 0.9
+sitemap_changefreq: daily
+---
+.title__container#add-to-cart.anchor-target
+  = partial "partials/made_in_germany"
+  .title__inner
+    .content
+      .collection
+        .product
+          .product__figure
+            .product__image-container
+              img.product__image
+            .product__features
+              ul.product-feature
+                = partial "partials/product-features/vegan"
+                = partial "partials/product-features/non-toxic"
+                = partial "partials/product-features/made_in_germany"
+                = partial "partials/product-features/resole"
+            = partial "partials/product_attributes", locals: { product: "derby_walk_s" }
+          .product__details
+            .product__title
+              = link_to "← Shop", "/products/", class: "link"
+              h1 Derby Walk S
+            .product__description
+              = partial "partials/video_link", locals: { product_name: "Derby Walk S" }
+              p 
+                | Viel zu lange mussten Kunden auf einen speziellen Schuh für breite Füße warten. Mit unseren 
+                span.small-caps Derby
+                |  Modellen bieten wir die Lösung: Der komplett neu entwickelte Leisten und der daraus resultierende Schaft bietet auch besonders breiten Füßen den gewohnten Komfort eines Lunge Schuhs.
+            .product__order-form
+              h4 Jetzt bestellen
+              .input-group
+                label Damen / Herren
+                .gender-select__container
+                  select.product__option.gender-select
+                    option value=234048192662 Herren / Unisex
+              .input-group
+                label Farbe
+                .product-select__title-container
+                .product-select__container
+              .input-group
+                label Größe (Fusslänge / US / EUR)
+                .variant-select__container
+                  select.product__option.variant-select
+              .variant-price__container
+                h2.variant-price
+                small inkl. Mwst., versandkostenfrei innerhalb Deutschlands
+              .add-to-cart-button__container
+                button.buy-button.js-prevent-cart-listener.add-button In den Warenkorb
+              .product__sizing
+                = partial "partials/size_guide_note"
+    #video.anchor-target
+
+= partial "partials/video_card", locals: { youtube_id: "N3rYl4dBR9U", product_name: "Derby Walk S" }
+
+.panel.panel--odd
+  .content.content--narrow
+    h2 LUNGE-Schuhe jetzt auch in breit
+    p
+      | Wir haben extra einen neuen Leisten ganz speziell für die Anforderungen breiter Füße entwickelt. Unser Spezialleisten deckt die Weiten J, K und L ab. Jetzt können auch Problemfüße z.B. mit starkem Ballen problemlos versorgt werden. Korrekte Fußführung als Bequemschuh für den Alltag breiter Füße hat einen Namen: 
+      span.small-caps Derby Walk S
+
+    h2 Breite Schuhe haben es schwer
+    p
+      | Schuhe mit breitem Schnitt sind selten und zumeist schwer. Nicht so der 
+      span.small-caps Derby Walk S
+      | . Er verbindet den Schnitt eines hervorragenden Komfortschuhs mit der leichten Funktionssohle unserer bewährten CLASSIC-Serie. Breit aber leicht lautet das Credo für diesen langersehnten Schuh. Wer ihn braucht, wird ihn lieben!
+
+.panel.panel--emphasis
+  .content
+    .additional-information
+      .specifications
+        h4 Technische Daten
+        ul.spec-list
+          li.spec-list__item
+            label Innenfutter
+            span Otto Stockmayer & Sohn Velour Gewirk
+          li.spec-list__item
+            label Obermaterial
+            span Morón On Micro Suede
+            br
+            span Morón Artico
+          li.spec-list__item
+            label Garn
+            span Amann & Söhne Serafil ET40
+          li.spec-list__item
+            label Mittelsohle
+            span nora Lunatec CAD35
+            br
+            span nora Lunatec CAD55 (Pronationsstütze)
+          li.spec-list__item
+            label Außensohle
+            span OK Gummiwerk Hexa4Grip High-Grip
+          li.spec-list__item
+            label Schnürsenkel
+            span Gebrüder Jaeger GmbH
+          li.spec-list__item
+            label Sprengung
+            span 9,5 mm (US Men 10)
+          li.spec-list__item
+            label Gewicht
+            span 354 g (Classic Walk) (US Men 10)
+            br
+            span 336 g (Classic Walk Glatt) (US Men 10)
+          li.spec-list__item
+            label Verfügbare Größen
+            span Damen: US 6 - US 13 (EUR 35 - EUR 43⅔)
+            br
+            span Herren: US 8 - US 15 (EUR 39⅓ - EUR 48⅓)
+      .add-to-cart-help
+        = partial "partials/add_to_cart_help"
+
+script type="application/ld+json"
+  | {
+  |   "@context": "http://schema.org",
+  |   "@type": "Product",
+  |   "name": "Derby Walks S",
+  |   "image": "https://www.lunge.com/images/products/derby_walk/GWS220NNG/GWS220NNG.png",
+  |   "description": "Endlich Platz für mehr Fuß: Der Lunge Schuh für besonders breite Füße.",
+  |   "brand": {
+  |     "@type": "Brand",
+  |     "name": "Lunge"
+  |   },
+  |   "offers": {
+  |     "@type": "AggregateOffer",
+  |     "lowPrice": "230.00",
+  |     "highPrice": "230.00",
+  |     "priceCurrency": "EUR",
+  |     "availability": "InStock"
+  |   }
+  | }

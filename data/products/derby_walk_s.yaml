@@ -1,52 +1,29 @@
-name: "Classic Walk N"
+name: "Derby Walk S"
 category: "Bequemschuhe"
-slug: "classic_walk_n"
-short_description: "Der bewährte Classic Walk - jetzt mit neutraler Mittelsohle ohne Pronationsstütze."
-short_description_en: "The tried and tested Classic Walk - now with a new neutral midsole option."
-default_image_png: "/images/products/classic_walk/GLN220BBG/GLN220BBG.png"
-default_image_webp: "/images/products/classic_walk/GLN220BBG/GLN220BBG.webp"
+slug: "derby_walk_s"
+short_description: "Endlich Platz für mehr Fuß: Der Lunge Schuh für besonders breite Füße."
+short_description_en: "At last Lunge shoes with ample space for extra-wide feet."
+default_image: "/images/products/derby_walk/GWS220NNG/GWS220NNG.jpg"
+default_image_png: "/images/products/derby_walk/GWS220NNG/GWS220NNG.png"
+default_image_webp: "/images/products/derby_walk/GWS220NNG/GWS220NNG.webp"
 price: "230,00"
-discount_price: "150,00"
+discount_price: "120,00"
 colors:
   -
-    sku: "GLN220BBG"
+    sku: "GWS220NNG"
+    name: "Navy/Navy/Light Grey"
+    first_color: "#31335A"
+    second_color: "#DFDFDF"
+    default_image_png: "/images/products/derby_walk/GWS220NNG/GWS220NNG.png"
+    default_image_webp: "/images/products/derby_walk/GWS220NNG/GWS220NNG.webp"
+    price: 230
+  -
+    sku: "GWS220BBG"
     name: "Steel Blue/Light Grey"
     first_color: "#435982"
     second_color: "#EB8A51"
-    default_image_png: "/images/products/classic_walk/GLN220BBG/GLN220BBG.png"
-    default_image_webp: "/images/products/classic_walk/GLN220BBG/GLN220BBG.webp"
-    price: 230
-  -
-    sku: "GLN220SSG"
-    name: "Silver/Light Grey"
-    first_color: "#B1C0C7"
-    second_color: "#DFDFDF"
-    default_image_png: "/images/products/classic_walk/GLN220SSG/GLN220SSG.png"
-    default_image_webp: "/images/products/classic_walk/GLN220SSG/GLN220SSG.webp"
-    price: 230
-  -
-    sku: "GLN220NNG"
-    name: "Navy/Light Grey"
-    first_color: "#31335A"
-    second_color: "#DFDFDF"
-    default_image_png: "/images/products/classic_walk/GLN220NNG/GLN220NNG.png"
-    default_image_webp: "/images/products/classic_walk/GLN220NNG/GLN220NNG.webp"
-    price: 230
-  -
-    sku: "GLN220LLL"
-    name: "Lakritze"
-    first_color: "#000"
-    second_color: "#000"
-    default_image_png: "/images/products/classic_walk/GLN220LLL/GLN220LLL.png"
-    default_image_webp: "/images/products/classic_walk/GLN220LLL/GLN220LLL.webp"
-    price: 230
-  -
-    sku: "GLN220GGG"
-    name: "Grey / Light Grey"
-    first_color: "#656670"
-    second_color: "#DFDFDF"
-    default_image_png: "/images/products/classic_walk/GLN220GGG/GLN220GGG.png"
-    default_image_webp: "/images/products/classic_walk/GLN220GGG/GLN220GGG.webp"
+    default_image_png: "/images/products/derby_walk/GWS220BBG/GWS220BBG.png"
+    default_image_webp: "/images/products/derby_walk/GWS220BBG/GWS220BBG.webp"
     price: 230
 
 images:
@@ -81,11 +58,11 @@ attributes:
     name: stability.name
     start:
       name: stability.start_name
-      value: 2
+      value: 5
       description: stability.start_description
     end:
       name: stability.end_name
-      value: 6
+      value: 9
       description: stability.end_description
   -
     name: rebound.name
@@ -111,9 +88,9 @@ attributes:
     name: fit.name
     start:
       name: fit.start_name
-      value: 3
+      value: 7
       description: fit.description
     end:
       name: fit.end_name
-      value: 8
+      value: 10
       description: fit.description

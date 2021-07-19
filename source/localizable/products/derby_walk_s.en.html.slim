@@ -1,0 +1,113 @@
+---
+title: "Derby Walk S - At last Lunge shoes with ample space for extra-wide feet."
+description: Derby Walk S by Lunge are comfortable, vegan everyday shoes, that offer ample room for extra wide feet.
+section: products
+canonical_link: "https://www.lunge.com/en/products/derby_walk_s/"
+url_de: "https://www.lunge.com/products/derby_walk_s/"
+url_en: "https://www.lunge.com/en/products/derby_walk_s/"
+sitemap_priority: 0.9
+sitemap_changefreq: daily
+---
+.title__container#add-to-cart.anchor-target
+  = partial "partials/made_in_germany"
+  .title__inner
+    .content
+      .collection
+        .product
+          .product__figure
+            .product__image-container
+              img.product__image
+            .product__features
+              ul.product-feature
+                = partial "partials/product-features/vegan"
+                = partial "partials/product-features/non-toxic"
+                = partial "partials/product-features/made_in_germany"
+                = partial "partials/product-features/resole"
+            = partial "partials/product_attributes", locals: { product: "derby_walk_s" }
+          .product__details
+            .product__title
+              = link_to "← Shop", "/en/products/", class: "link"
+              h1 Derby Walk S
+            .product__description
+              = partial "partials/video_link", locals: { product_name: "Derby Walk S" }
+              p 
+                | For far too long finding comfortable, lightweight shoes for extra wide feet has been a challenge. With our new 
+                span.small-caps Derby
+                |  range that search comes to an end: The completely new upper design of the 
+                span.small-caps Derby Walk S
+                |  offers generous space even for very wide feet.
+            .product__order-form
+              h4 Order now
+              .input-group
+                label Women / Men
+                .gender-select__container
+                  select.product__option.gender-select
+                    option value=234048192662 Men / Unisex
+              .input-group
+                label Color
+                .product-select__title-container
+                .product-select__container
+              .input-group
+                label Size (feet length / US / EUR)
+                .variant-select__container
+                  select.product__option.variant-select
+              .variant-price__container
+                h2.variant-price
+                small incl. VAT, free shipping within Germany
+              .add-to-cart-button__container
+                button.buy-button.js-prevent-cart-listener.add-button Add to cart
+              .product__sizing
+                = partial "partials/size_guide_note"
+    #video.anchor-target
+
+= partial "partials/video_card", locals: { youtube_id: "N3rYl4dBR9U", product_name: "Derby Walk S" }
+
+.panel.panel--odd
+  .content.content--narrow
+    h2 LUNGE-Schuhe jetzt auch in breit
+    p
+      | Wir haben extra einen neuen Leisten ganz speziell für die Anforderungen breiter Füße entwickelt. Unser Spezialleisten deckt die Weiten J, K und L ab. Jetzt können auch Problemfüße z.B. mit starkem Ballen problemlos versorgt werden. Korrekte Fußführung als Bequemschuh für den Alltag breiter Füße hat einen Namen: 
+      span.small-caps Derby Walk S
+
+    h2 LUNGE shoes for extra wide feet
+    p
+      | To meet the requirements of very wide feet we designed a completely new upper, which covers the widths J, K and L and also fits problematic feet. Healthy support for wide feet in a lightweight shoe for everyday use: 
+      span.small-caps Derby Walk S
+
+    h2 The burden of wide shoes
+    p
+      | Shoes that feature a wide fit are rare and often quite heavy. Not the 
+      span.snall-caps Derby Walk S
+      | , which combines the comfort of generously-sized premium shoes with the functionality of our lightweight 
+      span.small-caps Classic
+      | -midsole. Wide and light are the attributes that define these highly anticipated shoes. If you need them, you'll love them. 
+
+.panel.panel--emphasis
+  .content
+    .additional-information
+      .size_table
+        h4 Sizing guide
+        = partial "partials/size_table"
+        = link_to "Learn more about how to measure your feet...", "/support/sizes/", class: "link"
+      .add-to-cart-help
+        = partial "partials/add_to_cart_help"
+
+script type="application/ld+json"
+  | {
+  |   "@context": "http://schema.org",
+  |   "@type": "Product",
+  |   "name": "Derby Walks S",
+  |   "image": "https://www.lunge.com/images/products/derby_walk/GWS220NNG/GWS220NNG.png",
+  |   "description": "Endlich Platz für mehr Fuß: Der Lunge Schuh für besonders breite Füße.",
+  |   "brand": {
+  |     "@type": "Brand",
+  |     "name": "Lunge"
+  |   },
+  |   "offers": {
+  |     "@type": "AggregateOffer",
+  |     "lowPrice": "230.00",
+  |     "highPrice": "230.00",
+  |     "priceCurrency": "EUR",
+  |     "availability": "InStock"
+  |   }
+  | }

@@ -117,21 +117,32 @@
 
 .minor-product__container--1 {
   grid-area: "minor-product-1";
-  background-color: #c1d7ea;
 }
 
 .minor-product__container--1:hover {
+}
+
+.minor-product__container--GLR220BBG {
+  background-color: #c1d7ea;
+}
+
+.minor-product__container--GLR220BBG:hover {
   background-color: #718eb4;
   color: $white;
 }
 
 .minor-product__container--2 {
   grid-area: "minor-product-2";
-  background-color: #ddb8b7;
 }
 
 .minor-product__container--2:hover {
-  grid-area: "minor-product-2";
+}
+
+.minor-product__container--GLS220EBG {
+  background-color: #ddb8b7;
+}
+
+.minor-product__container--GLS220EBG:hover {
   background-color: #a68d8c;
   color: $white;
 }
@@ -1756,7 +1767,7 @@ a.filter__scroll-icon:focus {
 .additional-information {
   display: grid;
   grid-template-rows: 1fr;
-  grid-gap: $gutter;
+  grid-gap: 4rem;
 
   @include tablet-landscape {
     grid-template-columns: 1fr 1fr;
