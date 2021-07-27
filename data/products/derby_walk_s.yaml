@@ -25,6 +25,14 @@ colors:
     default_image_png: "/images/products/derby_walk/GWS220BBG/GWS220BBG.png"
     default_image_webp: "/images/products/derby_walk/GWS220BBG/GWS220BBG.webp"
     price: 230
+  -
+    sku: "GWS220LLL"
+    name: "Lakritze"
+    first_color: "#000"
+    second_color: "#000"
+    default_image_png: "/images/products/derby_walk/GWS220LLL/GWS220LLL.png"
+    default_image_webp: "/images/products/derby_walk/GWS220LLL/GWS220LLL.webp"
+    price: 230
 
 images:
   -
