@@ -1,0 +1,104 @@
+name: "Derby Run S"
+category: "Laufschuhe"
+slug: "derby_run_s"
+short_description: "Komfort im ganz großen Stil: Der Laufschuh für besonders breite Füße."
+short_description_en: "Running shoes for extra-wide feet."
+default_image: "/images/products/derby_run/SWS220LLL/SWS220LLL.jpg"
+default_image_png: "/images/products/derby_run/SWS220LLL/SWS220LLL.png"
+default_image_webp: "/images/products/derby_run/SWS220LLL/SWS220LLL.webp"
+price: "230,00"
+discount_price: "120,00"
+colors:
+  -
+    sku: "SWS220LLL"
+    name: "Lakritze"
+    first_color: "#000"
+    second_color: "#000"
+    default_image_png: "/images/products/derby_run/SWS220LLL/SWS220LLL.png"
+    default_image_webp: "/images/products/derby_run/SWS220LLL/SWS220LLL.webp"
+    price: 230
+  -
+    sku: "SWS220BNG"
+    name: "Steel Blue/Navy/Light Grey"
+    first_color: "#3A3551"
+    second_color: "#656BA0"
+    default_image_png: "/images/products/derby_run/SWS220BNG/SWS220BNG.png"
+    default_image_webp: "/images/products/derby_run/SWS220BNG/SWS220BNG.webp"
+    price: 230
+  -
+    sku: "SWS220CYG"
+    name: "Curry/Light Grey"
+    first_color: "#FDC340"
+    second_color: "#DFDFDF"
+    default_image_png: "/images/products/derby_run/SWS220CYG/SWS220CYG.png"
+    default_image_webp: "/images/products/derby_run/SWS220CYG/SWS220CYG.webp"
+    price: 230
+
+images:
+  -
+    path: "/images/products/classic_walk/GLS220BBG/GLS220BBG_02@2400px.jpg"
+    title: Classic Walk W (Steel Blue / Light Grey)
+  -
+    path: "/images/products/classic_walk/GLS220SSG/GLS220SSG_01@2400px.jpg"
+    title: Classic Walk (Silver / Light Grey)
+  -
+    path: "/images/products/classic_walk/GLS220NNG/GLS220NNG_01@2400px.jpg"
+    title: Classic Walk (Navy / Light Grey)
+  -
+    path: "/images/products/classic_walk/GLS120NNG/GLS120NNG_01@2400px.jpg"
+    title: Classic Walk W (Navy / Light Grey)
+  -
+    path: "/images/products/classic_walk/GLS220BBG/GLS220BBG_01@2400px.jpg"
+    title: Classic Walk W (Steel Blue / Light Grey)
+
+attributes:
+  -
+    name: ground.name
+    start:
+      name: ground.start_name
+      value: 1
+      description: ground.start_description
+    end:
+      name: ground.end_name
+      value: 8
+      description: ground.end_description
+  -
+    name: stability.name
+    start:
+      name: stability.start_name
+      value: 5
+      description: stability.start_description
+    end:
+      name: stability.end_name
+      value: 9
+      description: stability.end_description
+  -
+    name: rebound.name
+    start:
+      name: rebound.start_name
+      value: 2
+      description: rebound.start_description
+    end:
+      name: rebound.end_name
+      value: 6
+      description: rebound.end_description
+  -
+    name: firmness.name
+    start:
+      name: firmness.start_name
+      value: 3
+      description: firmness.start_description
+    end:
+      name: firmness.end_name
+      value: 6
+      description: firmness.end_description
+  -
+    name: fit.name
+    start:
+      name: fit.start_name
+      value: 7
+      description: fit.description
+    end:
+      name: fit.end_name
+      value: 10
+      description: fit.description

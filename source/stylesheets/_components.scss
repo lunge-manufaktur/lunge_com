@@ -2318,6 +2318,41 @@ input.restock__submit {
 
 
 
+/* --- SIZE TABLE --- */
+.default-fit {
+  background-color: $default-fit-color;
+}
+
+.wide-fit {
+  background-color: $wide-fit-color;
+}
+
+.mixed-fit {
+  background: repeating-linear-gradient(-45deg, $default-fit-color, $default-fit-color 5px, $wide-fit-color 5px, $wide-fit-color 10px)
+}
+
+.fit-legend__container {
+  display: grid;
+}
+
+.fit-legend__item {
+  display: grid;
+  grid-gap: 0.5rem;
+  grid-template-columns: 1rem auto;
+  align-items: center; 
+}
+
+.fit-legend__icon {
+  width: 1rem;
+  height: 1rem;
+  border: 1px solid #fff;
+}
+
+.fit-legend__label {
+}
+
+
+
 /* --- BLOG --- */
 .post {
   padding: 4rem 0;

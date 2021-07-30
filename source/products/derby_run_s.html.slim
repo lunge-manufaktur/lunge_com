@@ -1,0 +1,110 @@
+---
+title: "Derby Run S - Endlich Platz für mehr Fuß: Der Lunge Schuh für besonders breite Füße"
+description: Der Derby Walk S von Lunge ist ein komfortable, veganer Alltagsschuh, der endlich genug Platz für besonders breite Füße bietet.
+section: products
+canonical_link: "https://www.lunge.com/products/derby_run_s/"
+url_de: "https://www.lunge.com/products/derby_run_s/"
+url_en: "https://www.lunge.com/en/products/derby_run_s/"
+sitemap_priority: 0.9
+sitemap_changefreq: daily
+---
+.title__container#add-to-cart.anchor-target
+  = partial "partials/made_in_germany"
+  .title__inner
+    .content
+      .collection
+        .product
+          .product__figure
+            .product__image-container
+              img.product__image
+            .product__features
+              ul.product-feature
+                = partial "partials/product-features/vegan"
+                = partial "partials/product-features/non-toxic"
+                = partial "partials/product-features/made_in_germany"
+                = partial "partials/product-features/resole"
+            = partial "partials/product_attributes", locals: { product: "derby_run_s" }
+          .product__details
+            .product__title
+              = link_to "← Shop", "/products/", class: "link"
+              h1 Derby Run S
+            .product__description
+              = partial "partials/video_link", locals: { product_name: "Derby Run S" }
+              p 
+                | Unsere Antwort an alle Läufer, deren Füße in der Breite ein Mehr an Platzbedarf einfordern. Damit es Ihren Füßen gut geht, haben wir einen komplett neuen Schnitt mit einem von Grund auf neuen Leisten entwickelt. Endlich können auch breite Füße aufatmen: 
+                span.small-caps LUNGE
+                | -Qualität im Breitformat.
+            .product__order-form
+              h4 Jetzt bestellen
+              .input-group
+                label Damen / Herren
+                .gender-select__container
+                  select.product__option.gender-select
+                    option value=234049175702 Herren / Unisex
+              .input-group
+                label Farbe
+                .product-select__title-container
+                .product-select__container
+              .input-group
+                label Größe (Fusslänge / US / EUR)
+                .variant-select__container
+                  select.product__option.variant-select
+              .variant-price__container
+                h2.variant-price
+                small inkl. Mwst., versandkostenfrei innerhalb Deutschlands
+              .add-to-cart-button__container
+                button.buy-button.js-prevent-cart-listener.add-button In den Warenkorb
+              .product__sizing
+                = partial "partials/size_guide_note"
+    #video.anchor-target
+
+= partial "partials/video_card", locals: { youtube_id: "yWNnHb9vYWI", product_name: "Derby Run S" }
+
+.panel.panel--odd
+  .content.content--narrow
+    h2 Eigens für breite Füße entwickelt
+    p
+      | Der 
+      span.small-caps Derby
+      | -Schnitt ist mehr als nur die breite Version vom 
+      = link_to "Classic Run", "/products/classic_run/", class: "link small-caps"
+      | . Speziell für breite Füße wurde der komplette Aufbau neu entwickelt. Ein zurückgesetzter Zehenriegel und ein weiter Zehenbereich schaffen Platz im Schuh.
+
+    h2 Beschwerdefreies Laufen dank hochwertiger Mittelsohle
+    p
+      | Der bewährte Sohlenaufbau des 
+      = link_to "Classic Run", "/products/classic_run/", class: "link small-caps"
+      |  wurde an den neuen Schaft angepasst. Die stabile Mittelsohle mit exzellenter Führung kann auch am breiten Fuß überzeugen: perfekte Abrollbewegung für beschwerdefreies Laufen auf allen Untergründen.
+
+.panel.panel--emphasis
+  .content
+    .additional-information
+      .size_table
+        h4 Größentabelle
+        p
+          | Wir empfehlen, die passende Schuhgröße anhand Ihrer Fußlänge zu ermitteln. 
+          = link_to "Mehr erfahren...", "/support/sizes/", class: "link"
+        = partial "partials/size_table"
+
+      .add-to-cart-help
+        = partial "partials/add_to_cart_help"
+
+script type="application/ld+json"
+  | {
+  |   "@context": "http://schema.org",
+  |   "@type": "Product",
+  |   "name": "Derby Run S",
+  |   "image": "https://www.lunge.com/images/products/derby_walk/GWS220NNG/GWS220NNG.png",
+  |   "description": "Endlich Platz für mehr Fuß: Der Lunge Schuh für besonders breite Füße.",
+  |   "brand": {
+  |     "@type": "Brand",
+  |     "name": "Lunge"
+  |   },
+  |   "offers": {
+  |     "@type": "AggregateOffer",
+  |     "lowPrice": "230.00",
+  |     "highPrice": "230.00",
+  |     "priceCurrency": "EUR",
+  |     "availability": "InStock"
+  |   }
+  | }

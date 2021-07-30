@@ -1,0 +1,112 @@
+---
+title: "Derby Run S - Running shoes for extra-wide feet"
+description: Running shoes for extra-wide feet.
+section: products
+canonical_link: "https://www.lunge.com/products/derby_run_s/"
+url_de: "https://www.lunge.com/products/derby_run_s/"
+url_en: "https://www.lunge.com/en/products/derby_run_s/"
+sitemap_priority: 0.9
+sitemap_changefreq: daily
+---
+.title__container#add-to-cart.anchor-target
+  = partial "partials/made_in_germany"
+  .title__inner
+    .content
+      .collection
+        .product
+          .product__figure
+            .product__image-container
+              img.product__image
+            .product__features
+              ul.product-feature
+                = partial "partials/product-features/vegan"
+                = partial "partials/product-features/non-toxic"
+                = partial "partials/product-features/made_in_germany"
+                = partial "partials/product-features/resole"
+            = partial "partials/product_attributes", locals: { product: "derby_run_s" }
+          .product__details
+            .product__title
+              = link_to "← Shop", "/products/", class: "link"
+              h1 Derby Run S
+            .product__description
+              = partial "partials/video_link", locals: { product_name: "Derby Run S" }
+              p
+                | Designed to accomodate wide feet the 
+                span.small-caps Derby Run
+                |  is our solution for runners that need more generously fitted shoes. Finally your feet can have the room they need. 
+            .product__order-form
+              h4 Order now
+              .input-group
+                label Men / Women
+                .gender-select__container
+                  select.product__option.gender-select
+                    option value=234049175702 Men / Unisex
+              .input-group
+                label Color
+                .product-select__title-container
+                .product-select__container
+              .input-group
+                label Size (Feet length / US / EUR)
+                .variant-select__container
+                  select.product__option.variant-select
+              .variant-price__container
+                h2.variant-price
+                small incl. VAT, free shipping within Germany
+              .add-to-cart-button__container
+                button.buy-button.js-prevent-cart-listener.add-button Add to cart
+              .product__sizing
+                = partial "partials/size_guide_note"
+    #video.anchor-target
+
+= partial "partials/video_card", locals: { youtube_id: "yWNnHb9vYWI", product_name: "Derby Run S" }
+
+.panel.panel--odd
+  .content.content--narrow
+    h2 Made specifically for wide feet
+    p
+      | The 
+      span.small-caps Derby Run
+      |  is more than just a wide version of our 
+      = link_to "Classic Run", "/en/products/classic_run/", class: "link small-caps"
+      | . The upper was designed and developed from the ground up to offer a completely new fit tailored to runners with wide feet. 
+
+    h2 New fit, proven qualities
+    p
+      | The tried and tested sole design of the 
+      = link_to "Classic Run", "/en/products/classic_run/", class: "link small-caps"
+      |  has been adapted for the new upper, resulting in a midsole that provides the same comfort, control and support that already made our 
+      span.small-caps Classic
+      | -series live up to its name.
+
+.panel.panel--emphasis
+  .content
+    .additional-information
+      .size_table
+        h4 Größentabelle
+        p
+          | Wir empfehlen, die passende Schuhgröße anhand Ihrer Fußlänge zu ermitteln. 
+          = link_to "Mehr erfahren...", "/support/sizes/", class: "link"
+        = partial "partials/size_table"
+
+      .add-to-cart-help
+        = partial "partials/add_to_cart_help"
+
+script type="application/ld+json"
+  | {
+  |   "@context": "http://schema.org",
+  |   "@type": "Product",
+  |   "name": "Derby Run S",
+  |   "image": "https://www.lunge.com/images/products/derby_walk/GWS220NNG/GWS220NNG.png",
+  |   "description": "Endlich Platz für mehr Fuß: Der Lunge Schuh für besonders breite Füße.",
+  |   "brand": {
+  |     "@type": "Brand",
+  |     "name": "Lunge"
+  |   },
+  |   "offers": {
+  |     "@type": "AggregateOffer",
+  |     "lowPrice": "230.00",
+  |     "highPrice": "230.00",
+  |     "priceCurrency": "EUR",
+  |     "availability": "InStock"
+  |   }
+  | }
