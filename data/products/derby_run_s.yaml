@@ -25,6 +25,15 @@ colors:
     default_image_png: "/images/products/derby_run/SWS220CYG/SWS220CYG.png"
     default_image_webp: "/images/products/derby_run/SWS220CYG/SWS220CYG.webp"
     price: 230
+  -
+    sku: "SWS220LLL"
+    name: "Lakritze"
+    first_color: "#000"
+    second_color: "#000"
+    default_image_png: "/images/products/derby_run/SWS220LLL/SWS220LLL.png"
+    default_image_webp: "/images/products/derby_run/SWS220LLL/SWS220LLL.webp"
+    price: 230
+
 attributes:
   -
     name: ground.name
