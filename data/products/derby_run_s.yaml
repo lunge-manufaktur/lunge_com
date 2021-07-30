@@ -3,20 +3,12 @@ category: "Laufschuhe"
 slug: "derby_run_s"
 short_description: "Komfort im ganz großen Stil: Der Laufschuh für besonders breite Füße."
 short_description_en: "Running shoes for extra-wide feet."
-default_image: "/images/products/derby_run/SWS220LLL/SWS220LLL.jpg"
-default_image_png: "/images/products/derby_run/SWS220LLL/SWS220LLL.png"
-default_image_webp: "/images/products/derby_run/SWS220LLL/SWS220LLL.webp"
+default_image: "/images/products/derby_run/SWS220BNG/SWS220BNG.jpg"
+default_image_png: "/images/products/derby_run/SWS220BNG/SWS220BNG.png"
+default_image_webp: "/images/products/derby_run/SWS220BNG/SWS220BNG.webp"
 price: "230,00"
 discount_price: "120,00"
 colors:
-  -
-    sku: "SWS220LLL"
-    name: "Lakritze"
-    first_color: "#000"
-    second_color: "#000"
-    default_image_png: "/images/products/derby_run/SWS220LLL/SWS220LLL.png"
-    default_image_webp: "/images/products/derby_run/SWS220LLL/SWS220LLL.webp"
-    price: 230
   -
     sku: "SWS220BNG"
     name: "Steel Blue/Navy/Light Grey"
@@ -33,24 +25,6 @@ colors:
     default_image_png: "/images/products/derby_run/SWS220CYG/SWS220CYG.png"
     default_image_webp: "/images/products/derby_run/SWS220CYG/SWS220CYG.webp"
     price: 230
-
-images:
-  -
-    path: "/images/products/classic_walk/GLS220BBG/GLS220BBG_02@2400px.jpg"
-    title: Classic Walk W (Steel Blue / Light Grey)
-  -
-    path: "/images/products/classic_walk/GLS220SSG/GLS220SSG_01@2400px.jpg"
-    title: Classic Walk (Silver / Light Grey)
-  -
-    path: "/images/products/classic_walk/GLS220NNG/GLS220NNG_01@2400px.jpg"
-    title: Classic Walk (Navy / Light Grey)
-  -
-    path: "/images/products/classic_walk/GLS120NNG/GLS120NNG_01@2400px.jpg"
-    title: Classic Walk W (Navy / Light Grey)
-  -
-    path: "/images/products/classic_walk/GLS220BBG/GLS220BBG_01@2400px.jpg"
-    title: Classic Walk W (Steel Blue / Light Grey)
-
 attributes:
   -
     name: ground.name
