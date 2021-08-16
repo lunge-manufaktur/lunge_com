@@ -843,6 +843,7 @@ $(function() {
       $('.cart__toggle .btn__counter').html('Warenkorb (' + cart.lineItemCount + ')');
       $('.cart__toggle').addClass('js-active');
     } else {
+      $('.cart__toggle .btn__counter').html('Warenkorb');
       $('.cart__toggle').removeClass('js-active');
       $('.cart').removeClass('js-active');
     }
