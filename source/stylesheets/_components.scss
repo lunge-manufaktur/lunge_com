@@ -1733,6 +1733,7 @@ a.filter__scroll-icon:focus {
   @include transition();
   border: none;
   background-color: transparent;
+  color: $body-font-color;
   text-align: left;
   font-weight: 700;
   margin-bottom: 1px;
