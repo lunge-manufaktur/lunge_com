@@ -29,7 +29,21 @@ sitemap_changefreq: daily
               h1 Classic Run S
             .product__description
               = partial "partials/video_link", locals: { product_name: "Classic Run S" }
-              p Der Klassiker in unserem Sortiment und Geheimtipp anspruchsvoller Läufer. Der Classic Run hat sich über Jahre als Laufschuh der Extraklasse bewährt und wurde dennoch stetig verbessert. Ein Laufschuh, der durch sein einzigartiges Sohlendesign, hochwertigste Materialien, höchsten Komfort und kompromisslose Funktionalität überzeugt.
+              p
+                | Unser wahrscheinlich wichtigster Schuh hat eine besonders hohe Stabilität. Der 
+                span.small-caps CLASSIC RUN S
+                |  überzeugt Senk- und Knickfüße mit Stützbedürfnis durch seine dezente, aber wirksame Pronationsstütze. Biomechanische Untersuchungen haben gezeigt, dass es einen Zusammenhang zwischen übermäßigen Pronationsbewegungen der Füße und Beschwerden gibt. Unsere Antwort ist die S-Variante vom 
+                span.small-caps CLASSIC RUN
+                | . Achsengerechte Beinbelastung und kraftschlüssiger Bodenkontakt bringen Ruhe in jede Form von bewegungsbedingten Beschwerden. Kein Wunder, denn wenn alles so läuft, wie von der Natur gedacht, kann es ja nur Freude machen.
+              p Einen hochwertigen EVA-Spezialschaum, der durch Elastomer-Zusätze speziell veredelt wurde, bringen wir durch unser einzigartiges Fräsverfahren in Form. Die unvergleichliche Synthese von Technik und Funktion machen unseren Bestseller zur ersten Wahl nicht nur unter seinen langjährigen Fans. Ein Schuh zum Neuentdecken der Bewegungsfreude.
+              ul.bullet-list
+                li Höchste Stabilität
+                li Höchster Komfort
+                li Belüfteter Schaft mit optimaler Passform
+                li Neuestes EVA-Mittelsohlenmaterial mit höchster Elastizität
+                li Sehr hohe Dauerelastizität und Abriebfestigkeit
+                li Sohle für alle Untergründe
+                li Fußbett FEETALITY 
             .product__order-form
               h4 Jetzt bestellen
               .input-group
@@ -57,38 +71,6 @@ sitemap_changefreq: daily
 
 = partial "partials/video_card", locals: { youtube_id: "26ws6GFOSh8", product_name: "Classic Run S" }
 
-.panel
-  .content
-    .panel__inner.panel__inner--reverse
-      .panel__image
-        = image_tag "/images/products/classic_run/STS220YGG/STS220YGG_01@2400px.jpg", srcset: "/images/products/classic_run/STS220YGG/STS220YGG_01@1200px.jpg 1200w, /images/products/classic_run/STS220YGG/STS220YGG_01@2400px.jpg 2400w", alt: "Classic Run in Yellow/Lawn Green/Light Gray"
-      aside.panel__text
-        .panel__text__inner
-          h2 80 Prozent EVA-Anteil für eine dauerhafte Federung
-          p Die echte Besonderheit des Classic Runs ist das hochwertige Mittelsohlenmaterial EVA, das bei uns in der höchsten Güte verarbeitet wird. Was viele Läufer nicht wissen: Der Anteil und die Qualität von EVA bestimmen die wesentlichen Eigenschaften eines Laufschuhs.
-          p Herkömmliche Laufschuhe werden oft nur mit einem 20-prozentigen EVA-Anteil hergestellt. Bei unseren Laufschuhen dagegen besteht die Mittelsohle aus einem Anteil von 80 Prozent. Diese hohe Materialqualität macht unseren Laufschuh besonders elastisch und sorgt für seine dauerhafte Federung. Die Mittelsohle hat eine sogenannte „progressive Federkennlinie“, was bedeutet, dass die Federwirkung mit zunehmenden Federweg stärker ausgeprägt ist und besser zur Geltung kommt.
-          = link_to "Jetzt bestellen", "#add-to-cart", class: "button button-large"
-
-.panel
-  .content
-    .panel__inner
-      .panel__image
-        = image_tag "/images/products/classic_run/STS220BNG/STS220BNG_03@2400px.jpg", srcset: "/images/products/classic_run/STS220BNG/STS220BNG_03@1200px.jpg 1200w, /images/products/classic_run/STS220BNG/STS220BNG_03@2400px.jpg 2400w", alt: "Classic Run in Steel Blue/Navy/Light Gray"
-      aside.panel__text
-        .panel__text__inner
-          h2 Ein himmlisches Gefühl
-          p Wie bei allen Lunge-Schuhen, kommen auch beim Classic Run nur die feinsten Materialien zum Einsatz – selbstverständlich frei von Schadstoffen und Ökotex 100-zertifiziert. So werden Sie die sanfte Innenauskleidung dieses Modells kaum spüren, während sie Ihrem Fuß sicheren, rutsch- und scheuerfreien Halt bietet.
-          = link_to "Jetzt bestellen", "#add-to-cart", class: "button button-large"
-
-.panel
-  .content.content--narrow
-    h2 Vielseitigkeit als Spezialität
-    p Der Classic Run ist ein überaus universeller und vielseitiger Laufschuh, der die meisten Fußformen und individuellen Anforderungen verschiedener Laufstile abdeckt. So zeichnet sich die dezente Pronationsstütze an der Innenseite durch einen flexiblen Wirkungsgrad aus, der den Fuß sanft und kontrolliert führt, wodurch sich dieser Schuh sowohl für Neutralläufer als auch moderate Pronierer eignet. Im Zweifel hilft Ihnen einer unserer Händler in ganz Deutschland gerne mit einer fachkundigen Beratung und Videoanalyse weiter.
-
-    h2 Stetige Verbesserungen
-    p Lassen Sie sich nicht von der Tatsache irritieren, dass der Classic Run bereits seit 2008 verkauft wird - es handelt sich hierbei um einen Laufschuh mit bewährten Stärken, der dennoch stetig angepasst und verbessert wurde. So haben wir im Laufe der Jahre verschiedenste Komponenten und Details des Schuhs verbessert - von der Laufsohle, über die Schnürsenkel bis hin zum Innenfutter. Bei uns stehen Material und Fertigungsweise immer auf dem Prüfstand.
-    = link_to "Jetzt bestellen", "#add-to-cart", class: "button button-large"
-
 .gallery.scroll--horizontal
   - data.products.classic_run.images.each do |image|
     .gallery__item
@@ -103,27 +85,8 @@ sitemap_changefreq: daily
         h4 Technische Daten
         ul.spec-list
           li.spec-list__item
-            label Innenfutter
-            span Otto Stockmayer & Sohn Velour Gewirk
-          li.spec-list__item
-            label Obermaterial
-            span Morón On Micro Suede
-            br
-            span Morón Artico
-          li.spec-list__item
-            label Garn
-            span Amann & Söhne Serafil ET40
-          li.spec-list__item
-            label Mittelsohle
-            span nora Lunatec CAD35
-            br
-            span nora Lunatec CAD55 (Pronationsstütze)
-          li.spec-list__item
-            label Außensohle
-            span OK Gummiwerk Hexa4Grip High-Grip
-          li.spec-list__item
-            label Schnürsenkel
-            span Gebrüder Jaeger GmbH
+            label Mittelsohlentyp
+            span Stability
           li.spec-list__item
             label Sprengung
             span 9,5 mm (US Men 10)

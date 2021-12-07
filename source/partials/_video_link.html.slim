@@ -1,3 +1,7 @@
 ul.inline-list.inline-list--marginless-bottom
   li = image_tag "/images/misc/video_clip.svg"
-  li = link_to "Ulf Lunge stellt vor: #{product_name}", "#video", class: "link"
+  li
+    = link_to "#video", class: "link" do
+      span Ulf Lunge stellt vor: 
+      span.small-caps = product_name
+    end

@@ -3,4 +3,6 @@
   .video__title
   	ul.inline-list.inline-list--marginless-bottom
   	  li = image_tag "/images/misc/video_clip.svg"
-  	  li = "Ulf Lunge stellt vor: #{product_name}"
+  	  li
+        span Ulf Lunge stellt vor: 
+        span.small-caps = product_name

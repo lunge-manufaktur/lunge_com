@@ -31,12 +31,16 @@ sitemap_changefreq: daily
             .product__description
               = partial "partials/video_link", locals: { product_name: "Classic Walk N" }
               p 
-                | Der 
-                span.small-caps Classic Walk
-                |  ist ein einzigartiger, veganer Bequemschuh für Alltag, Beruf oder Freizeit. Ob Knieschmerzen, Hallux Valgus oder gänzlich beschwerdefrei, der vielseitige 
-                span.small-caps Classic Walk
-                |  fördert eine gesunde Fußstellung.
-                p Die Mittelsohle der N-Variante verfügt über eine neutrale Formgebung ohne Pronationsstütze. 
+                | Die lang erwartete Neutralversion unserer Classic Modelle ist endlich verfügbar. Schon aufgrund der hohen Grundstabilität der Mittelsohle werden viele Füße eine zusätzliche Stützwirkung nicht vermissen. Ganz im Gegenteil: Dieser Schuh schöpft aus dem vollen Potenzial des hervorragenden Mittelsohlenmaterials. Komfortable Rückfederung, eine punktelastische Passform beim Obermaterial, die selbst höchsten orthopädischen Ansprüchen genügt und eine Sohle für alle Untergründe runden das Paket ab.
+              ul.bullet-list
+                li Hohe Grundstabilität/ Neutralschuh
+                li Höchster Komfort
+                li Feines Schaftmaterial für optimale Passform und Atmungsaktivität
+                li Neuestes EVA-Mittelsohlenmaterial mit höchster Elastizität
+                li Sehr hohe Dauerelastizität und Abriebfestigkeit
+                li Sohle für alle Untergründe
+                li Fußbett FEETALITY 
+
             .product__order-form
               h4 Jetzt bestellen
               .input-group
@@ -64,22 +68,7 @@ sitemap_changefreq: daily
 
 = partial "partials/video_card", locals: { youtube_id: "7oQhsqyPLWw", product_name: "Classic Walk N" }
 
-.panel.panel--odd
-  .content
-    .panel__inner.panel__inner--reverse
-      .panel__image
-        = image_tag "/images/products/classic_walk/GLS220NNG/GLS220NNG_01@2400px.jpg", srcset: "/images/products/classic_walk/GLS220NNG/GLS220NNG_01@1600px.jpg 1600w, /images/products/classic_walk/GLS220NNG/GLS220NNG_01@2400px.jpg 2400w, /images/products/classic_walk/GLS220NNG/GLS220NNG_01@3200px.jpg 3200w", alt: "Classic Walk in Anthrazit/Hellgrau"
-      aside.panel__text
-        .panel__text__inner
-          h2 Sportliches Fundament und einzigartiger Komfort.
-          p
-            | Das Herzstück des Schuhs, die Mittelsohle, basiert auf der selben Geometrie, die sich bereits bei unserem Laufschuh 
-            = link_to "Classic Run", "/products/classic_run/", class: "link small-caps"
-            |  bewährt hat. Mit dem Classic Walk haben wir die Qualitäten dieser Schuhe nun auch alltagstauglich gemacht, so dass sich hier ein Bequemschuh ergibt, der sowohl durch seine korrekte Fußführung als auch ungekannten Tragekomfort überzeugt. 
-          p Feinste Materialien und sorgfältige Verarbeitung kombiniert mit technischem Know-How und durchdachter Sohlenkonstruktion machen den Classic Walk zum perfekten Schuh für alle, die gerne länger auf den Beinen sind.
-          = link_to "Jetzt bestellen", "#add-to-cart", class: "button button-large"
-
-= partial "products/gallery", locals: { product: data.products.classic_walk }
+= partial "products/gallery", locals: { product: data.products.classic_walk_n }
 
 .panel.panel--emphasis
   .content
@@ -88,25 +77,8 @@ sitemap_changefreq: daily
         h4 Technische Daten
         ul.spec-list
           li.spec-list__item
-            label Innenfutter
-            span Otto Stockmayer & Sohn Velour Gewirk
-          li.spec-list__item
-            label Obermaterial
-            span Morón On Micro Suede
-            br
-            span Morón Artico
-          li.spec-list__item
-            label Garn
-            span Amann & Söhne Serafil ET40
-          li.spec-list__item
-            label Mittelsohle
-            span nora Lunatec CAD35
-          li.spec-list__item
-            label Außensohle
-            span OK Gummiwerk Hexa4Grip High-Grip
-          li.spec-list__item
-            label Schnürsenkel
-            span Gebrüder Jaeger GmbH
+            label Mittelsohlentyp
+            span Neutral
           li.spec-list__item
             label Sprengung
             span 9,5 mm (US Men 10)
