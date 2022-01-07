@@ -81,6 +81,8 @@ lang: de
           p = data.products.classic_walk_r.short_description
         .card__attributes
           = partial "partials/product_attributes", locals: { product: "classic_walk_r" }
+      .notice.notice--top-left
+        span Neue Farben
 
     = link_to "/products/#{data.products.classic_run.slug}/", class: "card", data: { product: "classic_run", "filter-usage": "running", "filter-series": "classic", "filter-sole": "stability", "filter-features": "vegan" } do
       .card__figure
@@ -141,6 +143,8 @@ lang: de
           p = data.products.classic_walk_n.short_description
         .card__attributes
           = partial "partials/product_attributes", locals: { product: "classic_walk_n" }
+      .notice.notice--top-left
+        span Neue Farben
 
     = link_to "/products/#{data.products.derby_run_s.slug}/", class: "card", data: { product: "derby_run_s", "filter-usage": "running", "filter-series": "derby", "filter-sole": "neutral", "filter-features": "vegan wide" } do
       .card__figure
