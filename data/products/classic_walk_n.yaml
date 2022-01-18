@@ -6,8 +6,50 @@ short_description_en: "The tried and tested Classic Walk - now with a new neutra
 default_image_png: "/images/products/classic_walk/GLN220BBG/GLN220BBG.png"
 default_image_webp: "/images/products/classic_walk/GLN220BBG/GLN220BBG.webp"
 price: "230,00"
-discount_price: "150,00"
+discount_price: "200,00"
 colors:
+  -
+    sku: "GLN220BBG"
+    name: "Steel Blue/Light Grey"
+    first_color: "#435982"
+    second_color: "#EB8A51"
+    default_image_png: "/images/products/classic_walk/GLN220BBG/GLN220BBG.png"
+    default_image_webp: "/images/products/classic_walk/GLN220BBG/GLN220BBG.webp"
+    price: 230
+  -
+    sku: "GLN220SSG"
+    name: "Silver/Light Grey"
+    first_color: "#B1C0C7"
+    second_color: "#DFDFDF"
+    default_image_png: "/images/products/classic_walk/GLN220SSG/GLN220SSG.png"
+    default_image_webp: "/images/products/classic_walk/GLN220SSG/GLN220SSG.webp"
+    price: 230
+  -
+    sku: "GLN220NNG"
+    name: "Navy/Light Grey"
+    first_color: "#31335A"
+    second_color: "#DFDFDF"
+    default_image_png: "/images/products/classic_walk/GLN220NNG/GLN220NNG.png"
+    default_image_webp: "/images/products/classic_walk/GLN220NNG/GLN220NNG.webp"
+    price: 230
+  -
+    sku: "GLN220LLL"
+    name: "Lakritze"
+    first_color: "#000"
+    second_color: "#000"
+    default_image_png: "/images/products/classic_walk/GLN220LLL/GLN220LLL.png"
+    default_image_webp: "/images/products/classic_walk/GLN220LLL/GLN220LLL.webp"
+    price: 230
+  -
+    sku: "GLN220GGG"
+    name: "Grey / Light Grey"
+    first_color: "#656670"
+    second_color: "#DFDFDF"
+    default_image_png: "/images/products/classic_walk/GLN220GGG/GLN220GGG.png"
+    default_image_webp: "/images/products/classic_walk/GLN220GGG/GLN220GGG.webp"
+    price: 230
+
+outlet_colors:
   -
     sku: "GLN220BBG"
     name: "Steel Blue/Light Grey"

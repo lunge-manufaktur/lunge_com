@@ -1,13 +1,15 @@
 ---
-title: Classic Run N - Laufschuhe für höchste Ansprüche
+title: Classic Run N (Outlet)
 description: Der vegane Laufschuh für anspruchsvoller Läufer. Der Classic Run ist ein bequemer Laufschuh, der durch einzigartiges Tragegefühl und Dämpfungsverhalten glänzt.
 section: products
-canonical_link: "https://www.lunge.com/products/classic_run_n/"
-url_de: "https://www.lunge.com/products/classic_run_n/"
-url_en: "https://www.lunge.com/en/products/classic_run_n/"
-sitemap_priority: 0.9
-sitemap_changefreq: daily
+canonical_link: "https://www.lunge.com/outlet/classic_run_n/"
+url_de: "https://www.lunge.com/outlet/classic_run_n/"
+url_en: "https://www.lunge.com/en/outlet/classic_run_n/"
+sitemap_priority: 0.1
+sitemap_changefreq: monthly
+sitemap_noindex: true
 ---
+= partial "/partials/outlet/outlet_notice"
 .title__container#add-to-cart.anchor-target
   = partial "partials/made_in_germany"
   .title__inner
@@ -25,8 +27,9 @@ sitemap_changefreq: daily
             = partial "partials/product_attributes", locals: { product: "classic_run_n" }
           .product__details
             .product__title
-              = link_to "← Shop", "/products/", class: "link"
+              = link_to "← Outlet", "/outlet/", class: "link"
               h1 Classic Run N
+              .badge.badge--white-on-black.animation--blur B-Ware
             .product__description
               = partial "partials/video_link", locals: { product_name: "Classic Run N" }
               p Der Laufschuhklassiker in der neutralen Version. Wenn Füße jubeln könnten, dieser Schuh wäre die Gelegenheit dafür. Eine Passform, die auch anspruchsvolle Füße beglückt. Kein Druck, nur reines Wohlfühlen beim Laufen, aber auch beim Gehen. Hervorragender Komfort und achsengerechte Beinbelastung. Vorbeugen von Beschwerden könnte nicht angenehmer sein.
@@ -44,8 +47,8 @@ sitemap_changefreq: daily
                 label Damen / Herren
                 .gender-select__container
                   select.product__option.gender-select
-                    option value=233736503446 Herren
-                    option value=233736437910 Damen
+                    option value=389350686971 Herren
+                    option value=389350719739 Damen
               .input-group
                 label Farbe
                 .product-select__title-container
@@ -55,6 +58,8 @@ sitemap_changefreq: daily
                 .variant-select__container
                   select.product__option.variant-select
               .variant-price__container
+                h3
+                  del = "€ #{data.products.classic_run_n.price}"
                 h2.variant-price
                 small inkl. Mwst., versandkostenfrei innerhalb Deutschlands
               .add-to-cart-button__container
@@ -65,45 +70,4 @@ sitemap_changefreq: daily
 
 = partial "partials/video_card", locals: { youtube_id: "26ws6GFOSh8", product_name: "Classic Run N" }
 
-.panel.panel--emphasis
-  .content
-    .additional-information
-      .specifications
-        h4 Technische Daten
-        ul.spec-list
-          li.spec-list__item
-            label Mittelsohlentyp
-            span Neutral
-          li.spec-list__item
-            label Sprengung
-            span 9,5 mm (US Men 10)
-          li.spec-list__item
-            label Gewicht
-            span 343 g (US Men 10)
-          li.spec-list__item
-            label Verfügbare Größen
-            span Damen: US 6 - US 13
-            br
-            span Herren: US 8 - US 15
-      .add-to-cart-help
-        = partial "partials/add_to_cart_help"
-
-
-script type="application/ld+json"
-  | {
-  |   "@context" : "http://schema.org",
-  |   "@type" : "Product",
-  |   "name" : "Classic Run N",
-  |   "image" : "https://www.lunge.com/images/products/classic_run/STN220RBG/STN220RBG.png",
-  |   "description" : "Der Klassiker in unserem Sortiment und Geheimtipp anspruchsvoller Läufer. Der Classic Run hat sich über Jahre als Laufschuh der Extraklasse bewährt und wurde dennoch stetig verbessert.",
-  |   "brand": {
-  |     "@type": "Brand",
-  |     "name": "Lunge"
-  |   },
-  |   "offers" : {
-  |     "@type" : "Offer",
-  |     "price" : "220.00",
-  |     "priceCurrency": "EUR",
-  |     "availability": "InStock"
-  |   }
-  | }
+= partial "partials/outlet/outlet_faq"

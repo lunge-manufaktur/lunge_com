@@ -1,0 +1,77 @@
+---
+title: "Derby Walk S (Outlet)"
+description: Der Derby Walk S von Lunge ist ein komfortable, veganer Alltagsschuh, der endlich genug Platz für besonders breite Füße bietet.
+section: products
+canonical_link: "https://www.lunge.com/outlet/derby_walk_s/"
+url_de: "https://www.lunge.com/outlet/derby_walk_s/"
+url_en: "https://www.lunge.com/en/outlet/derby_walk_s/"
+sitemap_priority: 0.1
+sitemap_changefreq: monthly
+sitemap_noindex: true
+---
+.title__container#add-to-cart.anchor-target
+  = partial "partials/made_in_germany"
+  .title__inner
+    .content
+      .collection
+        .product
+          .product__figure
+            .product__image-container
+              img.product__image
+            .product__features
+              ul.product-feature
+                = partial "partials/product-features/vegan"
+                = partial "partials/product-features/non-toxic"
+                = partial "partials/product-features/made_in_germany"
+                = partial "partials/product-features/resole"
+            = partial "partials/product_attributes", locals: { product: "derby_walk_s" }
+          .product__details
+            .product__title
+              = link_to "← Outlet", "/outlet/", class: "link"
+              h1 Derby Walk S
+              .badge.badge--white-on-black.animation--blur B-Ware
+            .product__description
+              = partial "partials/video_link", locals: { product_name: "Derby Walk S" }
+              p Der Komfortschuh für den breiteren Fuß! Der breite Schaftschnitt ist ideal für den volumigen oder breiten Fuß. Egal welche Besonderheiten am Fuß zu beachten sind, der Derby deckt sie ab. 
+              ul.bullet-list
+                li Höchste Stabilität
+                li Höchster Komfort mit gutem Halt
+                li Feines Schaftmaterial für optimale Passform 
+                li Neuer Schaft für breite Füße 
+                li Sehr geeignet für Fußbesonderheiten
+                li zurückgesetzter Zehenriegel, daher auch für kräftige Ballen geeignet
+                li weiter Zehenbereich 
+                li Neuestes EVA-Mittelsohlenmaterial mit höchster Elastizität
+                li Sehr hohe Dauerelastizität und Abriebfestigkeit
+                li Sohle für alle Untergründe
+                li Fußbett FEETALITY
+
+            .product__order-form
+              h4 Jetzt bestellen
+              .input-group
+                label Damen / Herren
+                .gender-select__container
+                  select.product__option.gender-select
+                    option value=389351309563 Herren / Unisex
+              .input-group
+                label Farbe
+                .product-select__title-container
+                .product-select__container
+              .input-group
+                label Größe (Fusslänge / US / EUR)
+                .variant-select__container
+                  select.product__option.variant-select
+              .variant-price__container
+                h3
+                  del = "€ #{data.products.classic_run_n.price}"
+                h2.variant-price
+                small inkl. Mwst., versandkostenfrei innerhalb Deutschlands
+              .add-to-cart-button__container
+                button.buy-button.js-prevent-cart-listener.add-button In den Warenkorb
+              .product__sizing
+                = partial "partials/size_guide_note"
+    #video.anchor-target
+
+= partial "partials/video_card", locals: { youtube_id: "N3rYl4dBR9U", product_name: "Derby Walk S" }
+
+= partial "partials/outlet/outlet_faq"

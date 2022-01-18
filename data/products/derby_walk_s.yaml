@@ -7,8 +7,34 @@ default_image: "/images/products/derby_walk/GWS220NNG/GWS220NNG.jpg"
 default_image_png: "/images/products/derby_walk/GWS220NNG/GWS220NNG.png"
 default_image_webp: "/images/products/derby_walk/GWS220NNG/GWS220NNG.webp"
 price: "230,00"
-discount_price: "120,00"
+discount_price: "200,00"
 colors:
+  -
+    sku: "GWS220NNG"
+    name: "Navy/Navy/Light Grey"
+    first_color: "#31335A"
+    second_color: "#DFDFDF"
+    default_image_png: "/images/products/derby_walk/GWS220NNG/GWS220NNG.png"
+    default_image_webp: "/images/products/derby_walk/GWS220NNG/GWS220NNG.webp"
+    price: 230
+  -
+    sku: "GWS220BBG"
+    name: "Steel Blue/Light Grey"
+    first_color: "#435982"
+    second_color: "#EB8A51"
+    default_image_png: "/images/products/derby_walk/GWS220BBG/GWS220BBG.png"
+    default_image_webp: "/images/products/derby_walk/GWS220BBG/GWS220BBG.webp"
+    price: 230
+  -
+    sku: "GWS220LLL"
+    name: "Lakritze"
+    first_color: "#000"
+    second_color: "#000"
+    default_image_png: "/images/products/derby_walk/GWS220LLL/GWS220LLL.png"
+    default_image_webp: "/images/products/derby_walk/GWS220LLL/GWS220LLL.webp"
+    price: 230
+
+outlet_colors:
   -
     sku: "GWS220NNG"
     name: "Navy/Navy/Light Grey"

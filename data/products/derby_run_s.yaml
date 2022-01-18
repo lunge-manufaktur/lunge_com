@@ -6,8 +6,8 @@ short_description_en: "Running shoes for extra-wide feet."
 default_image: "/images/products/derby_run/SWS220BNG/SWS220BNG.jpg"
 default_image_png: "/images/products/derby_run/SWS220BNG/SWS220BNG.png"
 default_image_webp: "/images/products/derby_run/SWS220BNG/SWS220BNG.webp"
-price: "230,00"
-discount_price: "120,00"
+price: "220,00"
+discount_price: "190,00"
 colors:
   -
     sku: "SWS220BNG"
@@ -16,7 +16,7 @@ colors:
     second_color: "#656BA0"
     default_image_png: "/images/products/derby_run/SWS220BNG/SWS220BNG.png"
     default_image_webp: "/images/products/derby_run/SWS220BNG/SWS220BNG.webp"
-    price: 230
+    price: 220
   -
     sku: "SWS220CYG"
     name: "Curry/Light Grey"
@@ -24,7 +24,7 @@ colors:
     second_color: "#DFDFDF"
     default_image_png: "/images/products/derby_run/SWS220CYG/SWS220CYG.png"
     default_image_webp: "/images/products/derby_run/SWS220CYG/SWS220CYG.webp"
-    price: 230
+    price: 220
   -
     sku: "SWS220LLL"
     name: "Lakritze"
@@ -32,7 +32,33 @@ colors:
     second_color: "#000"
     default_image_png: "/images/products/derby_run/SWS220LLL/SWS220LLL.png"
     default_image_webp: "/images/products/derby_run/SWS220LLL/SWS220LLL.webp"
-    price: 230
+    price: 220
+
+outlet_colors:
+  -
+    sku: "SWS220BNG"
+    name: "Steel Blue/Navy/Light Grey"
+    first_color: "#3A3551"
+    second_color: "#656BA0"
+    default_image_png: "/images/products/derby_run/SWS220BNG/SWS220BNG.png"
+    default_image_webp: "/images/products/derby_run/SWS220BNG/SWS220BNG.webp"
+    price: 220
+  -
+    sku: "SWS220CYG"
+    name: "Curry/Light Grey"
+    first_color: "#FDC340"
+    second_color: "#DFDFDF"
+    default_image_png: "/images/products/derby_run/SWS220CYG/SWS220CYG.png"
+    default_image_webp: "/images/products/derby_run/SWS220CYG/SWS220CYG.webp"
+    price: 220
+  -
+    sku: "SWS220LLL"
+    name: "Lakritze"
+    first_color: "#000"
+    second_color: "#000"
+    default_image_png: "/images/products/derby_run/SWS220LLL/SWS220LLL.png"
+    default_image_webp: "/images/products/derby_run/SWS220LLL/SWS220LLL.webp"
+    price: 220
 
 attributes:
   -

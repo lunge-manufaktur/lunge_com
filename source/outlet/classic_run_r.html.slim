@@ -1,13 +1,15 @@
 ---
-title: Classic Run R - Laufschuhe für höchste Ansprüche
+title: Classic Run R (Outlet)
 description: Der vegane Laufschuh für anspruchsvolle Läufer. Der Classic Run R ist ein bequemer Laufschuh, der durch einzigartiges Tragegefühl und Dämpfungsverhalten glänzt.
 section: products
-canonical_link: "https://www.lunge.com/products/classic_run_r/"
-url_de: "https://www.lunge.com/products/classic_run_r/"
-url_en: "https://www.lunge.com/en/products/classic_run_r/"
-sitemap_priority: 0.9
-sitemap_changefreq: daily
+canonical_link: "https://www.lunge.com/outlet/classic_run_r/"
+url_de: "https://www.lunge.com/outlet/classic_run_r/"
+url_en: "https://www.lunge.com/en/outlet/classic_run_r/"
+sitemap_priority: 0.1
+sitemap_changefreq: monthly
+sitemap_noindex: true
 ---
+= partial "/partials/outlet/outlet_notice"
 .title__container#add-to-cart.anchor-target
   = partial "partials/made_in_germany"
   .title__inner
@@ -25,8 +27,9 @@ sitemap_changefreq: daily
             = partial "partials/product_attributes", locals: { product: "classic_run_r" }
           .product__details
             .product__title
-              = link_to "← Shop", "/products/", class: "link"
+              = link_to "← Outlet", "/outlet/", class: "link"
               h1 Classic Run R
+              .badge.badge--white-on-black.animation--blur B-Ware
             .product__description
               = partial "partials/video_link", locals: { product_name: "Classic Run R" }
               p 
@@ -52,8 +55,8 @@ sitemap_changefreq: daily
                 label Damen / Herren
                 .gender-select__container
                   select.product__option.gender-select
-                    option value=234046587030 Herren
-                    option value=234046423190 Damen
+                    option value=389350752507 Herren
+                    option value=389350785275 Damen
               .input-group
                 label Farbe
                 .product-select__title-container
@@ -63,6 +66,8 @@ sitemap_changefreq: daily
                 .variant-select__container
                   select.product__option.variant-select
               .variant-price__container
+                h3
+                  del = "€ #{data.products.classic_run_r.price}"
                 h2.variant-price
                 small inkl. Mwst., versandkostenfrei innerhalb Deutschlands
               .add-to-cart-button__container
@@ -73,47 +78,4 @@ sitemap_changefreq: daily
 
 = partial "partials/video_card", locals: { youtube_id: "7VqT4q0anqA", product_name: "Classic Run R" }
 
-.panel.panel--emphasis
-  .content
-    .additional-information
-      .specifications
-        h4 Technische Daten
-        ul.spec-list
-          li.spec-list__item
-            label Mittelsohlentyp
-            span Rebound
-          li.spec-list__item
-            label Sprengung
-            span 9,5 mm (US Men 10)
-          li.spec-list__item
-            label Gewicht
-            span 354 g (Classic Walk) (US Men 10)
-            br
-            span 336 g (Classic Walk Glatt) (US Men 10)
-          li.spec-list__item
-            label Verfügbare Größen
-            span Damen: US 6 - US 13 (EUR 35 - EUR 43⅔)
-            br
-            span Herren: US 8 - US 15 (EUR 39⅓ - EUR 48⅓)
-      .add-to-cart-help
-        = partial "partials/add_to_cart_help"
-
-script type="application/ld+json"
-  | {
-  |   "@context": "http://schema.org",
-  |   "@type": "Product",
-  |   "name": "Classic Run R",
-  |   "image": "https://www.lunge.com/images/products/classic_run/STR220CYW/STR220CYW.png",
-  |   "description": "Der vegane Laufschuh für anspruchsvolle Läufer. Der Classic Run R ist ein bequemer Laufschuh, der durch einzigartiges Tragegefühl und Dämpfungsverhalten glänzt.",
-  |   "brand": {
-  |     "@type": "Brand",
-  |     "name": "Lunge"
-  |   },
-  |   "offers": {
-  |     "@type": "AggregateOffer",
-  |     "lowPrice": "180.00",
-  |     "highPrice": "180.00",
-  |     "priceCurrency": "EUR",
-  |     "availability": "InStock"
-  |   }
-  | }
+= partial "partials/outlet/outlet_faq"
