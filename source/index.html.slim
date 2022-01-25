@@ -56,21 +56,30 @@ sitemap_priority: 0.9
     = link_to "Alle Schuhe zeigen ➝", "/products/", class: "button button--hero button--dark"
 
 .panel
+  .content.content--narrow
+    iframe src="https://www.youtube-nocookie.com/embed/IWenljGkCyk" frameborder="0" class="responsive--16x9" height="488" width="868" allowfullscreen="true"
+
+.panel
   .content
     .panel__inner.panel__inner--reverse
       .panel__image
-        iframe src="https://www.youtube-nocookie.com/embed/IWenljGkCyk" frameborder="0" class="responsive--16x9" height="488" width="868" allowfullscreen="true"
+        = link_to "/about/" do
+          picture
+            source srcset="/images/misc/about_us@3200px.webp 3200w, /images/misc/about_us@2400px.webp 2400w, /images/misc/about_us@1600px.webp 1600w, /images/misc/about_us@800px.webp 800w" type="image/webp"
+            source srcset="/images/misc/about_us@3200px.jpg 3200w, /images/misc/about_us@2400px.jpg 2400w, /images/misc/about_us@1600px.jpg 1600w, /images/misc/about_us@800px.jpg 800w" type="image/jpg"
+            = image_tag "/images/misc/about_us@1600px.jpg"
       aside.panel__text
         .panel__text__inner
           h2 Über uns
-          p Wer sich seit über 30 Jahren mit Laufsport beschäftigt und selbst aktiver und erfolgreicher Langstreckenläufer ist, der weiß genau, wo der Schuh drückt.
+          p Aus 40 Jahren Erfahrung in den eigenen Laufschuh-Geschäften entstand eine eigene Schuhfertigung in der Metropolregion Hamburg. Hier werden unter höchsten Ansprüchen nach deutschen Standards Schuhe für gesunde Bewegung entwickelt und gefertigt.
           = link_to "Mehr erfahren", "/about/", class: "button"
 
 .panel
   .content
     .panel__inner.panel__inner
       .panel__image
-        = image_tag "products/classic_walk/misc/material_02.jpg", alt: "Materialien nach dem Zuschnitt"
+        = link_to "/products/features/" do
+          = image_tag "products/classic_walk/misc/material_02.jpg", alt: "Materialien nach dem Zuschnitt"
       aside.panel__text
         .panel__inner__text
           h2 Besonderheiten von Lunge Schuhen
