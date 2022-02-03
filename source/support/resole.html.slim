@@ -23,19 +23,24 @@ url_de: "https://www.lunge.com/support/resole/"
     p
       label Preis
       span 80,- € inkl. kostenlosem Versand innerhalb Deutschlands
-    p
-      label Bei welchen Modellen ist die Neubesohlung durchführbar?
-      span - Classic Walk (ehemals Adagio)
-      br
-      span - Classic Run (ehemals C-Dur / a-Moll)
-      br
-      span - Classic Run Fis (ehemals C-Dur Fis / a-Moll Fis)
-      br
-      span - Integer Walk Cushion
-      br
-      span - Evo Run
-      br
-      span - Vivo
+    
+    label Bei welchen Modellen ist die Neubesohlung durchführbar?
+    ul.bullet-list.marginless--top
+      li
+        = link_to "Classic Walk S", "/products/classic_walk/", class: "link"
+        |  (ehemals Adagio)
+      li = link_to "Classic Walk N", "/products/classic_walk_n/", class: "link"
+      li
+        = link_to "Classic Run S", "/products/classic_run/", class: "link"
+        |  (ehemals C-Dur / a-Moll)
+      li = link_to "Classic Run N", "/products/classic_run_n/", class: "link"
+      li = link_to "Derby Walk S", "/products/derby_walk_s/", class: "link"
+      li = link_to "Derby Run S", "/products/derby_run_s/", class: "link"
+      li = link_to "Integer Walk Cushion", "/products/integer_walk_cushion/", class: "link"
+      li Classic Run Fis (ehemals C-Dur Fis / a-Moll Fis)
+      li Evo Run
+      li Vivo
+
     p
       label Wie lange dauert der Vorgang?
       span Sie sollten Ihre Schuhe innerhalb von 14 Tagen nach Einsendung neu besohlt zurück erhalten.
