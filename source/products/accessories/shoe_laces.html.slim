@@ -7,48 +7,45 @@ url_de: "https://www.lunge.com/products/accessories/shoe_laces/"
 sitemap_priority: 0.5
 sitemap_changefreq: daily
 ---
-.title__container#add-to-cart.anchor-target
-  .title__inner
-    .content
-      .collection
-        .product
-          .product__figure
-            .product__image-container
-              img.product__image
-          .product__details
-            = link_to "← Shop", "/products/", class: "link"
-            h1 Schnürsenkel
-            p Sorgen Sie für Abwechslung und verleihen Sie Ihren Lunge Schuhen ein neues Gesicht - mit Schnürsenkeln in zahlreichen Farben.
-            h4 Jetzt bestellen
-            .input-group.visuallyhidden
-              label Damen / Herren
-              .gender-select__container
-                select.product__option.gender-select
-                  option value=186903429 Unisex
-            .input-group.visuallyhidden
-              label Farbe
-              .product-select__container
-                select.product__option.product-select
-            .input-group
-              label Farbe und Länge
-              .variant-select__container
-                select.product__option.variant-select
-            .variant-price__container
-              h2.variant-price
-              small inkl. Mwst., versandkostenfrei innerhalb Deutschlands
-            ul.inline-list
-              li
-                .add-to-cart-button__container
-                  button.buy-button.js-prevent-cart-listener.add-button In den Warenkorb
-
-            span Hinweis: Wir empfehlen folgende Senkellängen für die jeweiligen Schuhgrößen:
-            ul
-              li
-                label Bis Größe EUR 43⅔ / US Herren 11,5 / US Damen 13:
-                span Kurze Senkel
-              li
-                label Ab Größe 44½ / US Herren 12:
-                span Lange Senkel
+.product__container#add-to-cart.anchor-target
+  .content
+    .product
+      .product__figure
+        .product__image-container
+          img.product__image width=1200 height=1200
+      .product__details
+        .product__title
+          = link_to "← Shop", "/products/", class: "link"
+          h1 Schnürsenkel
+        .product__order-form
+          .input-group.visuallyhidden
+            label Damen / Herren
+            .gender-select__container
+              select.product__option.gender-select
+                option value=186903429 Unisex
+          .input-group.visuallyhidden
+            label Farbe
+            .product-select__container
+              select.product__option.product-select
+          .input-group
+            label Farbe und Länge
+            .variant-select__container
+              select.product__option.variant-select
+          .variant-price__container
+            h2.variant-price
+            small inkl. Mwst., versandkostenfrei innerhalb Deutschlands
+          .add-to-cart-button__container
+            button.buy-button.js-prevent-cart-listener.add-button In den Warenkorb
+        .product__description
+          p Sorgen Sie für Abwechslung und verleihen Sie Ihren Lunge Schuhen ein neues Gesicht - mit Schnürsenkeln in zahlreichen Farben.
+          span Hinweis: Wir empfehlen folgende Senkellängen für die jeweiligen Schuhgrößen:
+          ul
+            li
+              label Bis Größe EUR 43⅔ / US Herren 11,5 / US Damen 13:
+              span Kurze Senkel
+            li
+              label Ab Größe 44½ / US Herren 12:
+              span Lange Senkel
 
 
 .panel

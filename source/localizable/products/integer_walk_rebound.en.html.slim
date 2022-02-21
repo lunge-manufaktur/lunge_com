@@ -8,48 +8,52 @@ url_en: "https://www.lunge.com/en/products/integer_walk_rebound/"
 sitemap_priority: 0.9
 sitemap_changefreq: daily
 ---
-.title__container#add-to-cart.anchor-target
+.product__container#add-to-cart.anchor-target
   = partial "partials/made_in_germany"
-  .title__inner
-    .content
-      .collection
-        .product
-          .product__figure
-            .product__image-container
-              img.product__image
-            .product__features
-              ul.product-feature
-                = partial "partials/product-features/vegan"
-                = partial "partials/product-features/non-toxic"
-                = partial "partials/product-features/made_in_germany"
-            = partial "partials/product_attributes", locals: { product: "integer_walk_rebound" }
-          .product__details
-            .product__title
-              h1 Integer Walk Rebound
-            .product__description
-              p = data.products.integer_walk_rebound.short_description_en
-            .product__order-form
-              h4 Order now
-              .input-group
-                label Women / Men
-                .gender-select__container
-                  select.product__option.gender-select
-                    option value=40527134756 Herren
-                    option value=40527167524 Damen
-              .input-group
-                label Color
-                .product-select__title-container
-                .product-select__container
-              .input-group
-                label Size (Foot length / US / EUR)
-                .variant-select__container
-                  select.product__option.variant-select
-              .variant-price__container
-                h2.variant-price
-              .add-to-cart-button__container
-                button.buy-button.js-prevent-cart-listener.add-button Add to cart
-              .product__sizing
-                = partial "partials/size_guide_note"
+  .content
+    .product
+      .product__figure
+        .product__image-container
+          img.product__image width=1200 height=1200
+        .product__features.product__features--tablet-landscape
+          ul.product-feature
+            = partial "partials/product-features/vegan"
+            = partial "partials/product-features/non-toxic"
+            = partial "partials/product-features/made_in_germany"
+          = partial "partials/product_attributes", locals: { product: "integer_walk_rebound" }
+      .product__details
+        .product__title
+          = link_to "← Shop", "/en/products/", class: "link"
+          h1 Integer Walk Rebound
+        .product__description
+          p = data.products.integer_walk_rebound.short_description_en
+        .product__order-form
+          .input-group
+            label Women / Men
+            .gender-select__container
+              select.product__option.gender-select
+                option value=40527134756 Herren
+                option value=40527167524 Damen
+          .input-group
+            label Color
+            .product-select__title-container
+            .product-select__container
+          .input-group
+            label Size (Foot length / US / EUR)
+            .variant-select__container
+              select.product__option.variant-select
+            .product__sizing
+              = partial "partials/size_guide_note"
+          .variant-price__container
+            h2.variant-price
+          .add-to-cart-button__container
+            button.buy-button.js-prevent-cart-listener.add-button Add to cart
+        .product__features.product__features--mobile
+          ul.product-feature
+            = partial "partials/product-features/vegan"
+            = partial "partials/product-features/non-toxic"
+            = partial "partials/product-features/made_in_germany"
+          = partial "partials/product_attributes", locals: { product: "integer_walk_rebound" }
 
 .gallery.scroll--horizontal
   - data.products.integer_walk_rebound.images.each do |image|

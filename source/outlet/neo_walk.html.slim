@@ -9,54 +9,55 @@ sitemap_changefreq: monthly
 sitemap_noindex: true
 ---
 = partial "/partials/outlet/outlet_notice"
-.title__container#add-to-cart.anchor-target
+.product__container#add-to-cart.anchor-target
   = partial "partials/made_in_germany"
-  .title__inner
-    .content
-      .collection
-        .product
-          .product__figure
-            .product__image-container
-              img.product__image
-            ul.product-feature
-              = partial "partials/product-features/vegan"
-              = partial "partials/product-features/non-toxic"
-              = partial "partials/product-features/made_in_germany"
-            = partial "partials/product_attributes", locals: { product: "neo_walk" }
-          .product__details
-            .product__title
-              = link_to "← Outlet", "/outlet/", class: "link"
-              h1 Neo Walk
-              .badge.badge--white-on-black.animation--blur.bold B-Ware
-            .product__description
-              p Ein leichter, neutraler Bequem- und Alltagsschuh mit rückfedernder, flexibler Mittelsohle und hervorragendem Tragegefühl.
-            .product__order-form
-              h4 Jetzt bestellen
-              .input-group
-                label Damen / Herren
-                .gender-select__container
-                  select.product__option.gender-select
-                    option value=217875054742 Herren
-                    option value=217874956438 Damen
-              .input-group
-                label Farbe
-                .product-select__title-container
-                .product-select__container
-              .input-group
-                label Größe (Fusslänge / US / EUR)
-                .variant-select__container
-                  select.product__option.variant-select
-              .variant-price__container
-                h3
-                  del = "€ #{data.products.neo_walk.price}"
-                h2.variant-price
-                small inkl. Mwst., versandkostenfrei innerhalb Deutschlands
-              .add-to-cart-button__container
-                button.buy-button.js-prevent-cart-listener.add-button In den Warenkorb
-              .product__sizing
-                = partial "partials/size_guide_note"
-      #video.anchor-target
-
-= partial "partials/outlet/product_page_redirect", locals: { product_name: "Neo Walk", product_slug: "neo_walk" }
+  .content
+    .product
+      .product__figure
+        .product__image-container
+          img.product__image width=1200 height=1200
+        .product__features--tablet-landscape
+          ul.product-feature
+            = partial "partials/product-features/vegan"
+            = partial "partials/product-features/non-toxic"
+            = partial "partials/product-features/made_in_germany"
+          = partial "partials/product_attributes", locals: { product: "neo_walk" }
+      .product__details
+        .product__title
+          = link_to "← Outlet", "/outlet/", class: "link"
+          h1 Neo Walk
+          .badge.badge--white-on-black.animation--blur B-Ware
+        .product__description
+          p Ein leichter, neutraler Bequem- und Alltagsschuh mit rückfedernder, flexibler Mittelsohle und hervorragendem Tragegefühl.
+        .product__order-form
+          .input-group
+            label Damen / Herren
+            .gender-select__container
+              select.product__option.gender-select
+                option value=217875054742 Herren
+                option value=217874956438 Damen
+          .input-group
+            label Farbe
+            .product-select__title-container
+            .product-select__container
+          .input-group
+            label Größe (Fusslänge / US / EUR)
+            .variant-select__container
+              select.product__option.variant-select
+            .product__sizing
+              = partial "partials/size_guide_note"
+          .variant-price__container
+            h3
+              del = "€ #{data.products.neo_walk.price}"
+            h2.variant-price
+            small inkl. Mwst., versandkostenfrei innerhalb Deutschlands
+          .add-to-cart-button__container
+            button.buy-button.js-prevent-cart-listener.add-button In den Warenkorb
+        .product__features--mobile
+          ul.product-feature
+            = partial "partials/product-features/vegan"
+            = partial "partials/product-features/non-toxic"
+            = partial "partials/product-features/made_in_germany"
+          = partial "partials/product_attributes", locals: { product: "neo_walk" }
 
 = partial "partials/outlet/outlet_faq"

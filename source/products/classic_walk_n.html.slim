@@ -7,64 +7,73 @@ url_de: "https://www.lunge.com/products/classic_walk_n/"
 url_en: "https://www.lunge.com/en/products/classic_walk_n/"
 sitemap_priority: 0.9
 sitemap_changefreq: daily
+product: data.products.classic_walk_n
 ---
-.title__container#add-to-cart.anchor-target
+.product__container#add-to-cart.anchor-target
   = partial "partials/made_in_germany"
-  .title__inner
-    .content
-      .collection
-        .product
-          .product__figure
-            .product__image-container
-              img.product__image
-            .product__features
-              ul.product-feature
-                = partial "partials/product-features/vegan"
-                = partial "partials/product-features/non-toxic"
-                = partial "partials/product-features/made_in_germany"
-                = partial "partials/product-features/resole"
-            = partial "partials/product_attributes", locals: { product: "classic_walk_n" }
-          .product__details
-            .product__title
-              = link_to "← Shop", "/products/", class: "link"
-              h1 Classic Walk N
-            .product__description
-              = partial "partials/video_link", locals: { product_name: "Classic Walk N" }
-              p 
-                | Die lang erwartete Neutralversion unserer Classic Modelle ist endlich verfügbar. Schon aufgrund der hohen Grundstabilität der Mittelsohle werden viele Füße eine zusätzliche Stützwirkung nicht vermissen. Ganz im Gegenteil: Dieser Schuh schöpft aus dem vollen Potenzial des hervorragenden Mittelsohlenmaterials. Komfortable Rückfederung, eine punktelastische Passform beim Obermaterial, die selbst höchsten orthopädischen Ansprüchen genügt und eine Sohle für alle Untergründe runden das Paket ab.
-              ul.bullet-list
-                li Hohe Grundstabilität / Neutralschuh
-                li Höchster Komfort
-                li Feines Schaftmaterial für optimale Passform und Atmungsaktivität
-                li Neuestes EVA-Mittelsohlenmaterial mit höchster Elastizität
-                li Sehr hohe Dauerelastizität und Abriebfestigkeit
-                li Sohle für alle Untergründe
-                li Fußbett FEETALITY 
-
-            .product__order-form
-              h4 Jetzt bestellen
-              .input-group
-                label Damen / Herren
-                .gender-select__container
-                  select.product__option.gender-select
-                    option value=233715826838 Herren
-                    option value=233713991830 Damen
-              .input-group
-                label Farbe
-                .product-select__title-container
-                .product-select__container
-              .input-group
-                label Größe (Fusslänge / US / EUR)
-                .variant-select__container
-                  select.product__option.variant-select
-              .variant-price__container
-                h2.variant-price
-                small inkl. Mwst., versandkostenfrei innerhalb Deutschlands
-              .add-to-cart-button__container
-                button.buy-button.js-prevent-cart-listener.add-button In den Warenkorb
-              .product__sizing
-                = partial "partials/size_guide_note"
-    #video.anchor-target
+  .content
+    .product
+      .product__figure
+        .product__media-container
+          .product__media-item
+            img.product__image width=1200 height=1200
+          .product__media-item
+            video width="100%" autoplay="true" muted="true" loop="true" playsinline="true" preload="auto" class="darken"
+              source src=data.products.classic_walk_n.walk_in_video_webm
+              source src=data.products.classic_walk_n.walk_in_video_mp4
+        .product__features--tablet-landscape
+          ul.product-feature
+            = partial "partials/product-features/vegan"
+            = partial "partials/product-features/non-toxic"
+            = partial "partials/product-features/made_in_germany"
+            = partial "partials/product-features/resole"
+          = partial "partials/product_attributes", locals: { product: "classic_walk_n" }
+      .product__details
+        .product__title
+          = link_to "← Shop", "/products/", class: "link"
+          h1 Classic Walk N
+        .product__order-form
+          .input-group
+            label Damen / Herren
+            .gender-select__container
+              select.product__option.gender-select
+                option value=233715826838 Herren
+                option value=233713991830 Damen
+          .input-group
+            label Farbe
+            .product-select__title-container
+            .product-select__container
+          .input-group
+            label Größe (Fusslänge / US / EUR)
+            .variant-select__container
+              select.product__option.variant-select
+            .product__sizing
+              = partial "partials/size_guide_note"
+          .variant-price__container
+            h2.variant-price
+            small inkl. Mwst., versandkostenfrei innerhalb Deutschlands
+          .add-to-cart-button__container
+            button.buy-button.js-prevent-cart-listener.add-button In den Warenkorb
+        .product__description
+          = partial "partials/video_link", locals: { product_name: "Classic Walk N" }
+          p 
+            | Die lang erwartete Neutralversion unserer Classic Modelle ist endlich verfügbar. Schon aufgrund der hohen Grundstabilität der Mittelsohle werden viele Füße eine zusätzliche Stützwirkung nicht vermissen. Ganz im Gegenteil: Dieser Schuh schöpft aus dem vollen Potenzial des hervorragenden Mittelsohlenmaterials. Komfortable Rückfederung, eine punktelastische Passform beim Obermaterial, die selbst höchsten orthopädischen Ansprüchen genügt und eine Sohle für alle Untergründe runden das Paket ab.
+          ul.bullet-list
+            li Hohe Grundstabilität / Neutralschuh
+            li Höchster Komfort
+            li Feines Schaftmaterial für optimale Passform und Atmungsaktivität
+            li Neuestes EVA-Mittelsohlenmaterial mit höchster Elastizität
+            li Sehr hohe Dauerelastizität und Abriebfestigkeit
+            li Sohle für alle Untergründe
+            li Fußbett FEETALITY 
+        .product__features--mobile
+          ul.product-feature
+            = partial "partials/product-features/vegan"
+            = partial "partials/product-features/non-toxic"
+            = partial "partials/product-features/made_in_germany"
+            = partial "partials/product-features/resole"
+          = partial "partials/product_attributes", locals: { product: "classic_walk_n" }
+  #video.anchor-target
 
 = partial "partials/video_card", locals: { youtube_id: "7oQhsqyPLWw", product_name: "Classic Walk N" }
 

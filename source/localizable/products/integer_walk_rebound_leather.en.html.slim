@@ -8,53 +8,56 @@ url_en: "https://www.lunge.com/en/products/integer_walk_rebound_leather/"
 sitemap_priority: 0.9
 sitemap_changefreq: daily
 ---
-.title__container#add-to-cart.anchor-target
+.product__container#add-to-cart.anchor-target
   = partial "partials/made_in_germany"
-  .title__inner
-    .content
-      .collection
-        .product
-          .product__figure
-            .product__image-container
-              img.product__image
-            .product__features
-              ul.product-feature
-                = partial "partials/product-features/non-toxic"
-                = partial "partials/product-features/made_in_germany"
-            = partial "partials/product_attributes", locals: { product: "integer_walk_rebound" }
-          .product__details
-            .product__title
-              h1 Integer Walk Rebound Leather
-            .product__description
-              p
-                = data.products.integer_walk_rebound_leder.short_description_en
-                br
-                br
-                | We have thoroughly searched for a leather material that meets our high expectations and found it in the 
-                = link_to "Terracare Series by Heinen", "http://www.terra-care.de/en/", class: "link", target: "_blank"
-                |  - an exceptionally durable and comfortable leather of german origin, free of harmful substances and processed in an environmentally friendly way.
-            .product__order-form
-              h4 Jetzt bestellen
-              .input-group
-                label Men / Women
-                .gender-select__container
-                  select.product__option.gender-select
-                    option value=46293090340 Men
-                    option value=46293155876 Women
-              .input-group
-                label Color
-                .product-select__title-container
-                .product-select__container
-              .input-group
-                label Size (Feet length / US / EUR)
-                .variant-select__container
-                  select.product__option.variant-select
-              .variant-price__container
-                h2.variant-price
-              .add-to-cart-button__container
-                button.buy-button.js-prevent-cart-listener.add-button In den Warenkorb
-              .product__sizing
-                = partial "partials/size_guide_note"
+  .content
+    .product
+      .product__figure
+        .product__image-container
+          img.product__image width=1200 height=1200
+        .product__features
+          ul.product-feature.product__features--tablet-landscape
+            = partial "partials/product-features/non-toxic"
+            = partial "partials/product-features/made_in_germany"
+          = partial "partials/product_attributes", locals: { product: "integer_walk_rebound" }
+      .product__details
+        .product__title
+          = link_to "← Shop", "/en/products/", class: "link"
+          h1 Integer Walk Rebound Leather
+        .product__order-form
+          .input-group
+            label Men / Women
+            .gender-select__container
+              select.product__option.gender-select
+                option value=46293090340 Men
+                option value=46293155876 Women
+          .input-group
+            label Color
+            .product-select__title-container
+            .product-select__container
+          .input-group
+            label Size (Feet length / US / EUR)
+            .variant-select__container
+              select.product__option.variant-select
+            .product__sizing
+              = partial "partials/size_guide_note"
+          .variant-price__container
+            h2.variant-price
+          .add-to-cart-button__container
+            button.buy-button.js-prevent-cart-listener.add-button In den Warenkorb
+        .product__features
+          ul.product-feature.product__features--mobile
+            = partial "partials/product-features/non-toxic"
+            = partial "partials/product-features/made_in_germany"
+          = partial "partials/product_attributes", locals: { product: "integer_walk_rebound" }
+        .product__description
+          p
+            = data.products.integer_walk_rebound_leder.short_description_en
+            br
+            br
+            | We have thoroughly searched for a leather material that meets our high expectations and found it in the 
+            = link_to "Terracare Series by Heinen", "https://www.terracare-leather.de/en/", class: "link", target: "_blank"
+            |  - an exceptionally durable and comfortable leather of german origin, free of harmful substances and processed in an environmentally friendly way.
 
 = partial "products/gallery", locals: { product: data.products.integer_walk_rebound_leder }
 

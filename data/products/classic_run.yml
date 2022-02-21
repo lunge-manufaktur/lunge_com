@@ -6,6 +6,8 @@ short_description: "Der Klassiker unter den Laufschuhen - Seit mehr als 10 Jahre
 short_description_en: "The proven choice for runners - constantly improved and developed for years the Classic Run is a running shoe of highest quality."
 default_image_png: "/images/products/classic_run/STS220CYG/STS220CYG.png"
 default_image_webp: "/images/products/classic_run/STS220CYG/STS220CYG.webp"
+walk_in_video_webm: "https://cdn.lunge.de/files/videos/products/classic_run_s/STS220RBG/STS220RBG__walk_in.webm"
+walk_in_video_mp4: "https://cdn.lunge.de/files/videos/products/classic_run_s/STS220RBG/STS220RBG__walk_in.mp4"
 price: "220,00"
 discount_price: "50,00"
 colors:

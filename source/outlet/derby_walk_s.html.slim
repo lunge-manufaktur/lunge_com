@@ -9,68 +9,78 @@ sitemap_priority: 0.1
 sitemap_changefreq: monthly
 sitemap_noindex: true
 ---
-.title__container#add-to-cart.anchor-target
+= partial "/partials/outlet/outlet_notice"
+.product__container#add-to-cart.anchor-target
   = partial "partials/made_in_germany"
-  .title__inner
-    .content
-      .collection
-        .product
-          .product__figure
-            .product__image-container
-              img.product__image
-            .product__features
-              ul.product-feature
-                = partial "partials/product-features/vegan"
-                = partial "partials/product-features/non-toxic"
-                = partial "partials/product-features/made_in_germany"
-                = partial "partials/product-features/resole"
-            = partial "partials/product_attributes", locals: { product: "derby_walk_s" }
-          .product__details
-            .product__title
-              = link_to "← Outlet", "/outlet/", class: "link"
-              h1 Derby Walk S
-              .badge.badge--white-on-black.animation--blur B-Ware
-            .product__description
-              = partial "partials/video_link", locals: { product_name: "Derby Walk S" }
-              p Der Komfortschuh für den breiteren Fuß! Der breite Schaftschnitt ist ideal für den volumigen oder breiten Fuß. Egal welche Besonderheiten am Fuß zu beachten sind, der Derby deckt sie ab. 
-              ul.bullet-list
-                li Höchste Stabilität
-                li Höchster Komfort mit gutem Halt
-                li Feines Schaftmaterial für optimale Passform 
-                li Neuer Schaft für breite Füße 
-                li Sehr geeignet für Fußbesonderheiten
-                li zurückgesetzter Zehenriegel, daher auch für kräftige Ballen geeignet
-                li weiter Zehenbereich 
-                li Neuestes EVA-Mittelsohlenmaterial mit höchster Elastizität
-                li Sehr hohe Dauerelastizität und Abriebfestigkeit
-                li Sohle für alle Untergründe
-                li Fußbett FEETALITY
+  .content
+    .product
+      .product__figure
+        .product__media-container
+          .product__media-item
+            img.product__image width=1200 height=1200
+          .product__media-item
+            video.darken width="100%" autoplay="true" muted="true" loop="true" playsinline="true" preload="auto" 
+              source src=data.products.derby_walk_s.walk_in_video_webm
+              source src=data.products.derby_walk_s.walk_in_video_mp4
+        .product__features--tablet-landscape
+          ul.product-feature
+            = partial "partials/product-features/vegan"
+            = partial "partials/product-features/non-toxic"
+            = partial "partials/product-features/made_in_germany"
+            = partial "partials/product-features/resole"
+          = partial "partials/product_attributes", locals: { product: "derby_walk_s" }
+      .product__details
+        .product__title
+          = link_to "← Outlet", "/outlet/", class: "link"
+          h1 Derby Walk S
+          .badge.badge--white-on-black.badge--margined.animation--blur B-Ware
+        .product__order-form
+          .input-group
+            label Damen / Herren
+            .gender-select__container
+              select.product__option.gender-select
+                option value=389351309563 Herren / Unisex
+          .input-group
+            label Farbe
+            .product-select__title-container
+            .product-select__container
+          .input-group
+            label Größe (Fusslänge / US / EUR)
+            .variant-select__container
+              select.product__option.variant-select
+            .product__sizing
+              = partial "partials/size_guide_note"
+          .variant-price__container
+            h3
+              del = "€ #{data.products.classic_run_n.price}"
+            h2.variant-price
+            small inkl. Mwst., versandkostenfrei innerhalb Deutschlands
+          .add-to-cart-button__container
+            button.buy-button.js-prevent-cart-listener.add-button In den Warenkorb
+        .product__description
+          = partial "partials/video_link", locals: { product_name: "Derby Walk S" }
+          p Der Komfortschuh für den breiteren Fuß! Der breite Schaftschnitt ist ideal für den volumigen oder breiten Fuß. Egal welche Besonderheiten am Fuß zu beachten sind, der Derby deckt sie ab. 
+          ul.bullet-list
+            li Höchste Stabilität
+            li Höchster Komfort mit gutem Halt
+            li Feines Schaftmaterial für optimale Passform 
+            li Neuer Schaft für breite Füße 
+            li Sehr geeignet für Fußbesonderheiten
+            li zurückgesetzter Zehenriegel, daher auch für kräftige Ballen geeignet
+            li weiter Zehenbereich 
+            li Neuestes EVA-Mittelsohlenmaterial mit höchster Elastizität
+            li Sehr hohe Dauerelastizität und Abriebfestigkeit
+            li Sohle für alle Untergründe
+            li Fußbett FEETALITY
+        .product__features--mobile
+          ul.product-feature
+            = partial "partials/product-features/vegan"
+            = partial "partials/product-features/non-toxic"
+            = partial "partials/product-features/made_in_germany"
+            = partial "partials/product-features/resole"
+          = partial "partials/product_attributes", locals: { product: "derby_walk_s" }
 
-            .product__order-form
-              h4 Jetzt bestellen
-              .input-group
-                label Damen / Herren
-                .gender-select__container
-                  select.product__option.gender-select
-                    option value=389351309563 Herren / Unisex
-              .input-group
-                label Farbe
-                .product-select__title-container
-                .product-select__container
-              .input-group
-                label Größe (Fusslänge / US / EUR)
-                .variant-select__container
-                  select.product__option.variant-select
-              .variant-price__container
-                h3
-                  del = "€ #{data.products.classic_run_n.price}"
-                h2.variant-price
-                small inkl. Mwst., versandkostenfrei innerhalb Deutschlands
-              .add-to-cart-button__container
-                button.buy-button.js-prevent-cart-listener.add-button In den Warenkorb
-              .product__sizing
-                = partial "partials/size_guide_note"
-    #video.anchor-target
+  #video.anchor-target
 
 = partial "partials/video_card", locals: { youtube_id: "N3rYl4dBR9U", product_name: "Derby Walk S" }
 

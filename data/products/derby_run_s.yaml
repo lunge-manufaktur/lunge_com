@@ -6,6 +6,8 @@ short_description_en: "Running shoes for extra-wide feet."
 default_image: "/images/products/derby_run/SWS220BNG/SWS220BNG.jpg"
 default_image_png: "/images/products/derby_run/SWS220BNG/SWS220BNG.png"
 default_image_webp: "/images/products/derby_run/SWS220BNG/SWS220BNG.webp"
+walk_in_video_webm: "https://cdn.lunge.de/files/videos/products/derby_run_s/SWS220BNG/SWS220BNG__walk_in.webm"
+walk_in_video_mp4: "https://cdn.lunge.de/files/videos/products/derby_run_s/SWS220BNG/SWS220BNG__walk_in.mp4"
 price: "220,00"
 discount_price: "190,00"
 colors:

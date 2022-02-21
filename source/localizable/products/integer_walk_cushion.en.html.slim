@@ -8,49 +8,54 @@ url_de: "https://www.lunge.com/products/integer_walk_cushion/"
 sitemap_priority: 0.9
 sitemap_changefreq: daily
 ---
-.title__container#add-to-cart.anchor-target
+.product__container#add-to-cart.anchor-target
   = partial "partials/made_in_germany"
-  .title__inner
-    .content
-      .collection
-        .product
-          .product__figure
-            .product__image-container
-              img.product__image
-            .product__features
-              ul.product-feature
-                = partial "partials/product-features/vegan"
-                = partial "partials/product-features/non-toxic"
-                = partial "partials/product-features/made_in_germany"
-                = partial "partials/product-features/resole"
-            = partial "partials/product_attributes", locals: { product: "integer_walk_cushion" }
-          .product__details
-            .product__title
-              h1 Integer Walk Cushion
-            .product__description
-              p Versatile and comfortable walking shoes that turn any extra mile into a breeze.
-            .product__order-form
-              h4 Select your color and size
-              .input-group
-                label Men / Women
-                .gender-select__container
-                  select.product__option.gender-select
-                    option value=17836671012 Men
-                    option value=17844731940 Women
-              .input-group
-                label Color
-                .product-select__title-container
-                .product-select__container
-              .input-group
-                label Size (Foot length / US / EUR)
-                .variant-select__container
-                  select.product__option.variant-select
-              .variant-price__container
-                h2.variant-price
-              .add-to-cart-button__container
-                button.buy-button.js-prevent-cart-listener.add-button Add to cart
-              .product__sizing
-                = partial "partials/size_guide_note"
+  .content
+    .product
+      .product__figure
+        .product__image-container
+          img.product__image width=1200 height=1200
+        .product__features.product__features--tablet-landscape
+          ul.product-feature
+            = partial "partials/product-features/vegan"
+            = partial "partials/product-features/non-toxic"
+            = partial "partials/product-features/made_in_germany"
+            = partial "partials/product-features/resole"
+          = partial "partials/product_attributes", locals: { product: "integer_walk_cushion" }
+      .product__details
+        .product__title
+          = link_to "← Shop", "/en/products/", class: "link"
+          h1 Integer Walk Cushion
+        .product__description
+          p Versatile and comfortable walking shoes that turn any extra mile into a breeze.
+        .product__order-form
+          .input-group
+            label Men / Women
+            .gender-select__container
+              select.product__option.gender-select
+                option value=17836671012 Men
+                option value=17844731940 Women
+          .input-group
+            label Color
+            .product-select__title-container
+            .product-select__container
+          .input-group
+            label Size (Foot length / US / EUR)
+            .variant-select__container
+              select.product__option.variant-select
+            .product__sizing
+              = partial "partials/size_guide_note"
+          .variant-price__container
+            h2.variant-price
+          .add-to-cart-button__container
+            button.buy-button.js-prevent-cart-listener.add-button Add to cart
+        .product__features.product__features--mobile
+          ul.product-feature
+            = partial "partials/product-features/vegan"
+            = partial "partials/product-features/non-toxic"
+            = partial "partials/product-features/made_in_germany"
+            = partial "partials/product-features/resole"
+          = partial "partials/product_attributes", locals: { product: "integer_walk_cushion" }
 
 .panel
   .content

@@ -9,56 +9,60 @@ sitemap_priority: 0.8
 sitemap_changefreq: daily
 ---
 
-.title__container#add-to-cart.anchor-target
+.product__container#add-to-cart.anchor-target
   = partial "partials/made_in_germany"
-  .title__inner
-    .content
-      .collection
-        .product
-          .product__figure
-            .product__image-container
-              img.product__image
-            .product__features
-              ul.product-feature
-                = partial "partials/product-features/vegan"
-                = partial "partials/product-features/non-toxic"
-                = partial "partials/product-features/made_in_germany"
-                = partial "partials/product-features/resole"
-            = partial "partials/product_attributes", locals: { product: "classic_run_fis" }
-          .product__details
-            .product__title
-              = link_to "← Shop", "/products/", class: "link"
-              h1 = data.products.classic_run_fis.name
-            .product__description
-              p = data.products.classic_run_fis.short_description
-            .product__order-form
-              h4 Jetzt bestellen
-              .input-group
-                label Damen / Herren
-                .gender-select__container
-                  select.product__option.gender-select
-                    option value=184955653 Herren
-                    option value=184378629 Damen
-              .input-group
-                label Farbe
-                .product-select__title-container
-                .product-select__container
-              .input-group
-                label Größe (Fusslänge / US / EUR)
-                .variant-select__container
-                  select.product__option.variant-select
-              .variant-price__container
-                h2.variant-price
-                small inkl. Mwst., versandkostenfrei innerhalb Deutschlands
-              .add-to-cart-button__container
-                button.buy-button.js-prevent-cart-listener.add-button In den Warenkorb
-              .product__availability-notice.product__availability-notice--discontinued
-                span
-                  | Als Alternative empfehlen wir den 
-                  = link_to "Classic Run", "/products/classic_run", class: "link"
-                  | , welcher in neuester Fassung mit seiner abriebfesteren Außensohle über sämtliche Qualitäten des bisherigen Classic Run Fis verfügt.
-              .product__sizing
-                = partial "partials/size_guide_note"
+  .content
+    .product
+      .product__figure
+        .product__image-container
+          img.product__image
+        .product__features--tablet-landscape
+          ul.product-feature
+            = partial "partials/product-features/vegan"
+            = partial "partials/product-features/non-toxic"
+            = partial "partials/product-features/made_in_germany"
+            = partial "partials/product-features/resole"
+          = partial "partials/product_attributes", locals: { product: "classic_run_fis" }
+      .product__details
+        .product__title
+          = link_to "← Shop", "/products/", class: "link"
+          h1 = data.products.classic_run_fis.name
+        .product__order-form
+          .input-group
+            label Damen / Herren
+            .gender-select__container
+              select.product__option.gender-select
+                option value=184955653 Herren
+                option value=184378629 Damen
+          .input-group
+            label Farbe
+            .product-select__title-container
+            .product-select__container
+          .input-group
+            label Größe (Fusslänge / US / EUR)
+            .variant-select__container
+              select.product__option.variant-select
+            .product__sizing
+              = partial "partials/size_guide_note"
+          .variant-price__container
+            h2.variant-price
+            small inkl. Mwst., versandkostenfrei innerhalb Deutschlands
+          .add-to-cart-button__container
+            button.buy-button.js-prevent-cart-listener.add-button In den Warenkorb
+          .product__availability-notice.product__availability-notice--discontinued
+            span
+              | Als Alternative empfehlen wir den 
+              = link_to "Classic Run", "/products/classic_run", class: "link"
+              | , welcher in neuester Fassung mit seiner abriebfesteren Außensohle über sämtliche Qualitäten des bisherigen Classic Run Fis verfügt.
+        .product__description
+          p = data.products.classic_run_fis.short_description
+        .product__features--mobile
+          ul.product-feature
+            = partial "partials/product-features/vegan"
+            = partial "partials/product-features/non-toxic"
+            = partial "partials/product-features/made_in_germany"
+            = partial "partials/product-features/resole"
+          = partial "partials/product_attributes", locals: { product: "classic_run_fis" }
 
 .panel.panel--odd.panel--reverse
   .panel__inner.content

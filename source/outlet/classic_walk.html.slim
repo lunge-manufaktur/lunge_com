@@ -9,54 +9,65 @@ sitemap_changefreq: monthly
 sitemap_noindex: true
 ---
 = partial "/partials/outlet/outlet_notice"
-.title__container#add-to-cart.anchor-target
+.product__container#add-to-cart.anchor-target
   = partial "partials/made_in_germany"
-  .title__inner
-    .content
-      .collection
-        .product
-          .product__figure
-            .product__image-container
-              img.product__image
-            ul.product-feature
-              = partial "partials/product-features/vegan"
-              = partial "partials/product-features/non-toxic"
-              = partial "partials/product-features/made_in_germany"
-              = partial "partials/product-features/resole"
-            = partial "partials/product_attributes", locals: { product: "classic_walk" }
-          .product__details
-            .product__title
-              = link_to "← Outlet", "/outlet/", class: "link"
-              h1 Classic Walk S
-              .badge.badge--white-on-black.animation--blur.bold B-Ware
-            .product__description
-              p Der Classic Walk S ist ein einzigartiger, veganer Bequemschuh für alle Lebenslagen – ganz gleich ob Alltag, Beruf oder Freizeit. Ein Schuh, der zudem eine gesunde Fußstellung fördert und ein einzigartigen Tragegefühl bietet. Ob Knieschmerzen, Hallux Valgus oder gänzlich beschwerdefrei - der vielseitige Classic Walk S glänzt auch in schwierigen Situationen durch unerreichten Komfort.
-            .product__order-form
-              h4 Jetzt bestellen
-              .input-group
-                label Damen / Herren
-                .gender-select__container
-                  select.product__option.gender-select
-                    option value=214397157526 Herren
-                    option value=214402924694 Damen
-              .input-group
-                label Farbe
-                .product-select__title-container
-                .product-select__container
-              .input-group
-                label Größe (Fusslänge / US / EUR)
-                .variant-select__container
-                  select.product__option.variant-select
-              .variant-price__container
-                h3
-                  del = "€ #{data.products.classic_walk.price}"
-                h2.variant-price
-                small inkl. Mwst., versandkostenfrei innerhalb Deutschlands
-              .add-to-cart-button__container
-                button.buy-button.js-prevent-cart-listener.add-button In den Warenkorb
-              .product__sizing
-                = partial "partials/size_guide_note"
-      #video.anchor-target
+  .content
+    .product
+      .product__figure
+        .product__media-container
+          .product__media-item
+            img.product__image width=1200 height=1200
+          .product__media-item
+            video width="100%" autoplay="true" muted="true" loop="true" playsinline="true" preload="auto"
+              source src=data.products.classic_walk.walk_in_video_webm
+              source src=data.products.classic_walk.walk_in_video_mp4
+        .product__features--tablet-landscape
+          ul.product-feature
+            = partial "partials/product-features/vegan"
+            = partial "partials/product-features/non-toxic"
+            = partial "partials/product-features/made_in_germany"
+            = partial "partials/product-features/resole"
+          = partial "partials/product_attributes", locals: { product: "classic_walk" }
+      .product__details
+        .product__title
+          = link_to "← Outlet", "/outlet/", class: "link"
+          h1 Classic Walk S
+          .badge.badge--white-on-black.badge--margined.animation--blur.bold B-Ware
+        .product__order-form
+          .input-group
+            label Damen / Herren
+            .gender-select__container
+              select.product__option.gender-select
+                option value=214397157526 Herren
+                option value=214402924694 Damen
+          .input-group
+            label Farbe
+            .product-select__title-container
+            .product-select__container
+          .input-group
+            label Größe (Fusslänge / US / EUR)
+            .variant-select__container
+              select.product__option.variant-select
+            .product__sizing
+              = partial "partials/size_guide_note"
+          .variant-price__container
+            h3
+              del = "€ #{data.products.classic_walk.price}"
+            h2.variant-price
+            small inkl. Mwst., versandkostenfrei innerhalb Deutschlands
+          .add-to-cart-button__container
+            button.buy-button.js-prevent-cart-listener.add-button In den Warenkorb
+        .product__description
+          p Der Classic Walk S ist ein einzigartiger, veganer Bequemschuh für alle Lebenslagen – ganz gleich ob Alltag, Beruf oder Freizeit. Ein Schuh, der zudem eine gesunde Fußstellung fördert und ein einzigartigen Tragegefühl bietet. Ob Knieschmerzen, Hallux Valgus oder gänzlich beschwerdefrei - der vielseitige Classic Walk S glänzt auch in schwierigen Situationen durch unerreichten Komfort.
+        .product__features--mobile
+          ul.product-feature
+            = partial "partials/product-features/vegan"
+            = partial "partials/product-features/non-toxic"
+            = partial "partials/product-features/made_in_germany"
+            = partial "partials/product-features/resole"
+          = partial "partials/product_attributes", locals: { product: "classic_walk" }
+
+  #video.anchor-target
 
 = partial "partials/outlet/product_page_redirect", locals: { product_name: "Classic Walk S", product_slug: "classic_walk" }
 

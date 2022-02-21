@@ -8,66 +8,79 @@ url_en: "https://www.lunge.com/en/products/classic_run/"
 sitemap_priority: 0.9
 sitemap_changefreq: daily
 ---
-.title__container#add-to-cart.anchor-target
+.product__container#add-to-cart.anchor-target
   = partial "partials/made_in_germany"
-  .title__inner
-    .content
-      .collection
-        .product
-          .product__figure
-            .product__image-container
-              img.product__image
-            ul.product-feature
-              = partial "partials/product-features/vegan"
-              = partial "partials/product-features/non-toxic"
-              = partial "partials/product-features/made_in_germany"
-              = partial "partials/product-features/resole"
-            = partial "partials/product_attributes", locals: { product: "classic_run" }
-          .product__details
-            .product__title
-              = link_to "← Shop", "/products/", class: "link"
-              h1 Classic Run S
-            .product__description
-              = partial "partials/video_link", locals: { product_name: "Classic Run S" }
-              p
-                | Unser wahrscheinlich wichtigster Schuh hat eine besonders hohe Stabilität. Der 
-                span.small-caps CLASSIC RUN S
-                |  überzeugt Senk- und Knickfüße mit Stützbedürfnis durch seine dezente, aber wirksame Pronationsstütze. Biomechanische Untersuchungen haben gezeigt, dass es einen Zusammenhang zwischen übermäßigen Pronationsbewegungen der Füße und Beschwerden gibt. Unsere Antwort ist die S-Variante vom 
-                span.small-caps CLASSIC RUN
-                | . Achsengerechte Beinbelastung und kraftschlüssiger Bodenkontakt bringen Ruhe in jede Form von bewegungsbedingten Beschwerden. Kein Wunder, denn wenn alles so läuft, wie von der Natur gedacht, kann es ja nur Freude machen.
-              p Einen hochwertigen EVA-Spezialschaum, der durch Elastomer-Zusätze speziell veredelt wurde, bringen wir durch unser einzigartiges Fräsverfahren in Form. Die unvergleichliche Synthese von Technik und Funktion machen unseren Bestseller zur ersten Wahl nicht nur unter seinen langjährigen Fans. Ein Schuh zum Neuentdecken der Bewegungsfreude.
-              ul.bullet-list
-                li Höchste Stabilität
-                li Höchster Komfort
-                li Belüfteter Schaft mit optimaler Passform
-                li Neuestes EVA-Mittelsohlenmaterial mit höchster Elastizität
-                li Sehr hohe Dauerelastizität und Abriebfestigkeit
-                li Sohle für alle Untergründe
-                li Fußbett FEETALITY 
-            .product__order-form
-              h4 Jetzt bestellen
-              .input-group
-                label Damen / Herren
-                .gender-select__container
-                  select.product__option.gender-select
-                    option value=184953861 Herren
-                    option value=184953989 Damen
-              .input-group
-                label Farbe
-                .product-select__title-container
-                .product-select__container
-              .input-group
-                label Größe (Fusslänge / US / EUR)
-                .variant-select__container
-                  select.product__option.variant-select
-              .variant-price__container
-                h2.variant-price
-                small inkl. Mwst., versandkostenfrei innerhalb Deutschlands
-              .add-to-cart-button__container
-                button.buy-button.js-prevent-cart-listener.add-button In den Warenkorb
-              .product__sizing
-                = partial "partials/size_guide_note"
-      #video.anchor-target
+  .content
+    .product
+      .product__figure
+        .product__media-container
+          .product__media-item
+            img.product__image width=1200 height=1200
+          .product__media-item
+            video width="100%" autoplay="true" muted="true" loop="true" playsinline="true" preload="auto"
+              source src=data.products.classic_run.walk_in_video_webm
+              source src=data.products.classic_run.walk_in_video_mp4
+        .product__features--tablet-landscape
+          ul.product-feature
+            = partial "partials/product-features/vegan"
+            = partial "partials/product-features/non-toxic"
+            = partial "partials/product-features/made_in_germany"
+            = partial "partials/product-features/resole"
+          = partial "partials/product_attributes", locals: { product: "classic_run" }
+      .product__details
+        .product__title
+          = link_to "← Shop", "/products/", class: "link"
+          h1 Classic Run S
+        .product__order-form
+          h4 Jetzt bestellen
+          .input-group
+            label Damen / Herren
+            .gender-select__container
+              select.product__option.gender-select
+                option value=184953861 Herren
+                option value=184953989 Damen
+          .input-group
+            label Farbe
+            .product-select__title-container
+            .product-select__container
+          .input-group
+            label Größe (Fusslänge / US / EUR)
+            .variant-select__container
+              select.product__option.variant-select
+            .product__sizing
+              = partial "partials/size_guide_note"
+          .variant-price__container
+            h2.variant-price
+            small inkl. Mwst., versandkostenfrei innerhalb Deutschlands
+          .add-to-cart-button__container
+            button.buy-button.js-prevent-cart-listener.add-button In den Warenkorb
+        .product__description
+          = partial "partials/video_link", locals: { product_name: "Classic Run S" }
+          p
+            | Unser wahrscheinlich wichtigster Schuh hat eine besonders hohe Stabilität. Der 
+            span.small-caps CLASSIC RUN S
+            |  überzeugt Senk- und Knickfüße mit Stützbedürfnis durch seine dezente, aber wirksame Pronationsstütze. Biomechanische Untersuchungen haben gezeigt, dass es einen Zusammenhang zwischen übermäßigen Pronationsbewegungen der Füße und Beschwerden gibt. Unsere Antwort ist die S-Variante vom 
+            span.small-caps CLASSIC RUN
+            | . Achsengerechte Beinbelastung und kraftschlüssiger Bodenkontakt bringen Ruhe in jede Form von bewegungsbedingten Beschwerden. Kein Wunder, denn wenn alles so läuft, wie von der Natur gedacht, kann es ja nur Freude machen.
+          p Einen hochwertigen EVA-Spezialschaum, der durch Elastomer-Zusätze speziell veredelt wurde, bringen wir durch unser einzigartiges Fräsverfahren in Form. Die unvergleichliche Synthese von Technik und Funktion machen unseren Bestseller zur ersten Wahl nicht nur unter seinen langjährigen Fans. Ein Schuh zum Neuentdecken der Bewegungsfreude.
+          ul.bullet-list
+            li Höchste Stabilität
+            li Höchster Komfort
+            li Belüfteter Schaft mit optimaler Passform
+            li Neuestes EVA-Mittelsohlenmaterial mit höchster Elastizität
+            li Sehr hohe Dauerelastizität und Abriebfestigkeit
+            li Sohle für alle Untergründe
+            li Fußbett FEETALITY 
+
+        .product__features--mobile
+          ul.product-feature
+            = partial "partials/product-features/vegan"
+            = partial "partials/product-features/non-toxic"
+            = partial "partials/product-features/made_in_germany"
+            = partial "partials/product-features/resole"
+          = partial "partials/product_attributes", locals: { product: "classic_run" }
+
+  #video.anchor-target
 
 = partial "partials/video_card", locals: { youtube_id: "26ws6GFOSh8", product_name: "Classic Run S" }
 

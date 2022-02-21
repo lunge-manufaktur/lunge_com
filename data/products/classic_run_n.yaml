@@ -6,6 +6,8 @@ short_description: "Der Classic Run mit neutraler Mittelsohlenform - für Läufe
 short_description_en: "The Classic Run with neutral midsole - for runners that require less stability."
 default_image_png: "/images/products/classic_run/STN220RBG/STN220RBG.png"
 default_image_webp: "/images/products/classic_run/STN220RBG/STN220RBG.webp"
+walk_in_video_webm: "https://cdn.lunge.de/files/videos/products/classic_run_n/STN220LLL/STN220LLL__walk_in.webm"
+walk_in_video_mp4: "https://cdn.lunge.de/files/videos/products/classic_run_n/STN220LLL/STN220LLL__walk_in.mp4"
 price: "220,00"
 discount_price: "190,00"
 colors:

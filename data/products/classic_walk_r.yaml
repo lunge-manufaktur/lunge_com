@@ -5,6 +5,8 @@ short_description: "Unser beliebtester Alltags- und Bequemschuh jetzt mit neuer 
 short_description_en: "Our most popular everyday shoe now comes with a new, innovative midsole."
 default_image_png: "/images/products/classic_walk/GLR222WSW/GLR222WSW.png"
 default_image_webp: "/images/products/classic_walk/GLR222WSW/GLR222WSW.webp"
+walk_in_video_webm: "https://cdn.lunge.de/files/videos/products/classic_walk_r/GLR220GGW/GLR220GGW__walk_in.webm"
+walk_in_video_mp4: "https://cdn.lunge.de/files/videos/products/classic_walk_r/GLR220GGW/GLR220GGW__walk_in.mp4"
 price: "200,00"
 discount_price: "180,00"
 colors:

@@ -8,40 +8,38 @@ url_en: "https://www.lunge.com/en/products/feetality/"
 sitemap_priority: 0.7
 sitemap_changefreq: daily
 ---
-.title__container#add-to-cart.anchor-target
+.product__container#add-to-cart.anchor-target
   = partial "partials/made_in_germany"
-  .title__inner
-    .content
-      .collection
-        .product
-          .product__figure
-            .product__image-container
-              img.product__image
-            .product__notice Our shoes already come with Feetality insoles included.
-          .product__details
-            .product__title
-              h1 Feetality Insoles
-            .product__description
-              p = data.products.feetality.short_description_en
-            .product__order-form
-              h4 Buy now
-              .input-group.visuallyhidden
-                label Men / Women
-                .gender-select__container
-                  select.product__option.gender-select
-                    option value=185224645 Unisex
-              .input-group
-                label Color
-                .product-select__title-container
-                .product-select__container
-              .input-group
-                label Size (foot length / US / EUR)
-                .variant-select__container
-                  select.product__option.variant-select
-              .variant-price__container
-                h2.variant-price
-              .add-to-cart-button__container
-                button.buy-button.js-prevent-cart-listener.add-button Add to cart
+  .content
+    .product
+      .product__figure
+        .product__image-container
+            img.product__image width=1200 height=1200
+        .product__notice Our shoes already come with Feetality insoles included.
+      .product__details
+        .product__title
+          = link_to "← Shop", "/en/products/", class: "link"
+          h1 Feetality Insoles
+        .product__description
+          p = data.products.feetality.short_description_en
+        .product__order-form
+          .input-group.visuallyhidden
+            label Men / Women
+            .gender-select__container
+              select.product__option.gender-select
+                option value=185224645 Unisex
+          .input-group
+            label Color
+            .product-select__title-container
+            .product-select__container
+          .input-group
+            label Size (foot length / US / EUR)
+            .variant-select__container
+              select.product__option.variant-select
+          .variant-price__container
+            h2.variant-price
+          .add-to-cart-button__container
+            button.buy-button.js-prevent-cart-listener.add-button Add to cart
 
 
 .panel.panel--odd

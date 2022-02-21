@@ -8,55 +8,59 @@ url_en: "https://www.lunge.com/en/products/classic_run_fis/"
 sitemap_priority: 0.8
 sitemap_changefreq: daily
 ---
-
-.title__container#add-to-cart.anchor-target
+.product__container#add-to-cart.anchor-target
   = partial "partials/made_in_germany"
-  .title__inner
-    .content
-      .collection
-        .product
-          .product__figure
-            .product__image-container
-              img.product__image
-            .product__features
-              ul.product-feature
-                = partial "partials/product-features/vegan"
-                = partial "partials/product-features/non-toxic"
-                = partial "partials/product-features/made_in_germany"
-                = partial "partials/product-features/resole"
-            = partial "partials/product_attributes", locals: { product: "classic_run_fis" }
-          .product__details
-            .product__title
-              h1 = data.products.classic_run_fis.name
-            .product__description
-              p = data.products.classic_run_fis.short_description_en
-            .product__order-form
-              h4 Buy now
-              .input-group
-                label Men / Women
-                .gender-select__container
-                  select.product__option.gender-select
-                    option value=184955653 Men
-                    option value=184378629 Women
-              .input-group
-                label Color
-                .product-select__title-container
-                .product-select__container
-              .input-group
-                label Size (foot length / US / EUR)
-                .variant-select__container
-                  select.product__option.variant-select
-              .variant-price__container
-                h2.variant-price
-              .add-to-cart-button__container
-                button.buy-button.js-prevent-cart-listener.add-button Add to cart
-              .product__availability-notice.product__availability-notice--discontinued
-                span
-                  | We recommend the new and improved update of the 
-                  = link_to "Classic Run", "/en/products/classic_run", class: "link"
-                  |  as successor to the discontinued Classic Run Fis.
-              .product__sizing
-                = partial "partials/size_guide_note"
+  .content
+    .product
+      .product__figure
+        .product__image-container
+          img.product__image width=1200 height=1200
+        .product__features.product__features--tablet-landscape
+          ul.product-feature
+            = partial "partials/product-features/vegan"
+            = partial "partials/product-features/non-toxic"
+            = partial "partials/product-features/made_in_germany"
+            = partial "partials/product-features/resole"
+          = partial "partials/product_attributes", locals: { product: "classic_run_fis" }
+      .product__details
+        .product__title
+          = link_to "← Shop", "/en/products/", class: "link"
+          h1 = data.products.classic_run_fis.name
+        .product__description
+          p = data.products.classic_run_fis.short_description_en
+        .product__order-form
+          .input-group
+            label Men / Women
+            .gender-select__container
+              select.product__option.gender-select
+                option value=184955653 Men
+                option value=184378629 Women
+          .input-group
+            label Color
+            .product-select__title-container
+            .product-select__container
+          .input-group
+            label Size (foot length / US / EUR)
+            .variant-select__container
+              select.product__option.variant-select
+            .product__sizing
+              = partial "partials/size_guide_note"
+          .variant-price__container
+            h2.variant-price
+          .add-to-cart-button__container
+            button.buy-button.js-prevent-cart-listener.add-button Add to cart
+          .product__availability-notice.product__availability-notice--discontinued
+            span
+              | We recommend the new and improved update of the 
+              = link_to "Classic Run", "/en/products/classic_run", class: "link"
+              |  as successor to the discontinued Classic Run Fis.
+        .product__features.product__features--mobile
+          ul.product-feature
+            = partial "partials/product-features/vegan"
+            = partial "partials/product-features/non-toxic"
+            = partial "partials/product-features/made_in_germany"
+            = partial "partials/product-features/resole"
+          = partial "partials/product_attributes", locals: { product: "classic_run_fis" }
 
 .panel.panel--odd.panel--reverse
   .panel__inner.content

@@ -6,6 +6,8 @@ short_description_en: "Classic Walk S is a unique and versatile walking shoe for
 default_image: "/images/products/classic_walk/GLS220EBG/GLS220EBG.jpg"
 default_image_png: "/images/products/classic_walk/GLS220EBG/GLS220EBG.png"
 default_image_webp: "/images/products/classic_walk/GLS220EBG/GLS220EBG.webp"
+walk_in_video_webm: "https://cdn.lunge.de/files/videos/products/classic_walk_s/GLS220NNG/GLS220NNG__walk_in.webm"
+walk_in_video_mp4: "https://cdn.lunge.de/files/videos/products/classic_walk_s/GLS220NNG/GLS220NNG__walk_in.mp4"
 price: "230,00"
 discount_price: "120,00"
 colors:

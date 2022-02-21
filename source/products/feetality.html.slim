@@ -8,57 +8,52 @@ url_en: "https://www.lunge.com/en/products/feetality/"
 sitemap_priority: 0.7
 sitemap_changefreq: daily
 ---
-.title__container#add-to-cart.anchor-target
+.product__container#add-to-cart.anchor-target
   = partial "partials/made_in_germany"
-  .title__inner
-    .content
-      .collection
-        .product
-          .product__figure
-            .product__image-container
-              img.product__image
-            .product__notice Unsere Schuhe werden bereits inklusive Feetality Einlegesohle ausgeliefert.
-          .product__details
-            .product__title
-              = link_to "← Shop", "/products/", class: "link"
-              h1 Feetality Einlegesohlen
-            .product__description
-              p Über 40 Jahre Erfahrung für besondere Einlagen in unseren Schuhen. Genau das richtige Maß an Entlastung, um Füße gesund belasten zu können. Der Komfort ist unvergleichlich. Nach kurzer Eingewöhnungszeit ein schonendes Gefühl trotz Belastung durch Bewegung.
-              ul.bullet-list
-                li Zur Vorbeugung gängiger Beschwerden 
-                li Fersensporn, Haglundferse, Spreiz-Senkfuß, Archillessehnenbeschwerden
-                li Hammerzehen, Blasenbildung, Kniebeschwerden, Schienbeinkantensyndrom
-                li Verbesserung der achsengerechten Bewegung
-                li Anregung gesunden Abrollverhaltens
-                li Vorbeugung von Überbelastungen
-                li Druckreduktion
-                li Schweißaufnahmefähig und schnelltrocknend
-                li Allergiefreier künstlicher Latexschaum und Obermaterial aus recycelten PET Material und Material auf Maisbasis
-                li Keine Schadstoffe enthalten, kein UV-Schutzmittel. Bitte vor Sonne schützen
-                li Für viele Schuhe grundsätzlich geeignet, Qualität vorausgesetzt
-
-            .product__order-form
-              h4 Jetzt bestellen
-              .input-group.visuallyhidden
-                label Damen / Herren
-                .gender-select__container
-                  select.product__option.gender-select
-                    option value=185224645 Unisex
-              .input-group
-                label Farbe
-                .product-select__title-container
-                .product-select__container
-                  select.product__option.product-select
-              .input-group
-                label Größe (Fusslänge / US / EUR)
-                .variant-select__container
-                  select.product__option.variant-select
-              .variant-price__container
-                h2.variant-price
-                small inkl. Mwst., versandkostenfrei innerhalb Deutschlands
-              .add-to-cart-button__container
-                button.buy-button.js-prevent-cart-listener.add-button In den Warenkorb
-
+  .content
+    .product
+      .product__figure
+        .product__image-container
+          img.product__image width=1200 height=1200
+        .product__notice Unsere Schuhe werden bereits inklusive Feetality Einlegesohle ausgeliefert.
+      .product__details
+        .product__title
+          = link_to "← Shop", "/products/", class: "link"
+          h1 Feetality Einlegesohlen
+        .product__order-form
+          .input-group.visuallyhidden
+            label Damen / Herren
+            .gender-select__container
+              select.product__option.gender-select
+                option value=185224645 Unisex
+          .input-group
+            label Farbe
+            .product-select__title-container
+            .product-select__container
+              select.product__option.product-select
+          .input-group
+            label Größe (Fusslänge / US / EUR)
+            .variant-select__container
+              select.product__option.variant-select
+          .variant-price__container
+            h2.variant-price
+            small inkl. Mwst., versandkostenfrei innerhalb Deutschlands
+          .add-to-cart-button__container
+            button.buy-button.js-prevent-cart-listener.add-button In den Warenkorb
+        .product__description
+          p Über 40 Jahre Erfahrung für besondere Einlagen in unseren Schuhen. Genau das richtige Maß an Entlastung, um Füße gesund belasten zu können. Der Komfort ist unvergleichlich. Nach kurzer Eingewöhnungszeit ein schonendes Gefühl trotz Belastung durch Bewegung.
+          ul.bullet-list
+            li Zur Vorbeugung gängiger Beschwerden 
+            li Fersensporn, Haglundferse, Spreiz-Senkfuß, Archillessehnenbeschwerden
+            li Hammerzehen, Blasenbildung, Kniebeschwerden, Schienbeinkantensyndrom
+            li Verbesserung der achsengerechten Bewegung
+            li Anregung gesunden Abrollverhaltens
+            li Vorbeugung von Überbelastungen
+            li Druckreduktion
+            li Schweißaufnahmefähig und schnelltrocknend
+            li Allergiefreier künstlicher Latexschaum und Obermaterial aus recycelten PET Material und Material auf Maisbasis
+            li Keine Schadstoffe enthalten, kein UV-Schutzmittel. Bitte vor Sonne schützen
+            li Für viele Schuhe grundsätzlich geeignet, Qualität vorausgesetzt
 
 .panel.panel--odd
   .content

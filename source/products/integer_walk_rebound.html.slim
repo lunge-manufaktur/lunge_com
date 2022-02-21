@@ -8,52 +8,55 @@ url_en: "https://www.lunge.com/en/products/integer_walk_rebound/"
 sitemap_priority: 0.9
 sitemap_changefreq: daily
 ---
-.title__container#add-to-cart.anchor-target
+.product__container#add-to-cart.anchor-target
   = partial "partials/made_in_germany"
-  .title__inner
-    .content
-      .collection
-        .product
-          .product__figure
-            .product__image-container
-              img.product__image
-            .product__features
-              ul.product-feature
-                = partial "partials/product-features/vegan"
-                = partial "partials/product-features/non-toxic"
-                = partial "partials/product-features/made_in_germany"
-            = partial "partials/product_attributes", locals: { product: "integer_walk_rebound" }
-          .product__details
-            .product__title
-              = link_to "← Shop", "/products/", class: "link"
-              h1 Integer Walk Rebound
-            .product__description
-              = partial "partials/video_link", locals: { product_name: "Integer Walk" }
-              p = data.products.integer_walk_rebound.short_description
-            .product__order-form
-              h4 Jetzt bestellen
-              .input-group
-                label Damen / Herren
-                .gender-select__container
-                  select.product__option.gender-select
-                    option value=40527134756 Herren
-                    option value=40527167524 Damen
-              .input-group
-                label Farbe
-                .product-select__title-container
-                .product-select__container
-              .input-group
-                label Größe (Fusslänge / US / EUR)
-                .variant-select__container
-                  select.product__option.variant-select
-              .variant-price__container
-                h2.variant-price
-                small inkl. Mwst., versandkostenfrei innerhalb Deutschlands
-              .add-to-cart-button__container
-                button.buy-button.js-prevent-cart-listener.add-button In den Warenkorb
-              .product__sizing
-                = partial "partials/size_guide_note"
-    #video.anchor-target
+  .content
+    .product
+      .product__figure
+        .product__image-container
+          img.product__image width=1200 height=1200
+        .product__features--tablet-landscape
+          ul.product-feature
+            = partial "partials/product-features/vegan"
+            = partial "partials/product-features/non-toxic"
+            = partial "partials/product-features/made_in_germany"
+          = partial "partials/product_attributes", locals: { product: "integer_walk_rebound" }
+      .product__details
+        .product__title
+          = link_to "← Shop", "/products/", class: "link"
+          h1 Integer Walk Rebound
+        .product__description
+          = partial "partials/video_link", locals: { product_name: "Integer Walk" }
+          p = data.products.integer_walk_rebound.short_description
+        .product__order-form
+          .input-group
+            label Damen / Herren
+            .gender-select__container
+              select.product__option.gender-select
+                option value=40527134756 Herren
+                option value=40527167524 Damen
+          .input-group
+            label Farbe
+            .product-select__title-container
+            .product-select__container
+          .input-group
+            label Größe (Fusslänge / US / EUR)
+            .variant-select__container
+              select.product__option.variant-select
+            .product__sizing
+              = partial "partials/size_guide_note"
+          .variant-price__container
+            h2.variant-price
+            small inkl. Mwst., versandkostenfrei innerhalb Deutschlands
+          .add-to-cart-button__container
+            button.buy-button.js-prevent-cart-listener.add-button In den Warenkorb
+        .product__features--mobile
+          ul.product-feature
+            = partial "partials/product-features/vegan"
+            = partial "partials/product-features/non-toxic"
+            = partial "partials/product-features/made_in_germany"
+          = partial "partials/product_attributes", locals: { product: "integer_walk_rebound" }
+  #video.anchor-target
 
 = partial "partials/video_card", locals: { youtube_id: "_Gk50VaFaAo", product_name: "Integer Walk Rebound" }
 

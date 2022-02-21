@@ -10,48 +10,59 @@ lang: "en"
 sitemap_priority: 0.9
 sitemap_changefreq: daily
 ---
-.title__container#add-to-cart.anchor-target
-  .title__inner
-    .content
-      .collection
-        .product
-          .product__figure
-            .product__image-container
-              img.product__image
-            .product__features
-              ul.product-feature
-                = partial "partials/product-features/vegan"
-                = partial "partials/product-features/non-toxic"
-                = partial "partials/product-features/made_in_germany"
-                = partial "partials/product-features/resole"
-            = partial "partials/product_attributes", locals: { product: "classic_run" }
-          .product__details
-            .product__title
-              h1 Classic Run
-            .product__description
-              p The proven choice for runners - constantly improved and developed for years the Classic Run is a running shoe of highest quality.
-            .product__order-form
-              h4 Buy now
-              .input-group
-                label Women / Men
-                .gender-select__container
-                  select.product__option.gender-select
-                    option value=184953861 Men
-                    option value=184953989 Women
-              .input-group
-                label Color
-                .product-select__title-container
-                .product-select__container
-              .input-group
-                label Size (Feet length / US / EUR)
-                .variant-select__container
-                  select.product__option.variant-select
-              .variant-price__container
-                h2.variant-price
-              .add-to-cart-button__container
-                button.buy-button.js-prevent-cart-listener.add-button Add To Cart
-              .product__sizing
-                = partial "partials/size_guide_note"
+.product__container#add-to-cart.anchor-target
+  = partial "partials/made_in_germany"
+  .content
+    .product
+      .product__figure
+        .product__media-container
+          .product__media-item
+            img.product__image width=1200 height=1200
+          .product__media-item
+            video width="100%" autoplay="true" muted="true" loop="true" playsinline="true" preload="auto"
+              source src=data.products.classic_run.walk_in_video_webm
+              source src=data.products.classic_run.walk_in_video_mp4
+        .product__features.product__features--tablet-landscape
+          ul.product-feature
+            = partial "partials/product-features/vegan"
+            = partial "partials/product-features/non-toxic"
+            = partial "partials/product-features/made_in_germany"
+            = partial "partials/product-features/resole"
+          = partial "partials/product_attributes", locals: { product: "classic_run" }
+      .product__details
+        .product__title
+          = link_to "← Shop", "/en/products/", class: "link"
+          h1 Classic Run
+        .product__description
+          p The proven choice for runners - constantly improved and developed for years the Classic Run is a running shoe of highest quality.
+        .product__order-form
+          .input-group
+            label Women / Men
+            .gender-select__container
+              select.product__option.gender-select
+                option value=184953861 Men
+                option value=184953989 Women
+          .input-group
+            label Color
+            .product-select__title-container
+            .product-select__container
+          .input-group
+            label Size (Feet length / US / EUR)
+            .variant-select__container
+              select.product__option.variant-select
+            .product__sizing
+              = partial "partials/size_guide_note"
+          .variant-price__container
+            h2.variant-price
+          .add-to-cart-button__container
+            button.buy-button.js-prevent-cart-listener.add-button Add To Cart
+        .product__features.product__features--mobile
+          ul.product-feature
+            = partial "partials/product-features/vegan"
+            = partial "partials/product-features/non-toxic"
+            = partial "partials/product-features/made_in_germany"
+            = partial "partials/product-features/resole"
+          = partial "partials/product_attributes", locals: { product: "classic_run" }
 
 .panel
   .content

@@ -58,6 +58,7 @@ select {
   border-radius: 0;
   padding: 0.5rem;
   padding-right: $gutter;
+  color: $body-font-color;
   background-image: url('/images/ui/select-indicator.svg');
   background-color: $white;
   background-repeat: no-repeat;

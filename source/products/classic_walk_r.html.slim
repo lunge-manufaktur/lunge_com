@@ -8,52 +8,61 @@ url_en: "https://www.lunge.com/en/products/classic_walk_r/"
 sitemap_priority: 0.9
 sitemap_changefreq: daily
 ---
-.title__container#add-to-cart.anchor-target
+.product__container#add-to-cart.anchor-target
   = partial "partials/made_in_germany"
-  .title__inner
-    .content
-      .collection
-        .product
-          .product__figure
-            .product__image-container
-              img.product__image
-            .product__features
-              ul.product-feature
-                = partial "partials/product-features/vegan"
-                = partial "partials/product-features/non-toxic"
-                = partial "partials/product-features/made_in_germany"
-            = partial "partials/product_attributes", locals: { product: "classic_walk_r" }
-          .product__details
-            .product__title
-              = link_to "← Shop", "/products/", class: "link"
-              h1 Classic Walk R
-            .product__description
-              = partial "partials/video_link", locals: { product_name: "Classic Walk R" }
-              p Lebendig federnde Mittelsohle und flach profilierte Sohle für belebende Spaziergänge, so könnte man den Einsatzbereich der Rebound Sohle für den Walking Schuh Classic Walk R beschreiben. Der Schuh kann aber noch mehr. Die Sohle verfügt über so hohe Stabilität, daß auch unebenes Gelände und stützbedürftige Füße die nötige Sicherheit erhalten. Ein frisches Gehgefühl für lange Strecken zu Fuß.
-            .product__order-form
-              h4 Jetzt bestellen
-              .input-group
-                label Damen / Herren
-                .gender-select__container
-                  select.product__option.gender-select
-                    option value=233719955606 Herren
-                    option value=233719857302 Damen
-              .input-group
-                label Farbe
-                .product-select__title-container
-                .product-select__container
-              .input-group
-                label Größe (Fusslänge / US / EUR)
-                .variant-select__container
-                  select.product__option.variant-select
-              .variant-price__container
-                h2.variant-price
-                small inkl. Mwst., versandkostenfrei innerhalb Deutschlands
-              .add-to-cart-button__container
-                button.buy-button.js-prevent-cart-listener.add-button In den Warenkorb
-              .product__sizing
-                = partial "partials/size_guide_note"
-    #video.anchor-target
+  .content
+    .product
+      .product__figure
+        .product__media-container
+          .product__media-item
+            img.product__image width=1200 height=1200
+          .product__media-item
+            video width="100%" autoplay="true" muted="true" loop="true" playsinline="true" preload="auto" class="darken"
+              source src=data.products.classic_walk_r.walk_in_video_webm
+              source src=data.products.classic_walk_r.walk_in_video_mp4
+        .product__features--tablet-landscape
+          ul.product-feature
+            = partial "partials/product-features/vegan"
+            = partial "partials/product-features/non-toxic"
+            = partial "partials/product-features/made_in_germany"
+          = partial "partials/product_attributes", locals: { product: "classic_walk_r" }
+      .product__details
+        .product__title
+          = link_to "← Shop", "/products/", class: "link"
+          h1 Classic Walk R
+        .product__order-form
+          .input-group
+            label Damen / Herren
+            .gender-select__container
+              select.product__option.gender-select
+                option value=233719955606 Herren
+                option value=233719857302 Damen
+          .input-group
+            label Farbe
+            .product-select__title-container
+            .product-select__container
+          .input-group
+            label Größe (Fusslänge / US / EUR)
+            .variant-select__container
+              select.product__option.variant-select
+            .product__sizing
+              = partial "partials/size_guide_note"
+          .variant-price__container
+            h2.variant-price
+            small inkl. Mwst., versandkostenfrei innerhalb Deutschlands
+          .add-to-cart-button__container
+            button.buy-button.js-prevent-cart-listener.add-button In den Warenkorb
+        .product__description
+          = partial "partials/video_link", locals: { product_name: "Classic Walk R" }
+          p Lebendig federnde Mittelsohle und flach profilierte Sohle für belebende Spaziergänge, so könnte man den Einsatzbereich der Rebound Sohle für den Walking Schuh Classic Walk R beschreiben. Der Schuh kann aber noch mehr. Die Sohle verfügt über so hohe Stabilität, daß auch unebenes Gelände und stützbedürftige Füße die nötige Sicherheit erhalten. Ein frisches Gehgefühl für lange Strecken zu Fuß.
+        .product__features--mobile
+          ul.product-feature
+            = partial "partials/product-features/vegan"
+            = partial "partials/product-features/non-toxic"
+            = partial "partials/product-features/made_in_germany"
+          = partial "partials/product_attributes", locals: { product: "classic_walk_r" }
+
+  #video.anchor-target
 
 = partial "partials/video_card", locals: { youtube_id: "QTWah5vzKbU", product_name: "Classic Walk R" }
 

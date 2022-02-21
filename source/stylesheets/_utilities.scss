@@ -50,3 +50,7 @@ $height-options: (
   white-space: nowrap;
   text-overflow: ellipsis;
 }
+
+.darken {
+  filter: brightness(97%)
+}

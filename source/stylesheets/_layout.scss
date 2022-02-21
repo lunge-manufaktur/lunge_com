@@ -9,6 +9,11 @@ html {
 img {
   display: block;
   max-width: 100%;
+  visibility: hidden;
+}
+
+img[src] {
+  visibility: unset;
 }
 
 body {
@@ -39,10 +44,10 @@ header {
   align-items: center;
   justify-content: space-between;
   z-index: 2;
-  border-bottom: 1px solid $mint-gray;
+  @include shadow();
 
   @include tablet-portrait {
-    border-bottom: none;
+    box-shadow: none;
   }
 }
 

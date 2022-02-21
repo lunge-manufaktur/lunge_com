@@ -57,7 +57,7 @@ lang: de
         picture class="card__image-container"
           source srcset=data.products.classic_run_r.default_image_webp type="image/webp"
           source srcset=data.products.classic_run_r.default_image_png type="image/png"
-          = image_tag data.products.classic_run_r.default_image, class: "card__image", alt: data.products.classic_run_r.name
+          = image_tag data.products.classic_run_r.default_image_png, class: "card__image", alt: data.products.classic_run_r.name, width: 1200, height: 1200
         = partial "partials/color_options", locals: { product: "classic_run_r" } 
       .card__body
         .card__description
@@ -72,7 +72,7 @@ lang: de
         picture class="card__image-container"
           source srcset=data.products.classic_walk_r.default_image_webp type="image/webp"
           source srcset=data.products.classic_walk_r.default_image_png type="image/png"
-          = image_tag data.products.classic_walk_r.default_image, class: "card__image", alt: data.products.classic_walk_r.name
+          = image_tag data.products.classic_walk_r.default_image_png, class: "card__image", alt: data.products.classic_walk_r.name
         = partial "partials/color_options", locals: { product: "classic_walk_r" } 
       .card__body
         .card__description
@@ -89,7 +89,7 @@ lang: de
         picture class="card__image-container"
           source srcset=data.products.classic_run.default_image_webp type="image/webp"
           source srcset=data.products.classic_run.default_image_png type="image/png"
-          = image_tag data.products.classic_run.default_image, class: "card__image", alt: data.products.classic_run.name
+          = image_tag data.products.classic_run.default_image_png, class: "card__image", alt: data.products.classic_run.name
         = partial "partials/color_options", locals: { product: "classic_run" } 
       .card__body
         .card__description
@@ -104,7 +104,7 @@ lang: de
         picture class="card__image-container"
           source srcset=data.products.classic_walk.default_image_webp type="image/webp"
           source srcset=data.products.classic_walk.default_image_png type="image/png"
-          = image_tag data.products.classic_walk.default_image, class: "card__image", alt: data.products.classic_walk.name
+          = image_tag data.products.classic_walk.default_image_png, class: "card__image", alt: data.products.classic_walk.name
         = partial "partials/color_options", locals: { product: "classic_walk" } 
       .card__body
         .card__description

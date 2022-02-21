@@ -10,71 +10,79 @@ sitemap_changefreq: monthly
 sitemap_noindex: true
 ---
 = partial "/partials/outlet/outlet_notice"
-.title__container#add-to-cart.anchor-target
+.product__container#add-to-cart.anchor-target
   = partial "partials/made_in_germany"
-  .title__inner
-    .content
-      .collection
-        .product
-          .product__figure
-            .product__image-container
-              img.product__image
-            .product__features
-              ul.product-feature
-                = partial "partials/product-features/vegan"
-                = partial "partials/product-features/non-toxic"
-                = partial "partials/product-features/made_in_germany"
-            = partial "partials/product_attributes", locals: { product: "classic_run_r" }
-          .product__details
-            .product__title
-              = link_to "← Outlet", "/outlet/", class: "link"
-              h1 Classic Run R
-              .badge.badge--white-on-black.animation--blur B-Ware
-            .product__description
-              = partial "partials/video_link", locals: { product_name: "Classic Run R" }
-              p 
-                | Der neue 
-                span.small-caps CLASSIC RUN R
-                |  verbindet unseren hochwertigen Laufschuhschaft vom 
-                span.small-caps CLASSIC RUN
-                |  mit der Rebound Sohle. Die Sohle besteht aus hochwertigen PU Schaum auf Polyether Basis und hat anders als übliche PU Schäume eine dauerhafte komfortable Federung. Knackiges Rückfederverhalten und druckfreier Komfort für den normalbreiten Fuß von leicht schlank bis etwas breiter zeichnen diesen Schuh aus. Sein präzises Federungsverhalten ist extrem langlebig. Dieser Neutralschuh bietet hohe Grundstabilität ohne eine zweite Härte. Trotzdem kann er stützen und führen wie kein Zweiter mit seinem schlanken Auftritt. Seine Sohle wurde verstärkt, um bei der Lebensdauer mithalten zu können. Der 
-                span.small-caps CLASSIC RUN R
-                |  ist eine Laufschuhbesonderheit, die in keinem Laufschuhschrank fehlen sollte.
-              ul.bullet-list
-                li Hohe Stabilität / Neutralschuh
-                li Höchster Komfort
-                li Belüfteter Schaft mit optimaler Passform
-                li Spezial-PU-Mittelsohlenmaterial mit kerniger Federung
-                li Hohe Dauerelastizität
-                li Sohle für Straße und Feldwege
-                li Fußbett FEETALITY
+  .content
+    .product
+      .product__figure
+        .product__media-container
+          .product__media-item
+            img.product__image width=1200 height=1200
+          .product__media-item
+            video.darken width="100%" autoplay="true" muted="true" loop="true" playsinline="true" preload="auto"
+              source src=data.products.classic_run_r.walk_in_video_webm
+              source src=data.products.classic_run_r.walk_in_video_mp4
+        .product__features--tablet-landscape
+          ul.product-feature
+            = partial "partials/product-features/vegan"
+            = partial "partials/product-features/non-toxic"
+            = partial "partials/product-features/made_in_germany"
+          = partial "partials/product_attributes", locals: { product: "classic_run_r" }
+      .product__details
+        .product__title
+          = link_to "← Outlet", "/outlet/", class: "link"
+          h1 Classic Run R
+          .badge.badge--white-on-black.badge--margined.animation--blur B-Ware
+        .product__order-form
+          .input-group
+            label Damen / Herren
+            .gender-select__container
+              select.product__option.gender-select
+                option value=389350752507 Herren
+                option value=389350785275 Damen
+          .input-group
+            label Farbe
+            .product-select__title-container
+            .product-select__container
+          .input-group
+            label Größe (Fusslänge / US / EUR)
+            .variant-select__container
+              select.product__option.variant-select
+            .product__sizing
+              = partial "partials/size_guide_note"
+          .variant-price__container
+            h3
+              del = "€ #{data.products.classic_run_r.price}"
+            h2.variant-price
+            small inkl. Mwst., versandkostenfrei innerhalb Deutschlands
+          .add-to-cart-button__container
+            button.buy-button.js-prevent-cart-listener.add-button In den Warenkorb
+        .product__description
+          = partial "partials/video_link", locals: { product_name: "Classic Run R" }
+          p 
+            | Der neue 
+            span.small-caps CLASSIC RUN R
+            |  verbindet unseren hochwertigen Laufschuhschaft vom 
+            span.small-caps CLASSIC RUN
+            |  mit der Rebound Sohle. Die Sohle besteht aus hochwertigen PU Schaum auf Polyether Basis und hat anders als übliche PU Schäume eine dauerhafte komfortable Federung. Knackiges Rückfederverhalten und druckfreier Komfort für den normalbreiten Fuß von leicht schlank bis etwas breiter zeichnen diesen Schuh aus. Sein präzises Federungsverhalten ist extrem langlebig. Dieser Neutralschuh bietet hohe Grundstabilität ohne eine zweite Härte. Trotzdem kann er stützen und führen wie kein Zweiter mit seinem schlanken Auftritt. Seine Sohle wurde verstärkt, um bei der Lebensdauer mithalten zu können. Der 
+            span.small-caps CLASSIC RUN R
+            |  ist eine Laufschuhbesonderheit, die in keinem Laufschuhschrank fehlen sollte.
+          ul.bullet-list
+            li Hohe Stabilität / Neutralschuh
+            li Höchster Komfort
+            li Belüfteter Schaft mit optimaler Passform
+            li Spezial-PU-Mittelsohlenmaterial mit kerniger Federung
+            li Hohe Dauerelastizität
+            li Sohle für Straße und Feldwege
+            li Fußbett FEETALITY
+        .product__features--mobile
+          ul.product-feature
+            = partial "partials/product-features/vegan"
+            = partial "partials/product-features/non-toxic"
+            = partial "partials/product-features/made_in_germany"
+          = partial "partials/product_attributes", locals: { product: "classic_run_r" }
 
-            .product__order-form
-              h4 Jetzt bestellen
-              .input-group
-                label Damen / Herren
-                .gender-select__container
-                  select.product__option.gender-select
-                    option value=389350752507 Herren
-                    option value=389350785275 Damen
-              .input-group
-                label Farbe
-                .product-select__title-container
-                .product-select__container
-              .input-group
-                label Größe (Fusslänge / US / EUR)
-                .variant-select__container
-                  select.product__option.variant-select
-              .variant-price__container
-                h3
-                  del = "€ #{data.products.classic_run_r.price}"
-                h2.variant-price
-                small inkl. Mwst., versandkostenfrei innerhalb Deutschlands
-              .add-to-cart-button__container
-                button.buy-button.js-prevent-cart-listener.add-button In den Warenkorb
-              .product__sizing
-                = partial "partials/size_guide_note"
-    #video.anchor-target
+  #video.anchor-target
 
 = partial "partials/video_card", locals: { youtube_id: "7VqT4q0anqA", product_name: "Classic Run R" }
 
