@@ -1779,6 +1779,11 @@ a.filter__scroll-icon:focus {
   }
 }
 
+.size-table {
+  overflow-x: scroll;
+  -webkit-overflow-scrolling: touch;
+}
+
 ul.spec-list {}
 
 li.spec-list__item {
