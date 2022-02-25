@@ -1,0 +1,129 @@
+---
+title: Classic Run R
+description: The vegan running shoe for demanding runners. The Classic Run R is a comfortable running shoe that features unique feel and cushioning.
+section: products
+lang: en
+canonical_link: "https://www.lunge.com/en/products/classic_run_r/"
+url_de: "https://www.lunge.com/products/classic_run_r/"
+url_en: "https://www.lunge.com/en/products/classic_run_r/"
+sitemap_priority: 0.9
+sitemap_changefreq: daily
+---
+.product__container#add-to-cart.anchor-target
+  = partial "partials/made_in_germany"
+  .content
+    .product
+      .product__figure
+        .product__media-container
+          .product__media-item
+            img.product__image width=1200 height=1200
+          .product__media-item
+            video width="100%" autoplay="true" muted="true" loop="true" playsinline="true" preload="auto" class="darken"
+              source src=data.products.classic_run_r.walk_in_video_webm
+              source src=data.products.classic_run_r.walk_in_video_mp4
+        .product__features--tablet-landscape
+          ul.product-feature
+            = partial "partials/product-features/vegan"
+            = partial "partials/product-features/non-toxic"
+            = partial "partials/product-features/made_in_germany"
+          = partial "partials/product_attributes", locals: { product: "classic_run_r" }
+
+      .product__details
+        .product__title
+          = link_to "← Shop", "/products/", class: "link"
+          h1 Classic Run R
+        .product__order-form
+          .input-group
+            label Women / Men
+            .gender-select__container
+              select.product__option.gender-select
+                option value=234046587030 Men
+                option value=234046423190 Women
+          .input-group
+            label Color
+            .product-select__title-container
+            .product-select__container
+          .input-group
+            label Size (Feet length / US / EUR)
+            .variant-select__container
+              select.product__option.variant-select
+            .product__sizing
+              = partial "partials/size_guide_note"
+          .variant-price__container
+            h2.variant-price
+            small inkl. Mwst., versandkostenfrei innerhalb Deutschlands
+          .add-to-cart-button__container
+            button.buy-button.js-prevent-cart-listener.add-button In den Warenkorb
+        .product__description
+          = partial "partials/video_link", locals: { product_name: "Classic Run R" }
+          p 
+            | The new 
+            span.small-caps CLASSIC RUN R
+            |  combines our high quality upper of the 
+            span.small-caps CLASSIC RUN
+            |  with our very efficient Rebound sole. The sole is made of high quality PU foam on a polyether basis and has, unlike usual PU foams, a durable comfortable suspension. Crisp springback and pressure-free comfort characterize this shoe. Its precise suspension response is extremely durable. This neutral shoe offers high basic stability without a separate support component. Yet it can support and guide like no other with its lean appearance. Its sole has been reinforced to keep up with durability. The 
+            span.small-caps CLASSIC RUN R
+            |  is a speciality that should not be missing in any running shoe closet.
+          ul.bullet-list
+            li Neutral shoes with high basic stability
+            li Highest comfort
+            li Ventilated upper with optimal fit
+            li Sophisticated PU midsole material with firm cushioning
+            li High permanent elasticity
+            li Sole for road and dirt tracks
+            li FEETALITY Insole included
+        .product__features--mobile
+          ul.product-feature
+            = partial "partials/product-features/vegan"
+            = partial "partials/product-features/non-toxic"
+            = partial "partials/product-features/made_in_germany"
+          = partial "partials/product_attributes", locals: { product: "classic_run_r" }
+
+  #video.anchor-target
+
+= partial "partials/video_card", locals: { youtube_id: "7VqT4q0anqA", product_name: "Classic Run R" }
+
+.panel.panel--emphasis
+  .content
+    .additional-information
+      .specifications
+        h4 Specifications
+        ul.spec-list
+          li.spec-list__item
+            label Sole type
+            span Rebound
+          li.spec-list__item
+            label Heel lift
+            span 9,5 mm (US Men 10)
+          li.spec-list__item
+            label Weight
+            span 354 g (Classic Walk) (US Men 10)
+            br
+            span 336 g (Classic Walk Glatt) (US Men 10)
+          li.spec-list__item
+            label Available sizes
+            span Damen: US 6 - US 13 (EUR 35 - EUR 43⅔)
+            br
+            span Herren: US 8 - US 15 (EUR 39⅓ - EUR 48⅓)
+      .add-to-cart-help
+        = partial "partials/add_to_cart_help"
+
+script type="application/ld+json"
+  | {
+  |   "@context": "http://schema.org",
+  |   "@type": "Product",
+  |   "name": "Classic Run R",
+  |   "image": "https://www.lunge.com/images/products/classic_run/STR220CYW/STR220CYW.png",
+  |   "description": "Der vegane Laufschuh für anspruchsvolle Läufer. Der Classic Run R ist ein bequemer Laufschuh, der durch einzigartiges Tragegefühl und Dämpfungsverhalten glänzt.",
+  |   "brand": {
+  |     "@type": "Brand",
+  |     "name": "Lunge"
+  |   },
+  |   "offers": {
+  |     "@type": "AggregateOffer",
+  |     "lowPrice": "180.00",
+  |     "highPrice": "180.00",
+  |     "priceCurrency": "EUR",
+  |     "availability": "InStock"
+  |   }
+  | }

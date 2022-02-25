@@ -1,0 +1,120 @@
+---
+title: Classic Run N - Neutral running shoes for highest demands
+description: The Classic Run with neutral midsole - for runners that require less stability
+lang: en
+section: products
+canonical_link: "https://www.lunge.com/en/products/classic_run_n/"
+url_de: "https://www.lunge.com/products/classic_run_n/"
+url_en: "https://www.lunge.com/en/products/classic_run_n/"
+sitemap_priority: 0.9
+sitemap_changefreq: daily
+---
+.product__container#add-to-cart.anchor-target
+  = partial "partials/made_in_germany"
+  .content
+    .product
+      .product__figure
+        .product__media-container
+          .product__media-item
+            img.product__image width=1200 height=1200
+          .product__media-item
+            video width="100%" autoplay="true" muted="true" loop="true" playsinline="true" preload="auto" class="darken"
+              source src=data.products.classic_run_n.walk_in_video_webm
+              source src=data.products.classic_run_n.walk_in_video_mp4
+        .product__features--tablet-landscape
+          ul.product-feature
+            = partial "partials/product-features/vegan"
+            = partial "partials/product-features/non-toxic"
+            = partial "partials/product-features/made_in_germany"
+            = partial "partials/product-features/resole"
+          = partial "partials/product_attributes", locals: { product: "classic_run_n" }
+      .product__details
+        .product__title
+          = link_to "← Shop", "/products/", class: "link"
+          h1 Classic Run N
+        .product__order-form
+          .input-group
+            label Women / Men
+            .gender-select__container
+              select.product__option.gender-select
+                option value=233736503446 Men
+                option value=233736437910 Women
+          .input-group
+            label Color
+            .product-select__title-container
+            .product-select__container
+          .input-group
+            label Size (Feet length / US / EUR)
+            .variant-select__container
+              select.product__option.variant-select
+            .product__sizing
+              = partial "partials/size_guide_note"
+          .variant-price__container
+            h2.variant-price
+            small inkl. Mwst., versandkostenfrei innerhalb Deutschlands
+          .add-to-cart-button__container
+            button.buy-button.js-prevent-cart-listener.add-button In den Warenkorb
+        .product__description
+          = partial "partials/video_link", locals: { product_name: "Classic Run N" }
+          p The classic running shoe in a neutral version. If feet could cheer, this shoe would be the occasion. A fit that makes even demanding feet happy. No pressure, just pure well-being when running or walking. Outstanding comfort and just the right amount of support. Preventing discomfort couldn't be more pleasant.
+          ul.bullet-list
+            li Neutral shoes with high basic stability
+            li Highest comfort
+            li Ventilated upper with optimal fit
+            li Latest EVA midsole material with highest elasticity
+            li Very high permanent elasticity and abrasion resistance
+            li Sole for all surfaces
+            li FEETALITY Insole included
+        .product__features--mobile
+          ul.product-feature
+            = partial "partials/product-features/vegan"
+            = partial "partials/product-features/non-toxic"
+            = partial "partials/product-features/made_in_germany"
+            = partial "partials/product-features/resole"
+          = partial "partials/product_attributes", locals: { product: "classic_run_n" }
+  #video.anchor-target
+
+= partial "partials/video_card", locals: { youtube_id: "26ws6GFOSh8", product_name: "Classic Run N" }
+
+.panel.panel--emphasis
+  .content
+    .additional-information
+      .specifications
+        h4 Specifications
+        ul.spec-list
+          li.spec-list__item
+            label Type of midsole
+            span Neutral
+          li.spec-list__item
+            label Heel lift
+            span 9,5 mm (US Men 10)
+          li.spec-list__item
+            label Weight
+            span 343 g (US Men 10)
+          li.spec-list__item
+            label Available sizes
+            span Damen: US 6 - US 13
+            br
+            span Herren: US 8 - US 15
+      .add-to-cart-help
+        = partial "partials/add_to_cart_help"
+
+
+script type="application/ld+json"
+  | {
+  |   "@context" : "http://schema.org",
+  |   "@type" : "Product",
+  |   "name" : "Classic Run N",
+  |   "image" : "https://www.lunge.com/images/products/classic_run/STN220RBG/STN220RBG.png",
+  |   "description" : "Der Klassiker in unserem Sortiment und Geheimtipp anspruchsvoller Läufer. Der Classic Run hat sich über Jahre als Laufschuh der Extraklasse bewährt und wurde dennoch stetig verbessert.",
+  |   "brand": {
+  |     "@type": "Brand",
+  |     "name": "Lunge"
+  |   },
+  |   "offers" : {
+  |     "@type" : "Offer",
+  |     "price" : "220.00",
+  |     "priceCurrency": "EUR",
+  |     "availability": "InStock"
+  |   }
+  | }
