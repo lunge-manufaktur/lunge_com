@@ -61,21 +61,6 @@ sitemap_priority: 0.9
 
 .panel
   .content
-    .panel__inner
-      .panel__image
-        = link_to "/news/lunge_fuer_metropolitaner_award_2022_nominiert/" do
-          picture
-            source srcset="/images/misc/metropolitaner_award_2022.webp" type="image/webp"
-            source srcset="/images/misc/metropolitaner_award_2022.png" type="image/png"
-            = image_tag "/images/misc/metropolitaner_award_2022.webp", alt: "Lunge für Metropolitaner Award 2022 nominiert"
-      aside.panel__text
-        .panel__text__inner
-          h2 Hurra! Wir sind nominiert!
-          p Die LUNGE Lauf- und Sportschuhe GmbH gehört zu den fünf Finalisten des Metropolitaner Awards 2022 in der Kategorie „Unternehmen“.
-          = link_to "Mehr erfahren und abstimmen", "/news/lunge_fuer_metropolitaner_award_2022_nominiert/", class: "button"
-
-.panel
-  .content
     .panel__inner.panel__inner--reverse
       .panel__image
         = link_to "/about/" do
