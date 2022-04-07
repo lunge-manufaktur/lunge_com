@@ -1,10 +1,10 @@
 [data-tooltip] {
   @include transition;
-  position: relative;
   overflow: visible;
 }
 
 [data-tooltip]:hover::before {
+  animation: fade-in 0.5s forwards;
   position: absolute;
   top: 100%;
   left: calc(50% - 8px);
@@ -18,9 +18,10 @@
 }
 
 [data-tooltip]::after {
+  animation: fade-in 0.5s forwards;
   @include transition;
   @include lift-up();
-  width: 300px;
+  max-width: 300px;
   position: absolute;
   top: calc(100% + 12px);
   left: 50%;
@@ -28,12 +29,22 @@
   padding: 0.25rem 0.5rem;
   content: attr(data-tooltip);
   background-color: $white;
+  color: $almost-black;
   z-index: 99;
   display: none;
   text-align: center;
+  font-weight: 400;
 
   @include tablet-portrait {
   }
+}
+
+.product-feature__item[data-tooltip]::after {
+  width: 300px;
+}
+
+.category__container::after {
+  width: 200px;
 }
 
 [data-tooltip]:hover::after {
