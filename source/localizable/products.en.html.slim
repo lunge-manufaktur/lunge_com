@@ -65,8 +65,9 @@ lang: en
           p = data.products.classic_run_r.short_description_en
         .card__attributes
           = partial "partials/product_attributes", locals: { product: "classic_run_r" }
-      .notice.notice--top-left
-        span New
+        .category__container.category__container--rebound data-tooltip=data.categories.rebound.description_en
+          .category__icon R
+          .category__label Rebound
 
     = link_to "/products/#{data.products.classic_walk_r.slug}/", class: "card", data: { product: "classic_walk_r", "filter-usage": "everyday", "filter-series": "classic", "filter-sole": "neutral rebound", "filter-material": "vegan" } do
       .card__figure
@@ -82,8 +83,9 @@ lang: en
           p = data.products.classic_walk_r.short_description_en
         .card__attributes
           = partial "partials/product_attributes", locals: { product: "classic_walk_r" }
-      .notice.notice--top-left
-        span New
+        .category__container.category__container--rebound data-tooltip=data.categories.rebound.description_en
+          .category__icon R
+          .category__label Rebound
 
     = link_to "/en/products/#{data.products.classic_run.slug}/", class: "card", data: { product: "classic_run", "filter-usage": "running", "filter-series": "classic", "filter-sole": "stability", "filter-material": "vegan" } do
       .card__figure
@@ -99,8 +101,9 @@ lang: en
           p = data.products.classic_run.short_description_en
         .card__attributes
           = partial "partials/product_attributes", locals: { product: "classic_run" }
-      .notice.notice--top-left
-        span Updated
+        .category__container.category__container--stability data-tooltip=data.categories.stability.description_en
+          .category__icon S
+          .category__label Stability
 
     = link_to "/en/products/#{data.products.classic_walk.slug}/", class: "card", data: { product: "classic_walk", "filter-usage": "everyday", "filter-series": "classic", "filter-sole": "stability", "filter-material": "vegan" } do
       .card__figure
@@ -116,8 +119,9 @@ lang: en
           p = data.products.classic_walk.short_description_en
         .card__attributes
           = partial "partials/product_attributes", locals: { product: "classic_walk" }
-      .notice.notice--top-left
-        span Updated
+        .category__container.category__container--stability data-tooltip=data.categories.stability.description_en
+          .category__icon S
+          .category__label Stability
 
     = link_to "/en/products/#{data.products.classic_run_n.slug}/", class: "card", data: { product: "classic_run_n", "filter-usage": "running", "filter-series": "classic", "filter-sole": "neutral", "filter-material": "vegan" } do
       .card__figure
@@ -133,8 +137,9 @@ lang: en
           p = data.products.classic_run_n.short_description_en
         .card__attributes
           = partial "partials/product_attributes", locals: { product: "classic_run_n" }
-      .notice.notice--top-left
-        span New
+        .category__container.category__container--neutral data-tooltip=data.categories.neutral.description_en
+          .category__icon N
+          .category__label Neutral
 
     = link_to "/products/#{data.products.classic_walk_n.slug}/", class: "card", data: { product: "classic_walk_n", "filter-usage": "everyday", "filter-series": "classic", "filter-sole": "neutral", "filter-material": "vegan" } do
       .card__figure
@@ -150,8 +155,9 @@ lang: en
           p = data.products.classic_walk_n.short_description_en
         .card__attributes
           = partial "partials/product_attributes", locals: { product: "classic_walk_n" }
-      .notice.notice--top-left
-        span New
+        .category__container.category__container--neutral data-tooltip=data.categories.neutral.description_en
+          .category__icon N
+          .category__label Neutral
 
     = link_to "/en/products/#{data.products.derby_run_s.slug}/", class: "card", data: { product: "derby_run_s", "filter-usage": "everyday", "filter-series": "classic", "filter-sole": "neutral", "filter-material": "vegan wide" } do
       .card__figure
@@ -167,8 +173,9 @@ lang: en
           p = data.products.derby_run_s.short_description_en
         .card__attributes
           = partial "partials/product_attributes", locals: { product: "derby_run_s" }
-      .notice.notice--top-left
-        span New
+        .category__container.category__container--stability data-tooltip=data.categories.stability.description_en
+          .category__icon S
+          .category__label Stability
 
     = link_to "/en/products/#{data.products.derby_walk_s.slug}/", class: "card", data: { product: "derby_walk_s", "filter-usage": "everyday", "filter-series": "classic", "filter-sole": "stability", "filter-material": "vegan wide" } do
       .card__figure
@@ -184,8 +191,9 @@ lang: en
           p = data.products.derby_walk_s.short_description_en
         .card__attributes
           = partial "partials/product_attributes", locals: { product: "derby_walk_s" }
-      .notice.notice--top-left
-        span New
+        .category__container.category__container--stability data-tooltip=data.categories.stability.description_en
+          .category__icon S
+          .category__label Stability
 
     = link_to "/en/products/#{data.products.integer_run_rebound.slug}/", class: "card", data: { product: "integer_run_rebound", "filter-usage": "running", "filter-series": "integer", "filter-sole": "neutral rebound", "filter-material": "vegan" } do
       .card__figure
@@ -201,6 +209,9 @@ lang: en
           p = data.products.integer_run_rebound.short_description_en
         .card__attributes
           = partial "partials/product_attributes", locals: { product: "integer_run_rebound" }
+        .category__container.category__container--rebound data-tooltip=data.categories.rebound.description_en
+          .category__icon R
+          .category__label Rebound
 
     = link_to "/en/products/#{data.products.integer_walk_rebound.slug}/", class: "card", data: { product: "integer_walk_rebound", "filter-usage": "everyday", "filter-series": "integer", "filter-sole": "neutral rebound", "filter-material": "vegan" } do
       .card__figure
@@ -216,6 +227,9 @@ lang: en
           p = data.products.integer_walk_rebound.short_description_en
         .card__attributes
           = partial "partials/product_attributes", locals: { product: "integer_walk_rebound" }
+        .category__container.category__container--rebound data-tooltip=data.categories.rebound.description_en
+          .category__icon R
+          .category__label Rebound
 
     = link_to "/en/products/#{data.products.integer_walk_cushion.slug}/", class: "card", data: { product: "integer_walk_cushion", "filter-usage": "everyday", "filter-series": "integer", "filter-sole": "neutral", "filter-material": "vegan" } do
       .card__figure
@@ -231,6 +245,9 @@ lang: en
           p = data.products.integer_walk_cushion.short_description_en
         .card__attributes
           = partial "partials/product_attributes", locals: { product: "integer_walk_cushion" }
+        .category__container.category__container--neutral data-tooltip=data.categories.neutral.description_en
+          .category__icon N
+          .category__label Neutral
 
     = link_to "/en/products/integer_walk_rebound_leather/", class: "card", data: { product: "integer_walk_rebound_leder", "filter-usage": "everyday", "filter-series": "integer", "filter-sole": "neutral rebound", "filter-material": "leather" } do
       .card__figure
@@ -246,6 +263,9 @@ lang: en
           p = data.products.integer_walk_rebound_leder.short_description_en
         .card__attributes
           = partial "partials/product_attributes", locals: { product: "integer_walk_rebound" }
+        .category__container.category__container--rebound data-tooltip=data.categories.rebound.description_en
+          .category__icon R
+          .category__label Rebound
 
     = link_to "/en/products/#{data.products.neo_run.slug}/", class: "card", data: { product: "neo_run", "filter-usage": "running", "filter-series": "neo", "filter-sole": "neutral rebound", "filter-material": "vegan" } do
       .card__figure
@@ -261,6 +281,9 @@ lang: en
           p = data.products.neo_run.short_description_en
         .card__attributes
           = partial "partials/product_attributes", locals: { product: "neo_run" }
+        .category__container.category__container--rebound data-tooltip=data.categories.rebound.description_en
+          .category__icon R
+          .category__label Rebound
 
 .panel.anchor-target#accessories
   .content

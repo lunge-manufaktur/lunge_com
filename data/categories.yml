@@ -1,8 +1,11 @@
 rebound:
   description_de: "PU-Mittelsohlen mit besonders effizienter Rückfederung"
+  description_en: "PU midsoles with very efficient and springy rebound."
 
 neutral:
   description_de: "Hochwertige, dämpfende EVA-Mittelsohlen mit neutraler Formgebung und ohne Stützelement"
+  description_en: "High-quality, damping one-piece midsoles that are milled from a solid EVA block and feature a neutral geometry."
 
 stability:
   description_de: "Hochwertige, dämpfende EVA-Mittelsohlen mit stützendem Pronationselement an der Innenseite" 
+  description_en: "High-quality, damping midsoles milled from a solid EVA block and featuring a stabilizing support element."
