@@ -2378,6 +2378,13 @@ select *.variant-select__option--unavailable,
   margin-top: $gutter-small;
 }
 
+.alert-box {
+  background-color: $red;
+  color: $white;
+  padding: $gutter-small;
+  margin-bottom: 2.5rem;
+}
+
 
 
 
