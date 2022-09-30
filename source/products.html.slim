@@ -48,6 +48,7 @@ lang: de
           = button_tag "Vegan", type: "button", class: "filter__option", data: { toggle: '[data-filter-features~="vegan"]' }
           = button_tag "Leder", type: "button", class: "filter__option", data: { toggle: '[data-filter-features~="leather"]' }
           = button_tag "Extra weite Passform", type: "button", class: "filter__option", data: { toggle: '[data-filter-features~="wide"]' }
+          = button_tag "Reißverschluss", type: "button", class: "filter__option", data: { toggle: '[data-filter-features~="zip"]' }
           = button_tag "Alle", type: "reset", class: "filter__clear-button"
 
 .content
@@ -84,8 +85,6 @@ lang: de
           p = data.products.classic_walk_r.short_description
         .card__attributes
           = partial "partials/product_attributes", locals: { product: "classic_walk_r" }
-      .notice.notice--top-left
-        span Neue Farben
       .category__container.category__container--rebound data-tooltip=data.categories.rebound.description_de
         .category__icon R
         .category__label Rebound
@@ -158,11 +157,29 @@ lang: de
           p = data.products.classic_walk_n.short_description
         .card__attributes
           = partial "partials/product_attributes", locals: { product: "classic_walk_n" }
-      .notice.notice--top-left
-        span Neue Farben
       .category__container.category__container--neutral data-tooltip=data.categories.neutral.description_de
         .category__icon N
         .category__label Neutral
+
+    = link_to "/products/#{data.products.classic_walk_zip_s.slug}/", class: "card", data: { product: "classic_walk_zip_s", "filter-usage": "everyday", "filter-series": "classic", "filter-sole": "stability", "filter-features": "vegan zip" } do
+      .card__figure
+        picture class="card__image-container"
+          source srcset=data.products.classic_walk_zip_s.default_image_webp type="image/webp"
+          source srcset=data.products.classic_walk_zip_s.default_image_png type="image/png"
+          = image_tag data.products.classic_walk_zip_s.default_image_png, class: "card__image", alt: data.products.classic_walk_zip_s.name
+        = partial "partials/color_options", locals: { product: "classic_walk_zip_s" } 
+      .card__body
+        .card__description
+          h2.marginless--top = data.products.classic_walk_zip_s.name
+          h4.card__price = "€ #{data.products.classic_walk_zip_s.price}"
+          p = data.products.classic_walk_zip_s.short_description
+        .card__attributes
+          = partial "partials/product_attributes", locals: { product: "classic_walk_zip_s" }
+      .notice.notice--top-left
+        span Neu
+      .category__container.category__container--neutral data-tooltip=data.categories.neutral.description_de
+        .category__icon S
+        .category__label Stability
 
     = link_to "/products/#{data.products.derby_run_s.slug}/", class: "card", data: { product: "derby_run_s", "filter-usage": "running", "filter-series": "derby", "filter-sole": "stability", "filter-features": "vegan wide" } do
       .card__figure
@@ -178,8 +195,6 @@ lang: de
           p = data.products.derby_run_s.short_description
         .card__attributes
           = partial "partials/product_attributes", locals: { product: "derby_run_s" }
-      .notice.notice--top-left
-        span Neu
       .category__container.category__container--stability data-tooltip=data.categories.stability.description_de
         .category__icon S
         .category__label Stability
@@ -198,8 +213,6 @@ lang: de
           p = data.products.derby_walk_s.short_description
         .card__attributes
           = partial "partials/product_attributes", locals: { product: "derby_walk_s" }
-      .notice.notice--top-left
-        span Neu
       .category__container.category__container--stability data-tooltip=data.categories.stability.description_de
         .category__icon S
         .category__label Stability

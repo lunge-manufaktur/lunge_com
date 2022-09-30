@@ -1,0 +1,116 @@
+---
+title: Classic Walk Zip S - Bequemschuh mit Reßverschluss für einen noch komfortableren Einsteig
+description: Einmal geschnürt, immer der perfekte Einsteig - der bewährte Classic Walk, erstmals mit Reißverschluss.
+section: products
+canonical_link: "https://www.lunge.com/products/classic_walk_zip_s/"
+url_de: "https://www.lunge.com/products/classic_walk_zip_s/"
+sitemap_priority: 0.9
+sitemap_changefreq: daily
+---
+.product__container#add-to-cart.anchor-target
+  = partial "partials/made_in_germany"
+  .content
+    .product
+      .product__figure
+        .product__media-container
+          .product__media-item
+            img.product__image width=1200 height=1200
+        .product__features--tablet-landscape
+          ul.product-feature
+            = partial "partials/product-features/vegan"
+            = partial "partials/product-features/non-toxic"
+            = partial "partials/product-features/made_in_germany"
+          = partial "partials/product_attributes", locals: { product: "classic_walk_zip_s" }
+      .product__details
+        .product__title
+          = link_to "← Shop", "/products/", class: "link"
+          h1 Classic Walk Zip S
+        .product__order-form
+          .input-group
+            label Damen / Herren
+            .gender-select__container
+              select.product__option.gender-select
+                option value=234092462230 Herren
+                option value=234092429462 Damen
+          .input-group
+            label Farbe
+            .product-select__title-container
+            .product-select__container
+          .input-group
+            label Größe (Fusslänge / US / EUR)
+            .variant-select__container
+              select.product__option.variant-select
+            .product__sizing
+              = partial "partials/size_guide_note"
+          .variant-price__container
+            h2.variant-price
+            small inkl. Mwst., versandkostenfrei innerhalb Deutschlands
+          .add-to-cart-button__container
+            button.buy-button.js-prevent-cart-listener.add-button In den Warenkorb
+        .product__description
+          = partial "partials/video_link", locals: { product_name: "Classic Walk S" }
+          p Unser absoluter Bestseller unter den Bequemschuhen, jetzt auch mit Reißverschluss. Nur einmal perfekt schnüren und dann immer einfach einfach ein- und aussteigen dank Zipper. Alles was unsere Marke zu bieten hat, ist auch diesem Schuh vereint. Sie haben schon viel probiert? Dann wird Sie der Classic Walk Zip schon bei der Anprobe überzeugen.
+          ul.bullet-list
+            li Leichtgängiger, langlebiger YKK Reißverschluss
+            li Schneller, komfortabler Ein- und Ausstieg
+            li Optimale Passform durch zusätzliche Schnürung
+            li Höchste Stabilität (S)
+            li Höchster Komfort
+            li Feines Schaftmaterial für optimale Passform und Atmungsaktivität
+            li Neuestes EVA-Mittelsohlenmaterial mit höchster Elastizität
+            li Sehr hohe Dauerelastizität und Abriebfestigkeit
+            li Sohle für alle Untergründe
+            li Fußbett FEETALITY 
+        .product__features--mobile
+          ul.product-feature
+            = partial "partials/product-features/vegan"
+            = partial "partials/product-features/non-toxic"
+            = partial "partials/product-features/made_in_germany"
+          = partial "partials/product_attributes", locals: { product: "classic_walk_zip_s" }
+
+  #video.anchor-target
+
+= partial "partials/video_card", locals: { youtube_id: "n0IiZAr1tKQ", product_name: "Classic Walk S" }
+
+.panel.panel--emphasis
+  .content
+    .additional-information
+      .specifications
+        h4 Technische Daten
+        ul.spec-list
+          li.spec-list__item
+            label Mittelsohlentyp
+            span Stability
+          li.spec-list__item
+            label Sprengung
+            span 9,5 mm (US Men 10)
+          li.spec-list__item
+            label Gewicht
+            span 354 g (US Men 10)
+          li.spec-list__item
+            label Verfügbare Größen
+            span Damen: US 6 - US 13 (EUR 35 - EUR 43⅔)
+            br
+            span Herren: US 8 - US 15 (EUR 39⅓ - EUR 48⅓)
+      .add-to-cart-help
+        = partial "partials/add_to_cart_help"
+
+script type="application/ld+json"
+  | {
+  |   "@context": "http://schema.org",
+  |   "@type": "Product",
+  |   "name": "Classic Walk Zip S",
+  |   "image": "https://www.lunge.com/images/products/classic_walk/GZS220LLL/GZS220LLL.png",
+  |   "description": "Einmal geschnürt, immer der perfekte Einsteig - der bewährte Classic Walk, erstmals mit Reißverschluss.",
+  |   "brand": {
+  |     "@type": "Brand",
+  |     "name": "Lunge"
+  |   },
+  |   "offers": {
+  |     "@type": "AggregateOffer",
+  |     "lowPrice": "250.00",
+  |     "highPrice": "250.00",
+  |     "priceCurrency": "EUR",
+  |     "availability": "InStock"
+  |   }
+  | }
