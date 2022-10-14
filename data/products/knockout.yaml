@@ -1,0 +1,72 @@
+name: "Knockout"
+category: "Fitnessschuhe"
+slug: "knockout"
+short_description: "Mehr als ein Lucky Punch. Ein limitiertes Sondermodell für Fitness und Alltag."
+short_description_en: "Not just a lucky punch - a limited edition for fitness and lifestyle."
+default_image_png: "/images/products/misc/GTN300WRW/GTN300WRW.png"
+default_image_webp: "/images/products/misc/GTN300WRW/GTN300WRW.webp"
+price: "250,00"
+discount_price: "250,00"
+colors:
+  -
+    sku: "GTN300WRW"
+    name: "White/Red"
+    first_color: "#FFFFFF"
+    second_color: "#E74350"
+    default_image_png: "/images/products/misc/GTN300WRW/GTN300WRW.png"
+    default_image_webp: "/images/products/misc/GTN300WRW/GTN300WRW.webp"
+    price: 250
+
+images:
+
+attributes:
+  -
+    name: ground.name
+    start:
+      name: ground.start_name
+      value: 1
+      description: ground.start_description
+    end:
+      name: ground.end_name
+      value: 5
+      description: ground.end_description
+  -
+    name: stability.name
+    start:
+      name: stability.start_name
+      value: 1
+      description: stability.start_description
+    end:
+      name: stability.end_name
+      value: 5
+      description: stability.end_description
+  -
+    name: rebound.name
+    start:
+      name: rebound.start_name
+      value: 6
+      description: rebound.start_description
+    end:
+      name: rebound.end_name
+      value: 10
+      description: rebound.end_description
+  -
+    name: firmness.name
+    start:
+      name: firmness.start_name
+      value: 5
+      description: firmness.start_description
+    end:
+      name: firmness.end_name
+      value: 9
+      description: firmness.end_description
+  -
+    name: fit.name
+    start:
+      name: fit.start_name
+      value: 3
+      description: fit.description
+    end:
+      name: fit.end_name
+      value: 8
+      description: fit.description

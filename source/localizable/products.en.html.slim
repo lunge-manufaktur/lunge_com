@@ -31,6 +31,7 @@ lang: en
         label.filter__group-label Series
         .filter__options data-filter-group=""
           = button_tag "Classic", type: "button", class: "filter__option", data: { toggle: '[data-filter-series~="classic"]' }
+          = button_tag "Derby", type: "button", class: "filter__option", data: { toggle: '[data-filter-series~="derby"]' }
           = button_tag "Integer", type: "button", class: "filter__option", data: { toggle: '[data-filter-series~="integer"]' }
           = button_tag "Neo", type: "button", class: "filter__option", data: { toggle: '[data-filter-series~="neo"]' }
           = button_tag "Any", type: "reset", class: "filter__clear-button"
@@ -159,7 +160,27 @@ lang: en
           .category__icon N
           .category__label Neutral
 
-    = link_to "/en/products/#{data.products.derby_run_s.slug}/", class: "card", data: { product: "derby_run_s", "filter-usage": "everyday", "filter-series": "classic", "filter-sole": "stability", "filter-material": "vegan wide" } do
+    = link_to "/en/products/#{data.products.classic_walk_zip_s.slug}/", class: "card", data: { product: "classic_walk_zip_s", "filter-usage": "everyday", "filter-series": "classic", "filter-sole": "stability", "filter-features": "vegan zip" } do
+      .card__figure
+        picture class="card__image-container"
+          source srcset=data.products.classic_walk_zip_s.default_image_webp type="image/webp"
+          source srcset=data.products.classic_walk_zip_s.default_image_png type="image/png"
+          = image_tag data.products.classic_walk_zip_s.default_image_png, class: "card__image", alt: data.products.classic_walk_zip_s.name
+        = partial "partials/color_options", locals: { product: "classic_walk_zip_s" } 
+      .card__body
+        .card__description
+          h2.marginless--top = data.products.classic_walk_zip_s.name
+          h4.card__price = "€ #{data.products.classic_walk_zip_s.price}"
+          p = data.products.classic_walk_zip_s.short_description_en
+        .card__attributes
+          = partial "partials/product_attributes", locals: { product: "classic_walk_zip_s" }
+      .notice.notice--top-left
+        span Neu
+      .category__container.category__container--stability data-tooltip=data.categories.stability.description_de
+        .category__icon S
+        .category__label Stability
+
+    = link_to "/en/products/#{data.products.derby_run_s.slug}/", class: "card", data: { product: "derby_run_s", "filter-usage": "everyday", "filter-series": "derby", "filter-sole": "stability", "filter-material": "vegan wide" } do
       .card__figure
         picture class="card__image-container"
           source srcset=data.products.derby_run_s.default_image_webp type="image/webp"
@@ -177,7 +198,7 @@ lang: en
           .category__icon S
           .category__label Stability
 
-    = link_to "/en/products/#{data.products.derby_walk_s.slug}/", class: "card", data: { product: "derby_walk_s", "filter-usage": "everyday", "filter-series": "classic", "filter-sole": "stability", "filter-material": "vegan wide" } do
+    = link_to "/en/products/#{data.products.derby_walk_s.slug}/", class: "card", data: { product: "derby_walk_s", "filter-usage": "everyday", "filter-series": "derby", "filter-sole": "stability", "filter-material": "vegan wide" } do
       .card__figure
         picture class="card__image-container"
           source srcset=data.products.derby_walk_s.default_image_webp type="image/webp"
@@ -194,6 +215,26 @@ lang: en
         .category__container.category__container--stability data-tooltip=data.categories.stability.description_en
           .category__icon S
           .category__label Stability
+
+    = link_to "/en/products/#{data.products.knockout.slug}/", class: "card", data: { product: "knockout", "filter-usage": "everyday", "filter-series": "neo", "filter-sole": "neutral rebound", "filter-features": "vegan" } do
+      .card__figure
+        picture class="card__image-container"
+          source srcset=data.products.knockout.default_image_webp type="image/webp"
+          source srcset=data.products.knockout.default_image_png type="image/png"
+          = image_tag data.products.knockout.default_image_png, class: "card__image", alt: data.products.knockout.name
+        = partial "partials/color_options", locals: { product: "knockout" } 
+      .card__body
+        .card__description
+          h2.marginless--top = data.products.knockout.name
+          h4.card__price = "€ #{data.products.knockout.price}"
+          p = data.products.knockout.short_description_en
+        .card__attributes
+          = partial "partials/product_attributes", locals: { product: "knockout" }
+      .notice.notice--top-left
+        span Limited
+      .category__container.category__container--rebound data-tooltip=data.categories.rebound.description_en
+        .category__icon R
+        .category__label Rebound
 
     = link_to "/en/products/#{data.products.integer_run_rebound.slug}/", class: "card", data: { product: "integer_run_rebound", "filter-usage": "running", "filter-series": "integer", "filter-sole": "neutral rebound", "filter-material": "vegan" } do
       .card__figure

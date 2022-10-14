@@ -1,0 +1,102 @@
+---
+title: Knockout - Limitierter Fintess- und Lifestyle Schuh
+description: Der Classic Walk von Lunge ist ein einzigartiger, veganer Schuh für Alltag, Beruf und Freizeit, der durch einzigartigen Tragekomfort glänzt.
+section: products
+canonical_link: "https://www.lunge.com/products/knockout/"
+url_de: "https://www.lunge.com/products/knockout/"
+url_en: "https://www.lunge.com/en/products/knockout/"
+sitemap_priority: 0.9
+sitemap_changefreq: daily
+product: data.products.knockout
+---
+.product__container#add-to-cart.anchor-target
+  = partial "partials/made_in_germany"
+  .content
+    .product
+      .product__figure
+        .product__media-container
+          .product__media-item
+            img.product__image width=1200 height=1200
+        .product__features--tablet-landscape
+          ul.product-feature
+            = partial "partials/product-features/vegan"
+            = partial "partials/product-features/non-toxic"
+            = partial "partials/product-features/made_in_germany"
+          = partial "partials/product_attributes", locals: { product: "classic_walk_n" }
+      .product__details
+        .product__title
+          = link_to "← Shop", "/en/products/", class: "link"
+          h1 Knockout
+          .badge.badge--white-on-black.badge--margined.animation--blur Limited Edition
+        .product__order-form
+          .input-group
+            label Women / Men
+            .gender-select__container
+              select.product__option.gender-select
+                option value=480281297162 Unisex
+          .input-group
+            label Color
+            .product-select__title-container
+            .product-select__container
+          .input-group
+            label Size (Feet length / US / EUR)
+            .variant-select__container
+              select.product__option.variant-select
+            .product__sizing
+              = partial "partials/size_guide_note"
+          .variant-price__container
+            h2.variant-price
+            small inkl. Mwst., versandkostenfrei innerhalb Deutschlands
+          .add-to-cart-button__container
+            button.buy-button.js-prevent-cart-listener.add-button Add to cart
+        .product__description
+          ul.bullet-list
+            li Fitness and lifestyle sneaker
+            li Limited edition of 250 pairs
+            li neutral, highly comfortable PU midsole
+            li First ankle-high Lunge shoes
+            li Exclusive Knockout packaging
+        .product__features--mobile
+          ul.product-feature
+            = partial "partials/product-features/vegan"
+            = partial "partials/product-features/non-toxic"
+            = partial "partials/product-features/made_in_germany"
+          = partial "partials/product_attributes", locals: { product: "knockout" }
+
+.panel.panel--emphasis
+  .content
+    .additional-information
+      .specifications
+        h4 Specifications
+        ul.spec-list
+          li.spec-list__item
+            label Sole type
+            span Rebound
+          li.spec-list__item
+            label Hell lift
+            span 9,5 mm (US Men 10)
+          li.spec-list__item
+            label Available sizes
+            span US 7 - US 15 (EUR 38 - EUR 48⅓)
+      .add-to-cart-help
+        = partial "partials/add_to_cart_help"
+
+script type="application/ld+json"
+  | {
+  |   "@context": "http://schema.org",
+  |   "@type": "Product",
+  |   "name": "Knockout",
+  |   "image": "https://www.lunge.com/images/products/misc/GTN300WRW/GTN300WRW.png",
+  |   "description": "Limited edition sneaker for fitness and lifestyle.",
+  |   "brand": {
+  |     "@type": "Brand",
+  |     "name": "Lunge"
+  |   },
+  |   "offers": {
+  |     "@type": "AggregateOffer",
+  |     "lowPrice": "250.00",
+  |     "highPrice": "250.00",
+  |     "priceCurrency": "EUR",
+  |     "availability": "InStock"
+  |   }
+  | }
