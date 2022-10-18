@@ -30,3 +30,11 @@ link rel="shortcut icon" type="image/x-icon" href="/images/favicon.ico"
 / prevent indexing
 - if current_page.data.sitemap_noindex
   meta name="robots" content="noindex"
+
+/ facebook meta tags
+- if current_page.data.og_image
+  meta property="og:image" content=current_page.data.og_image
+- if current_page.data.og_type
+  meta property="og:type" content=current_page.data.og_type
+- if current_page.data.og_description
+  meta property="og:description" content=current_page.data.og_description
