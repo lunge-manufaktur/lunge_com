@@ -18,6 +18,15 @@ colors:
     price: 250
 
 images:
+  -
+    path: "/images/products/misc/GTN300WRW/GTN300WRW_01.webp"
+    title: Knockout
+  -
+    path: "/images/products/misc/GTN300WRW/GTN300WRW_02.webp"
+    title: Knockout
+  -
+    path: "/images/products/misc/GTN300WRW/GTN300WRW_03.webp"
+    title: Knockout
 
 attributes:
   -

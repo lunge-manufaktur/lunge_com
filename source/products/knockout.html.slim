@@ -65,6 +65,8 @@ og_image: "https://www.lunge.com/images/products/misc/GTN300WRW/GTN300WRW.jpg"
             = partial "partials/product-features/made_in_germany"
           = partial "partials/product_attributes", locals: { product: "knockout" }
 
+= partial "products/gallery", locals: { product: data.products.knockout }
+
 .panel.panel--emphasis
   .content
     .additional-information

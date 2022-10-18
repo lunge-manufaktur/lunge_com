@@ -63,6 +63,8 @@ product: data.products.knockout
             = partial "partials/product-features/made_in_germany"
           = partial "partials/product_attributes", locals: { product: "knockout" }
 
+= partial "products/gallery", locals: { product: data.products.knockout }
+
 .panel.panel--emphasis
   .content
     .additional-information
