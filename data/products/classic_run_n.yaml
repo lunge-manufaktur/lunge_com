@@ -9,7 +9,7 @@ default_image_webp: "/images/products/classic_run/STN220RBG/STN220RBG.webp"
 walk_in_video_webm: "https://cdn.lunge.de/files/videos/products/classic_run_n/STN220LLL/STN220LLL__walk_in.webm"
 walk_in_video_mp4: "https://cdn.lunge.de/files/videos/products/classic_run_n/STN220LLL/STN220LLL__walk_in.mp4"
 price: "220,00"
-discount_price: "190,00"
+discount_price: "170,00"
 colors:
   -
     sku: "STN220RBG"

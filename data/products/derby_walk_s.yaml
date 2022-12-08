@@ -9,7 +9,7 @@ default_image_webp: "/images/products/derby_walk/GWS220NNG/GWS220NNG.webp"
 walk_in_video_webm: "https://cdn.lunge.de/files/videos/products/derby_walk_s/GWS220NNG/GWS220NNG__walk_in.webm"
 walk_in_video_mp4: "https://cdn.lunge.de/files/videos/products/derby_walk_s/GWS220NNG/GWS220NNG__walk_in.mp4"
 price: "230,00"
-discount_price: "200,00"
+discount_price: "180,00"
 colors:
   -
     sku: "GWS220NNG"

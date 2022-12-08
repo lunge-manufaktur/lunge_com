@@ -9,7 +9,7 @@ default_image_webp: "/images/products/classic_walk/GZS220LLL/GZS220LLL.webp"
 walk_in_video_webm: "https://cdn.lunge.de/files/videos/products/classic_walk_s/GLS220NNG/GLS220NNG__walk_in.webm"
 walk_in_video_mp4: "https://cdn.lunge.de/files/videos/products/classic_walk_s/GLS220NNG/GLS220NNG__walk_in.mp4"
 price: "250,00"
-discount_price: "250,00"
+discount_price: "200,00"
 colors:
   -
     sku: "GZS220LLL"

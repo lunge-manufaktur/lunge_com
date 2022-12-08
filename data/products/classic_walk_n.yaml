@@ -8,7 +8,7 @@ default_image_webp: "/images/products/classic_walk/GLN220BBG/GLN220BBG.webp"
 walk_in_video_webm: "https://cdn.lunge.de/files/videos/products/classic_walk_n/GLN220BBW/GLN220BBW__walk_in.webm"
 walk_in_video_mp4: "https://cdn.lunge.de/files/videos/products/classic_walk_n/GLN220BBW/GLN220BBW__walk_in.mp4"
 price: "230,00"
-discount_price: "200,00"
+discount_price: "180,00"
 colors:
   -
     sku: "GLN220BBG"

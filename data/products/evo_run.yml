@@ -5,7 +5,7 @@ short_description: "Unser Laufschuh für Neutralläufer, die keine Stützwirkung
 default_image_png: "/images/products/evo_run/LTS202GWH/LTS202GWH.png"
 default_image_webp: "/images/products/evo_run/LTS202GWH/LTS202GWH.webp"
 price: "180,00"
-discount_price: "90,00"
+discount_price: "50,00"
 colors:
   -
     sku: "LTS202GWH"

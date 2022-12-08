@@ -8,7 +8,7 @@ default_image_webp: "/images/products/classic_walk/GLR222WSW/GLR222WSW.webp"
 walk_in_video_webm: "https://cdn.lunge.de/files/videos/products/classic_walk_r/GLR220GGW/GLR220GGW__walk_in.webm"
 walk_in_video_mp4: "https://cdn.lunge.de/files/videos/products/classic_walk_r/GLR220GGW/GLR220GGW__walk_in.mp4"
 price: "200,00"
-discount_price: "180,00"
+discount_price: "160,00"
 colors:
   -
     sku: "GLR220CYW"
