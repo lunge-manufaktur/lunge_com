@@ -73,23 +73,41 @@ lang: de
           .card__attributes
             = partial "partials/product_attributes", locals: { product: "classic_walk" }
 
-      = link_to "/outlet/#{data.products.classic_walk_n.slug}/", class: "card", data: { product: "classic_walk_n" } do
+      = link_to "/outlet/#{data.products.classic_run.slug}/", class: "card", data: { product: "classic_run" } do
         .card__figure
           picture class="card__image-container"
-            source srcset=data.products.classic_walk_n.default_image_webp type="image/webp"
-            source srcset=data.products.classic_walk_n.default_image_webp type="image/png"
-            = image_tag data.products.classic_walk_n.default_image_webp, class: "card__image", alt: "Neo Run"
-          = partial "partials/outlet/color_options", locals: { product: "classic_walk_n" } 
+            source srcset="/images/products/classic_run/STS220BNG/STS220BNG.webp" type="image/webp"
+            source srcset="/images/products/classic_run/STS220BNG/STS220BNG.png" type="image/png"
+            = image_tag "/images/products/classic_run/STS220BNG/STS220BNG.png", class: "card__image", alt: "Classic Run S"
+          = partial "partials/outlet/color_options", locals: { product: "classic_run" } 
         .card__body
           .card__description
-            h2.marginless--top = data.products.classic_walk_n.name
+            h2.marginless--top = data.products.classic_run.name
             .badge.badge--white-on-black B-Ware
             h5
-              del = "€ #{data.products.classic_walk_n.price}"
-            h4.card__price.marginless--top = "ab € #{data.products.classic_walk_n.discount_price}"
-            p = data.products.classic_walk_n.short_description
+              del = "€ #{data.products.classic_run.price}"
+            h4.card__price.marginless--top = "ab € #{data.products.classic_run.discount_price}"
+            p = data.products.classic_run.short_description
           .card__attributes
-            = partial "partials/product_attributes", locals: { product: "classic_walk_n" }
+            = partial "partials/product_attributes", locals: { product: "classic_run" }
+
+      = link_to "/outlet/#{data.products.neo_run.slug}/", class: "card", data: { product: "neo_run" } do
+        .card__figure
+          picture class="card__image-container"
+            source srcset=data.products.neo_run.default_image_webp type="image/webp"
+            source srcset=data.products.neo_run.default_image_webp type="image/png"
+            = image_tag data.products.neo_run.default_image_webp, class: "card__image", alt: "Neo Run"
+          = partial "partials/outlet/color_options", locals: { product: "neo_run" } 
+        .card__body
+          .card__description
+            h2.marginless--top = data.products.neo_run.name
+            .badge.badge--white-on-black B-Ware
+            h5
+              del = "€ #{data.products.neo_run.price}"
+            h4.card__price.marginless--top = "ab € #{data.products.neo_run.discount_price}"
+            p = data.products.neo_run.short_description
+          .card__attributes
+            = partial "partials/product_attributes", locals: { product: "neo_run" }
 
       = link_to "/outlet/#{data.products.classic_walk_r.slug}/", class: "card", data: { product: "classic_walk_r" } do
         .card__figure
@@ -109,23 +127,23 @@ lang: de
           .card__attributes
             = partial "partials/product_attributes", locals: { product: "classic_walk_r" }
 
-      = link_to "/outlet/#{data.products.classic_run.slug}/", class: "card", data: { product: "classic_run" } do
+      = link_to "/outlet/#{data.products.classic_walk_n.slug}/", class: "card", data: { product: "classic_walk_n" } do
         .card__figure
           picture class="card__image-container"
-            source srcset="/images/products/classic_run/STS220YGG/STS220YGG.webp" type="image/webp"
-            source srcset="/images/products/classic_run/STS220YGG/STS220YGG.png" type="image/png"
-            = image_tag "/images/products/classic_run/STS220YGG/STS220YGG.png", class: "card__image", alt: "Classic Run S"
-          = partial "partials/outlet/color_options", locals: { product: "classic_run" } 
+            source srcset=data.products.classic_walk_n.default_image_webp type="image/webp"
+            source srcset=data.products.classic_walk_n.default_image_webp type="image/png"
+            = image_tag data.products.classic_walk_n.default_image_webp, class: "card__image", alt: "Neo Run"
+          = partial "partials/outlet/color_options", locals: { product: "classic_walk_n" } 
         .card__body
           .card__description
-            h2.marginless--top = data.products.classic_run.name
+            h2.marginless--top = data.products.classic_walk_n.name
             .badge.badge--white-on-black B-Ware
             h5
-              del = "€ #{data.products.classic_run.price}"
-            h4.card__price.marginless--top = "ab € #{data.products.classic_run.discount_price}"
-            p = data.products.classic_run.short_description
+              del = "€ #{data.products.classic_walk_n.price}"
+            h4.card__price.marginless--top = "ab € #{data.products.classic_walk_n.discount_price}"
+            p = data.products.classic_walk_n.short_description
           .card__attributes
-            = partial "partials/product_attributes", locals: { product: "classic_run" }
+            = partial "partials/product_attributes", locals: { product: "classic_walk_n" }
 
       = link_to "/outlet/#{data.products.classic_run_n.slug}/", class: "card", data: { product: "classic_run_n" } do
         .card__figure
@@ -162,6 +180,24 @@ lang: de
             p = data.products.classic_run_r.short_description
           .card__attributes
             = partial "partials/product_attributes", locals: { product: "classic_run_r" }
+
+      = link_to "/outlet/#{data.products.integer_walk_rebound_leder.slug}/", class: "card", data: { product: "integer_walk_rebound_leder" } do
+        .card__figure
+          picture class="card__image-container"
+            source srcset=data.products.integer_walk_rebound_leder.default_image_webp type="image/webp"
+            source srcset=data.products.integer_walk_rebound_leder.default_image_webp type="image/png"
+            = image_tag data.products.integer_walk_rebound_leder.default_image_webp, class: "card__image", alt: "Integer Walk Rebound Leder"
+          = partial "partials/outlet/color_options", locals: { product: "integer_walk_rebound_leder" }
+        .card__body
+          .card__description
+            h2.marginless--top = data.products.integer_walk_rebound_leder.name
+            .badge.badge--white-on-black B-Ware
+            h5
+              del = "€ #{data.products.integer_walk_rebound_leder.price}"
+            h4.card__price.marginless--top = "ab € #{data.products.integer_walk_rebound_leder.discount_price}"
+            p = data.products.integer_walk_rebound_leder.short_description
+          .card__attributes
+            = partial "partials/product_attributes", locals: { product: "integer_walk_rebound_leder" }
 
       = link_to "/outlet/#{data.products.integer_run_rebound.slug}/", class: "card", data: { product: "integer_run_rebound" } do
         .card__figure
@@ -216,42 +252,6 @@ lang: de
             p = data.products.integer_walk_cushion.short_description
           .card__attributes
             = partial "partials/product_attributes", locals: { product: "integer_walk_cushion" }
-
-      = link_to "/outlet/#{data.products.integer_walk_rebound_leder.slug}/", class: "card", data: { product: "integer_walk_rebound_leder" } do
-        .card__figure
-          picture class="card__image-container"
-            source srcset=data.products.integer_walk_rebound_leder.default_image_webp type="image/webp"
-            source srcset=data.products.integer_walk_rebound_leder.default_image_webp type="image/png"
-            = image_tag data.products.integer_walk_rebound_leder.default_image_webp, class: "card__image", alt: "Integer Walk Rebound Leder"
-          = partial "partials/outlet/color_options", locals: { product: "integer_walk_rebound_leder" }
-        .card__body
-          .card__description
-            h2.marginless--top = data.products.integer_walk_rebound_leder.name
-            .badge.badge--white-on-black B-Ware
-            h5
-              del = "€ #{data.products.integer_walk_rebound_leder.price}"
-            h4.card__price.marginless--top = "ab € #{data.products.integer_walk_rebound_leder.discount_price}"
-            p = data.products.integer_walk_rebound_leder.short_description
-          .card__attributes
-            = partial "partials/product_attributes", locals: { product: "integer_walk_rebound_leder" }
-
-      = link_to "/outlet/#{data.products.neo_run.slug}/", class: "card", data: { product: "neo_run" } do
-        .card__figure
-          picture class="card__image-container"
-            source srcset=data.products.neo_run.default_image_webp type="image/webp"
-            source srcset=data.products.neo_run.default_image_webp type="image/png"
-            = image_tag data.products.neo_run.default_image_webp, class: "card__image", alt: "Neo Run"
-          = partial "partials/outlet/color_options", locals: { product: "neo_run" } 
-        .card__body
-          .card__description
-            h2.marginless--top = data.products.neo_run.name
-            .badge.badge--white-on-black B-Ware
-            h5
-              del = "€ #{data.products.neo_run.price}"
-            h4.card__price.marginless--top = "ab € #{data.products.neo_run.discount_price}"
-            p = data.products.neo_run.short_description
-          .card__attributes
-            = partial "partials/product_attributes", locals: { product: "neo_run" }
 
       = link_to "/outlet/#{data.products.derby_run_s.slug}/", class: "card", data: { product: "derby_run_s" } do
         .card__figure
