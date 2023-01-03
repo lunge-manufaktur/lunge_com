@@ -80,10 +80,14 @@ lang: en
       .card__body
         .card__description
           h2.marginless--top = data.products.classic_walk_r.name
-          h4.card__price = "€ #{data.products.classic_walk_r.price}"
+          h4.card__price
+            span.card__price--highlighted = "€ #{data.products.classic_walk_r.price}"
+            del.card__price--compared_at € 200,00
           p = data.products.classic_walk_r.short_description_en
         .card__attributes
           = partial "partials/product_attributes", locals: { product: "classic_walk_r" }
+        .notice.notice--top-left
+          span Discounted
         .category__container.category__container--rebound data-tooltip=data.categories.rebound.description_en
           .category__icon R
           .category__label Rebound

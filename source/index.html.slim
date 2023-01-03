@@ -30,12 +30,16 @@ sitemap_priority: 0.9
       = image_tag "/images/products/classic_walk/GLR220BBW/GLR220BBW.png", class: "hero-product__image"
     .minor-product__content
       h2.hero-product__title = data.products.classic_walk_r.name
-      h4 = "€ #{data.products.classic_walk_r.price}"
+      h4
+        span.card__price--highlighted = "€ #{data.products.classic_walk_r.price}"
+        del.card__price--compared_at € 200,00
       p = data.products.classic_walk_r.short_description
       .minor-product__color-bar
         - data.products.classic_walk_r.colors.each do |color|
           .color-icon data-color=color.sku data-image-path=color.default_image style="background: linear-gradient(180deg, #{color.first_color}, #{color.first_color} 65%, #{color.second_color} 66%, #{color.second_color} 100%); border: 1px solid #fff" title=(color.name)
       = button_tag "Jetzt bestelllen", class: "button button--dark"
+    .notice.notice--top-left
+      span Reduziert
 
   = link_to "/products/classic_walk/", class: "minor-product__container minor-product__container--2 minor-product__container--GLS220EBG" do
     picture class="minor-product__image-container"
