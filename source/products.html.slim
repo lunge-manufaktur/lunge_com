@@ -251,10 +251,14 @@ lang: de
       .card__body
         .card__description
           h2.marginless--top = data.products.integer_run_rebound.name
-          h4.card__price = "€ #{data.products.integer_run_rebound.price}"
+          h4.card__price
+            span.card__price--highlighted = "€ #{data.products.integer_run_rebound.price}"
+            del.card__price--compared_at € 180,00
           p = data.products.integer_run_rebound.short_description
         .card__attributes
           = partial "partials/product_attributes", locals: { product: "integer_run_rebound" }
+      .notice.notice--top-left
+        span Reduziert
       .category__container.category__container--rebound data-tooltip=data.categories.rebound.description_de
         .category__icon R
         .category__label Rebound
@@ -269,10 +273,14 @@ lang: de
       .card__body
         .card__description
           h2.marginless--top = data.products.integer_walk_rebound.name
-          h4.card__price = "€ #{data.products.integer_walk_rebound.price}"
+          h4.card__price
+            span.card__price--highlighted = "€ #{data.products.integer_walk_rebound.price}"
+            del.card__price--compared_at € 200,00
           p = data.products.integer_walk_rebound.short_description
         .card__attributes
           = partial "partials/product_attributes", locals: { product: "integer_walk_rebound" }
+      .notice.notice--top-left
+        span Reduziert
       .category__container.category__container--rebound data-tooltip=data.categories.rebound.description_de
         .category__icon R
         .category__label Rebound

@@ -45,14 +45,15 @@ lang: en
       form.filter__group
         label.filter__group-label Features
         .filter__options data-filter-group=""
-          = button_tag "Vegan", type: "button", class: "filter__option", data: { toggle: '[data-filter-material~="vegan"]' }
-          = button_tag "Leather", type: "button", class: "filter__option", data: { toggle: '[data-filter-material~="leather"]' }
-          = button_tag "Extra wide fit", type: "button", class: "filter__option", data: { toggle: '[data-filter-material~="wide"]' }
+          = button_tag "Vegan", type: "button", class: "filter__option", data: { toggle: '[data-filter-features~="vegan"]' }
+          = button_tag "Leather", type: "button", class: "filter__option", data: { toggle: '[data-filter-features~="leather"]' }
+          = button_tag "Extra wide fit", type: "button", class: "filter__option", data: { toggle: '[data-filter-features~="wide"]' }
+          = button_tag "Zip closure", type: "button", class: "filter__option", data: { toggle: '[data-filter-features~="zip"]' }
           = button_tag "Any", type: "reset", class: "filter__clear-button"
 
 .content
   .card__container
-    = link_to "/en/products/#{data.products.classic_run_r.slug}/", class: "card", data: { product: "classic_run_r", "filter-usage": "running", "filter-series": "classic", "filter-sole": "neutral rebound", "filter-material": "vegan" } do
+    = link_to "/en/products/#{data.products.classic_run_r.slug}/", class: "card", data: { product: "classic_run_r", "filter-usage": "running", "filter-series": "classic", "filter-sole": "neutral rebound", "filter-features": "vegan" } do
       .card__figure
         picture class="card__image-container"
           source srcset=data.products.classic_run_r.default_image_webp type="image/webp"
@@ -70,7 +71,7 @@ lang: en
           .category__icon R
           .category__label Rebound
 
-    = link_to "/en/products/#{data.products.classic_walk_r.slug}/", class: "card", data: { product: "classic_walk_r", "filter-usage": "everyday", "filter-series": "classic", "filter-sole": "neutral rebound", "filter-material": "vegan" } do
+    = link_to "/en/products/#{data.products.classic_walk_r.slug}/", class: "card", data: { product: "classic_walk_r", "filter-usage": "everyday", "filter-series": "classic", "filter-sole": "neutral rebound", "filter-features": "vegan" } do
       .card__figure
         picture class="card__image-container"
           source srcset=data.products.classic_walk_r.default_image_webp type="image/webp"
@@ -92,7 +93,7 @@ lang: en
           .category__icon R
           .category__label Rebound
 
-    = link_to "/en/products/#{data.products.classic_run.slug}/", class: "card", data: { product: "classic_run", "filter-usage": "running", "filter-series": "classic", "filter-sole": "stability", "filter-material": "vegan" } do
+    = link_to "/en/products/#{data.products.classic_run.slug}/", class: "card", data: { product: "classic_run", "filter-usage": "running", "filter-series": "classic", "filter-sole": "stability", "filter-features": "vegan" } do
       .card__figure
         picture class="card__image-container"
           source srcset=data.products.classic_run.default_image_webp type="image/webp"
@@ -110,7 +111,7 @@ lang: en
           .category__icon S
           .category__label Stability
 
-    = link_to "/en/products/#{data.products.classic_walk.slug}/", class: "card", data: { product: "classic_walk", "filter-usage": "everyday", "filter-series": "classic", "filter-sole": "stability", "filter-material": "vegan" } do
+    = link_to "/en/products/#{data.products.classic_walk.slug}/", class: "card", data: { product: "classic_walk", "filter-usage": "everyday", "filter-series": "classic", "filter-sole": "stability", "filter-features": "vegan" } do
       .card__figure
         picture class="card__image-container"
           source srcset=data.products.classic_walk.default_image_webp type="image/webp"
@@ -128,7 +129,7 @@ lang: en
           .category__icon S
           .category__label Stability
 
-    = link_to "/en/products/#{data.products.classic_run_n.slug}/", class: "card", data: { product: "classic_run_n", "filter-usage": "running", "filter-series": "classic", "filter-sole": "neutral", "filter-material": "vegan" } do
+    = link_to "/en/products/#{data.products.classic_run_n.slug}/", class: "card", data: { product: "classic_run_n", "filter-usage": "running", "filter-series": "classic", "filter-sole": "neutral", "filter-features": "vegan" } do
       .card__figure
         picture class="card__image-container"
           source srcset=data.products.classic_run_n.default_image_webp type="image/webp"
@@ -146,7 +147,7 @@ lang: en
           .category__icon N
           .category__label Neutral
 
-    = link_to "/en/products/#{data.products.classic_walk_n.slug}/", class: "card", data: { product: "classic_walk_n", "filter-usage": "everyday", "filter-series": "classic", "filter-sole": "neutral", "filter-material": "vegan" } do
+    = link_to "/en/products/#{data.products.classic_walk_n.slug}/", class: "card", data: { product: "classic_walk_n", "filter-usage": "everyday", "filter-series": "classic", "filter-sole": "neutral", "filter-features": "vegan" } do
       .card__figure
         picture class="card__image-container"
           source srcset=data.products.classic_walk_n.default_image_webp type="image/webp"
@@ -179,12 +180,12 @@ lang: en
         .card__attributes
           = partial "partials/product_attributes", locals: { product: "classic_walk_zip_s" }
       .notice.notice--top-left
-        span Neu
+        span New
       .category__container.category__container--stability data-tooltip=data.categories.stability.description_de
         .category__icon S
         .category__label Stability
 
-    = link_to "/en/products/#{data.products.derby_run_s.slug}/", class: "card", data: { product: "derby_run_s", "filter-usage": "everyday", "filter-series": "derby", "filter-sole": "stability", "filter-material": "vegan wide" } do
+    = link_to "/en/products/#{data.products.derby_run_s.slug}/", class: "card", data: { product: "derby_run_s", "filter-usage": "everyday", "filter-series": "derby", "filter-sole": "stability", "filter-features": "vegan wide" } do
       .card__figure
         picture class="card__image-container"
           source srcset=data.products.derby_run_s.default_image_webp type="image/webp"
@@ -202,7 +203,7 @@ lang: en
           .category__icon S
           .category__label Stability
 
-    = link_to "/en/products/#{data.products.derby_walk_s.slug}/", class: "card", data: { product: "derby_walk_s", "filter-usage": "everyday", "filter-series": "derby", "filter-sole": "stability", "filter-material": "vegan wide" } do
+    = link_to "/en/products/#{data.products.derby_walk_s.slug}/", class: "card", data: { product: "derby_walk_s", "filter-usage": "everyday", "filter-series": "derby", "filter-sole": "stability", "filter-features": "vegan wide" } do
       .card__figure
         picture class="card__image-container"
           source srcset=data.products.derby_walk_s.default_image_webp type="image/webp"
@@ -240,7 +241,7 @@ lang: en
         .category__icon R
         .category__label Rebound
 
-    = link_to "/en/products/#{data.products.integer_run_rebound.slug}/", class: "card", data: { product: "integer_run_rebound", "filter-usage": "running", "filter-series": "integer", "filter-sole": "neutral rebound", "filter-material": "vegan" } do
+    = link_to "/en/products/#{data.products.integer_run_rebound.slug}/", class: "card", data: { product: "integer_run_rebound", "filter-usage": "running", "filter-series": "integer", "filter-sole": "neutral rebound", "filter-features": "vegan" } do
       .card__figure
         picture class="card__image-container"
           source srcset=data.products.integer_run_rebound.default_image_webp type="image/webp"
@@ -250,15 +251,19 @@ lang: en
       .card__body
         .card__description
           h2.marginless--top = data.products.integer_run_rebound.name
-          h4.card__price = "€ #{data.products.integer_run_rebound.price}"
+          h4.card__price
+            span.card__price--highlighted = "€ #{data.products.integer_run_rebound.price}"
+            del.card__price--compared_at € 180,00
           p = data.products.integer_run_rebound.short_description_en
         .card__attributes
           = partial "partials/product_attributes", locals: { product: "integer_run_rebound" }
+        .notice.notice--top-left
+          span Discounted
         .category__container.category__container--rebound data-tooltip=data.categories.rebound.description_en
           .category__icon R
           .category__label Rebound
 
-    = link_to "/en/products/#{data.products.integer_walk_rebound.slug}/", class: "card", data: { product: "integer_walk_rebound", "filter-usage": "everyday", "filter-series": "integer", "filter-sole": "neutral rebound", "filter-material": "vegan" } do
+    = link_to "/en/products/#{data.products.integer_walk_rebound.slug}/", class: "card", data: { product: "integer_walk_rebound", "filter-usage": "everyday", "filter-series": "integer", "filter-sole": "neutral rebound", "filter-features": "vegan" } do
       .card__figure
         picture class="card__image-container"
           source srcset=data.products.integer_walk_rebound.default_image_webp type="image/webp"
@@ -268,15 +273,19 @@ lang: en
       .card__body
         .card__description
           h2.marginless--top = data.products.integer_walk_rebound.name
-          h4.card__price = "€ #{data.products.integer_walk_rebound.price}"
+          h4.card__price
+            span.card__price--highlighted = "€ #{data.products.integer_walk_rebound.price}"
+            del.card__price--compared_at € 200,00
           p = data.products.integer_walk_rebound.short_description_en
         .card__attributes
           = partial "partials/product_attributes", locals: { product: "integer_walk_rebound" }
+        .notice.notice--top-left
+          span Discounted
         .category__container.category__container--rebound data-tooltip=data.categories.rebound.description_en
           .category__icon R
           .category__label Rebound
 
-    = link_to "/en/products/#{data.products.integer_walk_cushion.slug}/", class: "card", data: { product: "integer_walk_cushion", "filter-usage": "everyday", "filter-series": "integer", "filter-sole": "neutral", "filter-material": "vegan" } do
+    = link_to "/en/products/#{data.products.integer_walk_cushion.slug}/", class: "card", data: { product: "integer_walk_cushion", "filter-usage": "everyday", "filter-series": "integer", "filter-sole": "neutral", "filter-features": "vegan" } do
       .card__figure
         picture class="card__image-container"
           source srcset=data.products.integer_walk_cushion.default_image_webp type="image/webp"
@@ -294,7 +303,7 @@ lang: en
           .category__icon N
           .category__label Neutral
 
-    = link_to "/en/products/integer_walk_rebound_leather/", class: "card", data: { product: "integer_walk_rebound_leder", "filter-usage": "everyday", "filter-series": "integer", "filter-sole": "neutral rebound", "filter-material": "leather" } do
+    = link_to "/en/products/integer_walk_rebound_leather/", class: "card", data: { product: "integer_walk_rebound_leder", "filter-usage": "everyday", "filter-series": "integer", "filter-sole": "neutral rebound", "filter-features": "leather" } do
       .card__figure
         picture class="card__image-container"
           source srcset=data.products.integer_walk_rebound_leder.default_image_webp type="image/webp"
@@ -312,7 +321,7 @@ lang: en
           .category__icon R
           .category__label Rebound
 
-    = link_to "/en/products/#{data.products.neo_run.slug}/", class: "card", data: { product: "neo_run", "filter-usage": "running", "filter-series": "neo", "filter-sole": "neutral rebound", "filter-material": "vegan" } do
+    = link_to "/en/products/#{data.products.neo_run.slug}/", class: "card", data: { product: "neo_run", "filter-usage": "running", "filter-series": "neo", "filter-sole": "neutral rebound", "filter-features": "vegan" } do
       .card__figure
         picture class="card__image-container"
           source srcset=data.products.neo_run.default_image_webp type="image/webp"
