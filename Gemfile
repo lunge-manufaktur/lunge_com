@@ -2,7 +2,7 @@
 # the following line to use "http://" instead
 source 'https://rubygems.org'
 
-gem "middleman", "~> 4"
+gem "middleman", "~> 4.4"
 gem "middleman-autoprefixer"
 gem "middleman-blog"
 gem "middleman-livereload"
