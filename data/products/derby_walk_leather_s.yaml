@@ -1,0 +1,101 @@
+name: "Derby Walk Leather S"
+category: "Bequemschuhe"
+slug: "derby_walk_leather_s"
+short_description: "Komfortabler Bequemschuh für breite Füße aus anschmiegsamem, italienischem Nubukleder mit leichter Stützwirkung an der Innenseite."
+short_description_en: "Comfortable everyday shoes for wide feet made from high quality Italian leather."
+default_image_png: "/images/products/derby_walk_leather/GWS620SBW/GWS620SBW.png"
+default_image_webp: "/images/products/derby_walk_leather/GWS620SBW/GWS620SBW.webp"
+price: "250,00"
+colors:
+  -
+    sku: "GWS620SBW"
+    name: "Sand/Brown/Light Grey"
+    first_color: "#C89C6B"
+    second_color: "#FFFFFF"
+    default_image_png: "/images/products/derby_walk_leather/GWS620SBW/GWS620SBW.png"
+    default_image_webp: "/images/products/derby_walk_leather/GWS620SBW/GWS620SBW.webp"
+    price: 250
+  -
+    sku: "GWS620LLL"
+    name: "Lakritze"
+    first_color: "#000000"
+    second_color: "#000000"
+    default_image_png: "/images/products/derby_walk_leather/GWS620LLL/GWS620LLL.png"
+    default_image_webp: "/images/products/derby_walk_leather/GWS620LLL/GWS620LLL.webp"
+    price: 250
+  -
+    sku: "GWS620CBG"
+    name: "Chocolate/Brown/Light Grey"
+    first_color: "#6F5045"
+    second_color: "#DFDFDF"
+    default_image_png: "/images/products/derby_walk_leather/GWS620CBG/GWS620CBG.png"
+    default_image_webp: "/images/products/derby_walk_leather/GWS620CBG/GWS620CBG.webp"
+    price: 250
+  -
+    sku: "GWS620OGG"
+    name: "Olive/Green/Light Grey"
+    first_color: "#635D44"
+    second_color: "#DFDFDF"
+    default_image_png: "/images/products/derby_walk_leather/GWS620OGG/GWS620OGG.png"
+    default_image_webp: "/images/products/derby_walk_leather/GWS620OGG/GWS620OGG.webp"
+    price: 250
+
+images:
+  -
+    path: "/images/products/derby_walk_leather/GWS620CBG/GWS620CBG_01@2400px.webp"
+    title: Derby Walk Leather S (Chocolate / Brown / Light Grey)
+  -
+    path: "/images/products/derby_walk_leather/GWS620LLL/GWS620LLL_01@2400px.webp"
+    title: Derby Walk Leather S (Lakritze)
+
+attributes:
+  -
+    name: ground.name
+    start:
+      name: ground.start_name
+      value: 1
+      description: ground.start_description
+    end:
+      name: ground.end_name
+      value: 8
+      description: ground.end_description
+  -
+    name: stability.name
+    start:
+      name: stability.start_name
+      value: 5
+      description: stability.start_description
+    end:
+      name: stability.end_name
+      value: 9
+      description: stability.end_description
+  -
+    name: rebound.name
+    start:
+      name: rebound.start_name
+      value: 2
+      description: rebound.start_description
+    end:
+      name: rebound.end_name
+      value: 6
+      description: rebound.end_description
+  -
+    name: firmness.name
+    start:
+      name: firmness.start_name
+      value: 3
+      description: firmness.start_description
+    end:
+      name: firmness.end_name
+      value: 6
+      description: firmness.end_description
+  -
+    name: fit.name
+    start:
+      name: fit.start_name
+      value: 7
+      description: fit.description
+    end:
+      name: fit.end_name
+      value: 10
+      description: fit.description

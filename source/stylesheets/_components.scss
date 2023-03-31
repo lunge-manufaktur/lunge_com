@@ -26,8 +26,20 @@
   background-color: #FCE278;
 }
 
-.hero-product__container:hover {
+.hero-product__container--STS220CYG {
+  background-color: #FCE278;
+}
+
+.hero-product__container--STS220CYG:hover {
   background-color: #FDC94C;
+}
+
+.hero-product__container--GLS620NBG {
+  background-color: #DBD7C7;
+}
+
+.hero-product__container--GLS620NBG:hover {
+  background-color: #C4BEA9;
 }
 
 .hero-product {
@@ -36,21 +48,26 @@
   position: relative;
   margin-bottom: 0;
 
-  @include tablet-portrait {
+  @include tablet-landscape {
     display: flex;
     flex-direction: row;
-    align-items: center;
     justify-content: space-evenly;
+  }
+}
+
+.hero-product--centered {
+  @include tablet-portrait {
+    align-items: center;
   }
 }
 
 .hero-product__image-container {
   flex: 1 1 auto;
+  overflow: hidden;
 }
 
 .hero-product__image {
   transition: $transition-slow;
-  max-height: 75vh;
 
   @include tablet-portrait {
   }
@@ -62,7 +79,15 @@
   }
 }
 
+.hero-product__image--floating {
+  max-height: 75vh;
+}
+
+.hero-product__container:hover .hero-product__image {
+}
+
 .hero-product__title {
+  font-size: 1.6rem;
   margin-top: 0;
 }
 
@@ -71,13 +96,12 @@
 }
 
 .hero-product__content {
-  padding: $gutter-small 0;
+  padding: $gutter 0;
   transition: $transition-slow;
   width: 100%;
 
   @include tablet-portrait {
     flex: 0 0 320px;
-    padding: $gutter;
     color: $body-font-color;
     top: 2rem;
     right: 2rem;
@@ -88,9 +112,17 @@
   }
 }
 
+.hero-product__content--floating {
+  @include tablet-landscape {
+    position: absolute;
+    width: 400px;
+    background-color: #DBD7C7;
+  }
+}
+
 .hero-product__container:hover .hero-product__content {
-  @include tablet-portrait {
-    background-color: $white;
+  @include tablet-landscape {
+    background-color: #C4BEA9;
     @include lift-up();
   }
 }
@@ -147,13 +179,20 @@
   color: $white;
 }
 
+.minor-product__container--STS220CYG {
+  background-color: #FCE278;
+}
+
+.minor-product__container--STS220CYG:hover {
+  background-color: #FDC94C;
+}
+
 .minor-product__container h1:after,
 .minor-product__container h2:after {
   @include transition-slow;
 }
 
-.minor-product__container--1:hover h2:after,
-.minor-product__container--2:hover h2:after {
+.minor-product__container--1:hover h2:after {
   border-color: $white;
 }
 

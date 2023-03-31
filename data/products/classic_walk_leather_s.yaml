@@ -1,0 +1,123 @@
+name: "Classic Walk Leather S"
+category: "Bequemschuhe"
+slug: "classic_walk_leather_s"
+short_description: "Komfortabler Bequemschuh aus anschmiegsamem, italienischem Nubukleder mit leichter Stützwirkung an der Innenseite."
+short_description_en: "Comfortable everyday shoes with light pronation support made of high quality italian leather."
+default_image_png: "/images/products/classic_walk_leather/GLS620NBG/GLS620NBG.png"
+default_image_webp: "/images/products/classic_walk_leather/GLS620NBG/GLS620NBG.webp"
+price: "250,00"
+colors:
+  -
+    sku: "GLS620NBG"
+    name: "Nut/Brown/Light Grey"
+    first_color: "#B27945"
+    second_color: "#CCA37C"
+    default_image_png: "/images/products/classic_walk_leather/GLS620NBG/GLS620NBG.png"
+    default_image_webp: "/images/products/classic_walk_leather/GLS620NBG/GLS620NBG.webp"
+    price: 250
+  -
+    sku: "GLS620BSG"
+    name: "Blue/Shadow/Light Grey"
+    first_color: "#444C60"
+    second_color: "#DFDFDF"
+    default_image_png: "/images/products/classic_walk_leather/GLS620BSG/GLS620BSG.png"
+    default_image_webp: "/images/products/classic_walk_leather/GLS620BSG/GLS620BSG.webp"
+    price: 250
+  -
+    sku: "GLS620CBG"
+    name: "Chocolate/Brown/Light Grey"
+    first_color: "#694F45"
+    second_color: "#DFDFDF"
+    default_image_png: "/images/products/classic_walk_leather/GLS620CBG/GLS620CBG.png"
+    default_image_webp: "/images/products/classic_walk_leather/GLS620CBG/GLS620CBG.webp"
+    price: 250
+  -
+    sku: "GLS520SBW"
+    name: "Sand/Brown/White"
+    first_color: "#D4B086"
+    second_color: "#FFFFFF"
+    default_image_png: "/images/products/classic_walk_leather/GLS520SBW/GLS520SBW.png"
+    default_image_webp: "/images/products/classic_walk_leather/GLS520SBW/GLS520SBW.webp"
+    price: 250
+  -
+    sku: "GLS620OGW"
+    name: "Olive/Green/White"
+    first_color: "#5F583E"
+    second_color: "#FFFFFF"
+    default_image_png: "/images/products/classic_walk_leather/GLS620OGW/GLS620OGW.png"
+    default_image_webp: "/images/products/classic_walk_leather/GLS620OGW/GLS620OGW.webp"
+    price: 250
+  -
+    sku: "GLS620LLL"
+    name: "Lakritze"
+    first_color: "#000000"
+    second_color: "#000000"
+    default_image_png: "/images/products/classic_walk_leather/GLS620LLL/GLS620LLL.png"
+    default_image_webp: "/images/products/classic_walk_leather/GLS620LLL/GLS620LLL.webp"
+    price: 250
+
+images:
+  -
+    path: "/images/products/classic_walk_leather/GLS620NBG/GLS620NBG_01@2400px.webp"
+    title: Classic Walk Leather S (Nut / Brown / Light Grey)
+  -
+    path: "/images/products/classic_walk_leather/GLS620CBG/GLS620CBG_01@2400px.webp"
+    title: Classic Walk Leather S (Chocolate / Brown / Light Grey)
+  -
+    path: "/images/products/classic_walk_leather/GLS520SBW/GLS520SBW_01@2400px.webp"
+    title: Classic Walk Leather S (Sand / Brown / White)
+  -
+    path: "/images/products/classic_walk_leather/GLS620CBG/GLS620CBG_02@2400px.webp"
+    title: Classic Walk Leather S (Chocolate / Brown / Light Grey)
+
+attributes:
+  -
+    name: ground.name
+    start:
+      name: ground.start_name
+      value: 1
+      description: ground.start_description
+    end:
+      name: ground.end_name
+      value: 8
+      description: ground.end_description
+  -
+    name: stability.name
+    start:
+      name: stability.start_name
+      value: 5
+      description: stability.start_description
+    end:
+      name: stability.end_name
+      value: 9
+      description: stability.end_description
+  -
+    name: rebound.name
+    start:
+      name: rebound.start_name
+      value: 2
+      description: rebound.start_description
+    end:
+      name: rebound.end_name
+      value: 6
+      description: rebound.end_description
+  -
+    name: firmness.name
+    start:
+      name: firmness.start_name
+      value: 3
+      description: firmness.start_description
+    end:
+      name: firmness.end_name
+      value: 6
+      description: firmness.end_description
+  -
+    name: fit.name
+    start:
+      name: fit.start_name
+      value: 3
+      description: fit.description
+    end:
+      name: fit.end_name
+      value: 8
+      description: fit.description
