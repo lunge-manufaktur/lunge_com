@@ -8,23 +8,24 @@ sitemap_priority: 0.9
 lang: en
 ---
 .product-showcase__container
-  = link_to "/en/products/classic_run/", class: "hero-product__container" do
-    .content
-      .hero-product
-        picture class="hero-product__image-container"
-          source srcset="/images/products/classic_run/STS220CYG/STS220CYG@3200px.webp 3200w, /images/products/classic_run/STS220CYG/STS220CYG@2400px.webp 2400w, /images/products/classic_run/STS220CYG/STS220CYG@1600px.webp 1600w, /images/products/classic_run/STS220CYG/STS220CYG@800px.webp 800w" type="image/webp"
-          source srcset="/images/products/classic_run/STS220CYG/STS220CYG@3200px.png 3200w, /images/products/classic_run/STS220CYG/STS220CYG@2400px.png 2400w, /images/products/classic_run/STS220CYG/STS220CYG@1600px.png 1600w, /images/products/classic_run/STS220CYG/STS220CYG@800px.png 800w" type="image/png"
-          = image_tag "/images/products/classic_run/STS220CYG/STS220CYG.png", class: "hero-product__image"
-        .hero-product__content
-          h1.hero-product__title = data.products.classic_run.name
-          h3 = "€ #{data.products.classic_run.price}"
-          p = data.products.classic_run.short_description_en
+  = link_to "/en/products/classic_walk_leather_s/", class: "hero-product__container hero-product__container--GLS620NBG" do
+    .hero-product
+      picture class="hero-product__image-container"
+        source srcset="/images/products/classic_walk_leather/GLS620NBG/GLS620NBG_01@3200px.webp 3200w, /images/products/classic_walk_leather/GLS620NBG/GLS620NBG_01@2400px.webp 2400w, /images/products/classic_walk_leather/GLS620NBG/GLS620NBG_01@1200px.webp 1200w" type="image/webp"
+        = image_tag "/images/products/classic_walk_leather/GLS620NBG/GLS620NBG_01@3200px.webp", class: "hero-product__image"
+      .hero-product__content.hero-product__content--floating
+        .content
+          h1.hero-product__title = data.products.classic_walk_leather_s.name
+          h3 = "€ #{data.products.classic_walk_leather_s.price}"
+          p = data.products.classic_walk_leather_s.short_description_en
           .hero-product__color-bar
-            - data.products.classic_run.colors.each do |color|
+            - data.products.classic_walk_leather_s.colors.each do |color|
               .color-icon data-color=color.sku data-image-path=color.default_image style="background: linear-gradient(180deg, #{color.first_color}, #{color.first_color} 65%, #{color.second_color} 66%, #{color.second_color} 100%); border: 1px solid #fff" title=(color.name)
-          = button_tag "Buy now", class: "button button--dark" 
+          = button_tag "Buy now", class: "button button--dark"
+      .notice.notice--top-left
+        span New
 
-  = link_to "/products/classic_walk_r/", class: "minor-product__container minor-product__container--1 minor-product__container--GLR220BBG" do
+  = link_to "/en/products/classic_walk_r/", class: "minor-product__container minor-product__container--1 minor-product__container--GLR220BBG" do
     picture class="minor-product__image-container"
       source srcset="/images/products/classic_walk/GLR220BBW/GLR220BBW.webp" type="image/webp"
       source srcset="/images/products/classic_walk/GLR220BBW/GLR220BBW.png" type="image/png"
@@ -40,25 +41,25 @@ lang: en
           .color-icon data-color=color.sku data-image-path=color.default_image style="background: linear-gradient(180deg, #{color.first_color}, #{color.first_color} 65%, #{color.second_color} 66%, #{color.second_color} 100%); border: 1px solid #fff" title=(color.name)
       = button_tag "Buy now", class: "button button--dark"
     .notice.notice--top-left
-      span Discounted
+      span On sale
 
-  = link_to "/en/products/classic_walk/", class: "minor-product__container minor-product__container--2 minor-product__container--GLS220EBG" do
+  = link_to "/en/products/classic_run/", class: "minor-product__container minor-product__container--2 minor-product__container--STS220CYG" do
     picture class="minor-product__image-container"
-      source srcset="/images/products/classic_walk/GLS220EBG/GLS220EBG.webp" type="image/webp"
-      source srcset="/images/products/classic_walk/GLS220EBG/GLS220EBG.png" type="image/png"
-      = image_tag "/images/products/classic_walk/GLS220EBG/GLS220EBG.png", class: "hero-product__image"
+      source srcset="/images/products/classic_run/STS220CYG/STS220CYG.webp" type="image/webp"
+      source srcset="/images/products/classic_run/STS220CYG/STS220CYG.png" type="image/png"
+      = image_tag "/images/products/classic_run/STS220CYG/STS220CYG.png", class: "hero-product__image"
     .minor-product__content
-      h2.hero-product__title = data.products.classic_walk.name
-      h4 = "€ #{data.products.classic_walk.price}"
-      p = data.products.classic_walk.short_description_en
+      h2.hero-product__title = data.products.classic_run.name
+      h4 = "€ #{data.products.classic_run.price}"
+      p = data.products.classic_run.short_description_en
       .minor-product__color-bar
-        - data.products.classic_walk.colors.each do |color|
+        - data.products.classic_run.colors.each do |color|
           .color-icon data-color=color.sku data-image-path=color.default_image style="background: linear-gradient(180deg, #{color.first_color}, #{color.first_color} 65%, #{color.second_color} 66%, #{color.second_color} 100%); border: 1px solid #fff" title=(color.name)
       = button_tag "Buy now", class: "button button--dark"
 
 
   .hero-button__container
-    = link_to "Explore all products ➝", "/products/", class: "button button--hero button--dark"
+    = link_to "Explore all products ➝", "/en/products/", class: "button button--hero button--dark"
 
 .panel
   .content

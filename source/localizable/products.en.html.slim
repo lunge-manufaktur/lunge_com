@@ -129,6 +129,46 @@ lang: en
         .category__icon S
         .category__label Stability
 
+    = link_to "/products/#{data.products.classic_walk_leather_s.slug}/", class: "card", data: { product: "classic_walk_leather_s", "filter-usage": "everyday", "filter-series": "classic", "filter-sole": "stability", "filter-features": "leather" } do
+      .card__figure
+        picture class="card__image-container"
+          source srcset=data.products.classic_walk_leather_s.default_image_webp type="image/webp"
+          source srcset=data.products.classic_walk_leather_s.default_image_png type="image/png"
+          = image_tag data.products.classic_walk_leather_s.default_image_png, class: "card__image", alt: data.products.classic_walk_leather_s.name
+        = partial "partials/color_options", locals: { product: "classic_walk_leather_s" } 
+      .card__body
+        .card__description
+          h2.marginless--top = data.products.classic_walk_leather_s.name
+          h4.card__price = "€ #{data.products.classic_walk_leather_s.price}"
+          p = data.products.classic_walk_leather_s.short_description_en
+        .card__attributes
+          = partial "partials/product_attributes", locals: { product: "classic_walk_leather_s" }
+      .notice.notice--top-left
+        span New
+      .category__container.category__container--stability data-tooltip=data.categories.stability.description_en
+        .category__icon S
+        .category__label Stability
+
+    = link_to "/products/#{data.products.derby_walk_leather_s.slug}/", class: "card", data: { product: "derby_walk_leather_s", "filter-usage": "everyday", "filter-series": "derby", "filter-sole": "stability", "filter-features": "leather wide" } do
+      .card__figure
+        picture class="card__image-container"
+          source srcset=data.products.derby_walk_leather_s.default_image_webp type="image/webp"
+          source srcset=data.products.derby_walk_leather_s.default_image_png type="image/png"
+          = image_tag data.products.derby_walk_leather_s.default_image_png, class: "card__image", alt: data.products.derby_walk_leather_s.name
+        = partial "partials/color_options", locals: { product: "derby_walk_leather_s" } 
+      .card__body
+        .card__description
+          h2.marginless--top = data.products.derby_walk_leather_s.name
+          h4.card__price = "€ #{data.products.derby_walk_leather_s.price}"
+          p = data.products.derby_walk_leather_s.short_description_en
+        .card__attributes
+          = partial "partials/product_attributes", locals: { product: "derby_walk_leather_s" }
+      .notice.notice--top-left
+        span New
+      .category__container.category__container--stability data-tooltip=data.categories.stability.description_en
+        .category__icon S
+        .category__label Stability
+
     = link_to "/en/products/#{data.products.classic_run_n.slug}/", class: "card", data: { product: "classic_run_n", "filter-usage": "running", "filter-series": "classic", "filter-sole": "neutral", "filter-features": "vegan" } do
       .card__figure
         picture class="card__image-container"
