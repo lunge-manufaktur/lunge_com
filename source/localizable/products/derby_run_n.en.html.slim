@@ -1,10 +1,10 @@
 ---
-title: Classic Walk Leather S - Comfortable everyday shoes made of high quality italian leather
-description: Comfortable everyday shoes made of high quality italian leather
+title: "Derby Run N - Neutral shoes for wide feet"
+description: Neutral running shoes for extra-wide feet that don't need additional pronation support.
 section: products
-canonical_link: "https://www.lunge.com/en/products/classic_walk_leather_s/"
-url_de: "https://www.lunge.com/products/classic_walk_leather_s/"
-url_en: "https://www.lunge.com/en/products/classic_walk_leather_s/"
+canonical_link: "https://www.lunge.com/en/products/derby_run_n/"
+url_de: "https://www.lunge.com/products/derby_run_n/"
+url_en: "https://www.lunge.com/en/products/derby_run_n/"
 sitemap_priority: 0.9
 sitemap_changefreq: daily
 ---
@@ -16,23 +16,27 @@ sitemap_changefreq: daily
         .product__media-container
           .product__media-item
             img.product__image width=1200 height=1200
+          .product__media-item
+            video width="100%" autoplay="true" muted="true" loop="true" playsinline="true" preload="auto" class="darken"
+              source src=data.products.derby_run_n.walk_in_video_webm
+              source src=data.products.derby_run_n.walk_in_video_mp4
         .product__features--tablet-landscape
           ul.product-feature
+            = partial "partials/product-features/vegan"
             = partial "partials/product-features/non-toxic"
             = partial "partials/product-features/made_in_germany"
             = partial "partials/product-features/resole"
-          = partial "partials/product_attributes", locals: { product: "classic_walk_leather_s" }
+          = partial "partials/product_attributes", locals: { product: "derby_run_n" }
       .product__details
         .product__title
           = link_to "← Shop", "/en/products/", class: "link"
-          h1 Classic Walk Leather S
+          h1 Derby Run N
         .product__order-form
           .input-group
             label Women / Men
             .gender-select__container
               select.product__option.gender-select
-                option value=480153567498 Men
-                option value=480153665802 Women
+                option value=480157860106 Men / Unisex
           .input-group
             label Color
             .product-select__title-container
@@ -45,47 +49,49 @@ sitemap_changefreq: daily
               = partial "partials/size_guide_note"
           .variant-price__container
             h2.variant-price
-            small Free shipping within Germany
+            small inkl. VAT, free shipping within Germany
           .add-to-cart-button__container
-            button.buy-button.js-prevent-cart-listener.add-button Add to cart
+            button.buy-button.js-prevent-cart-listener.add-button In den Warenkorb
         .product__description
-          p
-            | Our absolute bestseller - now also available in leather! High-quality comfort shoes that offer stability for everyday life, work or leisure.
+          p The perfect running shoes for wide feet that don't need additional pronation support.
           ul.bullet-list
-            li Point-elastic, breathable upper made of supple, Italian nubuck leather
-            li Luxurious look and high quality feel
-            li Special, highly elastic, pollutant-free EVA sole with integrated pronation support, which stabilizes the roll-over movement in bent and flat feet
+            li Supple and breathable upper material
+            li Airy mesh with comfortable fit
+            li Special, highly elastic, pollutant-free EVA sole with neutral surface shaping
+            li
+              | Upper for wide feet in widths J, K and L - 
+              = link_to "learn more about shoe widths...", "/support/sizes/#width", class: "link", target: "_blank"
+            li Suitable for strong bunions due to recessed toe area
             li Clearly noticeable suspension with every step
             li Fully padded heel area
+            li Vollgestrobelter Schaft für bequemstes Abrollen vom Fuß
             li Inner lining made from finest vegan and breathable velour material to protect the skin from friction and exposure to foreign substances
             li
               = link_to "FEETALITY CLASSIC", "/en/products/feetality/", class: "link small-caps", target: "_blank" 
               |  Insole made of permanently elastic, allergy-free synthetic latex foam for highly comfortable foot bedding. They can be easily replaced by orthopedic or proprioceptive insoles
             li Grippy, profiled rubber sole for any surface
             li Can be impregnated with commercially available leather care products
-            li
-              = link_to "Resoleable", "/support/resole/", class: "link"
+            li = link_to "Resoleable", "/support/resole/", class: "link"
         .product__features--mobile
           ul.product-feature
+            = partial "partials/product-features/vegan"
             = partial "partials/product-features/non-toxic"
             = partial "partials/product-features/made_in_germany"
             = partial "partials/product-features/resole"
-          = partial "partials/product_attributes", locals: { product: "classic_walk_leather_s" }
+          = partial "partials/product_attributes", locals: { product: "derby_walk_n" }
 
-= partial "products/gallery", locals: { product: data.products.classic_walk_leather_s }
-.panel.panel--emphasis
+.panel
   .content
     .additional-information
       .specifications
         h4 Care instructions
-        p Simply brush off dried dirt. The upper can also be protected with any commercially available leather waterproofing agent for nubuck. Leather oils and waxes also work. However, this changes the appearance of nubuck towards smooth leather.
+        p Simply brush off dried dirt. The upper can also be protected with most commercially available waterproofing agent.
 
         h4 Resole
         p
-          | Renewal rather than disposal: The 
-          span.small-caps CLASSIC WALK LEATHER S
-          |  is resoleable - just like any other neutral (N) or stability model (S) from our lineup. 
+          | Renewal rather than disposal: The DERBY RUN N is, like many of our models, resoleable. 
           = link_to "Learn more...", "/support/resole/", class: "link"
+
       .add-to-cart-help
         = partial "partials/add_to_cart_help"
 
@@ -93,17 +99,17 @@ script type="application/ld+json"
   | {
   |   "@context": "http://schema.org",
   |   "@type": "Product",
-  |   "name": "Classic Walk Leather S",
-  |   "image": "https://www.lunge.com/images/products/classic_walk_leather/GLS620NBG/GLS620NBG.png",
-  |   "description": "Comfortable everyday shoes made of high quality italian leather.",
+  |   "name": "Derby Run N",
+  |   "image": "https://www.lunge.com/images/products/derby_run/SWN220RBG/SWN220RBG.png",
+  |   "description": "Neutral running shoes for extra-wide feet that don't need additional pronation support.",
   |   "brand": {
   |     "@type": "Brand",
   |     "name": "Lunge"
   |   },
   |   "offers": {
   |     "@type": "AggregateOffer",
-  |     "lowPrice": "250.00",
-  |     "highPrice": "250.00",
+  |     "lowPrice": "220.00",
+  |     "highPrice": "220.00",
   |     "priceCurrency": "EUR",
   |     "availability": "InStock"
   |   }

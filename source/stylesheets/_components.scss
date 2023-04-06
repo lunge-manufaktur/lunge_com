@@ -1344,16 +1344,12 @@ h5.testimonial__author {
 .gallery__item {
   position: relative;
   margin-right: 1rem;
-  flex: 0 0 80vw;
+  flex: 1 0 80vw;
   transition: ease-in-out 200ms;
 
   @media screen and (min-width: 1920px) {
-    flex: 0 0 40vw;;
+    flex: 1 0 40vw;;
   }
-}
-
-.gallery__item:first-child {
-  // max-width: 80vw;
 }
 
 .gallery__item:last-child {
@@ -1361,10 +1357,10 @@ h5.testimonial__author {
 }
 
 .gallery__item > img {
-  width: 80vw;
+  // width: 80vw;
 
   @media screen and (min-width: 1920px) {
-    width: 40vw;
+    // width: 40vw;
   }
 }
 

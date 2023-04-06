@@ -79,6 +79,8 @@ sitemap_changefreq: daily
 
 = partial "partials/video_card", locals: { youtube_id: "N3rYl4dBR9U", product_name: "Derby Walk S" }
 
+= partial "products/gallery", locals: { product: data.products.derby_walk_s }
+
 .panel.panel--emphasis
   .content
     .additional-information
@@ -96,7 +98,7 @@ script type="application/ld+json"
   | {
   |   "@context": "http://schema.org",
   |   "@type": "Product",
-  |   "name": "Derby Walks S",
+  |   "name": "Derby Walk S",
   |   "image": "https://www.lunge.com/images/products/derby_walk/GWS220NNG/GWS220NNG.png",
   |   "description": "Endlich Platz für mehr Fuß: Der Lunge Schuh für besonders breite Füße.",
   |   "brand": {

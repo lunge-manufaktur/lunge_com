@@ -1,0 +1,85 @@
+name: "Derby Walk N"
+category: "Bequemschuhe"
+slug: "derby_walk_n"
+short_description: "Neutraler und veganer Bequemschuh für breite Füße ohne Stützbedürfnis."
+short_description_en: "Neutral und vegan shoes für wide feet without need for additional pronation support."
+default_image_png: "/images/products/derby_walk/GWN220GGG/GWN220GGG.png"
+default_image_webp: "/images/products/derby_walk/GWN220GGG/GWN220GGG.webp"
+walk_in_video_webm: "https://cdn.lunge.de/files/videos/products/derby_walk_s/GWS220NNG/GWS220NNG__walk_in.webm"
+walk_in_video_mp4: "https://cdn.lunge.de/files/videos/products/derby_walk_s/GWS220NNG/GWS220NNG__walk_in.mp4"
+price: "230,00"
+discount_price: "180,00"
+colors:
+  -
+    sku: "GWN220GGG"
+    name: "Grey/Light Grey"
+    first_color: "#4B4B55"
+    second_color: "#DFDFDF"
+    default_image_png: "/images/products/derby_walk/GWN220GGG/GWN220GGG.png"
+    default_image_webp: "/images/products/derby_walk/GWN220GGG/GWN220GGG.webp"
+    price: 230
+  -
+    sku: "GWS220LLL"
+    name: "Lakritze"
+    first_color: "#000"
+    second_color: "#000"
+    default_image_png: "/images/products/derby_walk/GWN220LLL/GWN220LLL.png"
+    default_image_webp: "/images/products/derby_walk/GWN220LLL/GWN220LLL.webp"
+    price: 230
+
+images:
+  -
+    path: "/images/products/derby_walk/GWN220GGG/GWN220GGG_01@2400px.webp"
+    title: Derby Walk N (Grey / Light Grey)
+
+attributes:
+  -
+    name: ground.name
+    start:
+      name: ground.start_name
+      value: 1
+      description: ground.start_description
+    end:
+      name: ground.end_name
+      value: 8
+      description: ground.end_description
+  -
+    name: stability.name
+    start:
+      name: stability.start_name
+      value: 2
+      description: stability.start_description
+    end:
+      name: stability.end_name
+      value: 6
+      description: stability.end_description
+  -
+    name: rebound.name
+    start:
+      name: rebound.start_name
+      value: 2
+      description: rebound.start_description
+    end:
+      name: rebound.end_name
+      value: 6
+      description: rebound.end_description
+  -
+    name: firmness.name
+    start:
+      name: firmness.start_name
+      value: 3
+      description: firmness.start_description
+    end:
+      name: firmness.end_name
+      value: 6
+      description: firmness.end_description
+  -
+    name: fit.name
+    start:
+      name: fit.start_name
+      value: 7
+      description: fit.description
+    end:
+      name: fit.end_name
+      value: 10
+      description: fit.description

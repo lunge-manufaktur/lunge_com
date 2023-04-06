@@ -223,6 +223,44 @@ lang: de
         .category__icon S
         .category__label Stability
 
+    = link_to "/products/#{data.products.derby_walk_s.slug}/", class: "card", data: { product: "derby_walk_s", "filter-usage": "everyday", "filter-series": "derby", "filter-sole": "stability", "filter-features": "vegan wide" } do
+      .card__figure
+        picture class="card__image-container"
+          source srcset=data.products.derby_walk_s.default_image_webp type="image/webp"
+          source srcset=data.products.derby_walk_s.default_image_png type="image/png"
+          = image_tag data.products.derby_walk_s.default_image_png, class: "card__image", alt: data.products.derby_walk_s.name
+        = partial "partials/color_options", locals: { product: "derby_walk_s" } 
+      .card__body
+        .card__description
+          h2.marginless--top = data.products.derby_walk_s.name
+          h4.card__price = "€ #{data.products.derby_walk_s.price}"
+          p = data.products.derby_walk_s.short_description
+        .card__attributes
+          = partial "partials/product_attributes", locals: { product: "derby_walk_s" }
+      .category__container.category__container--stability data-tooltip=data.categories.stability.description_de
+        .category__icon S
+        .category__label Stability
+
+    = link_to "/products/#{data.products.derby_walk_n.slug}/", class: "card", data: { product: "derby_walk_n", "filter-usage": "everyday", "filter-series": "derby", "filter-sole": "neutral", "filter-features": "vegan wide" } do
+      .card__figure
+        picture class="card__image-container"
+          source srcset=data.products.derby_walk_n.default_image_webp type="image/webp"
+          source srcset=data.products.derby_walk_n.default_image_png type="image/png"
+          = image_tag data.products.derby_walk_n.default_image_png, class: "card__image", alt: data.products.derby_walk_n.name
+        = partial "partials/color_options", locals: { product: "derby_walk_n" } 
+      .card__body
+        .card__description
+          h2.marginless--top = data.products.derby_walk_n.name
+          h4.card__price = "€ #{data.products.derby_walk_n.price}"
+          p = data.products.derby_walk_n.short_description
+        .card__attributes
+          = partial "partials/product_attributes", locals: { product: "derby_walk_n" }
+      .notice.notice--top-left
+        span Neu
+      .category__container.category__container--neutral data-tooltip=data.categories.neutral.description_de
+        .category__icon N
+        .category__label Neutral
+
     = link_to "/products/#{data.products.derby_run_s.slug}/", class: "card", data: { product: "derby_run_s", "filter-usage": "running", "filter-series": "derby", "filter-sole": "stability", "filter-features": "vegan wide" } do
       .card__figure
         picture class="card__image-container"
@@ -241,23 +279,25 @@ lang: de
         .category__icon S
         .category__label Stability
 
-    = link_to "/products/#{data.products.derby_walk_s.slug}/", class: "card", data: { product: "derby_walk_s", "filter-usage": "everyday", "filter-series": "derby", "filter-sole": "stability", "filter-features": "vegan wide" } do
+    = link_to "/products/#{data.products.derby_run_n.slug}/", class: "card", data: { product: "derby_run_n", "filter-usage": "running", "filter-series": "derby", "filter-sole": "neutral", "filter-features": "vegan wide" } do
       .card__figure
         picture class="card__image-container"
-          source srcset=data.products.derby_walk_s.default_image_webp type="image/webp"
-          source srcset=data.products.derby_walk_s.default_image_png type="image/png"
-          = image_tag data.products.derby_walk_s.default_image_png, class: "card__image", alt: data.products.derby_walk_s.name
-        = partial "partials/color_options", locals: { product: "derby_walk_s" } 
+          source srcset=data.products.derby_run_n.default_image_webp type="image/webp"
+          source srcset=data.products.derby_run_n.default_image_png type="image/png"
+          = image_tag data.products.derby_run_n.default_image_png, class: "card__image", alt: data.products.derby_run_n.name
+        = partial "partials/color_options", locals: { product: "derby_run_n" } 
       .card__body
         .card__description
-          h2.marginless--top = data.products.derby_walk_s.name
-          h4.card__price = "€ #{data.products.derby_walk_s.price}"
-          p = data.products.derby_walk_s.short_description
+          h2.marginless--top = data.products.derby_run_n.name
+          h4.card__price = "€ #{data.products.derby_run_n.price}"
+          p = data.products.derby_run_n.short_description
         .card__attributes
-          = partial "partials/product_attributes", locals: { product: "derby_walk_s" }
-      .category__container.category__container--stability data-tooltip=data.categories.stability.description_de
-        .category__icon S
-        .category__label Stability
+          = partial "partials/product_attributes", locals: { product: "derby_run_n" }
+      .notice.notice--top-left
+        span Neu
+      .category__container.category__container--neutral data-tooltip=data.categories.neutral.description_de
+        .category__icon N
+        .category__label Neutral
 
     = link_to "/products/#{data.products.integer_walk_rebound_leder.slug}/", class: "card mix", data: { product: "integer_walk_rebound_leder", "filter-usage": "everyday", "filter-series": "integer", "filter-sole": "neutral rebound", "filter-features": "leather" } do
       .card__figure

@@ -64,20 +64,8 @@ outlet_colors:
 
 images:
   -
-    path: "/images/products/classic_walk/GLS220BBG/GLS220BBG_02@2400px.jpg"
-    title: Classic Walk W (Steel Blue / Light Grey)
-  -
-    path: "/images/products/classic_walk/GLS220SSG/GLS220SSG_01@2400px.jpg"
-    title: Classic Walk (Silver / Light Grey)
-  -
-    path: "/images/products/classic_walk/GLS220NNG/GLS220NNG_01@2400px.jpg"
-    title: Classic Walk (Navy / Light Grey)
-  -
-    path: "/images/products/classic_walk/GLS120NNG/GLS120NNG_01@2400px.jpg"
-    title: Classic Walk W (Navy / Light Grey)
-  -
-    path: "/images/products/classic_walk/GLS220BBG/GLS220BBG_01@2400px.jpg"
-    title: Classic Walk W (Steel Blue / Light Grey)
+    path: "/images/products/derby_walk/GWS220GGG/GWS220GGG_01@2400px.webp"
+    title: Derby Walk S (Grey / Light Grey)
 
 attributes:
   -

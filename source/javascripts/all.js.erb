@@ -294,3 +294,25 @@ $('[data-product="derby_walk_leather_s"] .color-icon').on("mouseover tap", funct
   $('[data-product=derby_walk_leather_s] .card__image-container [type="image/webp"]').attr("srcset", imagePathWEBP);
   $('[data-product=derby_walk_leather_s] .card__image').attr("src", imagePathPNG);
 });
+
+$('[data-product="derby_walk_n"] .color-icon').on("mouseover tap", function(event) {
+  event.preventDefault();
+  var sku = $(this).data("color");
+  var imagePathPNG = $(this).data("image-path-png");
+  var imagePathWEBP = $(this).data("image-path-webp");
+
+  $('[data-product=derby_walk_n] .card__image-container [type="image/png"]').attr("srcset", imagePathPNG);
+  $('[data-product=derby_walk_n] .card__image-container [type="image/webp"]').attr("srcset", imagePathWEBP);
+  $('[data-product=derby_walk_n] .card__image').attr("src", imagePathPNG);
+});
+
+$('[data-product="derby_run_n"] .color-icon').on("mouseover tap", function(event) {
+  event.preventDefault();
+  var sku = $(this).data("color");
+  var imagePathPNG = $(this).data("image-path-png");
+  var imagePathWEBP = $(this).data("image-path-webp");
+
+  $('[data-product=derby_run_n] .card__image-container [type="image/png"]').attr("srcset", imagePathPNG);
+  $('[data-product=derby_run_n] .card__image-container [type="image/webp"]').attr("srcset", imagePathWEBP);
+  $('[data-product=derby_run_n] .card__image').attr("src", imagePathPNG);
+});
