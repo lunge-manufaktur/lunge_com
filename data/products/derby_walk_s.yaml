@@ -12,8 +12,32 @@ price: "230,00"
 discount_price: "180,00"
 colors:
   -
+    sku: "GWS220EBG"
+    name: "Espresso/Light Grey"
+    first_color: "#6F5A55"
+    second_color: "#DFDFDF"
+    default_image_png: "/images/products/derby_walk/GWS220EBG/GWS220EBG.png"
+    default_image_webp: "/images/products/derby_walk/GWS220EBG/GWS220EBG.webp"
+    price: 230
+  -
+    sku: "GWS220GGG"
+    name: "Grey/Light Grey"
+    first_color: "#656670"
+    second_color: "#DFDFDF"
+    default_image_png: "/images/products/derby_walk/GWS220GGG/GWS220GGG.png"
+    default_image_webp: "/images/products/derby_walk/GWS220GGG/GWS220GGG.webp"
+    price: 230
+  -
+    sku: "GWS222WSW"
+    name: "White/Smooth"
+    first_color: "#FFF"
+    second_color: "#FFF"
+    default_image_png: "/images/products/derby_walk/GWS222WSW/GWS222WSW.png"
+    default_image_webp: "/images/products/derby_walk/GWS222WSW/GWS222WSW.webp"
+    price: 230
+  -
     sku: "GWS220NNG"
-    name: "Navy/Navy/Light Grey"
+    name: "Navy/Light Grey"
     first_color: "#31335A"
     second_color: "#DFDFDF"
     default_image_png: "/images/products/derby_walk/GWS220NNG/GWS220NNG.png"
@@ -66,6 +90,9 @@ images:
   -
     path: "/images/products/derby_walk/GWS220GGG/GWS220GGG_01@2400px.webp"
     title: Derby Walk S (Grey / Light Grey)
+  -
+    path: "/images/products/derby_walk/GWS222WSW/GWS222WSW_01@2400px.webp"
+    title: Derby Walk S (White / Smooth)
 
 attributes:
   -

@@ -7,6 +7,40 @@ url_en: "https://www.lunge.com/en/"
 sitemap_priority: 0.9
 ---
 .product-showcase__container
+  = link_to "/products/classic_walk/", class: "hero-product__container hero-product__container--GLS220CBW" do
+    .hero-product
+      picture class="hero-product__image-container"
+        source srcset="/images/products/classic_walk/GLS220CBW/GLS220CBW_01@3200px.webp 3200w, /images/products/classic_walk/GLS220CBW/GLS220CBW_01@2400px.webp 2400w, /images/products/classic_walk/GLS220CBW/GLS220CBW_01@1200px.webp 1200w" type="image/webp"
+        = image_tag "/images/products/classic_walk/GLS220CBW/GLS220CBW_01@3200px.webp", class: "hero-product__image"
+      .hero-product__content.hero-product__content--floating
+        .content
+          h1.hero-product__title = data.products.classic_walk.name
+          h3 = "€ #{data.products.classic_walk.price}"
+          p = data.products.classic_walk.short_description
+          .hero-product__color-bar
+            - data.products.classic_walk.colors.each do |color|
+              .color-icon data-color=color.sku data-image-path=color.default_image style="background: linear-gradient(180deg, #{color.first_color}, #{color.first_color} 65%, #{color.second_color} 66%, #{color.second_color} 100%); border: 1px solid #fff" title=(color.name)
+          = button_tag "Jetzt bestelllen", class: "button button--dark"
+      .notice.notice--top-left
+        span Neue Farben
+
+  = link_to "/products/classic_run_n/", class: "hero-product__container hero-product__container--STN220RNW" do
+    .hero-product
+      picture class="hero-product__image-container"
+        source srcset="/images/products/classic_run/STN220RNW/STN220RNW_01@3200px.webp 3200w, /images/products/classic_run/STN220RNW/STN220RNW_01@2400px.webp 2400w, /images/products/classic_run/STN220RNW/STN220RNW_01@1200px.webp 1200w" type="image/webp"
+        = image_tag "/images/products/classic_run/STN220RNW/STN220RNW_01@3200px.webp", class: "hero-product__image"
+      .hero-product__content.hero-product__content--inverted.hero-product__content--floating
+        .content
+          h1.hero-product__title = data.products.classic_run_n.name
+          h3 = "€ #{data.products.classic_run_n.price}"
+          p = data.products.classic_run_n.short_description
+          .hero-product__color-bar
+            - data.products.classic_run_n.colors.each do |color|
+              .color-icon data-color=color.sku data-image-path=color.default_image style="background: linear-gradient(180deg, #{color.first_color}, #{color.first_color} 65%, #{color.second_color} 66%, #{color.second_color} 100%); border: 1px solid #fff" title=(color.name)
+          = button_tag "Jetzt bestelllen", class: "button button--dark"
+      .notice.notice--top-left
+        span Neue Farben
+
   = link_to "/products/classic_walk_leather_s/", class: "hero-product__container hero-product__container--GLS620NBG" do
     .hero-product
       picture class="hero-product__image-container"

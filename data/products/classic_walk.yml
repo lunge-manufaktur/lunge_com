@@ -12,6 +12,46 @@ price: "230,00"
 discount_price: "120,00"
 colors:
   -
+    sku: "GLS220CBW"
+    name: "Cool Blue/Navy/White"
+    first_color: "#A3B2C6"
+    second_color: "#192941"
+    default_image_png: "/images/products/classic_walk/GLS220CBW/GLS220CBW.png"
+    default_image_webp: "/images/products/classic_walk/GLS220CBW/GLS220CBW.webp"
+    price: 230
+  -
+    sku: "GLS220ONW"
+    name: "Flame Orange/Navy/White"
+    first_color: "#FDA841"
+    second_color: "#343553"
+    default_image_png: "/images/products/classic_walk/GLS220ONW/GLS220ONW.png"
+    default_image_webp: "/images/products/classic_walk/GLS220ONW/GLS220ONW.webp"
+    price: 230
+  -
+    sku: "GLS220PNG"
+    name: "Banana Palm/Navy/Light Grey"
+    first_color: "#788443"
+    second_color: "#343553"
+    default_image_png: "/images/products/classic_walk/GLS220PNG/GLS220PNG.png"
+    default_image_webp: "/images/products/classic_walk/GLS220PNG/GLS220PNG.webp"
+    price: 230
+  -
+    sku: "GLS120LPW"
+    name: "Lavendar/Royal Purple/White"
+    first_color: "#CCCCDC"
+    second_color: "#502B8B"
+    default_image_png: "/images/products/classic_walk/GLS120LPW/GLS120LPW.png"
+    default_image_webp: "/images/products/classic_walk/GLS120LPW/GLS120LPW.webp"
+    price: 230
+  -
+    sku: "GLS120SBW"
+    name: "Sky Blue/Beige/White"
+    first_color: "#CEE0E7"
+    second_color: "#C9C1B7"
+    default_image_png: "/images/products/classic_walk/GLS120SBW/GLS120SBW.png"
+    default_image_webp: "/images/products/classic_walk/GLS120SBW/GLS120SBW.webp"
+    price: 230
+  -
     sku: "GLS220EBG"
     name: "Espresso/Brown/Light Grey"
     first_color: "#6F5A55"
@@ -31,7 +71,7 @@ colors:
     sku: "GLS222WSW"
     name: "White/Smooth"
     first_color: "#FFF"
-    second_color: "#DFDFDF"
+    second_color: "#FFF"
     default_image_png: "/images/products/classic_walk/GLS222WSW/GLS222WSW.png"
     default_image_webp: "/images/products/classic_walk/GLS222WSW/GLS222WSW.webp"
     price: 230
@@ -183,20 +223,35 @@ outlet_colors:
 
 images:
   -
+    path: "/images/products/classic_walk/GLS220PNG/GLS220PNG_01@2400px.webp"
+    title: Classic Walk S (Banana Palm / Navy / Light Grey)
+  -
+    path: "/images/products/classic_walk/GLS220CBW/GLS220CBW_01@2400px.webp"
+    title: Classic Walk S (Cool Blue / Navy / White)
+  -
+    path: "/images/products/classic_walk/GLS120LPW/GLS120LPW_01@2400px.webp"
+    title: Classic Walk S W (Lavendar / Royal Purple / White)
+  -
+    path: "/images/products/classic_walk/GLS220ONW/GLS220ONW_01@2400px.webp"
+    title: Classic Walk S (Flame Orange / Navy / White)
+  -
     path: "/images/products/classic_walk/GLS220BBG/GLS220BBG_02@2400px.jpg"
-    title: Classic Walk W (Steel Blue / Light Grey)
+    title: Classic Walk S (Steel Blue / Light Grey)
+  -
+    path: "/images/products/classic_walk/GLS222WSW/GLS222WSW_01@2400px.webp"
+    title: Classic Walk S (White / Smooth)
   -
     path: "/images/products/classic_walk/GLS220SSG/GLS220SSG_01@2400px.jpg"
-    title: Classic Walk (Silver / Light Grey)
+    title: Classic Walk S (Silver / Light Grey)
   -
     path: "/images/products/classic_walk/GLS220NNG/GLS220NNG_01@2400px.jpg"
-    title: Classic Walk (Navy / Light Grey)
+    title: Classic Walk S (Navy / Light Grey)
   -
     path: "/images/products/classic_walk/GLS120NNG/GLS120NNG_01@2400px.jpg"
-    title: Classic Walk W (Navy / Light Grey)
+    title: Classic Walk S W (Navy / Light Grey)
   -
     path: "/images/products/classic_walk/GLS220BBG/GLS220BBG_01@2400px.jpg"
-    title: Classic Walk W (Steel Blue / Light Grey)
+    title: Classic Walk S (Steel Blue / Light Grey)
 
 attributes:
   -

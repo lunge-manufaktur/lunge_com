@@ -4,6 +4,8 @@
   grid-gap: $gutter-small;
   grid-template-areas:
     "hero-product"
+    "hero-product-2"
+    "hero-product-3"
     "minor-product-1"
     "minor-product-2"
     "hero-button";
@@ -13,13 +15,14 @@
   @include tablet-portrait {
     grid-template-areas:
       "hero-product hero-product"
+      "hero-product-2 hero-product-2"
+      "hero-product-3 hero-product-3"
       "minor-product-1 minor-product-2"
       "hero-button hero-button";
   }
 }
 
 .hero-product__container {
-  grid-area: hero-product;
   @include transition-slow;
   display: block;
   position: relative;
@@ -34,7 +37,26 @@
   background-color: #FDC94C;
 }
 
+.hero-product__container--GLS220CBW {
+  grid-area: hero-product;
+  background-color: #C4D2E2;
+}
+
+.hero-product__container--GLS220CBW:hover {
+  background-color: #C4BEA9;
+}
+
+.hero-product__container--STN220RNW {
+  grid-area: hero-product-2;
+  background-color: #C4D2E2;
+}
+
+.hero-product__container--STN220RNW:hover {
+  background-color: #C4BEA9;
+}
+
 .hero-product__container--GLS620NBG {
+  grid-area: hero-product-3;
   background-color: #DBD7C7;
 }
 
@@ -86,19 +108,11 @@
 .hero-product__container:hover .hero-product__image {
 }
 
-h1.hero-product__title {
-  font-size: 1.8rem;
-  margin-top: 0;
-}
-
-.hero-product__title:after {
-  border-color: $almost-black;
-}
-
 .hero-product__content {
   padding: $gutter 0;
   transition: $transition-slow;
   width: 100%;
+  background-color: $mint-gray;
 
   @include tablet-portrait {
     flex: 0 0 320px;
@@ -112,19 +126,58 @@ h1.hero-product__title {
   }
 }
 
+.hero-product__content--inverted {
+  color: $white;
+}
+
 .hero-product__content--floating {
   @include tablet-landscape {
     position: absolute;
     width: 400px;
-    background-color: #DBD7C7;
   }
 }
 
 .hero-product__container:hover .hero-product__content {
   @include tablet-landscape {
-    background-color: #C4BEA9;
     @include lift-up();
   }
+}
+
+.hero-product__container--GLS220CBW .hero-product__content {
+  background-color: #C4D2E2;
+}
+
+.hero-product__container--GLS220CBW:hover .hero-product__content {
+  background-color: #ADBDCE;
+}
+
+.hero-product__container--STN220RNW .hero-product__content {
+  background-color: #e12a2c;
+}
+
+.hero-product__container--STN220RNW:hover .hero-product__content {
+  background-color: #c12b2d;
+}
+
+.hero-product__container--GLS620NBG .hero-product__content {
+  background-color: #DBD7C7;
+}
+
+.hero-product__container--GLS620NBG:hover .hero-product__content {
+  background-color: #C4BEA9;
+}
+
+h1.hero-product__title {
+  font-size: 1.8rem;
+  margin-top: 0;
+}
+
+.hero-product__title:after {
+  border-color: $almost-black;
+}
+
+.hero-product__content--inverted .hero-product__title:after {
+  border-color: $white;
 }
 
 .hero-product__container:hover .hero-product__image {
@@ -1344,12 +1397,19 @@ h5.testimonial__author {
 .gallery__item {
   position: relative;
   margin-right: 1rem;
-  flex: 1 0 80vw;
+  flex: 1 0 auto;
   transition: ease-in-out 200ms;
+  height: 50vw;
 
   @media screen and (min-width: 1920px) {
-    flex: 1 0 40vw;;
+    flex: 1 0 auto;
+    height: 60vh;
   }
+}
+
+.gallery__item:only-child {
+  height: auto;
+  width: 100%;
 }
 
 .gallery__item:last-child {
@@ -1357,7 +1417,7 @@ h5.testimonial__author {
 }
 
 .gallery__item > img {
-  // width: 80vw;
+  max-height: 100%;
 
   @media screen and (min-width: 1920px) {
     // width: 40vw;
@@ -1365,6 +1425,7 @@ h5.testimonial__author {
 }
 
 .gallery__item__title {
+  display: none;
   background-color: $background-color;
   font-size: 0.75rem;
   text-align: center;
