@@ -7,7 +7,42 @@ default_image_png: "/images/products/derby_walk_leather/GWS620SBW/GWS620SBW.png"
 default_image_webp: "/images/products/derby_walk_leather/GWS620SBW/GWS620SBW.webp"
 walk_in_video_mp4: "https://cdn.lunge.de/files/videos/products/derby_walk_leather_s/GWS620OGG/GWS620OGG__walk_in.mp4"
 price: "250,00"
+discount_price: "200,00"
 colors:
+  -
+    sku: "GWS620SBW"
+    name: "Sand/Brown/Light Grey"
+    first_color: "#C89C6B"
+    second_color: "#FFFFFF"
+    default_image_png: "/images/products/derby_walk_leather/GWS620SBW/GWS620SBW.png"
+    default_image_webp: "/images/products/derby_walk_leather/GWS620SBW/GWS620SBW.webp"
+    price: 250
+  -
+    sku: "GWS620LLL"
+    name: "Lakritze"
+    first_color: "#000000"
+    second_color: "#000000"
+    default_image_png: "/images/products/derby_walk_leather/GWS620LLL/GWS620LLL.png"
+    default_image_webp: "/images/products/derby_walk_leather/GWS620LLL/GWS620LLL.webp"
+    price: 250
+  -
+    sku: "GWS620CBG"
+    name: "Chocolate/Brown/Light Grey"
+    first_color: "#6F5045"
+    second_color: "#DFDFDF"
+    default_image_png: "/images/products/derby_walk_leather/GWS620CBG/GWS620CBG.png"
+    default_image_webp: "/images/products/derby_walk_leather/GWS620CBG/GWS620CBG.webp"
+    price: 250
+  -
+    sku: "GWS620OGG"
+    name: "Olive/Green/Light Grey"
+    first_color: "#635D44"
+    second_color: "#DFDFDF"
+    default_image_png: "/images/products/derby_walk_leather/GWS620OGG/GWS620OGG.png"
+    default_image_webp: "/images/products/derby_walk_leather/GWS620OGG/GWS620OGG.webp"
+    price: 250
+
+outlet_colors:
   -
     sku: "GWS620SBW"
     name: "Sand/Brown/Light Grey"

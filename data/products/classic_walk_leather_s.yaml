@@ -7,7 +7,58 @@ default_image_png: "/images/products/classic_walk_leather/GLS620NBG/GLS620NBG.pn
 default_image_webp: "/images/products/classic_walk_leather/GLS620NBG/GLS620NBG.webp"
 walk_in_video_mp4: "https://cdn.lunge.de/files/videos/products/classic_walk_leather_s/GLS620NBG/GLS620NBG__walk_in.mp4"
 price: "250,00"
+discount_price: "200,00"
 colors:
+  -
+    sku: "GLS620NBG"
+    name: "Nut/Brown/Light Grey"
+    first_color: "#B27945"
+    second_color: "#CCA37C"
+    default_image_png: "/images/products/classic_walk_leather/GLS620NBG/GLS620NBG.png"
+    default_image_webp: "/images/products/classic_walk_leather/GLS620NBG/GLS620NBG.webp"
+    price: 250
+  -
+    sku: "GLS620BSG"
+    name: "Blue/Shadow/Light Grey"
+    first_color: "#444C60"
+    second_color: "#DFDFDF"
+    default_image_png: "/images/products/classic_walk_leather/GLS620BSG/GLS620BSG.png"
+    default_image_webp: "/images/products/classic_walk_leather/GLS620BSG/GLS620BSG.webp"
+    price: 250
+  -
+    sku: "GLS620CBG"
+    name: "Chocolate/Brown/Light Grey"
+    first_color: "#694F45"
+    second_color: "#DFDFDF"
+    default_image_png: "/images/products/classic_walk_leather/GLS620CBG/GLS620CBG.png"
+    default_image_webp: "/images/products/classic_walk_leather/GLS620CBG/GLS620CBG.webp"
+    price: 250
+  -
+    sku: "GLS520SBW"
+    name: "Sand/Brown/White"
+    first_color: "#D4B086"
+    second_color: "#FFFFFF"
+    default_image_png: "/images/products/classic_walk_leather/GLS520SBW/GLS520SBW.png"
+    default_image_webp: "/images/products/classic_walk_leather/GLS520SBW/GLS520SBW.webp"
+    price: 250
+  -
+    sku: "GLS620OGW"
+    name: "Olive/Green/White"
+    first_color: "#5F583E"
+    second_color: "#FFFFFF"
+    default_image_png: "/images/products/classic_walk_leather/GLS620OGW/GLS620OGW.png"
+    default_image_webp: "/images/products/classic_walk_leather/GLS620OGW/GLS620OGW.webp"
+    price: 250
+  -
+    sku: "GLS620LLL"
+    name: "Lakritze"
+    first_color: "#000000"
+    second_color: "#000000"
+    default_image_png: "/images/products/classic_walk_leather/GLS620LLL/GLS620LLL.png"
+    default_image_webp: "/images/products/classic_walk_leather/GLS620LLL/GLS620LLL.webp"
+    price: 250
+
+outlet_colors:
   -
     sku: "GLS620NBG"
     name: "Nut/Brown/Light Grey"

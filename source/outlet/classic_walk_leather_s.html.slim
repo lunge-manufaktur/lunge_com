@@ -1,0 +1,105 @@
+---
+title: Classic Walk Leather S (Outlet)
+section: products
+canonical_link: "https://www.lunge.com/outlet/classic_walk_leather_s/"
+url_de: "https://www.lunge.com/outlet/classic_walk_leather_s/"
+url_en: "https://www.lunge.com/en/outlet/classic_walk_leather_s/"
+sitemap_priority: 0.1
+sitemap_changefreq: monthly
+sitemap_noindex: true
+---
+= partial "/partials/outlet/outlet_notice"
+.product__container#add-to-cart.anchor-target
+  = partial "partials/made_in_germany"
+  .content
+    .product
+      .product__figure
+        .product__media-container
+          .product__media-item
+            img.product__image width=1200 height=1200
+          .product__media-item
+            video width="100%" autoplay="true" muted="true" loop="true" playsinline="true" preload="auto"
+              source src=data.products.classic_walk_leather_s.walk_in_video_mp4
+        .product__features--tablet-landscape
+          ul.product-feature
+            = partial "partials/product-features/non-toxic"
+            = partial "partials/product-features/made_in_germany"
+            = partial "partials/product-features/resole"
+          = partial "partials/product_attributes", locals: { product: "classic_walk_leather_s" }
+      .product__details
+        .product__title
+          = link_to "← Outlet", "/outlet/", class: "link"
+          h1 Classic Walk Leather S
+          .badge.badge--white-on-black.badge--margined.animation--blur B-Ware
+        .product__order-form
+          .input-group
+            label Damen / Herren
+            .gender-select__container
+              select.product__option.gender-select
+                option value=501680767242 Herren
+                option value=501680963850 Damen
+          .input-group
+            label Farbe
+            .product-select__title-container
+            .product-select__container
+          .input-group
+            label Größe (Fusslänge / US / EUR)
+            .variant-select__container
+              select.product__option.variant-select
+            .product__sizing
+              = partial "partials/size_guide_note"
+          .variant-price__container
+            h3
+              del = "€ #{data.products.classic_walk_leather_s.price}"
+            h2.variant-price
+            small inkl. Mwst., versandkostenfrei innerhalb Deutschlands
+          .add-to-cart-button__container
+            button.buy-button.js-prevent-cart-listener.add-button In den Warenkorb
+        .product__description
+          p
+            | Unser absoluter Bestseller - jetzt auch in Leder! Hochwertiger Bequemschuh für Menschen, die in Alltag, Beruf oder Freizeit viel auf den Beinen sind und Stabilität auf der Schuhinnenseite zu schätzen wissen.
+          ul.bullet-list
+            li Punktelastisches, atmungsaktives Obermaterial aus anschmiegsamem, italienischem Nubukleder
+            li Luxuriöser Look und hochwertige Haptik
+            li Spezielle, hochelastische, schadstofffreie EVA-Sohle mit integrierter Pronationsstütze, die die Abrollbewegung bei Knick- und Senkfüßen stabilisiert
+            li Deutlich spürbare Federung bei jedem Schritt
+            li Vollgepolsterter Fersenbereich
+            li Vollgestrobelter Schaft für bequemstes Abrollen vom Fuß
+            li Feinstes veganes und atmungsaktives Velourmaterial aus Kunstfaser im Innenschuh  zum Schutz der Haut vor Reibung und Fremdstoffbelastung
+            li
+              = link_to "FEETALITY CLASSIC", "/products/feetality/", class: "link small-caps", target: "_blank" 
+              |  Einlegesohle aus dauerelastischem, allergiefreiem Kunst-Latexschaum für höchstkomfortable Fußbettung. Sie kann problemlos durch orthopädische oder propriozeptive Einlagen ersetzt werden
+            li Griffige, profilierte Gummisohle für jeden Untergrund
+            li Imprägnierbar mit handelsüblicher Lederpflege
+            li
+              = link_to "Neu besohlbar", "/support/resole/", class: "link"
+        .product__features--mobile
+          ul.product-feature
+            = partial "partials/product-features/non-toxic"
+            = partial "partials/product-features/made_in_germany"
+            = partial "partials/product-features/resole"
+          = partial "partials/product_attributes", locals: { product: "classic_walk_leather_s" }
+
+= partial "products/gallery", locals: { product: data.products.classic_walk_leather_s }
+
+= partial "partials/outlet/outlet_faq"
+
+script type="application/ld+json"
+  | {
+  |   "@context": "http://schema.org",
+  |   "@type": "Product",
+  |   "name": "Classic Walk Leather S",
+  |   "image": "https://www.lunge.com/images/products/classic_walk_leather/GLS620NBG/GLS620NBG.png",
+  |   "description": "Komfortabler Bequemschuh aus anschmiegsamem, italienischem Nubukleder mit leichter Stützwirkung.",
+  |   "brand": {
+  |     "@type": "Brand",
+  |     "name": "Lunge"
+  |   },
+  |   "offers": {
+  |     "@type": "AggregateOffer",
+  |     "lowPrice": "250.00",
+  |     "highPrice": "250.00",
+  |     "priceCurrency": "EUR",
+  |     "availability": "InStock"
+  |   }
+  | }
