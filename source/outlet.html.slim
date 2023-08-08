@@ -325,6 +325,24 @@ lang: de
           .card__attributes
             = partial "partials/product_attributes", locals: { product: "derby_run_s" }
 
+      = link_to "/outlet/#{data.products.derby_run_n.slug}/", class: "card", data: { product: "derby_run_n" } do
+        .card__figure
+          picture class="card__image-container"
+            source srcset=data.products.derby_run_n.default_image_webp type="image/webp"
+            source srcset=data.products.derby_run_n.default_image_webp type="image/png"
+            = image_tag data.products.derby_run_n.default_image_webp, class: "card__image", alt: "Neo Run"
+          = partial "partials/outlet/color_options", locals: { product: "derby_run_n" } 
+        .card__body
+          .card__description
+            h2.marginless--top = data.products.derby_run_n.name
+            .badge.badge--white-on-black B-Ware
+            h5
+              del = "€ #{data.products.derby_run_n.price}"
+            h4.card__price.marginless--top = "ab € #{data.products.derby_run_n.discount_price}"
+            p = data.products.derby_run_n.short_description
+          .card__attributes
+            = partial "partials/product_attributes", locals: { product: "derby_run_s" }
+
       = link_to "/outlet/#{data.products.derby_walk_s.slug}/", class: "card", data: { product: "derby_walk_s" } do
         .card__figure
           picture class="card__image-container"
@@ -342,6 +360,24 @@ lang: de
             p = data.products.derby_walk_s.short_description
           .card__attributes
             = partial "partials/product_attributes", locals: { product: "derby_walk_s" }
+
+      = link_to "/outlet/#{data.products.derby_walk_n.slug}/", class: "card", data: { product: "derby_walk_n" } do
+        .card__figure
+          picture class="card__image-container"
+            source srcset=data.products.derby_walk_n.default_image_webp type="image/webp"
+            source srcset=data.products.derby_walk_n.default_image_webp type="image/png"
+            = image_tag data.products.derby_walk_n.default_image_webp, class: "card__image", alt: "Neo Run"
+          = partial "partials/outlet/color_options", locals: { product: "derby_walk_n" } 
+        .card__body
+          .card__description
+            h2.marginless--top = data.products.derby_walk_n.name
+            .badge.badge--white-on-black B-Ware
+            h5
+              del = "€ #{data.products.derby_walk_n.price}"
+            h4.card__price.marginless--top = "ab € #{data.products.derby_walk_n.discount_price}"
+            p = data.products.derby_walk_n.short_description
+          .card__attributes
+            = partial "partials/product_attributes", locals: { product: "derby_walk_n" }
 
       = link_to "/outlet/#{data.products.evo_run.slug}/", class: "card", data: { product: "evo_run" } do
         .card__figure

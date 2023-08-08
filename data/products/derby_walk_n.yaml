@@ -27,6 +27,24 @@ colors:
     default_image_webp: "/images/products/derby_walk/GWN220LLL/GWN220LLL.webp"
     price: 230
 
+outlet_colors:
+  -
+    sku: "GWN220GGG"
+    name: "Grey/Light Grey"
+    first_color: "#4B4B55"
+    second_color: "#DFDFDF"
+    default_image_png: "/images/products/derby_walk/GWN220GGG/GWN220GGG.png"
+    default_image_webp: "/images/products/derby_walk/GWN220GGG/GWN220GGG.webp"
+    price: 230
+  -
+    sku: "GWN220LLL"
+    name: "Lakritze"
+    first_color: "#000"
+    second_color: "#000"
+    default_image_png: "/images/products/derby_walk/GWN220LLL/GWN220LLL.png"
+    default_image_webp: "/images/products/derby_walk/GWN220LLL/GWN220LLL.webp"
+    price: 230
+
 images:
   -
     path: "/images/products/derby_walk/GWN220GGG/GWN220GGG_01@2400px.webp"

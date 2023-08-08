@@ -27,6 +27,24 @@ colors:
     default_image_webp: "/images/products/derby_run/SWN220LLL/SWN220LLL.webp"
     price: 220
 
+outlet_colors:
+  -
+    sku: "SWN220RBG"
+    name: "Curry/Light Grey"
+    first_color: "#2463BE"
+    second_color: "#DFDFDF"
+    default_image_png: "/images/products/derby_run/SWN220RBG/SWN220RBG.png"
+    default_image_webp: "/images/products/derby_run/SWN220RBG/SWN220RBG.webp"
+    price: 220
+  -
+    sku: "SWN220LLL"
+    name: "Lakritze"
+    first_color: "#000"
+    second_color: "#000"
+    default_image_png: "/images/products/derby_run/SWN220LLL/SWN220LLL.png"
+    default_image_webp: "/images/products/derby_run/SWN220LLL/SWN220LLL.webp"
+    price: 220
+
 attributes:
   -
     name: ground.name

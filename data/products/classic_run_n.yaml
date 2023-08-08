@@ -77,6 +77,46 @@ colors:
     price: 220
 outlet_colors:
   -
+    sku: "STN220RNW"
+    name: "Haute Red/Navy/White"
+    first_color: "#DD263F"
+    second_color: "#1E3262"
+    default_image_png: "/images/products/classic_run/STN220RNW/STN220RNW.png"
+    default_image_webp: "/images/products/classic_run/STN220RNW/STN220RNW.webp"
+    price: 220
+  -
+    sku: "STN220BNG"
+    name: "Steel Blue/Navy/Light Grey"
+    first_color: "#3A3551"
+    second_color: "#656BA0"
+    default_image_png: "/images/products/classic_run/STN220BNG/STN220BNG.png"
+    default_image_webp: "/images/products/classic_run/STN220BNG/STN220BNG.webp"
+    price: 220
+  -
+    sku: "STN220YBW"
+    name: "Yellow Plum/Blue/White"
+    first_color: "#F1E377"
+    second_color: "#535B6F"
+    default_image_png: "/images/products/classic_run/STN220YBW/STN220YBW.png"
+    default_image_webp: "/images/products/classic_run/STN220YBW/STN220YBW.webp"
+    price: 220
+  -
+    sku: "STN120BYW"
+    name: "Dream Blue/Yellow/White"
+    first_color: "#BDD3E0"
+    second_color: "#FFD061"
+    default_image_png: "/images/products/classic_run/STN120BYW/STN120BYW.png"
+    default_image_webp: "/images/products/classic_run/STN120BYW/STN120BYW.webp"
+    price: 220
+  -
+    sku: "STN120GPW"
+    name: "Viridian Green/Pink/White"
+    first_color: "#17B6BD"
+    second_color: "#EC3688"
+    default_image_png: "/images/products/classic_run/STN120GPW/STN120GPW.png"
+    default_image_webp: "/images/products/classic_run/STN120GPW/STN120GPW.webp"
+    price: 220
+  -
     sku: "STN220RBG"
     name: "Royal/Blue/Light Grey"
     first_color: "#1966C9"
@@ -86,7 +126,7 @@ outlet_colors:
     price: 220
   -
     sku: "STN120RBG"
-    name: "Royal/Blue/Light Grey"
+    name: "Royal/Blue/Ligth Grey"
     first_color: "#1966C9"
     second_color: "#FB67A6"
     default_image_png: "/images/products/classic_run/STN120RBG/STN120RBG.png"

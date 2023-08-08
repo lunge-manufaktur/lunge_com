@@ -1,12 +1,12 @@
 ---
-title: "Derby Run N - Neutraler Laufschuh für breite Füße"
-description: Der neutrale Laufschuh für besonders breite Füße, die keine Stützwirkung benötigen.
+title: "Derby Walk N (Outlet)"
+description: Der Derby Walk N ist ein neutraler und veganer Bequemschuh für breite Füße ohne Stützbedürfnis.
 section: products
-canonical_link: "https://www.lunge.com/products/derby_run_n/"
-url_de: "https://www.lunge.com/products/derby_run_n/"
-url_en: "https://www.lunge.com/en/products/derby_run_n/"
-sitemap_priority: 0.9
-sitemap_changefreq: daily
+canonical_link: "https://www.lunge.com/outlet/derby_walk_n/"
+url_de: "https://www.lunge.com/outlet/derby_walk_n/"
+sitemap_priority: 0.1
+sitemap_changefreq: monthly
+sitemap_noindex: true
 ---
 .product__container#add-to-cart.anchor-target
   = partial "partials/made_in_germany"
@@ -18,25 +18,26 @@ sitemap_changefreq: daily
             img.product__image width=1200 height=1200
           .product__media-item
             video width="100%" autoplay="true" muted="true" loop="true" playsinline="true" preload="auto" class="darken"
-              source src=data.products.derby_run_n.walk_in_video_webm
-              source src=data.products.derby_run_n.walk_in_video_mp4
+              source src=data.products.derby_walk_n.walk_in_video_webm
+              source src=data.products.derby_walk_n.walk_in_video_mp4
         .product__features--tablet-landscape
           ul.product-feature
             = partial "partials/product-features/vegan"
             = partial "partials/product-features/non-toxic"
             = partial "partials/product-features/made_in_germany"
             = partial "partials/product-features/resole"
-          = partial "partials/product_attributes", locals: { product: "derby_run_n" }
+          = partial "partials/product_attributes", locals: { product: "derby_walk_n" }
       .product__details
         .product__title
-          = link_to "← Shop", "/products/", class: "link"
-          h1 Derby Run N
+          = link_to "← Outlet", "/outlet/", class: "link"
+          h1 Derby Walk N
+          .badge.badge--white-on-black.badge--margined.animation--blur.bold B-Ware
         .product__order-form
           .input-group
-            label Herren / Unisex
+            label Damen / Herren
             .gender-select__container
               select.product__option.gender-select
-                option value=480157860106 Herren / Unisex
+                option value=501812396298 Herren / Unisex
           .input-group
             label Farbe
             .product-select__title-container
@@ -48,6 +49,8 @@ sitemap_changefreq: daily
             .product__sizing
               = partial "partials/size_guide_note"
           .variant-price__container
+            h3
+              del = "€ #{data.products.derby_walk_n.price}"
             h2.variant-price
             small inkl. Mwst., versandkostenfrei innerhalb Deutschlands
           .add-to-cart-button__container
@@ -55,8 +58,7 @@ sitemap_changefreq: daily
         .product__description
           p Die beste Wahl für alle, die auf breiteren Füßen ohne Unterstützung natürlich abrollen und höchste Komfortansprüche an ihre Schuhe stellen.
           ul.bullet-list
-            li Anschmiegsames, atmungsaktives Obermaterial
-            li Stark belüftetes Mesh mit optimaler Passform
+            li Punktelastisches, atmungsaktives Obermaterial aus veganem Kunstleder
             li Spezielle, hochelastische, schadstofffreie EVA-Sohle
             li
               | Schaft für breite Füße in den Weiten J, K und L - 
@@ -80,37 +82,6 @@ sitemap_changefreq: daily
             = partial "partials/product-features/resole"
           = partial "partials/product_attributes", locals: { product: "derby_walk_n" }
 
-.panel
-  .content
-    .additional-information
-      .specifications
-        h4 Pflegehinweise
-        p Angetrockneter Schmutz lässt sich einfach abbürsten. Den Schaft können Sie aber auch mit allen handelsüblichen Imprägniermitteln schützen.
+= partial "products/gallery", locals: { product: data.products.derby_walk_n } 
 
-        h4 Neubesohlung
-        p
-          | Erneuern statt entsorgen: Der DERBY RUN N ist im Sinne der Nachhaltigkeit neu besohlbar. 
-          = link_to "Mehr erfahren...", "/support/resole/", class: "link"
-
-      .add-to-cart-help
-        = partial "partials/add_to_cart_help"
-
-script type="application/ld+json"
-  | {
-  |   "@context": "http://schema.org",
-  |   "@type": "Product",
-  |   "name": "Derby Run N",
-  |   "image": "https://www.lunge.com/images/products/derby_run/SWN220RBG/SWN220RBG.png",
-  |   "description": "Der neutrale Laufschuh für besonders breite Füße, die keine Stützwirkung benötigen.",
-  |   "brand": {
-  |     "@type": "Brand",
-  |     "name": "Lunge"
-  |   },
-  |   "offers": {
-  |     "@type": "AggregateOffer",
-  |     "lowPrice": "220.00",
-  |     "highPrice": "220.00",
-  |     "priceCurrency": "EUR",
-  |     "availability": "InStock"
-  |   }
-  | }
+= partial "partials/outlet/outlet_faq"

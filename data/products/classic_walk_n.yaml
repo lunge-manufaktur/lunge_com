@@ -61,6 +61,14 @@ colors:
 
 outlet_colors:
   -
+    sku: "GLN220EBG"
+    name: "Espresso/Brown/Light Grey"
+    first_color: "#6F5A55"
+    second_color: "#DFDFDF"
+    default_image_png: "/images/products/classic_walk/GLN220EBG/GLN220EBG.png"
+    default_image_webp: "/images/products/classic_walk/GLN220EBG/GLN220EBG.webp"
+    price: 230
+  -
     sku: "GLN220BBG"
     name: "Steel Blue/Light Grey"
     first_color: "#435982"
