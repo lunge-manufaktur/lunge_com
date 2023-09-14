@@ -347,50 +347,6 @@ lang: de
         .category__icon R
         .category__label Rebound
 
-    = link_to "/products/#{data.products.integer_run_rebound.slug}/", class: "card mix", data: { product: "integer_run_rebound", "filter-usage": "running", "filter-series": "integer", "filter-sole": "neutral rebound", "filter-features": "vegan" } do
-      .card__figure
-        picture class="card__image-container"
-          source srcset=data.products.integer_run_rebound.default_image_webp type="image/webp"
-          source srcset=data.products.integer_run_rebound.default_image_png type="image/png"
-          = image_tag data.products.integer_run_rebound.default_image_png, class: "card__image", alt: data.products.integer_run_rebound.name
-        = partial "partials/color_options", locals: { product: "integer_run_rebound" }
-      .card__body
-        .card__description
-          h2.marginless--top = data.products.integer_run_rebound.name
-          h4.card__price
-            span.card__price--highlighted = "€ #{data.products.integer_run_rebound.price}"
-            del.card__price--compared_at € 180,00
-          p = data.products.integer_run_rebound.short_description
-        .card__attributes
-          = partial "partials/product_attributes", locals: { product: "integer_run_rebound" }
-      .notice.notice--top-left
-        span Reduziert
-      .category__container.category__container--rebound data-tooltip=data.categories.rebound.description_de
-        .category__icon R
-        .category__label Rebound
-
-    = link_to "/products/#{data.products.integer_walk_rebound.slug}/", class: "card mix", data: { product: "integer_walk_rebound", "filter-usage": "everyday", "filter-series": "integer", "filter-sole": "neutral rebound", "filter-features": "vegan" } do
-      .card__figure
-        picture class="card__image-container"
-          source srcset=data.products.integer_walk_rebound.default_image_webp type="image/webp"
-          source srcset=data.products.integer_walk_rebound.default_image_png type="image/png"
-          = image_tag data.products.integer_walk_rebound.default_image_png, class: "card__image", alt: data.products.integer_walk_rebound.name
-        = partial "partials/color_options", locals: { product: "integer_walk_rebound" } 
-      .card__body
-        .card__description
-          h2.marginless--top = data.products.integer_walk_rebound.name
-          h4.card__price
-            span.card__price--highlighted = "€ #{data.products.integer_walk_rebound.price}"
-            del.card__price--compared_at € 200,00
-          p = data.products.integer_walk_rebound.short_description
-        .card__attributes
-          = partial "partials/product_attributes", locals: { product: "integer_walk_rebound" }
-      .notice.notice--top-left
-        span Reduziert
-      .category__container.category__container--rebound data-tooltip=data.categories.rebound.description_de
-        .category__icon R
-        .category__label Rebound
-
     = link_to "/products/#{data.products.integer_walk_cushion.slug}/", class: "card mix", data: { product: "integer_walk_cushion", "filter-usage": "everyday", "filter-series": "integer", "filter-sole": "neutral", "filter-features": "vegan" } do
       .card__figure
         picture class="card__image-container"
