@@ -6,7 +6,6 @@ url_de: "https://www.lunge.com/retailers/"
 url_en: "https://www.lunge.com/en/retailers/"
 section: retailers
 ---
-
 .title__container.title__container--dark
   .title__inner
     .content.content--narrow
@@ -26,8 +25,7 @@ section: retailers
     = partial "partials/shop_features"
 
 - content_for :custom_assets
-  = javascript_include_tag "https://maps.googleapis.com/maps/api/js?key=#{ENV["GOOGLE_MAPS_API_KEY"]}&callback=initMap", async: true, defer: true
-  = javascript_include_tag "/javascripts/markerclusterer.js"
+  = javascript_include_tag "https://maps.googleapis.com/maps/api/js?key=#{ENV["GOOGLE_MAPS_API_KEY"]}&loading=async&callback=initMap", async: true, defer: true
 
 javascript:
   var map;
