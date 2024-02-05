@@ -11,19 +11,23 @@ price: "38,00"
 colors:
   -
     sku: "LG105.4"
-    name: "Anthrazit"
-    name_en: "Anthrazit"
+    name: "Anthrazit / Stumpf"
+    name_en: "Anthrazit / Stumpf"
     default_image_png: "/images/products/feetality/LG105_4/LG105_4.png"
     default_image_webp: "/images/products/feetality/LG105_4/LG105_4.webp"
     first_color: "#777"
     second_color: "#777"
+  -
+    sku: "LG105.5"
+    name: "Anthrazit / Smooth"
+    name_en: "Anthrazit / Smooth"
+    default_image_webp: "/images/products/feetality/LG105_5/LG105_5_01.webp"
+    first_color: "#444"
+    second_color: "#444"
 images:
   -
-    path: "/images/products/feetality/LG105_03.jpg"
-    title: "Feetality Einlegesohle (Rot / Glatt)"
-  -
-    path: "/images/products/feetality/LG105_02.jpg"
-    title: "Feetality Einlegesohle (Schwarz / Glatt)"
+    path: "/images/products/feetality/LG105_5/LG105_5_02.webp"
+    title: "Feetality Einlegesohle (Anthrazit / Smooth)"
   -
     path: "/images/products/feetality/LG105_4/LG105_4_01.jpg"
     title: "Feetality Einlegesohle (Anthrazit / Stumpf)"
