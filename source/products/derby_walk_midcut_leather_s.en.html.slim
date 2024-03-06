@@ -1,0 +1,115 @@
+---
+title: "Derby Walk MidCut Leather S - Comfortable Midcut shoes for wide feet made from high quality Italian leather"
+description: Comfortable Midcut shoes for wide feet made from high quality Italian leather.
+section: products
+canonical_link: "https://www.lunge.com/en/products/derby_walk_midcut_leather_s/"
+url_de: "https://www.lunge.com/products/derby_walk_midcut_leather_s/"
+url_en: "https://www.lunge.com/en/products/derby_walk_midcut_leather_s/"
+sitemap_priority: 0.9
+sitemap_changefreq: daily
+---
+.product__container#add-to-cart.anchor-target
+  = partial "partials/made_in_germany"
+  .content
+    .product
+      .product__figure
+        .product__media-container
+          .product__media-item
+            img.product__image width=1200 height=1200
+        .product__features--tablet-landscape
+          ul.product-feature
+            = partial "partials/product-features/non-toxic"
+            = partial "partials/product-features/made_in_germany"
+            = partial "partials/product-features/resole"
+          = partial "partials/product_attributes", locals: { product: "derby_walk_leather_s" }
+      .product__details
+        .product__title
+          = link_to "← Shop", "/en/products/", class: "link"
+          h1 Derby Walk MidCut Leather S
+        .product__order-form
+          .input-group
+            label Women / Men
+            .gender-select__container
+              select.product__option.gender-select
+                option value=511411716362 Men / Unisex
+          .input-group
+            label Color
+            .product-select__title-container
+            .product-select__container
+          .input-group
+            label Size (Recommended feet length / US / EUR)
+            .variant-select__container
+              select.product__option.variant-select
+            .product__sizing
+              = partial "partials/size_guide_note"
+          .variant-price__container
+            h2.variant-price
+            small incl. VAT / Free shipping with Germany
+          .add-to-cart-button__container
+            button.buy-button.js-prevent-cart-listener.add-button Add to cart
+        .product__description
+          p 
+            | The first boot by 
+            span.small-caps LUNGE
+            | . Based on the popular 
+            span.small-caps DERBY WALK
+            | , known for its generous fit, we have developed a boot that offers plenty of space and comfort even in this MidCut style. While the wide collar foam gently hugs the ankle, the notch at the heel relieves pressure on the Achilles tendon even during the longest hikes. Meanwhile, the tongue protects against rain, and a membrane between the upper leather and lining material prevents less moisture from entering the shoe without compromising the comfort of the snug material.
+          ul.bullet-list
+            li Point-elastic, breathable upper made of supple, Italian nubuck leather
+            li Luxurious look and high quality feel
+            li Special, highly elastic, pollutant-free EVA sole with integrated pronation support, which stabilizes the roll-over movement in bent and flat feet
+            li Notch in the heel area to protect the Achilles tendon.
+            li Water-repellent membrane between the upper leather and lining material to allow less moisture to penetrate.
+            li Suitable for strong bunions due to recessed toe area
+            li Clearly noticeable suspension with every step
+            li Fully padded heel area
+            li Inner lining made from finest vegan and breathable velour material to protect the skin from friction and exposure to foreign substances
+            li
+              = link_to "FEETALITY CLASSIC", "/en/products/feetality/", class: "link small-caps", target: "_blank" 
+              |  Insole made of permanently elastic, allergy-free synthetic latex foam for highly comfortable foot bedding. They can be easily replaced by orthopedic or proprioceptive insoles
+            li Grippy, profiled rubber sole for any surface
+            li Can be impregnated with commercially available leather care products
+            li = link_to "Resoleable", "/support/resole/", class: "link"
+        .product__features--mobile
+          ul.product-feature
+            = partial "partials/product-features/non-toxic"
+            = partial "partials/product-features/made_in_germany"
+            = partial "partials/product-features/resole"
+          = partial "partials/product_attributes", locals: { product: "derby_walk_leather_s" }
+
+.panel.panel--emphasis
+  .content
+    .additional-information
+      .specifications
+        h4 Care instructions
+        p Simply brush off dried dirt. The upper can also be protected with any commercially available leather waterproofing agent for nubuck. Leather oils and waxes also work. However, this changes the appearance of nubuck towards smooth leather.
+
+        h4 Resole
+        p
+          | Renewal rather than disposal: All shoes in our 
+          span.small-caps DERBY WALK
+          | -range are resoleable. 
+          = link_to "Learn more...", "/support/resole/", class: "link"
+
+      .add-to-cart-help
+        = partial "partials/add_to_cart_help"
+
+script type="application/ld+json"
+  | {
+  |   "@context": "http://schema.org",
+  |   "@type": "Product",
+  |   "name": "Derby Walk MidCut Leather S",
+  |   "image": "https://www.lunge.com/images/products/derby_walk_midcut_leather/GWS800CBG/GWS800CBG.png",
+  |   "description": "Comfortable midcut shoes for wide feet made from high quality Italian leather.",
+  |   "brand": {
+  |     "@type": "Brand",
+  |     "name": "Lunge"
+  |   },
+  |   "offers": {
+  |     "@type": "AggregateOffer",
+  |     "lowPrice": "279.90",
+  |     "highPrice": "279.90",
+  |     "priceCurrency": "EUR",
+  |     "availability": "InStock"
+  |   }
+  | }

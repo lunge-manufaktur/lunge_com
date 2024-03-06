@@ -1,0 +1,82 @@
+name: "Derby Walk MidCut Leather S"
+category: "Bequemschuhe"
+slug: "derby_walk_midcut_leather_s"
+short_description: "Komfortabler MidCut-Stiefel für breite Füße aus italienischem Nubukleder mit leichter Stützwirkung."
+short_description_en: "Comfortable everyday MidCut Boots for wide feet made from high quality Italian leather."
+default_image_png: "/images/products/derby_walk_midcut_leather/GWS800CBG/GWS800CBG.png"
+default_image_webp: "/images/products/derby_walk_midcut_leather/GWS800CBG/GWS800CBG.webp"
+price: "279,90"
+discount_price: "279,90"
+colors:
+  -
+    sku: "GWS800CBG"
+    name: "Chocolate/Brown/Light Grey"
+    first_color: "#6F5045"
+    second_color: "#DFDFDF"
+    default_image_png: "/images/products/derby_walk_midcut_leather/GWS800CBG/GWS800CBG.png"
+    default_image_webp: "/images/products/derby_walk_midcut_leather/GWS800CBG/GWS800CBG.webp"
+    price: 279,90
+
+outlet_colors:
+  -
+      sku: "GWS800CBG"
+      name: "Chocolate/Brown/Light Grey"
+      first_color: "#6F5045"
+      second_color: "#DFDFDF"
+      default_image_png: "/images/products/derby_walk_midcut_leather/GWS800CBG/GWS800CBG.png"
+      default_image_webp: "/images/products/derby_walk_midcut_leather/GWS800CBG/GWS800CBG.webp"
+      price: 279,90
+
+images:
+
+attributes:
+  -
+    name: ground.name
+    start:
+      name: ground.start_name
+      value: 1
+      description: ground.start_description
+    end:
+      name: ground.end_name
+      value: 8
+      description: ground.end_description
+  -
+    name: stability.name
+    start:
+      name: stability.start_name
+      value: 5
+      description: stability.start_description
+    end:
+      name: stability.end_name
+      value: 9
+      description: stability.end_description
+  -
+    name: rebound.name
+    start:
+      name: rebound.start_name
+      value: 2
+      description: rebound.start_description
+    end:
+      name: rebound.end_name
+      value: 6
+      description: rebound.end_description
+  -
+    name: firmness.name
+    start:
+      name: firmness.start_name
+      value: 3
+      description: firmness.start_description
+    end:
+      name: firmness.end_name
+      value: 6
+      description: firmness.end_description
+  -
+    name: fit.name
+    start:
+      name: fit.start_name
+      value: 7
+      description: fit.description
+    end:
+      name: fit.end_name
+      value: 10
+      description: fit.description
