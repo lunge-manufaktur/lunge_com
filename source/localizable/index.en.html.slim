@@ -8,6 +8,23 @@ sitemap_priority: 0.9
 lang: en
 ---
 .product-showcase__container
+  = link_to "/en/products/derby_walk_midcut_leather_s/", class: "hero-product__container hero-product__container--GWS800CBG" do
+    .hero-product
+      picture class="hero-product__image-container"
+        source srcset="/images/products/derby_walk_midcut_leather/GWS800CBG/GWS800CBG.webp 3200w, /images/products/derby_walk_midcut_leather/GWS800CBG/GWS800CBG.webp 2400w, /images/products/derby_walk_midcut_leather/GWS800CBG/GWS800CBG.webp 1200w" type="image/webp"
+        = image_tag "/images/products/derby_walk_midcut_leather/GWS800CBG/GLS220CBW.webp", class: "hero-product__image"
+      .hero-product__content
+        .content
+          h1.hero-product__title = data.products.derby_walk_midcut_leather_s.name
+          h3 = "€ #{data.products.derby_walk_midcut_leather_s.price}"
+          p = data.products.derby_walk_midcut_leather_s.short_description_en
+          .hero-product__color-bar
+            - data.products.derby_walk_midcut_leather_s.colors.each do |color|
+              .color-icon data-color=color.sku data-image-path=color.default_image style="background: linear-gradient(180deg, #{color.first_color}, #{color.first_color} 65%, #{color.second_color} 66%, #{color.second_color} 100%); border: 1px solid #fff" title=(color.name)
+          = button_tag "Buy now", class: "button button--dark"
+      .notice.notice--top-left
+        span Neu
+
   = link_to "/en/products/classic_walk/", class: "hero-product__container hero-product__container--GLS220CBW" do
     .hero-product
       picture class="hero-product__image-container"
@@ -22,8 +39,6 @@ lang: en
             - data.products.classic_walk.colors.each do |color|
               .color-icon data-color=color.sku data-image-path=color.default_image style="background: linear-gradient(180deg, #{color.first_color}, #{color.first_color} 65%, #{color.second_color} 66%, #{color.second_color} 100%); border: 1px solid #fff" title=(color.name)
           = button_tag "Buy now", class: "button button--dark"
-      .notice.notice--top-left
-        span New colors
 
   = link_to "/en/products/classic_run_n/", class: "hero-product__container hero-product__container--STN220RNW" do
     .hero-product
@@ -39,25 +54,6 @@ lang: en
             - data.products.classic_run_n.colors.each do |color|
               .color-icon data-color=color.sku data-image-path=color.default_image style="background: linear-gradient(180deg, #{color.first_color}, #{color.first_color} 65%, #{color.second_color} 66%, #{color.second_color} 100%); border: 1px solid #fff" title=(color.name)
           = button_tag "Buy now", class: "button button--dark"
-      .notice.notice--top-left
-        span New colors
-
-  = link_to "/en/products/classic_walk_leather_s/", class: "hero-product__container hero-product__container--GLS620NBG" do
-    .hero-product
-      picture class="hero-product__image-container"
-        source srcset="/images/products/classic_walk_leather/GLS620NBG/GLS620NBG_01@3200px.webp 3200w, /images/products/classic_walk_leather/GLS620NBG/GLS620NBG_01@2400px.webp 2400w, /images/products/classic_walk_leather/GLS620NBG/GLS620NBG_01@1200px.webp 1200w" type="image/webp"
-        = image_tag "/images/products/classic_walk_leather/GLS620NBG/GLS620NBG_01@3200px.webp", class: "hero-product__image"
-      .hero-product__content.hero-product__content--floating
-        .content
-          h1.hero-product__title = data.products.classic_walk_leather_s.name
-          h3 = "€ #{data.products.classic_walk_leather_s.price}"
-          p = data.products.classic_walk_leather_s.short_description_en
-          .hero-product__color-bar
-            - data.products.classic_walk_leather_s.colors.each do |color|
-              .color-icon data-color=color.sku data-image-path=color.default_image style="background: linear-gradient(180deg, #{color.first_color}, #{color.first_color} 65%, #{color.second_color} 66%, #{color.second_color} 100%); border: 1px solid #fff" title=(color.name)
-          = button_tag "Buy now", class: "button button--dark"
-      .notice.notice--top-left
-        span New
 
   = link_to "/en/products/classic_walk_r/", class: "minor-product__container minor-product__container--1 minor-product__container--GLR220BBG" do
     picture class="minor-product__image-container"

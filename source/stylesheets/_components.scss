@@ -37,8 +37,13 @@
   background-color: #FDC94C;
 }
 
-.hero-product__container--GLS220CBW {
+.hero-product__container--GWS800CBG {
   grid-area: hero-product;
+  background-color: #DBD7C7;
+}
+
+.hero-product__container--GLS220CBW {
+  grid-area: hero-product-2;
   background-color: #C4D2E2;
 }
 
@@ -47,7 +52,7 @@
 }
 
 .hero-product__container--STN220RNW {
-  grid-area: hero-product-2;
+  grid-area: hero-product-3;
   background-color: #C4D2E2;
 }
 
@@ -56,7 +61,6 @@
 }
 
 .hero-product__container--GLS620NBG {
-  grid-area: hero-product-3;
   background-color: #DBD7C7;
 }
 
@@ -90,6 +94,7 @@
 
 .hero-product__image {
   transition: $transition-slow;
+  margin: auto;
 
   @include tablet-portrait {
   }
@@ -137,10 +142,14 @@
   }
 }
 
-.hero-product__container:hover .hero-product__content {
+.hero-product__container:hover .hero-product__content--floating {
   @include tablet-landscape {
     @include lift-up();
   }
+}
+
+.hero-product__container--GWS800CBG .hero-product__content {
+  background-color: #EEECE2;
 }
 
 .hero-product__container--GLS220CBW .hero-product__content {
