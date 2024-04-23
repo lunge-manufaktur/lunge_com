@@ -2358,7 +2358,6 @@ li.tab-title:not(tab-title--active):hover {
 
   @include tablet-portrait {
     margin: 0 -2rem;
-    scrollbar-width: auto;
   }
 
   @include tablet-landscape {
