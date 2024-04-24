@@ -29,6 +29,11 @@
   background-color: #FCE278;
 }
 
+.hero-product__container--LTN220GSW {
+  grid-area: hero-product;
+  background-color: #90C2CA;
+}
+
 .hero-product__container--STS220CYG {
   background-color: #FCE278;
 }
@@ -37,9 +42,12 @@
   background-color: #FDC94C;
 }
 
-.hero-product__container--GWS800CBG {
-  grid-area: hero-product;
+.minor-product__container--GWS800CBG {
   background-color: #DBD7C7;
+}
+
+.minor-product__container--GWS800CBG:hover {
+  background-color: #EEECE2;
 }
 
 .hero-product__container--GLS220CBW {
@@ -51,13 +59,16 @@
   background-color: #C4BEA9;
 }
 
-.hero-product__container--STN220RNW {
+.hero-product__container--STN220RNW,
+.minor-product__container--STN220RNW {
   grid-area: hero-product-3;
-  background-color: #C4D2E2;
+  background-color: #e12a2c;
+  color: $white;
 }
 
-.hero-product__container--STN220RNW:hover {
-  background-color: #C4BEA9;
+.hero-product__container--STN220RNW:hover,
+.minor-product__container--STN220RNW:hover {
+  background-color: #c12b2d;
 }
 
 .hero-product__container--GLS620NBG {
@@ -131,7 +142,8 @@
   }
 }
 
-.hero-product__content--inverted {
+.hero-product__content--inverted,
+.minor-product__content--inverted {
   color: $white;
 }
 
@@ -147,6 +159,11 @@
     @include lift-up();
   }
 }
+
+.hero-product__container--LTN220GSW .hero-product__content {
+  background-color: #B8DCE1;
+}
+
 
 .hero-product__container--GWS800CBG .hero-product__content {
   background-color: #EEECE2;
@@ -185,7 +202,8 @@ h1.hero-product__title {
   border-color: $almost-black;
 }
 
-.hero-product__content--inverted .hero-product__title:after {
+.hero-product__content--inverted .hero-product__title:after,
+.minor-product__content--inverted .hero-product__title:after {
   border-color: $white;
 }
 
@@ -252,10 +270,6 @@ h1.hero-product__title {
 .minor-product__container h1:after,
 .minor-product__container h2:after {
   @include transition-slow;
-}
-
-.minor-product__container--1:hover h2:after {
-  border-color: $white;
 }
 
 .minor-product__image-container {

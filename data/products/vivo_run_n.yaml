@@ -1,0 +1,96 @@
+name: "Vivo Run N"
+category: "Laufschuhe"
+slug: "vivo_run_n"
+short_description: "Dynamischer Laufschuh mit effizienter Rückfederung und erstklassigem Abrollverhalten."
+short_description_en: "Dynamic running shoes with efficient rebound and smooth roll over behavior."
+default_image_png: "/images/products/vivo_run/LTN220SSW/LTN220SSW.png"
+default_image_webp: "/images/products/vivo_run/LTN220SSW/LTN220SSW.webp"
+price: "180,00"
+discount_price: "180,00"
+colors:
+  -
+    sku: "LTN220GGW"
+    name: "Grey/White"
+    first_color: "#655B5B"
+    second_color: "#FFFFFF"
+    default_image_png: "/images/products/vivo_run/LTN220GGW/LTN220GGW.png"
+    default_image_webp: "/images/products/vivo_run/LTN220GGW/LTN220GGW.webp"
+    price: 180
+  -
+    sku: "LTN220GSW"
+    name: "Green/Silver/White"
+    first_color: "#86D559"
+    second_color: "#A8A7A9"
+    default_image_png: "/images/products/vivo_run/LTN220GSW/LTN220GSW.png"
+    default_image_webp: "/images/products/vivo_run/LTN220GSW/LTN220GSW.webp"
+    price: 180
+  -
+    sku: "LTN220NNW"
+    name: "Navy/White"
+    first_color: "#14477D"
+    second_color: "#FFFFFF"
+    default_image_png: "/images/products/vivo_run/LTN220NNW/LTN220NNW.png"
+    default_image_webp: "/images/products/vivo_run/LTN220NNW/LTN220NNW.webp"
+    price: 180
+  -
+    sku: "LTN220SSW"
+    name: "Silver/White"
+    first_color: "#D2CED3"
+    second_color: "#FFFFFF"
+    default_image_png: "/images/products/vivo_run/LTN220SSW/LTN220SSW.png"
+    default_image_webp: "/images/products/vivo_run/LTN220SSW/LTN220SSW.webp"
+    price: 180
+
+images:
+
+attributes:
+  -
+    name: ground.name
+    start:
+      name: ground.start_name
+      value: 1
+      description: ground.start_description
+    end:
+      name: ground.end_name
+      value: 8
+      description: ground.end_description
+  -
+    name: stability.name
+    start:
+      name: stability.start_name
+      value: 2
+      description: stability.start_description
+    end:
+      name: stability.end_name
+      value: 6
+      description: stability.end_description
+  -
+    name: rebound.name
+    start:
+      name: rebound.start_name
+      value: 3
+      description: rebound.start_description
+    end:
+      name: rebound.end_name
+      value: 10
+      description: rebound.end_description
+  -
+    name: firmness.name
+    start:
+      name: firmness.start_name
+      value: 1
+      description: firmness.start_description
+    end:
+      name: firmness.end_name
+      value: 6
+      description: firmness.end_description
+  -
+    name: fit.name
+    start:
+      name: fit.start_name
+      value: 3
+      description: fit.description
+    end:
+      name: fit.end_name
+      value: 8
+      description: fit.description

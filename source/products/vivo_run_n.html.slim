@@ -1,0 +1,119 @@
+---
+title: "Vivo Run N"
+description: Dynamischer Laufschuh mit effizienter Rückfederung und erstklassigem Abrollverhalten.
+section: products
+canonical_link: "https://www.lunge.com/products/vivo_run_n/"
+url_de: "https://www.lunge.com/products/vivo_run_n/"
+url_en: "https://www.lunge.com/en/products/vivo_run_n/"
+sitemap_priority: 0.9
+sitemap_changefreq: daily
+---
+.product__container#add-to-cart.anchor-target
+  = partial "partials/made_in_germany"
+  .content
+    .product
+      .product__figure
+        .product__media-container
+          .product__media-item
+            img.product__image width=1200 height=1200
+        .product__features--tablet-landscape
+          ul.product-feature
+            = partial "partials/product-features/vegan"
+            = partial "partials/product-features/non-toxic"
+            = partial "partials/product-features/made_in_germany"
+          = partial "partials/product_attributes", locals: { product: "vivo_run_n" }
+      .product__details
+        .product__title
+          = link_to "← Shop", "/products/", class: "link"
+          h1 Vivo Run N
+        .product__order-form
+          .input-group
+            label Damen / Herren
+            .gender-select__container
+              select.product__option.gender-select
+                option value=499651215626 Herren
+                option value=499651182858 Damen
+          .input-group
+            label Farbe
+            .product-select__title-container
+            .product-select__container
+          .input-group
+            label Größe (Fusslänge / US / EUR)
+            .variant-select__container
+              select.product__option.variant-select
+            .product__sizing
+              = partial "partials/size_guide_note"
+          .variant-price__container
+            h2.variant-price
+            small inkl. Mwst., versandkostenfrei innerhalb Deutschlands
+          .add-to-cart-button__container
+            button.buy-button.js-prevent-cart-listener.add-button In den Warenkorb
+        .product__description
+          p
+            | Nach drei Jahren intensiver Entwicklungsarbeit präsentieren wir Ihnen unseren neuen Laufschuh: 
+            span.small-caps VIVO
+            |  - die Vereinigung von kompromissloser Funktionalität mit dynamischem Design! Die Mittelsohle besteht aus einer 
+            span.small-caps LUNGE
+            | -eigenen leistungsstarken EVA-Sohlenmixtur, die unseren Erfahrungen und hohen Anforderungen an Dämpfung/Response und Rückstellkräften/Rebound gerecht wird.
+          p
+            | In Bewegung zeigt der 
+            span.small-caps VIVO
+            |  seine herausragenden Eigenschaften. Eine harmonische Abrollbewegung mit hervorragenden Rückfederungswerten ermöglicht es Ihnen, jeden festen Untergrund spielend zu meistern. Die kraftvolle Abstoßbewegung und der komfortable Aufprall, die in dieser Kombination bisher unerreicht waren, bestätigen den luxuriösen ersten Eindruck beim Anziehen des Schuhs. Der 
+            span.small-caps VIVO
+            |  passt sich jedem Laufstil an und kombiniert durch seine Mittelsohle auf außergewöhnlicher Art Volumen und Leicht- gewichtigkeit in einer bisher nie dagewesenen Form mit einem Gewicht von lediglich 312 Gramm. Endlich können Leichtigkeit und eine optimale Belastung der Beine bei jedem Lauftempo kombiniert werden.
+          p
+            | Der weiterentwickelte Schaft und die 
+            span.small-caps LUNGE FEETALITY 
+            |  Rebound Innensohle aus leichtem EVA-Schaum für noch mehr Running-Performance lassen Ihren Fuß und den 
+            span.small-caps VIVO 
+            |  zu einer Einheit verschmelzen.
+        .product__features--mobile
+          ul.product-feature
+            = partial "partials/product-features/non-toxic"
+            = partial "partials/product-features/made_in_germany"
+            = partial "partials/product-features/resole"
+          = partial "partials/product_attributes", locals: { product: "derby_walk_leather_s" }
+
+.panel
+  .content
+    .additional-information
+      .specifications
+        h4 Technische Daten
+        ul.spec-list
+          li.spec-list__item
+            label Mittelsohlentyp
+            span Rebound, Neutral
+          li.spec-list__item
+            label Absatzhöhe
+            span 34 mm
+          li.spec-list__item
+            label Sprengung
+            span 8 mm
+          li.spec-list__item
+            label Gewicht
+            span 312 g (US Men 9.5)
+        h4 Pflegehinweise
+        p Angetrockneter Schmutz lässt sich einfach abbürsten. Der Schaft kann aber auch mit allen handelsüblichen Lederimprägniermitteln für Nubuk geschützt werden. Lederöle und -wachse funktionieren auch. Bitte beachten Sie jedoch, dass sich dadurch die Optik von Nubuk in Richtung Glattleder verändert.
+
+      .add-to-cart-help
+        = partial "partials/add_to_cart_help"
+
+script type="application/ld+json"
+  | {
+  |   "@context": "http://schema.org",
+  |   "@type": "Product",
+  |   "name": "Vivo Run N",
+  |   "image": "https://www.lunge.com/images/products/vivo_run/LTN220SSW/LTN220SSW.png",
+  |   "description": "Dynamischer Laufschuh mit effizienter Rückfederung und erstklassigem Abrollverhalten.",
+  |   "brand": {
+  |     "@type": "Brand",
+  |     "name": "Lunge"
+  |   },
+  |   "offers": {
+  |     "@type": "AggregateOffer",
+  |     "lowPrice": "180.00",
+  |     "highPrice": "180.00",
+  |     "priceCurrency": "EUR",
+  |     "availability": "InStock"
+  |   }
+  | }
