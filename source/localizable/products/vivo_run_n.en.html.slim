@@ -1,0 +1,129 @@
+---
+title: "Vivo Run N"
+description: Dynamic running shoes with efficient rebound and smooth roll over behavior.
+section: products
+canonical_link: "https://www.lunge.com/en/products/vivo_run_n/"
+url_de: "https://www.lunge.com/products/vivo_run_n/"
+url_en: "https://www.lunge.com/en/products/vivo_run_n/"
+sitemap_priority: 0.9
+sitemap_changefreq: daily
+---
+.product__container#add-to-cart.anchor-target
+  = partial "partials/made_in_germany"
+  .content
+    .product
+      .product__figure
+        .product__media-container
+          .product__media-item
+            img.product__image width=1200 height=1200
+        .product__features--tablet-landscape
+          ul.product-feature
+            = partial "partials/product-features/vegan"
+            = partial "partials/product-features/non-toxic"
+            = partial "partials/product-features/made_in_germany"
+          = partial "partials/product_attributes", locals: { product: "vivo_run_n" }
+      .product__details
+        .product__title
+          = link_to "← Shop", "/en/products/", class: "link"
+          h1 Vivo Run N
+        .product__order-form
+          .input-group
+            label Gender
+            .gender-select__container
+              select.product__option.gender-select
+                option value=499651215626 Men
+                option value=499651182858 Women
+          .input-group
+            label Color
+            .product-select__title-container
+            .product-select__container
+          .input-group
+            label Size (Feet length / US / EUR)
+            .variant-select__container
+              select.product__option.variant-select
+            .product__sizing
+              = partial "partials/size_guide_note"
+          .variant-price__container
+            h2.variant-price
+            small incl. VAT / Free shipping within Germany
+          .add-to-cart-button__container
+            button.buy-button.js-prevent-cart-listener.add-button Add to cart
+        .product__description
+          p
+            | After three years of intensive development work, we are proud to present our new running shoe: 
+            span.small-caps VIVO
+            |  - the fusion of uncompromising functionality with dynamic design! The midsole is made from 
+            span.small-caps LUNGE's
+            |  own high-performance EVA sole mixture, which meets our experience and high demands for cushioning/response and rebound/resilience.
+
+          ul.bullet-list
+            li
+              span.small-caps LUNGE
+              |  -engineered EVA sole mixture for exceptional cushioning, response, and rebound
+            li Harmonious rolling motion for effortless running on any surface
+            li Powerful push-off and comfortable impact for a luxurious running experience
+            li Adapts to any running style
+            li Lightweight and comfortable design with a weight of just 312 grams
+            li
+              span.small-caps LUNGE FEETALITY
+              |  Rebound insole for enhanced running performance
+          p
+            | In motion, the 
+            span.small-caps VIVO
+            |  shows its outstanding properties. A harmonious rolling motion with excellent rebound values allows you to master any solid surface with ease. The powerful push-off and comfortable impact, which have been unmatched in this combination until now, confirm the luxurious first impression when putting on the shoe. The 
+            span.small-caps VIVO
+            |  adapts to any running style and, thanks to its midsole, combines volume and lightness in an unprecedented form with a weight of just 312 grams. Finally, lightness and optimal leg stress can be combined at any running pace.
+          p
+            | The further developed upper and the 
+            span.small-caps LUNGE FEETALITY 
+            |  Rebound insole made of lightweight EVA foam for even more running performance allow your foot and the 
+            span.small-caps VIVO 
+            |  to merge into one unit.
+        .product__features--mobile
+          ul.product-feature
+            = partial "partials/product-features/non-toxic"
+            = partial "partials/product-features/made_in_germany"
+            = partial "partials/product-features/resole"
+          = partial "partials/product_attributes", locals: { product: "derby_walk_leather_s" }
+
+.panel
+  .content
+    .additional-information
+      .specifications
+        h4 Specifications
+        ul.spec-list
+          li.spec-list__item
+            label Midsole
+            span Rebound, Neutral
+          li.spec-list__item
+            label Heel height
+            span 34 mm
+          li.spec-list__item
+            label Heel drop
+            span 8 mm
+          li.spec-list__item
+            label Weight
+            span 312 g (US Men 9.5)
+
+      .add-to-cart-help
+        = partial "partials/add_to_cart_help"
+
+script type="application/ld+json"
+  | {
+  |   "@context": "http://schema.org",
+  |   "@type": "Product",
+  |   "name": "Vivo Run N",
+  |   "image": "https://www.lunge.com/images/products/vivo_run/LTN220SSW/LTN220SSW.png",
+  |   "description": "Dynamic running shoes with efficient rebound and smooth roll over behavior.",
+  |   "brand": {
+  |     "@type": "Brand",
+  |     "name": "Lunge"
+  |   },
+  |   "offers": {
+  |     "@type": "AggregateOffer",
+  |     "lowPrice": "180.00",
+  |     "highPrice": "180.00",
+  |     "priceCurrency": "EUR",
+  |     "availability": "InStock"
+  |   }
+  | }
