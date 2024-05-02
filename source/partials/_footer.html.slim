@@ -32,6 +32,13 @@ footer
             li
               = link_to "Outlet", "/outlet/", class: "footer-list__item--new"
               .badge.badge--white-on-black.footer-list__badge %
+          hr
+          ul.footer-list
+            li
+              = link_to "https://cdn.lunge.de/files/presskit/katalog_2024_web.pdf", class: "link__container", target: "_blank" do
+                = image_tag "/images/ui/download.svg", class: "link__icon"
+                span.link__text Katalog herunterladen
+
 
         .footer-nav__section
           h5 Manufaktur
@@ -62,8 +69,6 @@ footer
 
       .footer__info
         .footer__info-item
-          = link_to "/about", class: "made-in-germany__link" do
-            = image_tag "/images/misc/made_in_germany.svg", class: "made-in-germany__logo"
 
     .footer__bottom-line
       = partial "partials/language_selector"

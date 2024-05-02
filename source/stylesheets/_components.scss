@@ -903,6 +903,20 @@ button[disabled=disabled] {
 
 
 
+.link__container {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.link__icon {
+  height: 1rem;
+}
+
+.link__text {
+}
+
+
 
 
 /* LISTS */
