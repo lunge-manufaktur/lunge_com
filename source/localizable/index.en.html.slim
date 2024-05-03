@@ -11,8 +11,8 @@ lang: en
   = link_to "/en/products/vivo_run_n/", class: "hero-product__container hero-product__container--LTN220GSW" do
     .hero-product
       picture class="hero-product__image-container"
-        source srcset="/images/products/vivo_run/LTN220GSW/LTN220GSW.webp 3200w, /images/products/vivo_run/LTN220GSW/LTN220GSW.webp 2400w, /images/products/vivo_run/LTN220GSW/LTN220GSW.webp 1200w" type="image/webp"
-        = image_tag "/images/products/vivo_run/LTN220GSW/LTN220GSW.webp", class: "hero-product__image"
+        source srcset="/images/products/vivo_run/LTN220GSW/LTN220GSW_01@3200.webp 3200w, /images/products/vivo_run/LTN220GSW/LTN220GSW_01@2400.webp 2400w, /images/products/vivo_run/LTN220GSW/LTN220GSW_01@1600.webp 1600w" type="image/webp"
+        = image_tag "/images/products/vivo_run/LTN220GSW/LTN220GSW_01.webp", class: "hero-product__image"
       .hero-product__content
         .content
           h1.hero-product__title = data.products.vivo_run_n.name
@@ -23,7 +23,7 @@ lang: en
               .color-icon data-color=color.sku data-image-path=color.default_image style="background: linear-gradient(180deg, #{color.first_color}, #{color.first_color} 65%, #{color.second_color} 66%, #{color.second_color} 100%); border: 1px solid #fff" title=(color.name)
           = button_tag "Learn more", class: "button button--dark"
       .notice.notice--top-left
-        span Neu
+        span New
 
   = link_to "/en/products/classic_walk/", class: "hero-product__container hero-product__container--GLS220CBW" do
     .hero-product
