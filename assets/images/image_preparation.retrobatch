@@ -2,6 +2,10 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>autoPreprocessWorkflow</key>
+	<true/>
+	<key>manualConnections</key>
+	<true/>
 	<key>previewBackgroundColorState</key>
 	<integer>0</integer>
 	<key>processes</key>
@@ -13,62 +17,62 @@
 			<string>OTFilesNode</string>
 			<key>outputsIds</key>
 			<array>
-				<string>9bad15df-c464-4584-abee-cb7165be31d4</string>
+				<string>f08536f1-5997-4361-b5a5-c9710c68a18b</string>
 			</array>
 			<key>proccessId</key>
 			<string>342bb923-5f65-40a9-a6f7-36799764dd0b</string>
 			<key>urls</key>
 			<array>
 				<data>
-				Ym9va4QFAAAAAAQQMAAAAAAAAAAAAAAAAAAAAAAAAAAA
-				AAAAAAAAAAAAAAAAAAAAmAQAAAQAAAADAwAAAAIAAAcA
+				Ym9va4gFAAAAAAQQMAAAAAAAAAAAAAAAAAAAAAAAAAAA
+				AAAAAAAAAAAAAAAAAAAAkAQAAAQAAAADAwAAAAIAAAcA
 				AAABAQAAVm9sdW1lcwALAAAAAQEAAEZhYnJpa2RhdGVu
 				AA0AAAABAQAATWVkaWVuZGF0ZWllbgAAABAAAAABAQAA
 				THVuZ2UgTWFudWZha3R1cg0AAAABAQAAUHJvZHVrdGJp
-				bGRlcgAAABAAAAABAQAAU2NodWhiaWxkZXIgMjAyMw8A
-				AAABAQAAMjAyMjA3MDhMdW5nZSAyAAwAAAABAQAARVI1
-				XzE3MjYucHNkIAAAAAEGAAAQAAAAIAAAADQAAABMAAAA
-				ZAAAAHwAAACUAAAArAAAAAgAAAAEAwAACJIOAgMAAAAA
-				AAAAAQoAACAAAAABBgAA6AAAAPgAAAD4AAAA+AAAAPgA
-				AAD4AAAA+AAAAPgAAAAIAAAAAAQAAEHE/UVNAAAAGAAA
-				AAECAAABAAAAAAAAAA8AAAAAAAAAAAAAAAAAAAAcAAAA
+				bGRlcgAAABAAAAABAQAAU2NodWhiaWxkZXIgMjAyNAgA
+				AAABAQAAVml2byBSdW4MAAAAAQEAAEVSNV8wNDc5Lmpw
+				ZyAAAAABBgAAEAAAACAAAAA0AAAATAAAAGQAAAB8AAAA
+				lAAAAKQAAAAIAAAABAMAAItBAAAAAAAAAAAAAAEKAAAg
+				AAAAAQYAAOAAAADwAAAA8AAAAPAAAADwAAAA8AAAAPAA
+				AADwAAAACAAAAAAEAABBxfJWpYAAABgAAAABAgAAAQAA
+				AAAAAAAPAAAAAAAAAAAAAAAAAAAAAAAAAAEFAAAcAAAA
 				AQkAAGZpbGU6Ly8vVm9sdW1lcy9GYWJyaWtkYXRlbi8I
-				AAAABAMAAACgmXGbAgAACAAAAAAEAABBwe4hYIAAABgA
+				AAAABAMAAACgmXGbAgAACAAAAAAEAABBwe4hYJzseBgA
 				AAABAgAAAAAAAAAAAADvEwAAAQAAAAAAAAAAAAAAFAAA
 				AAEBAAAvVm9sdW1lcy9GYWJyaWtkYXRlbjgAAAABCQAA
 				c21iOi8vVWxmJTIwTHVuZ2VAZmlsZXNlcnZlci5fc21i
 				Ll90Y3AubG9jYWwvRmFicmlrZGF0ZW4IAAAAAQkAAGZp
 				bGU6Ly8vDAAAAAEBAABNYWNpbnRvc2ggSEQIAAAABAMA
-				AABgRmQ6AAAACAAAAAAEAABBxEAH4AAAACQAAAABAQAA
-				OUFGMTlDNjYtMTVBRS0zRjZELTkzQTgtRUU0NjBFMjE2
-				RERGGAAAAAECAACBAAAAAQAAAO8TAAABAAAAAAAAAAAA
+				AABQoRtzAAAACAAAAAAEAABBxY+FVYAAACQAAAABAQAA
+				M0FDQUI3NUQtNDNGQy00NEMyLUEwRkItQjAwOTY5QjE4
+				ODBDGAAAAAECAACBAAAAAQAAAO8TAAABAAAAAAAAAAAA
 				AAABAAAAAQEAAC8AAABgAAAA/v///wDwAAAAAAAABwAA
 				AAIgAACoAgAAAAAAAAUgAAAYAgAAAAAAABAgAAAoAgAA
 				AAAAABEgAABcAgAAAAAAABIgAAA8AgAAAAAAABMgAABM
 				AgAAAAAAACAgAACIAgAAAAAAAAQAAAADAwAAAPAAAAQA
 				AAADAwAAAAAAAAQAAAADAwAAAQAAACQAAAABBgAAHAMA
 				ACgDAAA0AwAAKAMAACgDAAAoAwAAKAMAACgDAAAoAwAA
-				IQEAAAECAABhOTZlNjAzN2I5NzkwNmY3OTNiZDQwNTcz
-				YmFjYjMyN2VhMzE3MDRjZDI2MDk4OTcyYzJmMDIwYWYy
-				NjFhMGZlOzAwOzAwMDAwMDAwOzAwMDAwMDAwOzAwMDAw
+				GgEAAAECAABlYTIwYjQyY2QzMzk2NzNiOWFjYTk3MzJh
+				NzI2MTViNzkxNDA1ZjdkYjY4ZGNkYmQ1MTlmZDkwZTk5
+				YmI4Y2UzOzAwOzAwMDAwMDAwOzAwMDAwMDAwOzAwMDAw
 				MDAwOzAwMDAwMDAwMDAwMDAwMjA7Y29tLmFwcGxlLmFw
 				cC1zYW5kYm94LnJlYWQtd3JpdGU7MDE7MzYwMDAwMDI7
-				MDAwMDAwMDAwMDE4MGJhODswYTsvdm9sdW1lcy9mYWJy
+				MDAwMDAwMDAwMDIxMDRjMjswOTsvdm9sdW1lcy9mYWJy
 				aWtkYXRlbi9tZWRpZW5kYXRlaWVuL2x1bmdlIG1hbnVm
 				YWt0dXIvcHJvZHVrdGJpbGRlci9zY2h1aGJpbGRlciAy
-				MDIzLzIwMjIwNzA4bHVuZ2UgMi9lcjVfMTcyNi5wc2QA
-				AAAAtAAAAP7///8BAAAAtAIAAA4AAAAEEAAAwAAAAAAA
-				AAAFEAAAAAEAAAAAAAAQEAAAOAEAAAAAAABAEAAAKAEA
-				AAAAAAAAIAAAQAMAAAAAAAACIAAAvAEAAAAAAAAFIAAA
-				WAEAAAAAAAAQIAAAIAAAAAAAAAASIAAAfAEAAAAAAAAT
-				IAAAjAEAAAAAAAAgIAAAnAEAAAAAAABQIAAA2AEAAAAA
-				AAAQ0AAABAAAAAAAAACA8AAAbAMAAAAAAAA=
+				MDI0L3Zpdm8gcnVuL2VyNV8wNDc5LmpwZwAAAMAAAAD+
+				////AQAAALQCAAAPAAAABBAAALgAAAAAAAAABRAAAPgA
+				AAAAAAAAEBAAADABAAAAAAAAQBAAACABAAAAAAAAACAA
+				AEADAAAAAAAAAiAAALwBAAAAAAAABSAAAFgBAAAAAAAA
+				ECAAACAAAAAAAAAAEiAAAHwBAAAAAAAAEyAAAIwBAAAA
+				AAAAICAAAJwBAAAAAAAAUCAAANgBAAAAAAAAAdAAAFAB
+				AAAAAAAAENAAAAQAAAAAAAAAgPAAAGwDAAAAAAAA
 				</data>
 			</array>
 		</dict>
 		<dict>
 			<key>canvasOrigin</key>
-			<string>{240, 80}</string>
+			<string>{480, 80}</string>
 			<key>class</key>
 			<string>OTColorProfileNode</string>
 			<key>inputMatchToProfile</key>
@@ -113,40 +117,7 @@
 		</dict>
 		<dict>
 			<key>canvasOrigin</key>
-			<string>{560, 80}</string>
-			<key>class</key>
-			<string>OTMultiResizeNode</string>
-			<key>inputScaleList</key>
-			<array>
-				<dict>
-					<key>scale</key>
-					<real>1</real>
-					<key>suffix</key>
-					<string>@3200px</string>
-				</dict>
-				<dict>
-					<key>scale</key>
-					<real>0.75</real>
-					<key>suffix</key>
-					<string>@2400px</string>
-				</dict>
-				<dict>
-					<key>scale</key>
-					<real>0.375</real>
-					<key>suffix</key>
-					<string>@1200px</string>
-				</dict>
-			</array>
-			<key>outputsIds</key>
-			<array>
-				<string>ab0938c2-50b6-421b-844e-08fc17245319</string>
-			</array>
-			<key>proccessId</key>
-			<string>72181ce8-ffd8-4e62-a08a-9f7b45b69875</string>
-		</dict>
-		<dict>
-			<key>canvasOrigin</key>
-			<string>{720, 80}</string>
+			<string>{1040, 239}</string>
 			<key>class</key>
 			<string>OTWriteNode</string>
 			<key>inputAskForWriteFolderOnRun</key>
@@ -167,6 +138,8 @@
 			<false/>
 			<key>inputRemoveAlphaChannelIfOpaque</key>
 			<true/>
+			<key>inputTGACompressionAlgorithm</key>
+			<integer>1</integer>
 			<key>inputTIFFCompressionAlgorithm</key>
 			<integer>5</integer>
 			<key>outputUTI</key>
@@ -178,7 +151,7 @@
 		</dict>
 		<dict>
 			<key>canvasOrigin</key>
-			<string>{720, 240}</string>
+			<string>{1037, 80}</string>
 			<key>class</key>
 			<string>OTWriteNode</string>
 			<key>inputAskForWriteFolderOnRun</key>
@@ -194,11 +167,13 @@
 			<key>inputOpenFolderOnFinish</key>
 			<true/>
 			<key>inputOverwriteExistingFiles</key>
-			<false/>
+			<integer>1</integer>
 			<key>inputProgressive</key>
 			<false/>
 			<key>inputRemoveAlphaChannelIfOpaque</key>
 			<true/>
+			<key>inputTGACompressionAlgorithm</key>
+			<integer>1</integer>
 			<key>inputTIFFCompressionAlgorithm</key>
 			<integer>5</integer>
 			<key>outputUTI</key>
@@ -210,7 +185,7 @@
 		</dict>
 		<dict>
 			<key>canvasOrigin</key>
-			<string>{400, 80}</string>
+			<string>{640, 80}</string>
 			<key>class</key>
 			<string>OTScaleNode</string>
 			<key>inputHeight</key>
@@ -233,10 +208,155 @@
 			<integer>800</integer>
 			<key>outputsIds</key>
 			<array>
-				<string>72181ce8-ffd8-4e62-a08a-9f7b45b69875</string>
+				<string>b70c36b5-1afa-4beb-ae13-22cb1b9b421d</string>
 			</array>
 			<key>proccessId</key>
 			<string>35e8c96b-8bfb-46ad-b9bf-48b922d28b67</string>
+		</dict>
+		<dict>
+			<key>canvasOrigin</key>
+			<string>{880, 80}</string>
+			<key>class</key>
+			<string>OTMultiScaleNode</string>
+			<key>inputScaleList</key>
+			<array>
+				<dict>
+					<key>fileNameTokens</key>
+					<data>
+					BAtzdHJlYW10eXBlZIHoA4QBQISEhAdOU0Fy
+					cmF5AISECE5TT2JqZWN0AIWEAWkDkoSEhBFP
+					VFRva2VuRmllbGRUb2tlbgCUkoSEhAhOU1N0
+					cmluZwGUhAErCiRGaWxlTmFtZSSGhpKEmJgB
+					QIaShJaShJiYDCRJbWFnZVdpZHRoJIaGhg==
+					</data>
+					<key>scaleNode</key>
+					<dict>
+						<key>canvasOrigin</key>
+						<string>{0, 0}</string>
+						<key>class</key>
+						<string>OTScaleNode</string>
+						<key>inputHeight</key>
+						<integer>800</integer>
+						<key>inputInterpolationQuality</key>
+						<integer>3</integer>
+						<key>inputLongShortLength</key>
+						<integer>3200</integer>
+						<key>inputMegapixels</key>
+						<integer>10</integer>
+						<key>inputOnlyScaleSmaller</key>
+						<integer>1</integer>
+						<key>inputRetinaFriendlySizes</key>
+						<false/>
+						<key>inputScale</key>
+						<integer>2</integer>
+						<key>inputScaleType</key>
+						<integer>4</integer>
+						<key>inputWidth</key>
+						<integer>3200</integer>
+						<key>outputsIds</key>
+						<array/>
+						<key>proccessId</key>
+						<string>605aa011-bd59-4fa8-9d7c-b5d5754666e3</string>
+					</dict>
+				</dict>
+				<dict>
+					<key>fileNameTokens</key>
+					<data>
+					BAtzdHJlYW10eXBlZIHoA4QBQISEhAdOU0Fy
+					cmF5AISECE5TT2JqZWN0AIWEAWkDkoSEhBFP
+					VFRva2VuRmllbGRUb2tlbgCUkoSEhAhOU1N0
+					cmluZwGUhAErCiRGaWxlTmFtZSSGhpKEmJgB
+					QIaShJaShJiYDCRJbWFnZVdpZHRoJIaGhg==
+					</data>
+					<key>scaleNode</key>
+					<dict>
+						<key>canvasOrigin</key>
+						<string>{0, 0}</string>
+						<key>class</key>
+						<string>OTScaleNode</string>
+						<key>inputHeight</key>
+						<integer>800</integer>
+						<key>inputInterpolationQuality</key>
+						<integer>3</integer>
+						<key>inputLongShortLength</key>
+						<integer>2400</integer>
+						<key>inputMegapixels</key>
+						<integer>10</integer>
+						<key>inputOnlyScaleSmaller</key>
+						<integer>1</integer>
+						<key>inputRetinaFriendlySizes</key>
+						<false/>
+						<key>inputScale</key>
+						<real>4</real>
+						<key>inputScaleType</key>
+						<integer>4</integer>
+						<key>inputWidth</key>
+						<integer>800</integer>
+						<key>outputsIds</key>
+						<array/>
+						<key>proccessId</key>
+						<string>31ba6d79-4f5f-4800-9893-2a59ee339e77</string>
+					</dict>
+				</dict>
+				<dict>
+					<key>fileNameTokens</key>
+					<data>
+					BAtzdHJlYW10eXBlZIHoA4QBQISEhAdOU0Fy
+					cmF5AISECE5TT2JqZWN0AIWEAWkDkoSEhBFP
+					VFRva2VuRmllbGRUb2tlbgCUkoSEhAhOU1N0
+					cmluZwGUhAErCiRGaWxlTmFtZSSGhpKEmJgB
+					QIaShJaShJiYDCRJbWFnZVdpZHRoJIaGhg==
+					</data>
+					<key>scaleNode</key>
+					<dict>
+						<key>canvasOrigin</key>
+						<string>{0, 0}</string>
+						<key>class</key>
+						<string>OTScaleNode</string>
+						<key>inputHeight</key>
+						<integer>800</integer>
+						<key>inputInterpolationQuality</key>
+						<integer>3</integer>
+						<key>inputLongShortLength</key>
+						<integer>1600</integer>
+						<key>inputMegapixels</key>
+						<integer>10</integer>
+						<key>inputOnlyScaleSmaller</key>
+						<integer>1</integer>
+						<key>inputRetinaFriendlySizes</key>
+						<integer>0</integer>
+						<key>inputScale</key>
+						<integer>4</integer>
+						<key>inputScaleType</key>
+						<integer>4</integer>
+						<key>inputWidth</key>
+						<integer>800</integer>
+						<key>outputsIds</key>
+						<array/>
+						<key>proccessId</key>
+						<string>31ba6d79-4f5f-4800-9893-2a59ee339e77</string>
+					</dict>
+				</dict>
+			</array>
+			<key>outputsIds</key>
+			<array>
+				<string>6a86723a-26b9-479a-b9e5-6bfbcebcd4df</string>
+				<string>ab0938c2-50b6-421b-844e-08fc17245319</string>
+			</array>
+			<key>proccessId</key>
+			<string>b70c36b5-1afa-4beb-ae13-22cb1b9b421d</string>
+		</dict>
+		<dict>
+			<key>canvasOrigin</key>
+			<string>{240, 80}</string>
+			<key>class</key>
+			<string>OTGeolocationNode</string>
+			<key>outputsIds</key>
+			<array>
+				<string>9bad15df-c464-4584-abee-cb7165be31d4</string>
+			</array>
+			<key>proccessId</key>
+			<string>f08536f1-5997-4361-b5a5-c9710c68a18b</string>
 		</dict>
 	</array>
 	<key>version</key>

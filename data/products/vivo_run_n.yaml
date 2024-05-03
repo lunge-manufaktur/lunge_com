@@ -42,6 +42,30 @@ colors:
     price: 180
 
 images:
+  -
+    path: "/images/products/vivo_run/LTN220NNW/LTN220NNW_01@2400.webp"
+    title: Vivo Run N (Navy / White)
+  -
+    path: "/images/products/vivo_run/LTN220GSW/LTN220GSW_01@2400.webp"
+    title: Vivo Run N (Green / Silver / White)
+  -
+    path: "/images/products/vivo_run/LTN220SSW/LTN220SSW_01@2400.webp"
+    title: Vivo Run N (Silver / White)
+  -
+    path: "/images/products/vivo_run/LTN220GGW/LTN220GGW_03@2400.webp"
+    title: Vivo Run N (Grey / White)
+  -
+    path: "/images/products/vivo_run/LTN220GSW/LTN220GSW_02@2400.webp"
+    title: Vivo Run N (Green / Silver / White)
+  -
+    path: "/images/products/vivo_run/LTN220NNW/LTN220NNW_03@2400.webp"
+    title: Vivo Run N (Navy / White)
+  -
+    path: "/images/products/vivo_run/LTN220GGW/LTN220GGW_01@2400.webp"
+    title: Vivo Run N (Grey / White)
+  -
+    path: "/images/products/vivo_run/LTN220SSW/LTN220SSW_03@2400.webp"
+    title: Vivo Run N (Silver / White)
 
 attributes:
   -
