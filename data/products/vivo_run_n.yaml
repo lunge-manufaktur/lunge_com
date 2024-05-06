@@ -5,6 +5,7 @@ short_description: "Dynamischer Laufschuh mit effizienter Rückfederung und erst
 short_description_en: "Dynamic running shoes with efficient rebound and smooth roll over behavior."
 default_image_png: "/images/products/vivo_run/LTN220SSW/LTN220SSW.png"
 default_image_webp: "/images/products/vivo_run/LTN220SSW/LTN220SSW.webp"
+walk_in_video_mp4: "https://cdn.lunge.de/files/videos/products/vivo_run_n/LTN220GSW__walk_in.mp4"
 price: "180,00"
 discount_price: "180,00"
 colors:
