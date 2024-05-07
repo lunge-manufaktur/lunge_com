@@ -9,7 +9,7 @@ default_image_webp: "/images/products/classic_run/STR220BNW/STR220BNW.webp"
 walk_in_video_webm: "https://cdn.lunge.de/files/videos/products/classic_run_r/STR220BNW/STR220BNW__walk_in.webm"
 walk_in_video_mp4: "https://cdn.lunge.de/files/videos/products/classic_run_r/STR220BNW/STR220BNW__walk_in.mp4"
 price: "180,00"
-discount_price: "160,00"
+discount_price: "150,00"
 colors:
   -
     sku: "STR220CYW"
