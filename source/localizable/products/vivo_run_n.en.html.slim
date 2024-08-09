@@ -23,7 +23,6 @@ sitemap_changefreq: daily
           ul.product-feature
             = partial "partials/product-features/vegan"
             = partial "partials/product-features/non-toxic"
-            = partial "partials/product-features/made_in_germany"
           = partial "partials/product_attributes", locals: { product: "vivo_run_n" }
       .product__details
         .product__title
@@ -84,9 +83,8 @@ sitemap_changefreq: daily
             |  to merge into one unit.
         .product__features--mobile
           ul.product-feature
+            = partial "partials/product-features/vegan"
             = partial "partials/product-features/non-toxic"
-            = partial "partials/product-features/made_in_germany"
-            = partial "partials/product-features/resole"
           = partial "partials/product_attributes", locals: { product: "vivo_run_n" }
 
 = partial "products/gallery", locals: { product: data.products.vivo_run_n }
