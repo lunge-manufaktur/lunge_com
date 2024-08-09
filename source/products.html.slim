@@ -53,6 +53,26 @@ lang: de
 
 .content
   .card__container
+    = link_to "/products/#{data.products.neo_knit.slug}/", class: "card", data: { product: "neo_knit", "filter-usage": "everyday", "filter-series": "neo", "filter-sole": "neutral rebound", "filter-features": "vegan" } do
+      .card__figure
+        picture class="card__image-container"
+          source srcset=data.products.neo_knit.default_image_webp type="image/webp"
+          source srcset=data.products.neo_knit.default_image_png type="image/png"
+          = image_tag data.products.neo_knit.default_image_png, class: "card__image", alt: data.products.neo_knit.name, width: 1200, height: 1200
+        = partial "partials/color_options", locals: { product: "neo_knit" } 
+      .card__body
+        .card__description
+          h2.marginless--top = data.products.neo_knit.name
+          h4.card__price = "€ #{data.products.neo_knit.price}"
+          p = data.products.neo_knit.short_description
+        .card__attributes
+          = partial "partials/product_attributes", locals: { product: "neo_knit" }
+        .notice.notice--top-left
+          span Neu
+        .category__container.category__container--rebound data-tooltip=data.categories.rebound.description_de
+          .category__icon R
+          .category__label Rebound
+
     = link_to "/products/#{data.products.vivo_run_n.slug}/", class: "card", data: { product: "vivo_run_n", "filter-usage": "running", "filter-series": "vivo", "filter-sole": "neutral rebound", "filter-features": "vegan" } do
       .card__figure
         picture class="card__image-container"

@@ -1,0 +1,94 @@
+name: "Neo Knit"
+category: "Bequemschuhe"
+slug: "neo_knit"
+short_description: "Leichtigkeit trifft Komfort. Innovatives Strickdesign und elastische Federung bieten höchsten Tragekomfort im Alltag."
+short_description_en: "Lightness meets comfort. Innovative knitted upper and an elastic midsole deliver comfort all day long."
+default_image: "/images/products/neo_knit/GKN320NWW/GKN320NWW.jpg"
+default_image_png: "/images/products/neo_knit/GKN320NWW/GKN320NWW.png"
+default_image_webp: "/images/products/neo_knit/GKN320NWW/GKN320NWW.webp"
+walk_in_video_mp4: "https://cdn.lunge.de/files/videos/products/neo_knit/GKN320NWW/GKN320NWW__walk_in.mp4"
+price: "120,00"
+discount_price: "120,00"
+colors:
+  -
+    sku: "GWS220EBG"
+    name: "Navy/White"
+    first_color: "#31335A"
+    second_color: "#FFFFFF"
+    default_image_png: "/images/products/neo_knit/GKN320NWW/GKN320NWW.png"
+    default_image_webp: "/images/products/neo_knit/GKN320NWW/GKN320NWW.webp"
+    price: 120
+
+outlet_colors:
+
+images:
+  -
+    path: "/images/products/neo_knit/GKN320NWW/GKN320NWW_02@2400px.webp"
+    title: Neo Knit (Navy/White)
+  -
+    path: "/images/products/neo_knit/GKN320NWW/GKN320NWW_03@2400px.webp"
+    title: Neo Knit (Navy/White)
+  -
+    path: "/images/products/neo_knit/GKN320NWW/GKN320NWW_04@2400px.webp"
+    title: Neo Knit (Navy/White)
+  -
+    path: "/images/products/neo_knit/GKN320NWW/GKN320NWW_05@2400px.webp"
+    title: Neo Knit (Navy/White)
+  -
+    path: "/images/products/neo_knit/GKN320NWW/GKN320NWW_06@2400px.webp"
+    title: Neo Knit (Navy/White)
+  -
+    path: "/images/products/neo_knit/GKN320NWW/GKN320NWW_07@2400px.webp"
+    title: Neo Knit (Navy/White)
+
+attributes:
+  -
+    name: ground.name
+    start:
+      name: ground.start_name
+      value: 1
+      description: ground.start_description
+    end:
+      name: ground.end_name
+      value: 5
+      description: ground.end_description
+  -
+    name: stability.name
+    start:
+      name: stability.start_name
+      value: 1
+      description: stability.start_description
+    end:
+      name: stability.end_name
+      value: 5
+      description: stability.end_description
+  -
+    name: rebound.name
+    start:
+      name: rebound.start_name
+      value: 6
+      description: rebound.start_description
+    end:
+      name: rebound.end_name
+      value: 10
+      description: rebound.end_description
+  -
+    name: firmness.name
+    start:
+      name: firmness.start_name
+      value: 5
+      description: firmness.start_description
+    end:
+      name: firmness.end_name
+      value: 9
+      description: firmness.end_description
+  -
+    name: fit.name
+    start:
+      name: fit.start_name
+      value: 3
+      description: fit.description
+    end:
+      name: fit.end_name
+      value: 7
+      description: fit.description

@@ -1,0 +1,131 @@
+---
+title: "Neo Knit"
+description: Leichtigkeit trifft Komfort.
+section: products
+canonical_link: "https://www.lunge.com/products/neo_knit/"
+url_de: "https://www.lunge.com/products/neo_knit/"
+url_en: "https://www.lunge.com/en/products/neo_knit/"
+sitemap_priority: 0.9
+sitemap_changefreq: daily
+---
+.product__container#add-to-cart.anchor-target
+  .content
+    .product
+      .product__figure
+        .product__media-container
+          .product__media-item
+            img.product__image width=1200 height=1200
+          .product__media-item
+            video width="100%" autoplay="true" muted="true" loop="true" playsinline="true" preload="auto"
+              source src=data.products.neo_knit.walk_in_video_mp4
+        .product__features--tablet-landscape
+          ul.product-feature
+            = partial "partials/product-features/vegan"
+            = partial "partials/product-features/non-toxic"
+          = partial "partials/product_attributes", locals: { product: "vivo_run_n" }
+      .product__details
+        .product__title
+          = link_to "← Shop", "/products/", class: "link"
+          h1 Neo Knit
+        .product__order-form
+          .input-group
+            label Damen / Herren
+            .gender-select__container
+              select.product__option.gender-select
+                option value=527732769034 Unisex
+          .input-group
+            label Farbe
+            .product-select__title-container
+            .product-select__container
+          .input-group
+            label Größe (Fusslänge / US / EUR)
+            .variant-select__container
+              select.product__option.variant-select
+            .product__sizing
+              = partial "partials/size_guide_note"
+          .variant-price__container
+            h2.variant-price
+            small inkl. Mwst., versandkostenfrei innerhalb Deutschlands
+          .add-to-cart-button__container
+            button.buy-button.js-prevent-cart-listener.add-button In den Warenkorb
+        .product__description
+          p
+            | Leichtigkeit trifft Kofmort. Der 
+            span.small-caps NEO KNIT
+            |  vereint modernste Stricktechnologie mit der bewährten Mittelsohle des 
+            = link_to "NEO RUN", "/products/neo_run", class: "link small-caps"
+            | . Der innovative Strickschaft passt sich Ihrem Fuß an wie eine zweite Haut und sorgt für eine hervorragende Passform ohne Fersenkappe. Das sportliche und moderne Design wird durch das nahtlose Strickmaterial unterstrichen, das nicht nur für hohen Tragekomfort sorgt, sondern auch umweltfreundlich ist, da Verschnitt und Abfall minimiert werden.
+          p
+            | Dank des besonders elastischen Einstiegbereichs ist das An- und Ausziehen des Schuhs ein Kinderspiel. Die Schnürung sorgt für zusätzliche Sicherheit und Halt. Die bewährte Mittelsohle bietet eine elastische Federung, die Ihre Energie vom Auftritt optimal speichert und in Vorwärtsenergie umwandelt. Das lässt jeden Schritt mühelos erscheinen - gehen und stehen ohne Probleme. Egal ob beim Spaziergang, Stadtbummel oder im Alltag – der 
+            span.small-caps NEO KNIT
+            |  begleitet Sie stilvoll und bequem.
+
+          ul.bullet-list
+            li
+              span.text-bold Innovativer Strickschaft:
+              |  Nahtloses, sportliches Design für optimale Passform und Komfort.
+            li
+              span.text-bold Elastischer Einstiegsbereich:
+              |  Erleichtert das An- und Ausziehen des Schuhs.
+            li
+              span.text-bold Verlässliches Schnürsystem:
+              |  Sorgt für sicheren Halt und individuelle Anpassung.
+            li
+              span.text-bold Umweltfreundliches Design:
+              |  Nahtlose Konstruktion reduziert Materialverschnitt.
+            li
+              span.text-bold Bewährte Mittelsohle:
+              |  Elastische Federung für effiziente Energierückgewinnung.
+            li
+              span.text-bold Vielseitig einsetzbar:
+              |  Geeignet für alle Alltagsaktivitäten.
+            li
+              span.text-bold Komfortables Innenfutter:
+              |  Optimale Luftzirkulation und Feuchtigkeitstransport.
+            li
+              span.text-bold Niedriges Gewicht:
+              |  Erhöht den Tragekomfort und unterstützt beim langen Gehen und Stehen.
+
+        .product__features--mobile
+          ul.product-feature
+            = partial "partials/product-features/vegan"
+            = partial "partials/product-features/non-toxic"
+          = partial "partials/product_attributes", locals: { product: "vivo_run_n" }
+
+= partial "products/gallery", locals: { product: data.products.neo_knit }
+
+.panel
+  .content
+    .additional-information
+      .specifications
+        h4 Technische Daten
+        ul.spec-list
+          li.spec-list__item
+            label Mittelsohlentyp
+            span Rebound, Neutral
+          li.spec-list__item
+            label Sprengung
+            span 9 mm (US Men 10)
+
+      .add-to-cart-help
+        = partial "partials/add_to_cart_help"
+
+script type="application/ld+json"
+  | {
+  |   "@context": "http://schema.org",
+  |   "@type": "Product",
+  |   "name": "Neo Knit",
+  |   "image": "https://www.lunge.com/images/products/neo_knit/GKN320NWW/GKN320NWW.png",
+  |   "description": "Leichtigkeit trifft Komfort.",
+  |   "brand": {
+  |     "@type": "Brand",
+  |     "name": "Lunge"
+  |   },
+  |   "offers": {
+  |     "@type": "AggregateOffer",
+  |     "lowPrice": "120.00",
+  |     "highPrice": "120.00",
+  |     "priceCurrency": "EUR",
+  |     "availability": "InStock"
+  |   }
+  | }
