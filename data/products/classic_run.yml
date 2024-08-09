@@ -44,7 +44,7 @@ colors:
     default_image_webp: "/images/products/classic_run/STS120RBG/STS120RBG.webp"
     price: 220
   -
-    sku: "STS220BNG"
+    sku: "STS220LLL"
     name: "Lakritze"
     first_color: "#000"
     second_color: "#333"
