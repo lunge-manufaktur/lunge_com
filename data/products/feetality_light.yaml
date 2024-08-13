@@ -1,0 +1,32 @@
+name: "Feetality Light"
+name_en: "Feetality Light"
+category: "Zubehör"
+category_en: "Insoles"
+slug: "feetality_light"
+short_description: "Leichtere Feetality Einlegesohle aus hochwertigem EVA Schaum."
+short_description_en: "Updated, lighter Feetality insole made of premium EVA material."
+default_image_png: "/images/products/feetality/LGR100_3/LGR100_3_01@2400.png"
+default_image_webp: "/images/products/feetality/LGR100_3/LGR100_3_01@2400.webp"
+price: "23,50"
+colors:
+  -
+    sku: "LGR100.3"
+    name: "Black / White"
+    name_en: "Anthrazit / Stumpf"
+    default_image_png: "/images/products/feetality/LGR100_3/LGR100_3_01@2400.png"
+    default_image_webp: "/images/products/feetality/LGR100_3/LGR100_3_01@2400.webp"
+    first_color: "#000"
+    second_color: "#efefef"
+images:
+  -
+    path: "/images/products/feetality/LGR100_3/LGR100_3_01@3200.webp"
+    title: "Feetality Light (Black/White)"
+  -
+    path: "/images/products/feetality/LGR100_3/LGR100_3_02@3200.webp"
+    title: "Feetality Light (Black/White)"
+  -
+    path: "/images/products/feetality/LGR100_3/LGR100_3_03@3200.webp"
+    title: "Feetality Light (Black/White)"
+  -
+    path: "/images/products/feetality/LGR100_3/LGR100_3_04@3200.webp"
+    title: "Feetality Light (Black/White)"

@@ -26,6 +26,7 @@ lang: en
         .filter__options data-filter-group=""
           = button_tag "Running", type: "button", class: "filter__option", data: { toggle: '[data-filter-usage~="running"]' }
           = button_tag "Everyday use & walking", type: "button", class: "filter__option", data: { toggle: '[data-filter-usage~="everyday"]' }
+          = button_tag "Accessories", type: "button", class: "filter__option", data: { toggle: '[data-filter-usage~="accessories"]' }
           = button_tag "Any", type: "reset", class: "filter__clear-button"
       form.filter__group
         label.filter__group-label Series
@@ -403,6 +404,19 @@ lang: en
             h2.marginless--top Feetality Insoles
             h4.card__price = "€ #{data.products.feetality.price}"
             p = data.products.feetality.short_description_en
+
+      = link_to "/en/products/#{data.products.feetality_light.slug}/", class: "card", data: { product: "feetality_light" } do
+        .card__figure
+          picture class="card__image-container"
+            source srcset=data.products.feetality_light.default_image_webp type="image/webp"
+            source srcset=data.products.feetality_light.default_image_png type="image/png"
+            = image_tag data.products.feetality_light.default_image, class: "card__image", alt: data.products.feetality_light.name
+          = partial "partials/color_options", locals: { product: "feetality_light" } 
+        .card__body
+          .card__description
+            h2.marginless--top Feetality_light Insoles
+            h4.card__price = "€ #{data.products.feetality_light.price}"
+            p = data.products.feetality_light.short_description_en
 
 
 .panel.panel--emphasis

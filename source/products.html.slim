@@ -26,6 +26,7 @@ lang: de
         .filter__options data-filter-group=""
           = button_tag "Laufen", type: "button", class: "filter__option", data: { toggle: '[data-filter-usage~="running"]' }
           = button_tag "Alltag & Walking", type: "button", class: "filter__option", data: { toggle: '[data-filter-usage~="everyday"]' }
+          = button_tag "Zubehör", type: "button", class: "filter__option", data: { toggle: '[data-filter-usage~="accessories"]' }
           = button_tag "Alle", type: "reset", class: "filter__clear-button"
       form.filter__group
         label.filter__group-label Serie
@@ -393,7 +394,7 @@ lang: de
   .content
     h2 Zubehör
     .card__container
-      = link_to "/products/#{data.products.feetality.slug}/", class: "card", data: { product: "feetality" } do
+      = link_to "/products/#{data.products.feetality.slug}/", class: "card", data: { product: "feetality", "filter-usage": "accessories" } do
         .card__figure
           picture class="card__image-container"
             source srcset=data.products.feetality.default_image_webp type="image/webp"
@@ -405,6 +406,19 @@ lang: de
             h2.marginless--top = data.products.feetality.name
             h4.card__price = "€ #{data.products.feetality.price}"
             p = data.products.feetality.short_description
+
+      = link_to "/products/#{data.products.feetality_light.slug}/", class: "card", data: { product: "feetality_light" } do
+        .card__figure
+          picture class="card__image-container"
+            source srcset=data.products.feetality_light.default_image_webp type="image/webp"
+            source srcset=data.products.feetality_light.default_image_png type="image/png"
+            = image_tag data.products.feetality_light.default_image_png, class: "card__image", alt: data.products.feetality_light.name
+          = partial "partials/color_options", locals: { product: "feetality_light" } 
+        .card__body
+          .card__description
+            h2.marginless--top = data.products.feetality_light.name
+            h4.card__price = "€ #{data.products.feetality_light.price}"
+            p = data.products.feetality_light.short_description
 
       = link_to "/products/gift_cards/", class: "card" do
         .card__figure

@@ -1,0 +1,84 @@
+---
+title: Feetality Light
+section: products
+description: Werten Sie Ihre Schuhe auf und beugen Sie Fuß-, Knie- und Rückenbeschwerden vor.
+canonical_link: "https://www.lunge.com/products/feetality_light/"
+url_de: "https://www.lunge.com/products/feetality_light/"
+url_en: "https://www.lunge.com/en/products/feetality_light/"
+sitemap_priority: 0.7
+sitemap_changefreq: daily
+---
+.product__container#add-to-cart.anchor-target
+  .content
+    .product
+      .product__figure
+        .product__image-container
+          img.product__image width=1200 height=1200
+        .product__notice Unsere Schuhe werden bereits inklusive Feetality Einlegesohle ausgeliefert.
+      .product__details
+        .product__title
+          = link_to "← Shop", "/products/", class: "link"
+          h1 Feetality Light
+        .product__description
+          p Eine neue, leichtere Feetality Einlegesohle aus hochwertigem EVA Schaum, welche in unseren Laufschuhen zum Einsatz kommt.
+        .product__order-form
+          .input-group.visuallyhidden
+            label Damen / Herren
+            .gender-select__container
+              select.product__option.gender-select
+                option value=528189980938 Unisex
+          .input-group
+            label Farbe
+            .product-select__title-container
+            .product-select__container
+              select.product__option.product-select
+          .input-group
+            label Größe (Fusslänge / US / EUR)
+            .variant-select__container
+              select.product__option.variant-select
+          .variant-price__container
+            h2.variant-price
+            small inkl. Mwst., versandkostenfrei innerhalb Deutschlands
+          .add-to-cart-button__container
+            button.buy-button.js-prevent-cart-listener.add-button In den Warenkorb
+
+.gallery
+  - data.products.feetality_light.images.each do |image|
+    .gallery__item
+      = image_tag image.path
+      .gallery__item__title
+        = image.title
+
+.panel.panel--emphasis
+  .content
+    .additional-information
+      .specifications
+        h4 Technische Daten
+        ul.spec-list
+          li.spec-list__item
+            label Verfügbare Größen
+            span EUR 35 - 48½
+            br
+            span US Men 4½ - 15
+            br
+            span US Women 6 - 14
+      .add-to-cart-help
+        = partial "partials/add_to_cart_help"
+
+script type="application/ld+json"
+  | {
+  |   "@context": "http://schema.org",
+  |   "@type": "Product",
+  |   "name": "Feetality Light",
+  |   "description": "Werten Sie Ihre Schuhe auf und beugen Sie Fuß-, Knie- und Rückenbeschwerden vor.",
+  |   "brand": {
+  |     "@type": "Brand",
+  |     "name": "Lunge"
+  |   },
+  |   "offers": {
+  |     "@type": "Offer",
+  |     "price": "23.50",
+  |     "priceCurrency": "EUR",
+  |     "availability": "InStock"
+  |   }
+  | }

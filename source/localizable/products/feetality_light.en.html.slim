@@ -1,0 +1,82 @@
+---
+title: Feetality Light
+section: products
+description: Upgrade your shoes and prevent foot, knee, and back problems with Feetality insoles.
+canonical_link: "https://www.lunge.com/products/feetality/"
+url_de: "https://www.lunge.com/products/feetality/"
+url_en: "https://www.lunge.com/en/products/feetality/"
+sitemap_priority: 0.7
+sitemap_changefreq: daily
+---
+.product__container#add-to-cart.anchor-target
+  .content
+    .product
+      .product__figure
+        .product__image-container
+            img.product__image width=1200 height=1200
+        .product__notice Our shoes already come with Feetality insoles included.
+      .product__details
+        .product__title
+          = link_to "← Shop", "/en/products/", class: "link"
+          h1 Feetality Insoles
+        .product__description
+          p = data.products.feetality_light.short_description_en
+        .product__order-form
+          .input-group.visuallyhidden
+            label Men / Women
+            .gender-select__container
+              select.product__option.gender-select
+                option value=528189980938 Unisex
+          .input-group
+            label Color
+            .product-select__title-container
+            .product-select__container
+          .input-group
+            label Size (foot length / US / EUR)
+            .variant-select__container
+              select.product__option.variant-select
+          .variant-price__container
+            h2.variant-price
+          .add-to-cart-button__container
+            button.buy-button.js-prevent-cart-listener.add-button Add to cart
+
+.gallery
+  - data.products.feetality_light.images.each do |image|
+    .gallery__item
+      = image_tag image.path
+      .gallery__item__title
+        = image.title
+
+.panel.panel--emphasis
+  .content
+    .additional-information
+      .specifications
+        h4 Specifications
+        ul.spec-list
+          li.spec-list__item
+            label Available sizes
+            span EUR 35 - 48½
+            br
+            span US Men 4½ - 15
+            br
+            span US Women 6 - 14
+      .add-to-cart-help
+        = partial "partials/add_to_cart_help"
+
+script type="application/ld+json"
+  | {
+  |   "@context": "http://schema.org",
+  |   "@type": "Product",
+  |   "name": "Feetality Light",
+  |   "description": "Werten Sie Ihre Schuhe auf und beugen Sie Fuß-, Knie- und Rückenbeschwerden vor.",
+  |   "brand": {
+  |     "@type": "Brand",
+  |     "name": "Lunge"
+  |   },
+  |   "offers": {
+  |     "@type": "Offer",
+  |     "price": "23.50",
+  |     "priceCurrency": "EUR",
+  |     "availability": "InStock"
+  |   }
+  | }
