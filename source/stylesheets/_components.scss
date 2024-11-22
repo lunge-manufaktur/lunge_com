@@ -1429,9 +1429,11 @@ h5.testimonial__author {
   border-bottom: 1rem solid $body-border-color;
   -webkit-overflow-scrolling: touch;
   overflow-x: scroll;
+  scrollbar-width: none;
 }
 
 .gallery__item {
+  background-color: $mint-gray;
   position: relative;
   margin-right: 1rem;
   flex: 1 0 auto;
@@ -1871,6 +1873,7 @@ iframe.responsive--4x3 {
   webkit-overflow-scrolling: touch;
   padding: 1rem 0;
   scroll-behavior: smooth;
+  scrollbar-width: none;
 
   @include tablet-portrait {
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
