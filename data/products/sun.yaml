@@ -1,0 +1,118 @@
+name: "Sun"
+category: "Bequemschuhe"
+slug: "sun"
+short_description: "Die neue SUNdale – leichter und stylischer Komfort für jeden Tag"
+short_description_en: "Lightness meets comfort. Innovative knitted upper and an elastic midsole that deliver comfort all day long."
+default_image: "/images/products/sun/CS300BGB/optimized/CS300BGB_01.jpg"
+default_image_png: "/images/products/sun/CS300BGB/optimized/CS300BGB_01.png"
+default_image_webp: "/images/products/sun/CS300BGB/optimized/CS300BGB_01.webp"
+price: "34,90"
+discount_price: "34,90"
+colors:
+  -
+    sku: "CS300LGL"
+    name: "Lakritze/Grey"
+    first_color: "#000"
+    second_color: "#000"
+    default_image_png: "/images/products/sun/CS300LGL/optimized/CS300LGL_01.png"
+    default_image_webp: "/images/products/sun/CS300LGL/optimized/CS300LGL_01.webp"
+    price: 34,90
+  -
+    sku: "CS300BGB"
+    name: "Steel Blue/Green"
+    first_color: "#37506E"
+    second_color: "#37506E"
+    default_image_png: "/images/products/sun/CS300BGB/optimized/CS300BGB_01.png"
+    default_image_webp: "/images/products/sun/CS300BGB/optimized/CS300BGB_01.webp"
+    price: 34,90
+  -
+    sku: "CS300WGW"
+    name: "White/Grey"
+    first_color: "#FFF"
+    second_color: "#FFF"
+    default_image_png: "/images/products/sun/CS300WGW/optimized/CS300WGW_01.png"
+    default_image_webp: "/images/products/sun/CS300WGW/optimized/CS300WGW_01.webp"
+    price: 34,90
+
+outlet_colors:
+
+images:
+  -
+    path: "/images/products/sun/CS300LGL/optimized/CS300LGL_02.webp"
+    title: Sun (Lakritze/Grey)
+  -
+    path: "/images/products/sun/CS300BGB/optimized/CS300BGB_02.webp"
+    title: Sun (Steel Blue/Green)
+  -
+    path: "/images/products/sun/CS300WGW/optimized/CS300WGW_02.webp"
+    title: Sun (White/Grey)
+  -
+    path: "/images/products/sun/CS300LGL/optimized/CS300LGL_03.webp"
+    title: Sun (Lakritze/Grey)
+  -
+    path: "/images/products/sun/CS300BGB/optimized/CS300BGB_03.webp"
+    title: Sun (Steel Blue/Green)
+  -
+    path: "/images/products/sun/CS300WGW/optimized/CS300WGW_03.webp"
+    title: Sun (White/Grey)
+  -
+    path: "/images/products/sun/CS300LGL/optimized/CS300LGL_04.webp"
+    title: Sun (Lakritze/Grey)
+  -
+    path: "/images/products/sun/CS300BGB/optimized/CS300BGB_04.webp"
+    title: Sun (Steel Blue/Green)
+  -
+    path: "/images/products/sun/CS300WGW/optimized/CS300WGW_04.webp"
+    title: Sun (White/Grey)
+
+attributes:
+  -
+    name: ground.name
+    start:
+      name: ground.start_name
+      value: 1
+      description: ground.start_description
+    end:
+      name: ground.end_name
+      value: 5
+      description: ground.end_description
+  -
+    name: stability.name
+    start:
+      name: stability.start_name
+      value: 1
+      description: stability.start_description
+    end:
+      name: stability.end_name
+      value: 5
+      description: stability.end_description
+  -
+    name: rebound.name
+    start:
+      name: rebound.start_name
+      value: 5
+      description: rebound.start_description
+    end:
+      name: rebound.end_name
+      value: 10
+      description: rebound.end_description
+  -
+    name: firmness.name
+    start:
+      name: firmness.start_name
+      value: 1
+      description: firmness.start_description
+    end:
+      name: firmness.end_name
+      value: 6
+      description: firmness.end_description
+  -
+    name: fit.name
+    start:
+      name: fit.start_name
+      value: 2
+      description: fit.description
+    end:
+      name: fit.end_name
+      value: 9
+      description: fit.description

@@ -35,6 +35,7 @@ lang: de
           = button_tag "Derby", type: "button", class: "filter__option", data: { toggle: '[data-filter-series~="derby"]' }
           = button_tag "Vivo", type: "button", class: "filter__option", data: { toggle: '[data-filter-series~="vivo"]' }
           = button_tag "Neo", type: "button", class: "filter__option", data: { toggle: '[data-filter-series~="neo"]' }
+          = button_tag "Sun", type: "button", class: "filter__option", data: { toggle: '[data-filter-series~="sun"]' }
           = button_tag "Alle", type: "reset", class: "filter__clear-button"
       form.filter__group
         label.filter__group-label Mittelsohle
@@ -54,25 +55,41 @@ lang: de
 
 .content
   .card__container
-    = link_to "/products/#{data.products.neo_knit.slug}/", class: "card", data: { product: "neo_knit", "filter-usage": "everyday", "filter-series": "neo", "filter-sole": "neutral rebound", "filter-features": "vegan" } do
+    = link_to "/products/#{data.products.classic_walk.slug}/", class: "card", data: { product: "classic_walk", "filter-usage": "everyday", "filter-series": "classic", "filter-sole": "stability", "filter-features": "vegan" } do
       .card__figure
         picture class="card__image-container"
-          source srcset=data.products.neo_knit.default_image_webp type="image/webp"
-          source srcset=data.products.neo_knit.default_image_png type="image/png"
-          = image_tag data.products.neo_knit.default_image_png, class: "card__image", alt: data.products.neo_knit.name, width: 1200, height: 1200
-        = partial "partials/color_options", locals: { product: "neo_knit" } 
+          source srcset=data.products.classic_walk.default_image_webp type="image/webp"
+          source srcset=data.products.classic_walk.default_image_png type="image/png"
+          = image_tag data.products.classic_walk.default_image_png, class: "card__image", alt: data.products.classic_walk.name
+        = partial "partials/color_options", locals: { product: "classic_walk" } 
       .card__body
         .card__description
-          h2.marginless--top = data.products.neo_knit.name
-          h4.card__price = "€ #{data.products.neo_knit.price}"
-          p = data.products.neo_knit.short_description
+          h2.marginless--top = data.products.classic_walk.name
+          h4.card__price = "€ #{data.products.classic_walk.price}"
+          p = data.products.classic_walk.short_description
         .card__attributes
-          = partial "partials/product_attributes", locals: { product: "neo_knit" }
-        .notice.notice--top-left
-          span Neu
-        .category__container.category__container--rebound data-tooltip=data.categories.rebound.description_de
-          .category__icon R
-          .category__label Rebound
+          = partial "partials/product_attributes", locals: { product: "classic_walk" }
+      .category__container.category__container--stability data-tooltip=data.categories.stability.description_de
+        .category__icon S
+        .category__label Stability
+
+    = link_to "/products/#{data.products.classic_walk_leather_s.slug}/", class: "card", data: { product: "classic_walk_leather_s", "filter-usage": "everyday", "filter-series": "classic", "filter-sole": "stability", "filter-features": "leather" } do
+      .card__figure
+        picture class="card__image-container"
+          source srcset=data.products.classic_walk_leather_s.default_image_webp type="image/webp"
+          source srcset=data.products.classic_walk_leather_s.default_image_png type="image/png"
+          = image_tag data.products.classic_walk_leather_s.default_image_png, class: "card__image", alt: data.products.classic_walk_leather_s.name
+        = partial "partials/color_options", locals: { product: "classic_walk_leather_s" } 
+      .card__body
+        .card__description
+          h2.marginless--top = data.products.classic_walk_leather_s.name
+          h4.card__price = "€ #{data.products.classic_walk_leather_s.price}"
+          p = data.products.classic_walk_leather_s.short_description
+        .card__attributes
+          = partial "partials/product_attributes", locals: { product: "classic_walk_leather_s" }
+      .category__container.category__container--stability data-tooltip=data.categories.stability.description_de
+        .category__icon S
+        .category__label Stability
 
     = link_to "/products/#{data.products.vivo_run_n.slug}/", class: "card", data: { product: "vivo_run_n", "filter-usage": "running", "filter-series": "vivo", "filter-sole": "neutral rebound", "filter-features": "vegan" } do
       .card__figure
@@ -93,6 +110,26 @@ lang: de
         .category__container.category__container--rebound data-tooltip=data.categories.rebound.description_de
           .category__icon R
           .category__label Rebound
+          
+    = link_to "/products/#{data.products.sun.slug}/", class: "card", data: { product: "sun", "filter-usage": "everyday", "filter-series": "sun", "filter-sole": "neutral rebound", "filter-features": "vegan" } do
+      .card__figure
+        picture class="card__image-container"
+          source srcset=data.products.sun.default_image_webp type="image/webp"
+          source srcset=data.products.sun.default_image_png type="image/png"
+          = image_tag data.products.sun.default_image_png, class: "card__image", alt: data.products.sun.name
+        = partial "partials/color_options", locals: { product: "sun" } 
+      .card__body
+        .card__description
+          h2.marginless--top = data.products.sun.name
+          h4.card__price = "€ #{data.products.sun.price}"
+          p = data.products.sun.short_description
+        .card__attributes
+          = partial "partials/product_attributes", locals: { product: "sun" }
+      .notice.notice--top-left
+        span Neu
+      .category__container.category__container--stability data-tooltip=data.categories.stability.description_de
+        .category__icon N
+        .category__label Neutral
 
     = link_to "/products/#{data.products.classic_run.slug}/", class: "card", data: { product: "classic_run", "filter-usage": "running", "filter-series": "classic", "filter-sole": "stability", "filter-features": "vegan" } do
       .card__figure
@@ -108,24 +145,6 @@ lang: de
           p = data.products.classic_run.short_description
         .card__attributes
           = partial "partials/product_attributes", locals: { product: "classic_run" }
-      .category__container.category__container--stability data-tooltip=data.categories.stability.description_de
-        .category__icon S
-        .category__label Stability
-
-    = link_to "/products/#{data.products.classic_walk.slug}/", class: "card", data: { product: "classic_walk", "filter-usage": "everyday", "filter-series": "classic", "filter-sole": "stability", "filter-features": "vegan" } do
-      .card__figure
-        picture class="card__image-container"
-          source srcset=data.products.classic_walk.default_image_webp type="image/webp"
-          source srcset=data.products.classic_walk.default_image_png type="image/png"
-          = image_tag data.products.classic_walk.default_image_png, class: "card__image", alt: data.products.classic_walk.name
-        = partial "partials/color_options", locals: { product: "classic_walk" } 
-      .card__body
-        .card__description
-          h2.marginless--top = data.products.classic_walk.name
-          h4.card__price = "€ #{data.products.classic_walk.price}"
-          p = data.products.classic_walk.short_description
-        .card__attributes
-          = partial "partials/product_attributes", locals: { product: "classic_walk" }
       .category__container.category__container--stability data-tooltip=data.categories.stability.description_de
         .category__icon S
         .category__label Stability
@@ -170,6 +189,26 @@ lang: de
         .category__icon R
         .category__label Rebound
 
+    = link_to "/products/#{data.products.neo_knit.slug}/", class: "card", data: { product: "neo_knit", "filter-usage": "everyday", "filter-series": "neo", "filter-sole": "neutral rebound", "filter-features": "vegan" } do
+      .card__figure
+        picture class="card__image-container"
+          source srcset=data.products.neo_knit.default_image_webp type="image/webp"
+          source srcset=data.products.neo_knit.default_image_png type="image/png"
+          = image_tag data.products.neo_knit.default_image_png, class: "card__image", alt: data.products.neo_knit.name, width: 1200, height: 1200
+        = partial "partials/color_options", locals: { product: "neo_knit" } 
+      .card__body
+        .card__description
+          h2.marginless--top = data.products.neo_knit.name
+          h4.card__price = "€ #{data.products.neo_knit.price}"
+          p = data.products.neo_knit.short_description
+        .card__attributes
+          = partial "partials/product_attributes", locals: { product: "neo_knit" }
+        .notice.notice--top-left
+          span Neu
+        .category__container.category__container--rebound data-tooltip=data.categories.rebound.description_de
+          .category__icon R
+          .category__label Rebound
+
     = link_to "/products/#{data.products.classic_run_n.slug}/", class: "card", data: { product: "classic_run_n", "filter-usage": "running", "filter-series": "classic", "filter-sole": "neutral", "filter-features": "vegan" } do
       .card__figure
         picture class="card__image-container"
@@ -205,24 +244,6 @@ lang: de
       .category__container.category__container--neutral data-tooltip=data.categories.neutral.description_de
         .category__icon N
         .category__label Neutral
-
-    = link_to "/products/#{data.products.classic_walk_leather_s.slug}/", class: "card", data: { product: "classic_walk_leather_s", "filter-usage": "everyday", "filter-series": "classic", "filter-sole": "stability", "filter-features": "leather" } do
-      .card__figure
-        picture class="card__image-container"
-          source srcset=data.products.classic_walk_leather_s.default_image_webp type="image/webp"
-          source srcset=data.products.classic_walk_leather_s.default_image_png type="image/png"
-          = image_tag data.products.classic_walk_leather_s.default_image_png, class: "card__image", alt: data.products.classic_walk_leather_s.name
-        = partial "partials/color_options", locals: { product: "classic_walk_leather_s" } 
-      .card__body
-        .card__description
-          h2.marginless--top = data.products.classic_walk_leather_s.name
-          h4.card__price = "€ #{data.products.classic_walk_leather_s.price}"
-          p = data.products.classic_walk_leather_s.short_description
-        .card__attributes
-          = partial "partials/product_attributes", locals: { product: "classic_walk_leather_s" }
-      .category__container.category__container--stability data-tooltip=data.categories.stability.description_de
-        .category__icon S
-        .category__label Stability
 
     = link_to "/products/#{data.products.derby_walk_leather_s.slug}/", class: "card", data: { product: "derby_walk_leather_s", "filter-usage": "everyday", "filter-series": "derby", "filter-sole": "stability", "filter-features": "leather wide" } do
       .card__figure

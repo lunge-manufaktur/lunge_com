@@ -1,0 +1,112 @@
+---
+title: "Sun"
+description: Die neue SUNdale – leichter und stylischer Komfort für jeden Tag
+section: products
+canonical_link: "https://www.lunge.com/products/sun/"
+url_de: "https://www.lunge.com/products/sun/"
+url_en: "https://www.lunge.com/en/products/sun/"
+sitemap_priority: 0.9
+sitemap_changefreq: daily
+---
+.product__container#add-to-cart.anchor-target
+  .content
+    .product
+      .product__figure
+        .product__media-container
+          .product__media-item
+            img.product__image width=1200 height=1200
+        .product__features--tablet-landscape
+          ul.product-feature
+            = partial "partials/product-features/vegan"
+            = partial "partials/product-features/non-toxic"
+          = partial "partials/product_attributes", locals: { product: "sun" }
+      .product__details
+        .product__title
+          = link_to "← Shop", "/products/", class: "link"
+          h1 Sun
+        .product__order-form
+          .input-group
+            label Damen / Herren
+            .gender-select__container
+              select.product__option.gender-select
+                option value=538114162954 Unisex
+          .input-group
+            label Farbe
+            .product-select__title-container
+            .product-select__container
+          .input-group
+            label Größe (EUR)
+            .variant-select__container
+              select.product__option.variant-select
+            .product__sizing
+              = partial "partials/size_guide_note"
+          .variant-price__container
+            h2.variant-price
+            small inkl. Mwst., versandkostenfrei innerhalb Deutschlands
+          .add-to-cart-button__container
+            button.buy-button.js-prevent-cart-listener.add-button In den Warenkorb
+        .product__description
+          p.text-bold Die neue SUNdale – leichter und stylischer Komfort für jeden Tag
+
+          p
+            | Erleben Sie mit 
+            span.small-caps SUN
+            |  das sonnige Gefühl, unbelastet zu gehen. Unsere neue Freizeit-Sandale überzeugt durch leichtes, weiches EVA-Material, ein angenehmes Fußbett und trendige Optik. Mit einem Gewicht von nur 160 Gramm bei Größe 41/42 ist SUN zudem ein echtes Leichtgewicht – ideal als bequemer Hausschuh oder sportive Sandale.
+
+          ul.bullet-list
+            li
+              span.text-bold Bequem und hautfreundlich:
+              |  hergestellt aus 100% EVA – vegan, BPA-frei und ohne schädliche Stoffe:
+            li
+              span.text-bold Vielseitig einsetzbar:
+              |  ideal, um den Füßen eine Auszeit zu schenken
+            li
+              span.text-bold Dauerelastisch und langlebig:
+              |  weiches Material für mehr Flexibilität und Komfort
+            li
+              span.text-bold Leicht zu pflegen:
+              |  einfach per Hand waschen und im Schatten trocknen lassen
+
+        .product__features--mobile
+          ul.product-feature
+            = partial "partials/product-features/vegan"
+            = partial "partials/product-features/non-toxic"
+          = partial "partials/product_attributes", locals: { product: "sun" }
+
+= partial "products/gallery", locals: { product: data.products.sun }
+
+.panel
+  .content
+    .additional-information
+      .specifications
+        h4 Technische Daten
+        ul.spec-list
+          li.spec-list__item
+            label Sohlentyp
+            span Rebound, Neutral
+          li.spec-list__item
+            label Gewicht
+            span 160 g
+
+      .add-to-cart-help
+        = partial "partials/add_to_cart_help"
+
+script type="application/ld+json"
+  | {
+  |   "@context": "http://schema.org",
+  |   "@type": "Product",
+  |   "name": "Sun",
+  |   "image": "https://www.lunge.com/images/products/sun/CS300BGB/CS300BGB_01.png",
+  |   "description": "Die neue SUNdale – leichter und stylischer Komfort für jeden Tag.",
+  |   "brand": {
+  |     "@type": "Brand",
+  |     "name": "Lunge"
+  |   },
+  |   "offers": {
+  |     "@type": "AggregateOffer",
+  |     "lowPrice": "34.90",
+  |     "highPrice": "34.90",
+  |     "priceCurrency": "EUR",
+  |     "availability": "InStock"
+  |   }
+  | }

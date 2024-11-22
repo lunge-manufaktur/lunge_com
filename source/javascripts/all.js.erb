@@ -327,3 +327,14 @@ $('[data-product="vivo_run_n"] .color-icon').on("mouseover tap", function(event)
   $('[data-product=vivo_run_n] .card__image-container [type="image/webp"]').attr("srcset", imagePathWEBP);
   $('[data-product=vivo_run_n] .card__image').attr("src", imagePathPNG);
 });
+
+$('[data-product="sun"] .color-icon').on("mouseover tap", function(event) {
+  event.preventDefault();
+  var sku = $(this).data("color");
+  var imagePathPNG = $(this).data("image-path-png");
+  var imagePathWEBP = $(this).data("image-path-webp");
+
+  $('[data-product=sun] .card__image-container [type="image/png"]').attr("srcset", imagePathPNG);
+  $('[data-product=sun] .card__image-container [type="image/webp"]').attr("srcset", imagePathWEBP);
+  $('[data-product=sun] .card__image').attr("src", imagePathPNG);
+});
