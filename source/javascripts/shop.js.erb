@@ -285,7 +285,7 @@ $(function() {
       options += '<option class="variant-select__option' + unavailableClass + '" value = "' + variants[i].id + '"' + selectedAttribute + '>' + availabilityIcon + ' ' + variants[i].title + '</option>';
     }
 
-    return  '<select name = "variant-select" class = "variant-select">' + options + '</select>';
+    return  options;
   }
 
   // populate product select box
