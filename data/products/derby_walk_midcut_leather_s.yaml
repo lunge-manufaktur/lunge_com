@@ -3,18 +3,23 @@ category: "Bequemschuhe"
 slug: "derby_walk_midcut_leather_s"
 short_description: "Komfortabler MidCut Schuh für breite Füße aus italienischem Nubukleder mit leichter Stützwirkung."
 short_description_en: "Comfortable everyday MidCut Boots for wide feet made from high quality Italian leather."
-default_image_png: "/images/products/derby_walk_midcut_leather/GWS800CBG/GWS800CBG.png"
-default_image_webp: "/images/products/derby_walk_midcut_leather/GWS800CBG/GWS800CBG.webp"
+default_image_png: "/images/products/derby_walk_midcut_leather/GWS820OGG/optimized/GWS820OGG_side.png"
 price: "279,90"
 discount_price: "279,90"
 colors:
   -
-    sku: "GWS800CBG"
+    sku: "GWS820OGG"
+    name: "Chocolate/Brown/Light Grey"
+    first_color: "#635D44"
+    second_color: "#DFDFDF"
+    default_image_png: "/images/products/derby_walk_midcut_leather/GWS820OGG/optimized/GWS820OGG_side.png"
+    price: 279,90
+  -
+    sku: "GWS820CBG"
     name: "Chocolate/Brown/Light Grey"
     first_color: "#6F5045"
     second_color: "#DFDFDF"
-    default_image_png: "/images/products/derby_walk_midcut_leather/GWS800CBG/GWS800CBG.png"
-    default_image_webp: "/images/products/derby_walk_midcut_leather/GWS800CBG/GWS800CBG.webp"
+    default_image_png: "/images/products/derby_walk_midcut_leather/GWS820CBG/optimized/GWS820CBG_side.png"
     price: 279,90
 
 outlet_colors:
@@ -28,6 +33,24 @@ outlet_colors:
       price: 279,90
 
 images:
+  -
+    path: "/images/products/derby_walk_midcut_leather/GWS820CBG/optimized/GWS820CBG_front.png"
+    title: Derby Walk Midcut S Leather (Chocolate/Brown/Light Grey)
+  -
+    path: "/images/products/derby_walk_midcut_leather/GWS820OGG/optimized/GWS820OGG_front.png"
+    title: Derby Walk Midcut S Leather (Olive/Green/Light Grey)
+  -
+    path: "/images/products/derby_walk_midcut_leather/GWS820CBG/optimized/GWS820CBG_back.png"
+    title: Derby Walk Midcut S Leather (Chocolate/Brown/Light Grey)
+  -
+    path: "/images/products/derby_walk_midcut_leather/GWS820OGG/optimized/GWS820OGG_back.png"
+    title: Derby Walk Midcut S Leather (Olive/Green/Light Grey)
+  -
+    path: "/images/products/derby_walk_midcut_leather/GWS820CBG/optimized/GWS820CBG_top.png"
+    title: Derby Walk Midcut S Leather (Chocolate/Brown/Light Grey)
+  -
+    path: "/images/products/derby_walk_midcut_leather/GWS820CBG/optimized/GWS820CBG_bottom.png"
+    title: Derby Walk Midcut S Leather (Chocolate/Brown/Light Grey)
 
 attributes:
   -
